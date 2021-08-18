@@ -8,7 +8,7 @@ module.exports = {
     // Those are some additional security-related lints.
     // There's a chance those will introduce some false positives to our CI,
     // but the stakes are rather high here, so better safe than sorry
-    'plugin:security/recommended',
+    // 'plugin:security/recommended',
   ],
   settings: {
     react: {
