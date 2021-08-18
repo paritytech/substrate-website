@@ -1,0 +1,24 @@
+{
+  "home": "Home",
+  "learn": "Learn",
+  "build": "Build",
+  "network": "Network",
+  "community": "Community",
+
+  "learn.why": "Why",
+  "learn.how": "How",
+
+  "build.tutorial": "Tutorial",
+  "build.getting-started": "Getting started",
+
+  "legal.web3": "2021 Web3 Foundation",
+  "legal.impressum": "Impressum",
+  "legal.disclaimer": "Disclaimer",
+  "legal.privacy": "Privacy",
+  "legal.cookies": "Cookies",
+
+  "extra.blog": "Blog",
+  "extra.papers": "Papers",
+  "extra.wiki": "Wiki",
+  "extra.support": "Support"
+}
