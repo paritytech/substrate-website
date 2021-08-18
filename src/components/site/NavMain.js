@@ -20,9 +20,25 @@ const NavMain = () => {
               {subMenu && (
                 <ul>
                   {subMenu.map(subMenuItem => {
+                    const child = subMenuItem.child;
+                    const childMenu = menus[child];
+
                     return (
                       <li key={subMenuItem.id}>
                         <Link to={menuItem.url + subMenuItem.url}>{t(subMenuItem.id)}</Link>
+                        {childMenu && (
+                          <ul>
+                            {childMenu.map(childMenuItem => {
+                              return (
+                                <li key={childMenuItem.id}>
+                                  <Link to={menuItem.url + subMenuItem.url + childMenuItem.url}>
+                                    {t(childMenuItem.id)}
+                                  </Link>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        )}
                       </li>
                     );
                   })}

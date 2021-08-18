@@ -14,11 +14,32 @@ export const useSiteMenus = () => {
               id
               url
             }
-            build {
+            technology {
               id
               url
             }
-            learn {
+            developers {
+              id
+              url
+            }
+            vision {
+              id
+              url
+            }
+            ecosystem {
+              id
+              url
+              child
+            }
+            opportunities {
+              id
+              url
+            }
+            resources {
+              id
+              url
+            }
+            connect {
               id
               url
             }

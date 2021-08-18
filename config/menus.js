@@ -2,96 +2,187 @@
    the submenu's key of this js object */
 const main = [
   {
-    url: '/',
-    id: 'home',
+    url: '/technology',
+    id: 'technology',
   },
   {
-    url: '/learn',
-    id: 'learn',
+    url: '/developers',
+    id: 'developers',
   },
   {
-    url: '/build',
-    id: 'build',
+    url: '/vision',
+    id: 'vision',
   },
   {
-    url: '/network',
-    id: 'network',
-  },
-  {
-    url: '/community',
-    id: 'community',
+    url: '/ecosystem',
+    id: 'ecosystem',
   },
 ];
 
 /* sub menus, matching the main menu items' "id" */
-const learn = [
+const technology = [
   {
-    url: '/why-polkadot',
-    id: 'learn.why',
+    url: '/flexible',
+    id: 'technology.flexible',
   },
   {
-    url: '/how-it-works',
-    id: 'learn.how',
+    url: '/open',
+    id: 'technology.open',
+  },
+  {
+    url: '/interoperable',
+    id: 'technology.interoperable',
+  },
+  {
+    url: '/future-proof',
+    id: 'technology.future-proof',
   },
 ];
 
-const build = [
+const developers = [
   {
-    url: '/tutorial',
-    id: 'build.tutorial',
+    url: '',
+    id: 'developers.overview',
   },
   {
-    url: '/getting-started',
-    id: 'build.getting-started',
+    url: '/v3/docs/getting-started/overview',
+    id: 'developers.docs',
+  },
+  {
+    url: '/v3/how-to-guides',
+    id: 'developers.how-to-guides',
+  },
+  {
+    url: '/tutorials',
+    id: 'developers.tutorials',
+  },
+  {
+    url: '/rustdocs',
+    id: 'developers.rustdocs',
+  },
+  {
+    url: '/playground',
+    id: 'developers.playground',
+  },
+];
+
+const vision = [
+  {
+    url: '/substrate-and-polkadot',
+    id: 'developers.substrate-and-polkadot',
+  },
+];
+
+const ecosystem = [
+  {
+    url: '',
+    id: 'ecosystem.overview',
+  },
+  {
+    url: '/teams',
+    id: 'ecosystem.teams',
+  },
+  {
+    url: '/substrate-builders-program',
+    id: 'ecosystem.substrate-builders-program',
+  },
+  {
+    url: '/opportunities',
+    id: 'ecosystem.opportunities',
+    child: 'opportunities',
+  },
+  {
+    url: '/resources',
+    id: 'ecosystem.resources',
+    child: 'resources',
+  },
+  {
+    url: '/connect',
+    id: 'ecosystem.connect',
+    child: 'connect',
+  },
+];
+
+const opportunities = [
+  {
+    url: '/hackathons',
+    id: 'ecosystem.opportunities.hackathons',
+  },
+  {
+    url: '/grants',
+    id: 'ecosystem.opportunities.grants',
+  },
+  {
+    url: '/jobs',
+    id: 'ecosystem.opportunities.jobs',
+  },
+];
+
+const resources = [
+  {
+    url: '/seminar',
+    id: 'ecosystem.resources.seminar',
+  },
+  {
+    url: '/awesome-substrate',
+    id: 'ecosystem.resources.awesome-substrate',
+  },
+  {
+    url: '/community-learning-offerings',
+    id: 'ecosystem.resources.community-learning-offerings',
+  },
+];
+
+const connect = [
+  {
+    url: '/contact',
+    id: 'ecosystem.resources.contact',
+  },
+  {
+    url: '/events',
+    id: 'ecosystem.resources.events',
+  },
+  {
+    url: '/blog',
+    id: 'ecosystem.resources.blog',
   },
 ];
 
 const legal = [
   {
-    url: 'https://web3.foundation',
-    id: 'legal.web3',
-  },
-  {
-    url: '/impressum',
-    id: 'legal.impressum',
-  },
-  {
-    url: '/disclaimer',
-    id: 'legal.disclaimer',
-  },
-  {
-    url: '/privacy',
+    url: 'https://www.parity.io/privacy',
     id: 'legal.privacy',
   },
   {
-    url: '/cookies',
-    id: 'legal.cookies',
+    url: 'https://www.parity.io/terms',
+    id: 'legal.terms',
   },
 ];
 
 const extra = [
   {
-    url: '/blog',
-    id: 'extra.blog',
+    url: '/newsletter',
+    id: 'extra.newsletter',
   },
   {
-    url: '/papers',
-    id: 'extra.papers',
+    url: '/substrate-connect',
+    id: 'extra.substrate-connect',
   },
   {
-    url: '/wiki',
-    id: 'extra.wiki',
-  },
-  {
-    url: '/support',
-    id: 'extra.support',
+    url: '/enterprise',
+    id: 'extra.enterprise',
   },
 ];
 
 module.exports = {
   main,
-  learn,
-  build,
+  technology,
+  developers,
+  vision,
+  ecosystem,
+  opportunities,
+  resources,
+  connect,
   extra,
   legal,
 };
