@@ -10,14 +10,16 @@
   "technology.interoperable": "Interoperable",
   "technology.future-proof": "Future-Proof",
 
-  "developers.overview": "Overview",
+  "developers.home": "Home",
   "developers.docs": "Docs",
   "developers.how-to-guides": "How-to Guides",
   "developers.tutorials": "Tutorials",
   "developers.rustdocs": "Rust Docs",
   "developers.playground": "Playground",
 
-  "ecosystem.overview": "Overview",
+  "vision.substrate-and-polkadot": "Substrate & Polkadot",
+
+  "ecosystem.home": "Home",
   "ecosystem.teams": "Teams",
   "ecosystem.substrate-builders-program": "Builders Program",
   "ecosystem.opportunities": "Opportunities",
@@ -30,16 +32,16 @@
 
   "ecosystem.resources.seminar": "Substrate Seminar",
   "ecosystem.resources.awesome-substrate": "Awesome Substrate",
-  "ecosystem.resources.community-learning-offerings": "Community Learning Offerings",
+  "ecosystem.resources.community-resources": "Community Resources",
 
   "ecosystem.resources.contact": "Contact",
   "ecosystem.resources.events": "Events",
+  "ecosystem.resources.newsletter": "Newsletter",
   "ecosystem.resources.blog": "Blog",
 
   "legal.privacy": "Privacy Policy",
   "legal.terms": "Terms of Services",
 
-  "extra.newsletter": "Newsletter",
   "extra.substrate-connect": "Substrate Connect",
   "extra.enterprise": "Enterprise"
 }

@@ -42,7 +42,7 @@ const technology = [
 const developers = [
   {
     url: '',
-    id: 'developers.overview',
+    id: 'developers.home',
   },
   {
     url: '/v3/docs/getting-started/overview',
@@ -69,14 +69,14 @@ const developers = [
 const vision = [
   {
     url: '/substrate-and-polkadot',
-    id: 'developers.substrate-and-polkadot',
+    id: 'vision.substrate-and-polkadot',
   },
 ];
 
 const ecosystem = [
   {
     url: '',
-    id: 'ecosystem.overview',
+    id: 'ecosystem.home',
   },
   {
     url: '/teams',
@@ -128,8 +128,8 @@ const resources = [
     id: 'ecosystem.resources.awesome-substrate',
   },
   {
-    url: '/community-learning-offerings',
-    id: 'ecosystem.resources.community-learning-offerings',
+    url: '/community-resources',
+    id: 'ecosystem.resources.community-resources',
   },
 ];
 
@@ -141,6 +141,10 @@ const connect = [
   {
     url: '/events',
     id: 'ecosystem.resources.events',
+  },
+  {
+    url: '/newsletter',
+    id: 'ecosystem.resources.newsletter',
   },
   {
     url: '/blog',
@@ -160,10 +164,6 @@ const legal = [
 ];
 
 const extra = [
-  {
-    url: '/newsletter',
-    id: 'extra.newsletter',
-  },
   {
     url: '/substrate-connect',
     id: 'extra.substrate-connect',

@@ -5,6 +5,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'prettier',
+    // TODO: fixing sec eslint issues
     // Those are some additional security-related lints.
     // There's a chance those will introduce some false positives to our CI,
     // but the stakes are rather high here, so better safe than sorry
