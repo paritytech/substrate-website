@@ -21,7 +21,7 @@ const Header = () => {
     <header className="sticky top-0 z-10 border-b bg-white dark:bg-black border-gray-200 dark:border-gray-700">
       <div className="px-4 xl:px-12">
         <div className={`flex items-center justify-between transition-height ease-in-out ${menuHeight}`}>
-          <div className="w-40 relative">
+          <div className="w-40 relative transform transition-all duration-300 ease-in-out hover:opacity-50">
             <Link to="/">
               <Logo />
             </Link>
