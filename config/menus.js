@@ -22,6 +22,10 @@ const main = [
 /* sub menus, matching the main menu items' "id" */
 const technology = [
   {
+    url: '',
+    id: 'technology.overview',
+  },
+  {
     url: '/flexible',
     id: 'technology.flexible',
   },

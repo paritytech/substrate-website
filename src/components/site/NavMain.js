@@ -5,9 +5,12 @@ import useComponentVisible from '../../hooks/use-component-visible';
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import { buildSubMenu, Link } from '../default/Link';
 
-const DropDown = ({ menuItem, children }) => {
-  const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
+const DropDown = ({ menuItem }) => {
   const { t } = useTranslation();
+  const { menus } = useSiteMenus();
+  const subMenu = buildSubMenu(menus, menuItem);
+  const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
+  // const [itemNavOpen, setItemNavOpen] = useState(false);
 
   return (
     <li className="list-none m-0" key={menuItem.id} ref={ref}>
@@ -31,51 +34,57 @@ const DropDown = ({ menuItem, children }) => {
         </svg>
       </button>
 
-      {children}
+      {isComponentVisible && subMenu && (
+        <div
+          className={`${isComponentVisible ? `absolute mt-4 -ml-2 animate-fade-in-down` : 'hidden animate-fade-out'}`}
+        >
+          <ul
+            className={`list-none relative pt-4 pb-[1.2rem] bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md`}
+          >
+            {/* <ul
+          className={`list-none relative pt-4 pb-[1.2rem] bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md ${
+            itemNavOpen ? `rounded-tr-none rounded-br-none` : null
+          }`}
+        > */}
+            {subMenu.map(subMenuItem => {
+              const child = subMenuItem.child;
+              const childMenu = menus[child];
+
+              return (
+                <li
+                  key={subMenuItem.id}
+                  className="px-6 py-2 m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium"
+                >
+                  <Link to={menuItem.url + subMenuItem.url}>{t(subMenuItem.id)}</Link>
+                  {childMenu && (
+                    <ul>
+                      {childMenu.map(childMenuItem => {
+                        return (
+                          <li key={childMenuItem.id}>
+                            <Link to={menuItem.url + subMenuItem.url + childMenuItem.url}>{t(childMenuItem.id)}</Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
     </li>
   );
 };
 
 const NavMain = () => {
-  const { t } = useTranslation();
   const { menus } = useSiteMenus();
 
   return (
     <nav>
       <ul className="m-0 flex justify-evenly">
         {menus.main.map(menuItem => {
-          const subMenu = buildSubMenu(menus, menuItem);
-          return (
-            <DropDown key={menuItem.id} menuItem={menuItem}>
-              {subMenu && (
-                <ul className="hidden">
-                  {subMenu.map(subMenuItem => {
-                    const child = subMenuItem.child;
-                    const childMenu = menus[child];
-
-                    return (
-                      <li key={subMenuItem.id}>
-                        <Link to={menuItem.url + subMenuItem.url}>{t(subMenuItem.id)}</Link>
-                        {childMenu && (
-                          <ul>
-                            {childMenu.map(childMenuItem => {
-                              return (
-                                <li key={childMenuItem.id}>
-                                  <Link to={menuItem.url + subMenuItem.url + childMenuItem.url}>
-                                    {t(childMenuItem.id)}
-                                  </Link>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-            </DropDown>
-          );
+          return <DropDown key={menuItem.id} menuItem={menuItem}></DropDown>;
         })}
       </ul>
     </nav>
