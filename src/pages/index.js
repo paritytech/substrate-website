@@ -10,7 +10,7 @@ export default function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>{t('Hello')}</h1>
+      <h1 className="text-9xl">{t('Hello')}</h1>
     </Layout>
   );
 }

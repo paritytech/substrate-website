@@ -19,9 +19,17 @@ module.exports = {
         },
       },
     },
-    /* use sass instead of css */
+    /* use tailwindcss, used sass instead of css */
     {
       resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [
+          require('tailwindcss'),
+          /* Load custom Tailwind CSS configuration, used to purge
+             "unused" tailwind classes */
+          require('./tailwind.config.js'),
+        ],
+      },
     },
 
     /* Progressive Web App + Offline functionality
@@ -35,11 +43,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Substrate.io`,
+        short_name: `substrate.io`,
         start_url: `/`,
-        background_color: `#e6007a`,
-        theme_color: `#e6007a`,
+        background_color: `#24CC85`,
+        theme_color: `#24CC85`,
         display: `minimal-ui`,
         /* icon path is relative to the root of the site. */
         icon: `media/favicon/favicon.png`,
@@ -93,7 +101,7 @@ module.exports = {
             resolve: `gatsby-remark-relative-images`,
             options: {
               staticFolderName: `${__dirname}`, // `/media/` already in img.src
-              include: ['featured_image', 'markdownremark']
+              include: ['featured_image', 'markdownremark'],
             },
           },
           // gatsby-remark-relative-images must go before gatsby-remark-images
