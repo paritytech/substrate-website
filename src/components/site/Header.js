@@ -1,9 +1,11 @@
 import { Link } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
-// import NavMain from './NavMain';
 import useScrollListener from '../../hooks/use-scroll-listener';
+import DocsButton from './DocsButton';
 import Logo from './Logo';
+import NavMain from './NavMain';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const scroll = useScrollListener();
@@ -25,6 +27,18 @@ const Header = () => {
             <Link to="/">
               <Logo />
             </Link>
+          </div>
+          <div className="hidden lg:flex lg:justify-between lg:items-center w-full">
+            <div className="w-2/3 max-w-3xl flex justify-evenly">
+              <NavMain />
+            </div>
+            <div className=" w-1/2 flex items-center justify-end">
+              <div className="pl-8 pr-6">
+                <DocsButton />
+              </div>
+              {/* TODO: add dark mode context */}
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </div>
