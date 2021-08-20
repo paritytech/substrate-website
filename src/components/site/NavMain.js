@@ -5,12 +5,68 @@ import useComponentVisible from '../../hooks/use-component-visible';
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import { buildSubMenu, Link } from '../default/Link';
 
+const ChildMenu = ({ slugPrefix, childMenu }) => {
+  const { t } = useTranslation();
+
+  return (
+    <ul className="pt-4 m-0 list-none absolute top-0 left-full h-full rounded-tr-md rounded-br-md shadow-lg ring-1 ring-black dark:ring-white bg-white dark:bg-black">
+      {childMenu.map(childMenuItem => {
+        return (
+          <li
+            className="m-0 px-6 py-2 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium text-black"
+            key={childMenuItem.id}
+          >
+            <Link to={slugPrefix + childMenuItem.url}>{t(childMenuItem.id)}</Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
+const DropDownItem = ({ data }) => {
+  const { t } = useTranslation();
+  const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
+  // const [childMenuOpen, setChildMenuOpen] = useState(false);
+
+  return (
+    <li className="m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium cursor-pointer">
+      {data.childMenu ? (
+        <div ref={ref}>
+          <div
+            className="px-6 py-2 flex items-center justify-between"
+            onClick={() => setIsComponentVisible(!isComponentVisible)}
+          >
+            <span>{t(data.subMenuItem.id)}</span>
+            <svg
+              className={` `}
+              xmlns="http://www.w3.org/2000/svg"
+              width="7"
+              height="13"
+              viewBox="0 0 7 13"
+              fill="none"
+            >
+              <path d="M1 12L6 6.5L1 1" stroke="#242A35" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          {isComponentVisible && (
+            <ChildMenu slugPrefix={data.menuItem.url + data.subMenuItem.url} childMenu={data.childMenu} />
+          )}
+        </div>
+      ) : (
+        <Link to={data.menuItem.url + data.subMenuItem.url} className="block px-6 py-2">
+          {t(data.subMenuItem.id)}
+        </Link>
+      )}
+    </li>
+  );
+};
+
 const DropDown = ({ menuItem }) => {
   const { t } = useTranslation();
   const { menus } = useSiteMenus();
   const subMenu = buildSubMenu(menus, menuItem);
   const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
-  // const [itemNavOpen, setItemNavOpen] = useState(false);
 
   return (
     <li className="list-none m-0" key={menuItem.id} ref={ref}>
@@ -35,9 +91,7 @@ const DropDown = ({ menuItem }) => {
       </button>
 
       {isComponentVisible && subMenu && (
-        <div
-          className={`${isComponentVisible ? `absolute mt-4 -ml-2 animate-fade-in-down` : 'hidden animate-fade-out'}`}
-        >
+        <div className={`absolute mt-4 -ml-2 ${isComponentVisible ? `animate-fade-in-down` : 'animate-fade-out'}`}>
           <ul
             className={`list-none relative pt-4 pb-[1.2rem] bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md`}
           >
@@ -51,23 +105,14 @@ const DropDown = ({ menuItem }) => {
               const childMenu = menus[child];
 
               return (
-                <li
+                <DropDownItem
                   key={subMenuItem.id}
-                  className="px-6 py-2 m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium"
-                >
-                  <Link to={menuItem.url + subMenuItem.url}>{t(subMenuItem.id)}</Link>
-                  {childMenu && (
-                    <ul>
-                      {childMenu.map(childMenuItem => {
-                        return (
-                          <li key={childMenuItem.id}>
-                            <Link to={menuItem.url + subMenuItem.url + childMenuItem.url}>{t(childMenuItem.id)}</Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  )}
-                </li>
+                  data={{
+                    menuItem,
+                    subMenuItem,
+                    childMenu,
+                  }}
+                ></DropDownItem>
               );
             })}
           </ul>
