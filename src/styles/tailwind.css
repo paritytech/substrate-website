@@ -1,6 +1,3 @@
-/* TODO: add tailwind custom plugin */
-/* @tailwind aspect-ratio; */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
