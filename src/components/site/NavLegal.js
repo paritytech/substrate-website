@@ -9,7 +9,7 @@ const HeaderNav = () => {
   const { menus } = useSiteMenus();
   return (
     <nav>
-      <ul>
+      <ul className="list-none">
         {menus.legal.map(menuItem => {
           return (
             <li key={menuItem.id}>

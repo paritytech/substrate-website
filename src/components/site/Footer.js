@@ -13,9 +13,9 @@ const Footer = () => {
             <Icon name="logo-white"></Icon>
           </Link>
         </div>
-        <div className="py-12">
-          <NavLegal />
-        </div>
+      </div>
+      <div className="py-12">
+        <NavLegal />
       </div>
     </footer>
   );
