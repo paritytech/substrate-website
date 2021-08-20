@@ -1,6 +1,7 @@
 const { addLangFieldToMarkdown, addSlugFieldToMarkdown } = require('./gatsby-node/on-create-node.js');
 
-const { createBlogPages, createBlogTagsPages } = require('./gatsby-node/create-pages.js');
+// FIX: frontmatter missing in tag model
+// const { createBlogPages, createBlogTagsPages } = require('./gatsby-node/create-pages.js');
 
 exports.onCreateNode = props => {
   const { node } = props;
@@ -11,6 +12,6 @@ exports.onCreateNode = props => {
 };
 
 exports.createPages = async props => {
-  await Promise.all([createBlogPages(props)]);
-  await Promise.all([createBlogTagsPages(props)]);
+  // await Promise.all([createBlogPages(props)]);
+  // await Promise.all([createBlogTagsPages(props)]);
 };
