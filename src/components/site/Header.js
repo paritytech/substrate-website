@@ -28,7 +28,7 @@ const Header = () => {
               <Logo />
             </Link>
           </div>
-          <div className="lg:flex lg:justify-between lg:items-center w-full">
+          <div className="hidden lg:flex lg:justify-between lg:items-center w-full">
             <div className="w-2/3 max-w-3xl">
               <NavMain />
             </div>
