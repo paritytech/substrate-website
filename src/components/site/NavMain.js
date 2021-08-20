@@ -34,15 +34,19 @@ const DropDownItem = ({ data }) => {
 
   const handleChildMenuOpen = () => {
     setIsComponentVisible(!isComponentVisible);
-    data.setChildMenuOpen(true);
+    data.setIsChildMenuOpen(true);
   };
 
   useEffect(() => {
-    !isComponentVisible && data.setChildMenuOpen(false);
+    !isComponentVisible && data.setIsChildMenuOpen(false);
   }, [isComponentVisible]);
 
   return (
-    <li className="m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium cursor-pointer">
+    <li
+      className={`m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium cursor-pointer ${
+        isComponentVisible && 'hover:text-black'
+      }`}
+    >
       {data.childMenu ? (
         <div ref={ref}>
           <div
@@ -89,16 +93,12 @@ const DropDown = ({ menuItem }) => {
   const { menus } = useSiteMenus();
   const subMenu = buildSubMenu(menus, menuItem);
   const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
-  const [childMenuOpen, setChildMenuOpen] = useState(false);
+  const [isChildMenuOpen, setIsChildMenuOpen] = useState(false);
 
   return (
     <li className="list-none m-0" key={menuItem.id} ref={ref}>
       <button className="group focus:outline-none" onClick={() => setIsComponentVisible(!isComponentVisible)}>
-        <span
-          className={` font-medium group-hover:text-substrateGreen ${
-            isComponentVisible ? 'text-substrateGreen' : null
-          }`}
-        >
+        <span className={`font-medium group-hover:text-substrateGreen ${isComponentVisible && 'text-substrateGreen'} `}>
           {t(menuItem.id)}
         </span>
         <svg
@@ -119,7 +119,7 @@ const DropDown = ({ menuItem }) => {
         <div className={`absolute mt-4 ${isComponentVisible ? `animate-fade-in-down` : 'animate-fade-out'}`}>
           <ul
             className={`m-0 list-none relative pt-4 pb-5 bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md ${
-              childMenuOpen ? `rounded-tr-none rounded-br-none` : ''
+              isChildMenuOpen ? `rounded-tr-none rounded-br-none` : ''
             }`}
           >
             {subMenu.map(subMenuItem => {
@@ -133,7 +133,7 @@ const DropDown = ({ menuItem }) => {
                     menuItem,
                     subMenuItem,
                     childMenu,
-                    setChildMenuOpen,
+                    setIsChildMenuOpen,
                   }}
                 ></DropDownItem>
               );
