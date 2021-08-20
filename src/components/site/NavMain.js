@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 import useComponentVisible from '../../hooks/use-component-visible';
 import { useSiteMenus } from '../../hooks/use-site-menus';
+import Icon from '../default/Icon';
 import { buildSubMenu, Link } from '../default/Link';
 
 const itemClass = 'pl-6 pr-12 py-2';
@@ -57,22 +58,7 @@ const DropDownItem = ({ data }) => {
           >
             <span>{t(data.subMenuItem.id)}</span>
             <span className="absolute right-6 pt-1.5">
-              <svg
-                className={` `}
-                xmlns="http://www.w3.org/2000/svg"
-                width="7"
-                height="13"
-                viewBox="0 0 7 13"
-                fill="none"
-              >
-                <path
-                  d="M1 12L6 6.5L1 1"
-                  stroke="#242A35"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <Icon name="arrow-next" />
             </span>
           </div>
           {isComponentVisible && (
