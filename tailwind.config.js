@@ -2,6 +2,7 @@ module.exports = {
   mode: 'jit',
   darkMode: 'class', // or 'media' or 'class'
   purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
+  presets: [require('./tailwind-preset.js')],
   theme: {
     container: {
       center: true,
