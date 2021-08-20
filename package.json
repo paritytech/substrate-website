@@ -20,6 +20,7 @@
     "extract-locales": "yarn run babel --config-file ./babel-extract-locales.config.js -o tmp/chunk.js 'src/**/*.{js,jsx}' && rm -rf tmp"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "gatsby": "^3.2.1",
     "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-image": "^1.2.0",
