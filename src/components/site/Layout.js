@@ -7,7 +7,9 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="min-h-screen">
+        <div className="container py-20">{children}</div>
+      </main>
       <Footer />
     </>
   );
