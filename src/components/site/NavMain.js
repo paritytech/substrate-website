@@ -1,22 +1,26 @@
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import useComponentVisible from '../../hooks/use-component-visible';
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import { buildSubMenu, Link } from '../default/Link';
 
+const itemClass = 'pl-6 pr-12 py-2';
+
 const ChildMenu = ({ slugPrefix, childMenu }) => {
   const { t } = useTranslation();
 
   return (
-    <ul className="pt-4 m-0 list-none absolute top-0 left-full h-full rounded-tr-md rounded-br-md shadow-lg ring-1 ring-black dark:ring-white bg-white dark:bg-black">
+    <ul className="w-56 pt-4 m-0 list-none absolute top-0 left-full h-full rounded-tr-md rounded-br-md shadow-lg ring-1 ring-black dark:ring-white bg-white dark:bg-black">
       {childMenu.map(childMenuItem => {
         return (
           <li
-            className="m-0 px-6 py-2 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium text-black"
+            className="whitespace-nowrap m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium text-black"
             key={childMenuItem.id}
           >
-            <Link to={slugPrefix + childMenuItem.url}>{t(childMenuItem.id)}</Link>
+            <Link className={`${itemClass} block`} to={slugPrefix + childMenuItem.url}>
+              {t(childMenuItem.id)}
+            </Link>
           </li>
         );
       })}
@@ -27,34 +31,52 @@ const ChildMenu = ({ slugPrefix, childMenu }) => {
 const DropDownItem = ({ data }) => {
   const { t } = useTranslation();
   const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
-  // const [childMenuOpen, setChildMenuOpen] = useState(false);
+
+  const handleChildMenuOpen = () => {
+    setIsComponentVisible(!isComponentVisible);
+    data.setChildMenuOpen(true);
+  };
+
+  useEffect(() => {
+    !isComponentVisible && data.setChildMenuOpen(false);
+  }, [isComponentVisible]);
 
   return (
     <li className="m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium cursor-pointer">
       {data.childMenu ? (
         <div ref={ref}>
           <div
-            className="px-6 py-2 flex items-center justify-between"
-            onClick={() => setIsComponentVisible(!isComponentVisible)}
+            className={`${itemClass} pr-24 ${
+              isComponentVisible ? 'bg-substrateGreen-light underline hover:text-black' : ''
+            }`}
+            onClick={handleChildMenuOpen}
           >
             <span>{t(data.subMenuItem.id)}</span>
-            <svg
-              className={` `}
-              xmlns="http://www.w3.org/2000/svg"
-              width="7"
-              height="13"
-              viewBox="0 0 7 13"
-              fill="none"
-            >
-              <path d="M1 12L6 6.5L1 1" stroke="#242A35" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            <span className="absolute right-6 pt-1.5">
+              <svg
+                className={` `}
+                xmlns="http://www.w3.org/2000/svg"
+                width="7"
+                height="13"
+                viewBox="0 0 7 13"
+                fill="none"
+              >
+                <path
+                  d="M1 12L6 6.5L1 1"
+                  stroke="#242A35"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
           </div>
           {isComponentVisible && (
             <ChildMenu slugPrefix={data.menuItem.url + data.subMenuItem.url} childMenu={data.childMenu} />
           )}
         </div>
       ) : (
-        <Link to={data.menuItem.url + data.subMenuItem.url} className="block px-6 py-2">
+        <Link to={data.menuItem.url + data.subMenuItem.url} className={`${itemClass} block`}>
           {t(data.subMenuItem.id)}
         </Link>
       )}
@@ -67,12 +89,15 @@ const DropDown = ({ menuItem }) => {
   const { menus } = useSiteMenus();
   const subMenu = buildSubMenu(menus, menuItem);
   const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
+  const [childMenuOpen, setChildMenuOpen] = useState(false);
 
   return (
     <li className="list-none m-0" key={menuItem.id} ref={ref}>
       <button className="group focus:outline-none" onClick={() => setIsComponentVisible(!isComponentVisible)}>
         <span
-          className={`font-medium group-hover:text-substrateGreen ${isComponentVisible ? 'text-substrateGreen' : null}`}
+          className={` font-medium group-hover:text-substrateGreen ${
+            isComponentVisible ? 'text-substrateGreen' : null
+          }`}
         >
           {t(menuItem.id)}
         </span>
@@ -91,15 +116,12 @@ const DropDown = ({ menuItem }) => {
       </button>
 
       {isComponentVisible && subMenu && (
-        <div className={`absolute mt-4 -ml-2 ${isComponentVisible ? `animate-fade-in-down` : 'animate-fade-out'}`}>
+        <div className={`absolute mt-4 ${isComponentVisible ? `animate-fade-in-down` : 'animate-fade-out'}`}>
           <ul
-            className={`list-none relative pt-4 pb-[1.2rem] bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md`}
+            className={`m-0 list-none relative pt-4 pb-5 bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md ${
+              childMenuOpen ? `rounded-tr-none rounded-br-none` : ''
+            }`}
           >
-            {/* <ul
-          className={`list-none relative pt-4 pb-[1.2rem] bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md ${
-            itemNavOpen ? `rounded-tr-none rounded-br-none` : null
-          }`}
-        > */}
             {subMenu.map(subMenuItem => {
               const child = subMenuItem.child;
               const childMenu = menus[child];
@@ -111,6 +133,7 @@ const DropDown = ({ menuItem }) => {
                     menuItem,
                     subMenuItem,
                     childMenu,
+                    setChildMenuOpen,
                   }}
                 ></DropDownItem>
               );
