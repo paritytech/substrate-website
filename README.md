@@ -1,4 +1,4 @@
-# Gatsby website starter
+# `substrate.io`
 
 **Install**
 

@@ -5,7 +5,7 @@ const Link = ({ to, title, children, ...other }) => {
   const external = testExternalLink(to);
   if (external) {
     return (
-      <a href={to} title={title} target="_blank" rel="noreferrer noopener">
+      <a href={to} title={title} {...other} target="_blank" rel="noreferrer noopener">
         {children}
       </a>
     );
