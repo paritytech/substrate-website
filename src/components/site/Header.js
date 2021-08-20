@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
 import useScrollListener from '../../hooks/use-scroll-listener';
+import Icon from '../default/Icon';
 import DocsButton from './DocsButton';
 import Logo from './Logo';
 import NavMain from './NavMain';
@@ -12,6 +13,7 @@ const Header = () => {
   const [menuHeight, setMenuHeight] = useState('h-24');
 
   useEffect(() => {
+    /* TODO: add into context */
     if (scroll.y > 15) {
       setMenuHeight('h-16');
     } else if (scroll.y < 1) {
@@ -27,6 +29,9 @@ const Header = () => {
             <Link to="/">
               <Logo />
             </Link>
+          </div>
+          <div className="lg:hidden cursor-pointer">
+            <Icon name="hamburger-toggle" />
           </div>
           <div className="hidden lg:flex lg:justify-between lg:items-center w-full">
             <div className="w-2/3 max-w-3xl">

@@ -89,6 +89,15 @@ module.exports = {
     `gatsby-plugin-sharp`,
     /* querying for images used in dynamic components */
     `gatsby-transformer-sharp`,
+    /* Adds svg-react-loader to gatsby webpack config */
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `${__dirname}/src/images/svg/`,
+        },
+      },
+    },
 
     /* allow to use relative path for images in markdown and frontmatter;
      used to work with netlify-cms, loaded after the media themselves */
