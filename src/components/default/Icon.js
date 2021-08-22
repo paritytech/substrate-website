@@ -5,6 +5,7 @@ import logoWhite from '../../images/svg/logo-white.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
 import close from '../../images/svg/ui/close-x.svg';
 import hamburger from '../../images/svg/ui/hamburger-toggle.svg';
+import sidebarToggle from '../../images/svg/ui/sidebar-toggle.svg';
 
 const iconsMap = {
   /* brand */
@@ -14,6 +15,7 @@ const iconsMap = {
   'hamburger-toggle': hamburger,
   'close-x': close,
   'arrow-next': arrowNext,
+  'sidebar-toggle': sidebarToggle,
 };
 
 export default function Icon({ name }) {
