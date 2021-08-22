@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React, { useEffect, useState } from 'react';
 
@@ -44,16 +45,19 @@ const DropDownItem = ({ data }) => {
 
   return (
     <li
-      className={`m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium cursor-pointer ${
-        isComponentVisible && 'hover:text-black'
-      }`}
+      className={cx(
+        'm-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium cursor-pointer',
+        {
+          'hover:text-black': isComponentVisible,
+        }
+      )}
     >
       {data.childMenu ? (
         <div ref={ref}>
           <div
-            className={`${itemClass} pr-24 ${
-              isComponentVisible ? 'bg-substrateGreen-light underline hover:text-black' : ''
-            }`}
+            className={cx(itemClass, 'pr-24', {
+              'bg-substrateGreen-light underline hover:text-black': isComponentVisible,
+            })}
             onClick={handleChildMenuOpen}
           >
             <span>{t(data.subMenuItem.id)}</span>
@@ -66,7 +70,7 @@ const DropDownItem = ({ data }) => {
           )}
         </div>
       ) : (
-        <Link to={data.menuItem.url + data.subMenuItem.url} className={`${itemClass} block`}>
+        <Link to={data.menuItem.url + data.subMenuItem.url} className={cx(itemClass, 'block')}>
           {t(data.subMenuItem.id)}
         </Link>
       )}
@@ -84,29 +88,35 @@ const DropDown = ({ menuItem }) => {
   return (
     <li className="list-none m-0" key={menuItem.id} ref={ref}>
       <button className="group focus:outline-none" onClick={() => setIsComponentVisible(!isComponentVisible)}>
-        <span className={`font-medium group-hover:text-substrateGreen ${isComponentVisible && 'text-substrateGreen'} `}>
+        <span
+          className={cx('font-medium group-hover:text-substrateGreen', { 'text-substrateGreen': isComponentVisible })}
+        >
           {t(menuItem.id)}
         </span>
-        <svg
-          className={`inline-block xl:ml-2 fill-current group-hover:text-substrateGreen dark:text-white ${
-            isComponentVisible ? 'transform rotate-180 text-substrateGreen' : `text-black`
-          }`}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="-5 -8 24 24"
-          width="16"
-          height="16"
-          preserveAspectRatio="xMinYMin"
+        <span
+          className={cx('inline-block align-middle xl:ml-2', {
+            'transform rotate-180 text-substrateGreen': isComponentVisible,
+            'text-black': !isComponentVisible,
+          })}
         >
-          <path d="M7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364l4.95 4.95z"></path>
-        </svg>
+          <Icon name="arrow-dropdown" />
+        </span>
       </button>
 
       {isComponentVisible && subMenu && (
-        <div className={`absolute mt-4 ${isComponentVisible ? `animate-fade-in-down` : 'animate-fade-out'}`}>
+        <div
+          className={cx('absolute mt-4', {
+            'animate-fade-in-down': isComponentVisible,
+            'animate-fade-out': !isComponentVisible,
+          })}
+        >
           <ul
-            className={`m-0 list-none relative pt-4 pb-5 bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md ${
-              isChildMenuOpen ? `rounded-tr-none rounded-br-none` : ''
-            }`}
+            className={cx(
+              'm-0 list-none relative pt-4 pb-5 bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md',
+              {
+                'rounded-tr-none rounded-br-none': isChildMenuOpen,
+              }
+            )}
           >
             {subMenu.map(subMenuItem => {
               const child = subMenuItem.child;

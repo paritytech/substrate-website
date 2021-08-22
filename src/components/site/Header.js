@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import { Link } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
@@ -10,27 +11,31 @@ import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const scroll = useScrollListener();
-  const [menuHeight, setMenuHeight] = useState('h-24');
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
-    console.log('now');
   };
 
   useEffect(() => {
     /* TODO: add into context */
     if (scroll.y > 15) {
-      setMenuHeight('h-16');
+      setIsScrolled(true);
     } else if (scroll.y < 1) {
-      setMenuHeight('h-24');
+      setIsScrolled(false);
     }
   }, [scroll.y]);
 
   return (
     <header className="sticky top-0 z-10 border-b bg-white dark:bg-black border-gray-200 dark:border-gray-700">
       <div className="px-4 xl:px-12">
-        <div className={`flex items-center justify-between transition-height ease-in-out ${menuHeight}`}>
+        <div
+          className={cx('flex items-center justify-between transition-height ease-in-out', {
+            'h-24': !isScrolled,
+            'h-16': isScrolled,
+          })}
+        >
           <div className="w-40 relative transform transition-all duration-300 ease-in-out hover:opacity-50">
             <Link to="/">
               <Icon name="logo" />
