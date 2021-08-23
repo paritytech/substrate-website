@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 import useScrollListener from '../../hooks/use-scroll-listener';
 import Icon from '../default/Icon';
-import Logo from '../Site/Logo';
+import Logo from '../site/Logo';
 import DocsButton from './DocsButton';
 import MobileNav from './MobileNav';
 import NavMain from './NavMain';
