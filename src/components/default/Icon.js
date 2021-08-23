@@ -1,6 +1,5 @@
 import React from 'react';
 
-import logo from '../../images/svg/logo.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
@@ -13,7 +12,6 @@ import sun from '../../images/svg/ui/sun.svg';
 
 const iconsMap = {
   /* brand */
-  logo: logo,
   'logo-white': logoWhite,
   /* ui */
   'hamburger-toggle': hamburger,

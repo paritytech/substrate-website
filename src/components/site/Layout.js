@@ -23,7 +23,7 @@ function LayoutSidebar({ children }) {
               className="bg-black dark:bg-white p-3 mr-4 rounded-lg opacity-90 hover:opacity-100 focus:outline-none"
             >
               <div
-                className={cx('transition transform duration-300', {
+                className={cx('transition transform duration-300 fill-current text-white', {
                   'rotate-180': isSidebarOpen,
                   'rotate-0': !isSidebarOpen,
                 })}

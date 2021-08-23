@@ -94,10 +94,13 @@ const DropDown = ({ menuItem }) => {
           {t(menuItem.id)}
         </span>
         <span
-          className={cx('inline-block align-middle xl:ml-2', {
-            'transform rotate-180 text-substrateGreen': isComponentVisible,
-            'text-black': !isComponentVisible,
-          })}
+          className={cx(
+            'inline-block align-middle xl:ml-2 fill-current group-hover:text-substrateGreen dark:text-white',
+            {
+              'transform rotate-180 text-substrateGreen': isComponentVisible,
+              'text-black': !isComponentVisible,
+            }
+          )}
         >
           <Icon name="arrow-dropdown" />
         </span>

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 import useScrollListener from '../../hooks/use-scroll-listener';
 import Icon from '../default/Icon';
+import Logo from '../Site/Logo';
 import DocsButton from './DocsButton';
 import MobileNav from './MobileNav';
 import NavMain from './NavMain';
@@ -38,7 +39,7 @@ const Header = () => {
         >
           <div className="w-40 relative transform transition-all duration-300 ease-in-out hover:opacity-50">
             <Link to="/">
-              <Icon name="logo" />
+              <Logo />
             </Link>
           </div>
           <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
