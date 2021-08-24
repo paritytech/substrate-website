@@ -31,7 +31,7 @@ export default function IndexPage() {
               these developers realized they were recreating much of the same functionality but with different
               limitations such as scale, governance, forks, interoperability, and upgrades.
             </p>
-            <p>
+            <p className="font-bold">
               {`Substrate was born from the realization that developers shouldn't have to recreate fundamentals to build
                 a blockchain that alleviates their limitations. The information below will help you understand why
                 Substrate is the best technology to build on now and into the future.`}
@@ -85,7 +85,7 @@ export default function IndexPage() {
       </Section>
       <Section>
         <h2>Substrate is:</h2>
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-10">
           <Card>
             <div className="flex justify-between">
               <div className="w-1/2">
@@ -137,7 +137,12 @@ export default function IndexPage() {
               </div>
               <div className="bg-gray-200 w-40 h-40 m-8">Placeholder</div>
             </div>
-            <p className="font-bold border-b-2 border-black inline">Read More {'->'}</p>
+            <p className="font-bold border-b-2 border-black inline">
+              Read More{' '}
+              <span className="fill-current text-black dark:text-white inline-block">
+                <Icon name="arrow-more" />
+              </span>
+            </p>
           </Card>
         </div>
       </Section>

@@ -3,6 +3,7 @@ import React from 'react';
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
+import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
 import close from '../../images/svg/ui/close-x.svg';
 import docs from '../../images/svg/ui/docs.svg';
@@ -19,6 +20,7 @@ const iconsMap = {
   'close-x': close,
   'arrow-next': arrowNext,
   'arrow-dropdown': arrowDropdown,
+  'arrow-more': arrowMore,
   'sidebar-toggle': sidebarToggle,
   docs: docs,
   moon: moon,
