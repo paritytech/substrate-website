@@ -11,7 +11,7 @@ export default function IndexPage() {
     <Layout layout="sidebar">
       <SEO title="Substrate Technology" />
       <Section>
-        <h1 className="text-7xl font-extrabold">Substrate Technology</h1>
+        <h1 className="text-7xl font-extrabold">Substrate Technology Test</h1>
         <p>
           What if developers could build on a blockchain framework specifically optimized for their requirements that
           seamlessly evolves with their needs and without forks? Welcome to Substrate, the only flexible, open,
