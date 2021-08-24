@@ -12,9 +12,9 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Substrate Technology" />
       <Section>
-        <div className="grid grid-cols-2 gap-8 mt-8">
+        <div className="lg:grid grid-cols-2 gap-8 lg:mt-8">
           <div className="mr-8">
-            <h1 className="text-7xl font-extrabold my-20">Substrate Technology</h1>
+            <h1 className="text-7xl font-extrabold my-10 md:my-20">Substrate Technology</h1>
             <p className="text-2xl font-bold">
               What if developers could build on a blockchain framework specifically optimized for their requirements
               that seamlessly evolves with their needs and without forks?
@@ -44,7 +44,7 @@ export default function IndexPage() {
         </div>
       </Section>
       <Section>
-        <div className="grid grid-cols-3 gap-16 xl:gap-24">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-16 xl:gap-24">
           <div>
             <Icon name="placeholder" />
             <h5 className="my-4">Cross-Language Support with WebAssembly</h5>
@@ -85,7 +85,7 @@ export default function IndexPage() {
       </Section>
       <Section>
         <h2>Substrate is:</h2>
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2 gap-8">
           <Card>
             <div className="flex justify-between">
               <div className="w-1/2">
