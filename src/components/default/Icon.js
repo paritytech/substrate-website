@@ -1,6 +1,7 @@
 import React from 'react';
 
 import logoWhite from '../../images/svg/logo-white.svg';
+import placeholder from '../../images/svg/placeholder.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
 import close from '../../images/svg/ui/close-x.svg';
@@ -22,6 +23,8 @@ const iconsMap = {
   docs: docs,
   moon: moon,
   sun: sun,
+  /* mockup */
+  placeholder: placeholder,
 };
 
 export default function Icon({ name }) {
