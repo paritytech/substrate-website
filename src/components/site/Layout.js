@@ -2,8 +2,8 @@ import cx from 'classnames';
 import React, { useState } from 'react';
 
 import Icon from '../default/Icon';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from '../site/Footer';
+import Header from '../site/Header';
 
 function LayoutSidebar({ children }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
