@@ -7,6 +7,37 @@ import Card from '../components/layout/technology/Card';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 
+const highlights = [
+  {
+    title: 'Cross-Language Support with WebAssembly',
+    description:
+      'WebAssembly is the next web standard. Write your blockchain logic in any language that can compile to it, including C/C++, C#, Typescript, and Rust.',
+  },
+  {
+    title: 'Light-Client Friendly',
+    description:
+      'Substrate comes with a light client built in from day one. Use your mobile-ready blockchain anywhere.',
+  },
+  {
+    title: 'Forkless Upgrades',
+    description: 'Upgrading blockchains has never been easier. With Substrate, everybody stays on the same path.',
+  },
+  {
+    title: 'Built-In Coordination',
+    description: 'Substrate comes with the tools to help networks decide which upgrades to implement.',
+  },
+  {
+    title: 'Deterministic Finality',
+    description:
+      'Substrate’s GRANDPA algorithm reaches and finalizes consensus quickly, across networks big and small.',
+  },
+  {
+    title: 'Seamless Integration',
+    description:
+      'Integrate your existing data, business logic, and other complex tasks into your blockchain with low overhead using off-chain workers.',
+  },
+];
+
 export default function IndexPage() {
   return (
     <Layout>
@@ -44,128 +75,36 @@ export default function IndexPage() {
         </div>
       </Section>
       <Section>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-16 xl:gap-24">
-          <div>
-            <Icon name="placeholder" />
-            <h5 className="my-4">Cross-Language Support with WebAssembly</h5>
-            <p>
-              WebAssembly is the next web standard. Write your blockchain logic in any language that can compile to it,
-              including C/C++, C#, Typescript, and Rust.
-            </p>
-          </div>
-          <div>
-            <Icon name="placeholder" />
-            <h5 className="my-4">Light-Client Friendly</h5>
-            <p>Substrate comes with a light client built in from day one. Use your mobile-ready blockchain anywhere.</p>
-          </div>
-          <div>
-            <Icon name="placeholder" />
-            <h5 className="my-4">Forkless Upgrades</h5>
-            <p>Upgrading blockchains has never been easier. With Substrate, everybody stays on the same path.</p>
-          </div>
-          <div>
-            <Icon name="placeholder" />
-            <h5 className="my-4">Built-In Coordination</h5>
-            <p>Substrate comes with the tools to help networks decide which upgrades to implement.</p>
-          </div>
-          <div>
-            <Icon name="placeholder" />
-            <h5 className="my-4">Deterministic Finality</h5>
-            <p>Substrate’s GRANDPA algorithm reaches and finalizes consensus quickly, across networks big and small.</p>
-          </div>
-          <div>
-            <Icon name="placeholder" />
-            <h5 className="my-4">Seamless Integration</h5>
-            <p>
-              Integrate your existing data, business logic, and other complex tasks into your blockchain with low
-              overhead using off-chain workers.
-            </p>
-          </div>
-        </div>
+        <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-16 xl:gap-24 list-none m-0">
+          {highlights.map(item => {
+            return (
+              <li key={item.title}>
+                <Icon name="placeholder" />
+                <h5 className="my-4">{item.title}</h5>
+                <p>{item.description}</p>
+              </li>
+            );
+          })}
+        </ul>
       </Section>
       <Section>
-        <h2>Substrate is:</h2>
+        <h2 className="text-4xl mb-10">Substrate is:</h2>
         <div className="grid lg:grid-cols-2 gap-10">
-          <Card link="/technology/flexible">
-            <div className="flex flex-col justify-between w-1/2">
-              <div>
-                <h3>Flexible</h3>
-                <p>
-                  The flexible nature of Substrate alleviates the tension of tradeoffs by enabling developers to create
-                  the most optimal blockchain for their specific needs.
-                </p>
-              </div>
-              <div>
-                <p className="font-bold border-b-2 border-black inline">
-                  Read More{' '}
-                  <span className="fill-current text-black dark:text-white inline-block">
-                    <Icon name="arrow-more" />
-                  </span>
-                </p>
-              </div>
-            </div>
-            <div className="bg-gray-200 w-40 h-40 m-8 self-center">Placeholder</div>
+          <Card title="Flexible" link="/technology/flexible">
+            The flexible nature of Substrate alleviates the tension of tradeoffs by enabling developers to create the
+            most optimal blockchain for their specific needs.
           </Card>
-          <Card link="/technology/open">
-            <div className="flex flex-col justify-between w-1/2">
-              <div>
-                <h3>Open</h3>
-                <p>
-                  The combination of an open source, customizable architecture that enables developers to use the
-                  tooling of their choice with a robust, active community makes Substrate the most open way to build.
-                </p>
-              </div>
-              <div>
-                <p className="font-bold border-b-2 border-black inline">
-                  Read More{' '}
-                  <span className="fill-current text-black dark:text-white inline-block">
-                    <Icon name="arrow-more" />
-                  </span>
-                </p>
-              </div>
-            </div>
-            <div className="bg-gray-200 w-40 h-40 m-8 self-center">Placeholder</div>
+          <Card title="Open" link="/technology/open">
+            The combination of an open source, customizable architecture that enables developers to use the tooling of
+            their choice with a robust, active community makes Substrate the most open way to build.
           </Card>
-          <Card link="/technology/interoperable">
-            <div className="flex flex-col justify-between w-1/2">
-              <div>
-                <h3>Interoperable</h3>
-                <p>
-                  Interoperability without forgoing compatibility, security, or efficiency; learn how Substrate takes a
-                  unique, multifaceted approach to address each of these.
-                </p>
-              </div>
-              <div>
-                <p className="font-bold border-b-2 border-black inline">
-                  Read More{' '}
-                  <span className="fill-current text-black dark:text-white inline-block">
-                    <Icon name="arrow-more" />
-                  </span>
-                </p>
-              </div>
-            </div>
-            <div className="bg-gray-200 w-40 h-40 m-8 self-center">Placeholder</div>
+          <Card title="Interoperable" link="/technology/interoperable">
+            Interoperability without forgoing compatibility, security, or efficiency; learn how Substrate takes a
+            unique, multifaceted approach to address each of these.
           </Card>
-          <Card link="/technology/future-proof">
-            <div className="flex flex-col justify-between w-1/2">
-              <div>
-                <h3>Future-Proof</h3>
-                <p>
-                  Substrate enables developers to move faster and evolve their architecture as their needs evolve.
-                  Founders and Developers can be confident that their blockchain is ready for whatever the future
-                  brings.
-                </p>
-              </div>
-              <div>
-                <p className="font-bold border-b-2 border-black inline">
-                  Read More{' '}
-                  <span className="fill-current text-black dark:text-white inline-block">
-                    <Icon name="arrow-more" />
-                  </span>
-                </p>
-              </div>
-            </div>
-            <div className="bg-gray-200 w-40 h-40 m-8 self-center">Placeholder</div>
+          <Card title="Future-Proof" link="/technology/future-proof">
+            Substrate enables developers to move faster and evolve their architecture as their needs evolve. Founders
+            and Developers can be confident that their blockchain is ready for whatever the future brings.
           </Card>
         </div>
       </Section>
