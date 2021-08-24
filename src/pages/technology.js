@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import Icon from '../components/default/Icon';
+import { Link } from '../components/default/Link';
 import Section from '../components/layout/Section';
 import Card from '../components/layout/technology/Card';
 import Layout from '../components/site/Layout';
@@ -51,7 +52,23 @@ export default function IndexPage() {
               that seamlessly evolves with their needs and without forks?
             </p>
             <p className="text-2xl font-bold">
-              Welcome to Substrate, the only flexible, open, interoperable, and future proof blockchain framework.
+              Welcome to Substrate, the only{' '}
+              <Link className="text-substrateBlue" to="/technology/flexible">
+                flexible
+              </Link>
+              ,{' '}
+              <Link className="text-substrateBlue" to="/technology/open">
+                open
+              </Link>
+              ,{' '}
+              <Link className="text-substrateBlue" to="/technology/interoperable">
+                interoperable
+              </Link>
+              , and{' '}
+              <Link className="text-substrateBlue" to="/technology/future-proof">
+                future proof
+              </Link>{' '}
+              blockchain framework.
             </p>
           </div>
           <div>

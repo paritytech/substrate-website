@@ -13,12 +13,10 @@ const Card = ({ title, children, link }) => {
             <p>{children}</p>
           </div>
           <div>
-            <p className="font-bold border-b-2 border-black inline">
-              Read More{' '}
-              <span className="fill-current text-black dark:text-white inline-block">
-                <Icon name="arrow-more" />
-              </span>
-            </p>
+            <p className="font-bold border-b-2 border-black inline">Read More</p>{' '}
+            <span className="fill-current border-b-0 text-black dark:text-white inline-block">
+              <Icon name="arrow-more" />
+            </span>
           </div>
         </div>
         <div className="bg-gray-200 w-40 h-40 m-8 self-center">Placeholder</div>
