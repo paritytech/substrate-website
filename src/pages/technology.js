@@ -24,7 +24,7 @@ export default function IndexPage() {
             </p>
           </div>
           <div>
-            <div className="bg-gray-200 h-80 w-160">Placeholder</div>
+            <div className="bg-gray-200 h-80 w-160 mb-6">Placeholder</div>
             <p>
               Substrate was created by OGs of blockchain who set out to overcome the limitations they experienced
               building blockchains. Through the process of building clients in the early days of Bitcoin and Ethereum,
@@ -87,77 +87,85 @@ export default function IndexPage() {
         <h2>Substrate is:</h2>
         <div className="grid lg:grid-cols-2 gap-10">
           <Card link="/technology/flexible">
-            <div className="flex justify-between">
-              <div className="w-1/2">
+            <div className="flex flex-col justify-between w-1/2">
+              <div>
                 <h3>Flexible</h3>
                 <p>
                   The flexible nature of Substrate alleviates the tension of tradeoffs by enabling developers to create
                   the most optimal blockchain for their specific needs.
                 </p>
               </div>
-              <div className="bg-gray-200 w-40 h-40 m-8">Placeholder</div>
+              <div>
+                <p className="font-bold border-b-2 border-black inline">
+                  Read More{' '}
+                  <span className="fill-current text-black dark:text-white inline-block">
+                    <Icon name="arrow-more" />
+                  </span>
+                </p>
+              </div>
             </div>
-            <p className="font-bold border-b-2 border-black inline">
-              Read More{' '}
-              <span className="fill-current text-black dark:text-white inline-block">
-                <Icon name="arrow-more" />
-              </span>
-            </p>
+            <div className="bg-gray-200 w-40 h-40 m-8 self-center">Placeholder</div>
           </Card>
           <Card link="/technology/open">
-            <div className="flex justify-between">
-              <div className="w-1/2">
+            <div className="flex flex-col justify-between w-1/2">
+              <div>
                 <h3>Open</h3>
                 <p>
                   The combination of an open source, customizable architecture that enables developers to use the
                   tooling of their choice with a robust, active community makes Substrate the most open way to build.
                 </p>
               </div>
-              <div className="bg-gray-200 w-40 h-40 m-8">Placeholder</div>
+              <div>
+                <p className="font-bold border-b-2 border-black inline">
+                  Read More{' '}
+                  <span className="fill-current text-black dark:text-white inline-block">
+                    <Icon name="arrow-more" />
+                  </span>
+                </p>
+              </div>
             </div>
-            <p className="font-bold border-b-2 border-black inline">
-              Read More{' '}
-              <span className="fill-current text-black dark:text-white inline-block">
-                <Icon name="arrow-more" />
-              </span>
-            </p>
+            <div className="bg-gray-200 w-40 h-40 m-8 self-center">Placeholder</div>
           </Card>
           <Card link="/technology/interoperable">
-            <div className="flex justify-between">
-              <div className="w-1/2">
+            <div className="flex flex-col justify-between w-1/2">
+              <div>
                 <h3>Interoperable</h3>
                 <p>
                   Interoperability without forgoing compatibility, security, or efficiency; learn how Substrate takes a
                   unique, multifaceted approach to address each of these.
                 </p>
               </div>
-              <div className="bg-gray-200 w-40 h-40 m-8">Placeholder</div>
+              <div>
+                <p className="font-bold border-b-2 border-black inline">
+                  Read More{' '}
+                  <span className="fill-current text-black dark:text-white inline-block">
+                    <Icon name="arrow-more" />
+                  </span>
+                </p>
+              </div>
             </div>
-            <p className="font-bold border-b-2 border-black inline">
-              Read More{' '}
-              <span className="fill-current text-black dark:text-white inline-block">
-                <Icon name="arrow-more" />
-              </span>
-            </p>
+            <div className="bg-gray-200 w-40 h-40 m-8 self-center">Placeholder</div>
           </Card>
           <Card link="/technology/future-proof">
-            <div className="flex justify-between">
-              <div className="w-1/2">
-                <h3>Future Proof</h3>
+            <div className="flex flex-col justify-between w-1/2">
+              <div>
+                <h3>Future-Proof</h3>
                 <p>
                   Substrate enables developers to move faster and evolve their architecture as their needs evolve.
                   Founders and Developers can be confident that their blockchain is ready for whatever the future
                   brings.
                 </p>
               </div>
-              <div className="bg-gray-200 w-40 h-40 m-8">Placeholder</div>
+              <div>
+                <p className="font-bold border-b-2 border-black inline">
+                  Read More{' '}
+                  <span className="fill-current text-black dark:text-white inline-block">
+                    <Icon name="arrow-more" />
+                  </span>
+                </p>
+              </div>
             </div>
-            <p className="font-bold border-b-2 border-black inline">
-              Read More{' '}
-              <span className="fill-current text-black dark:text-white inline-block">
-                <Icon name="arrow-more" />
-              </span>
-            </p>
+            <div className="bg-gray-200 w-40 h-40 m-8 self-center">Placeholder</div>
           </Card>
         </div>
       </Section>
