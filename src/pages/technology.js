@@ -40,6 +40,29 @@ const highlights = [
   },
 ];
 
+const cards = [
+  {
+    title: 'Flexible',
+    link: '/technology/flexible',
+    description: `The flexible nature of Substrate alleviates the tension of tradeoffs by enabling developers to create the most optimal blockchain for their specific needs.`,
+  },
+  {
+    title: 'Open',
+    link: '/technology/open',
+    description: `The combination of an open source, customizable architecture that enables developers to use the tooling of their choice with a robust, active community makes Substrate the most open way to build.`,
+  },
+  {
+    title: 'Interoperable',
+    link: '/technology/interoperable',
+    description: `Interoperability without forgoing compatibility, security, or efficiency; learn how Substrate takes a unique, multifaceted approach to address each of these.`,
+  },
+  {
+    title: 'Future-Proof',
+    link: '/technology/future-proof',
+    description: `Substrate enables developers to move faster and evolve their architecture as their needs evolve. Founders and Developers can be confident that their blockchain is ready for whatever the future brings.`,
+  },
+];
+
 export default function IndexPage() {
   return (
     <Layout mode="full">
@@ -95,14 +118,14 @@ export default function IndexPage() {
         </Section>
         <Section>
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-16 xl:gap-24 list-none m-0">
-            {highlights.map(item => {
+            {highlights.map(({ title, description }) => {
               return (
-                <li className="m-0" key={item.title}>
+                <li className="m-0" key={title}>
                   <div className="w-16">
                     <Icon name="placeholder" className="w-full h-auto" />
                   </div>
-                  <h5 className="my-4">{item.title}</h5>
-                  <p>{item.description}</p>
+                  <h5 className="my-4">{title}</h5>
+                  <p>{description}</p>
                 </li>
               );
             })}
@@ -111,22 +134,13 @@ export default function IndexPage() {
         <Section>
           <h2 className="text-4xl mb-10">Substrate is:</h2>
           <div className="grid lg:grid-cols-2 gap-10">
-            <Card title="Flexible" link="/technology/flexible">
-              The flexible nature of Substrate alleviates the tension of tradeoffs by enabling developers to create the
-              most optimal blockchain for their specific needs.
-            </Card>
-            <Card title="Open" link="/technology/open">
-              The combination of an open source, customizable architecture that enables developers to use the tooling of
-              their choice with a robust, active community makes Substrate the most open way to build.
-            </Card>
-            <Card title="Interoperable" link="/technology/interoperable">
-              Interoperability without forgoing compatibility, security, or efficiency; learn how Substrate takes a
-              unique, multifaceted approach to address each of these.
-            </Card>
-            <Card title="Future-Proof" link="/technology/future-proof">
-              Substrate enables developers to move faster and evolve their architecture as their needs evolve. Founders
-              and Developers can be confident that their blockchain is ready for whatever the future brings.
-            </Card>
+            {cards.map(({ title, link, description }, index) => {
+              return (
+                <Card key={index} title={title} link={link} index={index}>
+                  {description}
+                </Card>
+              );
+            })}
           </div>
         </Section>
       </Article>

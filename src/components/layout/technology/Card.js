@@ -3,9 +3,11 @@ import React from 'react';
 import Icon from '../../default/Icon';
 import { Link } from '../../default/Link';
 
-const Card = ({ title, children, link }) => {
+const Card = ({ title, children, link, index }) => {
+  const aosDelay = index * 200;
+
   return (
-    <Link to={link} data-aos="fade-up">
+    <Link to={link} data-aos="fade-up" data-aos-delay={aosDelay}>
       <div className="min-h-full md:flex justify-between cursor-pointer shadow-xl p-8 hover:scale-105 transition-transform rounded-md">
         <div className="flex flex-col justify-between md:w-1/2 mb-8 md:mb-0">
           <div>
