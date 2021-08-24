@@ -6,7 +6,7 @@ import { Link } from '../../default/Link';
 const Card = ({ title, children, link }) => {
   return (
     <Link to={link} data-aos="fade-up">
-      <div className="min-h-full md:flex justify-between cursor-pointer shadow-xl p-8 hover:scale-105 transition-transform">
+      <div className="min-h-full md:flex justify-between cursor-pointer shadow-xl p-8 hover:scale-105 transition-transform rounded-md">
         <div className="flex flex-col justify-between md:w-1/2 mb-8 md:mb-0">
           <div>
             <h3>{title}</h3>
