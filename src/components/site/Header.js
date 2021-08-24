@@ -10,7 +10,7 @@ import MobileNav from './MobileNav';
 import NavMain from './NavMain';
 import ThemeToggle from './ThemeToggle';
 
-const Header = () => {
+const Header = ({ mode }) => {
   const scroll = useScrollListener();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -29,7 +29,11 @@ const Header = () => {
   }, [scroll.y]);
 
   return (
-    <header className="sticky top-0 z-10 border-b bg-white dark:bg-black border-gray-200 dark:border-gray-700">
+    <header
+      className={cx('sticky top-0 z-10 border-b bg-white dark:bg-black border-gray-200 dark:border-gray-700', {
+        'border-b-0': mode === 'full' && !isScrolled,
+      })}
+    >
       <div className="px-4 xl:px-12">
         <div
           className={cx('flex items-center justify-between transition-height ease-in-out', {

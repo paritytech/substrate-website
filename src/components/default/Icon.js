@@ -29,9 +29,9 @@ const iconsMap = {
   placeholder: placeholder,
 };
 
-export default function Icon({ name }) {
+export default function Icon({ name, className }) {
   if (!name) return <span className="w-5"></span>;
   const IconComponent = iconsMap[name];
   if (!IconComponent) return <span className="w-5"></span>;
-  return <IconComponent name={name}></IconComponent>;
+  return <IconComponent name={name} className={className}></IconComponent>;
 }

@@ -6,7 +6,7 @@ import SEO from '../components/site/SEO';
 
 export default function IndexPage() {
   return (
-    <Layout>
+    <Layout mode="full">
       <SEO title="Home" />
       <div className="lg:w-1/2">
         <h1 className="text-7xl font-extrabold">_homepage</h1>

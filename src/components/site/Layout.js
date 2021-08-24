@@ -54,12 +54,12 @@ function LayoutSidebar({ children }) {
   );
 }
 
-export default function Layout({ layout = 'default', children }) {
+export default function Layout({ layout = 'default', mode = 'default', children }) {
   return (
     <>
-      <Header />
+      <Header mode={mode} />
       <main className="min-h-screen">
-        {layout === 'default' && <div>{children}</div>}
+        {layout === 'default' && <>{children}</>}
         {layout === 'sidebar' && <LayoutSidebar>{children}</LayoutSidebar>}
       </main>
       <Footer />
