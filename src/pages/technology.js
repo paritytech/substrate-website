@@ -86,7 +86,7 @@ export default function IndexPage() {
       <Section>
         <h2>Substrate is:</h2>
         <div className="grid lg:grid-cols-2 gap-10">
-          <Card>
+          <Card link="/technology/flexible">
             <div className="flex justify-between">
               <div className="w-1/2">
                 <h3>Flexible</h3>
@@ -97,9 +97,14 @@ export default function IndexPage() {
               </div>
               <div className="bg-gray-200 w-40 h-40 m-8">Placeholder</div>
             </div>
-            <p className="font-bold border-b-2 border-black inline">Read More {'->'}</p>
+            <p className="font-bold border-b-2 border-black inline">
+              Read More{' '}
+              <span className="fill-current text-black dark:text-white inline-block">
+                <Icon name="arrow-more" />
+              </span>
+            </p>
           </Card>
-          <Card>
+          <Card link="/technology/open">
             <div className="flex justify-between">
               <div className="w-1/2">
                 <h3>Open</h3>
@@ -110,9 +115,14 @@ export default function IndexPage() {
               </div>
               <div className="bg-gray-200 w-40 h-40 m-8">Placeholder</div>
             </div>
-            <p className="font-bold border-b-2 border-black inline">Read More {'->'}</p>
+            <p className="font-bold border-b-2 border-black inline">
+              Read More{' '}
+              <span className="fill-current text-black dark:text-white inline-block">
+                <Icon name="arrow-more" />
+              </span>
+            </p>
           </Card>
-          <Card>
+          <Card link="/technology/interoperable">
             <div className="flex justify-between">
               <div className="w-1/2">
                 <h3>Interoperable</h3>
@@ -123,9 +133,14 @@ export default function IndexPage() {
               </div>
               <div className="bg-gray-200 w-40 h-40 m-8">Placeholder</div>
             </div>
-            <p className="font-bold border-b-2 border-black inline">Read More {'->'}</p>
+            <p className="font-bold border-b-2 border-black inline">
+              Read More{' '}
+              <span className="fill-current text-black dark:text-white inline-block">
+                <Icon name="arrow-more" />
+              </span>
+            </p>
           </Card>
-          <Card>
+          <Card link="/technology/future-proof">
             <div className="flex justify-between">
               <div className="w-1/2">
                 <h3>Future Proof</h3>
