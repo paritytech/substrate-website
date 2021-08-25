@@ -8,9 +8,9 @@ const VerticalCard = ({ title, children, link, index }) => {
 
   return (
     <Link to={link} data-aos="fade-up" data-aos-delay={aosDelay}>
-      <div className="min-h-full cursor-pointer shadow-xl p-8 hover:scale-105 transition-transform rounded-md z-10 bg-white relative">
+      <div className="min-h-full xl:max-w-sm cursor-pointer shadow-xl p-8 hover:scale-105 transition-transform rounded-md z-10 bg-white relative">
         <div className="mb-8">
-          <Icon name="placeholder" className="w-56 h-auto" />
+          <Icon name="placeholder" className="w-40 h-auto" />
         </div>
         <div className="flex flex-col justify-between">
           <div className="pb-6">

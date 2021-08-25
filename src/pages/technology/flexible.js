@@ -94,19 +94,21 @@ const Flexible = () => {
         </Feature>
       </Section>
 
-      <div className="bg-substrateGray p-8 mb-20">
-        <div className="md:flex flex-row max-w-7xl lg:mx-auto">
-          <Icon name="placeholder" className="md:self-center mb-4 md:mb-0" />
-          <div className="md:mx-8">
-            <h3 className="text-2xl font-bold">{`See how Moonbeam benefitted from Substrate's flexibility`}</h3>
-            <Link to="/technology">
-              <p className="font-bold border-b-2 border-black inline">Explore Case Study</p>{' '}
-              <span className="fill-current border-b-0 text-black dark:text-white inline-block">
-                <Icon name="arrow-more" />
-              </span>
-            </Link>
+      <div className="bg-substrateGray">
+        <Section>
+          <div className="md:flex flex-row py-8">
+            <Icon name="placeholder" className="md:self-center mb-4 md:mb-0" />
+            <div className="md:mx-8">
+              <h3 className="text-2xl font-bold">{`See how Moonbeam benefitted from Substrate's flexibility`}</h3>
+              <Link to="/technology">
+                <p className="font-bold border-b-2 border-black inline">Explore Case Study</p>{' '}
+                <span className="fill-current border-b-0 text-black dark:text-white inline-block">
+                  <Icon name="arrow-more" />
+                </span>
+              </Link>
+            </div>
           </div>
-        </div>
+        </Section>
       </div>
 
       <div className="bg-substrateGray-light p-8 mb-20">
@@ -123,10 +125,10 @@ const Flexible = () => {
       </div>
 
       <Section>
-        <div className="max-w-7xl relative">
+        <div className="relative">
           <div className="hidden lg:block absolute h-80 w-1/2 bg-gray-200 -right-4 z-0"></div>
           <h2 className="text-3xl md:text-4xl mb-10 py-10 z-100 relative">Learn More About Our Technology</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 z-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 justify-center justify-items-center z-20">
             {cards.map(({ title, link, description }, index) => (
               <VerticalCard title={title} link={link} index={index} key={index}>
                 {description}
