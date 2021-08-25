@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 
-const futureProof = () => {
+const FutureProof = () => {
   return (
     <Layout>
       <SEO title="Future-Proof" />
@@ -13,7 +13,7 @@ const futureProof = () => {
   );
 };
 
-export default futureProof;
+export default FutureProof;
 
 export const query = graphql`
   query {

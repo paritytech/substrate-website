@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 
-const interoperable = () => {
+const Interoperable = () => {
   return (
     <Layout>
       <SEO title="Interoperable" />
@@ -13,7 +13,7 @@ const interoperable = () => {
   );
 };
 
-export default interoperable;
+export default Interoperable;
 
 export const query = graphql`
   query {

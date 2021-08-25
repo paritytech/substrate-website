@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 
-const open = () => {
+const Open = () => {
   return (
     <Layout>
       <SEO title="Open" />
@@ -13,7 +13,7 @@ const open = () => {
   );
 };
 
-export default open;
+export default Open;
 
 export const query = graphql`
   query {
