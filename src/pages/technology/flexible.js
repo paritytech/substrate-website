@@ -42,11 +42,6 @@ const Flexible = () => {
           link="/"
           linkText="Explore Architecture"
         >
-          <p>
-            The root cause of developers having to make tradeoffs is that legacy blockchains are not designed with the
-            specific intent of the applications in mind. General purpose blockchains require developers to work within
-            the rigid boundaries of the design decisions made by others.
-          </p>
           <Blockquote>
             {`Substrate is a fully modular blockchain framework that unleashes developers instead of forcing them to work
             within the confines of others' design decisions.`}
