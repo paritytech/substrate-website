@@ -10,10 +10,11 @@ module.exports = {
   author: 'Parity/W3F Web Team',
   pressEmail: 'press@parity.io',
   email: 'info@parity.io',
-  twitter: 'https://twitter.com/ParityTech',
+  twitter: 'https://twitter.com/substrate_io',
   linkedIn: 'https://www.linkedin.com/company/paritytech',
-  element: 'https://app.element.io/#/room/#watercooler:matrix.parity.io',
+  element: 'https://matrix.to/#/#substrate-technical:matrix.org',
   github: 'https://github.com/paritytech/',
   telegram: 'https://t.me/parity_technologies',
   gitter: 'https://gitter.im/paritytech/parity',
+  stackoverflow: 'https://stackoverflow.com/questions/tagged/substrate',
 };
