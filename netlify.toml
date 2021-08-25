@@ -1,9 +1,9 @@
 [context.production]
-  command = "yarn build && cp .netlify/_redirects_staging public/_redirects"
+  command = "yarn build && cp .netlify/_headers_staging public/_headers && cp .netlify/_redirects_staging public/_redirects"
   publish = "public/"
 
 [context.deploy-preview]
-  command = "yarn build && cp .netlify/_redirects_staging public/_redirects"
+  command = "yarn build && cp .netlify/_headers_staging public/_headers && cp .netlify/_redirects_staging public/_redirects"
   publish = "public/"
 
 [context.develop]
