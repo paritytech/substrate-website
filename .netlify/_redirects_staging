@@ -1,0 +1,2 @@
+/developers https://substrate-docs-staging.netlify.app 301!
+/developers/* https://substrate-docs-staging.netlify.app/:splat 301!
