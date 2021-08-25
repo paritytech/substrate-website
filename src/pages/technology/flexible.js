@@ -28,6 +28,30 @@ const cards = [
   },
 ];
 
+const links = [
+  {
+    image: 'placeholder',
+    title: 'Teams',
+    description:
+      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
+    link: '/technology',
+  },
+  {
+    image: 'placeholder',
+    title: 'Docs',
+    description:
+      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
+    link: '/technology',
+  },
+  {
+    image: 'placeholder',
+    title: 'Ecosystem',
+    description:
+      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
+    link: '/technology',
+  },
+];
+
 const Flexible = () => {
   return (
     <Layout>
@@ -97,9 +121,10 @@ const Flexible = () => {
           </div>
         </div>
       </div>
+
       <Section>
-        <div className="max-w-7xl">
-          <div className="hidden lg:block absolute h-80 w-1/2 xl:w-1/4 xl:right-1/4 bg-gray-200 right-4 z-0"></div>
+        <div className="max-w-7xl relative">
+          <div className="hidden lg:block absolute h-80 w-1/2 bg-gray-200 -right-4 z-0"></div>
           <h2 className="text-3xl md:text-4xl mb-10 py-10 z-100 relative">Learn More About Our Technology</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 z-20">
             {cards.map(({ title, link, description }, index) => (
@@ -110,6 +135,27 @@ const Flexible = () => {
           </div>
         </div>
       </Section>
+
+      <div className="bg-substrateGray pb-10 pt-20">
+        <Section>
+          <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
+          <div className="sm:grid grid-cols-3 gap-6 xl:gap-24">
+            {links.map(({ image, title, description, link }, index) => (
+              <div key={index} className="mb-16 sm:mb-0">
+                <Icon name={image} className="mb-6" />
+                <h5 className="text-xl font-bold mb-6">{title}</h5>
+                <p>{description}</p>
+                <Link to={link}>
+                  <p className="font-bold border-b-2 border-black inline">Explore</p>{' '}
+                  <span className="fill-current border-b-0 text-substrateGreen dark:text-white inline-block">
+                    <Icon name="arrow-more" />
+                  </span>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </Section>
+      </div>
     </Layout>
   );
 };
