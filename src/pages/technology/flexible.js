@@ -2,16 +2,37 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import Icon from '../../components/default/Icon';
+import { Link } from '../../components/default/Link';
 import Section from '../../components/layout/Section';
 import Feature from '../../components/layout/technology/Feature';
+import VerticalCard from '../../components/layout/technology/VerticalCard';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
+
+const cards = [
+  {
+    title: 'Open',
+    link: '/technology/open',
+    description: `The combination of an open source, customizable architecture that enables developers to use the tooling of their choice with a robust, active community makes Substrate the most open way to build.`,
+  },
+  {
+    title: 'Interoperable',
+    link: '/technology/interoperable',
+    description: `Interoperability without forgoing compatibility, security, or efficiency; learn how Substrate takes a unique, multifaceted approach to address each of these.`,
+  },
+  {
+    title: 'Future-Proof',
+    link: '/technology/future-proof',
+    description: `Substrate enables developers to move faster and evolve their architecture as their needs evolve. Founders and Developers can be confident that their blockchain is ready for whatever the future brings.`,
+  },
+];
 
 const Flexible = () => {
   return (
     <Layout>
       <SEO title="Flexible" />
+
       <Section col={2} children2={<Icon name="placeholder" className="w-full h-auto" />}>
         <Feature
           title="Intentional"
@@ -47,6 +68,47 @@ const Flexible = () => {
             within the confines of others' design decisions.`}
           </Blockquote>
         </Feature>
+      </Section>
+
+      <div className="bg-substrateGray p-8 mb-20">
+        <div className="md:flex flex-row max-w-7xl lg:mx-auto">
+          <Icon name="placeholder" className="md:self-center mb-4 md:mb-0" />
+          <div className="md:mx-8">
+            <h3 className="text-2xl font-bold">{`See how Moonbeam benefitted from Substrate's flexibility`}</h3>
+            <Link to="/technology">
+              <p className="font-bold border-b-2 border-black inline">Explore Case Study</p>{' '}
+              <span className="fill-current border-b-0 text-black dark:text-white inline-block">
+                <Icon name="arrow-more" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-substrateGray-light p-8 mb-20">
+        <div className="flex flex-col md:flex-row items-center lg:mx-auto max-w-7xl">
+          <div className="bg-gray-200 h-40 w-40 mx-auto my-8"></div>
+          <div className="md:mx-8 md:w-1/2">
+            <h3 className="text-xl md:text-3xl font-normal">
+              The flexible nature of Substrate alleviates the tension of tradeoffs by{' '}
+              <strong className="font-bold">enabling developers to create the most optimal blockchain</strong> for their
+              specific needs.
+            </h3>
+          </div>
+        </div>
+      </div>
+      <Section>
+        <div className="max-w-7xl">
+          <div className="hidden lg:block absolute h-80 w-1/2 xl:w-1/4 xl:right-1/4 bg-gray-200 right-4 z-0"></div>
+          <h2 className="text-3xl md:text-4xl mb-10 py-10 z-100 relative">Learn More About Our Technology</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 z-20">
+            {cards.map(({ title, link, description }, index) => (
+              <VerticalCard title={title} link={link} index={index} key={index}>
+                {description}
+              </VerticalCard>
+            ))}
+          </div>
+        </div>
       </Section>
     </Layout>
   );
