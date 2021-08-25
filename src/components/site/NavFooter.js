@@ -22,10 +22,10 @@ const NavFooter = () => {
                   {subMenu.map(subMenuItem => {
                     const child = subMenuItem.child;
                     const childMenu = menus[child];
-                    const itemStyle = 'p-o m-0 underline-anchor pb-4 sm:mr-6 leading-relaxed';
+                    const itemStyle = 'p-0 m-0 underline-anchor pb-4 sm:mr-6 leading-relaxed';
 
                     return (
-                      <>
+                      <React.Fragment key={subMenuItem.id}>
                         {childMenu ? (
                           childMenu.map(childMenuItem => {
                             return (
@@ -47,7 +47,7 @@ const NavFooter = () => {
                             </LinkMenu>
                           </li>
                         )}
-                      </>
+                      </React.Fragment>
                     );
                   })}
                 </ul>
