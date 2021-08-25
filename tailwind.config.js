@@ -20,8 +20,8 @@ module.exports = {
       tight: '-.025em',
       normal: '0',
       wide: '.025em',
-      wider: '.05em',
-      widest: '.25em',
+      wider: '.25em',
+      widest: '0.45em',
       nav: '.15em',
     },
     extend: {

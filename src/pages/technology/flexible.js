@@ -57,6 +57,33 @@ const Flexible = () => {
     <Layout>
       <SEO title="Flexible" />
 
+      <div className="bg-substrateGray-light">
+        <Section>
+          <ul className="hidden list-none md:flex mb-10 text-lg">
+            <li className="mr-32 font-bold">Overview</li>
+            <li className="mr-32 font-bold">Open</li>
+            <li className="mr-32 font-bold">Flexible</li>
+            <li className="mr-32 font-bold">Interoperable</li>
+            <li className="mr-32 font-bold">Future Proof</li>
+          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
+            <div className="self-center max-w-lg">
+              <p className="tracking-wider xl:tracking-widest text-lg font-light mb-0">SUBSTRATE TECHNOLOGY</p>
+              <h1 className="py-6 md:py-10 mb-0 text-6xl xl:text-7xl">Flexible</h1>
+              <p className="text-lg">
+                Blockchain developers have had to make difficult tradeoffs when deciding what distributed ledger
+                technology to use.
+              </p>
+              <p className="text-lg">
+                This has forced developers to implement workarounds, hard-forks, or simply succumb to limitations, until
+                Substrate.
+              </p>
+            </div>
+            <Icon name="placeholder" className="w-full h-auto my-10 order-first md:order-last" />
+          </div>
+        </Section>
+      </div>
+
       <Section col={2} children2={<Icon name="placeholder" className="w-full h-auto" />}>
         <Feature
           title="Intentional"
