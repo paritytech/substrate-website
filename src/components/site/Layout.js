@@ -67,7 +67,7 @@ export default function Layout({ layout = 'default', mode = 'default', children 
   return (
     <>
       <Header mode={mode} />
-      <main className="min-h-screen">
+      <main className="min-h-screen mt-12">
         {layout === 'default' && <>{children}</>}
         {layout === 'sidebar' && <LayoutSidebar>{children}</LayoutSidebar>}
       </main>

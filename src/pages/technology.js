@@ -67,9 +67,9 @@ export default function IndexPage() {
   return (
     <Layout mode="full">
       <SEO title="Substrate Technology" />
-      <Article className="test">
+      <Article>
         <Section>
-          <div className="lg:grid grid-cols-2 gap-8 lg:mt-8">
+          <div className="lg:grid grid-cols-2 gap-8">
             <div className="lg:mr-8">
               <h1 className="text-5xl md:text-7xl xl:text-8xl font-extrabold my-10 lg:mt-20">Substrate Technology</h1>
               <p className="text-2xl xl:text-3xl font-bold">
