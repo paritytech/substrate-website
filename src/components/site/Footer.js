@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="h-[600px] lg:w-full lg:max-w-screen md:h-auto flex flex-col flex-wrap lg:flex-row">nav</div>
         </nav>
       </div>
-      <div className="py-12">
+      <div className="h-auto pb-6 md:flex md:flex-row-reverse md:justify-between md:items-center">
         <NavLegal />
       </div>
     </footer>
