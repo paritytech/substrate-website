@@ -40,7 +40,7 @@ const HeaderNav = () => {
         <ul className="m-0 list-none">
           {menus.legal.map(menuItem => {
             return (
-              <li key={menuItem.id} className="m-0 mb-4 md:mb-0 md:mr-8 inline-block font-light">
+              <li key={menuItem.id} className="m-0 mb-4 md:mb-0 md:pr-8 block md:inline-block font-light">
                 <Link to={menuItem.url}>{t(menuItem.id)}</Link>
               </li>
             );
