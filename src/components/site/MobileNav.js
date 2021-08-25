@@ -4,6 +4,7 @@ import React from 'react';
 
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import Icon from '../default/Icon';
+import Logo from './Logo';
 
 const MobileNav = ({ toggleMenu }) => {
   const { menus } = useSiteMenus();
@@ -14,7 +15,7 @@ const MobileNav = ({ toggleMenu }) => {
       <div className="h-16 px-6 flex items-center justify-between">
         <div className="w-32">
           <Link to="/">
-            <Icon name="logo" />
+            <Logo />
           </Link>
         </div>
         <div className="h-auto cursor-pointer" onClick={toggleMenu}>

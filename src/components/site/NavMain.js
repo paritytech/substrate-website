@@ -93,7 +93,8 @@ const DropDown = ({ menuItem }) => {
         >
           {t(menuItem.id)}
         </span>
-        <span
+        <Icon
+          name="arrow-dropdown"
           className={cx(
             'inline-block align-middle xl:ml-2 fill-current group-hover:text-substrateGreen dark:text-white',
             {
@@ -101,9 +102,7 @@ const DropDown = ({ menuItem }) => {
               'text-black': !isComponentVisible,
             }
           )}
-        >
-          <Icon name="arrow-dropdown" />
-        </span>
+        />
       </button>
 
       {isComponentVisible && subMenu && (

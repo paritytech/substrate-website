@@ -1,5 +1,6 @@
+import AOS from 'aos';
 import cx from 'classnames';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Icon from '../default/Icon';
 import Footer from '../site/Footer';
@@ -54,12 +55,20 @@ function LayoutSidebar({ children }) {
   );
 }
 
-export default function Layout({ layout = 'default', children }) {
+export default function Layout({ layout = 'default', mode = 'default', children }) {
+  useEffect(() => {
+    AOS.init({
+      disable: 'mobile',
+      duration: 600,
+      once: true,
+    });
+  }, []);
+
   return (
     <>
-      <Header />
+      <Header mode={mode} />
       <main className="min-h-screen">
-        {layout === 'default' && <div>{children}</div>}
+        {layout === 'default' && <>{children}</>}
         {layout === 'sidebar' && <LayoutSidebar>{children}</LayoutSidebar>}
       </main>
       <Footer />
