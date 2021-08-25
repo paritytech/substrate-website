@@ -2,7 +2,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import { useSiteMenus } from '../../hooks/use-site-menus';
-import { buildSubMenu, Link } from '../default/Link';
+import { buildSubMenu, LinkMenu } from '../default/Link';
 
 const NavFooter = () => {
   const { t } = useTranslation();
@@ -29,16 +29,22 @@ const NavFooter = () => {
                         {childMenu ? (
                           childMenu.map(childMenuItem => {
                             return (
-                              <li className={itemStyle} key={childMenuItem.id}>
-                                <Link to={menuItem.url + subMenuItem.url + childMenuItem.url}>
+                              <li key={childMenuItem.id} className={itemStyle}>
+                                <LinkMenu
+                                  prefix={menuItem.url + subMenuItem.url}
+                                  slug={childMenuItem.url}
+                                  internal={childMenuItem.internal}
+                                >
                                   {t(childMenuItem.id)}
-                                </Link>
+                                </LinkMenu>
                               </li>
                             );
                           })
                         ) : (
                           <li key={subMenuItem.id} className={itemStyle}>
-                            <Link to={menuItem.url + subMenuItem.url}>{t(subMenuItem.id)}</Link>
+                            <LinkMenu prefix={menuItem.url} slug={subMenuItem.url} internal={subMenuItem.internal}>
+                              {t(subMenuItem.id)}
+                            </LinkMenu>
                           </li>
                         )}
                       </>

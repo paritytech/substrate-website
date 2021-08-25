@@ -18,6 +18,29 @@ const Link = ({ to, title, children, ...other }) => {
   }
 };
 
+const LinkMenu = ({ prefix, slug, children, internal = null, ...other }) => {
+  const external = testExternalLink(slug);
+  if (external && internal) {
+    return (
+      <a href={slug} {...other}>
+        {children}
+      </a>
+    );
+  } else if (external) {
+    return (
+      <a href={slug} {...other} target="_blank" rel="noreferrer noopener">
+        {children}
+      </a>
+    );
+  } else {
+    return (
+      <LinkI18n to={prefix + slug} {...other}>
+        {children}
+      </LinkI18n>
+    );
+  }
+};
+
 const buildSubMenu = (menus, item) => {
   return menus[item.id];
 };
@@ -28,4 +51,4 @@ const testExternalLink = href => {
   return match;
 };
 
-export { Link, buildSubMenu };
+export { Link, buildSubMenu, testExternalLink, LinkMenu };
