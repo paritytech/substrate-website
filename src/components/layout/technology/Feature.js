@@ -14,7 +14,7 @@ const Feature = ({
       <div className={cx({ 'order-first': reversed })}>
         <h2 className="text-4xl font-bold">{title}</h2>
         <p>{paragraphOne}</p>
-        <aside className="border-substrateGreen border-l-8 pl-4 my-8">
+        <aside data-aos="fade-right" data-aos-delay="300" className="border-substrateGreen border-l-8 pl-4 my-8">
           {asides.map((aside, idx) => (
             <p key={idx} className="font-bold">
               {aside}
