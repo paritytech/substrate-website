@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Example",
+    "date": "23.04.2021 - 31.04.2021",
+    "prize": "1000 Dot Tokens",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat.",
+    "link": "http://link.com",
+    "image": "hackaton-example.jpg"
+  },
+  {
+    "title": "Example2",
+    "date": "23.04.2021 - 31.04.2021",
+    "prize": "1000 Dot Tokens",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat.",
+    "link": "http://link2.com",
+    "image": "hackaton-example2.jpg"
+  }
+]
+
+
