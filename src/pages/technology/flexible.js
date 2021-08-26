@@ -6,6 +6,7 @@ import { Link } from '../../components/default/Link';
 import Section from '../../components/layout/Section';
 import Feature from '../../components/layout/technology/Feature';
 import GreenBorderCard from '../../components/layout/technology/GreenBorderCard';
+import Hero from '../../components/layout/technology/Hero';
 import VerticalCard from '../../components/layout/technology/VerticalCard';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
@@ -70,64 +71,20 @@ const links = [
   },
 ];
 
-const menuItems = [
-  {
-    title: 'Overview',
-    link: '/technology',
-  },
-  {
-    title: 'Open',
-    link: '/technology/open',
-  },
-  {
-    title: 'Flexible',
-    link: '/technology/flexible',
-  },
-  {
-    title: 'Interoperable',
-    link: '/technology/interoperable',
-  },
-  {
-    title: 'Future Proof',
-    link: '/technology/future-proof',
-  },
-];
-
 const Flexible = () => {
   return (
     <Layout>
       <SEO title="Flexible" />
-
-      <div className="bg-substrateGray-light">
-        <Section>
-          <ul className="hidden list-none md:flex mb-2 text-lg">
-            {menuItems.map(({ title, link }, idx) => (
-              <Link key={idx} to={link}>
-                <li className="md:mr-16 lg:mr-24 xl:mr-32 font-bold">{title}</li>
-              </Link>
-            ))}
-          </ul>
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
-            <div className="self-center max-w-lg">
-              <p className="tracking-wider xl:tracking-widest text-lg font-light mb-0">SUBSTRATE TECHNOLOGY</p>
-              <h1 data-aos="fade-up" className="py-6 md:py-10 mb-0 font-extrabold text-6xl lg:text-7xl">
-                Flexible
-              </h1>
-              <Icon name="placeholder" className="md:hidden w-full h-auto mb-8" />
-              <p className="text-lg">
-                Blockchain developers have had to make difficult tradeoffs when deciding what distributed ledger
-                technology to use.
-              </p>
-              <p className="text-lg">
-                This has forced developers to implement workarounds, hard-forks, or simply succumb to limitations, until
-                Substrate.
-              </p>
-            </div>
-            <Icon name="placeholder" className="hidden md:block w-full h-auto my-10" />
-          </div>
-        </Section>
-      </div>
-
+      <Hero page="Flexible">
+        <p>
+          Blockchain developers have had to make difficult tradeoffs when deciding what distributed ledger technology to
+          use.
+        </p>
+        <p>
+          This has forced developers to implement workarounds, hard-forks, or simply succumb to limitations, until
+          Substrate.
+        </p>
+      </Hero>
       <Section col={2} children2={<Icon name="placeholder" className="w-full h-auto" />}>
         <Feature
           title="Intentional"
