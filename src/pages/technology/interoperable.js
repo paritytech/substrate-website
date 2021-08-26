@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import Hero from '../../components/layout/technology/Hero';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 
@@ -8,7 +9,9 @@ const Interoperable = () => {
   return (
     <Layout>
       <SEO title="Interoperable" />
-      <div>Interoperable</div>
+      <Hero page="Interoperable">
+        <p>text</p>
+      </Hero>
     </Layout>
   );
 };
