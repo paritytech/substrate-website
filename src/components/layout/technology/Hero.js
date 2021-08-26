@@ -11,12 +11,12 @@ const pages = [
     link: '/technology',
   },
   {
-    title: 'Open',
-    link: '/technology/open',
-  },
-  {
     title: 'Flexible',
     link: '/technology/flexible',
+  },
+  {
+    title: 'Open',
+    link: '/technology/open',
   },
   {
     title: 'Interoperable',
@@ -49,15 +49,16 @@ const Hero = ({ page, children }) => {
             );
           })}
         </ul>
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
-          <div className="self-center max-w-lg">
+
+        <div className="grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 md:gap-x-6">
+          <div className="order-1 md:self-end">
             <p className="tracking-wider xl:tracking-widest text-lg font-light mb-0 uppercase">Substrate Technology</p>
             <h1 data-aos="fade-up" className="py-6 md:py-10 mb-0 font-extrabold text-6xl lg:text-7xl">
               {page}
             </h1>
-            <div className="text-lg">{children}</div>
           </div>
-          <Icon name="placeholder" className="hidden md:block w-full h-auto my-10" />
+          <div className="order-3 self-start max-w-lg text-lg">{children}</div>
+          <Icon name="placeholder" className="order-2 md:row-span-2 w-full h-auto my-10" />
         </div>
       </Section>
     </div>
