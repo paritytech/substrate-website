@@ -5,6 +5,7 @@ import Icon from '../../components/default/Icon';
 import { Link } from '../../components/default/Link';
 import Section from '../../components/layout/Section';
 import Feature from '../../components/layout/technology/Feature';
+import GreenBorderCard from '../../components/layout/technology/GreenBorderCard';
 import VerticalCard from '../../components/layout/technology/VerticalCard';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
@@ -25,6 +26,23 @@ const cards = [
     title: 'Future-Proof',
     link: '/technology/future-proof',
     description: `Substrate enables developers to move faster and evolve their architecture as their needs evolve. Founders and Developers can be confident that their blockchain is ready for whatever the future brings.`,
+  },
+];
+
+const greenBorderCards = [
+  {
+    title: 'Off-Chain Worker (OCW)',
+    description: 'for computationally intensive and even non-deterministic expensive tasks',
+  },
+  {
+    title: 'Off-Chain Storage',
+    description:
+      'enables data to be stored and access by both off-chain workers and on-chain logic without requiring consensus over the whole network',
+  },
+  {
+    title: 'Off-Chain Indexing',
+    description:
+      'stores a small amount of information on chain, such as a hash, that can be used to lookup and verify data stored off-chain independently of OCWs ',
   },
 ];
 
@@ -52,6 +70,29 @@ const links = [
   },
 ];
 
+const menuItems = [
+  {
+    title: 'Overview',
+    link: '/technology',
+  },
+  {
+    title: 'Open',
+    link: '/technology/open',
+  },
+  {
+    title: 'Flexible',
+    link: '/technology/flexible',
+  },
+  {
+    title: 'Interoperable',
+    link: '/technology/interoperable',
+  },
+  {
+    title: 'Future Proof',
+    link: '/technology/future-proof',
+  },
+];
+
 const Flexible = () => {
   return (
     <Layout>
@@ -60,16 +101,16 @@ const Flexible = () => {
       <div className="bg-substrateGray-light">
         <Section>
           <ul className="hidden list-none md:flex mb-10 text-lg">
-            <li className="mr-32 font-bold">Overview</li>
-            <li className="mr-32 font-bold">Open</li>
-            <li className="mr-32 font-bold">Flexible</li>
-            <li className="mr-32 font-bold">Interoperable</li>
-            <li className="mr-32 font-bold">Future Proof</li>
+            {menuItems.map(({ title, link }, idx) => (
+              <Link key={idx} to={link}>
+                <li className="mr-32 font-bold">{title}</li>
+              </Link>
+            ))}
           </ul>
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
             <div className="self-center max-w-lg">
               <p className="tracking-wider xl:tracking-widest text-lg font-light mb-0">SUBSTRATE TECHNOLOGY</p>
-              <h1 className="py-6 md:py-10 mb-0 text-6xl xl:text-7xl">Flexible</h1>
+              <h1 className="py-6 md:py-10 mb-0 font-extrabold text-6xl lg:text-7xl">Flexible</h1>
               <p className="text-lg">
                 Blockchain developers have had to make difficult tradeoffs when deciding what distributed ledger
                 technology to use.
@@ -166,16 +207,13 @@ const Flexible = () => {
       </Section>
 
       <Section>
-        <div className="shadow-xl p-10 max-w-lg border-l-8 border-substrateGreen-light">
-          <div className="inline-flex mb-2">
-            <div className="w-8 h-8 rounded-full bg-black inline-flex justify-center mr-2">
-              <p className="text-white font-bold mt-1">1</p>
-            </div>
-            <h3 className="font-bold text-2xl inline mb-0">Off-Chain Worker (OCW)</h3>
+        <div className="grid grid-cols-2">
+          <div>Placeholder column</div>
+          <div className="grid grid-cols-1" style={{ gridAutoRows: '1fr' }}>
+            {greenBorderCards.map(({ title, description }, idx) => (
+              <GreenBorderCard key={idx} index={idx} title={title} description={description} />
+            ))}
           </div>
-          <p className="max-w-xs font-medium m-0">
-            for computationally intensive and even non-deterministic expensive tasks
-          </p>
         </div>
       </Section>
 

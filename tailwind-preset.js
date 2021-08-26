@@ -19,8 +19,27 @@ module.exports = {
       extrabold: 800,
       black: 900,
     },
+    letterSpacing: {
+      tightest: '-.075em',
+      tighter: '-.05em',
+      tight: '-.025em',
+      normal: '0',
+      wide: '.025em',
+      wider: '.25em',
+      widest: '.45em',
+    },
     boxShadow: {
       xl: '0 0 25px 0 rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+    },
+    extend: {
+      colors: {
+        substrateGreen: {
+          light2: '#AEF3DC',
+        },
+      },
+      fontSize: {
+        '7xl': ['5rem', { lineHeight: '1' }],
+      },
     },
   },
 };
