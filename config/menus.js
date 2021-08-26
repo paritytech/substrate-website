@@ -180,10 +180,6 @@ const extra = [
     url: '/substrate-connect',
     id: 'extra.substrate-connect',
   },
-  {
-    url: '/enterprise',
-    id: 'extra.enterprise',
-  },
 ];
 
 module.exports = {
