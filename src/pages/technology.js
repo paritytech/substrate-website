@@ -76,21 +76,21 @@ export default function IndexPage() {
                 What if developers could build on a blockchain framework specifically optimized for their requirements
                 that seamlessly evolves with their needs and without forks?
               </p>
-              <p className="text-2xl xl:text-3xl font-bold">
+              <p className="underline-animate text-2xl xl:text-3xl font-bold">
                 Welcome to Substrate, the only{' '}
-                <Link className="text-substrateBlue border-b-2 border-substrateBlue" to="/technology/flexible">
+                <Link className="text-substrateBlue" to="/technology/flexible">
                   flexible
                 </Link>
                 ,{' '}
-                <Link className="text-substrateBlue border-b-2 border-substrateBlue" to="/technology/open">
+                <Link className="text-substrateBlue" to="/technology/open">
                   open
                 </Link>
                 ,{' '}
-                <Link className="text-substrateBlue border-b-2 border-substrateBlue" to="/technology/interoperable">
+                <Link className="text-substrateBlue" to="/technology/interoperable">
                   interoperable
                 </Link>
                 , and{' '}
-                <Link className="text-substrateBlue border-b-2 border-substrateBlue" to="/technology/future-proof">
+                <Link className="text-substrateBlue" to="/technology/future-proof">
                   future proof
                 </Link>{' '}
                 blockchain framework.

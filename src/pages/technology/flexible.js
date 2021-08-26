@@ -198,7 +198,7 @@ const Flexible = () => {
       <Section>
         <div className="relative">
           <div className="hidden lg:block absolute h-80 w-1/2 bg-gray-200 -right-4 z-0"></div>
-          <h2 className="text-3xl md:text-4xl mb-10 py-10 z-10 relative">Learn More About Our Technology</h2>
+          <h2 className="text-3xl md:text-4xl mb-10 py-10 relative">Learn More About Our Technology</h2>
           <div className="flex flex-col lg:flex-row z-10">
             {cards.map(({ title, link, description }, index) => (
               <VerticalCard title={title} link={link} index={index} key={index}>
