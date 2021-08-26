@@ -1,6 +1,9 @@
 /* GLOBAL Substrate platform preset */
 
 module.exports = {
+  mode: 'jit',
+  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     container: {
       center: true,

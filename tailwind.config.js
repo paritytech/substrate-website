@@ -1,9 +1,6 @@
 /* substrate.io config */
 
 module.exports = {
-  mode: 'jit',
-  darkMode: 'class', // or 'media' or 'class'
-  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
   presets: [require('./tailwind-preset.js')],
   theme: {
     screens: {
@@ -29,6 +26,20 @@ module.exports = {
       bold: 700,
       extrabold: 800,
       black: 900,
+    },
+    letterSpacing: {
+      wider: '.25em',
+      widest: '.45em',
+    },
+    extend: {
+      colors: {
+        substrateGreen: {
+          light2: '#AEF3DC',
+        },
+      },
+      fontSize: {
+        '7xl': ['5rem', { lineHeight: '1' }],
+      },
     },
     boxShadow: {
       xl: '0 0 25px 0 rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
