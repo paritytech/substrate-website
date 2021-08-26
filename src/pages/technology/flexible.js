@@ -12,23 +12,6 @@ import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
 
-const greenBorderCards = [
-  {
-    title: 'Off-Chain Worker (OCW)',
-    description: 'for computationally intensive and even non-deterministic expensive tasks',
-  },
-  {
-    title: 'Off-Chain Storage',
-    description:
-      'enables data to be stored and access by both off-chain workers and on-chain logic without requiring consensus over the whole network',
-  },
-  {
-    title: 'Off-Chain Indexing',
-    description:
-      'stores a small amount of information on chain, such as a hash, that can be used to lookup and verify data stored off-chain independently of OCWs ',
-  },
-];
-
 const links = [
   {
     image: 'placeholder',
@@ -90,19 +73,6 @@ const Flexible = () => {
           </p>
         </Feature>
       </Section>
-      <Section col={2} mode="reversed" children2={<Icon name="placeholder" className="w-full h-auto" />}>
-        <Feature
-          title="Forkless"
-          learnMore="If you want to know more about this feature"
-          link="/"
-          linkText="Explore Architecture"
-        >
-          <Blockquote>
-            {`Substrate is a fully modular blockchain framework that unleashes developers instead of forcing them to work
-            within the confines of others' design decisions.`}
-          </Blockquote>
-        </Feature>
-      </Section>
 
       <div className="bg-substrateGray">
         <Section>
@@ -136,15 +106,49 @@ const Flexible = () => {
 
       <CardsNav page="Flexible" />
 
-      <Section>
-        <div className="grid grid-cols-2">
-          <div>Placeholder column</div>
-          <div className="grid grid-cols-1" style={{ gridAutoRows: '1fr' }}>
-            {greenBorderCards.map(({ title, description }, idx) => (
-              <GreenBorderCard key={idx} index={idx} title={title} description={description} />
-            ))}
-          </div>
-        </div>
+      <Section
+        col={2}
+        children2={
+          <>
+            <GreenBorderCard
+              index={1}
+              title="Off-Chain Worker (OCW)"
+              description="for computationally intensive and even non-deterministic expensive tasks"
+            />
+            <GreenBorderCard
+              index={2}
+              title="Off-Chain Storage"
+              description="enables data to be stored and access by both off-chain workers and on-chain logic without requiring consensus over the whole network"
+            />
+            <GreenBorderCard
+              index={3}
+              title="Off-Chain Indexing"
+              description="stores a small amount of information on chain, such as a hash, that can be used to lookup and verify data stored off-chain independently of OCWs"
+            />
+          </>
+        }
+      >
+        <Feature
+          title="Forkless"
+          learnMore="If you want to know more about this feature"
+          link="/"
+          linkText="Explore Architecture"
+        >
+          <p>
+            The root cause of developers having to make tradeoffs is that legacy blockchains are not designed with the
+            specific intent of the applications in mind. General purpose blockchains require developers to work within
+            the rigid boundaries of the design decisions made by others.
+          </p>
+          <Blockquote>
+            {`Substrate is a fully modular blockchain framework that unleashes developers instead of forcing them to work
+            within the confines of others' design decisions.`}
+          </Blockquote>
+          <p>
+            The root cause of developers having to make tradeoffs is that legacy blockchains are not designed with the
+            specific intent of the applications in mind. General purpose blockchains require developers to work within
+            the rigid boundaries of the design decisions made by others.
+          </p>
+        </Feature>
       </Section>
 
       <div className="bg-substrateGray pb-10 pt-20">
