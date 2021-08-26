@@ -72,11 +72,11 @@ export default function IndexPage() {
           <div className="lg:grid grid-cols-2 gap-8">
             <div className="lg:mr-8">
               <h1 className="text-5xl md:text-7xl xl:text-8xl font-extrabold my-10 lg:mt-20">Substrate Technology</h1>
-              <p className="text-2xl xl:text-3xl font-bold">
+              <p className="text-xl md:text-2xl xl:text-3xl font-bold">
                 What if developers could build on a blockchain framework specifically optimized for their requirements
                 that seamlessly evolves with their needs and without forks?
               </p>
-              <p className="underline-animate text-2xl xl:text-3xl font-bold">
+              <p className="underline-animate text-xl md:text-2xl xl:text-3xl font-bold">
                 Welcome to Substrate, the only{' '}
                 <Link className="text-substrateBlue" to="/technology/flexible">
                   flexible
