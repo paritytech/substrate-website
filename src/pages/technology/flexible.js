@@ -126,7 +126,7 @@ const Flexible = () => {
           <div className="md:flex flex-row py-8">
             <Icon name="placeholder" className="md:self-center mb-4 md:mb-0" />
             <div className="md:mx-8">
-              <h3 className="text-2xl font-bold">{`See how Moonbeam benefitted from Substrate's flexibility`}</h3>
+              <h3 className="text-xl md:text-2xl font-bold">{`See how Moonbeam benefitted from Substrate's flexibility`}</h3>
               <Link to="/technology">
                 <p className="font-bold border-b-2 border-black inline">Explore Case Study</p>{' '}
                 <span className="fill-current border-b-0 text-black dark:text-white inline-block">
@@ -140,9 +140,9 @@ const Flexible = () => {
 
       <div className="bg-substrateGray-light p-8 mb-20">
         <div className="flex flex-col md:flex-row items-center lg:mx-auto max-w-7xl">
-          <div className="bg-gray-200 h-40 w-40 mx-auto my-8"></div>
-          <div className="md:mx-8 md:w-1/2">
-            <h3 className="text-xl md:text-3xl font-normal">
+          <div className="bg-gray-200 h-40 w-40 mx-auto md:mr-10 my-8"></div>
+          <div className="md:mx-8 md:w-7/12">
+            <h3 className="text-xl md:text-2xl font-normal max-w-lg">
               The flexible nature of Substrate alleviates the tension of tradeoffs by{' '}
               <strong className="font-bold">enabling developers to create the most optimal blockchain</strong> for their
               specific needs.
@@ -154,14 +154,28 @@ const Flexible = () => {
       <Section>
         <div className="relative">
           <div className="hidden lg:block absolute h-80 w-1/2 bg-gray-200 -right-4 z-0"></div>
-          <h2 className="text-3xl md:text-4xl mb-10 py-10 z-100 relative">Learn More About Our Technology</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 justify-center justify-items-center z-20">
+          <h2 className="text-3xl md:text-4xl mb-10 py-10 z-10 relative">Learn More About Our Technology</h2>
+          <div className="flex flex-col lg:flex-row z-10">
             {cards.map(({ title, link, description }, index) => (
               <VerticalCard title={title} link={link} index={index} key={index}>
                 {description}
               </VerticalCard>
             ))}
           </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="shadow-xl p-10 max-w-lg border-l-8 border-substrateGreen-light">
+          <div className="inline-flex mb-2">
+            <div className="w-8 h-8 rounded-full bg-black inline-flex justify-center mr-2">
+              <p className="text-white font-bold mt-1">1</p>
+            </div>
+            <h3 className="font-bold text-2xl inline mb-0">Off-Chain Worker (OCW)</h3>
+          </div>
+          <p className="max-w-xs font-medium m-0">
+            for computationally intensive and even non-deterministic expensive tasks
+          </p>
         </div>
       </Section>
 
