@@ -2,6 +2,9 @@ import React from 'react';
 
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
+import element from '../../images/svg/social/element.svg';
+import so from '../../images/svg/social/so.svg';
+import twitter from '../../images/svg/social/twitter.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
@@ -27,6 +30,10 @@ const iconsMap = {
   sun: sun,
   /* mockup */
   placeholder: placeholder,
+  /* social */
+  twitter: twitter,
+  stackoverflow: so,
+  element: element,
 };
 
 export default function Icon({ name, className }) {

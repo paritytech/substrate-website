@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Layout({ children, children2, col = 1, mode }) {
   const reversedOrder = mode === 'reversed';
-  const sectionClass = 'container mb-20';
+  const sectionClass = 'container mb-20 lg:px-10';
 
   return (
     <>

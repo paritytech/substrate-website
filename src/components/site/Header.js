@@ -6,8 +6,8 @@ import useScrollListener from '../../hooks/use-scroll-listener';
 import Icon from '../default/Icon';
 import Logo from '../site/Logo';
 import DocsButton from './DocsButton';
-import MobileNav from './MobileNav';
 import NavMain from './NavMain';
+import NavMobile from './NavMobile';
 import ThemeToggle from './ThemeToggle';
 
 const Header = ({ mode }) => {
@@ -49,7 +49,7 @@ const Header = ({ mode }) => {
           <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
             <Icon name="hamburger-toggle" />
           </div>
-          {isMobileNavOpen && <MobileNav toggleMenu={toggleMenu} />}
+          {isMobileNavOpen && <NavMobile toggleMenu={toggleMenu} />}
           <div className="hidden lg:flex lg:justify-between lg:items-center w-full">
             <div className="w-2/3 max-w-3xl">
               <NavMain />

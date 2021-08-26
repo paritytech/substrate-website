@@ -1,3 +1,5 @@
+const DOCS_URL = 'https://substrate-docs-staging.netlify.app';
+
 /* the main menu, ids of items must match
    the submenu's key of this js object */
 const main = [
@@ -45,28 +47,34 @@ const technology = [
 
 const developers = [
   {
-    url: '',
+    url: DOCS_URL,
     id: 'developers.home',
+    internal: true,
   },
   {
-    url: '/v3/docs/getting-started/overview',
+    url: DOCS_URL + '/v3/docs/getting-started/overview',
     id: 'developers.docs',
+    internal: true,
   },
   {
-    url: '/v3/how-to-guides',
+    url: DOCS_URL + '/v3/how-to-guides',
     id: 'developers.how-to-guides',
+    internal: true,
   },
   {
-    url: '/tutorials',
+    url: DOCS_URL + '/v3/tutorials',
     id: 'developers.tutorials',
+    internal: true,
   },
   {
-    url: '/rustdocs',
+    url: 'https://substrate.dev/rustdocs/',
     id: 'developers.rustdocs',
+    internal: false,
   },
   {
-    url: '/playground',
+    url: DOCS_URL + '/playground',
     id: 'developers.playground',
+    internal: true,
   },
 ];
 
@@ -143,7 +151,7 @@ const connect = [
     id: 'ecosystem.resources.contact',
   },
   {
-    url: '/events',
+    url: 'https://www.parity.io/events',
     id: 'ecosystem.resources.events',
   },
   {
@@ -151,7 +159,7 @@ const connect = [
     id: 'ecosystem.resources.newsletter',
   },
   {
-    url: '/blog',
+    url: 'https://parity.io/blog',
     id: 'ecosystem.resources.blog',
   },
 ];
@@ -171,10 +179,6 @@ const extra = [
   {
     url: '/substrate-connect',
     id: 'extra.substrate-connect',
-  },
-  {
-    url: '/enterprise',
-    id: 'extra.enterprise',
   },
 ];
 

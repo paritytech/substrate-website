@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import useComponentVisible from '../../hooks/use-component-visible';
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import Icon from '../default/Icon';
-import { buildSubMenu, Link } from '../default/Link';
+import { buildSubMenu, LinkMenu } from '../default/Link';
 
 const itemClass = 'pl-6 pr-12 py-2';
 
@@ -20,9 +20,14 @@ const ChildMenu = ({ slugPrefix, childMenu }) => {
             className="whitespace-nowrap m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium text-black"
             key={childMenuItem.id}
           >
-            <Link className={`${itemClass} block`} to={slugPrefix + childMenuItem.url}>
+            <LinkMenu
+              className={cx(itemClass, 'block')}
+              prefix={slugPrefix}
+              slug={childMenuItem.url}
+              internal={childMenuItem.internal}
+            >
               {t(childMenuItem.id)}
-            </Link>
+            </LinkMenu>
           </li>
         );
       })}
@@ -70,9 +75,14 @@ const DropDownItem = ({ data }) => {
           )}
         </div>
       ) : (
-        <Link to={data.menuItem.url + data.subMenuItem.url} className={cx(itemClass, 'block')}>
+        <LinkMenu
+          className={cx(itemClass, 'block')}
+          prefix={data.menuItem.url}
+          slug={data.subMenuItem.url}
+          internal={data.subMenuItem.internal}
+        >
           {t(data.subMenuItem.id)}
-        </Link>
+        </LinkMenu>
       )}
     </li>
   );

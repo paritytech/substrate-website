@@ -6,7 +6,7 @@ import { useSiteMenus } from '../../hooks/use-site-menus';
 import Icon from '../default/Icon';
 import Logo from './Logo';
 
-const MobileNav = ({ toggleMenu }) => {
+const NavMobile = ({ toggleMenu }) => {
   const { menus } = useSiteMenus();
   const { t } = useTranslation();
 
@@ -43,4 +43,4 @@ const MobileNav = ({ toggleMenu }) => {
   );
 };
 
-export default MobileNav;
+export default NavMobile;
