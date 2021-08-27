@@ -127,7 +127,7 @@
 @layer base {
   /* Paragraphs */
   p {
-    font-weight: initial;
+    font-weight: unset;
   }
 
   /* Links underline animation */

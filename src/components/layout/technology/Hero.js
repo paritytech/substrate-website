@@ -50,18 +50,18 @@ const Hero = ({ page, children }) => {
           })}
         </ul>
 
-        <div className="grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 md:gap-x-6">
+        <div className="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 lg:gap-x-6">
           <div className="order-1 md:self-end">
             <p className="tracking-wider lg:tracking-widest text-lg font-light mb-0 uppercase">Substrate Technology</p>
             <h1
               data-aos="fade-up"
-              className="py-6 md:py-10 mb-0 font-title font-extrabold text-6xl lg:text-7xl whitespace-nowrap"
+              className="py-6 lg:py-10 mb-0 font-title font-extrabold text-6xl xl:text-7xl whitespace-nowrap"
             >
               {page}
             </h1>
           </div>
-          <div className="order-3 self-start max-w-lg text-lg">{children}</div>
-          <Icon name="placeholder" className="order-2 md:row-span-2 w-full h-auto my-10" />
+          <div className="order-3 self-start max-w-lg font-medium">{children}</div>
+          <Icon name="placeholder" className="order-2 lg:row-span-2 w-full h-auto mb-10 mt-4 lg:my-10" />
         </div>
       </Section>
     </div>
