@@ -19,4 +19,8 @@ const Feature = ({ title, children, learnMore, link, linkText }) => {
   );
 };
 
-export default Feature;
+const FeatureImage = ({ children }) => {
+  return <div className="flex justify-center h-full p-2 lg:p-8 xl:p-10">{children}</div>;
+};
+
+export { Feature, FeatureImage };

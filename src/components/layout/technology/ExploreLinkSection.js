@@ -41,7 +41,7 @@ const ExploreLinkSection = () => {
               <p>{description}</p>
               <Link to={link}>
                 <p className="font-bold border-b-2 border-black inline">Explore</p>{' '}
-                <span className="fill-current border-b-0 text-substrateGreen dark:text-white inline-block">
+                <span className="fill-current border-b-0 dark:text-white inline-block">
                   <Icon name="arrow-more" />
                 </span>
               </Link>

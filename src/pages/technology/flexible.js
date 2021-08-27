@@ -6,10 +6,10 @@ import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import CaseStudyBanner from '../../components/layout/technology/CaseStudyBanner';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
-import Feature from '../../components/layout/technology/Feature';
+import { Feature, FeatureImage } from '../../components/layout/technology/Feature';
 import Hero from '../../components/layout/technology/Hero';
 import HighlightBanner from '../../components/layout/technology/HighlightBanner';
-import GreenBorderCard from '../../components/layout/technology/InfoCard';
+import InfoCard from '../../components/layout/technology/InfoCard';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
@@ -28,7 +28,14 @@ const Flexible = () => {
           Substrate.
         </p>
       </Hero>
-      <Section col={2} children2={<Icon name="placeholder" className="w-full h-auto" />}>
+      <Section
+        col={2}
+        children2={
+          <FeatureImage>
+            <Icon name="placeholder" className="w-1/2 md:w-full h-auto" />
+          </FeatureImage>
+        }
+      >
         <Feature
           title="Intentional"
           learnMore="If you want to know more about this feature"
@@ -67,23 +74,23 @@ const Flexible = () => {
       <Section
         col={2}
         children2={
-          <>
-            <GreenBorderCard
+          <div className="grid auto-rows-fr">
+            <InfoCard
               index={1}
               title="Off-Chain Worker (OCW)"
               description="for computationally intensive and even non-deterministic expensive tasks"
             />
-            <GreenBorderCard
+            <InfoCard
               index={2}
               title="Off-Chain Storage"
               description="enables data to be stored and access by both off-chain workers and on-chain logic without requiring consensus over the whole network"
             />
-            <GreenBorderCard
+            <InfoCard
               index={3}
               title="Off-Chain Indexing"
               description="stores a small amount of information on chain, such as a hash, that can be used to lookup and verify data stored off-chain independently of OCWs"
             />
-          </>
+          </div>
         }
       >
         <Feature
