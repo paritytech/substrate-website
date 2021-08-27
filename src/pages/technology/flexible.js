@@ -32,7 +32,7 @@ const Flexible = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-1/2 md:w-full h-auto" />
+            <Icon name="placeholder" className="w-full h-auto" />
           </FeatureImage>
         }
       >
