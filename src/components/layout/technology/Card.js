@@ -44,7 +44,7 @@ const Card = ({ page, delay, mode }) => {
           <Icon name="placeholder" className={cx('w-20 md:w-40 h-auto', { 'lg:mb-6': mode === 'vertical' })} />
         </div>
         <div className="flex flex-col justify-between">
-          <div className="lg:pb-6 mr-6">
+          <div className={cx('lg:pb-6 mr-6', { 'lg:mr-0': mode === 'vertical' })}>
             <h3>{title}</h3>
             <p>{description}</p>
           </div>
