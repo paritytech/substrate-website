@@ -2,39 +2,17 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import Icon from '../../components/default/Icon';
-import { Link } from '../../components/default/Link';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
+import CaseStudyBanner from '../../components/layout/technology/CaseStudyBanner';
+import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
 import Feature from '../../components/layout/technology/Feature';
 import GreenBorderCard from '../../components/layout/technology/GreenBorderCard';
 import Hero from '../../components/layout/technology/Hero';
+import HighlightBanner from '../../components/layout/technology/HighlightBanner';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
-
-const links = [
-  {
-    image: 'placeholder',
-    title: 'Teams',
-    description:
-      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
-    link: '/technology',
-  },
-  {
-    image: 'placeholder',
-    title: 'Docs',
-    description:
-      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
-    link: '/technology',
-  },
-  {
-    image: 'placeholder',
-    title: 'Ecosystem',
-    description:
-      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
-    link: '/technology',
-  },
-];
 
 const Flexible = () => {
   return (
@@ -74,35 +52,15 @@ const Flexible = () => {
         </Feature>
       </Section>
 
-      <div className="bg-substrateGray">
-        <Section>
-          <div className="md:flex flex-row py-8">
-            <Icon name="placeholder" className="md:self-center mb-4 md:mb-0" />
-            <div className="md:mx-8">
-              <h3 className="text-xl md:text-2xl font-bold">{`See how Moonbeam benefitted from Substrate's flexibility`}</h3>
-              <Link to="/technology">
-                <p className="font-bold border-b-2 border-black inline">Explore Case Study</p>{' '}
-                <span className="fill-current border-b-0 text-black dark:text-white inline-block">
-                  <Icon name="arrow-more" />
-                </span>
-              </Link>
-            </div>
-          </div>
-        </Section>
-      </div>
+      <CaseStudyBanner link="/technology">
+        <span>See how Moonbeam benefitted from Substrate&apos;s flexibility</span>
+      </CaseStudyBanner>
 
-      <div className="bg-substrateGray-light p-8 mb-20">
-        <div className="flex flex-col md:flex-row items-center lg:mx-auto max-w-7xl">
-          <div className="bg-gray-200 h-40 w-40 mx-auto md:mr-10 my-8"></div>
-          <div className="md:mx-8 md:w-7/12">
-            <h3 className="text-xl md:text-2xl font-normal max-w-lg">
-              The flexible nature of Substrate alleviates the tension of tradeoffs by{' '}
-              <strong className="font-bold">enabling developers to create the most optimal blockchain</strong> for their
-              specific needs.
-            </h3>
-          </div>
-        </div>
-      </div>
+      <HighlightBanner>
+        The flexible nature of Substrate alleviates the tension of tradeoffs by{' '}
+        <strong className="font-bold">enabling developers to create the most optimal blockchain</strong> for their
+        specific needs.
+      </HighlightBanner>
 
       <CardsNav page="Flexible" />
 
@@ -151,26 +109,7 @@ const Flexible = () => {
         </Feature>
       </Section>
 
-      <div className="bg-substrateGray pb-10 pt-20">
-        <Section>
-          <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
-          <div className="sm:grid grid-cols-3 gap-6 xl:gap-24">
-            {links.map(({ image, title, description, link }, index) => (
-              <div key={index} className="mb-16 sm:mb-0">
-                <Icon name={image} className="mb-6" />
-                <h5 className="text-xl font-bold mb-6">{title}</h5>
-                <p>{description}</p>
-                <Link to={link}>
-                  <p className="font-bold border-b-2 border-black inline">Explore</p>{' '}
-                  <span className="fill-current border-b-0 text-substrateGreen dark:text-white inline-block">
-                    <Icon name="arrow-more" />
-                  </span>
-                </Link>
-              </div>
-            ))}
-          </div>
-        </Section>
-      </div>
+      <ExploreLinkSection />
     </Layout>
   );
 };
