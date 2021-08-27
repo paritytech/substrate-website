@@ -45,7 +45,7 @@ const Card = ({ page, delay, mode }) => {
         </div>
         <div className="flex flex-col justify-between">
           <div className={cx('lg:pb-6 mr-6', { 'lg:mr-0': mode === 'vertical' })}>
-            <h3>{title}</h3>
+            <h3 className="mb-5 text-3xl font-bold">{title}</h3>
             <p>{description}</p>
           </div>
           <div className="absolute bottom-8">

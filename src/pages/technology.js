@@ -48,7 +48,9 @@ export default function IndexPage() {
         <Section>
           <div className="lg:grid grid-cols-2 gap-8">
             <div className="lg:mr-8">
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-extrabold my-10 lg:mt-20">Substrate Technology</h1>
+              <h1 className="font-title text-5xl md:text-7xl xl:text-8xl font-extrabold my-10 lg:mt-20">
+                Substrate Technology
+              </h1>
               <p className="text-xl md:text-2xl xl:text-3xl font-bold">
                 What if developers could build on a blockchain framework specifically optimized for their requirements
                 that seamlessly evolves with their needs and without forks?
@@ -101,7 +103,7 @@ export default function IndexPage() {
                   <div className="w-16">
                     <Icon name="placeholder" className="w-full h-auto" />
                   </div>
-                  <h5 className="my-4">{title}</h5>
+                  <h5 className="my-4 text-xl font-bold">{title}</h5>
                   <p>{description}</p>
                 </li>
               );
@@ -109,7 +111,7 @@ export default function IndexPage() {
           </ul>
         </Section>
         <Section>
-          <h2 className="text-4xl mb-10">Substrate is:</h2>
+          <h2 className="text-4xl mb-10 font-bold">Substrate is:</h2>
           <div className="grid lg:grid-cols-2 gap-10">
             <Card page="Flexible" mode="horizontal" />
             <Card page="Open" mode="horizontal" />

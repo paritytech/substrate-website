@@ -36,7 +36,7 @@ const FutureProof = () => {
       >
         <Feature
           title="Upgradeable"
-          learnMore="Interested in modularity of Substrate?"
+          learnMore="Interested in the modularity of Substrate?"
           link="/"
           linkText="Explore Architecture"
         >

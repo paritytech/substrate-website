@@ -100,7 +100,7 @@ const Interoperable = () => {
       <Section
         col={2}
         children2={
-          <div className="grid auto-rows-fr">
+          <div className="grid auto-rows-fr md:pt-16">
             <InfoCard
               index={1}
               title="Off-Chain Worker (OCW)"

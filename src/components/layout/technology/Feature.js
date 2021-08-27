@@ -6,7 +6,7 @@ import { Link } from '../../default/Link';
 const Feature = ({ title, children, learnMore, link, linkText }) => {
   return (
     <>
-      <h2 className="text-4xl font-bold">{title}</h2>
+      <h2 className="text-4xl font-bold mb-4">{title}</h2>
       <div className="border-b-2 border-black mb-2">{children}</div>
       {learnMore && <h5 className="font-bold text-lg my-4">{learnMore}</h5>}
       <Link to={link} className="border-substrateGreen border-b-2 font-bold text-substrateGreen">
