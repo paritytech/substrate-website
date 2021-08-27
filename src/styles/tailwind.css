@@ -1,3 +1,5 @@
+/* GLOBAL Substrate platform preset */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -120,28 +122,36 @@
   }*/
 }
 
-/* Links underline animation */
+/* substrate.io config overwrites or extend global tailwind-preset.css */
 
-.underline-animate a {
-  color: #4e73f2;
-  display: inline-block;
-  position: relative;
-}
+@layer base {
+  /* Paragraphs */
+  p {
+    font-weight: initial;
+  }
 
-.underline-animate a::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 2px;
-  left: 0;
-  position: absolute;
-  background: #4e73f2;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
+  /* Links underline animation */
+  .underline-animate a {
+    @apply text-substrateBlue;
+    display: inline-block;
+    position: relative;
+  }
 
-.underline-animate a:hover::after {
-  width: 100%;
-  left: 0;
+  .underline-animate a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    @apply bg-substrateBlue;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .underline-animate a:hover::after {
+    width: 100%;
+    left: 0;
+  }
 }
