@@ -48,7 +48,7 @@ export default function IndexPage() {
         <Section>
           <div className="lg:grid grid-cols-2 gap-8">
             <div className="lg:mr-8">
-              <h1 className="font-title text-5xl md:text-7xl xl:text-8xl font-extrabold my-10 lg:mt-20">
+              <h1 className="font-title text-5xl md:text-6xl xl:text-8xl font-extrabold my-10 lg:mt-20">
                 Substrate Technology
               </h1>
               <p className="text-xl md:text-2xl xl:text-3xl font-bold">
