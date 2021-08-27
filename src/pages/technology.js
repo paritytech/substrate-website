@@ -114,9 +114,9 @@ export default function IndexPage() {
           <h2 className="text-4xl mb-10 font-bold">Substrate is:</h2>
           <div className="grid lg:grid-cols-2 gap-10">
             <Card page="Flexible" mode="horizontal" />
-            <Card page="Open" mode="horizontal" />
-            <Card page="Interoperable" mode="horizontal" />
-            <Card page="Future-Proof" mode="horizontal" />
+            <Card page="Open" mode="horizontal" delay={200} />
+            <Card page="Interoperable" mode="horizontal" delay={400} />
+            <Card page="Future-Proof" mode="horizontal" delay={600} />
           </div>
         </Section>
       </Article>
