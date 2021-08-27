@@ -62,7 +62,7 @@ const Flexible = () => {
         specific needs.
       </HighlightBanner>
 
-      <CardsNav page="Flexible" />
+      <CardsNav currentPage="Flexible" />
 
       <Section
         col={2}

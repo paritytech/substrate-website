@@ -40,29 +40,6 @@ const highlights = [
   },
 ];
 
-const cards = [
-  {
-    title: 'Flexible',
-    link: '/technology/flexible',
-    description: `The flexible nature of Substrate alleviates the tension of tradeoffs by enabling developers to create the most optimal blockchain for their specific needs.`,
-  },
-  {
-    title: 'Open',
-    link: '/technology/open',
-    description: `The combination of an open source, customizable architecture that enables developers to use the tooling of their choice with a robust, active community makes Substrate the most open way to build.`,
-  },
-  {
-    title: 'Interoperable',
-    link: '/technology/interoperable',
-    description: `Interoperability without forgoing compatibility, security, or efficiency; learn how Substrate takes a unique, multifaceted approach to address each of these.`,
-  },
-  {
-    title: 'Future-Proof',
-    link: '/technology/future-proof',
-    description: `Substrate enables developers to move faster and evolve their architecture as their needs evolve. Founders and Developers can be confident that their blockchain is ready for whatever the future brings.`,
-  },
-];
-
 export default function IndexPage() {
   return (
     <Layout mode="full">
@@ -134,13 +111,10 @@ export default function IndexPage() {
         <Section>
           <h2 className="text-4xl mb-10">Substrate is:</h2>
           <div className="grid lg:grid-cols-2 gap-10">
-            {cards.map(({ title, link, description }, index) => {
-              return (
-                <Card key={index} title={title} link={link} index={index}>
-                  {description}
-                </Card>
-              );
-            })}
+            <Card page="Flexible" mode="horizontal" />
+            <Card page="Open" mode="horizontal" />
+            <Card page="Interoperable" mode="horizontal" />
+            <Card page="Future-Proof" mode="horizontal" />
           </div>
         </Section>
       </Article>
