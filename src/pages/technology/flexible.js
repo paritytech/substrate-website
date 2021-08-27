@@ -162,8 +162,8 @@ const Flexible = () => {
                 <p>{description}</p>
                 <Link to={link}>
                   <p className="font-bold border-b-2 border-black inline">Explore</p>{' '}
-                  <span className="fill-current border-b-0 text-substrateGreen dark:text-white inline-block">
-                    <Icon name="arrow-more" />
+                  <span className="inline-block">
+                    <Icon name="arrow-more" className="fill-current text-black dark:text-white" />
                   </span>
                 </Link>
               </div>

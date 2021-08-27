@@ -12,8 +12,8 @@ const Feature = ({ title, children, learnMore, link, linkText }) => {
       <Link to={link} className="border-substrateGreen border-b-2 font-bold text-substrateGreen">
         {linkText}
       </Link>{' '}
-      <span className="fill-current border-b-0 text-substrateGreen dark:text-white inline-block">
-        <Icon name="arrow-more" />
+      <span className="inline-block">
+        <Icon name="arrow-more" className="fill-current text-substrateGreen dark:text-white" />
       </span>
     </>
   );
