@@ -128,6 +128,7 @@
   /* Paragraphs */
   p {
     font-weight: unset;
+    line-height: 1.625;
   }
 
   /* Links underline animation */
