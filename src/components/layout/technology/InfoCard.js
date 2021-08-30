@@ -1,10 +1,9 @@
 import React from 'react';
 
-const InfoCard = ({ index, title, description, delay }) => {
+const InfoCard = ({ index, title, description }) => {
   return (
     <div
       data-aos="fade-left"
-      data-aos-delay={delay}
       className="flex flex-col justify-center shadow-xl p-10 mb-8 border-l-8 border-substrateGreen-light2 rounded-md"
     >
       <div className="inline-flex mb-2">
