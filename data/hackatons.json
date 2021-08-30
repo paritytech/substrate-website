@@ -1,6 +1,7 @@
 [
   {
-    "title": "Example",
+    "city": "Berlin",
+    "title": "Substrate Hackathon",
     "date": "23.04.2021 - 31.04.2021",
     "prize": "1000 Dot Tokens",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat.",
@@ -8,7 +9,8 @@
     "image": "hackaton-example.jpg"
   },
   {
-    "title": "Example2",
+    "city": "Amsterdam",
+    "title": "Substrate Hackathon",
     "date": "23.04.2021 - 31.04.2021",
     "prize": "1000 Dot Tokens",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat.",

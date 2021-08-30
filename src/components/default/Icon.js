@@ -8,11 +8,13 @@ import twitter from '../../images/svg/social/twitter.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
+import calendar from '../../images/svg/ui/calendar.svg';
 import close from '../../images/svg/ui/close-x.svg';
 import docs from '../../images/svg/ui/docs.svg';
 import hamburger from '../../images/svg/ui/hamburger-toggle.svg';
 import moon from '../../images/svg/ui/moon.svg';
 import sidebarToggle from '../../images/svg/ui/sidebar-toggle.svg';
+import star from '../../images/svg/ui/star.svg';
 import sun from '../../images/svg/ui/sun.svg';
 
 const iconsMap = {
@@ -34,6 +36,8 @@ const iconsMap = {
   twitter: twitter,
   stackoverflow: so,
   element: element,
+  calendar: calendar,
+  star: star,
 };
 
 export default function Icon({ name, className }) {
