@@ -34,7 +34,7 @@ const Card = ({ page, delay, mode }) => {
     <Link to={link} data-aos="fade-up" data-aos-delay={delay ? delay : 0}>
       <div
         className={cx(
-          'group md:flex flex-row-reverse min-h-full mb-8 lg:mb-0 m:max-w-sm cursor-pointer shadow-xl p-8 hover:scale-105 transition-transform rounded-md bg-white relative',
+          'md:flex flex-row-reverse min-h-full mb-8 lg:mb-0 m:max-w-sm cursor-pointer shadow-xl p-8 hover:scale-105 transition-transform rounded-md bg-white relative',
           {
             'lg:block lg:w-72 xl:w-96 lg:mr-8': mode === 'vertical',
           }
@@ -49,7 +49,7 @@ const Card = ({ page, delay, mode }) => {
             <p>{description}</p>
           </div>
           <div className="absolute bottom-8">
-            <p className="font-bold border-b-2 border-black inline group-hover:mr-1 transition-all">Read More</p>{' '}
+            <p className="font-bold border-b-2 border-black inline hover:mr-1 transition-all">Read More</p>{' '}
             <span className="fill-current border-b-0 text-black dark:text-white inline-block">
               <Icon name="arrow-more" />
             </span>
