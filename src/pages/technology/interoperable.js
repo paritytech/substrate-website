@@ -103,16 +103,19 @@ const Interoperable = () => {
           <div className="grid auto-rows-fr md:pt-16">
             <InfoCard
               index={1}
+              delay={700}
               title="Off-Chain Worker (OCW)"
               description="for computationally intensive and even non-deterministic expensive tasks"
             />
             <InfoCard
               index={2}
+              delay={800}
               title="Off-Chain Storage"
               description="enables data to be stored and access by both off-chain workers and on-chain logic without requiring consensus over the whole network"
             />
             <InfoCard
               index={3}
+              delay={900}
               title="Off-Chain Indexing"
               description="stores a small amount of information on chain, such as a hash, that can be used to lookup and verify data stored off-chain independently of OCWs"
             />
