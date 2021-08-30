@@ -6,7 +6,8 @@
     "prize": "1000 Dot Tokens",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat.",
     "link": "http://link.com",
-    "image": "hackaton-example.jpg"
+    "image": "hackathons1",
+    "alt": "Man on computer"
   },
   {
     "city": "Amsterdam",
@@ -15,7 +16,8 @@
     "prize": "1000 Dot Tokens",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat.",
     "link": "http://link2.com",
-    "image": "hackaton-example2.jpg"
+    "image": "hackathons2",
+    "alt": "Men on computers"
   }
 ]
 

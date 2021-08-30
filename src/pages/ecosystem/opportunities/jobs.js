@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import Icon from '../../../components/default/Icon';
+import Image from '../../../components/default/Image';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -24,7 +25,7 @@ export default function Jobs() {
               <Icon name="external-link" className="inline mb-1" />
             </SecondaryButton>
           </div>
-          <Icon name="placeholder" className="w-full h-auto rounded-md" />
+          <Image name="jobs" alt="man on computer" className="rounded-md" />
         </div>
       </Section>
     </Layout>

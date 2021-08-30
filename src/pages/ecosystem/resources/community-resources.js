@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Icon from '../../../components/default/Icon';
+import Image from '../../../components/default/Image';
 import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
@@ -38,7 +38,7 @@ export default function CommunityResources() {
               </li>
             </ul>
           </div>
-          <Icon name="placeholder" className="w-full h-auto rounded-md" />
+          <Image name="community-resources" className="w-full h-auto rounded-md" />
         </div>
       </Section>
     </Layout>
