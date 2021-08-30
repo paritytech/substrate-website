@@ -11,6 +11,7 @@ import arrowNext from '../../images/svg/ui/arrow-next.svg';
 import calendar from '../../images/svg/ui/calendar.svg';
 import close from '../../images/svg/ui/close-x.svg';
 import docs from '../../images/svg/ui/docs.svg';
+import externalLink from '../../images/svg/ui/external-link.svg';
 import hamburger from '../../images/svg/ui/hamburger-toggle.svg';
 import moon from '../../images/svg/ui/moon.svg';
 import sidebarToggle from '../../images/svg/ui/sidebar-toggle.svg';
@@ -30,14 +31,15 @@ const iconsMap = {
   docs: docs,
   moon: moon,
   sun: sun,
+  'external-link': externalLink,
+  calendar: calendar,
+  star: star,
   /* mockup */
   placeholder: placeholder,
   /* social */
   twitter: twitter,
   stackoverflow: so,
   element: element,
-  calendar: calendar,
-  star: star,
 };
 
 export default function Icon({ name, className }) {

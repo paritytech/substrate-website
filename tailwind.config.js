@@ -36,6 +36,7 @@ module.exports = {
         substrateGreen: {
           light2: '#AEF3DC',
         },
+        substrateBlackish: '#242A35',
       },
       fontSize: {
         '7xl': ['5rem', { lineHeight: '1' }],
