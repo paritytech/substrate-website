@@ -9,7 +9,7 @@ import SecondaryButton from '../../../components/ui/SecondaryButton';
 
 export default function Jobs() {
   return (
-    <Layout mode="full">
+    <Layout mode="sidebar">
       <SEO title="Jobs" />
       <Section>
         <div className="grid md:grid-cols-2 gap-6">
