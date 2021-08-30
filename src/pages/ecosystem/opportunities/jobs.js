@@ -25,7 +25,7 @@ export default function Jobs() {
               <Icon name="external-link" className="inline mb-1" />
             </SecondaryButton>
           </div>
-          <Image name="jobs" alt="man on computer" className="rounded-md" />
+          <Image name="jobs" alt="man on computer" className="rounded-md order-first md:order-last w-full h-auto" />
         </div>
       </Section>
     </Layout>
