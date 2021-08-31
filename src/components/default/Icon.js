@@ -2,9 +2,16 @@ import React from 'react';
 
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
+import discord from '../../images/svg/social/discord.svg';
 import element from '../../images/svg/social/element.svg';
+import element2 from '../../images/svg/social/element2.svg';
+import github from '../../images/svg/social/github.svg';
+import reddit from '../../images/svg/social/reddit.svg';
 import so from '../../images/svg/social/so.svg';
+import so2 from '../../images/svg/social/so2.svg';
 import twitter from '../../images/svg/social/twitter.svg';
+import twitter2 from '../../images/svg/social/twitter2.svg';
+import youtube from '../../images/svg/social/youtube.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
@@ -17,10 +24,12 @@ import moon from '../../images/svg/ui/moon.svg';
 import sidebarToggle from '../../images/svg/ui/sidebar-toggle.svg';
 import star from '../../images/svg/ui/star.svg';
 import sun from '../../images/svg/ui/sun.svg';
+import w3fLogo from '../../images/svg/w3f-logo.svg';
 
 const iconsMap = {
   /* brand */
   'logo-white': logoWhite,
+  'w3f-logo': w3fLogo,
   /* ui */
   'hamburger-toggle': hamburger,
   'close-x': close,
@@ -38,8 +47,15 @@ const iconsMap = {
   placeholder: placeholder,
   /* social */
   twitter: twitter,
-  stackoverflow: so,
+  twitter2: twitter2,
+  'stack-overflow': so,
+  'stack-overflow-2': so2,
   element: element,
+  element2: element2,
+  youtube: youtube,
+  reddit: reddit,
+  github: github,
+  discord: discord,
 };
 
 export default function Icon({ name, className }) {

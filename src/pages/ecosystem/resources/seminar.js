@@ -51,14 +51,14 @@ export default function Seminar() {
         </div>
       </Section>
       <Section>
-        <div className="grid md:grid-cols-2 gap-6 bg-substrateGray-light">
-          <div className="p-4 self-center">
+        <div className="grid md:grid-cols-2 gap-6 bg-substrateGray-light rounded-md overflow-hidden">
+          <div className="p-8 self-center">
             <h5 className="text-xl font-bold mb-4">An Open Collaborative Learning Call</h5>
             <p className="max-w-sm">
               Substrate Seminar is an open Collaborative Learning call where we learn about Substrate together. Run by
               DevHub, we meet every other Tuesday at 14:00UTC. Learn, show off a Substrate project, and make friends!
             </p>
-            <p>Add next call to Google Calendar</p>
+            <p className="mb-4 font-bold">Add next call to Google Calendar</p>
             <SecondaryButton>
               <p className="inline font-medium mr-3">Add Call</p>
               <span className="text-white fill-current">
@@ -66,7 +66,11 @@ export default function Seminar() {
               </span>
             </SecondaryButton>
           </div>
-          <Image name="seminar" alt="Two men talking" className="order-first md:order-last w-full h-auto" />
+          <Image
+            name="seminar"
+            alt="Two men talking"
+            className="order-first md:order-last w-full h-full object-cover"
+          />
         </div>
       </Section>
       <Section>

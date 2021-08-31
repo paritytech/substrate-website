@@ -2,7 +2,6 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import Icon from '../../../components/default/Icon';
-import Image from '../../../components/default/Image';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -25,11 +24,7 @@ export default function Grants() {
               <Icon name="external-link" className="inline mb-1" />
             </SecondaryButton>
           </div>
-          <Image
-            name="w3fLogo"
-            alt="Web3 Foundation Logo"
-            className="order-first md:order-last rounded-xl w-full h-auto"
-          />
+          <Icon name="w3f-logo" className="order-first md:order-last rounded-xl w-full h-auto" />
         </div>
       </Section>
     </Layout>
