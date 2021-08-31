@@ -65,7 +65,9 @@ export default function Contact() {
             <Icon name="reddit" />
           </Link>
           <Link to="https://github.com/paritytech/substrate">
-            <Icon name="github" />
+            <span>
+              <Icon name="github" />
+            </span>
           </Link>
         </div>
       </Section>
