@@ -22,11 +22,11 @@ export default function Contact() {
             <p className="max-w-sm">
               Find answers to questions about blockchain development through Element chat and Stack Overflow.
             </p>
-            <div className="grid grid-cols-2">
-              <Link to="">
+            <div className="grid grid-cols-2 justify-items-start">
+              <Link to="https://stackoverflow.com/questions/tagged/substrate">
                 <Icon name="stack-overflow-2" className="inline" />
               </Link>
-              <Link to="">
+              <Link to="https://matrix.to/#/#substrate-technical:matrix.org">
                 <Icon name="element2" className="inline" />
               </Link>
             </div>
@@ -37,7 +37,7 @@ export default function Contact() {
               Find answers to questions about blockchain development through Element chat and Stack Overflow.
             </p>
             <p className="text-substrateBlue font-bold">
-              <Link to="/">Contact Form</Link>
+              <Link to="https://www.parity.io/collaborate/">Contact Form</Link>
             </p>
           </div>
           <div className="bg-substrateGray-light rounded-md overflow-hidden p-8 md:mb-0 mb-8">
@@ -55,7 +55,7 @@ export default function Contact() {
           <Link to="https://twitter.com/substrate_io">
             <Icon name="twitter2" />
           </Link>
-          <Link to="https://www.discord.com/">
+          <Link to="https://discord.gg/DgArePMg">
             <Icon name="discord" />
           </Link>
           <Link to="https://www.youtube.com/channel/UCSs5vZi0U7qHLkUjF3QnaWg">
