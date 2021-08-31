@@ -48,7 +48,10 @@ export default function IndexPage() {
         <Section>
           <div className="lg:grid grid-cols-2 gap-8">
             <div className="lg:mr-8">
-              <h1 className="font-title text-5xl md:text-6xl xl:text-8xl font-extrabold my-10 lg:mt-20">
+              <h1
+                data-aos="fade-up"
+                className="font-title text-5xl md:text-6xl xl:text-8xl font-extrabold my-10 lg:mt-20"
+              >
                 Substrate Technology
               </h1>
               <p className="text-xl md:text-2xl xl:text-3xl font-bold">
@@ -99,12 +102,14 @@ export default function IndexPage() {
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-16 xl:gap-24 list-none m-0">
             {highlights.map(({ title, description }) => {
               return (
-                <li className="m-0" key={title}>
-                  <div className="w-16">
-                    <Icon name="placeholder" className="w-full h-auto" />
-                  </div>
-                  <h5 className="my-4 text-xl font-bold">{title}</h5>
-                  <p>{description}</p>
+                <li key={title} className="m-0">
+                  <Link to="/technology">
+                    <div className="w-16">
+                      <Icon name="placeholder" className="w-full h-auto" />
+                    </div>
+                    <h5 className="my-4 text-xl font-bold">{title}</h5>
+                    <p>{description}</p>
+                  </Link>
                 </li>
               );
             })}

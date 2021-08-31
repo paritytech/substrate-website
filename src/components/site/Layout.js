@@ -60,7 +60,6 @@ export default function Layout({ layout = 'default', mode = 'default', children 
     AOS.init({
       disable: 'mobile',
       duration: 600,
-      once: true,
     });
   }, []);
 

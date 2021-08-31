@@ -49,7 +49,7 @@ const Card = ({ page, delay, mode }) => {
             <p>{description}</p>
           </div>
           <div className="absolute bottom-8">
-            <p className="font-bold border-b-2 border-black inline">Read More</p>{' '}
+            <p className="font-bold border-b-2 border-black inline hover:mr-1 transition-all">Read More</p>{' '}
             <span className="fill-current border-b-0 text-black dark:text-white inline-block">
               <Icon name="arrow-more" />
             </span>
