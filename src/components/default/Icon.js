@@ -1,7 +1,9 @@
 import React from 'react';
 
+import hackathons from '../../images/svg/hackathons.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
+import seminar from '../../images/svg/seminar.svg';
 import discord from '../../images/svg/social/discord.svg';
 import element from '../../images/svg/social/element.svg';
 import element2 from '../../images/svg/social/element2.svg';
@@ -30,6 +32,9 @@ const iconsMap = {
   /* brand */
   'logo-white': logoWhite,
   'w3f-logo': w3fLogo,
+  /* headings */
+  hackathons: hackathons,
+  seminar: seminar,
   /* ui */
   'hamburger-toggle': hamburger,
   'close-x': close,

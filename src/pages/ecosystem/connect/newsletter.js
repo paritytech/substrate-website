@@ -15,7 +15,7 @@ export default function Newsletter() {
       <Section>
         <div className="relative">
           <Image name="newsletter" className="w-full h-auto" />
-          <div className="bg-white lg:absolute p-8 rounded-md max-w-md mx-auto top-1/2 left-20 lg:-translate-y-1/2">
+          <div className="bg-white lg:absolute lg:p-8 mt-8 lg:mt-0 rounded-md lg:shadow-xl max-w-md top-1/2 left-20 lg:-translate-y-1/2">
             <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
             <p className="font-medium text-lg">Subscribe for technical updates and helpful developer resources.</p>
             <input

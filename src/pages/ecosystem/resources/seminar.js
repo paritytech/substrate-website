@@ -42,9 +42,11 @@ export default function Seminar() {
       <SEO title="Seminar" />
       <Section>
         <div>
-          <h2 className="text-4xl font-bold my-2">Substrate Seminar</h2>
-          <h2 className="text-4xl font-bold my-2 mb-8">A Collaborative Learning Group</h2>
-          <p className="font-medium">Substrate Seminar is an open collaborative learning call</p>
+          <h2 className="text-4xl font-bold mb-6">
+            <Icon name="seminar" className="inline mr-4 mb-1"></Icon>
+            Substrate Seminar
+          </h2>
+          <p className="font-medium capitalize">Substrate Seminar is an open collaborative learning call</p>
           <PrimaryButton link="https://web3.foundation/grants/">
             <p className="mb-0 inline font-medium">Live Call</p>
           </PrimaryButton>
