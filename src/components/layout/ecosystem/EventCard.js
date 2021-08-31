@@ -9,8 +9,10 @@ const EventCard = ({ event }) => {
 
   return (
     <article className="p-4 bg-substrateGray-light rounded-md grid md:grid-cols-2 gap-6 mb-8 shadow-md">
-      <Image name={image} alt={alt} className="rounded-md w-full h-auto" />
-      <div className="self-center">
+      <div className="relative">
+        <Image name={image} alt={alt} className="rounded-md w-full h-full md:absolute object-cover" />
+      </div>
+      <div className="self-center py-8 xl:py-16">
         <h4 className="font-extrabold mb-0 text-2xl lg:text-3xl">{city}</h4>
         <h4 className="font-extrabold mb-4 lg:mb-6 text-2xl lg:text-3xl">{title}</h4>
         <p className="mb-2 lg:mb-4">

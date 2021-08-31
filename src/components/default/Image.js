@@ -1,11 +1,11 @@
 import React from 'react';
 
-import communityResources from '../../../media/ecosystem/community-resources/community-resources.png';
-import hackathons1 from '../../../media/ecosystem/hackathons/hackathons-1.png';
+import communityResources from '../../../media/ecosystem/community-resources/community-resources.jpg';
+import hackathons1 from '../../../media/ecosystem/hackathons/hackathons-1.jpg';
 import hackathons2 from '../../../media/ecosystem/hackathons/hackathons-2.png';
-import jobs from '../../../media/ecosystem/jobs/jobs.png';
-import newsletter from '../../../media/ecosystem/newsletter/newsletter.png';
-import seminar from '../../../media/ecosystem/seminar/seminar.png';
+import jobs from '../../../media/ecosystem/jobs/jobs.jpg';
+import newsletter from '../../../media/ecosystem/newsletter/newsletter.jpg';
+import seminar from '../../../media/ecosystem/seminar/seminar.jpg';
 
 const imagesMap = {
   hackathons1,
