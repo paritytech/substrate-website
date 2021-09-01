@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import Icon from '../../../components/default/Icon';
-import Image from '../../../components/default/Image';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -38,7 +38,7 @@ const seminars = [
 
 export default function Seminar() {
   return (
-    <Layout mode="sidebar">
+    <Layout layout="sidebar">
       <SEO title="Seminar" />
       <Section>
         <div>
@@ -68,8 +68,8 @@ export default function Seminar() {
               </span>
             </SecondaryButton>
           </div>
-          <Image
-            name="seminar"
+          <StaticImage
+            src="../../../images/photos/ecosystem/seminar/seminar.jpg"
             alt="Two men talking"
             className="order-first md:order-last w-full h-full object-cover"
           />

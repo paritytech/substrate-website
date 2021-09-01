@@ -6,7 +6,7 @@
     "prize": "1000 Dot Tokens",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat.",
     "link": "http://link.com",
-    "image": "hackathons1",
+    "image": "hackathon1",
     "alt": "Man on computer"
   },
   {
@@ -16,7 +16,7 @@
     "prize": "1000 Dot Tokens",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat.",
     "link": "http://link2.com",
-    "image": "hackathons2",
+    "image": "hackathon2",
     "alt": "Men on computers"
   }
 ]

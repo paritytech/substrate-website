@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import Icon from '../../../components/default/Icon';
-import Image from '../../../components/default/Image';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -10,7 +10,7 @@ import SecondaryButton from '../../../components/ui/SecondaryButton';
 
 export default function Jobs() {
   return (
-    <Layout mode="sidebar">
+    <Layout layout="sidebar">
       <SEO title="Jobs" />
       <Section>
         <div className="grid md:grid-cols-2 gap-6">
@@ -25,7 +25,11 @@ export default function Jobs() {
               <Icon name="external-link" className="inline mb-1" />
             </SecondaryButton>
           </div>
-          <Image name="jobs" alt="man on computer" className="rounded-md order-first md:order-last w-full h-auto" />
+          <StaticImage
+            src="../../../images/photos/ecosystem/jobs/jobs.jpg"
+            alt="Man on computer"
+            className="rounded-md order-first md:order-last w-full aspect-w-1 aspect-h-1"
+          />
         </div>
       </Section>
     </Layout>

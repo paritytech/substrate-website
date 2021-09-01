@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-import Image from '../../../components/default/Image';
 import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
@@ -9,7 +9,7 @@ import SEO from '../../../components/site/SEO';
 
 export default function CommunityResources() {
   return (
-    <Layout mode="full">
+    <Layout layout="sidebar">
       <SEO title="Community Resources" />
       <Section>
         <div className="grid md:grid-cols-2 gap-6">
@@ -38,7 +38,11 @@ export default function CommunityResources() {
               </li>
             </ul>
           </div>
-          <Image name="community-resources" className="w-full h-auto rounded-md" />
+          <StaticImage
+            src="../../../images/photos/ecosystem/community-resources/community-resources.jpg"
+            alt="Man on computer"
+            className="w-full aspect-w-1 aspect-h-1 rounded-md"
+          />
         </div>
       </Section>
     </Layout>

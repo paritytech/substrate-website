@@ -9,7 +9,7 @@ import SecondaryButton from '../../../components/ui/SecondaryButton';
 
 export default function Grants() {
   return (
-    <Layout mode="sidebar">
+    <Layout layout="sidebar">
       <SEO title="Grants" />
       <Section>
         <div className="grid md:grid-cols-2 gap-6">

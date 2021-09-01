@@ -1,18 +1,24 @@
 import React from 'react';
 
+import hackathon1 from '../../../../media/hackathons/hackathons-1.jpg';
+import hackathon2 from '../../../../media/hackathons/hackathons-2.png';
 import Icon from '../../default/Icon';
-import Image from '../../default/Image';
 import SecondaryButton from '../../ui/SecondaryButton';
 
+const imageMap = {
+  hackathon1,
+  hackathon2,
+};
+
 const EventCard = ({ event }) => {
-  const { title, city, date, prize, description, link, image, alt } = event;
+  const { title, city, date, prize, description, image, link, alt } = event;
 
   return (
-    <article className="p-4 bg-substrateGray-light rounded-md grid md:grid-cols-2 gap-6 mb-8 shadow-md">
-      <div className="relative">
-        <Image name={image} alt={alt} className="rounded-md w-full h-full md:absolute object-cover" />
+    <article className="p-4 bg-substrateGray-light rounded-md grid md:grid-cols-2 gap-6 items-center mb-8 shadow-md">
+      <div className="aspect-w-1 aspect-h-1">
+        <img src={imageMap[image]} alt={alt} className="rounded-md object-cover" />
       </div>
-      <div className="self-center py-8 xl:py-16">
+      <div>
         <h4 className="font-extrabold mb-0 text-2xl lg:text-3xl">{city}</h4>
         <h4 className="font-extrabold mb-4 lg:mb-6 text-2xl lg:text-3xl">{title}</h4>
         <p className="mb-2 lg:mb-4">
