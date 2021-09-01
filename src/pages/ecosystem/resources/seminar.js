@@ -38,7 +38,7 @@ const seminars = [
 
 export default function Seminar() {
   return (
-    <Layout mode="sidebar">
+    <Layout layout="sidebar">
       <SEO title="Seminar" />
       <Section>
         <div>
