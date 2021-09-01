@@ -2,39 +2,14 @@ import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
+import faq from '../../../../data/faq.json';
+import seminars from '../../../../data/seminars.json';
 import Icon from '../../../components/default/Icon';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 import PrimaryButton from '../../../components/ui/PrimaryButton';
 import SecondaryButton from '../../../components/ui/SecondaryButton';
-
-const seminars = [
-  {
-    date: '18 May',
-    description:
-      'Aten, CTO at Patract Labs, will introduce the full-stack tools being built to power Wasm Smart Contract development for Substrate based chains.',
-  },
-  {
-    date: '1 June',
-    description:
-      'Antonio from Kilt will showcase the DID management tools his team has developed using Substrate and give an overview on what DIDs are and their vision for using them.',
-  },
-  {
-    date: 'June',
-    description:
-      'Parity Software Developer Kian will be demonstrating a recent tool he built called try-runtime to test storage migrations and runtime upgrades.',
-  },
-  {
-    date: '29 June',
-    description:
-      'RMRK.app: Nested, reactive, useful, upgradeable NFTs that react to emotion and conditionally display different resources in different formats.',
-  },
-  {
-    date: '13 July',
-    description: 'TBD',
-  },
-];
 
 export default function Seminar() {
   return (
@@ -76,38 +51,17 @@ export default function Seminar() {
         </div>
       </Section>
       <Section>
-        <div className="md:grid grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10">
           <div className="mb-16 md:mb-8">
             <h5 className="mb-8 font-medium text-2xl">FAQ</h5>
-            <p className="font-bold">Can I ask my own questions?</p>
-            <p>
-              Yes! The second half of every Seminar is for open Q & A like office hours. You can ask questions or even
-              bring your code that doesn&apos;t compile. Participants will be invited on-screen to share their work and
-              their questions. You may also join us between Seminars on Element.
-            </p>
-            <p className="font-bold">I am not a [Substrate] developer, can I still participate?</p>
-            <p>
-              Yes! The second half of every Seminar is for open Q & A like office hours. You can ask questions or even
-              bring your code that doesn&apos;t compile. Participants will be invited on-screen to share their work and
-              their questions. You may also join us between Seminars on Element.
-            </p>
-            <p className="font-bold">Where are the recordings?</p>
-            <p>Seminar has changed formats a few times so the recordings are in a few places:</p>
-            <ul>
-              <li>
-                <span className="font-bold">23 June 2020</span> and later are on Crowdcast.
-              </li>
-              <li>
-                <span className="font-bold">19 November 2019 - 23 June 2020</span> are on the Substrate Seminar YouTube
-                playlist.
-              </li>
-              <li>
-                <span className="font-bold">03 June 2019 - 02 November 2019</span> are on the Substrate Collaborative
-                Learning YouTube playlist.
-              </li>
-            </ul>
+            {faq.map(({ q, a }) => (
+              <>
+                <p className="font-bold">{q}</p>
+                <p dangerouslySetInnerHTML={{ __html: a }}></p>
+              </>
+            ))}
           </div>
-          <div>
+          <div className="order-first md:order-last">
             <h5 className="mb-8 font-medium text-2xl">Upcoming Seminars</h5>
             {seminars.map(({ date, description }) => (
               <>

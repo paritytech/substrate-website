@@ -16,7 +16,11 @@ const EventCard = ({ event }) => {
   return (
     <article className="p-4 bg-substrateGray-light rounded-md grid md:grid-cols-2 gap-6 items-center mb-8 shadow-md">
       <div className="aspect-w-1 aspect-h-1 rounded-md overflow-hidden">
-        <img src={imageMap[image]} alt={alt} className="w-full h-full object-center object-cover" />
+        <img
+          src={imageMap[image]}
+          alt={alt}
+          className="w-full h-full object-center object-cover lg:w-full and lg:h-full"
+        />
       </div>
       <div>
         <h4 className="font-extrabold mb-0 text-2xl lg:text-3xl">{city}</h4>

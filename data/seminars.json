@@ -1,12 +1,28 @@
 [
   {
     "date": "18 May",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat."
+    "description":
+      "Aten, CTO at Patract Labs, will introduce the full-stack tools being built to power Wasm Smart Contract development for Substrate based chains."
   },
   {
-    "date": "29 May",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum bibendum nunc quis consequat."
+    "date": "1 June",
+    "description":
+      "Antonio from Kilt will showcase the DID management tools his team has developed using Substrate and give an overview on what DIDs are and their vision for using them."
   },
+  {
+    "date": "June",
+    "description":
+      "Parity Software Developer Kian will be demonstrating a recent tool he built called try-runtime to test storage migrations and runtime upgrades."
+  },
+  {
+    "date": "29 June",
+    "description":
+      "RMRK.app: Nested, reactive, useful, upgradeable NFTs that react to emotion and conditionally display different resources in different formats."
+  },
+  {
+    "date": "13 July",
+    "description": "TBD"
+  }
 ]
 
 
