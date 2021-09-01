@@ -15,10 +15,11 @@ export default function Jobs() {
       <Section>
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <h2 className="text-4xl font-bold my-4">Jobs</h2>
-            <p className="max-w-sm">
-              Find job opportunities in the Substrate Ecosystem through DotJobs, an independent staking provider that
-              operates validation software for protocols they are actively invested in and involved with.
+            <h2 className="text-4xl font-bold mt-4 mb-8">Jobs</h2>
+            <p className="max-w-sm mb-8">
+              Find job opportunities in the Substrate Ecosystem through <span className="font-bold">DotJobs</span>, an
+              independent staking provider that operates validation software for protocols they are actively invested in
+              and involved with.
             </p>
             <SecondaryButton link="https://dotjobs.net/">
               <p className="mb-0 mr-2 inline">Visit DotJobs</p>

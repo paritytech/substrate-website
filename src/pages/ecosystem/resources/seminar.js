@@ -5,6 +5,7 @@ import React from 'react';
 import faq from '../../../../data/faq.json';
 import seminars from '../../../../data/seminars.json';
 import Icon from '../../../components/default/Icon';
+import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -23,8 +24,16 @@ export default function Seminar() {
           </h2>
           <p className="font-medium capitalize">Substrate Seminar is an open collaborative learning call</p>
           <PrimaryButton link="https://web3.foundation/grants/">
-            <p className="mb-0 inline font-medium">Live Call</p>
+            <p className="mb-0 font-medium">Live Call</p>
           </PrimaryButton>
+          <div className="mt-8">
+            <Link to="/">
+              <p className="font-bold border-b-2 border-black inline hover:mr-1 transition-all">Past Seminars</p>{' '}
+              <span className="fill-current border-b-0 text-black dark:text-white inline-block">
+                <Icon name="arrow-more" />
+              </span>
+            </Link>
+          </div>
         </div>
       </Section>
       <Section>

@@ -25,13 +25,13 @@ const EventCard = ({ event }) => {
       <div>
         <h4 className="font-extrabold mb-0 text-2xl lg:text-3xl">{city}</h4>
         <h4 className="font-extrabold mb-4 lg:mb-6 text-2xl lg:text-3xl">{title}</h4>
-        <p className="mb-2 lg:mb-4">
+        <p className="mb-2 lg:mb-4 font-semibold">
           <span>
             <Icon name="calendar" className="fill-current text-black inline mr-2 mb-1" />
           </span>
           Date: {date}
         </p>
-        <p className="mb-2 lg:mb-4">
+        <p className="mb-2 lg:mb-4 font-semibold">
           <span>
             <Icon name="star" className="fill-current text-black inline mr-2 mb-1" />
           </span>
