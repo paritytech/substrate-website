@@ -10,7 +10,7 @@ import SEO from '../../../components/site/SEO';
 
 export default function Hackathons() {
   return (
-    <Layout mode="sidebar">
+    <Layout layout="sidebar">
       <SEO title="Hackathons" />
       <Section>
         <h2 className="text-4xl font-bold mb-4">
