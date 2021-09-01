@@ -1,7 +1,7 @@
 import React from 'react';
 
-import hackathon1 from '../../../../media/hackathons/hackathons-1.jpg';
-import hackathon2 from '../../../../media/hackathons/hackathons-2.png';
+import hackathon1 from '../../../../media/images/hackathons/hackathons-1.jpg';
+import hackathon2 from '../../../../media/images/hackathons/hackathons-2.png';
 import Icon from '../../default/Icon';
 import SecondaryButton from '../../ui/SecondaryButton';
 

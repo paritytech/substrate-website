@@ -8,7 +8,7 @@ import Header from '../site/Header';
 function LayoutSidebar({ children }) {
   return (
     <div className="flex">
-      <div className="hidden lg:block lg:bg-substrateGray-light lg:dark:bg-gray-900">
+      <div className="hidden lg:block lg:bg-substrateGray-light border-r lg:dark:bg-gray-900">
         <div className={cx('sticky top-16 overflow-y-auto lg:h-screen w-60')}>
           <nav className={cx('pl-4 pt-10 pb-5')}>Nav</nav>
         </div>
