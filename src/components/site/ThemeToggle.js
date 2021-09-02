@@ -19,7 +19,7 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     setLocalColor(colorMode);
-  }, []);
+  }, [colorMode]);
 
   return (
     <div className="cursor-pointer" onClick={toggleTheme}>
