@@ -11,12 +11,12 @@ export default function Newsletter() {
   return (
     <Layout layout="sidebar">
       <SEO title="Newsletter" />
-      <div className="-mt-10 h-screen">
-        <div className="h-2/5 relative md:overflow-hidden">
+      <div className="-mt-10">
+        <div className="relative">
           <StaticImage
             src="../../../images/photos/ecosystem/newsletter/newsletter.jpg"
             alt="Man on computer"
-            className="w-full h-auto xl:-mt-16"
+            className="w-full h-auto"
           />
           <div className="bg-white md:absolute m-8 md:p-8 mt-8 md:mt-0 rounded-md md:shadow-xl max-w-md top-1/2 left-10 md:-translate-y-1/2">
             <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
