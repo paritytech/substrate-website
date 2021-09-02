@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import Icon from '../default/Icon';
@@ -7,6 +7,7 @@ import Icon from '../default/Icon';
 
 export default function ThemeToggle() {
   const { colorMode, setColorMode } = useContext(ThemeContext);
+  const [localColor, setLocalColor] = useState(null);
 
   function toggleTheme() {
     if (colorMode === 'dark') {
@@ -16,14 +17,18 @@ export default function ThemeToggle() {
     }
   }
 
+  useEffect(() => {
+    setLocalColor(colorMode);
+  }, []);
+
   return (
     <div className="cursor-pointer" onClick={toggleTheme}>
-      {colorMode === 'light' && (
+      {localColor === 'light' && (
         <div className="transform -rotate-12">
           <Icon name="moon" />
         </div>
       )}
-      {colorMode === 'dark' && (
+      {localColor === 'dark' && (
         <div>
           <Icon name="sun" />
         </div>
