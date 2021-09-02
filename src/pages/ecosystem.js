@@ -6,7 +6,7 @@ import SEO from '../components/site/SEO';
 
 export default function Home() {
   return (
-    <Layout mode="full">
+    <Layout layout="sidebar">
       <SEO title="Substrate Ecosystem" />
       <div>ecosystem home</div>
     </Layout>

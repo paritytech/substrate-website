@@ -6,7 +6,7 @@ import SEO from '../../components/site/SEO';
 
 export default function Teams() {
   return (
-    <Layout mode="full">
+    <Layout layout="sidebar">
       <SEO title="Teams" />
       <div>teams</div>
     </Layout>

@@ -2,6 +2,7 @@ import AOS from 'aos';
 import cx from 'classnames';
 import React, { useEffect } from 'react';
 
+import { ThemeProvider } from '../../contexts/ThemeContext';
 import Footer from '../site/Footer';
 import Header from '../site/Header';
 
@@ -33,16 +34,18 @@ export default function Layout({ layout = 'default', mode = 'default', children 
 
   return (
     <>
-      <Header mode={mode} />
-      <main
-        className={cx('min-h-screen', {
-          'mt-12': layout === 'default',
-        })}
-      >
-        {layout === 'default' && <>{children}</>}
-        {layout === 'sidebar' && <LayoutSidebar>{children}</LayoutSidebar>}
-      </main>
-      <Footer />
+      <ThemeProvider>
+        <Header mode={mode} />
+        <main
+          className={cx('min-h-screen', {
+            'mt-12': layout === 'default',
+          })}
+        >
+          {layout === 'default' && <>{children}</>}
+          {layout === 'sidebar' && <LayoutSidebar>{children}</LayoutSidebar>}
+        </main>
+        <Footer />
+      </ThemeProvider>
     </>
   );
 }

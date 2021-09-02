@@ -6,7 +6,7 @@ import SEO from '../../../components/site/SEO';
 
 export default function AwesomeSubstrate() {
   return (
-    <Layout mode="full">
+    <Layout layout="sidebar">
       <SEO title="Awesome Substrate" />
       <div>awesome substrate</div>
     </Layout>

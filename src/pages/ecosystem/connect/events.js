@@ -6,7 +6,7 @@ import SEO from '../../../components/site/SEO';
 
 export default function Events() {
   return (
-    <Layout mode="full">
+    <Layout layout="sidebar">
       <SEO title="Events" />
       <div>events</div>
     </Layout>

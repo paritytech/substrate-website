@@ -6,7 +6,7 @@ import SEO from '../../../components/site/SEO';
 
 export default function Blog() {
   return (
-    <Layout mode="full">
+    <Layout layout="sidebar">
       <SEO title="Blog" />
       <div>blog</div>
     </Layout>

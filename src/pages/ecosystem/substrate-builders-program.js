@@ -6,7 +6,7 @@ import SEO from '../../components/site/SEO';
 
 export default function BuildersProgram() {
   return (
-    <Layout mode="full">
+    <Layout layout="sidebar">
       <SEO title="Substrate Builders Program" />
       <div>builders program</div>
     </Layout>
