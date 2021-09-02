@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { ThemeProvider } from './src/contexts/ThemeContext';
+
 const MagicScriptTag = () => {
   const codeToRunOnClient = `
   (function() {
@@ -27,6 +29,13 @@ const MagicScriptTag = () => {
   // eslint-disable-next-line react/no-danger
   return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />;
 };
+
 export const onRenderBody = ({ setPreBodyComponents }) => {
   setPreBodyComponents(<MagicScriptTag />);
 };
+
+export const wrapRootElement = ({ element }) => (
+  <ThemeProvider>
+    <div>{element}</div>
+  </ThemeProvider>
+);
