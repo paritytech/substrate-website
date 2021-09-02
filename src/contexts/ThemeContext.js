@@ -22,7 +22,7 @@ function getInitialColorMode() {
 export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [colorMode, rawSetColorMode] = React.useState(getInitialColorMode);
+  const [colorMode, rawSetColorMode] = React.useState(getInitialColorMode());
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

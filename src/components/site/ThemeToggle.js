@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { ThemeContext } from '../../contexts/ThemeContext';
+import { ThemeContext, ThemeProvider } from '../../contexts/ThemeContext';
 import Icon from '../default/Icon';
 
 // TODO: add dark mode context
@@ -17,16 +17,18 @@ export default function ThemeToggle() {
   }
 
   return (
-    <div className="cursor-pointer" onClick={toggleTheme}>
-      {colorMode == 'light' ? (
-        <div className="transform -rotate-12">
-          <Icon name="moon" />
-        </div>
-      ) : (
-        <div>
-          <Icon name="sun" />
-        </div>
-      )}
-    </div>
+    <ThemeProvider>
+      <div className="cursor-pointer" onClick={toggleTheme}>
+        {colorMode == 'light' ? (
+          <div className="transform -rotate-12">
+            <Icon name="moon" />
+          </div>
+        ) : (
+          <div>
+            <Icon name="sun" />
+          </div>
+        )}
+      </div>
+    </ThemeProvider>
   );
 }
