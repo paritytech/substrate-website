@@ -25,12 +25,12 @@ export default function ThemeToggle() {
     <div className="cursor-pointer" onClick={toggleTheme}>
       {localColor === 'light' && (
         <div className="transform -rotate-12">
-          <Icon name="moon" />
+          <Icon name="sun" />
         </div>
       )}
       {localColor === 'dark' && (
         <div>
-          <Icon name="sun" />
+          <Icon name="moon" />
         </div>
       )}
     </div>

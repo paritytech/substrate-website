@@ -31,7 +31,7 @@ export default function Newsletter() {
             <PrimaryButton link="https://www.link.com/" fullWidth={true}>
               Subscribe
             </PrimaryButton>
-            <p className="text-xs mt-3 mb-0">
+            <p className="text-xs mt-3 mb-0 underline-animate underline-animate-thin">
               To see how we use your information please see our{' '}
               <Link className="text-substrateBlue" to="/">
                 privacy policy.

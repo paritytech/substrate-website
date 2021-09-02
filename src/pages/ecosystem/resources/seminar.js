@@ -20,9 +20,7 @@ export default function Seminar() {
         <div>
           <h2 className="text-4xl font-bold mb-6">Substrate Seminar</h2>
           <p className="font-medium capitalize">Substrate Seminar is an open collaborative learning call</p>
-          <PrimaryButton link="https://web3.foundation/grants/">
-            <p className="mb-0 font-medium">Live Call</p>
-          </PrimaryButton>
+          <PrimaryButton link="https://web3.foundation/grants/">Live Call</PrimaryButton>
           <div className="mt-8">
             {/* Will be put back in the future */}
             {/* <Link to="/">
@@ -44,7 +42,7 @@ export default function Seminar() {
             </p>
             <p className="mb-4 font-bold">Add next call to Google Calendar</p>
             <SecondaryButton>
-              <p className="inline font-medium mr-3">Add Call</p>
+              <p className="inline font-bold mr-3">Add Call</p>
               <span className="text-white fill-current">
                 <Icon name="calendar" className="inline mb-1" />
               </span>
