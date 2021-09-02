@@ -154,4 +154,10 @@
     width: 100%;
     left: 0;
   }
+
+  /* Thinner underline animation */
+
+  .underline-animate-thin a::after {
+    height: 1px;
+  }
 }

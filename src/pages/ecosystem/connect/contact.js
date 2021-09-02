@@ -24,10 +24,10 @@ export default function Contact() {
             </p>
             <div className="grid grid-cols-2 justify-items-start">
               <Link to="https://stackoverflow.com/questions/tagged/substrate">
-                <Icon name="stack-overflow-2" className="inline" />
+                <Icon name="stack-overflow-2" className="inline hover:opacity-50 transition-all" />
               </Link>
-              <Link to="https://matrix.to/#/#substrate-technical:matrix.org">
-                <Icon name="element2" className="inline" />
+              <Link className="mt-1" to="https://matrix.to/#/#substrate-technical:matrix.org">
+                <Icon name="element2" className="inline hover:opacity-50 transition-all" />
               </Link>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function Contact() {
             <p className="max-w-sm">
               Find answers to questions about blockchain development through Element chat and Stack Overflow.
             </p>
-            <p className="text-substrateBlue font-bold">
+            <p className="text-substrateBlue font-bold underline-animate">
               <Link to="https://www.parity.io/collaborate/">Contact Form</Link>
             </p>
           </div>
@@ -45,7 +45,9 @@ export default function Contact() {
             <p className="max-w-sm">
               Find answers to questions about blockchain development through Element chat and Stack Overflow.
             </p>
-            <p className="text-substrateBlue font-bold">general@parity.io</p>
+            <p className="text-substrateBlue font-bold underline-animate">
+              <a href="mailto:general@parity.io">general@parity.io</a>
+            </p>
           </div>
         </div>
       </Section>
@@ -53,20 +55,20 @@ export default function Contact() {
         <h5 className="text-xl font-extrabold mb-8">More Ways To Connect</h5>
         <div className="flex gap-10 md:gap-20">
           <Link to="https://twitter.com/substrate_io">
-            <Icon name="twitter2" />
+            <Icon name="twitter2" className="hover:opacity-50 transition-all" />
           </Link>
           <Link to="https://discord.gg/DgArePMg">
-            <Icon name="discord" />
+            <Icon name="discord" className="hover:opacity-50 transition-all" />
           </Link>
           <Link to="https://www.youtube.com/channel/UCSs5vZi0U7qHLkUjF3QnaWg">
-            <Icon name="youtube" />
+            <Icon name="youtube" className="hover:opacity-50 transition-all" />
           </Link>
           <Link to="https://www.reddit.com/r/substrate/">
-            <Icon name="reddit" />
+            <Icon name="reddit" className="hover:opacity-50 transition-all" />
           </Link>
           <Link to="https://github.com/paritytech/substrate">
             <span className="text-black dark:text-white fill-current">
-              <Icon name="github" />
+              <Icon name="github" className="hover:opacity-50 transition-all" />
             </span>
           </Link>
         </div>

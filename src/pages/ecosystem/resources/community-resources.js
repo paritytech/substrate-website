@@ -12,16 +12,16 @@ export default function CommunityResources() {
     <Layout layout="sidebar">
       <SEO title="Community Resources" />
       <Section>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 items-start">
           <div>
             <h2 className="text-4xl font-bold mb-8">Community Resources</h2>
-            <p className="max-w-sm font-medium mb-16">
+            <p className="max-w-sm font-medium mb-8">
               An ever-Growing list of Educational resources provided by the Community
             </p>
             <h5 className="text-2xl font-semibold mb-6">List Of Resources</h5>
             <ul className="pl-8">
               <li>
-                <p className="mb-0">
+                <p className="mb-0 underline-animate underline-animate-thin">
                   <Link to="/" className="text-substrateBlue">
                     Industry Connect/Acala
                   </Link>{' '}
@@ -29,7 +29,7 @@ export default function CommunityResources() {
                 </p>
               </li>
               <li>
-                <p>
+                <p className="underline-animate underline-animate-thin">
                   <Link to="/" className="text-substrateBlue">
                     BlockOne+ / Parity Asia
                   </Link>{' '}
@@ -41,7 +41,7 @@ export default function CommunityResources() {
           <StaticImage
             src="../../../images/photos/ecosystem/community-resources/community-resources.jpg"
             alt="Man on computer"
-            className="w-full aspect-w-1 aspect-h-1 rounded-md"
+            className="overflow-hidden rounded-md w-full h-auto aspect-h-1 aspect-w-1"
           />
         </div>
       </Section>

@@ -13,9 +13,9 @@ export default function Jobs() {
     <Layout layout="sidebar">
       <SEO title="Jobs" />
       <Section>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 items-start">
           <div>
-            <h2 className="text-4xl font-bold mt-4 mb-8">Jobs</h2>
+            <h2 className="text-4xl font-bold mb-8">Jobs</h2>
             <p className="max-w-sm mb-8">
               Find job opportunities in the Substrate Ecosystem through <span className="font-bold">DotJobs</span>, an
               independent staking provider that operates validation software for protocols they are actively invested in

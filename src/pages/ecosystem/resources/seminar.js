@@ -5,7 +5,7 @@ import React from 'react';
 import faq from '../../../../data/faq.json';
 import seminars from '../../../../data/seminars.json';
 import Icon from '../../../components/default/Icon';
-import { Link } from '../../../components/default/Link';
+// import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -18,21 +18,19 @@ export default function Seminar() {
       <SEO title="Seminar" />
       <Section>
         <div>
-          <h2 className="text-4xl font-bold mb-6">
-            <Icon name="seminar" className="inline mr-4 mb-1"></Icon>
-            Substrate Seminar
-          </h2>
+          <h2 className="text-4xl font-bold mb-6">Substrate Seminar</h2>
           <p className="font-medium capitalize">Substrate Seminar is an open collaborative learning call</p>
           <PrimaryButton link="https://web3.foundation/grants/">
             <p className="mb-0 font-medium">Live Call</p>
           </PrimaryButton>
           <div className="mt-8">
-            <Link to="/">
+            {/* Will be put back in the future */}
+            {/* <Link to="/">
               <p className="font-bold border-b-2 border-black inline hover:mr-1 transition-all">Past Seminars</p>{' '}
               <span className="fill-current border-b-0 text-black dark:text-white inline-block">
                 <Icon name="arrow-more" />
               </span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </Section>
@@ -74,7 +72,7 @@ export default function Seminar() {
             <h5 className="mb-8 font-medium text-2xl">Upcoming Seminars</h5>
             {seminars.map(({ date, description }) => (
               <>
-                <p className="text-substrateGreen fill-current">
+                <p className="text-substrateGreen font-bold fill-current">
                   <Icon name="calendar" className="inline mb-1 mr-3" />
                   {date}
                 </p>
