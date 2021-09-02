@@ -1,5 +1,7 @@
 import React from 'react';
 
+import forkless from '../../images/svg/forkless.svg';
+import lightClient from '../../images/svg/light-client.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import element from '../../images/svg/social/element.svg';
@@ -14,6 +16,7 @@ import hamburger from '../../images/svg/ui/hamburger-toggle.svg';
 import moon from '../../images/svg/ui/moon.svg';
 import sidebarToggle from '../../images/svg/ui/sidebar-toggle.svg';
 import sun from '../../images/svg/ui/sun.svg';
+import waLogo from '../../images/svg/wa-logo.svg';
 
 const iconsMap = {
   /* brand */
@@ -34,6 +37,10 @@ const iconsMap = {
   twitter: twitter,
   stackoverflow: so,
   element: element,
+  /* highlights */
+  'wa-logo': waLogo,
+  forkless: forkless,
+  'light-client': lightClient,
 };
 
 export default function Icon({ name, className }) {

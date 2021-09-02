@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Icon from '../../components/default/Icon';
+import Gif from '../../components/default/Gif';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
@@ -16,7 +16,7 @@ const FutureProof = () => {
   return (
     <Layout>
       <SEO title="Future-Proof" />
-      <Hero page="Future Proof">
+      <Hero page="Future Proof" image="heroFutureProof">
         <p>
           Blockchain technology is evolving at a rapid pace and has spurred in innovation in other areas such Zero
           Knowledge, consensus mechanisms, cryptographic libraries and much more. It&apos;s challenging enough to keep
@@ -30,7 +30,7 @@ const FutureProof = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <Gif name="upgradable" className="w-full h-auto" />
           </FeatureImage>
         }
       >
@@ -64,7 +64,7 @@ const FutureProof = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <Gif name="composable" className="w-full h-auto" />
           </FeatureImage>
         }
       >
@@ -102,7 +102,7 @@ const FutureProof = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <Gif name="adaptable" className="w-full h-auto" />
           </FeatureImage>
         }
       >
