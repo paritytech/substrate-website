@@ -69,7 +69,13 @@ export default function IndexPage() {
               </p>
             </div>
             <div>
-              <Gif name="heroTechnology" alt="Substrate Hero Image" />
+              <div style={{ paddingTop: 'calc(360 / 360 * 100%)' }} className="h-0 relative">
+                <Gif
+                  name="heroTechnology"
+                  alt="Substrate Hero Image"
+                  className="h-auto top-0 left-0 max-w-full absolute"
+                />
+              </div>
               <p>
                 Substrate was created by OGs of blockchain who set out to overcome the limitations they experienced
                 building blockchains. Through the process of building clients in the early days of Bitcoin and Ethereum,
