@@ -20,8 +20,8 @@ export default function Grants() {
               the field of decentralized software protocols.
             </p>
             <SecondaryButton link="https://web3.foundation/grants/">
-              <p className="mb-0 mr-2 inline">Visit Web3 Grants</p>
-              <Icon name="external-link" className="inline mb-1" />
+              <span className="mb-0 mr-2 inline">Visit Web3 Grants</span>
+              <Icon name="external-link" className="inline mb-1 fill-current text-white dark:text-black" />
             </SecondaryButton>
           </div>
           <Icon name="w3f-logo" className="order-first md:order-last rounded-xl w-full h-auto" />

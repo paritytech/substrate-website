@@ -17,7 +17,7 @@ export default function Contact() {
       </Section>
       <Section>
         <div className="md:grid md:grid-cols-3 gap-6">
-          <div className="bg-substrateGray-light shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
+          <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">Technical Support</h5>
             <p className="max-w-sm">
               Find answers to questions about blockchain development through Element chat and Stack Overflow.
@@ -31,7 +31,7 @@ export default function Contact() {
               </Link>
             </div>
           </div>
-          <div className="bg-substrateGray-light shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
+          <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">Business Inquiries</h5>
             <p className="max-w-sm">
               Find answers to questions about blockchain development through Element chat and Stack Overflow.
@@ -40,7 +40,7 @@ export default function Contact() {
               <Link to="https://www.parity.io/collaborate/">Contact Form</Link>
             </p>
           </div>
-          <div className="bg-substrateGray-light shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
+          <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">General Inquiries</h5>
             <p className="max-w-sm">
               Find answers to questions about blockchain development through Element chat and Stack Overflow.

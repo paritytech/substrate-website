@@ -13,7 +13,7 @@ const ChildMenu = ({ slugPrefix, childMenu }) => {
   const { t } = useTranslation();
 
   return (
-    <ul className="w-56 pt-4 m-0 list-none absolute top-0 left-full h-full rounded-tr-md rounded-br-md shadow-lg ring-1 ring-black dark:ring-white bg-white dark:bg-black">
+    <ul className="w-56 pt-4 m-0 list-none absolute top-0 left-full h-full rounded-tr-md rounded-br-md shadow-lg ring-1 ring-black dark:ring-substrateDarkThemeGrey bg-white dark:bg-substrateDarkest">
       {childMenu.map(childMenuItem => {
         return (
           <li
@@ -124,7 +124,7 @@ const DropDown = ({ menuItem }) => {
         >
           <ul
             className={cx(
-              'm-0 list-none relative pt-4 pb-5 bg-white dark:bg-black shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md',
+              'm-0 list-none relative pt-4 pb-5 bg-white dark:bg-substrateDarkest shadow-lg ring-1 ring-substrateDark dark:ring-substrateDarkThemeGrey rounded-md',
               {
                 'rounded-tr-none rounded-br-none': isChildMenuOpen,
               }

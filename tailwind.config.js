@@ -38,6 +38,9 @@ module.exports = {
           dark: '#22B577',
         },
         substrateBlackish: '#242A35',
+        substrateDarkest: '#181A22',
+        substrateDarkThemeGrey: '#3A424E',
+        substrateDarkThemeLightGrey: '#F8FAF9',
       },
       fontSize: {
         '7xl': ['5rem', { lineHeight: '1' }],

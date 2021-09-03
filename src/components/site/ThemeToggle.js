@@ -22,7 +22,7 @@ export default function ThemeToggle() {
   }, [colorMode]);
 
   return (
-    <div className="cursor-pointer" onClick={toggleTheme}>
+    <div className="cursor-pointer hover:opacity-60 transition-opacity" onClick={toggleTheme}>
       {localColor === 'light' && (
         <div className="transform -rotate-12">
           <Icon name="sun" />
