@@ -36,7 +36,7 @@ export default function Seminar() {
         <div className="grid md:grid-cols-2 gap-6 bg-substrateGray-light dark:bg-substrateBlackish rounded-md overflow-hidden">
           <div className="p-8 self-center">
             <h5 className="text-xl font-bold mb-4">An Open Collaborative Learning Call</h5>
-            <p className="max-w-sm leading-8">
+            <p className="max-w-sm">
               Substrate Seminar is an open Collaborative Learning call where we learn about Substrate together. Run by
               DevHub, we meet every other Tuesday at 14:00UTC. Learn, show off a Substrate project, and make friends!
             </p>
@@ -62,7 +62,7 @@ export default function Seminar() {
             {faq.map(({ q, a }) => (
               <>
                 <p className="font-bold">{q}</p>
-                <p className="leading-8" dangerouslySetInnerHTML={{ __html: a }}></p>
+                <p dangerouslySetInnerHTML={{ __html: a }}></p>
               </>
             ))}
           </div>
@@ -74,7 +74,9 @@ export default function Seminar() {
                   <Icon name="calendar" className="inline mb-1 mr-3" />
                   {date}
                 </p>
-                <p className="border-b border-substrateBlackish pb-8 leading-8">{description}</p>
+                <p className="border-b border-substrateBlackish dark:border-substrateDarkThemeGrey pb-8">
+                  {description}
+                </p>
               </>
             ))}
           </div>

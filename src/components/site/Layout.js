@@ -15,7 +15,7 @@ function LayoutSidebar({ children }) {
       </div>
       <div className="w-full 2xl:pr-60">
         <article className="lg:max-w-6xl m-auto">
-          <div className="pt-10">{children}</div>
+          <div className="pt-10 leading-8">{children}</div>
         </article>
       </div>
     </div>

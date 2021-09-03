@@ -37,7 +37,7 @@ const EventCard = ({ event }) => {
           </span>
           Prize: {prize}
         </p>
-        <p className="leading-8">{description}</p>
+        <p>{description}</p>
         <SecondaryButton link={link}>Join us</SecondaryButton>
       </div>
     </article>
