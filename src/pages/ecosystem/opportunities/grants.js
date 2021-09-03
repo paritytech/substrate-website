@@ -24,7 +24,9 @@ export default function Grants() {
               <Icon name="external-link" className="inline mb-1 fill-current text-white dark:text-black" />
             </SecondaryButton>
           </div>
-          <Icon name="w3f-logo" className="order-first md:order-last rounded-xl w-full h-auto" />
+          <div className="fill-current text-white dark:text-black bg-black dark:bg-substrateDarkThemeLightGrey rounded-xl aspect-w-9 aspect-h-8 flex">
+            <Icon name="w3f-logo" className="order-first md:order-last w-full pb-6 px-5 self-center" />
+          </div>
         </div>
       </Section>
     </Layout>
