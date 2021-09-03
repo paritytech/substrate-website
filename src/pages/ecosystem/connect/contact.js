@@ -19,7 +19,7 @@ export default function Contact() {
         <div className="md:grid md:grid-cols-3 gap-6">
           <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">Technical Support</h5>
-            <p className="max-w-sm">
+            <p className="max-w-sm leading-8">
               Find answers to questions about blockchain development through Element chat and Stack Overflow.
             </p>
             <div className="grid grid-cols-2 justify-items-start">
@@ -33,7 +33,7 @@ export default function Contact() {
           </div>
           <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">Business Inquiries</h5>
-            <p className="max-w-sm">
+            <p className="max-w-sm leading-8">
               Find answers to questions about blockchain development through Element chat and Stack Overflow.
             </p>
             <p className="text-substrateBlue font-bold underline-animate">
@@ -42,7 +42,7 @@ export default function Contact() {
           </div>
           <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">General Inquiries</h5>
-            <p className="max-w-sm">
+            <p className="max-w-sm leading-8">
               Find answers to questions about blockchain development through Element chat and Stack Overflow.
             </p>
             <p className="text-substrateBlue font-bold underline-animate">

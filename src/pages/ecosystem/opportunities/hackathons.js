@@ -13,7 +13,7 @@ export default function Hackathons() {
       <SEO title="Hackathons" />
       <Section>
         <h2 className="text-4xl font-bold mb-4">Hackathons</h2>
-        <p>
+        <p className="leading-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget libero in purus rutrum condimentum. Phasellus
           condimentum enim quis purus pellentesque, ut varius magna egestas. Donec libero leo, sagittis vel{' '}
         </p>

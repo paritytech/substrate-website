@@ -15,11 +15,11 @@ export default function CommunityResources() {
         <div className="grid md:grid-cols-2 gap-6 items-start">
           <div>
             <h2 className="text-4xl font-bold mb-8">Community Resources</h2>
-            <p className="max-w-sm font-medium mb-8">
+            <p className="max-w-sm font-medium mb-8 leading-8">
               An ever-Growing list of Educational resources provided by the Community
             </p>
-            <h5 className="text-2xl font-semibold mb-6">List Of Resources</h5>
-            <ul className="pl-8">
+            <h5 className="text-2xl font-semibold mb-4">List Of Resources</h5>
+            <ul className="pl-8 leading-8">
               <li>
                 <p className="mb-0 underline-animate underline-animate-thin">
                   <Link to="/" className="text-substrateBlue">

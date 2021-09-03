@@ -15,7 +15,7 @@ export default function Grants() {
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <h2 className="text-4xl font-bold mb-8">Grants</h2>
-            <p className="max-w-sm mb-8">
+            <p className="max-w-sm mb-8 leading-8">
               In support of our mission, the Web3 Foundation grants program funds software development and research in
               the field of decentralized software protocols.
             </p>
