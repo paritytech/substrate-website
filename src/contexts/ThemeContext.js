@@ -35,7 +35,9 @@ export const ThemeProvider = ({ children }) => {
     // Set Tailwind color mode
     if (value == 'dark') {
       document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
     } else {
+      document.documentElement.classList.add('light');
       document.documentElement.classList.remove('dark');
     }
     // Persist on update
