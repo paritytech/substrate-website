@@ -30,9 +30,12 @@ const Header = ({ mode }) => {
 
   return (
     <header
-      className={cx('sticky top-0 z-10 border-b bg-white dark:bg-black border-gray-200 dark:border-gray-700', {
-        'border-b-0': mode === 'full' && !isScrolled,
-      })}
+      className={cx(
+        'sticky top-0 z-10 border-b bg-white dark:bg-substrateDarkest border-gray-200 dark:border-substrateDarkThemeGrey',
+        {
+          'border-b-0': mode === 'full' && !isScrolled,
+        }
+      )}
     >
       <div className="px-4 xl:px-12">
         <div

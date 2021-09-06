@@ -11,12 +11,12 @@
     @apply box-border;
   } */
   html {
-    @apply bg-white dark:bg-black antialiased;
+    @apply bg-white dark:bg-substrateDarkest antialiased;
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-white dark:bg-black text-substrateDark dark:text-white text-base;
+    @apply bg-white dark:bg-substrateDarkest text-substrateDark dark:text-white text-base;
     background: transparent;
   }
 
@@ -154,5 +154,11 @@
   .underline-animate a:hover::after {
     width: 100%;
     left: 0;
+  }
+
+  /* Thinner underline animation */
+
+  .underline-animate-thin a::after {
+    height: 1px;
   }
 }
