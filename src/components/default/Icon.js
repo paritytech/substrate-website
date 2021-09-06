@@ -1,9 +1,8 @@
 import React from 'react';
 
-
 import forkless from '../../images/svg/forkless.svg';
-import lightClient from '../../images/svg/light-client.svg';
 import hackathons from '../../images/svg/hackathons.svg';
+import lightClient from '../../images/svg/light-client.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import seminar from '../../images/svg/seminar.svg';
@@ -29,8 +28,8 @@ import moon from '../../images/svg/ui/moon.svg';
 import sidebarToggle from '../../images/svg/ui/sidebar-toggle.svg';
 import star from '../../images/svg/ui/star.svg';
 import sun from '../../images/svg/ui/sun.svg';
-import waLogo from '../../images/svg/wa-logo.svg';
 import w3fLogo from '../../images/svg/w3f-logo.svg';
+import waLogo from '../../images/svg/wa-logo.svg';
 
 const iconsMap = {
   /* brand */
@@ -65,7 +64,7 @@ const iconsMap = {
   reddit: reddit,
   github: github,
   discord: discord,
-    /* highlights */
+  /* highlights */
   'wa-logo': waLogo,
   forkless: forkless,
   'light-client': lightClient,
