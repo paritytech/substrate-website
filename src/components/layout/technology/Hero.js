@@ -30,7 +30,7 @@ const pages = [
 
 const Hero = ({ page, image, children }) => {
   return (
-    <div className="bg-substrateGray-light -mt-12 pt-6">
+    <div className="bg-substrateGray-light dark:bg-substrateBlackish -mt-12 pt-6">
       <Section>
         <ul className="m-0 p-0 hidden list-none md:flex mb-3 text-lg">
           {pages.map(({ title, link }) => {

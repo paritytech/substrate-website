@@ -30,7 +30,7 @@ const links = [
 
 const ExploreLinkSection = () => {
   return (
-    <div className="bg-substrateGray pb-10 pt-20">
+    <div className="bg-substrateGray dark:bg-substrateDarkest pb-10 pt-20">
       <Section>
         <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
         <div className="sm:grid grid-cols-3 gap-6 xl:gap-24">
@@ -40,7 +40,9 @@ const ExploreLinkSection = () => {
               <h5 className="text-xl font-bold mb-6">{title}</h5>
               <p>{description}</p>
               <Link to={link}>
-                <p className="font-bold border-b-2 border-black inline hover:mr-1 transition-all">Explore</p>{' '}
+                <p className="font-bold border-b-2 border-black dark:border-white inline hover:mr-1 transition-all">
+                  Explore
+                </p>{' '}
                 <span className="fill-current border-b-0 dark:text-white inline-block">
                   <Icon name="arrow-more" />
                 </span>

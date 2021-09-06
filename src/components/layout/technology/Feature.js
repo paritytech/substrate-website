@@ -7,7 +7,7 @@ const Feature = ({ title, children, learnMore, link, linkText }) => {
   return (
     <>
       <h2 className="text-4xl font-bold mb-4">{title}</h2>
-      <div className="border-b-2 border-black mb-2">{children}</div>
+      <div className="border-b-2 border-black dark:border-substrateDarkThemeGrey mb-2">{children}</div>
       {learnMore && <h5 className="font-bold text-lg my-4">{learnMore}</h5>}
       <Link
         to={link}
@@ -15,7 +15,7 @@ const Feature = ({ title, children, learnMore, link, linkText }) => {
       >
         {linkText}
       </Link>{' '}
-      <span className="fill-current border-b-0 text-substrateGreen dark:text-white inline-block">
+      <span className="fill-current border-b-0 text-substrateGreen inline-block">
         <Icon name="arrow-more" />
       </span>
     </>

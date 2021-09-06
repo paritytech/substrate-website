@@ -61,7 +61,6 @@ const Header = ({ mode }) => {
               <div className="pl-8 pr-6">
                 <DocsButton />
               </div>
-              {/* TODO: add dark mode context */}
               <ThemeToggle />
             </div>
           </div>

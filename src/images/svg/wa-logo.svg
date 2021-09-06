@@ -1,11 +1,17 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M29.4902 0C29.4902 0.0847059 29.4902 0.169412 29.4902 0.258824C29.4902 3.29882 27.0259 5.76235 23.9867 5.76235C20.9467 5.76235 18.4831 3.29804 18.4831 0.258824C18.4831 0.169412 18.4831 0.0847059 18.4831 0L0 0V48H48V0H29.4902Z" fill="#242A35"/>
-<path d="M11.1494 25.8672H14.3306L16.5024 37.4335H16.5416L19.1518 25.8672H22.1275L24.4851 37.5754H24.5314L27.0067 25.8672H30.1267L26.0726 42.8625H22.9157L20.5777 31.2962H20.5165L18.0137 42.8625H14.798L11.1494 25.8672ZM33.7134 25.8672H38.7283L43.7087 42.8625H40.4271L39.344 39.0805H33.631L32.7949 42.8625H29.5989L33.7134 25.8672ZM35.6224 30.0562L34.2349 36.2915H38.5534L36.9604 30.0562H35.6224Z" fill="white"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" width="48" height="48">
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="0" width="48" height="48"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" d="M29.5,0c0,0.1,0,0.2,0,0.3c0,3-2.5,5.5-5.5,5.5c-3,0-5.5-2.5-5.5-5.5
+		c0-0.1,0-0.2,0-0.3H0v48h48V0H29.5z M22.9,42.9l-2.3-11.6h-0.1L18,42.9h-3.2l-3.6-17h3.2l2.2,11.6h0l2.6-11.6h3l2.4,11.7h0L27,25.9
+		h3.1l-4.1,17H22.9z M40.4,42.9l-1.1-3.8h-5.7l-0.8,3.8h-3.2l4.1-17h5l5,17H40.4z"/>
+	<polygon clip-path="url(#SVGID_2_)" points="35.6,30.1 34.2,36.3 38.6,36.3 37,30.1 	"/>
 </g>
-<defs>
-<clipPath id="clip0">
-<rect width="48" height="48" fill="white"/>
-</clipPath>
-</defs>
 </svg>

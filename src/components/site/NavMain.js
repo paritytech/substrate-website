@@ -61,13 +61,13 @@ const DropDownItem = ({ data }) => {
         <div ref={ref}>
           <div
             className={cx(itemClass, 'pr-24', {
-              'bg-substrateGreen-light underline hover:text-black': isComponentVisible,
+              'bg-substrateGreen-light dark:bg-green-700 underline': isComponentVisible,
             })}
             onClick={handleChildMenuOpen}
           >
             <span>{t(data.subMenuItem.id)}</span>
             <span className="absolute right-6 pt-1.5">
-              <Icon name="arrow-next" />
+              <Icon name="arrow-next" className="fill-current text-black dark:text-white" />
             </span>
           </div>
           {isComponentVisible && (
@@ -108,7 +108,7 @@ const DropDown = ({ menuItem }) => {
           className={cx(
             'inline-block align-middle xl:ml-2 fill-current group-hover:text-substrateGreen dark:text-white',
             {
-              'transform rotate-180 text-substrateGreen': isComponentVisible,
+              'transform rotate-180 text-substrateGreen dark:text-substrateGreen': isComponentVisible,
               'text-black': !isComponentVisible,
             }
           )}
