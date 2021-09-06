@@ -40,7 +40,9 @@ const ExploreLinkSection = () => {
               <h5 className="text-xl font-bold mb-6">{title}</h5>
               <p>{description}</p>
               <Link to={link}>
-                <p className="font-bold border-b-2 border-black inline hover:mr-1 transition-all">Explore</p>{' '}
+                <p className="font-bold border-b-2 border-black dark:border-white inline hover:mr-1 transition-all">
+                  Explore
+                </p>{' '}
                 <span className="fill-current border-b-0 dark:text-white inline-block">
                   <Icon name="arrow-more" />
                 </span>
