@@ -61,7 +61,7 @@ const DropDownItem = ({ data }) => {
         <div ref={ref}>
           <div
             className={cx(itemClass, 'pr-24', {
-              'bg-substrateGreen-light underline hover:text-black': isComponentVisible,
+              'bg-substrateGreen-light dark:bg-green-700 underline': isComponentVisible,
             })}
             onClick={handleChildMenuOpen}
           >

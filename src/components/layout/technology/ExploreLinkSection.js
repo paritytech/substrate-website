@@ -30,7 +30,7 @@ const links = [
 
 const ExploreLinkSection = () => {
   return (
-    <div className="bg-substrateGray pb-10 pt-20">
+    <div className="bg-substrateGray dark:bg-substrateDarkest pb-10 pt-20">
       <Section>
         <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
         <div className="sm:grid grid-cols-3 gap-6 xl:gap-24">

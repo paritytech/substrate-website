@@ -95,7 +95,7 @@ export default function IndexPage() {
                 <li key={title} className="m-0">
                   <Link to="/technology">
                     <div className="w-16 h-16">
-                      <Icon name={icon} className="" />
+                      <Icon name={icon} className="fill-current text-substrateBlackish dark:text-white" />
                     </div>
                     <h5 className="my-4 text-xl font-bold" dangerouslySetInnerHTML={{ __html: title }}></h5>
                     <p>{description}</p>
