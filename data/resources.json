@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Introduction to Substrate blockchain development",
+        "provider": "Parity Asia, OneBlock+",
+        "description": "This 3-week course covers all the basics and provides an introduction to Polkadot, Substrate and Rust. The course is taught in Chinese.",
+        "link": "http://link3.com/"
+    },
+    {
+        "title": "Advanced blockchain application development with Substrate",
+        "provider": "Parity Asia, OneBlock+",
+        "description": "This course covers six lessons, ranging from basic Substrate development to advanced topics like off-chain workers and smart contracts. It features interactive content with lectures, videos and homework. The course is taught in Chinese.",
+        "link": "http://link3.com/"
+    }
+]
