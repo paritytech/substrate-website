@@ -19,8 +19,11 @@ const Open = () => {
     <Layout>
       <SEO title="Open" />
       <Hero page="Open" image="heroOpen">
-        Developers know that open source licensing isn&apos;t enough on its own. They need an architecture that is open
-        to customization, tooling they they are accustomed to, and most importantly an open and contributing community.
+        <p>
+          Developers know that open source licensing isn&apos;t enough on its own. They need an architecture that is
+          open to customization, tooling they they are accustomed to, and most importantly an open and contributing
+          community.
+        </p>
       </Hero>
       <Section
         col={2}
