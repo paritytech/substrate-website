@@ -32,7 +32,7 @@ const NavMobile = ({ toggleMenu }) => {
               >
                 <div className="px-6 flex items-center justify-between focus:outline-none cursor-pointer">
                   <div className="text-2xl">{t(menuItem.id)}</div>
-                  <Icon name="arrow-next" />
+                  <Icon name="arrow-next" className="fill-current text-black dark:text-white w-5 h-5" />
                 </div>
               </div>
             );
