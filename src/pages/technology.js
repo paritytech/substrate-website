@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import Gif from '../components/default/Gif';
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
 import Article from '../components/layout/Article';
@@ -12,31 +13,20 @@ import SEO from '../components/site/SEO';
 const highlights = [
   {
     title: 'Cross-Language Support with WebAssembly',
+    icon: 'wa-logo',
     description:
       'WebAssembly is the next web standard. Write your blockchain logic in any language that can compile to it, including C/C++, C#, Typescript, and Rust.',
   },
   {
-    title: 'Light-Client Friendly',
+    title: 'Light-Client <br/>Friendly',
+    icon: 'light-client',
     description:
       'Substrate comes with a light client built in from day one. Use your mobile-ready blockchain anywhere.',
   },
   {
-    title: 'Forkless Upgrades',
+    title: 'Forkless <br/>Upgrades',
+    icon: 'forkless',
     description: 'Upgrading blockchains has never been easier. With Substrate, everybody stays on the same path.',
-  },
-  {
-    title: 'Built-In Coordination',
-    description: 'Substrate comes with the tools to help networks decide which upgrades to implement.',
-  },
-  {
-    title: 'Deterministic Finality',
-    description:
-      'Substrate’s GRANDPA algorithm reaches and finalizes consensus quickly, across networks big and small.',
-  },
-  {
-    title: 'Seamless Integration',
-    description:
-      'Integrate your existing data, business logic, and other complex tasks into your blockchain with low overhead using off-chain workers.',
   },
 ];
 
@@ -79,7 +69,7 @@ export default function IndexPage() {
               </p>
             </div>
             <div>
-              <div className="bg-gray-200 h-80 w-160 mb-6"></div>
+              <Gif name="heroTechnology" alt="Substrate Hero Image" />
               <p>
                 Substrate was created by OGs of blockchain who set out to overcome the limitations they experienced
                 building blockchains. Through the process of building clients in the early days of Bitcoin and Ethereum,
@@ -99,15 +89,15 @@ export default function IndexPage() {
           </div>
         </Section>
         <Section>
-          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-16 xl:gap-24 list-none m-0">
-            {highlights.map(({ title, description }) => {
+          <ul className="grid sm:grid-cols-3 gap-16 xl:gap-24 list-none m-0">
+            {highlights.map(({ title, icon, description }) => {
               return (
                 <li key={title} className="m-0">
                   <Link to="/technology">
-                    <div className="w-16">
-                      <Icon name="placeholder" className="w-full h-auto" />
+                    <div className="w-16 h-16">
+                      <Icon name={icon} className="" />
                     </div>
-                    <h5 className="my-4 text-xl font-bold">{title}</h5>
+                    <h5 className="my-4 text-xl font-bold" dangerouslySetInnerHTML={{ __html: title }}></h5>
                     <p>{description}</p>
                   </Link>
                 </li>
@@ -118,10 +108,10 @@ export default function IndexPage() {
         <Section>
           <h2 className="text-4xl mb-10 font-bold">Substrate is:</h2>
           <div className="grid lg:grid-cols-2 gap-10">
-            <Card page="Flexible" mode="horizontal" />
-            <Card page="Open" mode="horizontal" delay={200} />
-            <Card page="Interoperable" mode="horizontal" delay={400} />
-            <Card page="Future-Proof" mode="horizontal" delay={600} />
+            <Card page="Flexible" mode="horizontal" image="heroFlexible" />
+            <Card page="Open" mode="horizontal" delay={200} image="heroOpen" />
+            <Card page="Interoperable" mode="horizontal" delay={400} image="heroFlexible" />
+            <Card page="Future-Proof" mode="horizontal" delay={600} image="heroFutureProof" />
           </div>
         </Section>
       </Article>

@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import React from 'react';
 
-import Icon from '../../default/Icon';
+import Gif from '../../default/Gif';
 import { Link } from '../../default/Link';
 import Section from '../../layout/Section';
 
@@ -28,7 +28,7 @@ const pages = [
   },
 ];
 
-const Hero = ({ page, children }) => {
+const Hero = ({ page, image, children }) => {
   return (
     <div className="bg-substrateGray-light -mt-12 pt-6">
       <Section>
@@ -61,7 +61,7 @@ const Hero = ({ page, children }) => {
             </h1>
           </div>
           <div className="order-3 self-start max-w-lg font-medium">{children}</div>
-          <Icon name="placeholder" className="order-2 lg:row-span-2 w-full h-auto mb-10 mt-4 lg:my-10" />
+          <Gif name={image} alt={page} className="order-2 lg:row-span-2 w-full h-auto mb-10 mt-4 lg:my-10" />
         </div>
       </Section>
     </div>

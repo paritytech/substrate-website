@@ -1,6 +1,7 @@
 import cx from 'classnames';
 import React from 'react';
 
+import Gif from '../../default/Gif';
 import Icon from '../../default/Icon';
 import { Link } from '../../default/Link';
 
@@ -27,7 +28,7 @@ const cards = [
   },
 ];
 
-const Card = ({ page, delay, mode }) => {
+const Card = ({ page, delay, mode, image }) => {
   const { link, title, description } = cards.find(card => card.title === page);
 
   return (
@@ -41,7 +42,7 @@ const Card = ({ page, delay, mode }) => {
         )}
       >
         <div className="mb-8 md:mb-0 self-center">
-          <Icon name="placeholder" className={cx('w-20 md:w-40 h-auto', { 'lg:mb-6': mode === 'vertical' })} />
+          <Gif name={image} className={cx('w-20 md:w-40 h-auto', { 'lg:mb-6': mode === 'vertical' })} />
         </div>
         <div className="flex flex-col justify-between">
           <div className={cx('lg:pb-6 mr-6', { 'lg:mr-0': mode === 'vertical' })}>

@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import Gif from '../../components/default/Gif';
 import Icon from '../../components/default/Icon';
 import { Link } from '../../components/default/Link';
 import Section from '../../components/layout/Section';
@@ -17,15 +18,18 @@ const Open = () => {
   return (
     <Layout>
       <SEO title="Open" />
-      <Hero page="Open">
-        Developers know that open source licensing isn&apos;t enough on its own. They need an architecture that is open
-        to customization, tooling they they are accustomed to, and most importantly an open and contributing community.
+      <Hero page="Open" image="heroOpen">
+        <p>
+          Developers know that open source licensing isn&apos;t enough on its own. They need an architecture that is
+          open to customization, tooling they they are accustomed to, and most importantly an open and contributing
+          community.
+        </p>
       </Hero>
       <Section
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <Gif name="placeholder" className="w-full h-auto" />
           </FeatureImage>
         }
       >

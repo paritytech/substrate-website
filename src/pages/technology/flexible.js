@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Icon from '../../components/default/Icon';
+import Gif from '../../components/default/Gif';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
@@ -16,7 +16,7 @@ const Flexible = () => {
   return (
     <Layout>
       <SEO title="Flexible" />
-      <Hero page="Flexible">
+      <Hero page="Flexible" image="heroFlexible">
         <p>
           Blockchain developers have had to make difficult tradeoffs when deciding what distributed ledger technology to
           use.
@@ -30,7 +30,7 @@ const Flexible = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <Gif name="intentional" className="w-full h-auto" />
           </FeatureImage>
         }
       >
@@ -64,7 +64,7 @@ const Flexible = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <Gif name="forkless" className="w-full h-auto" />
           </FeatureImage>
         }
       >
@@ -102,7 +102,7 @@ const Flexible = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <Gif name="fast" className="w-full h-auto" />
           </FeatureImage>
         }
       >

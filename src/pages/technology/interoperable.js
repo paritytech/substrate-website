@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Icon from '../../components/default/Icon';
+import Gif from '../../components/default/Gif';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
@@ -17,7 +17,7 @@ const Interoperable = () => {
   return (
     <Layout>
       <SEO title="Interoperable" />
-      <Hero page="Interoperable">
+      <Hero page="Interoperable" image="placeholder">
         <p>
           Developers are often forced to make tradeoffs with regards to compatibility, security, and efficiency in order
           to interact with data that exists off-chain and cross-chain. This has led to the creation of bridges, oracles,
@@ -30,7 +30,7 @@ const Interoperable = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <Gif name="compatible" className="w-full h-auto" />
           </FeatureImage>
         }
       >
@@ -67,7 +67,7 @@ const Interoperable = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <Gif name="secure" className="w-full h-auto" />
           </FeatureImage>
         }
       >
