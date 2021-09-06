@@ -21,8 +21,7 @@ export default function Seminar() {
           <p className="font-medium capitalize">Substrate Seminar is an open collaborative learning call</p>
           <PrimaryButton link="https://web3.foundation/grants/">Live Call</PrimaryButton>
           <div className="mt-8">
-            {/* TODO */}
-            {/* Will be put back in the future */}
+            {/* TODO: Will be put back in the future */}
             {/* <Link to="/">
               <p className="font-bold border-b-2 border-black inline hover:mr-1 transition-all">Past Seminars</p>{' '}
               <span className="fill-current border-b-0 text-black dark:text-white inline-block">
