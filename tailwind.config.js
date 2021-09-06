@@ -35,13 +35,19 @@ module.exports = {
       colors: {
         substrateGreen: {
           light2: '#AEF3DC',
+          dark: '#22B577',
         },
+        substrateBlackish: '#242A35',
+        substrateDarkest: '#181A22',
+        substrateDarkThemeGrey: '#3A424E',
+        substrateDarkThemeLightGrey: '#F8FAF9',
       },
       fontSize: {
         '7xl': ['5rem', { lineHeight: '1' }],
       },
     },
     boxShadow: {
+      md: '0 0 15px 0 rgba(0, 0, 0, 0.05), 0 5px 5px -5px rgba(0, 0, 0, 0.04)',
       xl: '0 0 25px 0 rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
     },
   },

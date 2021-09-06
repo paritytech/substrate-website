@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
+import { ThemeContext } from '../../contexts/ThemeContext';
 import Icon from '../default/Icon';
 
-// TODO: add dark mode context
-
 export default function ThemeToggle() {
+  const { colorMode, setColorMode } = useContext(ThemeContext);
+
+  function toggleTheme() {
+    if (colorMode === 'dark') {
+      setColorMode('light');
+    } else {
+      setColorMode('dark');
+    }
+  }
+
   return (
-    <div className="cursor-pointer">
-      <div className="hidden transform -rotate-12">
-        <Icon name="moon" />
-      </div>
-      <div>
-        <Icon name="sun" />
-      </div>
+    <div className="cursor-pointer hover:opacity-60 transition-opacity" onClick={toggleTheme}>
+      {colorMode === 'light' && (
+        <div className="transform -rotate-12">
+          <Icon name="sun" />
+        </div>
+      )}
+      {colorMode === 'dark' && (
+        <div>
+          <Icon name="moon" />
+        </div>
+      )}
     </div>
   );
 }

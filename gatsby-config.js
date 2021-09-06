@@ -163,7 +163,7 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`en`, `de`, `fr`],
+        languages: [`en`],
         defaultLanguage: `en`,
         // if you are using Helmet, you must include siteUrl
         siteUrl: `https://example.com/`,
