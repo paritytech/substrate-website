@@ -23,11 +23,11 @@ export default function CommunityResources() {
             <ul className="pl-4">
               {resources.map(({ title, provider, description, link }) => (
                 <li key={title}>
-                  <p className="font-semibold underline-animate underline-animate-thin mb-2">
+                  <p className="font-semibold underline-animate underline-animate-thin mb-2 leading-relaxed">
                     <Link to={link}>{title}</Link>
                   </p>
                   <p className="font-bold mb-2">{provider}</p>
-                  <p>{description}</p>
+                  <p className="leading-relaxed">{description}</p>
                 </li>
               ))}
             </ul>
