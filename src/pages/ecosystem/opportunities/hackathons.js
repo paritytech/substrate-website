@@ -1,13 +1,16 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import hackathons from '../../../../data/hackatons.json';
+// import hackathons from '../../../../data/hackatons.json';
 import EventCard from '../../../components/layout/ecosystem/EventCard';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
+import { useHackathons } from '../../../hooks/use-hackathons';
 
 export default function Hackathons() {
+  const { hackathons } = useHackathons();
+
   return (
     <Layout layout="sidebar">
       <SEO title="Hackathons" />
