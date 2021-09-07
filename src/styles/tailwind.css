@@ -168,28 +168,29 @@
     @apply list-none flex;
   }
 
-  .breadcrumb__list__item {
-    @apply mr-2 ml-2 first-of-type:ml-0 p-0;
-  }
-
-  .breadcrumb__link::after {
-    content: '>>';
-    @apply ml-3;
+  .breadcrumb__link {
+    @apply text-substrateBlue m-0;
   }
 
   .breadcrumb__separator {
     @apply text-substrateBlue;
   }
 
-  .breadcrumb__link {
-    @apply text-substrateBlue m-0;
-  }
-
   .breadcrumb__list span {
     @apply text-black dark:text-white;
   }
 
-  .breadcrumb__list:last-child span::after {
-    content: '';
+  .breadcrumb__list__item {
+    @apply flex m-0 mr-2;
+  }
+
+  .breadcrumb__list__item::before {
+    content: '>>';
+    @apply mr-4 text-substrateBlue;
+  }
+
+  .breadcrumb__list__item:first-of-type::before {
+    content: none;
+    @apply: m-0;
   }
 }
