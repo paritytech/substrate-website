@@ -1,4 +1,8 @@
-import './src/styles/tailwind.css';
+// require('./src/styles/tailwind-preset.css');
+// require('./src/styles/tailwind.css');
+// import './src/styles/tailwind-preset.css';
+// import './src/styles/tailwind.css';
+import './src/styles/global.css';
 import './src/styles/scss/index.scss';
 
 import React from 'react';
