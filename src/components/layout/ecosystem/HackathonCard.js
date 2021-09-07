@@ -1,22 +1,18 @@
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-import hackathon1 from '../../../../media/images/hackathons/hackathons-1.jpg';
-import hackathon2 from '../../../../media/images/hackathons/hackathons-2.png';
 import Icon from '../../default/Icon';
 import SecondaryButton from '../../ui/SecondaryButton';
 
-const imageMap = {
-  hackathon1,
-  hackathon2,
-};
-
-const EventCard = ({ event }) => {
-  const { title, city, date, prize, description, image, link, alt } = event;
+const hackathonCard = ({ hackathon }) => {
+  const { title, city, date, prize, featured_image, link } = hackathon.node.frontmatter;
+  const html = hackathon.node.html;
+  const imageData = getImage(featured_image);
 
   return (
     <article className="p-4 bg-substrateGray-light dark:bg-substrateBlackish rounded-md grid md:grid-cols-2 gap-6 items-center mb-8 shadow-md">
       <div className="aspect-w-1 aspect-h-1 rounded-md overflow-hidden">
-        <img src={imageMap[image]} alt={alt} className="object-center object-cover" />
+        {imageData && <GatsbyImage className="h-full" image={imageData} alt={title} />}
       </div>
       <div>
         <h4 className="font-extrabold mb-0 text-2xl lg:text-3xl">{city}</h4>
@@ -33,11 +29,11 @@ const EventCard = ({ event }) => {
           </span>
           Prize: {prize}
         </p>
-        <p>{description}</p>
+        <div dangerouslySetInnerHTML={{ __html: html }}></div>
         <SecondaryButton link={link}>Join us</SecondaryButton>
       </div>
     </article>
   );
 };
 
-export default EventCard;
+export default hackathonCard;
