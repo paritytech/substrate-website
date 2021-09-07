@@ -4,11 +4,13 @@ import React from 'react';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 
-export default function AwesomeSubstrate() {
+export default function AwesomeSubstrate({ data }) {
+  const html = data.markdownRemark.html;
   return (
     <Layout layout="sidebar">
       <SEO title="Awesome Substrate" />
       <div>awesome substrate</div>
+      <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>
   );
 }
@@ -23,6 +25,9 @@ export const query = graphql`
           language
         }
       }
+    }
+    markdownRemark(fileAbsolutePath: { regex: "/awesome-substrate/index.md/" }) {
+      html
     }
   }
 `;
