@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
+import resources from '../../../../data/resources.json';
 import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
@@ -19,23 +20,16 @@ export default function CommunityResources() {
               An ever-Growing list of Educational resources provided by the Community
             </p>
             <h5 className="text-2xl font-semibold mb-4">List Of Resources</h5>
-            <ul className="pl-8">
-              <li>
-                <p className="mb-0 underline-animate underline-animate-thin">
-                  <Link to="/" className="text-substrateBlue">
-                    Industry Connect/Acala
-                  </Link>{' '}
-                  - Developer portal
-                </p>
-              </li>
-              <li>
-                <p className="underline-animate underline-animate-thin">
-                  <Link to="/" className="text-substrateBlue">
-                    BlockOne+ / Parity Asia
-                  </Link>{' '}
-                  - Guided exercises to get you started
-                </p>
-              </li>
+            <ul className="pl-4">
+              {resources.map(({ title, provider, description, link }) => (
+                <li key={title}>
+                  <p className="font-semibold underline-animate underline-animate-thin mb-2 leading-relaxed">
+                    <Link to={link}>{title}</Link>
+                  </p>
+                  <p className="font-bold mb-2">{provider}</p>
+                  <p className="leading-relaxed">{description}</p>
+                </li>
+              ))}
             </ul>
           </div>
           <StaticImage

@@ -1,13 +1,15 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import hackathons from '../../../../data/hackatons.json';
-import EventCard from '../../../components/layout/ecosystem/EventCard';
+import HackathonCard from '../../../components/layout/ecosystem/HackathonCard';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
+import { useHackathons } from '../../../hooks/use-hackathons';
 
 export default function Hackathons() {
+  const { hackathons } = useHackathons();
+
   return (
     <Layout layout="sidebar">
       <SEO title="Hackathons" />
@@ -18,7 +20,7 @@ export default function Hackathons() {
           condimentum enim quis purus pellentesque, ut varius magna egestas. Donec libero leo, sagittis vel{' '}
         </p>
         {hackathons.map((hackathon, idx) => (
-          <EventCard key={idx} event={hackathon} />
+          <HackathonCard key={idx} hackathon={hackathon} />
         ))}
       </Section>
     </Layout>
