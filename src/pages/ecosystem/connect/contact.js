@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import React from 'react';
 
 import Icon from '../../../components/default/Icon';
@@ -7,10 +8,24 @@ import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 
-export default function Contact() {
+export default function Contact({ pageContext }) {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <Layout layout="sidebar">
       <SEO title="Contact" />
+      <Section>
+        <Breadcrumb
+          crumbs={crumbs}
+          crumbSeparator=""
+          crumbLabel="Contact"
+          hiddenCrumbs={['/', '/ecosystem/connect']}
+          disableLinks={['/ecosystem/connect/contact']}
+          className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
+        />
+      </Section>
       <Section>
         <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
         <p className="font-medium">Placeholder line or two of text.</p>

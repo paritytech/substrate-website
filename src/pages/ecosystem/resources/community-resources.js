@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
@@ -7,10 +8,24 @@ import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 
-export default function CommunityResources() {
+export default function CommunityResources({ pageContext }) {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <Layout layout="sidebar">
       <SEO title="Community Resources" />
+      <Section>
+        <Breadcrumb
+          crumbs={crumbs}
+          crumbSeparator=""
+          crumbLabel="Community Resources"
+          hiddenCrumbs={['/', '/ecosystem/resources']}
+          disableLinks={['/ecosystem/resources/community-resources']}
+          className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
+        />
+      </Section>
       <Section>
         <div className="grid md:grid-cols-2 gap-6 items-start">
           <div>

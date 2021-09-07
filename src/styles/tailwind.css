@@ -165,7 +165,7 @@
   /* Breadcrumbs */
 
   .breadcrumb__list {
-    @apply list-none flex;
+    @apply list-none flex text-sm;
   }
 
   .breadcrumb__link {
@@ -181,7 +181,7 @@
   }
 
   .breadcrumb__list__item {
-    @apply flex m-0 mr-2;
+    @apply flex m-0 mr-1;
   }
 
   .breadcrumb__list__item::before {

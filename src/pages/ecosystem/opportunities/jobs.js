@@ -14,8 +14,6 @@ export default function Jobs({ pageContext }) {
     breadcrumb: { crumbs },
   } = pageContext;
 
-  console.log(crumbs);
-
   return (
     <Layout layout="sidebar">
       <SEO title="Jobs" />

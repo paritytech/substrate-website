@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
@@ -11,10 +12,24 @@ import SEO from '../../../components/site/SEO';
 import PrimaryButton from '../../../components/ui/PrimaryButton';
 import SecondaryButton from '../../../components/ui/SecondaryButton';
 
-export default function Seminar() {
+export default function Seminar({ pageContext }) {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   return (
     <Layout layout="sidebar">
       <SEO title="Seminar" />
+      <Section>
+        <Breadcrumb
+          crumbs={crumbs}
+          crumbSeparator=""
+          crumbLabel="Substrate Seminar"
+          hiddenCrumbs={['/', '/ecosystem/resources']}
+          disableLinks={['/ecosystem/resources/seminar']}
+          className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
+        />
+      </Section>
       <Section>
         <div>
           <h2 className="text-4xl font-bold mb-6">Substrate Seminar</h2>
