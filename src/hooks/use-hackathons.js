@@ -18,7 +18,7 @@ export const useHackathons = () => {
                 link
                 featured_image {
                   childImageSharp {
-                    gatsbyImageData(width: 200, placeholder: NONE, formats: [AUTO, WEBP, AVIF])
+                    gatsbyImageData(width: 1200, placeholder: NONE, formats: [AUTO, WEBP, AVIF])
                   }
                 }
               }
