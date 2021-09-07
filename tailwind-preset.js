@@ -41,6 +41,7 @@ module.exports = {
         substrateDark: '#242A35',
         substrateBlue: '#4E73F2',
         substrateBlueBg: '#EEF1FE',
+        substrateDarkest: '#181A22',
         mdxYellow: '#FFEED6',
         mdxGreen: '#D6FACA',
         mdxRed: '#FFE1D9',
