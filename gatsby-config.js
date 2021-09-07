@@ -190,5 +190,31 @@ module.exports = {
         enableIdentityWidget: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        // useAutoGen: required 'true' to use autogen
+        useAutoGen: true,
+        // autoGenHomeLabel: optional 'Home' is default
+        autoGenHomeLabel: `Home`,
+        // exclude: optional, include this array to exclude paths you don't want to
+        // generate breadcrumbs for (see below for details).
+        exclude: [
+          `**/dev-404-page/**`,
+          `**/404/**`,
+          `**/404.html`,
+          `**/offline-plugin-app-shell-fallback/**`,
+          `**/ecosystem/`,
+        ],
+        // crumbLabelUpdates: optional, update specific crumbLabels in the path
+        crumbLabelUpdates: [
+          {
+            pathname: '/ecosystem',
+            crumbLabel: 'Substrate Ecosystem',
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-remove-trailing-slashes`,
   ],
 };
