@@ -3,13 +3,6 @@
 module.exports = {
   presets: [require('./tailwind-preset.js')],
   theme: {
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1400px',
-    },
     fontFamily: {
       sans: ['Karla', 'sans-serif'],
       title: ['Poppins', 'sans-serif'],
@@ -32,6 +25,9 @@ module.exports = {
       widest: '.45em',
     },
     extend: {
+      screens: {
+        '2xl': '1400px',
+      },
       colors: {
         substrateGreen: {
           light2: '#AEF3DC',
