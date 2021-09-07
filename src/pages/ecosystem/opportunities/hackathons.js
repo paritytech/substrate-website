@@ -19,8 +19,8 @@ export default function Hackathons() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget libero in purus rutrum condimentum. Phasellus
           condimentum enim quis purus pellentesque, ut varius magna egestas. Donec libero leo, sagittis vel{' '}
         </p>
-        {hackathons.map(hackathon => (
-          <HackathonCard key={hackathon.id} hackathon={hackathon} />
+        {hackathons.map((hackathon, idx) => (
+          <HackathonCard key={idx} hackathon={hackathon} />
         ))}
       </Section>
     </Layout>
