@@ -138,6 +138,10 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: { maxWidth: 1024 },
           },
+          // links from markdown open in new tab by default
+          {
+            resolve: `gatsby-remark-external-links`,
+          },
         ],
       },
     },
