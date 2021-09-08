@@ -38,7 +38,11 @@ p {
 /* Awesome Substrate Markdown */
 
 .markdown {
-  @apply ml-3 max-w-3xl;
+  @apply max-w-3xl;
+}
+
+.markdown ul {
+  @apply ml-8;
 }
 
 .markdown ul ul {
@@ -46,11 +50,11 @@ p {
 }
 
 .markdown h2 {
-  @apply -ml-5 mt-14 mb-6 text-2xl font-medium;
+  @apply mt-14 mb-6 text-2xl font-medium;
 }
 
 .markdown h3 {
-  @apply -ml-5 mt-14 mb-6 text-2xl font-medium;
+  @apply mt-14 mb-6 text-2xl font-medium;
 }
 
 .markdown p {

@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -16,7 +17,10 @@ export default function AwesomeSubstrate({ data }) {
         <p>
           Substrate is a framework for building upgradable, modular and efficient blockchains.
           <br />
-          Substrate is an open-source library of Rust code that is maintained by Parity Technologies.
+          Substrate is an open-source library of Rust code that is maintained by{' '}
+          <span className="underline-animate underline-animate-thin">
+            <Link to="https://parity.io/">Parity Technologies</Link>.
+          </span>
         </p>
       </Section>
       <Section>

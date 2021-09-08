@@ -58,17 +58,17 @@ export default function Seminar() {
         <div className="grid md:grid-cols-2 gap-10">
           <div className="mb-16 md:mb-8">
             <h5 className="mb-8 font-medium text-2xl">FAQ</h5>
-            {faq.map(({ q, a }) => (
-              <>
+            {faq.map(({ q, a }, idx) => (
+              <div key={idx}>
                 <p className="font-bold">{q}</p>
                 <p dangerouslySetInnerHTML={{ __html: a }}></p>
-              </>
+              </div>
             ))}
           </div>
           <div className="order-first md:order-last">
             <h5 className="mb-8 font-medium text-2xl">Upcoming Seminars</h5>
-            {seminars.map(({ date, description }) => (
-              <>
+            {seminars.map(({ date, description }, idx) => (
+              <div key={idx}>
                 <p className="text-substrateGreen font-bold fill-current">
                   <Icon name="calendar" className="inline mb-1 mr-3" />
                   {date}
@@ -76,7 +76,7 @@ export default function Seminar() {
                 <p className="border-b border-substrateBlackish dark:border-substrateDarkThemeGrey pb-8">
                   {description}
                 </p>
-              </>
+              </div>
             ))}
           </div>
         </div>
