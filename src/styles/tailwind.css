@@ -165,7 +165,7 @@
   /* Breadcrumbs */
 
   .breadcrumb__list {
-    @apply list-none flex text-sm ml-0;
+    @apply list-none flex text-sm ml-0 font-medium;
   }
 
   .breadcrumb__link {
