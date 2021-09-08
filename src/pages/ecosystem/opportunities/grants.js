@@ -16,13 +16,13 @@ export default function Grants({ pageContext }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Grants" />
-      <div className="container lg:px-10 mb-10">
+      <div className="container hidden md:block lg:px-10 mb-10 underline-animate underline-animate-thin">
         <Breadcrumb
           crumbs={crumbs}
           crumbSeparator=""
           crumbLabel="Grants"
-          hiddenCrumbs={['/', '/ecosystem/opportunities']}
-          disableLinks={['/ecosystem/opportunities/grants']}
+          hiddenCrumbs={['/']}
+          disableLinks={['/ecosystem/opportunities/grants', '/ecosystem/opportunities']}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
       </div>

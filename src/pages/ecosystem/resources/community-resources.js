@@ -16,13 +16,13 @@ export default function CommunityResources({ pageContext }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Community Resources" />
-      <div className="container lg:px-10 mb-10">
+      <div className="container hidden md:block lg:px-10 mb-10 underline-animate underline-animate-thin">
         <Breadcrumb
           crumbs={crumbs}
           crumbSeparator=""
           crumbLabel="Community Resources"
-          hiddenCrumbs={['/', '/ecosystem/resources']}
-          disableLinks={['/ecosystem/resources/community-resources']}
+          hiddenCrumbs={['/']}
+          disableLinks={['/ecosystem/resources/community-resources', '/ecosystem/resources']}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
       </div>

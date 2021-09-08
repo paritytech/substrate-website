@@ -16,13 +16,13 @@ export default function Hackathons({ pageContext }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Hackathons" />
-      <div className="container lg:px-10 mb-10">
+      <div className="container hidden md:block lg:px-10 mb-10 underline-animate underline-animate-thin">
         <Breadcrumb
           crumbs={crumbs}
           crumbSeparator=""
           crumbLabel="Hackathons"
-          hiddenCrumbs={['/', '/ecosystem/opportunities']}
-          disableLinks={['/ecosystem/opportunities/hackathons']}
+          hiddenCrumbs={['/']}
+          disableLinks={['/ecosystem/opportunities/hackathons', '/ecosystem/opportunities']}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
       </div>

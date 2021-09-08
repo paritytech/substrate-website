@@ -17,13 +17,13 @@ export default function Jobs({ pageContext }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Jobs" />
-      <div className="container lg:px-10 mb-10">
+      <div className="container hidden md:block lg:px-10 mb-10 underline-animate underline-animate-thin">
         <Breadcrumb
           crumbs={crumbs}
           crumbSeparator=""
           crumbLabel="Jobs"
-          hiddenCrumbs={['/', '/ecosystem/opportunities']}
-          disableLinks={['/ecosystem/opportunities/jobs']}
+          hiddenCrumbs={['/']}
+          disableLinks={['/ecosystem/opportunities/jobs', '/ecosystem/opportunities']}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
       </div>

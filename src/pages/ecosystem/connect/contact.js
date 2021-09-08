@@ -16,13 +16,13 @@ export default function Contact({ pageContext }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Contact" />
-      <div className="container lg:px-10 mb-10">
+      <div className="container hidden md:block lg:px-10 mb-10 underline-animate underline-animate-thin">
         <Breadcrumb
           crumbs={crumbs}
           crumbSeparator=""
           crumbLabel="Contact"
-          hiddenCrumbs={['/', '/ecosystem/connect']}
-          disableLinks={['/ecosystem/connect/contact']}
+          hiddenCrumbs={['/']}
+          disableLinks={['/ecosystem/connect/contact', '/ecosystem/connect']}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
       </div>

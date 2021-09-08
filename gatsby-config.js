@@ -212,6 +212,18 @@ module.exports = {
             pathname: '/ecosystem',
             crumbLabel: 'Substrate Ecosystem',
           },
+          {
+            pathname: '/ecosystem/opportunities',
+            crumbLabel: 'Opportunities',
+          },
+          {
+            pathname: '/ecosystem/resources',
+            crumbLabel: 'Resources',
+          },
+          {
+            pathname: '/ecosystem/connect',
+            crumbLabel: 'Connect',
+          },
         ],
       },
     },

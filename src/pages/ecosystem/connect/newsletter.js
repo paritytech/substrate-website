@@ -16,13 +16,13 @@ export default function Newsletter({ pageContext }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Newsletter" />
-      <div className="container lg:px-10 mb-16">
+      <div className="container hidden md:block lg:px-10 mb-16 underline-animate underline-animate-thin">
         <Breadcrumb
           crumbs={crumbs}
           crumbSeparator=""
           crumbLabel="Newsletter"
-          hiddenCrumbs={['/', '/ecosystem/connect']}
-          disableLinks={['/ecosystem/connect/newsletter']}
+          hiddenCrumbs={['/']}
+          disableLinks={['/ecosystem/connect/newsletter', '/ecosystem/connect']}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
       </div>
