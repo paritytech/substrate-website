@@ -1,0 +1,1050 @@
+{
+	"types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+  "categories": ["All", "DeFi", "Wallet", "Identity", "Social", "Smart Contracts", "File Storage", "IoT", "Gaming", "Bridge", "Infrastructure", "Relay Chain", "Connecting to Polkadot"],
+  "teams": [
+    {
+      "name": "Acala Network",
+      "link": "https://acala.network/",
+      "category": [ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Acala is a decentralized stablecoin platform that powers cross-blockchain open finance applications.",
+      "caseStudy": "#"
+    },
+    {
+      "name": "ChainLink",
+      "link": "https://chain.link/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "ChainLink is a decentralized oracle network that provides real-world data to smart contracts on the blockchain"
+    },
+    {
+      "name": "Polymath",
+      "link": "https://polymath.network/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "The security token technology that lets broker-dealers bring creation, issuance, and management to their clients on the blockchain."
+    },
+    {
+      "name": "Kilt Protocol",
+      "link": "https://www.kilt.io/",
+      "category":[ "Identity","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "KILT is a blockchain protocol for issuing self-sovereign verifiable, revocable, anonymous Credentials."
+    },
+    {
+      "name": "Polkadot Network",
+      "link": "https://polkadot.network/",
+      "category":[ "Relay Chain","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Polkadot will enable a completely decentralized web where users are in control. It is built to connect chains, networks, oracles, and future technologies that are yet to be created."
+    },
+    {
+      "name": "ABMatrix",
+      "link": "http://www.abmatrix.cn/#/",
+      "category":[ "File Storage","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "The ABMatrix project is a decentralized data storage and distribution network. Users who share their data storage and processing power are rewarded with the ABM token."
+    },
+    {
+      "name": "Adoriasoft",
+      "link": "https://adoriasoft.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Adoriasoft provides Blockchain related services such as R&D, Asset Tokenization, Dapps Building and more."
+    },
+    {
+      "name": "Advanca",
+      "link": "https://www.advanca.network/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Advanca is a privacy-preserving, general-purpose compute and storage infrastructure for Decentralized Applications (Dapps)."
+    },
+    {
+      "name": "AirGap",
+      "link": "https://airgap.it/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "AirGap provides a system through AirWallet and AirVault to store your private keys offline in your day to day phone."
+    },
+    {
+      "name": "Polkahub",
+      "link": "https://akropolis.io/",
+      "category":[ "Infrastructure","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Polkahub is a fast, scalable blockchain infrastructure component for Substrate parachains, allowing parachain developers to launch and manage network infrastructure using a CLI. Developed by Akropolis."
+    },
+    {
+      "name": "AnKR",
+      "link": "https://www.ankr.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "AnKR helps consumers and enterpresies to connect and develop in the Web3 through a serious of tools, from Node Staking to API's."
+    },
+    {
+      "name": "Asure Network",
+      "link": "https://www.asure.network/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Asure provides a scalable blockchain network for decentralized social security built around openness, privacy, and fairness"
+    },
+    {
+      "name": "Attic Lab",
+      "link": "https://atticlab.net/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Attic Lab allows to you to build your blockchain based project. They built a VS Code plugin for Substrate."
+    },
+    {
+      "name": "Avado",
+      "link": "https://ava.do/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Avado is an infrastructure solution to run your own blockchain staking node.It is hardware equipped with an operating system giving you access to any blockchain network."
+    },
+    {
+      "name": "Aventus",
+      "link": "https://www.aventus.io/",
+      "category":[ "Gaming","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Aventus is a digital assets-focused blockchain-based protocol that transforms oversight, standardisation, trust and innovation across enterprises’ supply chains."
+    },
+    {
+      "name": "Band Protocol",
+      "link": "https://bandprotocol.com/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Decentralized Application",
+      "description": "Band Protocol is a cross-chain data oracle platform that aggregates and connects real-world data and APIs to smart contracts."
+    },
+    {
+      "name": "Bifrost",
+      "link": "https://bifrost.finance/en",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Bifrost is a cross-chain network which provides liquidity to bonding assets. It takes advantage from Staking to provide liquidity in the form of Staking derivatives."
+    },
+    {
+      "name": "Bison Trails",
+      "link": "https://bisontrails.co/",
+      "category":[ "Infrastructure","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Bison Trails is a validator as a Service provider. It powers critical infrastructure for the world’s leading digital asset exchanges, custodians, funds, and applications."
+    },
+    {
+      "name": "Blockdaemon",
+      "link": "https://blockdaemon.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Blockdaemon offers a multi-chain multi-cloud network management tool that can deploy nodes and connect them to blockchains within minutes"
+    },
+    {
+      "name": "Bluzelle",
+      "link": "https://bluzelle.com/",
+      "category":[ "File Storage","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Decentralized Application",
+      "description": "The Bluzelle project enables Dapps to store their data in a place that is both decentralized and mutable."
+    },
+    {
+      "name": "Caelum Labs",
+      "link": "https://caelumlabs.com/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Caelum Labs is a blockchain development studio focused on identity and privacy solutions. They are focusing on building Decentralised identity modules."
+    },
+    {
+      "name": "Celer Network",
+      "link": "https://www.celer.network/",
+      "category":[ "Gaming","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Celer Network enables fast, easy and secure off-chain transactions for payment transactions and generalized off-chain smart contract"
+    },
+    {
+      "name": "Centrifuge",
+      "link": "https://centrifuge.io/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Centrifuge Chain is a Proof-of-Stake blockchain built on Substrate that enables users to bring their assets on-chain as non-fungible tokens (NFTs)."
+    },
+    {
+      "name": "Cere",
+      "link": "https://www.cere.network/",
+      "category":[ "File Storage","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Delivers fast-tracked consumer enterprise adoption through decentralized data clouds, data interoperability and SaaS DeFi."
+    },
+    {
+      "name": "ChainSafe",
+      "link": "https://chainsafe.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "ChainSafe is building Gossamer, a Go implementation of the Polkadot Host and ChainBridge, a bridge between Ethereum and Polkadot."
+    },
+    {
+      "name": "ChainX",
+      "link": "https://chainx.org/",
+      "category":[ "Bridge","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Cross-chain hub for Crypto Asset on Polkadot. Any chain can have asset interoperability with all other chains as long as it establishes a connection with ChainX."
+    },
+    {
+      "name": "Chevdor",
+      "link": "https://www.chevdor.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Wilfried Kopp works on Blockchain & Decentralization. He builds tools that are widely used, for example: srtool & Polkabot."
+    },
+    {
+      "name": "Creator",
+      "link": "https://github.com/creator-rs/creator",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Goal of Creator is to make it simple to create and build Android and iOS game projects and connect them with Substrate Blockchain."
+    },
+    {
+      "name": "Crust Network",
+      "link": "https://crust.network/",
+      "category":[ "File Storage","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Crust Network implements a decentralized cloud blockchain based on Polkadot. It is designed to build a decentralized cloud ecosystem that values data privacy and ownership."
+    },
+    {
+      "name": "Cybex.dot",
+      "link": "https://cybex.io/en/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Cybex is a decentralized exchange featuring real-time order matching. It features a Real-time Order Matching Engine."
+    },
+    {
+      "name": "Darwinia",
+      "link": "https://darwinia.network/",
+      "category":[ "Gaming","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "An open cross-chain bridge protocol based on Substrate, Darwinia focuses on the construction of future Internet of Tokens, including decentralized tokens swap, exchange and market"
+    },
+    {
+      "name": "Deep Brain Chain",
+      "link": "https://www.deepbrainchain.org/",
+      "category":[ "Smart Contracts","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Deep Brain chain is a decentralized, low-cost and privacy-protecting AI computing platform with a full range of related products and services."
+    },
+    {
+      "name": "Deeper Network",
+      "link": "https://deepernetwork.io/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Deeper Network is building a decentralized VPN (DVPN) network based on Substrate. They are building their own OS: AtomOS."
+    },
+    {
+      "name": "Dether",
+      "link": "https://dether.io/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Dether is a mobile wallet providing cash to crypto on/off ramps, without the need of a Bank Account."
+    },
+    {
+      "name": "Dock",
+      "link": "https://www.dock.io/",
+      "category":[ "Identity","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Dock is an open source network providing infrastructure and tools for issuing verifiable credentials using blockchain technology."
+    },
+    {
+      "name": "Edgeware",
+      "link": "https://edgewa.re/",
+      "category":[ "Smart Contracts","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Edgeware is a high-performance, self-upgrading WASM smart contract platform, in the Polkadot ecosystem."
+    },
+    {
+      "name": "Encointer",
+      "link": "https://encointer.org/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Encointer proposes a new blockchain based cryptocurrency with an ecological consensus mechanism using trusted execution environments and an egalitarian money supply policy."
+    },
+    {
+      "name": "Enzyme",
+      "link": "https://getenzyme.dev/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "EnzymeBETA is a browser-based wallet that allows you to send and receive DOTs on the Polkadot blockchain."
+    },
+    {
+      "name": "Equilibrium",
+      "link": "https://equilibrium.io/en",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Equilibrium introduces a cross-chain money market that combines pooled lending with synthetic asset generation and trading"
+    },
+    {
+      "name": "ETCDEV",
+      "link": "https://github.com/emeraldpay",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "ETCDEV is developing PolkaJ, a Java client library to use and access API of Polkadot based networks."
+    },
+    {
+      "name": "Evercity",
+      "link": "https://evercity.io/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Evercity is a blockchain-based platform that aims to accelerate finance flows into projects & innovations needed to attain UN 2030 Agenda."
+    },
+    {
+      "name": "Everdream Soft",
+      "link": "https://www.everdreamsoft.com/",
+      "category":[ "Gaming","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Since 2014 is pinoneer in the integration and use of blockchain tools in the domain of gaming and digital collectibles."
+    },
+    {
+      "name": "Everstake",
+      "link": "https://everstake.one/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Everstake helps institutional investors and regular token holders to profit off their crypto assets."
+    },
+    {
+      "name": "Faber",
+      "link": "https://github.com/yxf/subwallet",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Faber is building a simple Command Line Interface (CLI) Wallet for Polkadot and Substrate-based chains."
+    },
+    {
+      "name": "Figment",
+      "link": "https://figment.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Figment provides node and staking infrastructure, the Hubble Web 3 explorer, and developer tools while also actively participating in community & governance."
+    },
+    {
+      "name": "FlexDapps",
+      "link": "https://flexdapps.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Flex Dapps is building Gantree, a product that speeds up blockchain development for companies creating Substrate chains."
+    },
+    {
+      "name": "Fractapp",
+      "link": "https://www.fractapp.com/",
+      "category":[ "Social","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "The Fractapp project is a cryptocurrency wallet with a built in messenger. It features DOT integration amongst others."
+    },
+    {
+      "name": "GameDAO",
+      "link": "https://gamedao.co/",
+      "category":[ "Gaming","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "GameDAO is democratic and transparent crowdfunding for video game creators, publishers, investors and gamers."
+    },
+    {
+      "name": "Geefu",
+      "link": "https://kodadot.js.org/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "The Geefu Project is building a VueJS based front-end set of components for the Polkadot JS Apps. It can be used with other Substrate-based chains."
+    },
+    {
+      "name": "Genesis Labs",
+      "link": "https://genesislab.net/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Genesis Lab is a blockchain-focused development company and Proof-of-Stake validator to stake your coins and earn rewards."
+    },
+    {
+      "name": "Halva",
+      "link": "https://github.com/halva-suite",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Halva is providing the basics for bootstrapping and scaffolding. It is focusing on tooling to build Decentralized Applications (Dapps) on Substrate."
+    },
+    {
+      "name": "HashKey Me",
+      "link": "https://me.hashkey.com/en",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "HashKey Me is an identity wallet based on TSS (Threshold Signature Scheme). It is built upon the MeID Protocol."
+    },
+    {
+      "name": "HashQuark",
+      "link": "https://www.hashquark.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "HashQuark provides secure, stable and convenient enterprise-level staking services. Mainstream Proof of Stake blockchains such as Polkadot are supported."
+    },
+    {
+      "name": "HOPR",
+      "link": "https://hoprnet.org/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "HOPR keeps any exchange of data private. The HOPR protocol is a layer-0 privacy foundation for anyone to buidl on."
+    },
+    {
+      "name": "ImToken",
+      "link": "https://token.im/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "imToken is a self-custodial mobile light wallet for digital asset management. It features DOT and KSM amongst other coins."
+    },
+    {
+      "name": "Injective Protocol",
+      "link": "https://injectiveprotocol.com/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Decentralized Application",
+      "description": "Injective is a layer-2 DEX that unlocks the full potential of decentralized derivatives and borderless DeFi."
+    },
+    {
+      "name": "Insight",
+      "link": "https://github.com/insight-w3f/terragrunt-polkadot",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "With Insight users can deploy infrastructure on one of several supported clouds and can customize the network topology per their needs."
+    },
+    {
+      "name": "Interlay",
+      "link": "https://www.interlay.io/",
+      "category":[ "Bridge","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Interlay makes decentralized finance interoperable and enables use of any digital asset and cryptocurrency with any blockchain platform."
+    },
+    {
+      "name": "Joystream",
+      "link": "https://www.joystream.org/",
+      "category":[ "Social","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Joystream is the Video Platform DAO.It is a platform that is controlled, owned, and operated by its users."
+    },
+    {
+      "name": "Kulupu",
+      "link": "https://kulupu.network/",
+      "category":[ "Infrastructure","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Kulupu is a proof of work blockchain with on-chain governance and online upgrade. It is one of the first blockchains that combine PoW consensus engine with forkless upgrades."
+    },
+    {
+      "name": "Kusama Network",
+      "link": "https://kusama.network/",
+      "category":[ "Relay Chain","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Kusama is a scalable multi-chain network for radical innovation and early stage Polkadot deployments."
+    },
+    {
+      "name": "Kylin Network",
+      "link": "https://kylin.network/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Kylin Network is building a Data Infrastructure for DeFi and Web 3.0, featuring both chain and social data."
+    },
+    {
+      "name": "Laminar",
+      "link": "https://www.laminar.one/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Laminar is an open finance platform, powering synthetic assets and margin trading built on Substrate"
+    },
+    {
+      "name": "Ledger Integration",
+      "link": "https://www.ledger.com/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Ledger is a Hardware Wallet designed with the highest security standards, supporting DOTs/KSM and substrate-based tokens"
+    },
+    {
+      "name": "Limechain",
+      "link": "https://limechain.tech/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Limechain offers Blockchain & Distributed Ledger Technology (DLT) Services and Solutions for Enterprises and Entrepreneurs."
+    },
+    {
+      "name": "Litentry",
+      "link": "https://www.litentry.com/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Lientry is a network support cross-chain aggregated identities. They are building whole ecosystem tools for future identities and data."
+    },
+    {
+      "name": "Lugus Labs",
+      "link": "https://luguslabs.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Lugus Labs allows to you to build your substrate-based blockchain project. Their key project is Archipel."
+    },
+    {
+      "name": "MailChain",
+      "link": "https://mailchain.xyz/",
+      "category":[ "Social","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Mailchain is a Multi-Blockchain Messaging Application. They allow sending and receiving messages between blockchain addresses & accounts through a simple, email-like interface"
+    },
+    {
+      "name": "MantraDAO",
+      "link": "https://mantradao.com/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Decentralized Application",
+      "description": "They MantraDAO project is a community-governed DeFi platform focusing on Staking, Lending, and Governance."
+    },
+    {
+      "name": "Marlin Protocol",
+      "link": "https://www.marlin.pro/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Marlin is an open protocol that provides a high-performance programmable network infrastructure for DeFi and Web 3.0."
+    },
+    {
+      "name": "Math Wallet",
+      "link": "https://mathwallet.org/en-us/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Math Wallet is the an extension wallet that support multi-chain dApps. It includes token transfers, portfolio management and Blockchain news."
+    },
+    {
+      "name": "Matter Labs",
+      "link": "https://matter-labs.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Matter Labs is creating the Zinc Framework, designed to be a programming environment for the implementation of Zero-Knowledge proofs on Polkadot and Substrate-Based chains"
+    },
+    {
+      "name": "MixBytes",
+      "link": "https://mixbytes.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "MixBytes is a team of experienced developers providing top-notch blockchain solutions, smart contract security audits and tech advisory"
+    },
+    {
+      "name": "Moonbeam",
+      "link": "https://moonbeam.network/",
+      "category":[ "Smart Contracts","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Decentralized and permissionless, Moonbeam provides an Ethereum-compatible smart contract platform that makes it easy to build natively interoperable applications.",
+      "caseStudy": "#"
+    },
+    {
+      "name": "Moonpay",
+      "link": "https://www.moonpay.io/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Moonpay is a mobile wallet providing cash to crypto on/off ramps. It allows several payment methods such as Credit Cart, Bank Transfer, Apple Pay and others."
+    },
+    {
+      "name": "Data Highway",
+      "link": "https://www.mxc.org/",
+      "category":[ "IoT","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "DataHighway is a DAO that incentivizes the community to run a sophisticated IoT parachain based on Polkadot using the DHX token."
+    },
+    {
+      "name": "NGRAVE",
+      "link": "https://www.ngrave.io/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "NGRAVE offers NGRAVE Zero which is a fully offline hardware wallet. It also has NGRAVE Graphene that serves as a cold key backup system."
+    },
+    {
+      "name": "Node Factory",
+      "link": "https://nodefactory.io/",
+      "category":[ "Wallet","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "NodeFactory is building support for Polkadot in MetaMask wallet using MetaMask’s new plugin system that should support all Substrate-based chains such as Kusama and Polkadot."
+    },
+    {
+      "name": "Nodle",
+      "link": "https://nodle.io/",
+      "category":[ "IoT","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Nodle is the world’s largest ecosystem of connected devices, providing infrastructure, software and access to data for the Internet of Things."
+    },
+    {
+      "name": "OAX",
+      "link": "https://www.oax.org/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "The OAX Parachain offers equivalent ERC20 functionality, atomic swaps, fee delegation and batched multiple transfers."
+    },
+    {
+      "name": "Obsidian Labs",
+      "link": "https://www.obsidians.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Obsidian Labs is a global blockchain technology company focused on developer tools and enterprise solutions"
+    },
+    {
+      "name": "On Finality",
+      "link": "https://onfinality.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "OnFinality provides all the tools needed to access the Polkadot network, deploy infrastructure, or host a Consortium experience."
+    },
+    {
+      "name": "Ontology",
+      "link": "https://ont.io/",
+      "category":[ "Identity","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "The Ontology project is an open source blockchain that specializes in digital identity and decentraliez data management."
+    },
+    {
+      "name": "Origin Trail",
+      "link": "https://origintrail.io/",
+      "category":[ "IoT","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "OriginTrail is an ecosystem dedicated to making global supply chains work together by enabling a universal, collaborative and trusted data exchange."
+    },
+    {
+      "name": "Polkassembly",
+      "link": "https://niklabh811.wixsite.com/premiurly",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Polkassembly is a Governance Dashboard for Substrate-based chains. It is used by Polkadot and Kusama governance amongst others."
+    },
+    {
+      "name": "Phala network",
+      "link": "https://phala.network/",
+      "category":[ "Smart Contracts","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "The Phala Network is a privacy preserving protocol for data-protection and blockchain smart contract.",
+      "caseStudy": "#"
+    },
+    {
+      "name": "Plasm",
+      "link": "https://www.plasmnet.io/",
+      "category":[ "Smart Contracts","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Plasm Network is a scaling dApps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
+    },
+    {
+      "name": "Polimec",
+      "link": "https://www.kilt.io/polimec/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "The Polkadot Liquidity Mechanism (Polimec), is an open-source blockchain system designed to help getting liquidity into Polkadot based projects."
+    },
+    {
+      "name": "Polkadex",
+      "link": "https://www.polkadex.trade",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Polkadex is a Open Source, Decentralized Exchange Platform that features feeless trades, Market Order, AMM and full focus on UI."
+    },
+    {
+      "name": "Polkascan",
+      "link": "https://polkascan.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "POLKASCAN is part of WEB3SCAN and offers real-time multi-chain data. WEB3SCAN makes blockchain data accessible and understandable."
+    },
+    {
+      "name": "Polkastats",
+      "link": "https://polkastats.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Polkastasts showcases Polkadot live statistics. It details block production, validation process, staking information and others."
+    },
+    {
+      "name": "Polkaswap",
+      "link": "https://polkaswap.io/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Polkaswap is a non custodial AMM DEX designed uniquely for the Polkadot ecosystem and hosted on the SORA Network."
+    },
+    {
+      "name": "Polkawallet",
+      "link": "https://polkawallet.io/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Polkawallet is a mobile Wallet for any Substrate-based chain amongst which is Polkadot. It provides staking and governance mechanisms."
+    },
+    {
+      "name": "Protos",
+      "link": "https://protosmanagement.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Protos gives investors exposure to professionally managed portfolios of cryptocurrency assets and DeFi networks."
+    },
+    {
+      "name": "Ren Project",
+      "link": "https://renproject.io/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Decentralized Application",
+      "description": "Ren is an open protocol that enables the permissionless and private transfer of value between any blockchain."
+    },
+    {
+      "name": "Rio Chain",
+      "link": "https://riochain.io/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Rio DeFi is a blockchain technology company with a mission to accelerate the mass adoption of digital assets by bridging traditional and decentralized finance."
+    },
+    {
+      "name": "Robonomics (Airalabs)",
+      "link": "https://robonomics.network/",
+      "category":[ "IoT","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Robonomics Network is a set of open-source packages for Robotics, Smart Cities and Industry 4.0 developers."
+    },
+    {
+      "name": "Runtime Verification",
+      "link": "https://runtimeverification.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Runtime Verification contributing by building executable K specifications of the Substrate FRAME Library."
+    },
+    {
+      "name": "Equilibrium.co",
+      "link": "https://equilibrium.co/",
+      "category":[ "File Storage","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Equillibrium is building a Rust-based implementation of the InterPlanetary File System (IPFS) Protocol."
+    },
+    {
+      "name": "Safe Pal",
+      "link": "https://www.safepal.io/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "SafePal is a cryptocurrency hardware wallet that aims to provide secure, simple, and enjoyable crypto management solution for the masses."
+    },
+    {
+      "name": "Second State",
+      "link": "https://www.secondstate.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Second State allows developers to write Rust functions for Node.js, or as a Function as a Service (FaaS)."
+    },
+    {
+      "name": "SHIFT Project",
+      "link": "https://shiftnrg.org/",
+      "category":[ "Smart Contracts","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Shift aims to bring decentralized cloud hosting to the masses. It combines the transparency, immutability and decentralization of blockchain with distributed hosting."
+    },
+    {
+      "name": "Shyft Network",
+      "link": "https://www.shyft.network/",
+      "category":[ "Identity","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Shyft is the credential verification network with proof-of-sender protocol and that reclaims trust, identity and credibility for humanity."
+    },
+    {
+      "name": "Snowfork",
+      "link": "http://www.snowfork.com/",
+      "category":[ "Bridge","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Snowfork is building the decentralized, permisionless Polkadot-Ethereum bridge to connect the Ethereum Blockchain with the Polkadot Ecosystem."
+    },
+    {
+      "name": "Solang Compiler",
+      "link": "https://solang.readthedocs.io/en/latest/#",
+      "category":[ "Smart Contracts","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Solang compiler is a Solidity to WASM compiler, allowing Solidity code to be compiled to Web Assembly."
+    },
+    {
+      "name": "Stafi Protocol",
+      "link": "https://www.stafi.io/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Stafi protocol is a decentralized protocol unlocking liquidity of Staked assets. Stafi is built with Substrate."
+    },
+    {
+      "name": "Subscan",
+      "link": "https://crab.subscan.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "SUBSCAN is the blockchain explorer that aggregates the Substrate-based chains and Polkadot ecosystem."
+    },
+    {
+      "name": "Sunshine",
+      "link": "https://sunshine.foundation/",
+      "category":[ "Social","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Sunshine is built to enable open-source grant initiatives to easily operate in an on-chain ecosystem."
+    },
+    {
+      "name": "TEEREX",
+      "link": "https://www.scs.ch/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Supercomputing Systems is building a SubstrateTEE extension: Substrate Transaction Privacy using Intel SGX."
+    },
+    {
+      "name": "Swisscom Blockchain",
+      "link": "https://www.blockchain.swisscom.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "The Swisscom Blockchain has developed a Kubernetes Operator for Sentry nodes or Validators deployment."
+    },
+    {
+      "name": "TPFS (Transparent Systems)",
+      "link": "https://www.transparentsystems.com/",
+      "category":[ "Consortium Chain","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Transparent Systems advance financial infrastructure through on-demand, cryptographic settlement solutions"
+    },
+    {
+      "name": "Trust Wallet",
+      "link": "https://trustwallet.com/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Trust wallet is a mobile crypto wallet allowing on/off ramps from fiat to cryptocurrencies. It also host a Dapp browser."
+    },
+    {
+      "name": "UseTech",
+      "link": "https://usetech.com/blockchain/",
+      "category":[ "Gaming","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "UseTech is developing Unique Network, an NFT Substrate-base Parachain. The network was first launched on Hackusama."
+    },
+    {
+      "name": "Validators",
+      "link": "https://validators.com/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Validators provides Blockchain infrastructure and staking service. They have created an Open Source Scalable Cluster for Substrate."
+    },
+    {
+      "name": "Valiu",
+      "image": "https://raw.githubusercontent.com/paritytech/substrate.io/substrate-showcase-santi/src/data/logos/valiu.png?token=ACMU5K2OXAUSNJ3FKV4P7YS7YEVHS",
+      "link": "https://www.valiu.com/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Valiu allows users to send and receive Valiu Dollars (vUSD) in a permisionless manner. vUSD is Valiu's substrate-based Stablecoin."
+    },
+    {
+      "name": "Xaya",
+      "link": "https://xaya.io/",
+      "category":[ "Gaming","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Xaya is a purpose built blockchain specifically for the hosting of completely decentralized blockchain game worlds."
+    },
+    {
+      "name": "YeeCo",
+      "link": "https://www.yeeco.io/",
+      "category":[ "Infrastructure","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "YeeCo is a sharded Proof-Of-Work (PoW) chain with a multilayer architecture intended for 5G-based networks."
+    },
+    {
+      "name": "ZeroPool",
+      "link": "https://zeropool.network/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "ZeroPool is building private transactions on Polkadot. Balances and transaction graph are hidden and compatibility with network identity hiding technologies, like Tor."
+    },
+    {
+      "name": "Zondax",
+      "link": "https://zondax.ch/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Zondax is a Ledger app for Polkadot with flexible TrustZone-based HSM stack. The have developed the integration for Ledger Nano S and X support for Runtime 1062."
+    },
+    {
+      "name": "MathChain",
+      "link": "https://www.mathwallet.org/mathchain/en/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "MathChain is a Polkadot Smart Wallet Parachain based on Substrate. It contains built in solutions like DEX, NFT Store and more."
+    },
+    {
+      "name": "HydraDX",
+      "link": "https://hydradx.io/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "HydraDX is a cross-chain Automatic Market Maker (AMM) that  uses it's own algorithm named CFMM. The HydraDX team has won Hackusama."
+    },
+    {
+      "name": "Linear.Finance",
+      "link": "https://linear.finance/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Decentralized Application",
+      "description": "Linear Finance is a cross-chain compatible, decentralized asset protocol to cost-effectively and instantly create, manage, and trade synthetic assets with unlimited liquidity."
+    },
+    {
+      "name": "Social.network",
+      "link": "https://social.network/",
+      "category":[ "Social","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "The social network protocol aligns people towards the highest good, by incentivizing the creative collaboration of all societies towards achieving their missions."
+    },
+    {
+      "name": "Guarda",
+      "link": "https://guarda.com/",
+      "category":[ "Wallet","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Guarda is a Mobile wallet that allows staking, multisignature and ledger compatibility. Buy, earn and exchange crypto."
+    },
+    {
+      "name": "SushiSwap",
+      "link": "https://sushiswap.fi/",
+      "category":[ "DeFi","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Decentralized Application",
+      "description": "SushiSwap is an automated market making (AMM) decentralized exchange (DEX) being built on top of Moonbeam."
+    },
+    {
+      "name": "DIA",
+      "link": "https://diadata.org/",
+      "category":[ "DeFi","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Decentralized Application",
+      "description": "DIA (Decentralised Information Asset) is an open-source oracle platform that enables market actors to source, supply and share trustable data."
+    },
+    {
+      "name": "SubSocial",
+      "link": "https://subsocial.network/",
+      "category":[ "Social","All", "Connecting to Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Subsocial is an open protocol for decentralized social networks and marketplaces built with Substrate and IPFS."
+    },
+    {
+      "name": "ProChain",
+      "link": "https://chain.pro/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "ProChain is building a transparent digital advertising data ecosystem maximizing the interests of all parties involved in digital advertising through de-intermediary."
+    },
+    {
+      "name": "Borlaug Web Services",
+      "link": "https://www.borlaug.ws/",
+      "category":[ "Identity","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "The platform provides services to build transparency and traceability in value chains like decentralized identity, asset registry, provenance, capacity building and others."
+    },
+    {
+      "name": "DatDot",
+      "link": "https://datdot.org/",
+      "category":[ "File Storage","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "DatDot is a Distributed (peer-to-peer ) File Hosting Network, leveraging on the Dat Protocol and Substrate."
+    }
+    ]
+}
