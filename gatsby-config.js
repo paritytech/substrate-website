@@ -210,7 +210,7 @@ module.exports = {
         crumbLabelUpdates: [
           {
             pathname: '/ecosystem',
-            crumbLabel: 'Substrate Ecosystem',
+            crumbLabel: 'Ecosystem',
           },
           {
             pathname: '/ecosystem/opportunities',
