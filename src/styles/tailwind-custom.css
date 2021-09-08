@@ -38,7 +38,7 @@ p {
 /* Awesome Substrate Markdown */
 
 .awesome-substrate {
-  @apply ml-3;
+  @apply ml-3 max-w-3xl;
 }
 
 .awesome-substrate h2 {
@@ -51,4 +51,8 @@ p {
 
 .awesome-substrate p {
   @apply mb-2;
+}
+
+.awesome-substrate code {
+  @apply text-base font-sans;
 }

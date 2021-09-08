@@ -14,8 +14,9 @@ export default function AwesomeSubstrate({ data }) {
         <h2 className="text-4xl font-bold mb-6">Awesome Substrate</h2>
         <p className="text-lg font-medium">An awesome list is a list of awesome things curated by the community.</p>
         <p>
-          Substrate is a framework for building upgradable, modular and efficient blockchains. Substrate is an
-          open-source library of Rust code that is maintained by Parity Technologies.
+          Substrate is a framework for building upgradable, modular and efficient blockchains.
+          <br />
+          Substrate is an open-source library of Rust code that is maintained by Parity Technologies.
         </p>
       </Section>
       <Section>
