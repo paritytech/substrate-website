@@ -34,3 +34,21 @@ p {
 .underline-animate-thin a::after {
   height: 1px;
 }
+
+/* Awesome Substrate Markdown */
+
+.awesome-substrate {
+  @apply ml-3;
+}
+
+.awesome-substrate h2 {
+  @apply -ml-5 mt-14 mb-6 text-2xl font-medium;
+}
+
+.awesome-substrate h3 {
+  @apply -ml-5 mt-14 mb-6 text-2xl font-medium;
+}
+
+.awesome-substrate p {
+  @apply mb-2;
+}
