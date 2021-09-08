@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply px-4;
+}
+
 /* Paragraphs */
 p {
   font-weight: unset;
