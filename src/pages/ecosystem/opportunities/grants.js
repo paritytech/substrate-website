@@ -16,7 +16,7 @@ export default function Grants({ pageContext }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Grants" />
-      <Section>
+      <div className="container lg:px-10 mb-10">
         <Breadcrumb
           crumbs={crumbs}
           crumbSeparator=""
@@ -25,7 +25,7 @@ export default function Grants({ pageContext }) {
           disableLinks={['/ecosystem/opportunities/grants']}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
-      </Section>
+      </div>
       <Section>
         <div className="grid md:grid-cols-2 gap-6">
           <div>

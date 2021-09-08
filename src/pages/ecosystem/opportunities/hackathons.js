@@ -16,7 +16,7 @@ export default function Hackathons({ pageContext }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Hackathons" />
-      <Section>
+      <div className="container lg:px-10 mb-10">
         <Breadcrumb
           crumbs={crumbs}
           crumbSeparator=""
@@ -25,7 +25,7 @@ export default function Hackathons({ pageContext }) {
           disableLinks={['/ecosystem/opportunities/hackathons']}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
-      </Section>
+      </div>
       <Section>
         <h2 className="text-4xl font-bold mb-4">Hackathons</h2>
         <p>

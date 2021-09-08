@@ -20,7 +20,7 @@ export default function Seminar({ pageContext }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Seminar" />
-      <Section>
+      <div className="container lg:px-10 mb-10">
         <Breadcrumb
           crumbs={crumbs}
           crumbSeparator=""
@@ -29,7 +29,7 @@ export default function Seminar({ pageContext }) {
           disableLinks={['/ecosystem/resources/seminar']}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
-      </Section>
+      </div>
       <Section>
         <div>
           <h2 className="text-4xl font-bold mb-6">Substrate Seminar</h2>
