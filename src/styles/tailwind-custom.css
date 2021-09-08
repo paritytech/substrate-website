@@ -37,26 +37,26 @@ p {
 
 /* Awesome Substrate Markdown */
 
-.awesome-substrate {
+.markdown {
   @apply ml-3 max-w-3xl;
 }
 
-.awesome-substrate ul ul {
+.markdown ul ul {
   @apply ml-8;
 }
 
-.awesome-substrate h2 {
+.markdown h2 {
   @apply -ml-5 mt-14 mb-6 text-2xl font-medium;
 }
 
-.awesome-substrate h3 {
+.markdown h3 {
   @apply -ml-5 mt-14 mb-6 text-2xl font-medium;
 }
 
-.awesome-substrate p {
+.markdown p {
   @apply mb-2;
 }
 
-.awesome-substrate code {
+.markdown code {
   @apply text-base font-sans;
 }

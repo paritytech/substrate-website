@@ -21,7 +21,7 @@ export default function AwesomeSubstrate({ data }) {
       </Section>
       <Section>
         <div
-          className="awesome-substrate underline-animate underline-animate-thin"
+          className="markdown underline-animate underline-animate-thin"
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
       </Section>
