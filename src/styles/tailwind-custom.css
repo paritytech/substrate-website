@@ -41,6 +41,10 @@ p {
   @apply ml-3 max-w-3xl;
 }
 
+.awesome-substrate ul ul {
+  @apply ml-8;
+}
+
 .awesome-substrate h2 {
   @apply -ml-5 mt-14 mb-6 text-2xl font-medium;
 }
