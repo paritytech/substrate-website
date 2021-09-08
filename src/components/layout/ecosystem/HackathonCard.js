@@ -11,9 +11,9 @@ const hackathonCard = ({ hackathon }) => {
 
   return (
     <article className="p-4 bg-substrateGray-light dark:bg-substrateBlackish rounded-md grid md:grid-cols-2 gap-6 items-center mb-8 shadow-md">
-      <div className="aspect-w-1 aspect-h-1 rounded-md overflow-hidden">
-        {imageData && <GatsbyImage className="h-full" image={imageData} alt={title} />}
-      </div>
+      {imageData && (
+        <GatsbyImage className="w-full h-full aspect-w-1 aspect-h-1 rounded-md" image={imageData} alt={title} />
+      )}
       <div>
         <h4 className="font-extrabold mb-0 text-2xl lg:text-3xl">{city}</h4>
         <h4 className="font-extrabold mb-4 lg:mb-6 text-2xl lg:text-3xl">{title}</h4>
