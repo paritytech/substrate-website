@@ -40,7 +40,7 @@ const createBlogPages = async ({ graphql, actions }) => {
       }
     }
   `);
-  if (!result || !result.data) return
+  if (!result || !result.data) return;
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
@@ -82,7 +82,7 @@ const createBlogTagsPages = async ({ graphql, actions }) => {
       }
     }
   `);
-  if (!result || !result.data) return
+  if (!result || !result.data) return;
 
   /* create a page for each tag, with all articles with this tag */
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
