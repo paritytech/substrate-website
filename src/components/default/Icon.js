@@ -1,8 +1,10 @@
 import React from 'react';
 
+import effortlessConnectivity from '../../images/svg/effortless-connectivity.svg';
 import forkless from '../../images/svg/forkless.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import lightClient from '../../images/svg/light-client.svg';
+import lightClientBased from '../../images/svg/light-client-based.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import seminar from '../../images/svg/seminar.svg';
@@ -70,6 +72,8 @@ const iconsMap = {
   'wa-logo': waLogo,
   forkless: forkless,
   'light-client': lightClient,
+  'light-client-based': lightClientBased,
+  'effortless-connectivity': effortlessConnectivity,
 };
 
 export default function Icon({ name, className }) {
