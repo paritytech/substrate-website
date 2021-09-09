@@ -172,12 +172,8 @@
     @apply text-substrateBlue m-0;
   }
 
-  .breadcrumb__separator {
-    @apply text-substrateBlue;
-  }
-
   .breadcrumb__list span {
-    @apply text-black dark:text-white;
+    @apply text-substrateBlackish dark:text-white;
   }
 
   .breadcrumb__list__item {
@@ -186,7 +182,7 @@
 
   .breadcrumb__list__item::before {
     content: '»';
-    @apply mr-2 text-substrateBlue;
+    @apply mr-2 text-substrateBlackish dark:text-white;
   }
 
   .breadcrumb__list__item:first-of-type::before {
