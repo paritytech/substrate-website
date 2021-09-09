@@ -12,18 +12,18 @@ function LayoutSidebar({ children, pageTitle }) {
     <div className="flex">
       <div className="hidden lg:block lg:bg-substrateGray-light border-r lg:dark:bg-substrateBlackish dark:border-substrateDarkThemeGrey">
         <div className={cx('sticky top-16 overflow-y-auto lg:h-screen w-60')}>
-          <nav className={cx('pl-4 pt-10 pb-5')}>Nav</nav>
+          <nav className={cx('pl-4 pt-10 pb-5')}>{pageTitle}</nav>
         </div>
       </div>
       <div className="w-full 2xl:pr-60 pt-10">
-        <NavBreadcrumb pageTitle={pageTitle} />
+        <NavBreadcrumb />
         <article className="lg:max-w-6xl m-auto">{children}</article>
       </div>
     </div>
   );
 }
 
-export default function Layout({ layout = 'default', mode = 'default', children, pageTitle }) {
+export default function Layout({ layout = 'default', mode = 'default', children }) {
   useEffect(() => {
     AOS.init({
       disable: 'mobile',
@@ -33,9 +33,8 @@ export default function Layout({ layout = 'default', mode = 'default', children,
 
   return (
     <DataContext.Consumer>
-      {({ location }) => (
+      {({ pageTitle }) => (
         <>
-          {console.log('path: ' + location.pathname)}
           <Header mode={mode} />
           <main
             className={cx('min-h-screen', {
