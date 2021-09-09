@@ -14,7 +14,7 @@ export default function AwesomeSubstrate({ pageContext, data }) {
 
   const html = data.markdownRemark.html;
   return (
-    <Layout layout="sidebar">
+    <Layout layout="sidebar" pageContext={pageContext}>
       <SEO title="Awesome Substrate" />
       <div className="container hidden md:block lg:px-10 mb-10 underline-animate underline-animate-thin">
         <Breadcrumb

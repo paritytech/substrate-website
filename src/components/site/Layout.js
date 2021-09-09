@@ -22,7 +22,7 @@ function LayoutSidebar({ children }) {
   );
 }
 
-export default function Layout({ layout = 'default', mode = 'default', children }) {
+export default function Layout({ layout = 'default', mode = 'default', children, pageContext }) {
   useEffect(() => {
     AOS.init({
       disable: 'mobile',
@@ -32,6 +32,7 @@ export default function Layout({ layout = 'default', mode = 'default', children 
 
   return (
     <>
+      {console.log(pageContext)}
       <Header mode={mode} />
       <main
         className={cx('min-h-screen', {
