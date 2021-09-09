@@ -16,6 +16,7 @@ import so2 from '../../images/svg/social/so2.svg';
 import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
+import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
@@ -44,6 +45,7 @@ const iconsMap = {
   'arrow-next': arrowNext,
   'arrow-dropdown': arrowDropdown,
   'arrow-more': arrowMore,
+  'arrow-back': arrowBack,
   'sidebar-toggle': sidebarToggle,
   docs: docs,
   moon: moon,
