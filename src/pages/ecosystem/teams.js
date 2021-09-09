@@ -1,6 +1,6 @@
 // import cx from 'classnames';
 import { graphql } from 'gatsby';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import teamsData from '../../../data/teams.json';
 import AllTeams from '../../components/layout/ecosystem/teams/AllTeams';
@@ -15,6 +15,14 @@ export default function Teams({ data }) {
   const [curType, setCurType] = useState('All Teams');
   const [curCat, setCurCat] = useState('All');
   const [curTeam, setCurTeam] = useState('');
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const type = urlParams.get('type');
+    const category = urlParams.get('category');
+    type && setCurType(type);
+    category && setCurCat(category);
+  }, []);
 
   return (
     <Layout>

@@ -26,7 +26,7 @@ export default function TypeFilter(props) {
                 key={index}
                 value={type}
                 className={cx(
-                  'w-1/4 h-11 z-10 font-bold text-sm flex justify-center items-center hover:bg-substrateDark hover:text-white cursor-pointer transform transition-all duration-150 ease-in-out ',
+                  'w-1/4 h-11 font-bold text-sm flex justify-center items-center hover:bg-substrateDark hover:text-white cursor-pointer transform transition-all duration-150 ease-in-out ',
                   { 'rounded-tl rounded-bl': index === 0 },
                   { 'rounded-br rounded-tr': index === 3 },
                   { 'bg-substrateDark text-white': curType === type }
