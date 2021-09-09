@@ -14,6 +14,7 @@ export default function Teams({ data }) {
   const { logos } = data;
   const [curType, setCurType] = useState('All Teams');
   const [curCat, setCurCat] = useState('All');
+  const [curTeam, setCurTeam] = useState('');
 
   return (
     <Layout>
@@ -25,7 +26,14 @@ export default function Teams({ data }) {
         <h2 className="mb-8">Teams</h2>
         <TypeFilter types={types} curType={curType} setCurType={setCurType} />
         <CatFilter categories={categories} curCat={curCat} setCurCat={setCurCat} />
-        <AllTeams teams={teams} curType={curType} curCat={curCat} logos={logos} />
+        <AllTeams
+          teams={teams}
+          curTeam={curTeam}
+          setCurTeam={setCurTeam}
+          curType={curType}
+          curCat={curCat}
+          logos={logos}
+        />
       </section>
     </Layout>
   );
