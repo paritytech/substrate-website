@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
@@ -8,24 +7,10 @@ import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 import PrimaryButton from '../../../components/ui/PrimaryButton';
 
-export default function Newsletter({ pageContext }) {
-  const {
-    breadcrumb: { crumbs },
-  } = pageContext;
-
+export default function Newsletter() {
   return (
     <Layout layout="sidebar">
       <SEO title="Newsletter" />
-      <div className="container hidden md:block lg:px-10 mb-16 underline-animate underline-animate-thin">
-        <Breadcrumb
-          crumbs={crumbs}
-          crumbSeparator=""
-          crumbLabel="Newsletter"
-          hiddenCrumbs={['/']}
-          disableLinks={['/ecosystem/connect/newsletter', '/ecosystem/connect']}
-          className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
-        />
-      </div>
       <div className="-mt-10">
         <div className="relative">
           <StaticImage
