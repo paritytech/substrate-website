@@ -4,8 +4,8 @@ import React from 'react';
 export default function TypeFilter(props) {
   const { types, curType, setCurType } = props;
   return (
-    <div>
-      <p>Filter by type</p>
+    <div className="mb-8">
+      <h5 className="font-normal mb-6">Filter by type</h5>
       <div className="lg:hidden">
         <select className="focus:outline-none text-sm" onChange={event => setCurType(event.target.value)}>
           {types.map((type, index) => (
@@ -16,7 +16,7 @@ export default function TypeFilter(props) {
         </select>
       </div>
       <div className="hidden lg:block">
-        <div className="w-full h-11 bg-substrateGray-light flex justify-center items-center divide-x rounded">
+        <div className="w-full h-11 bg-substrateGray-light dark:bg-darkBackground flex justify-center items-center divide-x rounded">
           {types.map((type, index) => {
             return (
               <div
