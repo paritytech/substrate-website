@@ -38,6 +38,7 @@ module.exports = {
         },
       },
     },
+    'gatsby-plugin-postcss',
     /* use tailwindcss, used sass instead of css */
     {
       resolve: 'gatsby-plugin-sass',

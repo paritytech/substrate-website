@@ -1,0 +1,72 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply px-4;
+}
+
+/* Paragraphs */
+p {
+  font-weight: unset;
+  line-height: 1.625;
+}
+
+/* Links underline animation */
+.underline-animate a {
+  @apply text-substrateBlue;
+  display: inline-block;
+  position: relative;
+}
+
+.underline-animate a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  @apply bg-substrateBlue;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.underline-animate a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Thinner underline animation */
+
+.underline-animate-thin a::after {
+  height: 1px;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb__list {
+  @apply list-none flex text-sm ml-0 font-medium;
+}
+
+.breadcrumb__link {
+  @apply text-substrateBlue m-0;
+}
+
+.breadcrumb__list span {
+  @apply text-substrateBlackish dark:text-white;
+}
+
+.breadcrumb__list__item {
+  @apply flex m-0 mr-1;
+}
+
+.breadcrumb__list__item::before {
+  content: '»';
+  @apply mr-2 text-substrateBlackish dark:text-white;
+}
+
+.breadcrumb__list__item:first-of-type::before {
+  content: none;
+  @apply: m-0;
+}
