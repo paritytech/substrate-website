@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply px-4;
+}
+
 /* Paragraphs */
 p {
   font-weight: unset;
@@ -34,8 +42,7 @@ p {
 .underline-animate-thin a::after {
   height: 1px;
 }
-
-/* Awesome Substrate Markdown */
+/* Markdown styles */
 
 .markdown {
   @apply max-w-3xl;
@@ -63,4 +70,32 @@ p {
 
 .markdown code {
   @apply text-base font-sans;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb__list {
+  @apply list-none flex text-sm ml-0 font-medium;
+}
+
+.breadcrumb__link {
+  @apply text-substrateBlue m-0;
+}
+
+.breadcrumb__list span {
+  @apply text-substrateBlackish dark:text-white;
+}
+
+.breadcrumb__list__item {
+  @apply flex m-0 mr-1;
+}
+
+.breadcrumb__list__item::before {
+  content: '»';
+  @apply mr-2 text-substrateBlackish dark:text-white;
+}
+
+.breadcrumb__list__item:first-of-type::before {
+  content: none;
+  @apply: m-0;
 }
