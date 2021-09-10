@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import React, { useEffect } from 'react';
 
 import { Link } from '../../../components/default/Link';
