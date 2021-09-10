@@ -17,7 +17,7 @@ const currentPage = (url, slug) => {
   return url.includes(slug);
 };
 
-const NavSidebarSubMenu = ({ parent, category, pageSlug }) => {
+const NavSidebarSubMenu = ({ parent, category, slug }) => {
   const { t } = useTranslation();
   const { menus } = useSiteMenus();
   const parentItem = filterMenuItem(menus.main, parent);
@@ -29,7 +29,7 @@ const NavSidebarSubMenu = ({ parent, category, pageSlug }) => {
       <span className="px-6 p-4 block bg-substrateGray dark:bg-gray-700 font-bold mb-2">{t(categoryItem.id)}</span>
       <ul className="p-0 m-0 list-none">
         {subMenu.map(subMenuItem => {
-          const isCurrentPage = currentPage(subMenuItem.url, pageSlug);
+          const isCurrentPage = currentPage(subMenuItem.url, slug);
           return (
             <li className="font-medium p-0 m-0" key={subMenuItem.id}>
               <LinkMenu
