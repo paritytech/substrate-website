@@ -5,6 +5,7 @@ import computer from '../../images/svg/computer.svg';
 import contact from '../../images/svg/contact.svg';
 import desktop from '../../images/svg/desktop.svg';
 import dollar from '../../images/svg/dollar.svg';
+import builders from '../../images/svg/ecosystem/builders.svg';
 import connect from '../../images/svg/ecosystem/connect.svg';
 import opportunities from '../../images/svg/ecosystem/opportunities.svg';
 import resources from '../../images/svg/ecosystem/resources.svg';
@@ -51,6 +52,7 @@ const iconsMap = {
   opportunities: opportunities,
   resources: resources,
   connect: connect,
+  builders: builders,
   /* brand */
   'logo-white': logoWhite,
   'w3f-logo': w3fLogo,
