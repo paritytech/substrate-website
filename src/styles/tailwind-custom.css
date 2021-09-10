@@ -6,6 +6,11 @@ html {
   @apply px-4;
 }
 
+@media (max-width: theme('screens.sm')) {
+  .container {
+    @apply max-w-none;
+  }
+}
 /* Paragraphs */
 p {
   font-weight: unset;
