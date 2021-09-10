@@ -137,11 +137,7 @@ export default function Connect() {
             </Link>
           </div>
           <div className="p-0 sm:p-10 lg:p-0 xl:p-10">
-            <StaticImage
-              src="../images/photos/connect/subconnectBrowserTab2x.png"
-              alt="Substrate Connect"
-              className=""
-            />
+            <Icon name="subconnect-browser-tab" className="w-full h-auto" />
           </div>
         </div>
       </Section>

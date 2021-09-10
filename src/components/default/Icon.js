@@ -20,6 +20,7 @@ import so2 from '../../images/svg/social/so2.svg';
 import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
+import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
 import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
@@ -78,6 +79,7 @@ const iconsMap = {
   'light-client': lightClient,
   'shield-check-solid': shieldCheckSolid,
   'globe-solid': globeSolid,
+  'subconnect-browser-tab': subconnectBrowserTab,
 };
 
 export default function Icon({ name, className }) {
