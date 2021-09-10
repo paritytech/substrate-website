@@ -3,7 +3,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import Icon from '../components/default/Icon';
-import { Link } from '../components/default/Link';
 import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
@@ -116,15 +115,9 @@ export default function Connect() {
             <PrimaryButton link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
               Get the extension
             </PrimaryButton>
-            <Link to="https://docs.substrate.io/" className="block mt-8">
-              <p className="font-bold pb-1 mr-0.5 border-b-2 border-black dark:border-white inline hover:mr-2 transition-all">
-                Developer Docs
-              </p>{' '}
-              <span className="fill-current dark:text-white inline-block">
-                <Icon name="arrow-more" />
-              </span>
-            </Link>
-            <LineArrowButton link="https://docs.substrate.io/">Developer Docs</LineArrowButton>
+            <LineArrowButton link="https://docs.substrate.io/" className="block mt-8">
+              Developer Docs
+            </LineArrowButton>
           </div>
           <div className="p-0 sm:p-10 lg:p-0 xl:p-10">
             <Icon name="subconnect-browser-tab" className="w-full h-auto" />
@@ -154,14 +147,9 @@ export default function Connect() {
                 <h4 className="font-medium text-2xl mb-6">{name}</h4>
                 <p className="mb-16">{description}</p>
                 <div className="absolute bottom-6">
-                  <Link to={link} className="block mt-6">
-                    <p className="font-bold pb-1 mr-0.5 border-b-2 border-black dark:border-white inline hover:mr-2 transition-all">
-                      Read more
-                    </p>{' '}
-                    <span className="fill-current dark:text-white inline-block">
-                      <Icon name="arrow-more" />
-                    </span>
-                  </Link>
+                  <LineArrowButton link={link} className="block mt-6">
+                    Read more
+                  </LineArrowButton>
                 </div>
               </div>
             </div>
