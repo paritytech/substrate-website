@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply px-4;
+}
+
 /* Paragraphs */
 p {
   font-weight: unset;
@@ -33,4 +41,64 @@ p {
 
 .underline-animate-thin a::after {
   height: 1px;
+}
+
+/* Markdown styles */
+
+.markdown h2,
+h3 {
+  @apply max-w-3xl;
+  scroll-margin-top: 100px;
+}
+
+.markdown ul {
+  @apply ml-8;
+}
+
+.markdown ul ul {
+  @apply ml-8;
+}
+
+.markdown h2 {
+  @apply mt-14 mb-6 text-2xl font-medium;
+}
+
+.markdown h3 {
+  @apply mt-14 mb-6 text-2xl font-medium;
+}
+
+.markdown p {
+  @apply mb-2;
+}
+
+.markdown code {
+  @apply text-base font-sans;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb__list {
+  @apply list-none flex text-sm ml-0 font-medium;
+}
+
+.breadcrumb__link {
+  @apply text-substrateBlue m-0;
+}
+
+.breadcrumb__list span {
+  @apply text-substrateBlackish dark:text-white;
+}
+
+.breadcrumb__list__item {
+  @apply flex m-0 mr-1;
+}
+
+.breadcrumb__list__item::before {
+  content: '»';
+  @apply mr-2 text-substrateBlackish dark:text-white;
+}
+
+.breadcrumb__list__item:first-of-type::before {
+  content: none;
+  @apply: m-0;
 }

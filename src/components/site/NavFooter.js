@@ -8,8 +8,8 @@ const NavFooter = () => {
   const { t } = useTranslation();
   const { menus } = useSiteMenus();
   return (
-    <nav className="m-0 p-o hidden sm:block lg:w-full lg:max-w-screen md:h-auto">
-      <ul className="m-0 list-none">
+    <nav className="m-0 p-0 hidden xs:block lg:w-full lg:max-w-screen md:h-auto">
+      <ul className="h-[640px] sm:h-auto m-0 p-0 list-none flex flex-wrap flex-col flex-start">
         {menus.main.map(menuItem => {
           const subMenu = buildSubMenu(menus, menuItem);
           return (
