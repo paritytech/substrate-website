@@ -24,6 +24,7 @@ const pageTitle = pathArray => {
 };
 
 const defaultContext = {
+  pathArray: new Array('', '', ''),
   pageTitle: '',
 };
 
