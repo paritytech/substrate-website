@@ -7,6 +7,7 @@ import { Link } from '../components/default/Link';
 import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
+import LineArrowButton from '../components/ui/LineArrowButton';
 import PrimaryButton from '../components/ui/PrimaryButton';
 
 const networks = [
@@ -67,14 +68,7 @@ export default function Connect() {
             A fast, secure, and decentralized way to interact with Polkadot, Kusama, and their parachains right in the
             browser, Substrate Connect helps you build better end-user experiences for Web3 apps.
           </p>
-          <Link to="/technology">
-            <p className="font-bold pb-1 mr-0.5 border-b-2 border-black dark:border-white inline hover:mr-2 transition-all">
-              Substrate Technology
-            </p>{' '}
-            <span className="fill-current dark:text-white inline-block">
-              <Icon name="arrow-more" />
-            </span>
-          </Link>
+          <LineArrowButton link="/technology">Substrate Technology</LineArrowButton>
           <div className="w-1/2 border-b border-substrateSubtleGrey dark:border-substrateDarkThemeGrey mt-10 mb-16"></div>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -104,14 +98,9 @@ export default function Connect() {
               </p>
             </div>
           </div>
-          <Link to="https://www.parity.io/blog/what-is-a-light-client/">
-            <p className="font-bold pb-1 mr-0.5 border-b-2 border-black dark:border-white inline hover:mr-2 transition-all">
-              More on light clients
-            </p>{' '}
-            <span className="fill-current dark:text-white inline-block">
-              <Icon name="arrow-more" />
-            </span>
-          </Link>
+          <LineArrowButton link="https://www.parity.io/blog/what-is-a-light-client/">
+            More on light clients
+          </LineArrowButton>
         </Section>
       </div>
       <Section>
@@ -135,6 +124,7 @@ export default function Connect() {
                 <Icon name="arrow-more" />
               </span>
             </Link>
+            <LineArrowButton link="https://docs.substrate.io/">Developer Docs</LineArrowButton>
           </div>
           <div className="p-0 sm:p-10 lg:p-0 xl:p-10">
             <Icon name="subconnect-browser-tab" className="w-full h-auto" />
