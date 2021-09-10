@@ -145,8 +145,11 @@ export default function Connect() {
         <h2 className="text-4xl font-bold mb-6">Supported Networks</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {networks.map(({ name, description, link, icon }, idx) => (
-            <div key={idx} className="rounded-md border border-substrateSubtleGrey relative overflow-hidden">
-              <div className="bg-substrateGreen-light h-20 p-6 overflow-hidden flex">
+            <div
+              key={idx}
+              className="rounded-md border border-substrateSubtleGrey dark:border-substrateDarkThemeGrey dark:bg-substrateBlackish relative overflow-hidden"
+            >
+              <div className="bg-substrateGreen-light dark:bg-substrateGreen h-20 p-6 overflow-hidden flex">
                 {icon ? (
                   <Icon name={icon} alt={name} className="m-0 mb-1 p-0 h-full self-center" />
                 ) : (
