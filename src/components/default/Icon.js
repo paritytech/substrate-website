@@ -1,5 +1,6 @@
 import React from 'react';
 
+import caseStudy from '../../images/svg/case-study.svg';
 import forkless from '../../images/svg/forkless.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import lightClient from '../../images/svg/light-client.svg';
@@ -68,6 +69,7 @@ const iconsMap = {
   'wa-logo': waLogo,
   forkless: forkless,
   'light-client': lightClient,
+  'case-study': caseStudy,
 };
 
 export default function Icon({ name, className }) {

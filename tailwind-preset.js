@@ -40,6 +40,7 @@ module.exports = {
         substrateWhite: '#F8FAF9',
         substrateRed: '#F2606A',
         substratePurple: '#5A30B4',
+        substratePink: '#E6007A',
         substrateYellow: '#FDAB3D',
         substrateDark: '#242A35',
         substrateBlue: '#4E73F2',
