@@ -8,15 +8,14 @@ import NavBreadcrumb from '../site/NavBreadcrumb';
 import NavSidebar from '../site/NavSidebar';
 
 function LayoutSidebar({ children }) {
-  const sidebarWidth = '64';
   return (
     <div className="flex">
       <div className="hidden lg:block min-h-screen lg:h-auto lg:bg-substrateGray-light border-r lg:dark:bg-substrateBlackish dark:border-substrateDarkThemeGrey">
-        <div className={cx(`sticky top-16 overflow-y-auto w-${sidebarWidth}`)}>
+        <div className={cx(`sticky top-16 overflow-y-auto w-64`)}>
           <NavSidebar />
         </div>
       </div>
-      <div className={`w-full 2xl:pr-${sidebarWidth} pt-10`}>
+      <div className={`w-full 2xl:pr-64 pt-10`}>
         <div className="container hidden md:block lg:px-10 lg:max-w-6xl m-auto mb-10 underline-animate underline-animate-thin">
           <NavBreadcrumb />
         </div>
