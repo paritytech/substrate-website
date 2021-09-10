@@ -123,7 +123,7 @@ export default function Connect() {
               on all major browsers and does not require a TLS certificate for connecting to nodes.
             </p>
             <PrimaryButton link="">Download Extension</PrimaryButton>
-            <Link to="https://www.parity.io/blog/what-is-a-light-client/" className="block mt-8">
+            <Link to="https://docs.substrate.io/" className="block mt-8">
               <p className="font-bold pb-1 mr-0.5 border-b-2 border-black dark:border-white inline hover:mr-2 transition-all">
                 Developer Docs
               </p>{' '}
@@ -148,9 +148,9 @@ export default function Connect() {
             <div key={idx} className="rounded-md border border-substrateSubtleGrey relative overflow-hidden">
               <div className="bg-substrateGreen-light h-20 p-6 overflow-hidden flex">
                 {icon ? (
-                  <Icon name={icon} alt={name} className="m-0 p-0 h-full self-center" />
+                  <Icon name={icon} alt={name} className="m-0 mb-1 p-0 h-full self-center" />
                 ) : (
-                  <h4 className="font-medium text-2xl mb-0 dark:text-black">{name}</h4>
+                  <h4 className="font-bold text-2xl mb-0 dark:text-black">{name}</h4>
                 )}
               </div>
               <div className="p-6">
