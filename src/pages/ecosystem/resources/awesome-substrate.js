@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
@@ -13,6 +13,22 @@ export default function AwesomeSubstrate({ pageContext, data }) {
   } = pageContext;
 
   const html = data.markdownRemark.html;
+
+  useEffect(() => {
+    const headings = document.querySelectorAll('h2, h3');
+
+    const articleNav = document.querySelector('.article-nav');
+
+    headings.forEach(heading => {
+      const headingClass = heading.innerHTML.split(' ').join('-');
+      heading.id = headingClass;
+      const articleLink = document.createElement('a');
+      articleNav.appendChild(articleLink);
+      articleLink.innerHTML = heading.innerHTML + '<br/>';
+      articleLink.setAttribute('href', '#' + headingClass);
+    });
+  }, [html]);
+
   return (
     <Layout layout="sidebar">
       <SEO title="Awesome Substrate" />
@@ -26,6 +42,9 @@ export default function AwesomeSubstrate({ pageContext, data }) {
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
       </div>
+      <Section>
+        <div className="article-nav"></div>
+      </Section>
       <Section>
         <h2 className="text-4xl font-bold mb-6">Awesome Substrate</h2>
         <p className="text-lg font-medium">An awesome list is a list of awesome things curated by the community.</p>
