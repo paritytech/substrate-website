@@ -44,8 +44,10 @@ p {
 }
 /* Markdown styles */
 
-.markdown {
+.markdown h2,
+h3 {
   @apply max-w-3xl;
+  scroll-margin-top: 100px;
 }
 
 .markdown ul {

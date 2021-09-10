@@ -17,15 +17,16 @@ export default function AwesomeSubstrate({ pageContext, data }) {
   useEffect(() => {
     const headings = document.querySelectorAll('h2, h3');
 
-    const articleNav = document.querySelector('.article-nav');
+    const articleNav = document.querySelector('#article-nav');
 
-    headings.forEach(heading => {
-      const headingClass = heading.innerHTML.split(' ').join('-');
-      heading.id = headingClass;
+    headings.forEach((heading, index) => {
+      if (index === 0) {
+        return;
+      }
       const articleLink = document.createElement('a');
       articleNav.appendChild(articleLink);
       articleLink.innerHTML = heading.innerHTML + '<br/>';
-      articleLink.setAttribute('href', '#' + headingClass);
+      articleLink.setAttribute('href', '#' + heading.id);
     });
   }, [html]);
 
@@ -42,9 +43,6 @@ export default function AwesomeSubstrate({ pageContext, data }) {
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />
       </div>
-      <Section>
-        <div className="article-nav"></div>
-      </Section>
       <Section>
         <h2 className="text-4xl font-bold mb-6">Awesome Substrate</h2>
         <p className="text-lg font-medium">An awesome list is a list of awesome things curated by the community.</p>

@@ -18,6 +18,7 @@ function LayoutSidebar({ children }) {
           <div className="pt-10">{children}</div>
         </article>
       </div>
+      <nav className="hidden xl:block fixed right-0 top-36 max-w-xs" id="article-nav"></nav>
     </div>
   );
 }
