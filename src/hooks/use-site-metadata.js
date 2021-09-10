@@ -9,6 +9,20 @@ export const useSiteMetadata = () => {
         site {
           siteMetadata {
             title
+            title_meta
+            description
+            image_og
+            siteUrl
+            author
+            pressEmail
+            email
+            twitter
+            linkedIn
+            element
+            github
+            telegram
+            gitter
+            stackoverflow
           }
         }
       }
