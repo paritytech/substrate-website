@@ -6,7 +6,7 @@ import { Link } from '../../default/Link';
 const Card = ({ title, description, link, icon, color, linkText }) => {
   let titleIcon;
   if (icon) {
-    titleIcon = <Icon name={icon} className="inline-block mr-3" />;
+    titleIcon = <Icon name={icon} className="inline-block mr-3 fill-current text-substrateBlackish dark:text-white" />;
   }
 
   return (

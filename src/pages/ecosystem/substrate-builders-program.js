@@ -65,7 +65,11 @@ export default function BuildersProgram() {
             <h2 className="text-center">The program is divided into three tracks</h2>
             <div className="p-6 my-6 shadow-xl rounded-md">
               <h3 className="mb-4">
-                <Icon name="dollar" className="inline-block align-top mt-1 mr-1" /> Chains track
+                <Icon
+                  name="chain"
+                  className="inline-block align-top mt-1 mr-1 fill-current text-substrateBlackish dark:text-white"
+                />{' '}
+                Chains track
               </h3>
               <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">
                 Those that are building impactful chains.
@@ -75,7 +79,11 @@ export default function BuildersProgram() {
 
             <div className="p-6 my-6 shadow-xl rounded-md">
               <h3 className="mb-4">
-                <Icon name="dollar" className="inline-block align-top mt-1 mr-1" /> Infrastructure track
+                <Icon
+                  name="layers"
+                  className="inline-block align-top mt-1 mr-1 fill-current text-substrateBlackish dark:text-white"
+                />{' '}
+                Infrastructure track
               </h3>
               <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">
                 Those that are building Substrate/Polkadot-related infrastructure.
@@ -88,7 +96,11 @@ export default function BuildersProgram() {
 
             <div className="p-6 my-6 shadow-xl rounded-md">
               <h3 className="mb-4">
-                <Icon name="dollar" className="inline-block align-top mt-1 mr-1" /> Application Track
+                <Icon
+                  name="computer"
+                  className="inline-block align-top mt-1 mr-1 fill-current text-substrateBlackish dark:text-white"
+                />{' '}
+                Application Track
               </h3>
               <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">
                 Those that are building applications on top of Substrate-based chains.

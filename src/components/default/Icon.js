@@ -1,5 +1,7 @@
 import React from 'react';
 
+import chain from '../../images/svg/chain.svg';
+import computer from '../../images/svg/computer.svg';
 import contact from '../../images/svg/contact.svg';
 import desktop from '../../images/svg/desktop.svg';
 import dollar from '../../images/svg/dollar.svg';
@@ -11,6 +13,7 @@ import forkless from '../../images/svg/forkless.svg';
 import graduation from '../../images/svg/graduation.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import house from '../../images/svg/house.svg';
+import layers from '../../images/svg/layers.svg';
 import lightClient from '../../images/svg/light-client.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import paperplane from '../../images/svg/paperplane.svg';
@@ -63,6 +66,9 @@ const iconsMap = {
   paperplane: paperplane,
   pen: pen,
   event: event,
+  chain: chain,
+  layers: layers,
+  computer: computer,
   /* ui */
   'hamburger-toggle': hamburger,
   'close-x': close,
