@@ -49,7 +49,9 @@ export default function Connect() {
             <p className="mb-8 text-xl md:text-2xl xl:text-3xl font-bold">
               The easiest way to connect to Polkadot, Kusama, and Substrate-based chains.
             </p>
-            <PrimaryButton link="">Download Extension</PrimaryButton>
+            <PrimaryButton link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
+              Get the extension
+            </PrimaryButton>
           </div>
           <StaticImage
             src="../images/photos/connect/subconillus2x.png"
@@ -114,7 +116,7 @@ export default function Connect() {
       </div>
       <Section>
         <div className="grid lg:grid-cols-2 gap-8">
-          <div className="lg:max-w-md self-center mb-20">
+          <div className="lg:max-w-md self-center mb-10 lg:mb-20">
             <h2 className="text-4xl font-bold mb-6">The Browser Extension</h2>
             <p className="leading-loose mb-8">
               Substrate Connect can run in the browser with each tab running a single light client, but running it as a
@@ -122,7 +124,9 @@ export default function Connect() {
               light clients can run simultaneously and can continuously sync as long as the browser stays open. It works
               on all major browsers and does not require a TLS certificate for connecting to nodes.
             </p>
-            <PrimaryButton link="">Download Extension</PrimaryButton>
+            <PrimaryButton link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
+              Get the extension
+            </PrimaryButton>
             <Link to="https://docs.substrate.io/" className="block mt-8">
               <p className="font-bold pb-1 mr-0.5 border-b-2 border-black dark:border-white inline hover:mr-2 transition-all">
                 Developer Docs
