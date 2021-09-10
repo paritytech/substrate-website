@@ -1,5 +1,7 @@
 import { graphql } from 'gatsby';
-import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+import React, { useState } from 'react';
+import ModalVideo from 'react-modal-video';
 
 // import { Link } from '../components/default/Link';
 import Icon from '../components/default/Icon';
@@ -11,8 +13,17 @@ import SEO from '../components/site/SEO';
 import PrimaryButton from '../components/ui/PrimaryButton';
 
 export default function Home() {
+  const [modalIsOpen, modalSetOpen] = useState(false);
+
   return (
     <Layout mode="full">
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={modalIsOpen}
+        videoId="WFbUc15ZhgU"
+        onClose={() => modalSetOpen(false)}
+      />
       <SEO title="Substrate Ecosystem" />
       <Article>
         <Section>
@@ -21,27 +32,27 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-6 ecosystem-home-anim">
                 <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
                   <div className="ecosystem-home-anim__logo">Logo 1</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 2</div>
+                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 7</div>
                 </div>
                 <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 1</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 2</div>
+                  <div className="ecosystem-home-anim__logo">Logo 2</div>
+                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 8</div>
                 </div>
                 <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 1</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 2</div>
+                  <div className="ecosystem-home-anim__logo">Logo 3</div>
+                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 9</div>
                 </div>
                 <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 1</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 2</div>
+                  <div className="ecosystem-home-anim__logo">Logo 4</div>
+                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 10</div>
                 </div>
                 <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 1</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 2</div>
+                  <div className="ecosystem-home-anim__logo">Logo 5</div>
+                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 11</div>
                 </div>
                 <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 1</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 2</div>
+                  <div className="ecosystem-home-anim__logo">Logo 6</div>
+                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 12</div>
                 </div>
               </div>
             </div>
@@ -57,8 +68,24 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-36 mb-44 aspect-w-16 aspect-h-9 bg-gray-200">
-            <div>youtube</div>
+          <div
+            onClick={() => modalSetOpen(true)}
+            className="mt-36 mb-44 aspect-w-4 aspect-h-3 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-12 lg:aspect-h-5 bg-substrateDark rounded-md shadow-xl hover:scale-105 transition-transform cursor-pointer"
+          >
+            <div>
+              <StaticImage
+                src="../images/photos/ecosystem/home/youtube.jpg"
+                className="w-full h-full m-0 relative rounded-md"
+              />
+              <div className="absolute left-0 bottom-0 p-8">
+                <h3 className="text-white mb-2">Meet Substrate teams</h3>
+                <p className="text-white opacity-75 m-0">Find out why more than 150 teams are building on Substrate.</p>
+              </div>
+              <Icon
+                name="play"
+                className="hidden sm:block absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 hover:scale-105 transition-transform"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">

@@ -41,6 +41,7 @@ import docs from '../../images/svg/ui/docs.svg';
 import externalLink from '../../images/svg/ui/external-link.svg';
 import hamburger from '../../images/svg/ui/hamburger-toggle.svg';
 import moon from '../../images/svg/ui/moon.svg';
+import play from '../../images/svg/ui/play.svg';
 import sidebarToggle from '../../images/svg/ui/sidebar-toggle.svg';
 import star from '../../images/svg/ui/star.svg';
 import sun from '../../images/svg/ui/sun.svg';
@@ -84,6 +85,7 @@ const iconsMap = {
   'external-link': externalLink,
   calendar: calendar,
   star: star,
+  play: play,
   /* mockup */
   placeholder: placeholder,
   /* social */
