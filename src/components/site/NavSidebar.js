@@ -28,21 +28,22 @@ const NavSidebarSubMenu = ({ parent, category, slug }) => {
     <>
       <span className="px-6 p-4 block bg-substrateGray dark:bg-gray-700 font-bold mb-2">{t(categoryItem.id)}</span>
       <ul className="p-0 m-0 list-none">
-        {subMenu.map(subMenuItem => {
-          const isCurrentPage = currentPage(subMenuItem.url, slug);
-          return (
-            <li className="font-medium p-0 m-0" key={subMenuItem.id}>
-              <LinkMenu
-                className={cx('px-6 p-3 block', { 'font-bold': isCurrentPage })}
-                prefix={parentItem.url + categoryItem.url}
-                slug={subMenuItem.url}
-                internal={subMenuItem.internal}
-              >
-                {t(subMenuItem.id)}
-              </LinkMenu>
-            </li>
-          );
-        })}
+        {subMenu &&
+          subMenu.map(subMenuItem => {
+            const isCurrentPage = currentPage(subMenuItem.url, slug);
+            return (
+              <li className="font-medium p-0 m-0" key={subMenuItem.id}>
+                <LinkMenu
+                  className={cx('px-6 p-3 block', { 'font-bold': isCurrentPage })}
+                  prefix={parentItem.url + categoryItem.url}
+                  slug={subMenuItem.url}
+                  internal={subMenuItem.internal}
+                >
+                  {t(subMenuItem.id)}
+                </LinkMenu>
+              </li>
+            );
+          })}
       </ul>
     </>
   );
