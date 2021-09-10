@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
@@ -9,24 +8,10 @@ import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 import SecondaryButton from '../../../components/ui/SecondaryButton';
 
-export default function Jobs({ pageContext }) {
-  const {
-    breadcrumb: { crumbs },
-  } = pageContext;
-
+export default function Jobs() {
   return (
     <Layout layout="sidebar">
       <SEO title="Jobs" />
-      <div className="container hidden md:block lg:px-10 mb-10 underline-animate underline-animate-thin">
-        <Breadcrumb
-          crumbs={crumbs}
-          crumbSeparator=""
-          crumbLabel="Jobs"
-          hiddenCrumbs={['/']}
-          disableLinks={['/ecosystem/opportunities/jobs', '/ecosystem/opportunities']}
-          className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
-        />
-      </div>
       <Section>
         <div className="grid md:grid-cols-2 gap-6 items-start">
           <div>
@@ -37,7 +22,7 @@ export default function Jobs({ pageContext }) {
               and involved with.
             </p>
             <SecondaryButton link="https://dotjobs.net/">
-              <p className="mb-0 mr-2 inline">Visit DotJobs</p>
+              <div className="mb-0 mr-2 inline">Visit DotJobs</div>
               <Icon name="external-link" className="fill-current inline mb-1 text-white dark:text-black" />
             </SecondaryButton>
           </div>
