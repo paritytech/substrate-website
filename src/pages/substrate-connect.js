@@ -68,16 +68,16 @@ export default function Connect() {
             browser, Substrate Connect helps you build better end-user experiences for Web3 apps.
           </p>
           <LineArrowButton link="/technology">Substrate Technology</LineArrowButton>
-          <div className="w-1/2 border-b border-substrateSubtleGrey dark:border-substrateDarkThemeGrey mt-10 mb-16"></div>
+          <div className="w-full md:w-1/2 border-b border-substrateSubtleGrey dark:border-substrateDarkThemeGrey my-16"></div>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <div className="flex mb-8">
                 <span className="fill-current text-substrateBlackish dark:text-white mr-4">
-                  <Icon name="globe-solid" />
+                  <Icon name="globe-solid" className="w-8 h-8" />
                 </span>
                 <h6 className="text-2xl font-medium mb-0 self-center">Light Client Based</h6>
               </div>
-              <p className="leading-loose max-w-md">
+              <p className="max-w-md">
                 Light clients allow you to interact with a blockchain in a less resource-intensive way than running a
                 full node. Because they can quickly sync with a blockchain and run locally in browsers and on mobile and
                 IoT devices, light clients are set to power the future of decentralized applications.
@@ -86,11 +86,11 @@ export default function Connect() {
             <div>
               <div className="flex mb-8">
                 <span className="fill-current text-substrateBlackish dark:text-white mr-4">
-                  <Icon name="shield-check-solid" />
+                  <Icon name="shield-check-solid" className="w-8 h-8" />
                 </span>
                 <h6 className="text-2xl font-medium mb-0 self-center">Effortless Connectivity</h6>
               </div>
-              <p className="leading-loose max-w-md">
+              <p className="max-w-md">
                 Running a full node requires a lot of knowledge, effort, and resources, and connecting to remote
                 third-party nodes can be insecure and unreliable. Substrate Connect is the most convenient way to
                 securely and trustlessly connect your app to any Substrate-based chain.
@@ -106,7 +106,7 @@ export default function Connect() {
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="lg:max-w-md self-center mb-10 lg:mb-20">
             <h2 className="text-4xl font-bold mb-6">The Browser Extension</h2>
-            <p className="leading-loose mb-8">
+            <p className="mb-8">
               Substrate Connect can run in the browser with each tab running a single light client, but running it as a
               browser extension will provide a smoother, faster experience. When run as a browser extension, multiple
               light clients can run simultaneously and can continuously sync as long as the browser stays open. It works
@@ -126,7 +126,7 @@ export default function Connect() {
       </Section>
       <Section>
         <h2 className="text-4xl font-bold mb-6">Supported Networks</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-40">
           {networks.map(({ name, description, link, icon }, idx) => (
             <div
               key={idx}
