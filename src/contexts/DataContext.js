@@ -16,7 +16,11 @@ const toTitleCase = str => {
   });
 };
 
-const getPageTitle = pathArray => {
+const pageSlug = pathArray => {
+  return pathArray[pathArray.length - 1];
+};
+
+const pageTitle = pathArray => {
   const pageSlug = pathArray[pathArray.length - 1];
   return toTitleCase(pageSlug);
 };
@@ -29,8 +33,9 @@ const DataProvider = ({ children, value }) => {
       value={{
         location,
         pathArray: serializePathname(location.pathname),
+        pageSlug: pageSlug(serializePathname(location.pathname)),
         pageContext,
-        pageTitle: getPageTitle(serializePathname(location.pathname)),
+        pageTitle: pageTitle(serializePathname(location.pathname)),
       }}
     >
       {children}
