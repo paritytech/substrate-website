@@ -46,6 +46,10 @@ module.exports = {
         '7xl': ['5rem', { lineHeight: '1' }],
       },
     },
+    gridTemplateRows: {
+      1: 'repeat(1, minmax(0, 1fr))',
+      7: 'repeat(7, minmax(0, 1fr))',
+    },
     boxShadow: {
       md: '0 0 15px 0 rgba(0, 0, 0, 0.05), 0 5px 5px -5px rgba(0, 0, 0, 0.04)',
       xl: '0 0 25px 0 rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',

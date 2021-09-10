@@ -1,0 +1,63 @@
+@keyframes logoFadeIn {
+  0% {opacity: 1;}
+  5% {opacity: 0;}
+  50% {opacity: 0;}
+  55% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes logoFadeOut {
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  50% {opacity: 1;}
+  55% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes logoTranslate {
+  0% {transform: translateX(0);}
+  5% {transform: translateX(-40px);}
+  50% {transform: translateX(-40px);}
+  55% {transform: translateX(0);}
+  100% {transform: translateX(0);}
+}
+
+.ecosystem-home-anim {
+  &__item {
+    overflow: hidden;
+
+    @for $i from 1 through 6 {
+      &:nth-of-type(#{$i}) {
+        .ecosystem-home-anim__logo {
+          animation-delay: 200ms * $i + 5000ms;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    opacity: 1;
+    animation: logoFadeIn 10s ease-in-out 5s infinite both, logoTranslate 10s ease-in-out 5s infinite both;
+
+    &--alternative {
+      left: 40px;
+      opacity: 0;
+      animation: none;
+      animation: logoFadeOut 10s ease-in-out 5s infinite both, logoTranslate 10s ease-in-out 5s infinite both;
+    }
+  }
+}
+
+.spaced-out-text {
+  span {
+    display: block;
+    height: 1.5rem;
+    padding: 0 2px;
+    font-weight: bold;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      display: inline-block;
+    }
+  }
+}
