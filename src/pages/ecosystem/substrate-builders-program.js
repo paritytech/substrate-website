@@ -276,11 +276,11 @@ export default function BuildersProgram() {
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14">
               <div>
                 <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 w-4" name="builders" />
+                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
                   Technical support:
                 </h3>
-                <div className="relative pl-12 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen-light rounded"></div>
+                <div className="relative pl-11 lg:pr-16">
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
                   <ul>
                     <li>
                       <span className="font-bold">Category-specific chat support with other program members</span> of
@@ -301,11 +301,11 @@ export default function BuildersProgram() {
                 </div>
 
                 <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 w-4" name="builders" />
+                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
                   Community support:
                 </h3>
-                <div className="relative pl-12 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen-light rounded"></div>
+                <div className="relative pl-11 lg:pr-16">
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
                   <ul>
                     <li>
                       Collaboration on <span className="font-bold">events, meetups, and webinars</span>
@@ -321,11 +321,11 @@ export default function BuildersProgram() {
               </div>
               <div>
                 <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 w-4" name="builders" />
+                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
                   Community funding:
                 </h3>
-                <div className="relative pl-12 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen-light rounded"></div>
+                <div className="relative pl-11 lg:pr-16">
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
                   <ul>
                     <li>
                       Support in helping your project navigate the{' '}
@@ -335,11 +335,11 @@ export default function BuildersProgram() {
                 </div>
 
                 <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 w-4" name="builders" />
+                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
                   Ecosystem support:
                 </h3>
-                <div className="relative pl-12 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen-light rounded"></div>
+                <div className="relative pl-11 lg:pr-16">
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
                   <ul>
                     <li>
                       <span className="font-bold">Introductions to relevant blockchain ecosystem players</span>
@@ -357,11 +357,11 @@ export default function BuildersProgram() {
                 </div>
 
                 <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 w-4" name="builders" />
+                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
                   Strategy feedback:
                 </h3>
-                <div className="relative pl-12 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen-light rounded"></div>
+                <div className="relative pl-11 lg:pr-16">
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
                   <ul>
                     <li>
                       <span className="font-bold">Regular individual check-ins</span>
