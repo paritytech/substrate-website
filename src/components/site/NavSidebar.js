@@ -13,11 +13,7 @@ const filterMenuItem = (menu, parent) => {
   return Object.assign(...parentItem);
 };
 
-const currentPage = (url, slug) => {
-  return url.includes(slug);
-};
-
-const NavSidebarSubMenu = ({ parent, category, slug }) => {
+const NavSidebarSubMenu = ({ parent, category }) => {
   const { t } = useTranslation();
   const { menus } = useSiteMenus();
   const parentItem = filterMenuItem(menus.main, parent);
@@ -30,11 +26,10 @@ const NavSidebarSubMenu = ({ parent, category, slug }) => {
       <ul className="p-0 m-0 list-none">
         {subMenu &&
           subMenu.map(subMenuItem => {
-            const isCurrentPage = currentPage(subMenuItem.url, slug);
             return (
               <li className="font-medium p-0 m-0" key={subMenuItem.id}>
                 <LinkMenu
-                  className={cx('px-6 p-3 block', { 'font-bold': isCurrentPage })}
+                  className={cx('px-6 p-3 block')}
                   prefix={parentItem.url + categoryItem.url}
                   slug={subMenuItem.url}
                   internal={subMenuItem.internal}
@@ -51,9 +46,9 @@ const NavSidebarSubMenu = ({ parent, category, slug }) => {
 export default function NavSidebar() {
   return (
     <DataContext.Consumer>
-      {({ pathArray, pageSlug }) => (
-        <nav className={cx('pt-10 pb-5')}>
-          <NavSidebarSubMenu parent={pathArray[0]} category={pathArray[1]} pageSlug={pageSlug} />
+      {({ pathArray }) => (
+        <nav className={cx('navSidebar pt-10 pb-5')}>
+          <NavSidebarSubMenu parent={pathArray[0]} category={pathArray[1]} />
         </nav>
       )}
     </DataContext.Consumer>

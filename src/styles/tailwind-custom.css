@@ -99,3 +99,9 @@ p {
   content: none;
   @apply: m-0;
 }
+
+/* Navigation current page */
+
+.navSidebar a[aria-current='page'] {
+  @apply font-bold;
+}
