@@ -1,6 +1,11 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
+
+// fix ssr missing window object
+if (typeof window === 'undefined') {
+  global.window = {};
+}
 import ModalVideo from 'react-modal-video';
 
 // import { Link } from '../components/default/Link';
