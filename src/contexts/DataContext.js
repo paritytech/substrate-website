@@ -1,7 +1,5 @@
 import React from 'react';
 
-const DataContext = React.createContext();
-
 const serializePathname = pathname => {
   const pathnames = pathname.toString().split('/');
   // remove empty string item before first '/'
@@ -16,10 +14,23 @@ const toTitleCase = str => {
   });
 };
 
-const getPageTitle = pathArray => {
+// TODO: sequencialize data context
+
+const pageSlug = pathArray => {
+  return pathArray[pathArray.length - 1];
+};
+
+const pageTitle = pathArray => {
   const pageSlug = pathArray[pathArray.length - 1];
   return toTitleCase(pageSlug);
 };
+
+const defaultContext = {
+  pathArray: new Array('', '', ''),
+  pageTitle: '',
+};
+
+const DataContext = React.createContext(defaultContext);
 
 const DataProvider = ({ children, value }) => {
   const { location, pageContext } = value;
@@ -29,8 +40,9 @@ const DataProvider = ({ children, value }) => {
       value={{
         location,
         pathArray: serializePathname(location.pathname),
+        pageSlug: pageSlug(serializePathname(location.pathname)),
+        pageTitle: pageTitle(serializePathname(location.pathname)),
         pageContext,
-        pageTitle: getPageTitle(serializePathname(location.pathname)),
       }}
     >
       {children}
