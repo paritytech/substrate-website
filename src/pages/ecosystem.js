@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
+import ModalVideo from 'react-modal-video';
 
 // import { Link } from '../components/default/Link';
 import Icon from '../components/default/Icon';
@@ -11,24 +12,22 @@ import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import PrimaryButton from '../components/ui/PrimaryButton';
 
-// fix ssr missing window object
-if (typeof window === 'undefined') {
-  global.window = {};
-}
-import ModalVideo from 'react-modal-video';
+const isBrowser = () => typeof window !== 'undefined';
 
 export default function Home() {
   const [modalIsOpen, modalSetOpen] = useState(false);
 
   return (
     <Layout mode="full">
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={modalIsOpen}
-        videoId="WFbUc15ZhgU"
-        onClose={() => modalSetOpen(false)}
-      />
+      {isBrowser && (
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={modalIsOpen}
+          videoId="WFbUc15ZhgU"
+          onClose={() => modalSetOpen(false)}
+        />
+      )}
       <SEO title="Substrate Ecosystem" />
       <Article>
         <Section>
