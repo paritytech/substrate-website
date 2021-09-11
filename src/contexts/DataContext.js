@@ -14,6 +14,8 @@ const toTitleCase = str => {
   });
 };
 
+// TODO: sequencialize data context
+
 const pageSlug = pathArray => {
   return pathArray[pathArray.length - 1];
 };
