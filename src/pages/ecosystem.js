@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
 // import { Link } from '../components/default/Link';
@@ -15,10 +15,15 @@ import { isBrowser } from '../utils/browser';
 
 export default function Home() {
   const [modalIsOpen, modalSetOpen] = useState(false);
+  const [didMount, setDidMount] = useState(false);
+
+  useEffect(() => {
+    setDidMount(true);
+  });
 
   return (
     <Layout mode="full">
-      {isBrowser && (
+      {isBrowser && didMount && (
         <ModalVideo
           channel="youtube"
           autoplay
