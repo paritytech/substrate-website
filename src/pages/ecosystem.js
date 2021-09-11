@@ -2,12 +2,6 @@ import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
 
-// fix ssr missing window object
-if (typeof window === 'undefined') {
-  global.window = {};
-}
-import ModalVideo from 'react-modal-video';
-
 // import { Link } from '../components/default/Link';
 import Icon from '../components/default/Icon';
 import Article from '../components/layout/Article';
@@ -16,6 +10,12 @@ import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import PrimaryButton from '../components/ui/PrimaryButton';
+
+// fix ssr missing window object
+if (typeof window === 'undefined') {
+  global.window = {};
+}
+import ModalVideo from 'react-modal-video';
 
 export default function Home() {
   const [modalIsOpen, modalSetOpen] = useState(false);
