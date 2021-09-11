@@ -12,10 +12,9 @@ import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import PrimaryButton from '../components/ui/PrimaryButton';
 
-const isBrowser = () => typeof window !== 'undefined';
-
 export default function Home() {
   const [modalIsOpen, modalSetOpen] = useState(false);
+  const isBrowser = () => typeof window !== 'undefined';
 
   return (
     <Layout mode="full">
