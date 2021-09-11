@@ -11,19 +11,22 @@ import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import PrimaryButton from '../components/ui/PrimaryButton';
+import { isBrowser } from '../utils/browser';
 
 export default function Home() {
   const [modalIsOpen, modalSetOpen] = useState(false);
 
   return (
     <Layout mode="full">
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={modalIsOpen}
-        videoId="WFbUc15ZhgU"
-        onClose={() => modalSetOpen(false)}
-      />
+      {isBrowser && (
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={modalIsOpen}
+          videoId="WFbUc15ZhgU"
+          onClose={() => modalSetOpen(false)}
+        />
+      )}
       <SEO title="Substrate Ecosystem" />
       <Article>
         <Section>
