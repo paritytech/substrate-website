@@ -14,19 +14,16 @@ import PrimaryButton from '../components/ui/PrimaryButton';
 
 export default function Home() {
   const [modalIsOpen, modalSetOpen] = useState(false);
-  const isBrowser = () => typeof window !== 'undefined';
 
   return (
     <Layout mode="full">
-      {isBrowser && (
-        <ModalVideo
-          channel="youtube"
-          autoplay
-          isOpen={modalIsOpen}
-          videoId="WFbUc15ZhgU"
-          onClose={() => modalSetOpen(false)}
-        />
-      )}
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={modalIsOpen}
+        videoId="WFbUc15ZhgU"
+        onClose={() => modalSetOpen(false)}
+      />
       <SEO title="Substrate Ecosystem" />
       <Article>
         <Section>
