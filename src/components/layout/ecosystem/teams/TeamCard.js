@@ -11,7 +11,7 @@ export default function TeamCard(props) {
   return (
     <div
       className={cx(
-        'h-[400px] lg:h-96 max-w-xs lg:max-w-sm px-10 py-6 cursor-pointer animate-fade-in',
+        'h-[400px] lg:h-96 max-w-xs lg:max-w-sm px-10 py-6 bg-white dark:bg-darkBackground cursor-pointer animate-fade-in',
         `border-t border-l border-substrateDark dark:border-substrateGray-light border-opacity-10 dark:border-opacity-10`,
         { 'border-r': smScreen || (mdScreen && index % 2 === 1) },
         { 'border-b': smScreen && numTeam - index === 1 },
@@ -20,7 +20,8 @@ export default function TeamCard(props) {
         { 'border-r': lgScreen && ((index + 1) % 3 === 0 || numTeam - index === 1) },
         {
           'border-b': lgScreen && (numTeam - index === 1 || numTeam - index === 2 || numTeam - index === 3),
-        }
+        },
+        'duration-75 ease-in-out hover:scale-105 hover:border hover:shadow-xl'
       )}
     >
       <h4 className="mb-4">{team.name}</h4>
