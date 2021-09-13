@@ -22,7 +22,7 @@ export default function AwesomeSubstrate({ pageContext, data }) {
     const articleNav = document.querySelector('#article-nav');
 
     const options = {
-      rootMargin: '-0% 0% -90% 0%',
+      rootMargin: '-9% 0% -90% 0%',
       threshold: 0,
     };
 
