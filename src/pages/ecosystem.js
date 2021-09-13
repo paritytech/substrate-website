@@ -57,9 +57,9 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1">
-              <h1>Substrate Builders Teams</h1>
-              <h3>More than 150 Teams Are Building on Substrate</h3>
-              <p>
+              <h1 className="mb-6">Substrate Builders Teams</h1>
+              <h3 className="mb-6 font-medium">More than 150 Teams Are Building on Substrate</h3>
+              <p className="text-lg font-medium">
                 Some of the most exciting projects in decentralized tech are building on Substrate, including
                 parachains, independent layer-1 blockchains, and infrastructure and tooling solutions for a wide range
                 of use cases.
@@ -79,7 +79,9 @@ export default function Home() {
               />
               <div className="absolute left-0 bottom-0 p-8">
                 <h3 className="text-white mb-2">Meet Substrate teams</h3>
-                <p className="text-white opacity-75 m-0">Find out why more than 150 teams are building on Substrate.</p>
+                <p className="text-white opacity-75 m-0 text-lg">
+                  Find out why more than 150 teams are building on Substrate.
+                </p>
               </div>
               <Icon
                 name="play"
@@ -95,7 +97,7 @@ export default function Home() {
             <div className="lg:col-start-1">
               <h2 className="h1">Substrate Builders Program</h2>
               <h3>Accelerate Your Project</h3>
-              <p>
+              <p className="text-lg font-medium">
                 The Substrate Builders Program directly supports you by bringing you Parity’s extensive resources,
                 taking your Substrate ecosystem project to the next level.
               </p>
@@ -109,7 +111,7 @@ export default function Home() {
             </div>
             <div className="lg:row-start-1 lg:col-span-2">
               <h2 className="h1">Explore the Ecosystem</h2>
-              <p>
+              <p className="text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a orci commodo, porta purus a, feugiat
                 ligula. Etiam odio ex, venenatis id nibh interdum, finibus condimentum ipsum.
               </p>
@@ -120,7 +122,7 @@ export default function Home() {
               <Icon className="inline-block mr-4" name="opportunities" />
               Opportunities
             </h2>
-            <p>Jump start your project or your career in the blockchain space</p>
+            <p className="text-lg">Jump start your project or your career in the blockchain space</p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
               <Card
                 title="Hackathons"
@@ -153,7 +155,7 @@ export default function Home() {
               <Icon className="inline-block mr-4" name="resources" />
               Resources
             </h2>
-            <p>Additional learning materials provided by the community for the community. </p>
+            <p className="text-lg">Additional learning materials provided by the community for the community. </p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
               <Card
                 title="Substrate Seminar"
@@ -186,7 +188,7 @@ export default function Home() {
               <Icon className="inline-block mr-4" name="connect" />
               Connect
             </h2>
-            <p>Follow Substrate news and updates; get in touch with other devs in the community.</p>
+            <p className="text-lg">Follow Substrate news and updates; get in touch with other devs in the community.</p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
               <Card
                 title="Contact"

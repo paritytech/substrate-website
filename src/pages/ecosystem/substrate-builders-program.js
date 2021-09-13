@@ -34,11 +34,11 @@ export default function BuildersProgram() {
               </div>
             </div>
             <div className="lg:col-start-1 lg:row-start-1">
-              <h1>
+              <h1 className="mb-6">
                 substrate
                 <span className="text-substrateGreen">_</span> <br /> builders program
               </h1>
-              <p>
+              <p className="text-lg font-medium">
                 The Substrate Builders Program directly supports you by bringing you Parity’s extensive resources,
                 taking your Substrate ecosystem project to the next level.
               </p>
@@ -268,7 +268,7 @@ export default function BuildersProgram() {
                 <Icon className="inline-block mr-4" name="builders" />
                 Substrate Builders Program Benefits
               </h2>
-              <p>
+              <p className="text-lg font-medium">
                 As a builder, you will receive Parity’s support in a systematic manner, including comprehensive support
                 in the following areas: As a builder,
               </p>
@@ -280,7 +280,7 @@ export default function BuildersProgram() {
                   Technical support:
                 </h3>
                 <div className="relative pl-11 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul>
                     <li>
                       <span className="font-bold">Category-specific chat support with other program members</span> of
@@ -305,7 +305,7 @@ export default function BuildersProgram() {
                   Community support:
                 </h3>
                 <div className="relative pl-11 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul>
                     <li>
                       Collaboration on <span className="font-bold">events, meetups, and webinars</span>
@@ -325,7 +325,7 @@ export default function BuildersProgram() {
                   Community funding:
                 </h3>
                 <div className="relative pl-11 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul>
                     <li>
                       Support in helping your project navigate the{' '}
@@ -339,18 +339,18 @@ export default function BuildersProgram() {
                   Ecosystem support:
                 </h3>
                 <div className="relative pl-11 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul>
                     <li>
-                      <span className="font-bold">Introductions to relevant blockchain ecosystem players</span>
+                      <span className="font-bold">Introductions to relevant blockchain ecosystem players</span>{' '}
                       (clients, users, partners, etc.)
                     </li>
                     <li>
-                      <span className="font-bold">A joint announcements/non-technical chat room</span>
-                      between all members of both tracks
+                      <span className="font-bold">A joint announcements/non-technical chat room</span> between all
+                      members of both tracks
                     </li>
                     <li>
-                      Regular office hours
+                      Regular office hours{' '}
                       <span className="font-bold">to give and get BD-related feedback and answer questions</span>
                     </li>
                   </ul>
@@ -361,41 +361,49 @@ export default function BuildersProgram() {
                   Strategy feedback:
                 </h3>
                 <div className="relative pl-11 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen-light rounded"></div>
+                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul>
                     <li>
-                      <span className="font-bold">Regular individual check-ins</span>
-                      with every member team (6 week cycles) to understand roadmap and get feedback
+                      <span className="font-bold">Regular individual check-ins</span> with every member team (6 week
+                      cycles) to understand roadmap and get feedback
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
+            <div>
+              <p className="text-xl font-bold mt-14">
+                As a builder, you will receive Parity’s support in a systematic manner
+              </p>
+              <PrimaryButton link="/ecosystem/teams">Apply</PrimaryButton>
+            </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 mt-36 mb-44">
             <div className="lg:col-span-5">
               <h2>FAQ</h2>
-              <h4>Is this support offering exclusive to members of the program?</h4>
-              <p>
+              <h4 className="mb-5">Is this support offering exclusive to members of the program?</h4>
+              <p className="mb-10">
                 While nearly everything in the program is in principle available to any team building in the Substrate
                 ecosystem, the Substrate Builders Program guides teams through the available support in a structured
                 manner.
               </p>
-              <h4>How is the Substrate Builders Program different from the Web3 Foundation Grants Program?</h4>
-              <p>
+              <h4 className="mb-5">
+                How is the Substrate Builders Program different from the Web3 Foundation Grants Program?
+              </h4>
+              <p className="mb-10">
                 The grants program provides non-dilutive financial support to projects, whereas this program is focused
                 on more comprehensive support throughout a project’s lifecycle. W3F grant recipients are also welcome to
                 apply to the Builders Program!
               </p>
-              <h4>Is the Substrate Builders Program an acceleration or incubation program?</h4>
-              <p>
+              <h4 className="mb-5">Is the Substrate Builders Program an acceleration or incubation program?</h4>
+              <p className="mb-14">
                 No, the Substrate Builders Program is complementary to any external accelerator or incubator program
                 that developers can enroll in. Much of what this program offers, such as technical support and
                 invitations to Polkadot branded events, cannot be offered by an external program.
               </p>
               <PrimaryButton link="/ecosystem/teams">Apply</PrimaryButton>
             </div>
-            <div className="lg:col-span-6 lg:col-start-7 aspect-w-6 aspect-h-9">
+            <div className="hidden lg:block lg:col-span-6 lg:col-start-7 aspect-w-6 aspect-h-9">
               <div className="bg-gray-200 hidden lg:block">Image</div>
             </div>
           </div>
