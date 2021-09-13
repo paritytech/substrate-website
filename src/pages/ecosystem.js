@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
 // import { Link } from '../components/default/Link';
@@ -11,19 +11,27 @@ import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import PrimaryButton from '../components/ui/PrimaryButton';
+import { isBrowser } from '../utils/browser';
 
 export default function Home() {
   const [modalIsOpen, modalSetOpen] = useState(false);
+  const [didMount, setDidMount] = useState(false);
+
+  useEffect(() => {
+    setDidMount(true);
+  });
 
   return (
     <Layout mode="full">
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={modalIsOpen}
-        videoId="WFbUc15ZhgU"
-        onClose={() => modalSetOpen(false)}
-      />
+      {isBrowser && didMount && (
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={modalIsOpen}
+          videoId="WFbUc15ZhgU"
+          onClose={() => modalSetOpen(false)}
+        />
+      )}
       <SEO title="Substrate Ecosystem" />
       <Article>
         <Section>

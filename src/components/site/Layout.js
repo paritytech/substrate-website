@@ -2,21 +2,23 @@ import AOS from 'aos';
 import cx from 'classnames';
 import React, { useEffect } from 'react';
 
-import DataContext from '../../contexts/DataContext';
 import Footer from '../site/Footer';
 import Header from '../site/Header';
 import NavBreadcrumb from '../site/NavBreadcrumb';
+import NavSidebar from '../site/NavSidebar';
 
-function LayoutSidebar({ children, pageTitle }) {
+function LayoutSidebar({ children }) {
   return (
     <div className="flex">
-      <div className="hidden lg:block lg:bg-substrateGray-light border-r lg:dark:bg-substrateBlackish dark:border-substrateDarkThemeGrey">
-        <div className={cx('sticky top-16 overflow-y-auto lg:h-screen w-60')}>
-          <nav className={cx('pl-4 pt-10 pb-5')}>{pageTitle}</nav>
+      <div className="hidden lg:block min-h-screen lg:h-auto lg:bg-substrateGray-light border-r lg:dark:bg-substrateBlackish dark:border-substrateDarkThemeGrey">
+        <div className={cx(`sticky top-16 overflow-y-auto w-64`)}>
+          <NavSidebar />
         </div>
       </div>
-      <div className="w-full 2xl:pr-60 pt-10">
-        <NavBreadcrumb />
+      <div className={`w-full 2xl:pr-64 pt-10`}>
+        <div className="container hidden md:block lg:px-10 lg:max-w-6xl m-auto mb-10 underline-animate underline-animate-thin">
+          <NavBreadcrumb />
+        </div>
         <article className="lg:max-w-6xl m-auto">{children}</article>
       </div>
       <nav className="hidden xl:block fixed right-0 top-36 max-w-xs" id="article-nav"></nav>
@@ -33,21 +35,17 @@ export default function Layout({ layout = 'default', mode = 'default', children 
   }, []);
 
   return (
-    <DataContext.Consumer>
-      {({ pageTitle }) => (
-        <>
-          <Header mode={mode} />
-          <main
-            className={cx('min-h-screen', {
-              'mt-12': layout === 'default',
-            })}
-          >
-            {layout === 'default' && <>{children}</>}
-            {layout === 'sidebar' && <LayoutSidebar pageTitle={pageTitle}>{children}</LayoutSidebar>}
-          </main>
-          <Footer />
-        </>
-      )}
-    </DataContext.Consumer>
+    <>
+      <Header mode={mode} />
+      <main
+        className={cx('min-h-screen', {
+          'mt-12': layout === 'default',
+        })}
+      >
+        {layout === 'default' && <>{children}</>}
+        {layout === 'sidebar' && <LayoutSidebar>{children}</LayoutSidebar>}
+      </main>
+      <Footer />
+    </>
   );
 }
