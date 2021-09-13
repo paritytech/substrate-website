@@ -43,7 +43,7 @@ export default function AwesomeSubstrate({ pageContext, data }) {
       </Section>
       <Section>
         <div
-          className="markdown underline-animate underline-animate-thin mb-96"
+          className="markdown underline-animate underline-animate-thin pb-48 mb-96"
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
       </Section>
