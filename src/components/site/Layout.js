@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import Footer from '../site/Footer';
 import Header from '../site/Header';
 
-function LayoutSidebar({ children }) {
+function LayoutSidebar({ articleNav, children }) {
   return (
     <div className="flex">
       <div className="hidden lg:block lg:bg-substrateGray-light border-r lg:dark:bg-substrateBlackish dark:border-substrateDarkThemeGrey">
@@ -16,9 +16,13 @@ function LayoutSidebar({ children }) {
       <div className="w-full 2xl:pr-60">
         <article className="lg:max-w-6xl m-auto">
           <div className="pt-10">{children}</div>
+          {articleNav && (
+            <nav className="hidden xl:block fixed right-0 top-36 max-w-xs" id="article-nav">
+              <p className="uppercase font-bold">Contents</p>
+            </nav>
+          )}
         </article>
       </div>
-      <nav className="hidden xl:block fixed right-0 top-36 max-w-xs" id="article-nav"></nav>
     </div>
   );
 }
@@ -41,6 +45,7 @@ export default function Layout({ layout = 'default', mode = 'default', children 
       >
         {layout === 'default' && <>{children}</>}
         {layout === 'sidebar' && <LayoutSidebar>{children}</LayoutSidebar>}
+        {layout === 'sidebar article-nav' && <LayoutSidebar articleNav={true}>{children}</LayoutSidebar>}
       </main>
       <Footer />
     </>
