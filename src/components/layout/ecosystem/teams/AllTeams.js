@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import { Link } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
@@ -26,7 +27,7 @@ export default function AllTeams(props) {
   }, [curType, curCat]);
 
   return (
-    <div className="mx-auto xl:w-[1200px] lg:w-[800px]">
+    <div className={cx('mx-auto xl:w-[1200px] lg:w-[800px]', { 'min-h-800px': displayedTeams.length <= 6 })}>
       <div className="flex flex-wrap">
         {displayedTeams.map((team, index) => {
           const description = team.description.substring(0, 100);

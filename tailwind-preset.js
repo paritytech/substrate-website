@@ -73,6 +73,7 @@ module.exports = {
         hero: '70vh',
         heroMin: '500px',
         heroMinLg: '700px',
+        '800px': '800px',
       },
       spacing: {
         84: '22rem',
