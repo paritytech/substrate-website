@@ -42,3 +42,8 @@ p {
 .underline-animate-thin a::after {
   height: 1px;
 }
+
+/*Scroll Margin Top for Teams Anchor on Substrate Teams Page */
+#teams {
+  scroll-margin-top: 100px;
+}

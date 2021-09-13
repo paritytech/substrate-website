@@ -33,7 +33,9 @@ export default function Teams({ data }) {
         <h3>_HeroSection</h3>
       </section>
       <section className="container px-6 mb-20">
-        <h2 className="mb-8">Teams</h2>
+        <h2 id="teams" className="mb-8">
+          Teams
+        </h2>
         <TypeFilter types={types} curType={curType} setCurType={setCurType} />
         <CatFilter categories={categories} curCat={curCat} setCurCat={setCurCat} />
         <AllTeams
