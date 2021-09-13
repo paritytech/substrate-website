@@ -9,6 +9,7 @@ import TypeFilter from '../../components/layout/ecosystem/teams/TypeFilter';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import useComponentVisible from '../../hooks/use-component-visible';
+import useWindowSize from '../../hooks/use-window-size';
 
 export default function Teams({ data }) {
   const { types, categories, teams } = teamsData;
@@ -17,6 +18,7 @@ export default function Teams({ data }) {
   const [curType, setCurType] = useState('All Teams');
   const [curCat, setCurCat] = useState('All');
   const [curTeam, setCurTeam] = useState();
+  const size = useWindowSize();
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -45,6 +47,7 @@ export default function Teams({ data }) {
           curType={curType}
           curCat={curCat}
           logos={logos}
+          size={size}
         />
       </section>
       {isComponentVisible && (
