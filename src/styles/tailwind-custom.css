@@ -50,6 +50,15 @@ h3 {
   scroll-margin-top: 100px;
 }
 
+/* Safari-only */
+@supports (-webkit-hyphens: none) {
+  .markdown h2,
+  h3 {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+}
+
 .markdown ul {
   @apply ml-8;
 }

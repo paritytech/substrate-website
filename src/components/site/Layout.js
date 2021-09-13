@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 
 import Footer from '../site/Footer';
 import Header from '../site/Header';
+import ArticleNav from './ArticleNav';
 
 function LayoutSidebar({ articleNav, children }) {
   return (
@@ -15,12 +16,8 @@ function LayoutSidebar({ articleNav, children }) {
       </div>
       <div className="w-full 2xl:pr-60">
         <article className="lg:max-w-6xl m-auto">
-          <div className="pt-10">{children}</div>
-          {articleNav && (
-            <nav className="hidden xl:block fixed right-0 top-36 max-w-xs" id="article-nav">
-              <p className="uppercase font-bold">Contents</p>
-            </nav>
-          )}
+          <div className={cx('pt-10', { 'lg:max-w-3xl': articleNav })}>{children}</div>
+          {articleNav && <ArticleNav />}
         </article>
       </div>
     </div>
