@@ -21,7 +21,7 @@ const ChildMenu = ({ slugPrefix, childMenu }) => {
             key={childMenuItem.id}
           >
             <LinkMenu
-              className={cx(itemClass, 'block')}
+              className={cx(itemClass, 'block navMain')}
               prefix={slugPrefix}
               slug={childMenuItem.url}
               internal={childMenuItem.internal}
@@ -76,7 +76,7 @@ const DropDownItem = ({ data }) => {
         </div>
       ) : (
         <LinkMenu
-          className={cx(itemClass, 'block')}
+          className={cx(itemClass, 'block navMain')}
           prefix={data.menuItem.url}
           slug={data.subMenuItem.url}
           internal={data.subMenuItem.internal}

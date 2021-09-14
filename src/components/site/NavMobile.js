@@ -34,7 +34,7 @@ const NavMobileSubMenuItem = ({ data }) => {
               return (
                 <div key={childMenuItem.id}>
                   <LinkMenu
-                    className="block font-medium hover:font-bold pl-12 mb-0 py-3"
+                    className="block font-medium hover:font-bold pl-12 mb-0 py-3 navMobile"
                     prefix={menuItem.url + subMenuItem.url}
                     slug={childMenuItem.url}
                     internal={childMenuItem.internal}

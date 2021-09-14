@@ -121,3 +121,11 @@ h3 {
 .navSidebar a[aria-current='page'] {
   @apply font-bold;
 }
+
+.navMain[aria-current='page'] {
+  @apply font-bold;
+}
+
+.navMobile[aria-current='page'] {
+  @apply font-bold;
+}
