@@ -9,10 +9,7 @@ const ArticleNav = () => {
   useIntersectionObserver(setActiveId);
 
   return (
-    <nav
-      aria-label="Table of contents"
-      className="hidden xl:block fixed top-36 right-0 max-w-xs max-h-full overflow-auto"
-    >
+    <nav aria-label="Table of contents" className="max-w-xs max-h-full overflow-auto">
       <Headings headings={headings} activeId={activeId} />
     </nav>
   );
@@ -20,7 +17,7 @@ const ArticleNav = () => {
 
 const Headings = ({ headings, activeId }) => {
   return (
-    <ul className="list-none">
+    <ul className="list-none ml-0 mb-8">
       <li className="mb-3 font-bold">CONTENT</li>
       {headings.map(({ title, id }) => (
         <li key={id}>

@@ -20,11 +20,15 @@ function LayoutSidebar({ articleNav, children }) {
         <div className="container hidden md:block lg:px-10 lg:max-w-6xl m-auto mb-10 underline-animate underline-animate-thin">
           <NavBreadcrumb />
         </div>
-        <article className="lg:max-w-6xl m-auto">
-          <div className={cx({ 'lg:max-w-3xl': articleNav })}>{children}</div>
-          {articleNav && <ArticleNav />}
-        </article>
+        <article className="lg:max-w-6xl m-auto">{children}</article>
       </div>
+      {articleNav && (
+        <div className="hidden xl:block min-h-screen">
+          <div className="sticky top-36 overflow-y-auto w-64">
+            <ArticleNav />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
