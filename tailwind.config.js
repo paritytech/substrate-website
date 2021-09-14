@@ -30,6 +30,7 @@ module.exports = {
       },
       colors: {
         substrateGreen: {
+          light: '#D4F9EC',
           light2: '#AEF3DC',
           dark: '#22B577',
         },
@@ -37,6 +38,7 @@ module.exports = {
         substrateDarkest: '#181A22',
         substrateDarkThemeGrey: '#3A424E',
         substrateDarkThemeLightGrey: '#F8FAF9',
+        substrateSubtleGrey: '#E0E0E0',
       },
       fontSize: {
         '7xl': ['5rem', { lineHeight: '1' }],
