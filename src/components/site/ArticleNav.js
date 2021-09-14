@@ -17,7 +17,7 @@ const ArticleNav = () => {
 
 const Headings = ({ headings, activeId }) => {
   return (
-    <ul className="list-none ml-0 mb-8">
+    <ul className="list-none ml-0 mb-8 mt-10">
       <li className="mb-3 font-bold">CONTENT</li>
       {headings.map(({ title, id }) => (
         <li key={id}>

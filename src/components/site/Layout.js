@@ -24,7 +24,7 @@ function LayoutSidebar({ articleNav, children }) {
       </div>
       {articleNav && (
         <div className="hidden xl:block min-h-screen">
-          <div className="sticky top-36 overflow-y-auto w-64">
+          <div className="sticky top-16 overflow-y-auto w-64">
             <ArticleNav />
           </div>
         </div>
