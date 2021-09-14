@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import React from 'react';
 
 import HackathonCard from '../../../components/layout/ecosystem/HackathonCard';
@@ -8,25 +7,12 @@ import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 import { useHackathons } from '../../../hooks/use-hackathons';
 
-export default function Hackathons({ pageContext }) {
-  const {
-    breadcrumb: { crumbs },
-  } = pageContext;
+export default function Hackathons() {
   const { hackathons } = useHackathons();
 
   return (
     <Layout layout="sidebar">
       <SEO title="Hackathons" />
-      <div className="container hidden md:block lg:px-10 mb-10 underline-animate underline-animate-thin">
-        <Breadcrumb
-          crumbs={crumbs}
-          crumbSeparator=""
-          crumbLabel="Hackathons"
-          hiddenCrumbs={['/']}
-          disableLinks={['/ecosystem/opportunities/hackathons', '/ecosystem/opportunities']}
-          className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
-        />
-      </div>
       <Section>
         <h2 className="text-4xl font-bold mb-4">Hackathons</h2>
         <p>

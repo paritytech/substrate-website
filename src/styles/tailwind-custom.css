@@ -6,6 +6,11 @@ html {
   @apply px-4;
 }
 
+@media (max-width: theme('screens.sm')) {
+  .container {
+    @apply max-w-none;
+  }
+}
 /* Paragraphs */
 p {
   font-weight: unset;
@@ -109,4 +114,10 @@ h3 {
 .breadcrumb__list__item:first-of-type::before {
   content: none;
   @apply: m-0;
+}
+
+/* Navigation current page */
+
+.navSidebar a[aria-current='page'] {
+  @apply font-bold;
 }

@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import React from 'react';
 
 import Icon from '../../../components/default/Icon';
@@ -8,24 +7,10 @@ import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 import SecondaryButton from '../../../components/ui/SecondaryButton';
 
-export default function Grants({ pageContext }) {
-  const {
-    breadcrumb: { crumbs },
-  } = pageContext;
-
+export default function Grants() {
   return (
     <Layout layout="sidebar">
       <SEO title="Grants" />
-      <div className="container hidden md:block lg:px-10 mb-10 underline-animate underline-animate-thin">
-        <Breadcrumb
-          crumbs={crumbs}
-          crumbSeparator=""
-          crumbLabel="Grants"
-          hiddenCrumbs={['/']}
-          disableLinks={['/ecosystem/opportunities/grants', '/ecosystem/opportunities']}
-          className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
-        />
-      </div>
       <Section>
         <div className="grid md:grid-cols-2 gap-6">
           <div>

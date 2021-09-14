@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { DataProvider } from './src/contexts/DataContext';
 import { ThemeProvider } from './src/contexts/ThemeContext';
 
 const MagicScriptTag = () => {
@@ -8,11 +9,11 @@ const MagicScriptTag = () => {
     function getInitialColorMode() {
         const persistedColorPreference = localStorage.theme;
         const hasPersistedPreference = typeof persistedColorPreference === 'string';
-    
+
         if (hasPersistedPreference) {
           return persistedColorPreference;
         }
-        
+
         const mql = window.matchMedia('(prefers-color-scheme: dark)');
         const hasMediaQueryPreference = typeof mql.matches === 'boolean';
         if (hasMediaQueryPreference) {
@@ -39,3 +40,5 @@ export const wrapRootElement = ({ element }) => (
     <div>{element}</div>
   </ThemeProvider>
 );
+
+export const wrapPageElement = ({ element, props }) => <DataProvider value={props}>{element}</DataProvider>;
