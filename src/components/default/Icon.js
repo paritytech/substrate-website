@@ -1,8 +1,11 @@
 import React from 'react';
 
 import caseStudy from '../../images/svg/case-study.svg';
+import checkMark from '../../images/svg/check-mark.svg';
 import forkless from '../../images/svg/forkless.svg';
+import graph from '../../images/svg/graph.svg';
 import hackathons from '../../images/svg/hackathons.svg';
+import knight from '../../images/svg/knight.svg';
 import lightClient from '../../images/svg/light-client.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
@@ -69,7 +72,11 @@ const iconsMap = {
   'wa-logo': waLogo,
   forkless: forkless,
   'light-client': lightClient,
+  /* case studies icons */
   'case-study': caseStudy,
+  'check-mark': checkMark,
+  graph: graph,
+  knight: knight,
 };
 
 export default function Icon({ name, className }) {

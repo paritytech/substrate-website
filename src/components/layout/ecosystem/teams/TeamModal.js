@@ -2,6 +2,7 @@ import cx from 'classnames';
 import React from 'react';
 
 import Icon from '../../../default/Icon';
+import Tag from '../../../ui/Tag';
 
 export default function TeamModal(props) {
   const { curTeam, logos, setIsComponentVisible } = props;
@@ -60,9 +61,7 @@ export default function TeamModal(props) {
                 <div className="flex flex-wrap">
                   {team.runtimes.map((runtime, index) => (
                     <div key={index}>
-                      <button className="inline-block bg-substratePink dark:bg-substrateDark bg-opacity-5 mt-4 mr-4 px-4 py-2 border border-substratePink dark:border-substrateWhite border-opacity-30 rounded cursor-text">
-                        {runtime.title}
-                      </button>
+                      <Tag title={runtime.title} />
                     </div>
                   ))}
                 </div>
