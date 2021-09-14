@@ -287,14 +287,6 @@
       "description": "Cross-chain hub for Crypto Asset on Polkadot. Any chain can have asset interoperability with all other chains as long as it establishes a connection with ChainX."
     },
     {
-      "name": "Chevdor",
-      "link": "https://www.chevdor.com/",
-      "category":[ "Infrastructure","All"],
-      "types": ["All Teams",  "Building for Polkadot", "Enterprise-ready"],
-      "tag": "Infrastructure & Tooling",
-      "description": "Wilfried Kopp works on Blockchain & Decentralization. He builds tools that are widely used, for example: srtool & Polkabot."
-    },
-    {
       "name": "Creator",
       "link": "https://github.com/creator-rs/creator",
       "category":[ "Infrastructure","All"],
@@ -327,7 +319,7 @@
     {
       "name": "Darwinia",
       "link": "https://darwinia.network/",
-      "category":[ "Gaming","All"],
+      "category":[ "Bridge", "All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
       "description": "An open cross-chain bridge protocol based on Substrate, Darwinia focuses on the construction of future Internet of Tokens, including decentralized tokens swap, exchange and market",
@@ -863,8 +855,8 @@
       ]
     },
     {
-      "name": "Plasm",
-      "link": "https://www.plasmnet.io/",
+      "name": "Astar Network",
+      "link": "https://astar.network/",
       "category":[ "Smart Contracts","All", "Connecting to Polkadot"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
@@ -1264,14 +1256,6 @@
       "description": "Patract Hub develops local open source toolkits and one-stop cloud smart IDE."
     },
     {
-      "name": "UBIK",
-      "link": "https://ubik.hr/",
-      "category":[ "Social","All"],
-      "types": ["All Teams", "Substrate Builders Program"],
-      "tag": "Chain",
-      "description": "UBIK is a Croatian self-regulating NGO that promotes blockchain education and adoption."
-    },
-    {
       "name": "Dora Factory",
       "link": "https://dorafactory.org/",
       "category":[ "Infrastructure","All"],
@@ -1303,6 +1287,14 @@
       "types": ["All Teams", "Substrate Builders Program"],
       "tag": "Chain",
       "description": "Elk Insight is developing TEA,a layer2 trusted computing solution on top of a Substrate-based blockchain."
+    },
+    {  
+      "name": "Totem Accounting",
+      "link": "https://totemaccounting.com/",
+      "category":["DeFi", "All"],
+      "types": ["All Teams"],
+      "tag": "Chain",
+      "description": "Totem Live Accounting is built on the idea that accounting ledgers should be able to communicate directly with each other, anywhere in the world, in real-time."
     }
     ]
 }
