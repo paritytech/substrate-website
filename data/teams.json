@@ -1267,7 +1267,7 @@
       "name": "Bit.Country",
       "link": "https://bit.country/",
       "category":[ "Gaming","All"],
-      "types": ["All Teams", "Substrate Builders Program"],
+      "types": ["All Teams", "Substrate Builders Program", "Enterprise-ready"],
       "tag": "Chain",
       "description": "Bit.Country enables WASM and Ethereum-compatible smart contract for developers to build dApps and games to run on the network."
     },
@@ -1276,7 +1276,7 @@
       "name": "Sensorium Corporation",
       "link": "https://sensoriumxr.com/ ",
       "category":[ "Gaming","All"],
-      "types": ["All Teams", "Substrate Builders Program"],
+      "types": ["All Teams", "Substrate Builders Program", "Enterprise-ready"],
       "tag": "Chain",
       "description": "Sensorium Galaxy  leverages state-of-the-art blockchain technologies to make the future of content distribution safe for both the public and artists."
     },
@@ -1295,6 +1295,31 @@
       "types": ["All Teams"],
       "tag": "Chain",
       "description": "Totem Live Accounting is built on the idea that accounting ledgers should be able to communicate directly with each other, anywhere in the world, in real-time."
+    },
+     {  
+      "name": "Chronicled",
+      "link": "https://www.chronicled.com/",
+      "category":["Smart  Contracts", "All"],
+      "types": ["All Teams", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Chronicled is the custodian of the MediLedger Network, an industry-led, blockchain-powered network within the life sciences industry."
+    },
+    {  
+      "name": "Enjin",
+      "link": "https://enjin.io/",
+      "category":["Smart  Contracts", "All"],
+      "types": ["All Teams", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Enjij is a scalable, decentralized, cross-chain network designed to bring non-fungible tokens to everyone."
+    },
+    {  
+      "name": "zCloak Network",
+      "link": "https://zcloak.network/#/,
+      "category":["Infrastructure", "All"],
+      "types": ["All Teams", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "zCloak Network provides Zero-Knowledge Proof as a Service for public blockchains."
     }
+    
     ]
 }
