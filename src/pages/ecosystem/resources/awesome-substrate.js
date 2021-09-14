@@ -10,10 +10,12 @@ export default function AwesomeSubstrate({ data }) {
   const html = data.markdownRemark.html;
 
   return (
-    <Layout layout="sidebar">
+    <Layout layout="sidebar article-nav">
       <SEO title="Awesome Substrate" />
       <Section>
-        <h2 className="text-4xl font-bold mb-6">Awesome Substrate</h2>
+        <h1 id="awesome-substrate" className="text-4xl font-bold font-body mb-6">
+          Awesome Substrate
+        </h1>
         <p className="text-lg font-medium">An awesome list is a list of awesome things curated by the community.</p>
         <p>
           Substrate is a framework for building upgradable, modular and efficient blockchains.
@@ -26,7 +28,7 @@ export default function AwesomeSubstrate({ data }) {
       </Section>
       <Section>
         <div
-          className="markdown underline-animate underline-animate-thin"
+          className="markdown underline-animate underline-animate-thin pb-48 mb-96"
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
       </Section>

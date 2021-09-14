@@ -142,6 +142,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-external-links`,
           },
+          // add IDs to headings generated from markdown
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: false,
+              elements: [`h2`, `h3`],
+            },
+          },
         ],
       },
     },
