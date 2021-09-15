@@ -32,10 +32,10 @@ const Headings = ({ headings, activeId }) => {
 
   return (
     <ul className={cx('list-none ml-0 mb-8 transition-all', { 'mt-0': !isScrolled, 'mt-10': isScrolled })}>
-      <li className="mb-3 font-bold">CONTENT</li>
+      <li className="mb-3 font-semibold">CONTENT</li>
       {headings.map(({ title, id }) => (
         <li key={id}>
-          <a href={`#${id}`} className={`${id === activeId && 'font-bold'} hover:font-bold`}>
+          <a href={`#${id}`} className={`${id === activeId && 'font-semibold'} hover:font-bold`}>
             {title}
           </a>
         </li>
