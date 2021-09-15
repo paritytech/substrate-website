@@ -6,8 +6,9 @@ import Footer from '../site/Footer';
 import Header from '../site/Header';
 import NavBreadcrumb from '../site/NavBreadcrumb';
 import NavSidebar from '../site/NavSidebar';
+import ArticleNav from './ArticleNav';
 
-function LayoutSidebar({ children }) {
+function LayoutSidebar({ articleNav, children }) {
   return (
     <div className="flex">
       <div className="hidden lg:block min-h-screen lg:h-auto lg:bg-substrateGray-light border-r lg:dark:bg-substrateBlackish dark:border-substrateDarkThemeGrey">
@@ -15,13 +16,19 @@ function LayoutSidebar({ children }) {
           <NavSidebar />
         </div>
       </div>
-      <div className={`w-full 2xl:pr-64 pt-10`}>
+      <div className="w-full 2xl:pr-64 pt-10">
         <div className="container hidden md:block lg:px-10 lg:max-w-6xl m-auto mb-10 underline-animate underline-animate-thin">
           <NavBreadcrumb />
         </div>
         <article className="lg:max-w-6xl m-auto">{children}</article>
       </div>
-      <nav className="hidden xl:block fixed right-0 top-36 max-w-xs" id="article-nav"></nav>
+      {articleNav && (
+        <div className="hidden xl:block min-h-screen">
+          <div className="sticky top-36 overflow-y-auto w-64">
+            <ArticleNav />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -44,6 +51,7 @@ export default function Layout({ layout = 'default', mode = 'default', children 
       >
         {layout === 'default' && <>{children}</>}
         {layout === 'sidebar' && <LayoutSidebar>{children}</LayoutSidebar>}
+        {layout === 'sidebar article-nav' && <LayoutSidebar articleNav={true}>{children}</LayoutSidebar>}
       </main>
       <Footer />
     </>

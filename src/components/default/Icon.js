@@ -11,16 +11,20 @@ import opportunities from '../../images/svg/ecosystem/opportunities.svg';
 import resources from '../../images/svg/ecosystem/resources.svg';
 import event from '../../images/svg/event.svg';
 import forkless from '../../images/svg/forkless.svg';
+import globeSolid from '../../images/svg/globe-solid.svg';
 import graduation from '../../images/svg/graduation.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import house from '../../images/svg/house.svg';
+import kusamaLogo from '../../images/svg/kusama_logo.svg';
 import layers from '../../images/svg/layers.svg';
 import lightClient from '../../images/svg/light-client.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import paperplane from '../../images/svg/paperplane.svg';
 import pen from '../../images/svg/pen.svg';
 import placeholder from '../../images/svg/placeholder.svg';
+import polkadotLogo from '../../images/svg/polkadot-logo.svg';
 import seminar from '../../images/svg/seminar.svg';
+import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
 import smile from '../../images/svg/smile.svg';
 import discord from '../../images/svg/social/discord.svg';
 import element from '../../images/svg/social/element.svg';
@@ -32,6 +36,7 @@ import so2 from '../../images/svg/social/so2.svg';
 import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
+import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
 import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
@@ -58,6 +63,8 @@ const iconsMap = {
   /* brand */
   'logo-white': logoWhite,
   'w3f-logo': w3fLogo,
+  'kusama-logo': kusamaLogo,
+  'polkadot-logo': polkadotLogo,
   /* headings */
   hackathons: hackathons,
   seminar: seminar,
@@ -105,6 +112,9 @@ const iconsMap = {
   'wa-logo': waLogo,
   forkless: forkless,
   'light-client': lightClient,
+  'shield-check-solid': shieldCheckSolid,
+  'globe-solid': globeSolid,
+  'subconnect-browser-tab': subconnectBrowserTab,
 };
 
 export default function Icon({ name, className }) {
