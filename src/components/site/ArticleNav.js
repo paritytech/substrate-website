@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import cx from 'classnames';
+import React, { useEffect, useState } from 'react';
 
 import useHeadingsData from '../../hooks/use-headings-data';
 import useIntersectionObserver from '../../hooks/use-intersection-observer';
+import useScrollListener from '../../hooks/use-scroll-listener';
 
 const ArticleNav = () => {
   const [activeId, setActiveId] = useState();
@@ -16,8 +18,20 @@ const ArticleNav = () => {
 };
 
 const Headings = ({ headings, activeId }) => {
+  const scroll = useScrollListener();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    /* TODO: add into context */
+    if (scroll.y > 15) {
+      setIsScrolled(true);
+    } else if (scroll.y < 1) {
+      setIsScrolled(false);
+    }
+  }, [scroll.y]);
+
   return (
-    <ul className="list-none ml-0 mb-8 mt-10">
+    <ul className={cx('list-none ml-0 mb-8 transition-all', { 'mt-0': !isScrolled, 'mt-10': isScrolled })}>
       <li className="mb-3 font-bold">CONTENT</li>
       {headings.map(({ title, id }) => (
         <li key={id}>

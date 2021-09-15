@@ -17,18 +17,22 @@ function LayoutSidebar({ articleNav, children }) {
         </div>
       </div>
       <div className="w-full 2xl:pr-64 pt-10">
-        <div className="container hidden md:block lg:px-10 lg:max-w-6xl m-auto mb-10 underline-animate underline-animate-thin">
-          <NavBreadcrumb />
-        </div>
-        <article className="lg:max-w-6xl m-auto">{children}</article>
-      </div>
-      {articleNav && (
-        <div className="hidden xl:block min-h-screen">
-          <div className="sticky top-16 overflow-y-auto w-64">
-            <ArticleNav />
+        <div className="flex m-auto lg:max-w-6xl">
+          <div>
+            <div className="container hidden md:block lg:px-10 lg:max-w-6xl m-auto mb-10 underline-animate underline-animate-thin">
+              <NavBreadcrumb />
+            </div>
+            <article className="lg:max-w-6xl m-auto">{children}</article>
           </div>
+          {articleNav && (
+            <div className="hidden xl:block min-h-screen">
+              <div className="sticky top-16 overflow-y-auto w-64">
+                <ArticleNav />
+              </div>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 }
