@@ -19,7 +19,7 @@ p {
 
 /* Links underline animation */
 .underline-animate a {
-  @apply text-substrateBlue;
+  @apply text-substrateNewBlue;
   display: inline-block;
   position: relative;
 }
@@ -32,7 +32,7 @@ p {
   height: 2px;
   left: 0;
   position: absolute;
-  @apply bg-substrateBlue;
+  @apply bg-substrateNewBlue;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -95,7 +95,7 @@ h3 {
 }
 
 .breadcrumb__link {
-  @apply text-substrateBlue m-0;
+  @apply text-substrateNewBlue m-0;
 }
 
 .breadcrumb__list span {
