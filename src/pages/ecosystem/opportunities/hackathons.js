@@ -15,7 +15,11 @@ export default function Hackathons() {
       <SEO title="Hackathons" />
       <Section>
         <h2 className="text-4xl font-bold mb-4">Hackathons</h2>
-        <p>Ready for the challenge? Build, create, and hack to your heart&apos;s content. Join a hackathon</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget libero in purus rutrum condimentum. Phasellus
+          condimentum enim quis purus pellentesque, ut varius magna egestas. Donec libero leo, sagittis vel finibus in,
+          vehicula quis nunc. Mauris purus turpis, sollicitudin ac consequat eu, faucibus sed erat.
+        </p>
         <h3 className="font-medium text-2xl mb-8 mt-10">Recent events:</h3>
         {hackathons && hackathons.map((hackathon, idx) => <HackathonCard key={idx} hackathon={hackathon} />)}
       </Section>

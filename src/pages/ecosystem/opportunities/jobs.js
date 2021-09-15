@@ -17,7 +17,7 @@ export default function Jobs() {
           <div>
             <h2 className="text-4xl font-bold mb-6">Jobs</h2>
             <p className="max-w-sm mb-8">
-              Find job opportunities in the Substrate Ecosystem through <span className="font-bold">DotJobs</span>, an
+              Find job opportunities in the Substrate ecosystem through <span className="font-bold">DotJobs</span>, an
               independent staking provider that operates validation software for protocols they are actively invested in
               and involved with.
             </p>

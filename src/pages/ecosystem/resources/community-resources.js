@@ -17,7 +17,7 @@ export default function CommunityResources() {
           <div>
             <h2 className="text-4xl font-bold mb-6">Community Resources</h2>
             <p className="max-w-sm font-medium mb-12">
-              An ever-Growing list of Educational resources provided by the Community
+              An ever-growing list of educational resources provided by the community.
             </p>
             <h5 className="text-2xl font-semibold mb-6">List Of Resources</h5>
             <ul className="ml-0 list-none">
