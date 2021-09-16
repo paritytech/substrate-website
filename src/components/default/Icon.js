@@ -1,6 +1,7 @@
 import React from 'react';
 
 import forkless from '../../images/svg/forkless.svg';
+import fourOhFour from '../../images/svg/four-oh-four.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import kusamaLogo from '../../images/svg/kusama_logo.svg';
@@ -60,6 +61,7 @@ const iconsMap = {
   'external-link': externalLink,
   calendar: calendar,
   star: star,
+  'four-oh-four': fourOhFour,
   /* mockup */
   placeholder: placeholder,
   /* social */
