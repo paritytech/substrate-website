@@ -2,13 +2,13 @@ import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-import teamsData from '../../../../data/teams.json';
-import Icon from '../../../components/default/Icon';
-import { Link } from '../../../components/default/Link';
-import Blockqoute from '../../../components/layout/ecosystem/case-studies/Blockqoute';
-import Layout from '../../../components/site/Layout';
-import SEO from '../../../components/site/SEO';
-import Tag from '../../../components/ui/Tag';
+import teamsData from '../../../../../data/teams.json';
+import Icon from '../../../../components/default/Icon';
+import { Link } from '../../../../components/default/Link';
+import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
+import Layout from '../../../../components/site/Layout';
+import SEO from '../../../../components/site/SEO';
+import Tag from '../../../../components/ui/Tag';
 
 export default function acala({ data }) {
   const acalaData = teamsData.teams.find(team => team.name === 'Acala Network');
