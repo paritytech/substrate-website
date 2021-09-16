@@ -22,7 +22,7 @@ export default function acala({ data }) {
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={acalaData.name} />
           <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{acalaData.name}</div>
         </div>
-        <div className="mb-3 font-bold text-lg md:text-xl max-w-lg">
+        <div className="mb-3 font-bold text-lg md:text-xl">
           DEX chain with no-gas economy, proof of liquidity and prevention of MEV / front-running
         </div>
         <div className="text-lg md:text-xl">Community, Forkless, Interoperable</div>
@@ -60,7 +60,6 @@ export default function acala({ data }) {
             <p className="mb-0 ">{acalaData.tag}</p>
           </div>
         </div>
-
         <Blockqoute />
         <p>
           Mangata is a highly performant cross-chain DEX that aims for the best trading experience. By re-architecturing
@@ -77,7 +76,7 @@ export default function acala({ data }) {
           <Icon name="knight" className="fill-current text-substrateGreen mr-4" />
           <h2 className="mb-0">Challenge</h2>
         </div>
-        <h4 className="max-w-xl">What challenges is the project focusing and what problems is it trying to solve:</h4>
+        <h4>What challenges is the project focusing and what problems is it trying to solve:</h4>
         <p>
           The cornerstone problem faced by any blockchain-based DEX is miner extractable value, or MEV. The issue lays
           on additional powers block builders possess, which allows them to cut a part of a user&apos;s gains, or even
@@ -86,6 +85,7 @@ export default function acala({ data }) {
           split in two types: value extracted by reordering (VER) and value extracted by denial (VED), and Mangata is
           solving both.
         </p>
+        mas
         <p>
           A lack of interoperability between the stake and the liquidity is causing a big part of value, provided by
           network participants as a stake, to be locked without actively participating in the protocol&apos;s processes.
@@ -102,7 +102,7 @@ export default function acala({ data }) {
           <Icon name="check-mark" className="fill-current text-substrateGreen mr-4" />
           <h2 className="mb-0">Solution</h2>
         </div>
-        <h4 className="max-w-xl">Mangata is using Substrate framework to its widest extent to implement solutions:</h4>
+        <h4>Mangata is using Substrate framework to its widest extent to implement solutions:</h4>
         <p>
           <b>MEV prevention</b>
           <br />
@@ -144,7 +144,7 @@ export default function acala({ data }) {
           strategies. Community-build tools like ORML tokens make it possible to implement the tokenomics with a small
           effort.
         </p>
-        <h4 className="max-w-xl">
+        <h4>
           How did you use the specific USPs of Substrate to solve the problem that you are tackling with your project?
         </h4>
         <p>
