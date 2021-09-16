@@ -42,6 +42,7 @@ module.exports = {
       },
       fontSize: {
         '7xl': ['5rem', { lineHeight: '1' }],
+        'four-oh-four': ['20rem', { lineHeight: '1' }],
       },
     },
     boxShadow: {
