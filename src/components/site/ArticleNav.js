@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import React, { useState } from 'react';
 
 import useHeadingsData from '../../hooks/use-headings-data';
@@ -9,7 +10,7 @@ const ArticleNav = () => {
   useIntersectionObserver(setActiveId);
 
   return (
-    <nav aria-label="Table of contents" className="max-w-xs max-h-full overflow-auto">
+    <nav aria-label="Table of contents" className="max-h-full overflow-auto">
       <Headings headings={headings} activeId={activeId} />
     </nav>
   );
@@ -17,11 +18,11 @@ const ArticleNav = () => {
 
 const Headings = ({ headings, activeId }) => {
   return (
-    <ul className="list-none ml-0 mb-8">
-      <li className="mb-3 font-bold">CONTENT</li>
+    <ul className={cx('p-0 m-0 pr-4 mb-20 list-none transition-all')}>
+      <span className="block mb-3 font-semibold">CONTENT</span>
       {headings.map(({ title, id }) => (
-        <li key={id}>
-          <a href={`#${id}`} className={`${id === activeId && 'font-bold'} hover:font-bold`}>
+        <li key={id} className="p-0 m-0 mb-2">
+          <a href={`#${id}`} className={`${id === activeId && 'font-semibold'} hover:font-bold`}>
             {title}
           </a>
         </li>
