@@ -22,7 +22,7 @@ export default function Jobs() {
               and involved with.
             </p>
             <SecondaryButton link="https://dotjobs.net/">
-              <p className="mb-0 mr-2 inline">Visit DotJobs</p>
+              <div className="mb-0 mr-2 inline">Visit DotJobs</div>
               <Icon name="external-link" className="fill-current inline mb-1 text-white dark:text-black" />
             </SecondaryButton>
           </div>

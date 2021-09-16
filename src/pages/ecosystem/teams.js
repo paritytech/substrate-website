@@ -35,7 +35,7 @@ export default function Teams({ data }) {
         <h3>_HeroSection</h3>
       </section>
       <section className="container px-6 mb-20">
-        <h2 id="teams" className="mb-8">
+        <h2 id="teams" className="mb-8 scroll-margin-top-100">
           Teams
         </h2>
         <TypeFilter types={types} curType={curType} setCurType={setCurType} />

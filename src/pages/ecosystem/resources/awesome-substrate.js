@@ -1,16 +1,37 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import { Link } from '../../../components/default/Link';
+import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 
 export default function AwesomeSubstrate({ data }) {
   const html = data.markdownRemark.html;
+
   return (
-    <Layout layout="sidebar">
+    <Layout layout="sidebar article-nav">
       <SEO title="Awesome Substrate" />
-      <div>awesome substrate</div>
-      <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      <Section>
+        <h1 id="awesome-substrate" className="text-4xl font-bold font-body mb-6">
+          Awesome Substrate
+        </h1>
+        <p className="text-lg font-medium">An awesome list is a list of awesome things curated by the community.</p>
+        <p>
+          Substrate is a framework for building upgradable, modular and efficient blockchains.
+          <br />
+          Substrate is an open-source library of Rust code that is maintained by{' '}
+          <span className="underline-animate underline-animate-thin">
+            <Link to="https://parity.io/">Parity Technologies</Link>.
+          </span>
+        </p>
+      </Section>
+      <Section>
+        <div
+          className="markdown underline-animate underline-animate-thin pb-48 mb-96"
+          dangerouslySetInnerHTML={{ __html: html }}
+        ></div>
+      </Section>
     </Layout>
   );
 }

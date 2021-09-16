@@ -3,13 +3,17 @@ import React from 'react';
 import caseStudy from '../../images/svg/case-study.svg';
 import checkMark from '../../images/svg/check-mark.svg';
 import forkless from '../../images/svg/forkless.svg';
+import globeSolid from '../../images/svg/globe-solid.svg';
 import graph from '../../images/svg/graph.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import knight from '../../images/svg/knight.svg';
+import kusamaLogo from '../../images/svg/kusama_logo.svg';
 import lightClient from '../../images/svg/light-client.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
+import polkadotLogo from '../../images/svg/polkadot-logo.svg';
 import seminar from '../../images/svg/seminar.svg';
+import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
 import discord from '../../images/svg/social/discord.svg';
 import element from '../../images/svg/social/element.svg';
 import element2 from '../../images/svg/social/element2.svg';
@@ -20,6 +24,8 @@ import so2 from '../../images/svg/social/so2.svg';
 import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
+import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
+import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
@@ -39,6 +45,8 @@ const iconsMap = {
   /* brand */
   'logo-white': logoWhite,
   'w3f-logo': w3fLogo,
+  'kusama-logo': kusamaLogo,
+  'polkadot-logo': polkadotLogo,
   /* headings */
   hackathons: hackathons,
   seminar: seminar,
@@ -48,6 +56,7 @@ const iconsMap = {
   'arrow-next': arrowNext,
   'arrow-dropdown': arrowDropdown,
   'arrow-more': arrowMore,
+  'arrow-back': arrowBack,
   'sidebar-toggle': sidebarToggle,
   docs: docs,
   moon: moon,
@@ -72,7 +81,9 @@ const iconsMap = {
   'wa-logo': waLogo,
   forkless: forkless,
   'light-client': lightClient,
-  /* case studies icons */
+  'shield-check-solid': shieldCheckSolid,
+  'globe-solid': globeSolid,
+  'subconnect-browser-tab': subconnectBrowserTab,
   'case-study': caseStudy,
   'check-mark': checkMark,
   graph: graph,
