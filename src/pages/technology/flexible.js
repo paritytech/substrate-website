@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import Gif from '../../components/default/Gif';
+import Icon from '../../components/default/Icon';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
@@ -64,7 +65,15 @@ const Flexible = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Gif name="forkless" className="w-full h-auto" />
+            {/* <Gif name="forkless" className="w-full h-auto" /> */}
+            <div className="relative w-full">
+              <div className="absolute w-96 h-96">
+                <Icon name="diamond-yellow" className="w-96 h-96" />
+              </div>
+              <div data-aos="fade-in" data-aos-delay="700" className="bg-white absolute w-96 h-96">
+                <Icon name="diamond-purple" className="w-96 h-96" />
+              </div>
+            </div>
           </FeatureImage>
         }
       >
