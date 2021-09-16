@@ -1,12 +1,12 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Gif from '../components/default/Gif';
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
 import Article from '../components/layout/Article';
 import Section from '../components/layout/Section';
 import Card from '../components/layout/technology/Card';
+import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 
@@ -21,7 +21,7 @@ const highlights = [
     title: 'Light-Client <br/>Friendly',
     icon: 'light-client',
     description:
-      'Substrate comes with a light client built in from day one. Use your mobile-ready blockchain anywhere.',
+      'Browsers can interact directly with the blockchain network instead of relying on resource-heavy local node infrastructure or third party services.',
   },
   {
     title: 'Forkless <br/>Upgrades',
@@ -36,17 +36,28 @@ export default function IndexPage() {
       <SEO title="Substrate Technology" />
       <Article>
         <Section>
-          <div className="lg:grid grid-cols-2 gap-8">
-            <div className="lg:mr-8">
+          <div className="grid lg:grid-cols-2 lg:gap-8">
+            <div className="lg:mr-8 order-1 self-end">
+              <p className="tracking-wider lg:tracking-widest text-lg font-light mb-0 uppercase">
+                Substrate Technology
+              </p>
               <h1
                 data-aos="fade-up"
-                className="font-title text-5xl md:text-6xl xl:text-8xl font-extrabold my-10 lg:mt-20"
+                className="font-title text-5xl md:text-6xl xl:text-7xl font-extrabold my-10 mb-8 lg:mt-20"
               >
-                Substrate Technology
+                Build
+                <br /> beyond the
+                <br /> capabilities
+                <br /> of others
               </h1>
+            </div>
+            <div className="order-3 lg:order-2">
+              <Icon name="placeholder" className="w-full h-auto" alt="Substrate Hero Image" />
+            </div>
+            <div className="order-2 lg:order-3">
               <p className="text-xl md:text-2xl xl:text-3xl font-bold">
                 What if developers could build on a blockchain framework specifically optimized for their requirements
-                that seamlessly evolves with their needs and without forks?
+                that seamlessly evolves with their needs and without requiring forks?
               </p>
               <p className="underline-animate text-xl md:text-2xl xl:text-3xl font-bold">
                 Welcome to Substrate, the only{' '}
@@ -68,22 +79,18 @@ export default function IndexPage() {
                 blockchain framework.
               </p>
             </div>
-            <div>
-              <Gif name="heroTechnology" alt="Substrate Hero Image" />
+            <div className="order-4">
               <p>
                 Substrate was created by OGs of blockchain who set out to overcome the limitations they experienced
                 building blockchains. Through the process of building clients in the early days of Bitcoin and Ethereum,
                 these developers realized they were recreating much of the same functionality but with different
                 limitations such as scale, governance, forks, interoperability, and upgrades.
               </p>
-              <p className="font-bold">
-                {`Substrate was born from the realization that developers shouldn't have to recreate fundamentals to build
-                  a blockchain that alleviates their limitations. The information below will help you understand why
-                  Substrate is the best technology to build on now and into the future.`}
-              </p>
-              <p>
-                Be sure to head over to the playground to try it out for yourself and don’t be shy to ask questions in
-                the super friendly community.
+              <p className="font-bold underline-animate underline-animate-thin">
+                Substrate was born from the <Link to="/vision/substrate-and-polkadot">vision</Link> that developers
+                shouldn&apos;t have to recreate fundamentals to build a blockchain that alleviates their limitations.
+                The information below will help you understand why Substrate is the best technology to build on now and
+                into the future.
               </p>
             </div>
           </div>
@@ -114,6 +121,7 @@ export default function IndexPage() {
             <Card page="Future-Proof" mode="horizontal" delay={600} image="heroFutureProof" />
           </div>
         </Section>
+        <ExploreLinkSection current="Technology" />
       </Article>
     </Layout>
   );

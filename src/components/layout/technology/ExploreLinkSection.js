@@ -6,49 +6,56 @@ import Section from '../Section';
 
 const links = [
   {
-    image: 'placeholder',
-    title: 'Teams',
+    title: 'Technology',
     description:
       'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
     link: '/technology',
   },
   {
-    image: 'placeholder',
-    title: 'Docs',
+    title: 'Developer Hub',
     description:
       'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
-    link: '/technology',
+    link: 'http://docs.substrate.io/',
   },
   {
-    image: 'placeholder',
+    title: 'Vision',
+    description:
+      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
+    link: '/vision/substrate-and-polkadot',
+  },
+  {
     title: 'Ecosystem',
     description:
       'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
-    link: '/technology',
+    link: '/ecosystem',
   },
 ];
 
-const ExploreLinkSection = () => {
+const icons = ['diamond-pink', 'diamond-purple', 'diamond-yellow'];
+
+const ExploreLinkSection = ({ current }) => {
   return (
-    <div className="bg-substrateGray dark:bg-substrateDarkest pb-10 pt-20">
+    <div className="bg-substrateGray-light dark:bg-substrateDarkest pb-10 pt-20">
       <Section>
         <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
         <div className="sm:grid grid-cols-3 gap-6 xl:gap-24">
-          {links.map(({ image, title, description, link }, index) => (
-            <div key={index} className="mb-16 sm:mb-0">
-              <Icon name={image} className="mb-6" />
-              <h5 className="text-xl font-bold mb-6">{title}</h5>
-              <p>{description}</p>
-              <Link to={link}>
-                <p className="font-bold border-b-2 border-black dark:border-white inline hover:mr-1 transition-all">
-                  Explore
-                </p>{' '}
-                <span className="fill-current border-b-0 dark:text-white inline-block">
-                  <Icon name="arrow-more" />
-                </span>
-              </Link>
-            </div>
-          ))}
+          {links
+            .filter(({ title }) => title !== current)
+            .map(({ title, description, link }, index) => (
+              <div key={index} className="mb-16 sm:mb-0">
+                <Icon name={icons[index]} className="mb-6 w-8 h-8" />
+                <h5 className="text-xl font-bold mb-6">{title}</h5>
+                <p>{description}</p>
+                <Link to={link}>
+                  <p className="font-bold border-b-2 border-black dark:border-white inline hover:mr-1 transition-all">
+                    Explore
+                  </p>{' '}
+                  <span className="fill-current border-b-0 dark:text-white inline-block">
+                    <Icon name="arrow-more" />
+                  </span>
+                </Link>
+              </div>
+            ))}
         </div>
       </Section>
     </div>
