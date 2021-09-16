@@ -3,15 +3,15 @@ import React from 'react';
 import Icon from '../../default/Icon';
 import { Link } from '../../default/Link';
 
-const Card = ({ title, description, link, icon, color, linkText }) => {
+const Card = ({ title, description, link, delay, icon, color, linkText }) => {
   let titleIcon;
   if (icon) {
     titleIcon = <Icon name={icon} className="inline-block mr-3 fill-current text-substrateBlackish dark:text-white" />;
   }
 
   return (
-    <Link to={link}>
-      <div className="cursor-pointer shadow-xl px-6 py-8 hover:scale-105 transition-transform rounded-md bg-white dark:bg-substrateBlackish relative">
+    <Link to={link} data-aos="fade-up" data-aos-delay={delay ? delay : 0}>
+      <div className="cursor-pointer shadow-xl px-6 py-8 hover:scale-105 transition-transform rounded-md bg-white dark:bg-substrateBlackish relative min-h-full">
         <h3 className="h5">
           {titleIcon}
           {title}

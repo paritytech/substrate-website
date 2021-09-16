@@ -183,3 +183,14 @@ $backdrop-color: rgba(0, 0, 0, .9);
 		margin-top: -6px;
 	}
 }
+
+/* Benefits list */
+.benefits-list {
+	li {
+		margin-bottom: 1.5rem;
+
+		&:last-of-type {
+			margin-bottom: 0.25rem;
+		}
+	}
+}

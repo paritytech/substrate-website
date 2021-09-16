@@ -35,8 +35,8 @@ export default function Home() {
       <SEO title="Substrate Ecosystem" />
       <Article>
         <Section>
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-14">
-            <div className="lg:col-span-3 lg:col-start-3">
+          <div className="grid grid-cols-1 lg:grid-cols-11 gap-8 lg:gap-16">
+            <div className="lg:col-span-6 lg:col-start-6">
               <div className="grid grid-cols-3 gap-6 ecosystem-home-anim">
                 <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
                   <div className="ecosystem-home-anim__logo">Logo 1</div>
@@ -64,10 +64,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1">
-              <h1 className="mb-6">Substrate Builders Teams</h1>
-              <h3 className="mb-6 font-medium">More than 150 Teams Are Building on Substrate</h3>
-              <p className="text-lg font-medium">
+            <div className="lg:col-span-5 lg:col-start-1 lg:row-start-1">
+              <h1 className="mb-6">Substrate Teams</h1>
+              <h3 className="mb-6 font-medium lg:pr-4">More than 150 teams are building on Substrate</h3>
+              <p className="mb-8 text-lg font-medium leading-relaxed">
                 Some of the most exciting projects in decentralized tech are building on Substrate, including
                 parachains, independent layer-1 blockchains, and infrastructure and tooling solutions for a wide range
                 of use cases.
@@ -78,7 +78,7 @@ export default function Home() {
 
           <div
             onClick={() => modalSetOpen(true)}
-            className="mt-36 mb-44 aspect-w-4 aspect-h-3 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-12 lg:aspect-h-5 bg-substrateDark rounded-md shadow-xl hover:scale-105 transition-transform cursor-pointer"
+            className="mt-32 mb-44 aspect-w-4 aspect-h-3 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-12 lg:aspect-h-5 bg-substrateDark rounded-md shadow-xl hover:scale-105 transition-transform cursor-pointer"
           >
             <div>
               <StaticImage
@@ -114,15 +114,13 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="lg:col-start-3 aspect-w-16 aspect-h-9 bg-gray-200">
-              <div>Illustration</div>
+            <div className="lg:col-start-3 relative hidden lg:block">
+              <div className="absolute top-12 -right-20 w-full aspect-w-1 aspect-h-1">
+                <Icon name="explore" />
+              </div>
             </div>
-            <div className="lg:row-start-1 lg:col-span-2">
+            <div className="lg:row-start-1 lg:col-span-2 mb-11">
               <h2 className="h1">Explore the Ecosystem</h2>
-              <p className="text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a orci commodo, porta purus a, feugiat
-                ligula. Etiam odio ex, venenatis id nibh interdum, finibus condimentum ipsum.
-              </p>
             </div>
           </div>
           <div>
@@ -130,31 +128,33 @@ export default function Home() {
               <Icon className="inline-block mr-4" name="opportunities" />
               Opportunities
             </h2>
-            <p className="text-lg">Jump start your project or your career in the blockchain space</p>
+            <p className="text-lg font-medium">Jump start your project or your career in the blockchain space</p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
               <Card
                 title="Hackathons"
                 icon="hackathons"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Upcoming Events"
-                color="#ddcdff"
+                description="Ready for the challenge? Build, create, and hack to your heart's content."
+                link="/ecosystem/opportunities/hackathons"
+                linkText="Join a hackathon"
+                color="#ffbeed"
               />
               <Card
                 title="Grants"
                 icon="dollar"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Projects"
-                color="#ddcdff"
+                description="Got an idea that's ready to go? Web3 Foundation supports development work contributing to the Web3 goal."
+                link="/ecosystem/opportunities/grants"
+                linkText="Apply for a grant"
+                color="#ffbeed"
+                delay="200"
               />
               <Card
                 title="Jobs"
                 icon="desktop"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Now Hiring"
-                color="#ddcdff"
+                description="We're always on the lookout for talented developers who are passionate about building a better future."
+                link="/ecosystem/opportunities/jobs"
+                linkText="Find your role"
+                color="#ffbeed"
+                delay="400"
               />
             </div>
           </div>
@@ -163,31 +163,35 @@ export default function Home() {
               <Icon className="inline-block mr-4" name="resources" />
               Resources
             </h2>
-            <p className="text-lg">Additional learning materials provided by the community for the community. </p>
+            <p className="text-lg font-medium">
+              Additional learning materials provided by the community for the community.{' '}
+            </p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
               <Card
                 title="Substrate Seminar"
                 icon="graduation"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Upcoming Events"
-                color="#f8bfdd"
+                description="Get the latest on the cutting-edge of blockchain from developers and projects building on Substrate. Every second Tuesday at 14:00 UTC."
+                link="/ecosystem/resources/seminar"
+                linkText="Join in"
+                color="#d6ffcf"
               />
               <Card
                 title="Awesome Substrate"
                 icon="smile"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Projects"
-                color="#f8bfdd"
+                description="Discover a rich source of content covering everything you need to know to get started, troubleshoot and fine-tune your skills."
+                link="/ecosystem/resources/awesome-substrate"
+                linkText="Dive in"
+                color="#d6ffcf"
+                delay="200"
               />
               <Card
                 title="Community Resources"
                 icon="house"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Now Hiring"
-                color="#f8bfdd"
+                description="One of Substrate's greatest strengths is its thriving and engaged community, who have created an ever-increasing list of resources."
+                link="/ecosystem/resources/community-resources"
+                linkText="Discover more"
+                color="#d6ffcf"
+                delay="400"
               />
             </div>
           </div>
@@ -196,39 +200,44 @@ export default function Home() {
               <Icon className="inline-block mr-4" name="connect" />
               Connect
             </h2>
-            <p className="text-lg">Follow Substrate news and updates; get in touch with other devs in the community.</p>
+            <p className="text-lg font-medium">
+              Follow Substrate news and updates; get in touch with other devs in the community.
+            </p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
               <Card
                 title="Contact"
                 icon="contact"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Upcoming Events"
-                color="#f6fd9d"
+                description="Haven't found what you're looking for?"
+                link="/ecosystem/connect/contact"
+                linkText="Get in touch"
+                color="#ccc8ff"
               />
               <Card
                 title="Events"
                 icon="event"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Projects"
-                color="#f6fd9d"
+                description="In person or online, from meetups to conferences, there are a growing number of events in the ecosystem."
+                link="https://www.parity.io/events/"
+                linkText="Upcoming Events"
+                color="#ccc8ff"
+                delay="200"
               />
               <Card
                 title="Newsletter"
                 icon="paperplane"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Now Hiring"
-                color="#f6fd9d"
+                description="Get the inside view and the latest news popping into your inbox."
+                link="/ecosystem/connect/newsletter"
+                linkText="Sign up"
+                color="#ccc8ff"
+                delay="400"
               />
               <Card
                 title="Blog"
                 icon="pen"
-                description="At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed."
-                link="/"
-                linkText="Projects"
-                color="#f6fd9d"
+                description="Tech, news, hackathons, events, milestones, and more. Follow our blog for detailed info on the latest updates"
+                link="https://parity.io/blog"
+                linkText="Head to the blog"
+                color="#ccc8ff"
+                delay="200"
               />
             </div>
           </div>

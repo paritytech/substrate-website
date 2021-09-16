@@ -7,6 +7,7 @@ import desktop from '../../images/svg/desktop.svg';
 import dollar from '../../images/svg/dollar.svg';
 import builders from '../../images/svg/ecosystem/builders.svg';
 import connect from '../../images/svg/ecosystem/connect.svg';
+import explore from '../../images/svg/ecosystem/explore.svg';
 import opportunities from '../../images/svg/ecosystem/opportunities.svg';
 import resources from '../../images/svg/ecosystem/resources.svg';
 import event from '../../images/svg/event.svg';
@@ -60,6 +61,7 @@ const iconsMap = {
   resources: resources,
   connect: connect,
   builders: builders,
+  explore: explore,
   /* brand */
   'logo-white': logoWhite,
   'w3f-logo': w3fLogo,

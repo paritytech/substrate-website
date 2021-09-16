@@ -38,11 +38,13 @@ export default function BuildersProgram() {
                 substrate
                 <span className="text-substrateGreen">_</span> <br /> builders program
               </h1>
-              <p className="text-lg font-medium">
+              <p className="mb-8 text-lg font-medium leading-relaxed">
                 The Substrate Builders Program directly supports you by bringing you Parity’s extensive resources,
                 taking your Substrate ecosystem project to the next level.
               </p>
-              <PrimaryButton link="/ecosystem/teams">Apply</PrimaryButton>
+              <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
+                Apply
+              </PrimaryButton>
             </div>
           </div>
 
@@ -63,11 +65,11 @@ export default function BuildersProgram() {
 
           <div className="max-w-3xl mx-auto mt-36 mb-44">
             <h2 className="text-center">The program is divided into three tracks</h2>
-            <div className="p-6 my-6 shadow-xl rounded-md dark:bg-substrateBlackish">
-              <h3 className="mb-4">
+            <div className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
+              <h3 className="mb-4 text-2.5xl">
                 <Icon
                   name="chain"
-                  className="inline-block align-top mt-1 mr-1 fill-current text-substrateBlackish dark:text-white"
+                  className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
                 />{' '}
                 Chains track
               </h3>
@@ -77,11 +79,11 @@ export default function BuildersProgram() {
               <p className="m-0">(independent chains, parachains and parathreads)</p>
             </div>
 
-            <div className="p-6 my-6 shadow-xl rounded-md dark:bg-substrateBlackish">
-              <h3 className="mb-4">
+            <div className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
+              <h3 className="mb-4 text-2.5xl">
                 <Icon
                   name="layers"
-                  className="inline-block align-top mt-1 mr-1 fill-current text-substrateBlackish dark:text-white"
+                  className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
                 />{' '}
                 Infrastructure track
               </h3>
@@ -94,11 +96,11 @@ export default function BuildersProgram() {
               </p>
             </div>
 
-            <div className="p-6 my-6 shadow-xl rounded-md dark:bg-substrateBlackish">
-              <h3 className="mb-4">
+            <div className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
+              <h3 className="mb-4 text-2.5xl">
                 <Icon
                   name="computer"
-                  className="inline-block align-top mt-1 mr-1 fill-current text-substrateBlackish dark:text-white"
+                  className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
                 />{' '}
                 Application Track
               </h3>
@@ -275,13 +277,10 @@ export default function BuildersProgram() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14">
               <div>
-                <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
-                  Technical support:
-                </h3>
-                <div className="relative pl-11 lg:pr-16">
-                  <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
-                  <ul>
+                <h3 className="mt-16 lg:mt-24 mb-4">Technical support:</h3>
+                <div className="relative pl-12 lg:pr-16">
+                  <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen rounded"></div>
+                  <ul className="benefits-list">
                     <li>
                       <span className="font-bold">Category-specific chat support with other program members</span> of
                       the same category and category-expert engineers to collaborate and ask questions.
@@ -300,13 +299,10 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
-                  Community support:
-                </h3>
-                <div className="relative pl-11 lg:pr-16">
+                <h3 className="mt-16 lg:mt-24 mb-4">Community support:</h3>
+                <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
-                  <ul>
+                  <ul className="benefits-list">
                     <li>
                       Collaboration on <span className="font-bold">events, meetups, and webinars</span>
                     </li>
@@ -320,13 +316,10 @@ export default function BuildersProgram() {
                 </div>
               </div>
               <div>
-                <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
-                  Community funding:
-                </h3>
-                <div className="relative pl-11 lg:pr-16">
+                <h3 className="mt-16 lg:mt-24 mb-4">Community funding:</h3>
+                <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
-                  <ul>
+                  <ul className="benefits-list">
                     <li>
                       Support in helping your project navigate the{' '}
                       <span className="font-bold">Polkadot Network Treasury and Web3 Foundation Grants processes</span>
@@ -334,13 +327,10 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
-                  Ecosystem support:
-                </h3>
-                <div className="relative pl-11 lg:pr-16">
+                <h3 className="mt-16 lg:mt-24 mb-4">Ecosystem support:</h3>
+                <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
-                  <ul>
+                  <ul className="benefits-list">
                     <li>
                       <span className="font-bold">Introductions to relevant blockchain ecosystem players</span>{' '}
                       (clients, users, partners, etc.)
@@ -356,13 +346,10 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4">
-                  <Icon className="inline-block mr-4 -ml-px w-4" name="builders" />
-                  Strategy feedback:
-                </h3>
-                <div className="relative pl-11 lg:pr-16">
+                <h3 className="mt-16 lg:mt-24 mb-4">Strategy feedback:</h3>
+                <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
-                  <ul>
+                  <ul className="benefits-list">
                     <li>
                       <span className="font-bold">Regular individual check-ins</span> with every member team (6 week
                       cycles) to understand roadmap and get feedback
@@ -375,7 +362,9 @@ export default function BuildersProgram() {
               <p className="text-xl font-bold mt-14">
                 As a builder, you will receive Parity’s support in a systematic manner
               </p>
-              <PrimaryButton link="/ecosystem/teams">Apply</PrimaryButton>
+              <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
+                Apply
+              </PrimaryButton>
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 mt-36 mb-44">
@@ -401,7 +390,9 @@ export default function BuildersProgram() {
                 that developers can enroll in. Much of what this program offers, such as technical support and
                 invitations to Polkadot branded events, cannot be offered by an external program.
               </p>
-              <PrimaryButton link="/ecosystem/teams">Apply</PrimaryButton>
+              <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
+                Apply
+              </PrimaryButton>
             </div>
             <div className="hidden lg:block lg:col-span-6 lg:col-start-7 aspect-w-6 aspect-h-9">
               <div className="bg-gray-200 hidden lg:block">Image</div>

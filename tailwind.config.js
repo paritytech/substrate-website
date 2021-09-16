@@ -41,6 +41,7 @@ module.exports = {
         substrateSubtleGrey: '#E0E0E0',
       },
       fontSize: {
+        '2.5xl': ['1.75rem', { lineHeight: '1.2' }],
         '7xl': ['5rem', { lineHeight: '1' }],
       },
     },
