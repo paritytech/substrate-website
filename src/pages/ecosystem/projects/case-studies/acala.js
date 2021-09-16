@@ -12,6 +12,7 @@ import Tag from '../../../../components/ui/Tag';
 
 export default function acala({ data }) {
   const acalaData = teamsData.teams.find(team => team.name === 'Acala Network');
+  console.log(acalaData);
   const logo = getImage(data.logo);
   return (
     <Layout>
@@ -28,13 +29,21 @@ export default function acala({ data }) {
         <div className="text-lg md:text-xl">Community, Forkless, Interoperable</div>
         <div className="my-10">
           <div className="mb-3 md:inline-flex">
-            {/* <div className="mr-8 flex">
-              <div className="tracking-wider uppercase mr-3">Tag:</div>
-              <div>{acalaData.tag}</div>
-            </div> */}
             <div className="mr-8 flex">
               <div className="tracking-wider uppercase  mr-3">type:</div>
-              <div>Substrate Builders Program</div>
+              <div>
+                {acalaData.types
+                  .filter(e => e != 'All Teams')
+                  .map((e, i) => {
+                    const lastIndex = acalaData.types.filter(e => e != 'All Teams').length - 1;
+                    return (
+                      <span key={i}>
+                        {e}
+                        {lastIndex != i && `, `}
+                      </span>
+                    );
+                  })}
+              </div>
             </div>
             <div className="flex">
               <div className="tracking-wider uppercase mr-3">Industry:</div>
@@ -42,8 +51,7 @@ export default function acala({ data }) {
                 {acalaData.category
                   .filter(e => e != 'All')
                   .map((e, i) => {
-                    const arr = acalaData.category.filter(e => e != 'All');
-                    const lastIndex = arr.length - 1;
+                    const lastIndex = acalaData.category.filter(e => e != 'All').length - 1;
                     return (
                       <span key={i}>
                         {e}

@@ -30,28 +30,44 @@ export default function TeamModal(props) {
                 <Icon name="external-link" className="h-4 w-4 ml-4 fill-current text-substrateDark dark:text-white" />
               </div>
             </a>
-            <img
-              className="h-[110px] w-[110px] p-0.5 object-contain my-6 dark:bg-gray-300 rounded-full"
-              src={thisLogo.node.publicURL}
-            />
+            {thisLogo && (
+              <img
+                className="h-[110px] w-[110px] p-0.5 object-contain my-6 dark:bg-gray-300 rounded-full"
+                src={thisLogo.node.publicURL}
+              />
+            )}
             <div className="mb-4">
-              <div className="text-sm mb-1">
-                <span className="tracking-wider uppercase">Type:</span> Substrate Builders Program
+              <div className="text-sm mb-1 flex">
+                <div className="tracking-wider uppercase mr-2">Type:</div>
+                <div>
+                  {team.types
+                    .filter(e => e != 'All Teams')
+                    .map((type, index) => {
+                      const lastIndex = team.types.filter(e => e != 'All Teams').length - 1;
+                      return (
+                        <span key={index}>
+                          {type}
+                          {lastIndex != index && `, `}
+                        </span>
+                      );
+                    })}
+                </div>
               </div>
-              <div className="text-sm">
-                <span className="tracking-wider uppercase">Industry:</span>{' '}
-                {team.category
-                  .filter(e => e != 'All')
-                  .map((e, i) => {
-                    const arr = team.category.filter(e => e != 'All');
-                    const lastIndex = arr.length - 1;
-                    return (
-                      <span key={i}>
-                        {e}
-                        {lastIndex != i && `, `}
-                      </span>
-                    );
-                  })}
+              <div className="text-sm flex">
+                <div className="tracking-wider uppercase mr-2">Industry:</div>{' '}
+                <div>
+                  {team.category
+                    .filter(e => e != 'All')
+                    .map((e, i) => {
+                      const lastIndex = team.category.filter(e => e != 'All').length - 1;
+                      return (
+                        <span key={i}>
+                          {e}
+                          {lastIndex != i && `, `}
+                        </span>
+                      );
+                    })}
+                </div>
               </div>
             </div>
             <p>{team.description}</p>

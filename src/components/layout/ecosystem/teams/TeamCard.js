@@ -25,10 +25,12 @@ export default function TeamCard(props) {
       )}
     >
       <h4 className="mb-4">{team.name}</h4>
-      <img
-        className="h-[110px] w-[110px] p-0.5 object-contain mb-6 dark:bg-gray-300 rounded-full"
-        src={logo.node.publicURL}
-      />
+      {logo && (
+        <img
+          className="h-[110px] w-[110px] p-0.5 object-contain mb-6 dark:bg-gray-300 rounded-full"
+          src={logo.node.publicURL}
+        />
+      )}
       <p className="mb-6 lg:mb-10 h-[78px]">
         {team.caseStudy ? (
           <>
