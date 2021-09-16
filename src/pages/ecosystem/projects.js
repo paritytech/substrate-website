@@ -11,7 +11,7 @@ import SEO from '../../components/site/SEO';
 import useComponentVisible from '../../hooks/use-component-visible';
 import useWindowSize from '../../hooks/use-window-size';
 
-export default function Teams({ data }) {
+export default function Projects({ data }) {
   const { types, categories, teams } = teamsData;
   const { logos } = data;
   const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
@@ -35,8 +35,8 @@ export default function Teams({ data }) {
         <h3>_HeroSection</h3>
       </section>
       <section className="container px-6 mb-20">
-        <h2 id="teams" className="mb-8 scroll-margin-top-100">
-          Teams
+        <h2 id="projects" className="mb-8 scroll-margin-top-100">
+          Projects
         </h2>
         <TypeFilter types={types} curType={curType} setCurType={setCurType} />
         <CatFilter categories={categories} curCat={curCat} setCurCat={setCurCat} />

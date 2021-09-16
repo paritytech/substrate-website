@@ -2,13 +2,13 @@ import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-import teamsData from '../../../../../data/teams.json';
-import { Link } from '../../../..//components/default/Link';
-import Icon from '../../../../components/default/Icon';
-import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
-import Layout from '../../../../components/site/Layout';
-import SEO from '../../../../components/site/SEO';
-import Tag from '../../../../components/ui/Tag';
+import teamsData from '../../../../data/teams.json';
+import Icon from '../../../components/default/Icon';
+import { Link } from '../../../components/default/Link';
+import Blockqoute from '../../../components/layout/ecosystem/case-studies/Blockqoute';
+import Layout from '../../../components/site/Layout';
+import SEO from '../../../components/site/SEO';
+import Tag from '../../../components/ui/Tag';
 
 export default function acala({ data }) {
   const acalaData = teamsData.teams.find(team => team.name === 'Acala Network');
@@ -28,11 +28,15 @@ export default function acala({ data }) {
         <div className="text-lg md:text-xl">Community, Forkless, Interoperable</div>
         <div className="my-10">
           <div className="mb-3 md:inline-flex">
-            <div className="mr-8 flex">
+            {/* <div className="mr-8 flex">
               <div className="tracking-wider uppercase mr-3">Tag:</div>
               <div>{acalaData.tag}</div>
-            </div>
+            </div> */}
             <div className="mr-8 flex">
+              <div className="tracking-wider uppercase  mr-3">type:</div>
+              <div>Substrate Builders Program</div>
+            </div>
+            <div className="flex">
               <div className="tracking-wider uppercase mr-3">Industry:</div>
               <div>
                 {acalaData.category
@@ -48,10 +52,6 @@ export default function acala({ data }) {
                     );
                   })}
               </div>
-            </div>
-            <div className="flex">
-              <div className="tracking-wider uppercase  mr-3">Category:</div>
-              <div>Substrate Builders Program</div>
             </div>
           </div>
           <div className="flex items-center">
@@ -209,9 +209,9 @@ export default function acala({ data }) {
           </li>
         </ul>
         <div id="result" className="flex items-center mt-10 mb-6">
-          <h2 className="mb-0">Runtime&Pallets</h2>
+          <h2 className="mb-0">Runtimes&Pallets</h2>
         </div>
-        <span className="tracking-wider uppercase">Substrate Elements:</span>
+        <span className="tracking-wider uppercase">Substrate Runtimes:</span>
         <div className="flex flex-wrap mb-16">
           {acalaData.runtimes.map((runtime, index) => {
             return (
@@ -222,13 +222,17 @@ export default function acala({ data }) {
           })}
         </div>
         <h4>More Case Studies</h4>
-        <div className="underline-animate text-substrateBlue font-bold">
-          <Link to="#">Moonbeam Case Study</Link>
+        <div className="underline-animate text-substrateBlue font-bold leading-8">
+          <div className="block">
+            <Link to="#">Moonbeam Case Study</Link>
+          </div>
+          <div className="block">
+            <Link to="#">Phala Case Study</Link>
+          </div>
           <br />
-          <Link to="#">Phala Case Study</Link>
-          <br />
-          <br />
-          <Link to="/ecosystem/teams">See All Teams</Link>
+          <div className="block">
+            <Link to="/ecosystem/teams">See All Teams</Link>
+          </div>
         </div>
       </article>
     </Layout>

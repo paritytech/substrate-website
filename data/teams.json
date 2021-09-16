@@ -9,7 +9,7 @@
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
       "description": "Acala is a decentralized stablecoin platform that powers cross-blockchain open finance applications.",
-      "caseStudy": "case-studies/acala",
+      "caseStudy": "/ecosystem/case-studies/acala",
       "runtimes": [
         {
           "title":"acala-runtime",

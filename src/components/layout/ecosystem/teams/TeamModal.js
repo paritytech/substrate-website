@@ -57,7 +57,7 @@ export default function TeamModal(props) {
             <p>{team.description}</p>
             {team.runtimes && (
               <div className="mb-6">
-                <div className="text-sm tracking-wider uppercase">Runtimes:</div>
+                <div className="text-sm tracking-wider uppercase">Substrate Runtimes:</div>
                 <div className="flex flex-wrap">
                   {team.runtimes.map((runtime, index) => (
                     <div key={index}>
