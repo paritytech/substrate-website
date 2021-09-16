@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import { Link } from 'gatsby-plugin-react-i18next';
 import React from 'react';
-import Lottie from 'react-lottie';
 
 import Icon from '../../components/default/Icon';
 import Article from '../../components/layout/Article';
@@ -10,18 +9,8 @@ import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import PrimaryButton from '../../components/ui/PrimaryButton';
 import SecondaryButton from '../../components/ui/SecondaryButton';
-import * as animationData from '../../images/animation/ecosystem/future-proof.json';
 
 export default function BuildersProgram() {
-  const animationOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  };
-
   return (
     <Layout mode="full">
       <SEO title="Substrate Builders Program" />
@@ -30,7 +19,7 @@ export default function BuildersProgram() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
             <div className="lg:col-start-2">
               <div className="aspect-w-5 aspect-h-3">
-                <Lottie options={animationOptions} />
+                <div className="bg-gray-200">Illustration</div>
               </div>
             </div>
             <div className="lg:col-start-1 lg:row-start-1">
