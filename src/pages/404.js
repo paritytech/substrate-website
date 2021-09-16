@@ -13,7 +13,7 @@ export default function NotFoundPage() {
     <Layout>
       <SEO title={t('404.title')} />
       <Section>
-        <div className="w-2/3 mx-auto mt-32 text-center self-center">
+        <div className="w-2/3 mx-auto mt-10 text-center self-center">
           <h1 className="mb-10 four-oh-four-title text-9xl xl:text-four-oh-four">{t('404.title')}</h1>
           <h2 className="text-4xl mb-10 font-bold">{t('404.message')}</h2>
           <PrimaryButton onClick={() => navigate(-1)}>Go back</PrimaryButton>
