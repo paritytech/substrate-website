@@ -1319,6 +1319,15 @@
       "types": ["All Teams", "Enterprise-ready"],
       "tag": "Chain",
       "description": "zCloak Network provides Zero-Knowledge Proof as a Service for public blockchains."
+    },
+    {  
+      "name": "Energy Web Foundation",
+      "link": "https://www.energyweb.org/",
+      "category":["Infrastructure", "All"],
+      "types": ["All Teams", "Enterprise-ready"],
+      "tag": "Chain",
+      "description": "Energy Web is accelerating a low-carbon, customer-centric electricity system by enabling any energy asset owned by any customer to participate in any energy market."
     }
+
     ]
 }
