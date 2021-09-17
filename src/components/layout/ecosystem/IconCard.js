@@ -4,7 +4,7 @@ import Icon from '../../default/Icon';
 import { Link } from '../../default/Link';
 import LineArrowButton from '../../ui/LineArrowButton';
 
-const Card = ({ title, description, link, delay, icon, color, linkText }) => {
+const IconCard = ({ title, description, link, delay, icon, color, linkText }) => {
   let titleIcon;
   if (icon) {
     titleIcon = <Icon name={icon} className="inline-block mr-3 fill-current text-substrateBlackish dark:text-white" />;
@@ -34,4 +34,4 @@ const Card = ({ title, description, link, delay, icon, color, linkText }) => {
   );
 };
 
-export default Card;
+export default IconCard;

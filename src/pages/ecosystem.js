@@ -5,7 +5,7 @@ import ModalVideo from 'react-modal-video';
 
 import Icon from '../components/default/Icon';
 import Article from '../components/layout/Article';
-import Card from '../components/layout/ecosystem/Card';
+import IconCard from '../components/layout/ecosystem/IconCard';
 import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
@@ -152,7 +152,7 @@ export default function Home() {
             </h2>
             <p className="md:text-lg font-medium">Jump start your project or your career in the blockchain space</p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <Card
+              <IconCard
                 title="Hackathons"
                 icon="hackathons"
                 description="Ready for the challenge? Build, create, and hack to your heart's content."
@@ -160,7 +160,7 @@ export default function Home() {
                 linkText="Join a hackathon"
                 color="#ffbeed"
               />
-              <Card
+              <IconCard
                 title="Grants"
                 icon="dollar"
                 description="Got an idea that's ready to go? Web3 Foundation supports development work contributing to the Web3 goal."
@@ -169,7 +169,7 @@ export default function Home() {
                 color="#ffbeed"
                 delay="200"
               />
-              <Card
+              <IconCard
                 title="Jobs"
                 icon="desktop"
                 description="We're always on the lookout for talented developers who are passionate about building a better future."
@@ -192,7 +192,7 @@ export default function Home() {
               Additional learning materials provided by the community for the community.{' '}
             </p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <Card
+              <IconCard
                 title="Substrate Seminar"
                 icon="graduation"
                 description="Get the latest on the cutting-edge of blockchain from developers and projects building on Substrate. Every second Tuesday at 14:00 UTC."
@@ -200,7 +200,7 @@ export default function Home() {
                 linkText="Join in"
                 color="#d6ffcf"
               />
-              <Card
+              <IconCard
                 title="Awesome Substrate"
                 icon="smile"
                 description="Discover a rich source of content covering everything you need to know to get started, troubleshoot and fine-tune your skills."
@@ -209,7 +209,7 @@ export default function Home() {
                 color="#d6ffcf"
                 delay="200"
               />
-              <Card
+              <IconCard
                 title="Community Resources"
                 icon="house"
                 description="One of Substrate's greatest strengths is its thriving and engaged community, who have created an ever-increasing list of resources."
@@ -232,7 +232,7 @@ export default function Home() {
               Follow Substrate news and updates; get in touch with other devs in the community.
             </p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <Card
+              <IconCard
                 title="Contact"
                 icon="contact"
                 description="Haven't found what you're looking for?"
@@ -240,7 +240,7 @@ export default function Home() {
                 linkText="Get in touch"
                 color="#ccc8ff"
               />
-              <Card
+              <IconCard
                 title="Events"
                 icon="event"
                 description="In person or online, from meetups to conferences, there are a growing number of events in the ecosystem."
@@ -249,7 +249,7 @@ export default function Home() {
                 color="#ccc8ff"
                 delay="200"
               />
-              <Card
+              <IconCard
                 title="Newsletter"
                 icon="paperplane"
                 description="Get the inside view and the latest news popping into your inbox."
@@ -258,7 +258,7 @@ export default function Home() {
                 color="#ccc8ff"
                 delay="400"
               />
-              <Card
+              <IconCard
                 title="Blog"
                 icon="pen"
                 description="Tech, news, hackathons, events, milestones, and more. Follow our blog for detailed info on the latest updates"
