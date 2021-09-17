@@ -3,6 +3,8 @@ import React from 'react';
 
 import Icon from '../../components/default/Icon';
 import Article from '../../components/layout/Article';
+import BorderCard from '../../components/layout/ecosystem/BorderCard';
+import ColorCard from '../../components/layout/ecosystem/ColorCard';
 import Section from '../../components/layout/Section';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
@@ -104,105 +106,71 @@ export default function BuildersProgram() {
               <div className="col-span-2 lg:col-span-1 grid lg:grid-cols-7 grid-rows-7 lg:grid-rows-1 gap-12">
                 <div className="relative flex flex-col justify-center lg:col-start-4 row-start-4 lg:row-start-1 font-bold overflow-visible text-sm xl:text-base">
                   <div className="absolute rounded-md border-dashed border-2 border-gray-200 -inset-x-2 lg:-inset-x-4 inset-y-4 lg:inset-y-8"></div>
-                  <div className="relative z-10 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center">
-                    Builder
-                  </div>
-                  <div className="relative z-10 mt-4 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center 2xl:tracking-wider uppercase">
-                    Level 1
-                  </div>
+                  <BorderCard className="mb-4">Builder</BorderCard>
+                  <BorderCard>
+                    <span className="uppercase">Level 1</span>
+                  </BorderCard>
                 </div>
                 <div className="relative flex flex-col justify-center lg:col-start-5 row-start-5 lg:row-start-1 font-bold overflow-visible text-sm xl:text-base">
                   <div className="absolute rounded-md border-dashed border-2 border-gray-200 -inset-x-2 lg:-inset-x-4 inset-y-4 lg:inset-y-8"></div>
-                  <div className="relative z-10 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center">
-                    Builder
-                  </div>
-                  <div className="relative z-10 mt-4 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center 2xl:tracking-wider uppercase">
-                    Level 2
-                  </div>
+                  <BorderCard className="mb-4">Builder</BorderCard>
+                  <BorderCard>
+                    <span className="uppercase">Level 2</span>
+                  </BorderCard>
                 </div>
                 <div className="relative flex flex-col justify-center lg:col-start-6 row-start-6 lg:row-start-1 font-bold overflow-visible text-sm xl:text-base">
                   <div className="absolute rounded-md border-dashed border-2 border-gray-200 -inset-x-2 lg:-inset-x-4 inset-y-4 lg:inset-y-8"></div>
-                  <div className="relative z-10 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center">
-                    Build
-                  </div>
-                  <div className="relative z-10 mt-4 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center 2xl:tracking-wider uppercase">
-                    Completed
-                  </div>
+                  <BorderCard className="mb-4">Build</BorderCard>
+                  <BorderCard>
+                    <span className="uppercase">Completed</span>
+                  </BorderCard>
                 </div>
               </div>
               <div className="col-span-3 lg:col-span-1 grid lg:grid-cols-7 grid-rows-7 lg:grid-rows-1 gap-12">
                 <div className="flex-1 relative row-start-1 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Application</span>
-                    </div>
-                  </div>
+                  <ColorCard>Application</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-2 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Evaluation</span>
-                    </div>
-                  </div>
+                  <ColorCard>Evaluation</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-3 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>SBP Commitee</span>
-                    </div>
-                  </div>
+                  <ColorCard>SBP Commitee</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-4 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Milestone 1</span>
-                    </div>
-                  </div>
+                  <ColorCard>Milestone 1</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-5 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Milestone 2</span>
-                    </div>
-                  </div>
+                  <ColorCard>Milestone 2</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-6 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Milestone 3</span>
-                    </div>
-                  </div>
+                  <ColorCard>Milestone 3</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-7 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Launch Support</span>
-                    </div>
-                  </div>
+                  <ColorCard>Launch Support</ColorCard>
                 </div>
               </div>
               <div className="col-span-2 lg:col-span-1 grid lg:grid-cols-7 grid-rows-7 lg:grid-rows-1 gap-12">
@@ -218,7 +186,7 @@ export default function BuildersProgram() {
                     <span>I</span>
                     <span>O</span>
                     <span>N</span>
-                    <span></span>
+                    <span> </span>
                     <span>P</span>
                     <span>H</span>
                     <span>A</span>
@@ -226,7 +194,7 @@ export default function BuildersProgram() {
                     <span>E</span>
                   </div>
                 </div>
-                <div className="flex justify-center items-center p-4 row-start-4 lg:row-start-1 row-span-3 lg:row-span-1 col-span-full lg:col-span-3 rounded-md border-2 border-dashed border-gray-200">
+                <div className="flex justify-center items-center p-4 row-start-4 lg:row-start-1 lg:col-start-4 row-span-3 lg:row-span-1 col-span-full lg:col-span-3 rounded-md border-2 border-dashed border-gray-200">
                   <div className="spaced-out-text">
                     <span>B</span>
                     <span>U</span>
@@ -236,7 +204,7 @@ export default function BuildersProgram() {
                     <span>I</span>
                     <span>N</span>
                     <span>G</span>
-                    <span></span>
+                    <span> </span>
                     <span>P</span>
                     <span>H</span>
                     <span>A</span>
