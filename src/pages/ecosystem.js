@@ -76,9 +76,11 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:col-span-5 lg:col-start-1 lg:row-start-1">
-              <h1 className="mb-6">Substrate Teams</h1>
-              <h3 className="mb-6 font-medium lg:pr-4">More than 150 teams are building on Substrate</h3>
-              <p className="mb-8 text-lg font-medium leading-relaxed">
+              <h1 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">Substrate Teams</h1>
+              <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">
+                More than 150 teams are building on Substrate
+              </h3>
+              <p className="mb-8 md:text-lg font-medium leading-relaxed">
                 Some of the most exciting projects in decentralized tech are building on Substrate, including
                 parachains, independent layer-1 blockchains, and infrastructure and tooling solutions for a wide range
                 of use cases.
@@ -118,9 +120,12 @@ export default function Home() {
               <div>Foto</div>
             </div>
             <div className="lg:col-start-1">
-              <h2 className="h1">Substrate Builders Program</h2>
-              <h3>Accelerate Your Project</h3>
-              <p className="text-lg font-medium">
+              <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                Substrate
+                <br /> Builders Program
+              </h2>
+              <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Accelerate Your Project</h3>
+              <p className="md:text-lg font-medium">
                 The Substrate Builders Program directly supports you by bringing you Parity’s extensive resources,
                 taking your Substrate ecosystem project to the next level.
               </p>
@@ -137,15 +142,15 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:row-start-1 lg:col-span-2 mb-11">
-              <h2 className="h1">Explore the Ecosystem</h2>
+              <h2 className="mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold">Explore the Ecosystem</h2>
             </div>
           </div>
           <div>
-            <h2 className="font-extrabold">
+            <h2 className="font-extrabold mb-4 text-3xl lg:text-4xl">
               <Icon className="inline-block mr-4" name="opportunities" />
               Opportunities
             </h2>
-            <p className="text-lg font-medium">Jump start your project or your career in the blockchain space</p>
+            <p className="md:text-lg font-medium">Jump start your project or your career in the blockchain space</p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
               <Card
                 title="Hackathons"
@@ -179,7 +184,7 @@ export default function Home() {
 
         <Section>
           <div>
-            <h2 className="font-extrabold">
+            <h2 className="font-extrabold mb-4 text-3xl lg:text-4xl">
               <Icon className="inline-block mr-4" name="resources" />
               Resources
             </h2>
@@ -219,7 +224,7 @@ export default function Home() {
 
         <Section>
           <div>
-            <h2 className="font-extrabold">
+            <h2 className="font-extrabold mb-4 text-3xl lg:text-4xl">
               <Icon className="inline-block mr-4" name="connect" />
               Connect
             </h2>
