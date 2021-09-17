@@ -3,7 +3,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
-// import { Link } from '../components/default/Link';
 import Icon from '../components/default/Icon';
 import Article from '../components/layout/Article';
 import Card from '../components/layout/ecosystem/Card';
@@ -12,6 +11,33 @@ import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import PrimaryButton from '../components/ui/PrimaryButton';
 import { isBrowser } from '../utils/browser';
+
+const logos = [
+  {
+    logo: 'Logo 1',
+    alt: 'Logo 7',
+  },
+  {
+    logo: 'Logo 2',
+    alt: 'Logo 8',
+  },
+  {
+    logo: 'Logo 3',
+    alt: 'Logo 9',
+  },
+  {
+    logo: 'Logo 4',
+    alt: 'Logo 10',
+  },
+  {
+    logo: 'Logo 5',
+    alt: 'Logo 11',
+  },
+  {
+    logo: 'Logo 6',
+    alt: 'Logo 12',
+  },
+];
 
 export default function Home() {
   const [modalIsOpen, modalSetOpen] = useState(false);
@@ -38,30 +64,15 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-11 gap-8 lg:gap-16">
             <div className="lg:col-span-6 lg:col-start-6">
               <div className="grid grid-cols-3 gap-6 ecosystem-home-anim">
-                <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 1</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 7</div>
-                </div>
-                <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 2</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 8</div>
-                </div>
-                <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 3</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 9</div>
-                </div>
-                <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 4</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 10</div>
-                </div>
-                <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 5</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 11</div>
-                </div>
-                <div className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item">
-                  <div className="ecosystem-home-anim__logo">Logo 6</div>
-                  <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">Logo 12</div>
-                </div>
+                {logos.map(({ logo, alt }, idx) => (
+                  <div
+                    key={idx}
+                    className="shadow-xl aspect-w-1 aspect-h-1 transition-transform rounded-md bg-white dark:bg-substrateBlackish ecosystem-home-anim__item"
+                  >
+                    <div className="ecosystem-home-anim__logo">{logo}</div>
+                    <div className="ecosystem-home-anim__logo ecosystem-home-anim__logo--alternative">{alt}</div>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="lg:col-span-5 lg:col-start-1 lg:row-start-1">
@@ -75,7 +86,9 @@ export default function Home() {
               <PrimaryButton link="/ecosystem/teams">View Teams</PrimaryButton>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <div
             onClick={() => modalSetOpen(true)}
             className="mt-32 mb-44 aspect-w-4 aspect-h-3 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-12 lg:aspect-h-5 bg-substrateDark rounded-md shadow-xl hover:scale-105 transition-transform cursor-pointer"
@@ -97,7 +110,9 @@ export default function Home() {
               />
             </div>
           </div>
+        </Section>
 
+        <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
             <div className="aspect-w-7 aspect-h-5 bg-gray-200 row-start-1 lg:col-start-2">
               <div>Foto</div>
@@ -112,7 +127,9 @@ export default function Home() {
               <PrimaryButton link="/ecosystem/teams">Learn More</PrimaryButton>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-start-3 relative hidden lg:block">
               <div className="absolute top-12 -right-20 w-full aspect-w-1 aspect-h-1">
@@ -158,6 +175,9 @@ export default function Home() {
               />
             </div>
           </div>
+        </Section>
+
+        <Section>
           <div>
             <h2 className="font-extrabold">
               <Icon className="inline-block mr-4" name="resources" />
@@ -195,6 +215,9 @@ export default function Home() {
               />
             </div>
           </div>
+        </Section>
+
+        <Section>
           <div>
             <h2 className="font-extrabold">
               <Icon className="inline-block mr-4" name="connect" />

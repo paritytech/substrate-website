@@ -2,6 +2,7 @@ import React from 'react';
 
 import Icon from '../../default/Icon';
 import { Link } from '../../default/Link';
+import LineArrowButton from '../../ui/LineArrowButton';
 
 const Card = ({ title, description, link, delay, icon, color, linkText }) => {
   let titleIcon;
@@ -24,14 +25,9 @@ const Card = ({ title, description, link, delay, icon, color, linkText }) => {
             ></div>
             {description}
           </p>
-          <div className="absolute bottom-8">
-            <p className="font-bold border-b-2 border-black dark:border-white inline hover:mr-1 transition-all">
-              {linkText}
-            </p>{' '}
-            <span className="fill-current border-b-0 text-black dark:text-white inline-block">
-              <Icon name="arrow-more" />
-            </span>
-          </div>
+          <LineArrowButton className="absolute bottom-8" link={link}>
+            {linkText}
+          </LineArrowButton>
         </div>
       </div>
     </Link>
