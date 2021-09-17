@@ -129,7 +129,7 @@ export default function Home() {
                 The Substrate Builders Program directly supports you by bringing you Parity’s extensive resources,
                 taking your Substrate ecosystem project to the next level.
               </p>
-              <PrimaryButton link="/ecosystem/teams">Learn More</PrimaryButton>
+              <PrimaryButton link="/ecosystem/substrate-builders-program">Learn More</PrimaryButton>
             </div>
           </div>
         </Section>
