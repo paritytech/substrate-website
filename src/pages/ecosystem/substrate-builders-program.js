@@ -48,7 +48,7 @@ export default function BuildersProgram() {
               </div>
             </div>
             <div className="lg:col-start-1 lg:row-start-1">
-              <h1 className="mb-6">
+              <h1 className="mb-6 font-extrabold text-4xl md:text-5xl lg:text-6xl">
                 substrate
                 <span className="text-substrateGreen">_</span> <br /> builders program
               </h1>
@@ -69,7 +69,7 @@ export default function BuildersProgram() {
               <div>Foto</div>
             </div>
             <div className="lg:col-start-1 flex justify-center flex-col">
-              <h2>Who The Program Is For</h2>
+              <h2 className="font-bold mb-4 text-3xl md:text-4xl">Who The Program Is For</h2>
               <p>
                 The Substrate Builders Program identifies, supports and mentors current and potential Substrate-related
                 projects. If you are a visionary builder who is considering or already developing a project in the
@@ -82,17 +82,19 @@ export default function BuildersProgram() {
 
         <Section>
           <div className="max-w-3xl mx-auto mt-36 mb-44">
-            <h2 className="text-center">The program is divided into three tracks</h2>
+            <h2 className="text-center font-bold mb-4 text-3xl md:text-4xl">
+              The program is divided into three tracks
+            </h2>
             {tracks.map(({ title, description, details, icon }, idx) => (
               <div key={idx} className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
-                <h3 className="mb-4 text-2.5xl">
+                <h3 className="mb-4 text-xl md:text-2.5xl font-bold">
                   <Icon
                     name={icon}
                     className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
                   />{' '}
                   {title}
                 </h3>
-                <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">{description}</p>
+                <p className="m-0 mb-1 text-substrateGreen text-lg md:text-xl font-bold">{description}</p>
                 <p className="m-0">{details}</p>
               </div>
             ))}
@@ -101,7 +103,7 @@ export default function BuildersProgram() {
 
         <Section>
           <div className="mt-36 mb-44">
-            <h2 className="text-center mb-12">Builders Program Process</h2>
+            <h2 className="text-center mb-12 font-bold text-3xl md:text-4xl">Builders Program Process</h2>
             <div className="grid grid-cols-7 lg:grid-cols-1 gap-8 mx-auto max-w-lg lg:max-w-full">
               <div className="col-span-2 lg:col-span-1 grid lg:grid-cols-7 grid-rows-7 lg:grid-rows-1 gap-12">
                 <div className="relative flex flex-col justify-center lg:col-start-4 row-start-4 lg:row-start-1 font-bold overflow-visible text-sm xl:text-base">
@@ -220,10 +222,7 @@ export default function BuildersProgram() {
         <Section>
           <div className="mt-36 mb-44">
             <div className="max-w-screen-md">
-              <h2 className="font-extrabold">
-                <Icon className="inline-block mr-4" name="builders" />
-                Substrate Builders Program Benefits
-              </h2>
+              <h2 className="font-bold mb-4 text-3xl md:text-4xl">Substrate Builders Program Benefits</h2>
               <p className="text-lg font-medium">
                 As a builder, you will receive Parity’s support in a systematic manner, including comprehensive support
                 in the following areas: As a builder,
@@ -231,7 +230,7 @@ export default function BuildersProgram() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14">
               <div>
-                <h3 className="mt-16 lg:mt-24 mb-4">Technical support:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Technical support:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -253,7 +252,7 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4">Community support:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Community support:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -270,7 +269,7 @@ export default function BuildersProgram() {
                 </div>
               </div>
               <div>
-                <h3 className="mt-16 lg:mt-24 mb-4">Community funding:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Community funding:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -281,7 +280,7 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4">Ecosystem support:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Ecosystem support:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -300,7 +299,7 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4">Strategy feedback:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Strategy feedback:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -326,14 +325,16 @@ export default function BuildersProgram() {
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 mt-36 mb-44">
             <div className="lg:col-span-5">
-              <h2>FAQ</h2>
-              <h4 className="mb-5">Is this support offering exclusive to members of the program?</h4>
+              <h2 className="font-bold mb-4 text-3xl md:text-4xl">FAQ</h2>
+              <h4 className="mb-5 font-bold text-lg md:text-2xl">
+                Is this support offering exclusive to members of the program?
+              </h4>
               <p className="mb-10">
                 While nearly everything in the program is in principle available to any team building in the Substrate
                 ecosystem, the Substrate Builders Program guides teams through the available support in a structured
                 manner.
               </p>
-              <h4 className="mb-5">
+              <h4 className="mb-5 font-bold text-lg md:text-2xl">
                 How is the Substrate Builders Program different from the Web3 Foundation Grants Program?
               </h4>
               <p className="mb-10">
@@ -341,7 +342,9 @@ export default function BuildersProgram() {
                 on more comprehensive support throughout a project’s lifecycle. W3F grant recipients are also welcome to
                 apply to the Builders Program!
               </p>
-              <h4 className="mb-5">Is the Substrate Builders Program an acceleration or incubation program?</h4>
+              <h4 className="mb-5 font-bold text-lg md:text-2xl">
+                Is the Substrate Builders Program an acceleration or incubation program?
+              </h4>
               <p className="mb-14">
                 No, the Substrate Builders Program is complementary to any external accelerator or incubator program
                 that developers can enroll in. Much of what this program offers, such as technical support and
