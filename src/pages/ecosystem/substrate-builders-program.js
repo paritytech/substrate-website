@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import { Link } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import Icon from '../../components/default/Icon';
@@ -7,8 +6,32 @@ import Article from '../../components/layout/Article';
 import Section from '../../components/layout/Section';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
+import LineArrowButton from '../../components/ui/LineArrowButton';
 import PrimaryButton from '../../components/ui/PrimaryButton';
 import SecondaryButton from '../../components/ui/SecondaryButton';
+
+const tracks = [
+  {
+    title: 'Chains track',
+    description: 'Those that are building impactful chains.',
+    details: '(independent chains, parachains and parathreads)',
+    icon: 'chain',
+  },
+  {
+    title: 'Infrastructure track',
+    description: 'Those that are building Substrate/Polkadot-related infrastructure.',
+    details:
+      '(Including bridges, UIs, tooling, smart contract support and validator infrastructure (and potentially more))',
+    icon: 'layers',
+  },
+  {
+    title: 'Application Track',
+    description: 'Those that are building applications on top of Substrate-based chains.',
+    details:
+      '(Including areas like DeFi, governance, identity, and anything that hasn’t been possible before without the benefits of the interoperable ecosystem.)',
+    icon: 'computer',
+  },
+];
 
 export default function BuildersProgram() {
   return (
@@ -36,7 +59,9 @@ export default function BuildersProgram() {
               </PrimaryButton>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mt-36 mb-44">
             <div className="aspect-w-7 aspect-h-4 bg-gray-200 row-start-1 lg:col-start-2">
               <div>Foto</div>
@@ -51,58 +76,28 @@ export default function BuildersProgram() {
               <SecondaryButton link="/ecosystem/teams">See Teams</SecondaryButton>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <div className="max-w-3xl mx-auto mt-36 mb-44">
             <h2 className="text-center">The program is divided into three tracks</h2>
-            <div className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
-              <h3 className="mb-4 text-2.5xl">
-                <Icon
-                  name="chain"
-                  className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
-                />{' '}
-                Chains track
-              </h3>
-              <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">
-                Those that are building impactful chains.
-              </p>
-              <p className="m-0">(independent chains, parachains and parathreads)</p>
-            </div>
-
-            <div className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
-              <h3 className="mb-4 text-2.5xl">
-                <Icon
-                  name="layers"
-                  className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
-                />{' '}
-                Infrastructure track
-              </h3>
-              <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">
-                Those that are building Substrate/Polkadot-related infrastructure.
-              </p>
-              <p className="m-0">
-                (Including bridges, UIs, tooling, smart contract support and validator infrastructure (and potentially
-                more)
-              </p>
-            </div>
-
-            <div className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
-              <h3 className="mb-4 text-2.5xl">
-                <Icon
-                  name="computer"
-                  className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
-                />{' '}
-                Application Track
-              </h3>
-              <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">
-                Those that are building applications on top of Substrate-based chains.
-              </p>
-              <p className="m-0">
-                (Including areas like DeFi, governance, identity, and anything that hasn’t been possible before without
-                the benefits of the interoperable ecosystem.)
-              </p>
-            </div>
+            {tracks.map(({ title, description, details, icon }, idx) => (
+              <div key={idx} className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
+                <h3 className="mb-4 text-2.5xl">
+                  <Icon
+                    name={icon}
+                    className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
+                  />{' '}
+                  {title}
+                </h3>
+                <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">{description}</p>
+                <p className="m-0">{details}</p>
+              </div>
+            ))}
           </div>
+        </Section>
 
+        <Section>
           <div className="mt-36 mb-44">
             <h2 className="text-center mb-12">Builders Program Process</h2>
             <div className="grid grid-cols-7 lg:grid-cols-1 gap-8 mx-auto max-w-lg lg:max-w-full">
@@ -252,7 +247,9 @@ export default function BuildersProgram() {
               </div>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <div className="mt-36 mb-44">
             <div className="max-w-screen-md">
               <h2 className="font-extrabold">
@@ -356,6 +353,9 @@ export default function BuildersProgram() {
               </PrimaryButton>
             </div>
           </div>
+        </Section>
+
+        <Section>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 mt-36 mb-44">
             <div className="lg:col-span-5">
               <h2>FAQ</h2>
@@ -387,16 +387,11 @@ export default function BuildersProgram() {
               <div className="bg-gray-200 hidden lg:block">Image</div>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <h2>Got Questions?</h2>
-          <Link to="/ecosystem/connect/contact">
-            <span className="inline-block font-bold border-b-2 border-black dark:border-white inline mr-1 hover:mr-2 transition-all">
-              Contact us here
-            </span>
-            <span className="fill-current border-b-0 text-black dark:text-white inline-block">
-              <Icon name="arrow-more" />
-            </span>
-          </Link>
+          <LineArrowButton link="/ecosystem/connect/contact">Contact us here</LineArrowButton>
         </Section>
       </Article>
     </Layout>
