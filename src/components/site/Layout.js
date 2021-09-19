@@ -2,6 +2,8 @@ import AOS from 'aos';
 import cx from 'classnames';
 import React, { useEffect } from 'react';
 
+import CaseStudyBreadcrumb from '../layout/ecosystem/case-studies/CaseStudyBreadcrumb';
+import CaseStudyToC from '../layout/ecosystem/case-studies/CaseStudyToC';
 import Footer from '../site/Footer';
 import Header from '../site/Header';
 import NavBreadcrumb from '../site/NavBreadcrumb';
@@ -33,7 +35,23 @@ function LayoutSidebar({ articleNav, children }) {
   );
 }
 
-export default function Layout({ layout = 'default', mode = 'default', children }) {
+function LayoutCaseStudies({ title, children }) {
+  return (
+    <div className="container px-6 lg:px-10 mx-auto flex">
+      <div className="flex-grow">
+        <CaseStudyBreadcrumb title={title} />
+        {children}
+      </div>
+      <div className="hidden lg:block min-h-screen">
+        <div className="sticky top-36 overflow-y-auto w-64 pl-10">
+          <CaseStudyToC />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Layout({ layout = 'default', mode = 'default', caseStudyName, children }) {
   useEffect(() => {
     AOS.init({
       disable: 'mobile',
@@ -52,6 +70,7 @@ export default function Layout({ layout = 'default', mode = 'default', children 
         {layout === 'default' && <>{children}</>}
         {layout === 'sidebar' && <LayoutSidebar>{children}</LayoutSidebar>}
         {layout === 'sidebar article-nav' && <LayoutSidebar articleNav={true}>{children}</LayoutSidebar>}
+        {layout === 'case-study' && <LayoutCaseStudies title={caseStudyName}>{children}</LayoutCaseStudies>}
       </main>
       <Footer />
     </>

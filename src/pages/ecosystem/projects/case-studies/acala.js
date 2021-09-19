@@ -15,11 +15,11 @@ export default function acala({ data }) {
   console.log(acalaData);
   const logo = getImage(data.logo);
   return (
-    <Layout>
+    <Layout layout="case-study" caseStudyName={acalaData.name}>
       <SEO title="Acala Network Case Study" />
-      <article className="container pl-6 2xl:pl-12 max-w-4xl mb-20">
+      <article className="mb-20">
         <div className="tracking-wider uppercase mb-4">Case Study</div>
-        <div className="mb-6 flex flex-col sm:flex-row sm:items-center">
+        <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center scroll-margin-top-100">
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={acalaData.name} />
           <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{acalaData.name}</div>
         </div>
@@ -80,7 +80,7 @@ export default function acala({ data }) {
           combination with bridge to Ethereum ensures flow of liquidity to Polkadot ecosystem and a convenient trading
           interface for everyone.
         </p>
-        <div id="challenge" className="flex items-center mt-10 mb-6">
+        <div id="challenge" className="flex items-center mt-10 mb-6 scroll-margin-top-100">
           <Icon name="knight" className="fill-current text-substrateGreen mr-4" />
           <h2 className="mb-0">Challenge</h2>
         </div>
@@ -106,7 +106,7 @@ export default function acala({ data }) {
           non-application-specific chains are forced to have different economic models for on-chain apps and the chain
           itself, the network fee can sometimes be 100x more than the exchange commission, making DEX usage expensive.
         </p>
-        <div id="solution" className="flex items-center mt-10 mb-6">
+        <div id="solution" className="flex items-center mt-10 mb-6 scroll-margin-top-100">
           <Icon name="check-mark" className="fill-current text-substrateGreen mr-4" />
           <h2 className="mb-0">Solution</h2>
         </div>
@@ -185,7 +185,7 @@ export default function acala({ data }) {
           a rise of app-specific chains, but no network effects happened because of lack of interoperability. This is
           allowed on Polkadot and in Mangata we rely on working with other chains.
         </p>
-        <div id="result" className="flex items-center mt-10 mb-6">
+        <div id="result" className="flex items-center mt-10 mb-6 scroll-margin-top-100">
           <Icon name="graph" className="fill-current text-substrateGreen mr-4" />
           <h2 className="mb-0">Result</h2>
         </div>
@@ -216,7 +216,7 @@ export default function acala({ data }) {
             </b>
           </li>
         </ul>
-        <div id="result" className="flex items-center mt-10 mb-6">
+        <div id="runtimes-pallets" className="flex items-center mt-10 mb-6 scroll-margin-top-100">
           <h2 className="mb-0">Runtimes&Pallets</h2>
         </div>
         <span className="tracking-wider uppercase">Substrate Runtimes:</span>
