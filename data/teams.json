@@ -674,7 +674,7 @@
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
       "description": "Decentralized and permissionless, Moonbeam provides an Ethereum-compatible smart contract platform that makes it easy to build natively interoperable applications.",
-      "caseStudy": "#",
+      "caseStudy": "case-studies/moonbeam",
       "runtimes": [
         {
           "title":"moonbase-runtime",
@@ -801,7 +801,6 @@
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
       "description": "The Phala Network is a privacy preserving protocol for data-protection and blockchain smart contract.",
-      "caseStudy": "#",
       "runtimes": [
         {
           "title":"phala-node-runtime",
@@ -815,6 +814,7 @@
       "category":[ "Smart Contracts","All", "Connecting to Polkadot"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
+      "caseStudy": "case-studies/astar",
       "description": "Plasm Network is a scaling dApps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
     },
     {
