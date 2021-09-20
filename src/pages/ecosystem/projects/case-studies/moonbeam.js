@@ -80,10 +80,10 @@ export default function MoonbeamCaseStudy({ data }) {
           name="Derek Yoo, Founder, Moonbeam Network"
           image={data.avatar}
         />
-        <p>
+        {/* <p>
           Astar Network (previously known as Plasm Network) is a dapp hub in the Polkadot ecosystem, supporting EVM,
           WebAssembly, and Layer2 solutions like Rollups.
-        </p>
+        </p> */}
         <div className="flex items-center mt-10 mb-6 scroll-margin-top-100">
           <Icon name="knight" className="fill-current text-substrateGreen mr-4" />
           <h2 id="challenge" className="mb-0">
