@@ -15,8 +15,8 @@ const Vision = () => {
     <Layout>
       <SEO title="Substrate And Polkadot" />
       <Article>
-        <div name="placeholder" className="bg-gray-200 w-full aspect-w-5 aspect-h-2 mb-10"></div>
         <Section>
+          <div name="placeholder" className="bg-gray-200 w-full aspect-w-5 aspect-h-2 mb-10"></div>
           <p className="text-3xl">
             All Substrate-based chains are <span className="font-semibold">natively compatible</span> with Polkadot,
             granting access to paralleled transactions, cross-chain transfers, and a deep support network.
