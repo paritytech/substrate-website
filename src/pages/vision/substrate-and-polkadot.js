@@ -102,10 +102,10 @@ const Vision = () => {
                   you want.
                 </p>
 
-                <h3 id="substrate-and-polkadot" className="text-polkaPink font-bold mb-8 mt-12 text-2xl">
+                <h3 id="substrate-and-polkadot" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   Substrate & Polkadot
                 </h3>
-                <p className="text-xl font-semibold mb-8 ">The relationship between the framework and the network</p>
+                <p className="text-xl font-semibold mb-6 ">The relationship between the framework and the network</p>
                 <Icon name="placeholder" className="mb-8" />
                 <p>
                   Substrate-based chains are easy to integrate into Polkadot or Kusama to become a parachain or
@@ -123,10 +123,10 @@ const Vision = () => {
                   Substrate-based chains can exist as ‘solo-chains’ on an independent basis.
                 </p>
 
-                <h3 id="greater-possibilities" className="text-polkaPink font-bold mb-8 mt-12 text-2xl">
+                <h3 id="greater-possibilities" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   Greater Possibilities
                 </h3>
-                <p className="text-xl font-semibold mb-8 ">
+                <p className="text-xl font-semibold mb-4 ">
                   The limitations of general-purpose smart-contract blockchains
                 </p>
                 <p>
@@ -146,10 +146,10 @@ const Vision = () => {
                   of your application logic.
                 </BlockQuote>
 
-                <h3 id="the-road-to-substrate" className="text-polkaPink font-bold mb-8 mt-12 text-2xl">
+                <h3 id="the-road-to-substrate" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   The Road to Substrate
                 </h3>
-                <p className="text-xl font-semibold mb-8 ">
+                <p className="text-xl font-semibold mb-4 ">
                   From Polkadot’s early days to the most advanced blockchain SDK
                 </p>
                 <p>
@@ -176,10 +176,10 @@ const Vision = () => {
                   </span>
                 </p>
 
-                <h3 id="the-web3-vision" className="text-polkaPink font-bold mb-8 mt-12 text-2xl">
+                <h3 id="the-web3-vision" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   The Web3 vision
                 </h3>
-                <p className="text-xl font-semibold mb-8 ">How Substrate relates to the broader goals of Web3</p>
+                <p className="text-xl font-semibold mb-4 ">How Substrate relates to the broader goals of Web3</p>
                 <p>
                   Substrate fulfills two main goals within the overall Web 3 vision: it is the foundational technology
                   that allowed us at Parity to build the Polkadot Relay Chain; and, together with the Cumulus project,
@@ -195,10 +195,10 @@ const Vision = () => {
                   heterogeneous sharding system unutilized.
                 </BlockQuote>
 
-                <h3 id="substrate-specifics" className="text-polkaPink font-bold mb-8 mt-12 text-2xl">
+                <h3 id="substrate-specifics" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   Substrate Specifics
                 </h3>
-                <p className="text-xl font-semibold mb-8 ">Modularity, performance, and flexibility</p>
+                <p className="text-xl font-semibold mb-4 ">Modularity, performance, and flexibility</p>
                 <p>
                   All blockchains need some sort of business logic that defines (amongst other things) what transactions
                   do. Substrate chains are no different, and business logic is provided through a modular system known
@@ -219,10 +219,10 @@ const Vision = () => {
                   Relay Chain attests to its performance and flexibility.
                 </p>
 
-                <h3 id="decentralization-and-usability" className="text-polkaPink font-bold mb-8 mt-12 text-2xl">
+                <h3 id="decentralization-and-usability" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   Decentralization & Usability
                 </h3>
-                <p className="text-xl font-semibold mb-8 ">
+                <p className="text-xl font-semibold mb-4 ">
                   Enabling true decentralisation and usability as fundamental to the success of Web3
                 </p>
                 <p>
