@@ -10,7 +10,7 @@ export default function AwesomeSubstrate({ data }) {
   const html = data.markdownRemark.html;
 
   return (
-    <Layout layout="sidebar article-nav">
+    <Layout layout="sidebar" hasArticleNav>
       <SEO title="Awesome Substrate" />
       <Section>
         <h1 id="awesome-substrate" className="text-4xl font-bold font-body mb-6">
@@ -28,7 +28,7 @@ export default function AwesomeSubstrate({ data }) {
       </Section>
       <Section>
         <div
-          className="markdown underline-animate underline-animate-thin pb-48 mb-96"
+          className="markdown underline-animate underline-animate-thin"
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
       </Section>
