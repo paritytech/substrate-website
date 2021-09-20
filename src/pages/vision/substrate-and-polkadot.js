@@ -1,0 +1,232 @@
+import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import React from 'react';
+
+import Icon from '../../components/default/Icon';
+import Article from '../../components/layout/Article';
+import Section from '../../components/layout/Section';
+import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
+import Layout from '../../components/site/Layout';
+import SEO from '../../components/site/SEO';
+import BlockQuote from '../../components/ui/Blockquote';
+
+const Vision = () => {
+  return (
+    <Layout>
+      <SEO title="Substrate And Polkadot" />
+      <Article>
+        <div name="placeholder" className="bg-gray-200 w-full aspect-w-5 aspect-h-2 mb-10"></div>
+        <Section>
+          <p className="text-3xl">
+            All Substrate-based chains are <span className="font-semibold">natively compatible</span> with Polkadot,
+            granting access to paralleled transactions, cross-chain transfers, and a deep support network.
+          </p>
+        </Section>
+        <Section>
+          <h3 className="font-bold mb-8 text-2xl">Key Points:</h3>
+          <ul>
+            <li className="flex">
+              <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
+              <p>
+                <span className="font-bold">
+                  Polkadot is a layer-0 protocol and multichain network laying the foundation for the future of Web3.
+                </span>{' '}
+                Substrate is the primary blockchain SDK used by developers to create the parachains that make up the
+                Polkadot network.
+              </p>
+            </li>
+            <li className="flex">
+              <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
+              <p>
+                <span className="font-bold">
+                  Substrate allows you to create specialized blockchains for any use case, and was used by Parity
+                  Technologies to create Polkadot itself,
+                </span>{' '}
+                which attests to its high level of performance, flexibility, and robustness.
+              </p>
+            </li>
+            <li className="flex">
+              <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
+              <p>
+                <span className="font-bold">
+                  While Substrate can be used to build any type of blockchain, not just Polkadot parachains, connecting
+                  to Polkadot offers a multitude of benefits,
+                </span>{' '}
+                including built-in security, cross-chain interoperability, and access to Polkadot’s growing ecosystem of
+                platforms, applications, and end-users.
+              </p>
+            </li>
+            <li className="flex">
+              <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
+              <p>
+                <span className="font-bold">
+                  Building a custom blockchain with Substrate offers greater freedom, flexibility, and optimization
+                </span>{' '}
+                than building on top of a general-purpose smart contract blockchain.
+              </p>
+            </li>
+          </ul>
+        </Section>
+        <Section>
+          <h2 className="mb-8 font-bold text-4xl">Substrate, Polkadot, and the Web3 Vision</h2>
+          <div className="flex items-center mb-8">
+            <StaticImage
+              src="../../images/photos/vision/gavin-wood.png"
+              alt="Gavin Wood"
+              className="h-10 w-10 mr-3 flex-none"
+            />
+            <p className="mb-0">
+              By <span className="font-bold">Gavin Wood,</span> founder of Polkadot and Parity Technologies
+            </p>
+          </div>
+          <p>
+            Substrate strives to be the best blockchain framework in which to build your custom blockchain. Substrate is
+            not a blockchain in itself, but akin to a blockchain SDK framework. Substrate empowers you to build beyond
+            the capabilities of others, giving you the freedom to define your chain however you want.
+          </p>
+        </Section>
+        <Section>
+          <h3 className="text-polkaPink font-bold mb-8 text-2xl">Substrate & Polkadot</h3>
+          <p className="text-xl font-semibold mb-8 ">The relationship between the framework and the network</p>
+          <Icon name="placeholder" className="mb-8" />
+          <p>
+            Substrate-based chains are easy to integrate into Polkadot or Kusama to become a parachain or parathread.
+            Essentially, Substrate is the SDK with which you can build parachains and Polkadot is the means of securing
+            the chains and allowing them to communicate with each other.
+          </p>
+          <p>
+            However, although they&apos;re synergistic,{' '}
+            <span className="font-bold">
+              Polkadot and Substrate are not dependent on each other. Polkadot parachains can be built and maintained
+              without ever touching Substrate (though alternative software options for doing so are currently limited)
+              and chains built with Substrate do not need to be connected to Polkadot or Kusama.
+            </span>{' '}
+            Substrate-based chains can exist as ‘solo-chains’ on an independent basis.
+          </p>
+        </Section>
+        <Section>
+          <h3 className="text-polkaPink font-bold mb-8 text-2xl">Greater Possibilities</h3>
+          <p className="text-xl font-semibold mb-8 ">The limitations of general-purpose smart-contract blockchains</p>
+          <p>
+            Developing a new project specific to your use-case by reusing a general-purpose smart-contract blockchain
+            forces you to inherit all of that blockchain’s design decisions, which are often made with different
+            priorities in your mind than your own.
+          </p>
+          <p>
+            Re-using the Ethereum codebase, for example, implies several limitations: having to place all of your
+            business logic in terms of the EVM, being forced to use one of the two EVM languages, having all business
+            logic dynamically metered, and being limited to Ethereum&apos;s transaction pool and lack of core
+            upgradability.
+          </p>
+          <BlockQuote>
+            By forcing these design decisions on yourself, you already place hard constraints on what you can
+            practically engineer and how much you can really innovate. You also dramatically limit the performance of
+            your application logic.
+          </BlockQuote>
+        </Section>
+        <Section>
+          <h3 className="text-polkaPink font-bold mb-8 text-2xl">The Road to Substrate</h3>
+          <p className="text-xl font-semibold mb-8 ">From Polkadot’s early days to the most advanced blockchain SDK</p>
+          <p>
+            When we started building Polkadot at Parity, we considered this and knew that it would not be realistic to
+            build such an innovative new blockchain on top of the existing Ethereum design, even if we were the ones who
+            had designed and written it. Ethereum was simply not the right tool for the job.{' '}
+            <span className="font-bold">
+              So we started building Polkadot as an entirely fresh blockchain project without those design constraints.
+            </span>
+          </p>
+          <StaticImage
+            src="../../images/photos/vision/reflection-man.jpg"
+            alt="Man in reflection"
+            className="w-full h-auto rounded-md overflow-hidden aspect-w-5 aspect-h-1 mb-8"
+          />
+          <p>
+            Before long, we knew that many of the components we were building for the Polkadot Relay Chain would be
+            useful when building Polkadot’s parachains. Substrate took shape soon after when we began collecting
+            together those common components and forming a blockchain framework around them.{' '}
+            <span className="font-bold">
+              By leveraging the cutting edge software built for the Polkadot Relay Chain, we could provide the parachain
+              community with the best technology for their own chains.
+            </span>
+          </p>
+        </Section>
+        <Section>
+          <h3 className="text-polkaPink font-bold mb-8 text-2xl">The Web3 vision</h3>
+          <p className="text-xl font-semibold mb-8 ">How Substrate relates to the broader goals of Web3</p>
+          <p>
+            Substrate fulfills two main goals within the overall Web 3 vision: it is the foundational technology that
+            allowed us at Parity to build the Polkadot Relay Chain; and, together with the Cumulus project, it is the de
+            facto SDK for Polkadot, allowing parachain teams to build and deploy their chains into Polkadot or Kusama.
+          </p>
+          <BlockQuote>
+            Having a flexibile blockchain development platform like Substrate is especially important for Polkadot,
+            &quot;the blockchain of blockchains&quot; and a foundational component of the Web3 technology stack. Without
+            Substrate, there would be no easy way to build the blockchains that constitute the Polkadot ecosystem, and
+            many builders would be forced into using a constrictive and uniform smart contract environment, limiting
+            innovation and leaving Polkadot’s remarkable heterogeneous sharding system unutilized.
+          </BlockQuote>
+        </Section>
+        <Section>
+          <h3 className="text-polkaPink font-bold mb-8 text-2xl">Substrate Specifics</h3>
+          <p className="text-xl font-semibold mb-8 ">Modularity, performance, and flexibility</p>
+          <p>
+            All blockchains need some sort of business logic that defines (amongst other things) what transactions do.
+            Substrate chains are no different, and business logic is provided through a modular system known as FRAME.
+            Using FRAME, you can very easily create, compose, and publish components to form your own specialist
+            business logic.
+          </p>
+          <p>
+            system known as FRAME. Using FRAME, you can very easily create, compose, and publish components to form your
+            own specialist business logic.
+          </p>
+          <p>
+            <span className="font-bold">
+              By providing you with a truly open canvas, together with practical components that can be composed,
+              reused, and published, Substrate opens up whole new worlds of design space and potential for innovation.
+            </span>{' '}
+            Indeed, the fact that Substrate is the underlying blockchain framework we used to build the Polkadot Relay
+            Chain attests to its performance and flexibility.
+          </p>
+        </Section>
+        <Section>
+          <h3 className="text-polkaPink font-bold mb-8 text-2xl">Decentralization & Usability</h3>
+          <p className="text-xl font-semibold mb-8 ">
+            Enabling true decentralisation and usability as fundamental to the success of Web3
+          </p>
+          <p>
+            One chief goal of Substrate, as a core component of the Web3 vision, is to ensure true decentralisation,
+            meaning users do not need to go through intermediaries in order to use &quot;decentralised&quot;
+            applications. Bitcoin started down this with its &quot;SPV&quot; client technology, but for more
+            generalistic chains and frameworks, the task is rather more complex.
+          </p>
+          <p>
+            <span className="font-bold">
+              For this reason, Substrate is dedicated to the use of open, well-adopted and web-literate technologies,
+              such as Webassembly and libp2p, as well as light-client technology.
+            </span>{' '}
+            Only with an enduring focus on these can we deliver browser and mobile applications with no greater a
+            barrier to adoption than traditional centralised applications, a critical requirement for delivering the
+            promised independence and self-sovereignty of the Web3 vision.
+          </p>
+        </Section>
+        <ExploreLinkSection />
+      </Article>
+    </Layout>
+  );
+};
+
+export default Vision;
+
+export const query = graphql`
+  query {
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
