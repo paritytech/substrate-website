@@ -29,7 +29,7 @@
       "name": "ChainLink",
       "link": "https://chain.link/",
       "category":[ "DeFi","All", "Connecting to Polkadot"],
-      "types": ["All Teams", "Building for Polkadot", "Enterprise-ready", "Building for Polkadot"],
+      "types": ["All Teams", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
       "description": "ChainLink is a decentralized oracle network that provides real-world data to smart contracts on the blockchain"
     },
