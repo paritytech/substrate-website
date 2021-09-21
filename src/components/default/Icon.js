@@ -21,6 +21,14 @@ import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
 import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
+import flexible from '../../images/svg/technology/icon-flexible.svg';
+import flexibleCropped from '../../images/svg/technology/icon-flexible-cropped.svg';
+import futureProof from '../../images/svg/technology/icon-future-proof.svg';
+import futureProofCropped from '../../images/svg/technology/icon-future-proof-cropped.svg';
+import interoperable from '../../images/svg/technology/icon-interoperable.svg';
+import interoperableCropped from '../../images/svg/technology/icon-interoperable-cropped.svg';
+import open from '../../images/svg/technology/icon-open.svg';
+import openCropped from '../../images/svg/technology/icon-open-cropped.svg';
 import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
@@ -88,6 +96,15 @@ const iconsMap = {
   'shield-check-solid': shieldCheckSolid,
   'globe-solid': globeSolid,
   'subconnect-browser-tab': subconnectBrowserTab,
+  /* technology */
+  'flexible-cropped': flexibleCropped,
+  'future-proof-cropped': futureProofCropped,
+  'interoperable-cropped': interoperableCropped,
+  'open-cropped': openCropped,
+  flexible: flexible,
+  'future-proof': futureProof,
+  interoperable: interoperable,
+  open: open,
 };
 
 export default function Icon({ name, className }) {

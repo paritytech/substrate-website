@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Icon from '../../default/Icon';
-import { Link } from '../../default/Link';
+import LineArrowButton from '../../ui/LineArrowButton';
 import Section from '../Section';
 
 const exploreLinks = {
@@ -58,18 +58,13 @@ const ExploreLinkSection = ({ links }) => {
         <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
         <div className="sm:grid grid-cols-3 gap-6 xl:gap-24">
           {currentLinks.map(({ title, description, link, linkText, icon }, index) => (
-            <div key={index} className="mb-16 sm:mb-0">
-              <Icon name={icon} className="mb-6 w-8 h-8" />
-              <h5 className="text-xl font-bold mb-6">{title}</h5>
-              <p>{description}</p>
-              <Link to={link}>
-                <p className="font-bold border-b-2 border-black dark:border-white inline hover:mr-1 transition-all">
-                  {linkText}
-                </p>{' '}
-                <span className="fill-current border-b-0 dark:text-white inline-block">
-                  <Icon name="arrow-more" />
-                </span>
-              </Link>
+            <div key={index} className="mb-16 sm:mb-0 flex flex-col justify-between">
+              <div>
+                <Icon name={icon} className="mb-6 w-8 h-8" />
+                <h5 className="text-xl font-bold mb-6">{title}</h5>
+                <p>{description}</p>
+              </div>
+              <LineArrowButton link={link}>{linkText}</LineArrowButton>
             </div>
           ))}
         </div>

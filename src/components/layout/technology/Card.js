@@ -1,7 +1,6 @@
 import cx from 'classnames';
 import React from 'react';
 
-import Gif from '../../default/Gif';
 import Icon from '../../default/Icon';
 import { Link } from '../../default/Link';
 
@@ -35,19 +34,19 @@ const Card = ({ page, delay, mode, image }) => {
     <Link to={link} data-aos="fade-up" data-aos-delay={delay ? delay : 0}>
       <div
         className={cx(
-          'md:flex flex-row-reverse min-h-full mb-8 lg:mb-0 m:max-w-sm cursor-pointer shadow-xl p-8 hover:scale-105 transition-transform rounded-md bg-white dark:bg-substrateBlackish relative',
+          'overflow-hidden md:flex min-h-full mb-8 lg:mb-0 m:max-w-sm cursor-pointer shadow-xl p-0 hover:scale-105 transition-transform rounded-md bg-white dark:bg-substrateBlackish relative',
           {
             'lg:block lg:w-72 xl:w-96 lg:mr-8': mode === 'vertical',
           }
         )}
       >
-        <div className="mb-8 md:mb-0 self-center">
-          <Gif name={image} className={cx('w-20 md:w-40 h-auto', { 'lg:mb-6': mode === 'vertical' })} />
+        <div className="self-center md:order-2 w-1/2 p-8 md:p-0 justify-self-end flex-none">
+          <Icon name={image} className={cx('md:w-full h-auto', { 'lg:mb-6': mode === 'vertical' })} />
         </div>
-        <div className="flex flex-col justify-between">
-          <div className={cx('lg:pb-6 mr-6', { 'lg:mr-0': mode === 'vertical' })}>
+        <div className="flex flex-col md:w-2/3 flex-none justify-between p-8 md:order-1">
+          <div className={cx('lg:pb-6', { 'lg:mr-0': mode === 'vertical' })}>
             <h3 className="mb-5 text-3xl font-bold">{title}</h3>
-            <p>{description}</p>
+            <p className="mb-6">{description}</p>
           </div>
           <div className="absolute bottom-8">
             <p className="font-bold border-b-2 border-black dark:border-white inline hover:mr-1 transition-all">

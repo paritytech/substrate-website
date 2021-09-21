@@ -41,18 +41,15 @@ export default function IndexPage() {
               <p className="tracking-wider lg:tracking-widest text-lg font-light mb-0 uppercase">
                 Substrate Technology
               </p>
-              <h1
-                data-aos="fade-up"
-                className="font-title text-5xl md:text-6xl xl:text-7xl font-extrabold my-10 mb-8 lg:mt-20"
-              >
+              <h1 data-aos="fade-up" className="font-title text-5xl md:text-6xl xl:text-7xl font-extrabold my-8">
                 Build
                 <br /> beyond the
                 <br /> capabilities
                 <br /> of others
               </h1>
             </div>
-            <div className="order-3 lg:order-2">
-              <Icon name="placeholder" className="w-full h-auto" alt="Substrate Hero Image" />
+            <div className="order-3 lg:order-2 self-end">
+              <div className="w-full bg-gray-200 aspect-w-5 aspect-h-3 mb-8"></div>
             </div>
             <div className="order-2 lg:order-3">
               <p className="text-xl md:text-2xl xl:text-3xl font-bold">
@@ -115,10 +112,10 @@ export default function IndexPage() {
         <Section>
           <h2 className="text-4xl mb-10 font-bold">Substrate is:</h2>
           <div className="grid lg:grid-cols-2 gap-10">
-            <Card page="Flexible" mode="horizontal" image="heroFlexible" />
-            <Card page="Open" mode="horizontal" delay={200} image="heroOpen" />
-            <Card page="Interoperable" mode="horizontal" delay={400} image="heroFlexible" />
-            <Card page="Future-Proof" mode="horizontal" delay={600} image="heroFutureProof" />
+            <Card page="Flexible" mode="horizontal" image="flexible" />
+            <Card page="Open" mode="horizontal" delay={200} image="open" />
+            <Card page="Interoperable" mode="horizontal" delay={400} image="interoperable" />
+            <Card page="Future-Proof" mode="horizontal" delay={600} image="future-proof" />
           </div>
         </Section>
         <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
