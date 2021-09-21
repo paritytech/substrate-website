@@ -1,14 +1,39 @@
 import { graphql } from 'gatsby';
-import { Link } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import Icon from '../../components/default/Icon';
 import Article from '../../components/layout/Article';
+import BorderCard from '../../components/layout/ecosystem/BorderCard';
+import ColorCard from '../../components/layout/ecosystem/ColorCard';
 import Section from '../../components/layout/Section';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
+import LineArrowButton from '../../components/ui/LineArrowButton';
 import PrimaryButton from '../../components/ui/PrimaryButton';
 import SecondaryButton from '../../components/ui/SecondaryButton';
+
+const tracks = [
+  {
+    title: 'Chains track',
+    description: 'Those that are building impactful chains.',
+    details: '(independent chains, parachains and parathreads)',
+    icon: 'chain',
+  },
+  {
+    title: 'Infrastructure track',
+    description: 'Those that are building Substrate/Polkadot-related infrastructure.',
+    details:
+      '(Including bridges, UIs, tooling, smart contract support and validator infrastructure (and potentially more))',
+    icon: 'layers',
+  },
+  {
+    title: 'Application Track',
+    description: 'Those that are building applications on top of Substrate-based chains.',
+    details:
+      '(Including areas like DeFi, governance, identity, and anything that hasn’t been possible before without the benefits of the interoperable ecosystem.)',
+    icon: 'computer',
+  },
+];
 
 export default function BuildersProgram() {
   return (
@@ -23,7 +48,7 @@ export default function BuildersProgram() {
               </div>
             </div>
             <div className="lg:col-start-1 lg:row-start-1">
-              <h1 className="mb-6">
+              <h1 className="mb-6 font-extrabold text-4xl md:text-5xl lg:text-6xl">
                 substrate
                 <span className="text-substrateGreen">_</span> <br /> builders program
               </h1>
@@ -36,13 +61,15 @@ export default function BuildersProgram() {
               </PrimaryButton>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mt-36 mb-44">
             <div className="aspect-w-7 aspect-h-4 bg-gray-200 row-start-1 lg:col-start-2">
               <div>Foto</div>
             </div>
             <div className="lg:col-start-1 flex justify-center flex-col">
-              <h2>Who The Program Is For</h2>
+              <h2 className="font-bold mb-4 text-3xl md:text-4xl">Who The Program Is For</h2>
               <p>
                 The Substrate Builders Program identifies, supports and mentors current and potential Substrate-related
                 projects. If you are a visionary builder who is considering or already developing a project in the
@@ -51,163 +78,101 @@ export default function BuildersProgram() {
               <SecondaryButton link="/ecosystem/teams">See Teams</SecondaryButton>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <div className="max-w-3xl mx-auto mt-36 mb-44">
-            <h2 className="text-center">The program is divided into three tracks</h2>
-            <div className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
-              <h3 className="mb-4 text-2.5xl">
-                <Icon
-                  name="chain"
-                  className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
-                />{' '}
-                Chains track
-              </h3>
-              <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">
-                Those that are building impactful chains.
-              </p>
-              <p className="m-0">(independent chains, parachains and parathreads)</p>
-            </div>
-
-            <div className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
-              <h3 className="mb-4 text-2.5xl">
-                <Icon
-                  name="layers"
-                  className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
-                />{' '}
-                Infrastructure track
-              </h3>
-              <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">
-                Those that are building Substrate/Polkadot-related infrastructure.
-              </p>
-              <p className="m-0">
-                (Including bridges, UIs, tooling, smart contract support and validator infrastructure (and potentially
-                more)
-              </p>
-            </div>
-
-            <div className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
-              <h3 className="mb-4 text-2.5xl">
-                <Icon
-                  name="computer"
-                  className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
-                />{' '}
-                Application Track
-              </h3>
-              <p className="m-0 mb-1 text-substrateGreen text-xl font-bold">
-                Those that are building applications on top of Substrate-based chains.
-              </p>
-              <p className="m-0">
-                (Including areas like DeFi, governance, identity, and anything that hasn’t been possible before without
-                the benefits of the interoperable ecosystem.)
-              </p>
-            </div>
+            <h2 className="text-center font-bold mb-4 text-3xl md:text-4xl">
+              The program is divided into three tracks
+            </h2>
+            {tracks.map(({ title, description, details, icon }, idx) => (
+              <div key={idx} className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
+                <h3 className="mb-4 text-xl md:text-2.5xl font-bold">
+                  <Icon
+                    name={icon}
+                    className="inline-block align-top mr-2 fill-current text-substrateBlackish dark:text-white"
+                  />{' '}
+                  {title}
+                </h3>
+                <p className="m-0 mb-1 text-substrateGreen text-lg md:text-xl font-bold">{description}</p>
+                <p className="m-0">{details}</p>
+              </div>
+            ))}
           </div>
+        </Section>
 
+        <Section>
           <div className="mt-36 mb-44">
-            <h2 className="text-center mb-12">Builders Program Process</h2>
+            <h2 className="text-center mb-12 font-bold text-3xl md:text-4xl">Builders Program Process</h2>
             <div className="grid grid-cols-7 lg:grid-cols-1 gap-8 mx-auto max-w-lg lg:max-w-full">
               <div className="col-span-2 lg:col-span-1 grid lg:grid-cols-7 grid-rows-7 lg:grid-rows-1 gap-12">
                 <div className="relative flex flex-col justify-center lg:col-start-4 row-start-4 lg:row-start-1 font-bold overflow-visible text-sm xl:text-base">
                   <div className="absolute rounded-md border-dashed border-2 border-gray-200 -inset-x-2 lg:-inset-x-4 inset-y-4 lg:inset-y-8"></div>
-                  <div className="relative z-10 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center">
-                    Builder
-                  </div>
-                  <div className="relative z-10 mt-4 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center 2xl:tracking-wider uppercase">
-                    Level 1
-                  </div>
+                  <BorderCard className="mb-4">Builder</BorderCard>
+                  <BorderCard>
+                    <span className="uppercase">Level 1</span>
+                  </BorderCard>
                 </div>
                 <div className="relative flex flex-col justify-center lg:col-start-5 row-start-5 lg:row-start-1 font-bold overflow-visible text-sm xl:text-base">
                   <div className="absolute rounded-md border-dashed border-2 border-gray-200 -inset-x-2 lg:-inset-x-4 inset-y-4 lg:inset-y-8"></div>
-                  <div className="relative z-10 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center">
-                    Builder
-                  </div>
-                  <div className="relative z-10 mt-4 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center 2xl:tracking-wider uppercase">
-                    Level 2
-                  </div>
+                  <BorderCard className="mb-4">Builder</BorderCard>
+                  <BorderCard>
+                    <span className="uppercase">Level 2</span>
+                  </BorderCard>
                 </div>
                 <div className="relative flex flex-col justify-center lg:col-start-6 row-start-6 lg:row-start-1 font-bold overflow-visible text-sm xl:text-base">
                   <div className="absolute rounded-md border-dashed border-2 border-gray-200 -inset-x-2 lg:-inset-x-4 inset-y-4 lg:inset-y-8"></div>
-                  <div className="relative z-10 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center">
-                    Build
-                  </div>
-                  <div className="relative z-10 mt-4 py-2 border-2 rounded-md shadow-md border-gray-300 bg-white dark:bg-substrateBlackish text-center 2xl:tracking-wider uppercase">
-                    Completed
-                  </div>
+                  <BorderCard className="mb-4">Build</BorderCard>
+                  <BorderCard>
+                    <span className="uppercase">Completed</span>
+                  </BorderCard>
                 </div>
               </div>
               <div className="col-span-3 lg:col-span-1 grid lg:grid-cols-7 grid-rows-7 lg:grid-rows-1 gap-12">
                 <div className="flex-1 relative row-start-1 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Application</span>
-                    </div>
-                  </div>
+                  <ColorCard>Application</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-2 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Evaluation</span>
-                    </div>
-                  </div>
+                  <ColorCard>Evaluation</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-3 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>SBP Commitee</span>
-                    </div>
-                  </div>
+                  <ColorCard>SBP Commitee</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-4 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Milestone 1</span>
-                    </div>
-                  </div>
+                  <ColorCard>Milestone 1</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-5 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Milestone 2</span>
-                    </div>
-                  </div>
+                  <ColorCard>Milestone 2</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-6 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Milestone 3</span>
-                    </div>
-                  </div>
+                  <ColorCard>Milestone 3</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
                   />
                 </div>
                 <div className="flex-1 relative row-start-7 lg:row-start-1 col-span-full lg:col-span-1">
-                  <div className="aspect-w-13 aspect-h-11">
-                    <div className="flex justify-center items-center p-4 text-center rounded-md shadow-xl bg-substrateGreen-light text-substrateBlackish border-2 border-substrateGreen">
-                      <span>Launch Support</span>
-                    </div>
-                  </div>
+                  <ColorCard>Launch Support</ColorCard>
                 </div>
               </div>
               <div className="col-span-2 lg:col-span-1 grid lg:grid-cols-7 grid-rows-7 lg:grid-rows-1 gap-12">
@@ -223,7 +188,7 @@ export default function BuildersProgram() {
                     <span>I</span>
                     <span>O</span>
                     <span>N</span>
-                    <span></span>
+                    <span> </span>
                     <span>P</span>
                     <span>H</span>
                     <span>A</span>
@@ -231,7 +196,7 @@ export default function BuildersProgram() {
                     <span>E</span>
                   </div>
                 </div>
-                <div className="flex justify-center items-center p-4 row-start-4 lg:row-start-1 row-span-3 lg:row-span-1 col-span-full lg:col-span-3 rounded-md border-2 border-dashed border-gray-200">
+                <div className="flex justify-center items-center p-4 row-start-4 lg:row-start-1 lg:col-start-4 row-span-3 lg:row-span-1 col-span-full lg:col-span-3 rounded-md border-2 border-dashed border-gray-200">
                   <div className="spaced-out-text">
                     <span>B</span>
                     <span>U</span>
@@ -241,7 +206,7 @@ export default function BuildersProgram() {
                     <span>I</span>
                     <span>N</span>
                     <span>G</span>
-                    <span></span>
+                    <span> </span>
                     <span>P</span>
                     <span>H</span>
                     <span>A</span>
@@ -252,13 +217,12 @@ export default function BuildersProgram() {
               </div>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <div className="mt-36 mb-44">
             <div className="max-w-screen-md">
-              <h2 className="font-extrabold">
-                <Icon className="inline-block mr-4" name="builders" />
-                Substrate Builders Program Benefits
-              </h2>
+              <h2 className="font-bold mb-4 text-3xl md:text-4xl">Substrate Builders Program Benefits</h2>
               <p className="text-lg font-medium">
                 As a builder, you will receive Parity’s support in a systematic manner, including comprehensive support
                 in the following areas: As a builder,
@@ -266,7 +230,7 @@ export default function BuildersProgram() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14">
               <div>
-                <h3 className="mt-16 lg:mt-24 mb-4">Technical support:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Technical support:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -288,7 +252,7 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4">Community support:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Community support:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -305,7 +269,7 @@ export default function BuildersProgram() {
                 </div>
               </div>
               <div>
-                <h3 className="mt-16 lg:mt-24 mb-4">Community funding:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Community funding:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -316,7 +280,7 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4">Ecosystem support:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Ecosystem support:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -335,7 +299,7 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4">Strategy feedback:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Strategy feedback:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -356,16 +320,21 @@ export default function BuildersProgram() {
               </PrimaryButton>
             </div>
           </div>
+        </Section>
+
+        <Section>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 mt-36 mb-44">
             <div className="lg:col-span-5">
-              <h2>FAQ</h2>
-              <h4 className="mb-5">Is this support offering exclusive to members of the program?</h4>
+              <h2 className="font-bold mb-4 text-3xl md:text-4xl">FAQ</h2>
+              <h4 className="mb-5 font-bold text-lg md:text-2xl">
+                Is this support offering exclusive to members of the program?
+              </h4>
               <p className="mb-10">
                 While nearly everything in the program is in principle available to any team building in the Substrate
                 ecosystem, the Substrate Builders Program guides teams through the available support in a structured
                 manner.
               </p>
-              <h4 className="mb-5">
+              <h4 className="mb-5 font-bold text-lg md:text-2xl">
                 How is the Substrate Builders Program different from the Web3 Foundation Grants Program?
               </h4>
               <p className="mb-10">
@@ -373,7 +342,9 @@ export default function BuildersProgram() {
                 on more comprehensive support throughout a project’s lifecycle. W3F grant recipients are also welcome to
                 apply to the Builders Program!
               </p>
-              <h4 className="mb-5">Is the Substrate Builders Program an acceleration or incubation program?</h4>
+              <h4 className="mb-5 font-bold text-lg md:text-2xl">
+                Is the Substrate Builders Program an acceleration or incubation program?
+              </h4>
               <p className="mb-14">
                 No, the Substrate Builders Program is complementary to any external accelerator or incubator program
                 that developers can enroll in. Much of what this program offers, such as technical support and
@@ -387,16 +358,11 @@ export default function BuildersProgram() {
               <div className="bg-gray-200 hidden lg:block">Image</div>
             </div>
           </div>
+        </Section>
 
+        <Section>
           <h2>Got Questions?</h2>
-          <Link to="/ecosystem/connect/contact">
-            <span className="inline-block font-bold border-b-2 border-black dark:border-white inline mr-1 hover:mr-2 transition-all">
-              Contact us here
-            </span>
-            <span className="fill-current border-b-0 text-black dark:text-white inline-block">
-              <Icon name="arrow-more" />
-            </span>
-          </Link>
+          <LineArrowButton link="/ecosystem/connect/contact">Contact us here</LineArrowButton>
         </Section>
       </Article>
     </Layout>
