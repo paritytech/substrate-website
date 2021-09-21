@@ -43,7 +43,7 @@ const Card = ({ page, delay, mode, image }) => {
         <div className="self-center md:order-2 w-1/2 pt-8 pl-8 md:p-0 justify-self-end flex-none">
           <Icon name={image} className={cx('md:w-full h-auto', { 'lg:mb-6': mode === 'vertical' })} />
         </div>
-        <div className="flex flex-col md:w-2/3 flex-none justify-between p-8 md:order-1">
+        <div className="flex flex-col md:w-2/3 flex-none justify-between p-8 lg:pr-4 md:order-1">
           <div className={cx('lg:pb-6', { 'lg:mr-0': mode === 'vertical' })}>
             <h3 className="mb-5 text-3xl font-bold">{title}</h3>
             <p className="mb-6">{description}</p>
