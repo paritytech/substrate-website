@@ -1,8 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Gif from '../../components/default/Gif';
-import Icon from '../../components/default/Icon';
+import FlipIcon from '../../components/default/FlipIcon';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
@@ -31,7 +30,7 @@ const Flexible = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Gif name="intentional" className="w-full h-auto" />
+            <FlipIcon icons={['flexible-base', 'intentional']} />
           </FeatureImage>
         }
       >
@@ -60,20 +59,19 @@ const Flexible = () => {
         </Feature>
       </Section>
 
+      <HighlightBanner icon="acala-logo">
+        <p className="font-bold mb-2 text-2xl">
+          Discover how Acala leverages Substrate&apos;s flexibility to enable no cost transactions and protect against
+          attacks.
+        </p>
+      </HighlightBanner>
+
       <Section
         mode="reversed"
         col={2}
         children2={
           <FeatureImage>
-            {/* <Gif name="forkless" className="w-full h-auto" /> */}
-            <div className="relative w-full">
-              <div className="absolute w-96 h-96">
-                <Icon name="diamond-yellow" className="w-96 h-96" />
-              </div>
-              <div data-aos="fade-in" data-aos-delay="700" className="bg-white absolute w-96 h-96">
-                <Icon name="diamond-purple" className="w-96 h-96" />
-              </div>
-            </div>
+            <FlipIcon icons={['flexible-base', 'forkless']} />
           </FeatureImage>
         }
       >
@@ -111,7 +109,7 @@ const Flexible = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Gif name="fast" className="w-full h-auto" />
+            <FlipIcon icons={['flexible-base', 'fast']} />
           </FeatureImage>
         }
       >

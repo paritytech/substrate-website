@@ -121,3 +121,14 @@ h3 {
 .navSidebar a[aria-current='page'] {
   @apply font-bold;
 }
+
+/* Fade out animation - DOES NOT WORK */
+
+[data-aos='fade-out'] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[data-aos='fade-out'] .aos-animate {
+  opacity: 0;
+}

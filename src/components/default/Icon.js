@@ -1,10 +1,11 @@
 import React from 'react';
 
-import forkless from '../../images/svg/forkless.svg';
+import forklessUpgrades from '../../images/svg/forkless-upgrades.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import kusamaLogo from '../../images/svg/kusama_logo.svg';
 import lightClient from '../../images/svg/light-client.svg';
+import logoAcala from '../../images/svg/logo-acala.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import polkadotLogo from '../../images/svg/polkadot-logo.svg';
@@ -21,14 +22,14 @@ import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
 import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
+import fast from '../../images/svg/technology/fast.svg';
+import flexibleBase from '../../images/svg/technology/flexible-base.svg';
+import forkless from '../../images/svg/technology/forkless.svg';
 import flexible from '../../images/svg/technology/icon-flexible.svg';
-import flexibleCropped from '../../images/svg/technology/icon-flexible-cropped.svg';
 import futureProof from '../../images/svg/technology/icon-future-proof.svg';
-import futureProofCropped from '../../images/svg/technology/icon-future-proof-cropped.svg';
 import interoperable from '../../images/svg/technology/icon-interoperable.svg';
-import interoperableCropped from '../../images/svg/technology/icon-interoperable-cropped.svg';
 import open from '../../images/svg/technology/icon-open.svg';
-import openCropped from '../../images/svg/technology/icon-open-cropped.svg';
+import intentional from '../../images/svg/technology/intentional.svg';
 import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
@@ -55,6 +56,7 @@ const iconsMap = {
   'w3f-logo': w3fLogo,
   'kusama-logo': kusamaLogo,
   'polkadot-logo': polkadotLogo,
+  'acala-logo': logoAcala,
   /* headings */
   hackathons: hackathons,
   seminar: seminar,
@@ -91,20 +93,20 @@ const iconsMap = {
   discord: discord,
   /* highlights */
   'wa-logo': waLogo,
-  forkless: forkless,
+  'forkless-upgrades': forklessUpgrades,
   'light-client': lightClient,
   'shield-check-solid': shieldCheckSolid,
   'globe-solid': globeSolid,
   'subconnect-browser-tab': subconnectBrowserTab,
   /* technology */
-  'flexible-cropped': flexibleCropped,
-  'future-proof-cropped': futureProofCropped,
-  'interoperable-cropped': interoperableCropped,
-  'open-cropped': openCropped,
   flexible: flexible,
   'future-proof': futureProof,
   interoperable: interoperable,
   open: open,
+  fast: fast,
+  'flexible-base': flexibleBase,
+  forkless: forkless,
+  intentional: intentional,
 };
 
 export default function Icon({ name, className }) {

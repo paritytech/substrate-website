@@ -25,7 +25,7 @@ const highlights = [
   },
   {
     title: 'Forkless <br/>Upgrades',
-    icon: 'forkless',
+    icon: 'forkless-upgrades',
     description: 'Upgrading blockchains has never been easier. With Substrate, everybody stays on the same path.',
   },
 ];
