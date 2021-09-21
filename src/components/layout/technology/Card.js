@@ -40,7 +40,7 @@ const Card = ({ page, delay, mode, image }) => {
           }
         )}
       >
-        <div className="self-center md:order-2 w-1/2 p-8 md:p-0 justify-self-end flex-none">
+        <div className="self-center md:order-2 w-1/2 pt-8 pl-8 md:p-0 justify-self-end flex-none">
           <Icon name={image} className={cx('md:w-full h-auto', { 'lg:mb-6': mode === 'vertical' })} />
         </div>
         <div className="flex flex-col md:w-2/3 flex-none justify-between p-8 md:order-1">
