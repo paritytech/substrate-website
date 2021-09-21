@@ -157,7 +157,7 @@ const Flexible = () => {
 
       <CardsNav currentPage="Flexible" />
 
-      <ExploreLinkSection />
+      <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>
   );
 };

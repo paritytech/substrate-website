@@ -157,7 +157,7 @@ const Interoperable = () => {
 
       <CardsNav currentPage="Interoperable" />
 
-      <ExploreLinkSection />
+      <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>
   );
 };

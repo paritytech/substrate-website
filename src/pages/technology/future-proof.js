@@ -145,7 +145,7 @@ const FutureProof = () => {
 
       <CardsNav currentPage="Future-Proof" />
 
-      <ExploreLinkSection />
+      <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>
   );
 };

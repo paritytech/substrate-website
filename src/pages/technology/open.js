@@ -126,7 +126,7 @@ const Open = () => {
 
       <CardsNav currentPage="Open" />
 
-      <ExploreLinkSection />
+      <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>
   );
 };
