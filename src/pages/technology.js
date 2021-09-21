@@ -99,7 +99,7 @@ export default function IndexPage() {
           <ul className="grid sm:grid-cols-3 gap-16 xl:gap-24 list-none m-0">
             {highlights.map(({ title, icon, description }) => {
               return (
-                <li key={title} className="m-0">
+                <li key={title} className="m-0 hover:opacity-50 transition-opacity">
                   <Link to="/technology">
                     <div className="w-16 h-16">
                       <Icon name={icon} className="fill-current text-substrateBlackish dark:text-white" />
