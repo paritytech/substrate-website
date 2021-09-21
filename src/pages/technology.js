@@ -110,12 +110,15 @@ export default function IndexPage() {
           </ul>
         </Section>
         <Section>
-          <h2 className="text-4xl mb-10 font-bold">Substrate is:</h2>
-          <div className="grid lg:grid-cols-2 gap-10">
-            <Card page="Flexible" mode="horizontal" image="flexible" />
-            <Card page="Open" mode="horizontal" delay={200} image="open" />
-            <Card page="Interoperable" mode="horizontal" delay={400} image="interoperable" />
-            <Card page="Future-Proof" mode="horizontal" delay={600} image="future-proof" />
+          <div className="relative">
+            <Icon name="diamond-green" className="absolute opacity-20 right-0 w-1/3" />
+            <h2 className="text-4xl mb-10 pt-10 font-bold">Substrate is uniquely:</h2>
+            <div className="grid lg:grid-cols-2 gap-10">
+              <Card page="Flexible" mode="horizontal" image="flexible" />
+              <Card page="Open" mode="horizontal" delay={200} image="open" />
+              <Card page="Interoperable" mode="horizontal" delay={400} image="interoperable" />
+              <Card page="Future-Proof" mode="horizontal" delay={600} image="future-proof" />
+            </div>
           </div>
         </Section>
         <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
