@@ -121,7 +121,7 @@ export default function IndexPage() {
             <Card page="Future-Proof" mode="horizontal" delay={600} image="heroFutureProof" />
           </div>
         </Section>
-        <ExploreLinkSection current="Technology" />
+        <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
       </Article>
     </Layout>
   );

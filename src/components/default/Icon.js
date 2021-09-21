@@ -27,6 +27,7 @@ import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
 import calendar from '../../images/svg/ui/calendar.svg';
 import close from '../../images/svg/ui/close-x.svg';
+import diamondGreen from '../../images/svg/ui/diamond-green.svg';
 import diamondPink from '../../images/svg/ui/diamond-pink.svg';
 import diamondPurple from '../../images/svg/ui/diamond-purple.svg';
 import diamondYellow from '../../images/svg/ui/diamond-yellow.svg';
@@ -66,6 +67,7 @@ const iconsMap = {
   'diamond-yellow': diamondYellow,
   'diamond-pink': diamondPink,
   'diamond-purple': diamondPurple,
+  'diamond-green': diamondGreen,
   /* mockup */
   placeholder: placeholder,
   /* social */
