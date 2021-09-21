@@ -43,6 +43,7 @@ module.exports = {
       fontSize: {
         '2.5xl': ['1.75rem', { lineHeight: '1.2' }],
         '7xl': ['5rem', { lineHeight: '1' }],
+        'four-oh-four': ['20rem', { lineHeight: '1' }],
       },
     },
     gridTemplateRows: {

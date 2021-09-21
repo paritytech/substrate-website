@@ -4,10 +4,11 @@ import React from 'react';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
-const PrimaryButton = ({ children, link, fullWidth = false }) => {
+const PrimaryButton = ({ children, link, onClick, fullWidth = false }) => {
   return (
     <Link to={link}>
       <div
+        onClick={onClick}
         className={cx('group bg-substrateGreen inline-flex relative rounded-md overflow-hidden', {
           'w-full justify-center': fullWidth,
         })}
