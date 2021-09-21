@@ -12,12 +12,22 @@ import InfoCard from '../../components/layout/technology/InfoCard';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
+import * as animationData from '../../images/animation/technology/interoperable.json';
 
 const Interoperable = () => {
+  const animationOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
   return (
     <Layout>
       <SEO title="Interoperable" />
-      <Hero page="Interoperable" image="placeholder">
+      <Hero page="Interoperable" animation={animationOptions}>
         <p>
           Developers are often forced to make tradeoffs with regards to compatibility, security, and efficiency in order
           to interact with data that exists off-chain and cross-chain. This has led to the creation of bridges, oracles,

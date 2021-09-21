@@ -47,6 +47,7 @@ p {
 .underline-animate-thin a::after {
   height: 1px;
 }
+
 /* Markdown styles */
 
 .markdown h2,
