@@ -6,7 +6,7 @@ import Section from '../Section';
 
 const CaseStudyBanner = ({ icon, children, link }) => {
   return (
-    <div className="bg-substrateGray-light">
+    <div className="bg-substrateGray-light dark:bg-substrateBlackish">
       <Section>
         <div className="md:flex flex-row py-8">
           <Icon name={icon} className="md:self-center mb-4 md:mb-0" />
