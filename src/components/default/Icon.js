@@ -1,18 +1,35 @@
 import React from 'react';
 
+import chain from '../../images/svg/chain.svg';
+import computer from '../../images/svg/computer.svg';
+import contact from '../../images/svg/contact.svg';
+import desktop from '../../images/svg/desktop.svg';
+import dollar from '../../images/svg/dollar.svg';
+import builders from '../../images/svg/ecosystem/builders.svg';
+import connect from '../../images/svg/ecosystem/connect.svg';
+import explore from '../../images/svg/ecosystem/explore.svg';
+import opportunities from '../../images/svg/ecosystem/opportunities.svg';
+import resources from '../../images/svg/ecosystem/resources.svg';
+import event from '../../images/svg/event.svg';
 import forklessUpgrades from '../../images/svg/forkless-upgrades.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
+import graduation from '../../images/svg/graduation.svg';
 import hackathons from '../../images/svg/hackathons.svg';
+import house from '../../images/svg/house.svg';
 import kusamaLogo from '../../images/svg/kusama_logo.svg';
+import layers from '../../images/svg/layers.svg';
 import lightClient from '../../images/svg/light-client.svg';
 import logoAcala from '../../images/svg/logo-acala.svg';
 import logoAstar from '../../images/svg/logo-astar.svg';
 import logoMoonbeam from '../../images/svg/logo-moonbeam.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
+import paperplane from '../../images/svg/paperplane.svg';
+import pen from '../../images/svg/pen.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import polkadotLogo from '../../images/svg/polkadot-logo.svg';
 import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
+import smile from '../../images/svg/smile.svg';
 import discord from '../../images/svg/social/discord.svg';
 import element from '../../images/svg/social/element.svg';
 import element2 from '../../images/svg/social/element2.svg';
@@ -57,6 +74,7 @@ import docs from '../../images/svg/ui/docs.svg';
 import externalLink from '../../images/svg/ui/external-link.svg';
 import hamburger from '../../images/svg/ui/hamburger-toggle.svg';
 import moon from '../../images/svg/ui/moon.svg';
+import play from '../../images/svg/ui/play.svg';
 import sidebarToggle from '../../images/svg/ui/sidebar-toggle.svg';
 import star from '../../images/svg/ui/star.svg';
 import sun from '../../images/svg/ui/sun.svg';
@@ -64,6 +82,12 @@ import w3fLogo from '../../images/svg/w3f-logo.svg';
 import waLogo from '../../images/svg/wa-logo.svg';
 
 const iconsMap = {
+  /* ecosystem */
+  opportunities: opportunities,
+  resources: resources,
+  connect: connect,
+  builders: builders,
+  explore: explore,
   /* brand */
   'logo-white': logoWhite,
   'w3f-logo': w3fLogo,
@@ -75,6 +99,18 @@ const iconsMap = {
   /* headings */
   hackathons: hackathons,
   seminar: seminar,
+  dollar: dollar,
+  desktop: desktop,
+  graduation: graduation,
+  smile: smile,
+  house: house,
+  contact: contact,
+  paperplane: paperplane,
+  pen: pen,
+  event: event,
+  chain: chain,
+  layers: layers,
+  computer: computer,
   /* ui */
   'hamburger-toggle': hamburger,
   'close-x': close,
@@ -93,6 +129,7 @@ const iconsMap = {
   'diamond-pink': diamondPink,
   'diamond-purple': diamondPurple,
   'diamond-green': diamondGreen,
+  play: play,
   /* mockup */
   placeholder: placeholder,
   /* social */
