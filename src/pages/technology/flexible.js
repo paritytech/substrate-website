@@ -12,12 +12,13 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
+import * as animation from '../../images/animation/technology/flexible.json';
 
 const Flexible = () => {
   return (
     <Layout>
       <SEO title="Flexible" />
-      <Hero page="Flexible" image="heroFlexible">
+      <Hero page="Flexible" animationData={animation}>
         <p>
           Blockchain developers have had to make difficult tradeoffs when deciding what distributed ledger technology to
           use.

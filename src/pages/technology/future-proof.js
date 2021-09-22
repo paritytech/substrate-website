@@ -12,12 +12,13 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
+import * as animation from '../../images/animation/technology/future-proof.json';
 
 const FutureProof = () => {
   return (
     <Layout>
       <SEO title="Future-Proof" />
-      <Hero page="Future Proof" image="heroFutureProof">
+      <Hero page="Future Proof" animationData={animation}>
         <p>
           Blockchain technology is evolving at a rapid pace and has spurred in innovation in other areas such Zero
           Knowledge, consensus mechanisms, cryptographic libraries and much more. It&apos;s challenging enough to keep

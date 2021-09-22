@@ -2,7 +2,6 @@ import cx from 'classnames';
 import React from 'react';
 import Lottie from 'react-lottie';
 
-import Gif from '../../default/Gif';
 import { Link } from '../../default/Link';
 import Section from '../../layout/Section';
 
@@ -29,7 +28,7 @@ const pages = [
   },
 ];
 
-const Hero = ({ page, image, animation, children }) => {
+const Hero = ({ page, animationData, children }) => {
   return (
     <div className="bg-substrateGray-light dark:bg-substrateBlackish -mt-12 pt-6">
       <Section>
@@ -62,10 +61,9 @@ const Hero = ({ page, image, animation, children }) => {
             </h1>
           </div>
           <div className="order-3 self-start max-w-lg font-medium">{children}</div>
-          {image && <Gif name={image} alt={page} className="order-2 lg:row-span-2 w-full h-auto mb-10 mt-4 lg:my-10" />}
-          {animation && (
-            <div className="order-2 lg:row-span-2 w-full h-auto mb-10 mt-4 lg:my-10">
-              <Lottie options={animation} />
+          {animationData && (
+            <div className="order-2 lg:row-span-2 w-full h-auto aspect-w-9 aspect-h-11">
+              <Lottie options={{ animationData }} width="full" height="full" />
             </div>
           )}
         </div>

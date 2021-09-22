@@ -12,12 +12,13 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
+import * as animation from '../../images/animation/technology/open.json';
 
 const Open = () => {
   return (
     <Layout>
       <SEO title="Open" />
-      <Hero page="Open" image="heroOpen">
+      <Hero page="Open" animationData={animation}>
         <p>
           Developers know that open source licensing isn&apos;t enough on its own. They need an architecture that is
           open to customization, tooling they they are accustomed to, and most importantly an open and contributing

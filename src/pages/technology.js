@@ -32,15 +32,6 @@ const highlights = [
   },
 ];
 
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: 'xMidYMid slice',
-  },
-};
-
 export default function IndexPage() {
   return (
     <Layout mode="full">
@@ -61,7 +52,7 @@ export default function IndexPage() {
             </div>
             <div className="order-3 lg:order-2 self-end">
               <div className="w-full aspect-w-10 aspect-h-7 mb-8">
-                <Lottie options={defaultOptions} height="full" width="full" />
+                <Lottie options={{ animationData }} height="full" width="full" />
               </div>
             </div>
             <div className="order-2 lg:order-3">
