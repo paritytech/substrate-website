@@ -36,7 +36,7 @@ const Hero = ({ page, animationData, children }) => {
           {pages.map(({ title, link }) => {
             const current = title === page;
             return (
-              <li key={title} className={cx('m-0 p-0 md:mr-16 lg:mr-24 xl:mr-32')}>
+              <li key={title} className={cx('m-0 p-0 md:mr-16 lg:mr-20 xl:mr-24')}>
                 <Link
                   to={link}
                   className={cx('font-bold hover:text-substrateGreen transition transition-color', {

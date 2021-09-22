@@ -63,17 +63,15 @@ export default function IndexPage() {
               <p className="underline-animate text-xl md:text-2xl xl:text-3xl font-bold">
                 Welcome to Substrate, the only{' '}
                 <Link className="text-substrateBlue" to="/technology/flexible">
-                  flexible
-                </Link>
-                ,{' '}
+                  flexible,
+                </Link>{' '}
                 <Link className="text-substrateBlue" to="/technology/open">
-                  open
-                </Link>
-                ,{' '}
+                  open,
+                </Link>{' '}
                 <Link className="text-substrateBlue" to="/technology/interoperable">
-                  interoperable
-                </Link>
-                , and{' '}
+                  interoperable,
+                </Link>{' '}
+                and{' '}
                 <Link className="text-substrateBlue" to="/technology/future-proof">
                   future proof
                 </Link>{' '}
