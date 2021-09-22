@@ -60,7 +60,7 @@ export default function IndexPage() {
               </h1>
             </div>
             <div className="order-3 lg:order-2 self-end">
-              <div className="w-full aspect-w-3 aspect-h-2 mb-8">
+              <div className="w-full aspect-w-10 aspect-h-7 mb-8">
                 <Lottie options={defaultOptions} height="full" width="full" />
               </div>
             </div>
