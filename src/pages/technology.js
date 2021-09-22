@@ -43,7 +43,7 @@ export default function IndexPage() {
               <p className="tracking-wider lg:tracking-widest text-lg font-light mb-0 uppercase">
                 Substrate Technology
               </p>
-              <h1 data-aos="fade-up" className="font-title text-5xl md:text-6xl xl:text-7xl font-extrabold my-8">
+              <h1 className="font-title text-5xl md:text-6xl xl:text-7xl font-extrabold my-8">
                 Build
                 <br /> beyond the
                 <br /> capabilities

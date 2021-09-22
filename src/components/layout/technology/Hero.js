@@ -53,10 +53,7 @@ const Hero = ({ page, animationData, children }) => {
         <div className="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 lg:gap-x-6">
           <div className="order-1 md:self-end">
             <p className="tracking-wider lg:tracking-widest text-lg font-light mb-0 uppercase">Substrate Technology</p>
-            <h1
-              data-aos="fade-up"
-              className="py-6 lg:py-10 mb-0 font-title font-extrabold text-6xl xl:text-7xl whitespace-nowrap"
-            >
+            <h1 className="py-6 lg:py-10 mb-0 font-title font-extrabold text-6xl xl:text-7xl whitespace-nowrap">
               {page}
             </h1>
           </div>
