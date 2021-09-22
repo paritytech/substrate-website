@@ -23,7 +23,7 @@ const Feature = ({ title, children, learnMore, link, linkText }) => {
 };
 
 const FeatureImage = ({ children }) => {
-  return <div className="flex justify-center h-full lg:pl-14 lg:pt-14 lg:pr-10">{children}</div>;
+  return <div className="flex justify-center h-full lg:px-10">{children}</div>;
 };
 
 export { Feature, FeatureImage };
