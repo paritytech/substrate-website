@@ -24,6 +24,7 @@ import youtube from '../../images/svg/social/youtube.svg';
 import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
 import architecture from '../../images/svg/technology/architecture.svg';
 import community from '../../images/svg/technology/community.svg';
+import compatible from '../../images/svg/technology/compatible.svg';
 import fast from '../../images/svg/technology/fast.svg';
 import flexibleBase from '../../images/svg/technology/flexible-base.svg';
 import forkless from '../../images/svg/technology/forkless.svg';
@@ -32,7 +33,9 @@ import futureProof from '../../images/svg/technology/icon-future-proof.svg';
 import interoperable from '../../images/svg/technology/icon-interoperable.svg';
 import open from '../../images/svg/technology/icon-open.svg';
 import intentional from '../../images/svg/technology/intentional.svg';
+import interoperableBase from '../../images/svg/technology/interoperable-base.svg';
 import openBase from '../../images/svg/technology/open-base.svg';
+import secure from '../../images/svg/technology/secure.svg';
 import tooling from '../../images/svg/technology/tooling.svg';
 import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
@@ -115,6 +118,9 @@ const iconsMap = {
   community: community,
   'open-base': openBase,
   tooling: tooling,
+  compatible: compatible,
+  'interoperable-base': interoperableBase,
+  secure: secure,
 };
 
 export default function Icon({ name, className }) {

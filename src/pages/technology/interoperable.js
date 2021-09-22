@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Gif from '../../components/default/Gif';
+import FlipIcon from '../../components/default/FlipIcon';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
@@ -30,7 +30,7 @@ const Interoperable = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Gif name="compatible" className="w-full h-auto" />
+            <FlipIcon icons={['interoperable-base', 'compatible']} />
           </FeatureImage>
         }
       >
@@ -67,7 +67,7 @@ const Interoperable = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Gif name="secure" className="w-full h-auto" />
+            <FlipIcon icons={['interoperable-base', 'secure']} />
           </FeatureImage>
         }
       >
@@ -149,7 +149,7 @@ const Interoperable = () => {
         </Feature>
       </Section>
 
-      <HighlightBanner>
+      <HighlightBanner icon="interoperable">
         Substrate is the antithesis of blockchain maximalism; <strong className="font-bold">interoperability</strong>{' '}
         without forgoing <strong className="font-bold">compatibility, security, </strong>
         or <strong className="font-bold">efficiency</strong>.
