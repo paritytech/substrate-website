@@ -1,9 +1,10 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Gif from '../../components/default/Gif';
+import FlipIcon from '../../components/default/FlipIcon';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
+import CaseStudyBanner from '../../components/layout/technology/CaseStudyBanner';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
 import { Feature, FeatureImage } from '../../components/layout/technology/Feature';
 import Hero from '../../components/layout/technology/Hero';
@@ -30,7 +31,7 @@ const FutureProof = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Gif name="upgradable" className="w-full h-auto" />
+            <FlipIcon icons={['future-proof-base', 'upgradable']} />
           </FeatureImage>
         }
       >
@@ -60,11 +61,15 @@ const FutureProof = () => {
         </Feature>
       </Section>
 
+      <CaseStudyBanner icon="moonbeam-logo">
+        See how Moonbeam continuously adapts to stay Ethereum-compatible.
+      </CaseStudyBanner>
+
       <Section
         col={2}
         children2={
           <FeatureImage>
-            <Gif name="composable" className="w-full h-auto" />
+            <FlipIcon icons={['future-proof-base', 'composable']} />
           </FeatureImage>
         }
       >
@@ -102,7 +107,7 @@ const FutureProof = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Gif name="adaptable" className="w-full h-auto" />
+            <FlipIcon icons={['future-proof-base', 'adaptable']} />
           </FeatureImage>
         }
       >
@@ -138,7 +143,7 @@ const FutureProof = () => {
         </Feature>
       </Section>
 
-      <HighlightBanner>
+      <HighlightBanner icon="future-proof">
         Founders and Developers can be confident that their blockchain is <strong className="font-bold">ready</strong>{' '}
         for whatever the <strong className="font-bold">future</strong> brings.
       </HighlightBanner>

@@ -4,6 +4,7 @@ import React from 'react';
 import FlipIcon from '../../components/default/FlipIcon';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
+import CaseStudyBanner from '../../components/layout/technology/CaseStudyBanner';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
 import { Feature, FeatureImage } from '../../components/layout/technology/Feature';
 import Hero from '../../components/layout/technology/Hero';
@@ -96,6 +97,10 @@ const Interoperable = () => {
           </p>
         </Feature>
       </Section>
+
+      <CaseStudyBanner icon="astar-logo">
+        See Astar&apos;s case study on enabling dApps to co-exist across blockchain networks.
+      </CaseStudyBanner>
 
       <Section
         col={2}

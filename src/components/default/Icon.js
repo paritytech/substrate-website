@@ -6,6 +6,8 @@ import hackathons from '../../images/svg/hackathons.svg';
 import kusamaLogo from '../../images/svg/kusama_logo.svg';
 import lightClient from '../../images/svg/light-client.svg';
 import logoAcala from '../../images/svg/logo-acala.svg';
+import logoAstar from '../../images/svg/logo-astar.svg';
+import logoMoonbeam from '../../images/svg/logo-moonbeam.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import polkadotLogo from '../../images/svg/polkadot-logo.svg';
@@ -22,12 +24,15 @@ import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
 import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
+import adaptable from '../../images/svg/technology/adaptable.svg';
 import architecture from '../../images/svg/technology/architecture.svg';
 import community from '../../images/svg/technology/community.svg';
 import compatible from '../../images/svg/technology/compatible.svg';
+import composable from '../../images/svg/technology/composable.svg';
 import fast from '../../images/svg/technology/fast.svg';
 import flexibleBase from '../../images/svg/technology/flexible-base.svg';
 import forkless from '../../images/svg/technology/forkless.svg';
+import futureProofBase from '../../images/svg/technology/future-proof-base.svg';
 import flexible from '../../images/svg/technology/icon-flexible.svg';
 import futureProof from '../../images/svg/technology/icon-future-proof.svg';
 import interoperable from '../../images/svg/technology/icon-interoperable.svg';
@@ -37,6 +42,7 @@ import interoperableBase from '../../images/svg/technology/interoperable-base.sv
 import openBase from '../../images/svg/technology/open-base.svg';
 import secure from '../../images/svg/technology/secure.svg';
 import tooling from '../../images/svg/technology/tooling.svg';
+import upgradable from '../../images/svg/technology/upgradable.svg';
 import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
@@ -64,6 +70,8 @@ const iconsMap = {
   'kusama-logo': kusamaLogo,
   'polkadot-logo': polkadotLogo,
   'acala-logo': logoAcala,
+  'moonbeam-logo': logoMoonbeam,
+  'astar-logo': logoAstar,
   /* headings */
   hackathons: hackathons,
   seminar: seminar,
@@ -121,6 +129,10 @@ const iconsMap = {
   compatible: compatible,
   'interoperable-base': interoperableBase,
   secure: secure,
+  adaptable: adaptable,
+  composable: composable,
+  'future-proof-base': futureProofBase,
+  upgradable: upgradable,
 };
 
 export default function Icon({ name, className }) {
