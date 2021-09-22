@@ -4,6 +4,7 @@ import React from 'react';
 import FlipIcon from '../../components/default/FlipIcon';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
+import CaseStudyBanner from '../../components/layout/technology/CaseStudyBanner';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
 import { Feature, FeatureImage } from '../../components/layout/technology/Feature';
 import Hero from '../../components/layout/technology/Hero';
@@ -59,12 +60,12 @@ const Flexible = () => {
         </Feature>
       </Section>
 
-      <HighlightBanner icon="acala-logo">
+      <CaseStudyBanner icon="acala-logo">
         <p className="font-bold mb-2 text-2xl">
           Discover how Acala leverages Substrate&apos;s flexibility to enable no cost transactions and protect against
           attacks.
         </p>
-      </HighlightBanner>
+      </CaseStudyBanner>
 
       <Section
         mode="reversed"
@@ -147,7 +148,7 @@ const Flexible = () => {
         </Feature>
       </Section>
 
-      <HighlightBanner>
+      <HighlightBanner icon="flexible">
         The flexible nature of Substrate alleviates the tension of tradeoffs by{' '}
         <strong className="font-bold">enabling developers to create the most optimal blockchain</strong> for their
         specific needs.

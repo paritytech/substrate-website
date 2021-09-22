@@ -114,10 +114,10 @@ export default function IndexPage() {
             <Icon name="diamond-green" className="hidden md:block absolute opacity-20 right-0 w-1/3" />
             <h2 className="text-4xl mb-10 md:pt-16 font-bold">Substrate is uniquely:</h2>
             <div className="grid lg:grid-cols-2 gap-10">
-              <Card page="Flexible" mode="horizontal" image="flexible" />
-              <Card page="Open" mode="horizontal" delay={200} image="open" />
-              <Card page="Interoperable" mode="horizontal" delay={400} image="interoperable" />
-              <Card page="Future-Proof" mode="horizontal" delay={600} image="future-proof" />
+              <Card page="Flexible" mode="horizontal" />
+              <Card page="Open" mode="horizontal" delay={200} />
+              <Card page="Interoperable" mode="horizontal" delay={400} />
+              <Card page="Future-Proof" mode="horizontal" delay={600} />
             </div>
           </div>
         </Section>

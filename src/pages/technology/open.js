@@ -1,8 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Gif from '../../components/default/Gif';
-import Icon from '../../components/default/Icon';
+import FlipIcon from '../../components/default/FlipIcon';
 import { Link } from '../../components/default/Link';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
@@ -29,7 +28,7 @@ const Open = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Gif name="placeholder" className="w-full h-auto" />
+            <FlipIcon icons={['open-base', 'architecture']} />
           </FeatureImage>
         }
       >
@@ -65,7 +64,7 @@ const Open = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <FlipIcon icons={['open-base', 'tooling']} />
           </FeatureImage>
         }
       >
@@ -98,7 +97,7 @@ const Open = () => {
         col={2}
         children2={
           <FeatureImage>
-            <Icon name="placeholder" className="w-full h-auto" />
+            <FlipIcon icons={['open-base', 'community']} />
           </FeatureImage>
         }
       >
