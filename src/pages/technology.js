@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
+import Lottie from 'react-lottie';
 
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
@@ -9,6 +10,7 @@ import Card from '../components/layout/technology/Card';
 import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
+import * as animationData from '../images/animation/technology/overview.json';
 
 const highlights = [
   {
@@ -30,6 +32,15 @@ const highlights = [
   },
 ];
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+};
+
 export default function IndexPage() {
   return (
     <Layout mode="full">
@@ -49,7 +60,9 @@ export default function IndexPage() {
               </h1>
             </div>
             <div className="order-3 lg:order-2 self-end">
-              <div className="w-full bg-gray-200 aspect-w-5 aspect-h-3 mb-8"></div>
+              <div className="w-full aspect-w-3 aspect-h-2 mb-8">
+                <Lottie options={defaultOptions} height="full" width="full" />
+              </div>
             </div>
             <div className="order-2 lg:order-3">
               <p className="text-xl md:text-2xl xl:text-3xl font-bold">
