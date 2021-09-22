@@ -1,7 +1,6 @@
 import React from 'react';
-import Lottie from 'react-lottie';
 
-import * as animationData from '../../../images/animation/technology/overview.json';
+import Icon from '../../default/Icon';
 import Section from '../Section';
 import Card from './Card';
 
@@ -11,11 +10,7 @@ const CardsNav = ({ currentPage }) => {
   return (
     <Section>
       <div className="relative">
-        <div className="hidden lg:block absolute w-1/2 -right-4 z-0">
-          <div className="w-full aspect-w-10 aspect-h-7 mb-8">
-            <Lottie options={{ animationData }} height="full" width="full" />
-          </div>
-        </div>
+        <Icon name="diamond-green" className="hidden md:block absolute opacity-20 right-0 w-1/3" />
         <h2 className="text-3xl font-bold md:text-4xl mb-10 py-10 relative">Learn More About Our Technology</h2>
         <div className="grid grid-cols-1 gap-10 lg:gap-0 lg:flex flex-col lg:flex-row z-10">
           {pages
