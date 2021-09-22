@@ -116,7 +116,7 @@ const Open = () => {
         </p>
       </Section>
 
-      <HighlightBanner>
+      <HighlightBanner icon="open">
         The combination of an open source, customizable architecture that enables developers to{' '}
         <strong className="font-bold"> use the tooling of their choice </strong>
         with a robust active community makes{' '}
