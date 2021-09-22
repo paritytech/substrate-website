@@ -3,6 +3,7 @@ import React from 'react';
 
 import Icon from '../../default/Icon';
 import { Link } from '../../default/Link';
+import LineArrowButton from '../../ui/LineArrowButton';
 
 const cards = [
   {
@@ -46,7 +47,7 @@ const Card = ({ page, delay, mode }) => {
       >
         <div
           className={cx('self-center md:order-2 w-1/3 md:w-full pt-8 pl-8 md:p-8 justify-self-end lg:flex-none', {
-            'lg:p-8': mode === 'vertical',
+            'lg:px-8 lg:py-4': mode === 'vertical',
             'lg:p-0 lg:w-1/2': mode === 'horizontal',
           })}
         >
@@ -54,7 +55,7 @@ const Card = ({ page, delay, mode }) => {
         </div>
         <div
           className={cx('flex flex-col lg:flex-none justify-between p-8 pt-2 md:pt-8 md:order-1', {
-            'lg:w-full': mode === 'vertical',
+            'lg:w-full md:pt-4': mode === 'vertical',
             'lg:w-2/3 lg:pr-4': mode === 'horizontal',
           })}
         >
@@ -63,12 +64,7 @@ const Card = ({ page, delay, mode }) => {
             <p className="mb-6">{description}</p>
           </div>
           <div className="absolute bottom-8">
-            <p className="font-bold border-b-2 border-black dark:border-white inline hover:mr-1 transition-all">
-              Read More
-            </p>{' '}
-            <span className="fill-current border-b-0 text-black dark:text-white inline-block">
-              <Icon name="arrow-more" />
-            </span>
+            <LineArrowButton link={link}>Read More</LineArrowButton>
           </div>
         </div>
       </div>

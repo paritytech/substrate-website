@@ -39,11 +39,11 @@ export default function IndexPage() {
       <Article>
         <Section>
           <div className="grid lg:grid-cols-2 lg:gap-8">
-            <div className="lg:mr-8 order-1 self-end">
-              <p className="tracking-wider lg:tracking-widest text-lg font-light mb-0 uppercase">
+            <div className="lg:mr-8 order-1">
+              <p className="tracking-wider lg:tracking-widest text-lg font-light mb-8 uppercase">
                 Substrate Technology
               </p>
-              <h1 className="font-title text-5xl md:text-6xl xl:text-7xl font-extrabold my-8">
+              <h1 className="font-title text-5xl md:text-6xl xl:text-7xl font-extrabold mb-8">
                 Build
                 <br /> beyond the
                 <br /> capabilities
