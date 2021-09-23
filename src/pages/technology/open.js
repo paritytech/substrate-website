@@ -12,7 +12,7 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
-import * as animation from '../../images/animation/technology/open-cropped.json';
+import * as animation from '../../images/animation/technology/open.json';
 
 const Open = () => {
   return (
@@ -45,8 +45,10 @@ const Open = () => {
             Substrate Core to design and implement the runtime from scratch in any language that can target WebAssembly.
           </p>
           <Blockquote>
-            The easiest approach is to use Substrate Node which, a developer can simply configure and supply a JSON file
-            to launch a blockchain in minutes.
+            <p className="mb-0">
+              The easiest approach is to use Substrate Node which, a developer can simply configure and supply a JSON
+              file to launch a blockchain in minutes.
+            </p>
           </Blockquote>
           <p>
             Substrate FRAME is a meet in the middle approach that allows for a lot of freedom and configuration without
@@ -82,8 +84,10 @@ const Open = () => {
             web.
           </p>
           <Blockquote>
-            This allows developers to write blockchain logic in any language that can compile to WebAssembly, including
-            C/C++, C#, Typescript, and Rust all while using their preferred software development tools.
+            <p className="mb-0">
+              This allows developers to write blockchain logic in any language that can compile to WebAssembly,
+              including C/C++, C#, Typescript, and Rust all while using their preferred software development tools.
+            </p>
           </Blockquote>
           <p>
             It is worth noting that, as one of the longest standing players in the space, Parity has acquired deep

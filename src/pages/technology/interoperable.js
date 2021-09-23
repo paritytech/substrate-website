@@ -13,7 +13,7 @@ import InfoCard from '../../components/layout/technology/InfoCard';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
-import * as animation from '../../images/animation/technology/interoperable-cropped.json';
+import * as animation from '../../images/animation/technology/interoperable.json';
 
 const Interoperable = () => {
   return (
@@ -49,7 +49,7 @@ const Interoperable = () => {
             interoperability between networks in a decentralized and trustless manner.
           </p>
           <Blockquote>
-            <p>
+            <p className="mb-0">
               The secret sauce for native compatibility between Substrate based blockchains is XCMP (Cross-chain Message
               Passing). XCMP allows Substrate networks to communicate with each other without additional trust
               assumptions.
@@ -86,7 +86,7 @@ const Interoperable = () => {
             successful attack.
           </p>
           <Blockquote>
-            <p>
+            <p className="mb-0">
               Substrate blockchains are unique in that they can inherit security from other substrate based networks
               such as Polkadot. The result is quite substantial in that a small blockchain network can gain billions of
               dollars in security guarantees.
@@ -106,22 +106,24 @@ const Interoperable = () => {
       <Section
         col={2}
         children2={
-          <div className="grid auto-rows-fr md:pt-16" data-aos="fade-left">
-            <InfoCard
-              index={1}
-              title="Off-Chain Worker (OCW)"
-              description="for computationally intensive and even non-deterministic expensive tasks"
-            />
-            <InfoCard
-              index={2}
-              title="Off-Chain Storage"
-              description="enables data to be stored and access by both off-chain workers and on-chain logic without requiring consensus over the whole network"
-            />
-            <InfoCard
-              index={3}
-              title="Off-Chain Indexing"
-              description="stores a small amount of information on chain, such as a hash, that can be used to lookup and verify data stored off-chain independently of OCWs"
-            />
+          <div className="overflow-x-hidden">
+            <div className="grid auto-rows-fr md:pt-16" data-aos="fade-left">
+              <InfoCard
+                index={1}
+                title="Off-Chain Worker (OCW)"
+                description="for computationally intensive and even non-deterministic expensive tasks"
+              />
+              <InfoCard
+                index={2}
+                title="Off-Chain Storage"
+                description="enables data to be stored and access by both off-chain workers and on-chain logic without requiring consensus over the whole network"
+              />
+              <InfoCard
+                index={3}
+                title="Off-Chain Indexing"
+                description="stores a small amount of information on chain, such as a hash, that can be used to lookup and verify data stored off-chain independently of OCWs"
+              />
+            </div>
           </div>
         }
       >
@@ -142,9 +144,11 @@ const Interoperable = () => {
             separation of concerns ensures the block production is not impacted by long-running off-chain tasks.
           </p>
           <Blockquote>
-            Although the primary benefit of off-chain features may be cost, there are many other benefits. For example,
-            off-chain features can enable private data to be easily stored and retrievable off-chain to support record
-            deletion and other needs of GDPR-compliant use cases and applications.
+            <p className="mb-0">
+              Although the primary benefit of off-chain features may be cost, there are many other benefits. For
+              example, off-chain features can enable private data to be easily stored and retrievable off-chain to
+              support record deletion and other needs of GDPR-compliant use cases and applications.
+            </p>
           </Blockquote>
           <p>
             With substrate you&apos;re not only free to choose your parameters such gas costs, governance, consensus,

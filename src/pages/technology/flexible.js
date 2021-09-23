@@ -12,7 +12,7 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
-import * as animation from '../../images/animation/technology/flexible-cropped.json';
+import * as animation from '../../images/animation/technology/flexible.json';
 
 const Flexible = () => {
   return (
@@ -48,7 +48,7 @@ const Flexible = () => {
             the rigid boundaries of the design decisions made by others.
           </p>
           <Blockquote>
-            <p>
+            <p className="mb-0">
               {`Substrate is a fully modular blockchain framework that unleashes developers instead of forcing them to work
             within the confines of others' design decisions.`}
             </p>
@@ -89,7 +89,7 @@ const Flexible = () => {
             community.
           </p>
           <Blockquote>
-            <p>
+            <p className="mb-0">
               Substrate based nodes take a different approach which enables automatic upgrades, no user intervention
               required. The result is blockchain networks can be completely forkless or simply fork less.
             </p>
@@ -132,7 +132,7 @@ const Flexible = () => {
               queues, and/or horizontal scaling. If your application is limited by gas you can even choose to have
               gas-less transactions.
             </p>
-            <p>
+            <p className="mb-0">
               Development is faster since developers can use the tooling they prefer and select from many different
               pallets instead of building from scratch. Upgrades happen faster thanks for forkless runtime upgrades and
               Node-syncing not only happens faster but also is more secure and reliable due to Substrate’s

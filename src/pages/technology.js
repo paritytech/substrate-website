@@ -14,13 +14,13 @@ import * as animationData from '../images/animation/technology/overview.json';
 
 const highlights = [
   {
-    title: 'Cross-Language Support with WebAssembly',
+    title: 'Tooling',
     icon: 'wa-logo',
     description:
-      'WebAssembly is the next web standard. Write your blockchain logic in any language that can compile to it, including C/C++, C#, Typescript, and Rust.',
+      'No need to reinvent the wheel, Substrate has robust tooling for development, deployment, and debugging.',
   },
   {
-    title: 'Light-Client <br/>Friendly',
+    title: 'Light-Client-First Design',
     icon: 'light-client',
     description:
       'Browsers can interact directly with the blockchain network instead of relying on resource-heavy local node infrastructure or third party services.',
@@ -28,7 +28,7 @@ const highlights = [
   {
     title: 'Forkless <br/>Upgrades',
     icon: 'forkless-upgrades',
-    description: 'Upgrading blockchains has never been easier. With Substrate, everybody stays on the same path.',
+    description: 'Upgrading blockchains has never been easier. With Substrate, everyone stays on the same path.',
   },
 ];
 
@@ -80,16 +80,15 @@ export default function IndexPage() {
             </div>
             <div className="order-4">
               <p>
-                Substrate was created by OGs of blockchain who set out to overcome the limitations they experienced
-                building blockchains. Through the process of building clients in the early days of Bitcoin and Ethereum,
-                these developers realized they were recreating much of the same functionality but with different
-                limitations such as scale, governance, forks, interoperability, and upgrades.
+                Substrate was created by pioneers and veterans of the blockchain industry who set out to overcome the
+                limitations of previous-generation networks. Through the process of building clients in the early days
+                of Bitcoin and Ethereum, these developers found they were recreating much of the same functionality but
+                with different limitations around scale, governance, forks, interoperability, and upgrades.
               </p>
               <p className="font-bold underline-animate underline-animate-thin">
                 Substrate was born from the <Link to="/vision/substrate-and-polkadot">vision</Link> that developers
-                shouldn&apos;t have to recreate fundamentals to build a blockchain that alleviates their limitations.
-                The information below will help you understand why Substrate is the best technology to build on now and
-                into the future.
+                shouldn&apos;t have to recreate fundamentals when building and optimizing a blockchain. Read below to
+                learn why Substrate is the best technology to build on, now and into the future.
               </p>
             </div>
           </div>
@@ -119,7 +118,7 @@ export default function IndexPage() {
               <Card page="Flexible" mode="horizontal" />
               <Card page="Open" mode="horizontal" delay={200} />
               <Card page="Interoperable" mode="horizontal" delay={400} />
-              <Card page="Future-Proof" mode="horizontal" delay={600} />
+              <Card page="Future Proof" mode="horizontal" delay={600} />
             </div>
           </div>
         </Section>

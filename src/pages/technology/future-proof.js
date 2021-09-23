@@ -12,7 +12,7 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
-import * as animation from '../../images/animation/technology/future-proof-cropped.json';
+import * as animation from '../../images/animation/technology/future-proof.json';
 
 const FutureProof = () => {
   return (
@@ -53,7 +53,7 @@ const FutureProof = () => {
             foundation.
           </p>
           <Blockquote>
-            <p>
+            <p className="mb-0">
               This allows Substrate to adopt new technology as it evolves because it does not require alterations to the
               foundation. Developers can stay on top of technological advancements and adopt them more quickly with
               forkless automatic upgrades!
@@ -88,7 +88,7 @@ const FutureProof = () => {
             reduce attack vectors.
           </p>
           <Blockquote>
-            <p>
+            <p className="mb-0">
               Blockchains that are purpose built for their environment have key security and performance advantages over
               those that aren&apos;t.
             </p>
@@ -125,7 +125,7 @@ const FutureProof = () => {
             integrated from the start or after the fact with forkless runtime upgrades.
           </p>
           <Blockquote>
-            <p>
+            <p className="mb-0">
               As existing pallets are enhanced or new ones are created the blockchain can adapt to whatever the future
               may bring.
             </p>
@@ -136,7 +136,7 @@ const FutureProof = () => {
             advent of large scale quantum computing, algorithms can be swapped out for quantum resistant ones.
           </p>
           <Blockquote>
-            <p>
+            <p className="mb-0">
               Substrate’s ability to adapt to new technologies as they arise gives developers an unfair advantage
               compared to alternatives.
             </p>
@@ -149,7 +149,7 @@ const FutureProof = () => {
         for whatever the <strong className="font-bold">future</strong> brings.
       </HighlightBanner>
 
-      <CardsNav currentPage="Future-Proof" />
+      <CardsNav currentPage="Future Proof" />
 
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>

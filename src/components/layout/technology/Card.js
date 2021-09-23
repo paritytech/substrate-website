@@ -9,25 +9,25 @@ const cards = [
   {
     title: 'Flexible',
     link: '/technology/flexible',
-    description: `The flexible nature of Substrate alleviates the tension of tradeoffs by enabling developers to create the most optimal blockchain for their specific needs.`,
+    description: `Substrate's flexibility alleviates the tension of tradeoffs by enabling developers to create the optimal blockchain for their specific needs.`,
     icon: 'flexible',
   },
   {
     title: 'Open',
     link: '/technology/open',
-    description: `The combination of an open source, customizable architecture that enables developers to use the tooling of their choice with a robust, active community makes Substrate the most open way to build.`,
+    description: `The combination of an open-source, customizable architecture, rich tooling and a robust, active community makes Substrate the most open way to build.`,
     icon: 'open',
   },
   {
     title: 'Interoperable',
     link: '/technology/interoperable',
-    description: `Interoperability without forgoing compatibility, security, or efficiency; learn how Substrate takes a unique, multifaceted approach to address each of these.`,
+    description: `Interoperability without foregoing compatibility, security, or efficiency; learn how Substrate takes a unique, multifaceted approach to address each of these factors.`,
     icon: 'interoperable',
   },
   {
-    title: 'Future-Proof',
+    title: 'Future Proof',
     link: '/technology/future-proof',
-    description: `Substrate enables developers to move faster and evolve their architecture as their needs evolve. Founders and Developers can be confident that their blockchain is ready for whatever the future brings.`,
+    description: `Substrate enables developers to change their architecture as their needs evolve, ensuring that their blockchain network is ready for whatever the future brings. `,
     icon: 'future-proof',
   },
 ];

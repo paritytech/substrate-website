@@ -4,7 +4,7 @@ import Icon from '../../default/Icon';
 import Section from '../Section';
 import Card from './Card';
 
-const pages = ['Flexible', 'Open', 'Interoperable', 'Future-Proof'];
+const pages = ['Flexible', 'Open', 'Interoperable', 'Future Proof'];
 
 const CardsNav = ({ currentPage }) => {
   return (
