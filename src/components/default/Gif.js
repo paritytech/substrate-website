@@ -14,6 +14,7 @@ import heroTechnology from '../../../src/images/gif/HERO-TECHNOLOGY.gif';
 import intentional from '../../../src/images/gif/INTENTIONAL.gif';
 import secure from '../../../src/images/gif/SECURE.gif';
 import upgradable from '../../../src/images/gif/UPGRADABLE.gif';
+import substratePolkadot from '../../images/gif/substrate-polkadot.gif';
 import placeholder from '../../images/svg/placeholder.svg';
 import Icon from './Icon';
 
@@ -34,6 +35,7 @@ const gifMap = {
   intentional,
   secure,
   upgradable,
+  'substrate-polkadot': substratePolkadot,
 };
 
 const Gif = ({ name, alt, className }) => {

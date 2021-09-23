@@ -1,15 +1,18 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import Lottie from 'react-lottie';
 
-import Icon from '../../components/default/Icon';
+import Gif from '../../components/default/Gif';
 import Article from '../../components/layout/Article';
 import Section from '../../components/layout/Section';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
+import BannerLink from '../../components/layout/vision/BannerLink';
 import ArticleNav from '../../components/site/ArticleNav';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import BlockQuote from '../../components/ui/Blockquote';
+import * as animationData from '../../images/animation/substrate-polkadot.json';
 
 const Vision = () => {
   return (
@@ -17,7 +20,18 @@ const Vision = () => {
       <SEO title="Substrate And Polkadot" />
       <Article>
         <Section>
-          <div name="placeholder" className="bg-gray-200 w-full aspect-w-5 aspect-h-2 mb-10"></div>
+          <div className="w-full aspect-w-5 aspect-h-2">
+            <Lottie
+              options={{
+                animationData,
+                loop: false,
+                rendererSettings: {
+                  preserveAspectRatio: 'xMidYMid slice',
+                },
+              }}
+              isClickToPauseDisabled={true}
+            />
+          </div>
         </Section>
         <Section>
           <div className="flex flex-row-reverse">
@@ -37,7 +51,7 @@ const Vision = () => {
                   Key Points:
                 </h4>
                 <ul>
-                  <li className="flex">
+                  <li data-aos="fade-right" className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -48,7 +62,7 @@ const Vision = () => {
                       the Polkadot network.
                     </p>
                   </li>
-                  <li className="flex">
+                  <li data-aos="fade-right" data-aos-delay="200" className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -58,7 +72,7 @@ const Vision = () => {
                       which attests to its high level of performance, flexibility, and robustness.
                     </p>
                   </li>
-                  <li className="flex">
+                  <li data-aos="fade-right" data-aos-delay="400" className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -69,7 +83,7 @@ const Vision = () => {
                       ecosystem of platforms, applications, and end-users.
                     </p>
                   </li>
-                  <li className="flex">
+                  <li data-aos="fade-right" data-aos-delay="600" className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -106,7 +120,9 @@ const Vision = () => {
                   Substrate & Polkadot
                 </h3>
                 <p className="text-xl font-semibold mb-6 ">The relationship between the framework and the network</p>
-                <Icon name="placeholder" className="mb-8" />
+                <div className="w-80 h-80 mb-6">
+                  <Gif name="substrate-polkadot" />
+                </div>
                 <p>
                   Substrate-based chains are easy to integrate into Polkadot or Kusama to become a parachain or
                   parathread. Essentially, Substrate is the SDK with which you can build parachains and Polkadot is the
@@ -141,10 +157,20 @@ const Vision = () => {
                   core upgradability.
                 </p>
                 <BlockQuote>
-                  By forcing these design decisions on yourself, you already place hard constraints on what you can
-                  practically engineer and how much you can really innovate. You also dramatically limit the performance
-                  of your application logic.
+                  <p className="mb-0">
+                    By forcing these design decisions on yourself, you already place hard constraints on what you can
+                    practically engineer and how much you can really innovate. You also dramatically limit the
+                    performance of your application logic.
+                  </p>
                 </BlockQuote>
+
+                <div className="my-10 border-b-2 border-black dark:border-substrateGray-dark"></div>
+
+                <BannerLink
+                  icon="placeholder"
+                  link="/technology"
+                  text="Explore how Substrate’s technology removes limitations"
+                />
 
                 <h3 id="the-road-to-substrate" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   The Road to Substrate
@@ -176,6 +202,14 @@ const Vision = () => {
                   </span>
                 </p>
 
+                <div className="my-10 border-b-2 border-black dark:border-substrateGray-dark"></div>
+
+                <BannerLink
+                  icon="placeholder"
+                  link="/technology/future-proof"
+                  text="No more forks in the road, see why Substrate is the first future proof blockchain framework"
+                />
+
                 <h3 id="the-web3-vision" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   The Web3 vision
                 </h3>
@@ -194,6 +228,14 @@ const Vision = () => {
                   uniform smart contract environment, limiting innovation and leaving Polkadot’s remarkable
                   heterogeneous sharding system unutilized.
                 </BlockQuote>
+
+                <div className="my-10 border-b-2 border-black dark:border-substrateGray-dark"></div>
+
+                <BannerLink
+                  icon="placeholder"
+                  link="/technology/interoperable"
+                  text="Understand how Substrate’s interoperability enables compatibility and efficiency without sacrificing security"
+                />
 
                 <h3 id="substrate-specifics" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   Substrate Specifics
@@ -218,6 +260,14 @@ const Vision = () => {
                   Indeed, the fact that Substrate is the underlying blockchain framework we used to build the Polkadot
                   Relay Chain attests to its performance and flexibility.
                 </p>
+
+                <div className="my-10 border-b-2 border-black dark:border-substrateGray-dark"></div>
+
+                <BannerLink
+                  icon="placeholder"
+                  link="/technology/flexible"
+                  text="Discover how Substrate’s flexibility enables modularity and performance "
+                />
 
                 <h3 id="decentralization-and-usability" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   Decentralization & Usability
