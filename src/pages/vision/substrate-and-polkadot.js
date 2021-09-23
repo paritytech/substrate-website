@@ -50,7 +50,7 @@ const Vision = () => {
                 <h4 id="key-points" className="font-bold mb-8 text-2xl">
                   Key Points:
                 </h4>
-                <ul>
+                <ul className="mb-12">
                   <li data-aos="fade-right" data-aos-anchor-placement="top-bottom" className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
@@ -109,8 +109,7 @@ const Vision = () => {
                     </p>
                   </li>
                 </ul>
-              </Section>
-              <Section>
+
                 <h1 id="substrate-polkadot-web3-vision" className="mb-8 font-bold text-4xl font-body">
                   Substrate, Polkadot, and the Web3 Vision
                 </h1>
