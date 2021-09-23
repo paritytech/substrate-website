@@ -8,7 +8,7 @@ const FlipIcon = ({ icons }) => {
       <div className="absolute w-full top-0">
         <Icon name={icons[0]} className="w-full h-auto" />
       </div>
-      <div data-aos="fade-in" data-aos-delay="700" className="top-0 bg-white dark:bg-substrateDarkest absolute w-full">
+      <div data-aos="fade-in" data-aos-delay="300" className="top-0 bg-white dark:bg-substrateDarkest absolute w-full">
         <Icon name={icons[1]} className="w-full h-auto" />
       </div>
     </div>
