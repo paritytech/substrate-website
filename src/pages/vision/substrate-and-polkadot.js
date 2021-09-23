@@ -20,7 +20,7 @@ const Vision = () => {
       <SEO title="Substrate And Polkadot" />
       <Article>
         <Section>
-          <div className="w-full aspect-w-5 aspect-h-2">
+          <div className="w-full lg:w-3/4 lg:mx-auto aspect-w-5 lg:aspect-w-6 aspect-h-2">
             <Lottie
               options={{
                 animationData,
@@ -121,7 +121,7 @@ const Vision = () => {
                   Substrate & Polkadot
                 </h3>
                 <p className="text-xl font-semibold mb-6 ">The relationship between the framework and the network</p>
-                <div className="w-80 h-80 mb-6">
+                <div className="w-60 h-60 mb-6">
                   <Gif name="substrate-polkadot" />
                 </div>
                 <p>
