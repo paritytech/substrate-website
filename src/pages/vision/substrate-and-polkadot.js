@@ -51,7 +51,7 @@ const Vision = () => {
                   Key Points:
                 </h4>
                 <ul>
-                  <li data-aos="fade-right" className="flex">
+                  <li data-aos="fade-right" data-aos-anchor-placement="top-bottom" className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -62,7 +62,12 @@ const Vision = () => {
                       the Polkadot network.
                     </p>
                   </li>
-                  <li data-aos="fade-right" data-aos-delay="200" className="flex">
+                  <li
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="100"
+                    className="flex"
+                  >
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -72,7 +77,12 @@ const Vision = () => {
                       which attests to its high level of performance, flexibility, and robustness.
                     </p>
                   </li>
-                  <li data-aos="fade-right" data-aos-delay="400" className="flex">
+                  <li
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="200"
+                    className="flex"
+                  >
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -83,7 +93,12 @@ const Vision = () => {
                       ecosystem of platforms, applications, and end-users.
                     </p>
                   </li>
-                  <li data-aos="fade-right" data-aos-delay="600" className="flex">
+                  <li
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="300"
+                    className="flex"
+                  >
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
