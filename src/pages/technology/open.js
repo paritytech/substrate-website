@@ -20,9 +20,8 @@ const Open = () => {
       <SEO title="Open" />
       <Hero page="Open" animationData={animation}>
         <p>
-          Developers know that open source licensing isn&apos;t enough on its own. They need an architecture that is
-          open to customization, tooling they they are accustomed to, and most importantly an open and contributing
-          community.
+          Developers know that open-source licensing isn&apos;t enough on its own. They need customizable architecture,
+          tooling to support their development, and most importantly, an open and contributing community.
         </p>
       </Hero>
       <Section
@@ -51,18 +50,20 @@ const Open = () => {
           </p>
           <Blockquote>
             <p className="mb-0">
-              The easiest approach is to use Substrate Node which, a developer can simply configure and supply a JSON
-              file to launch a blockchain in minutes.
+              The easiest approach is to use Substrate Node; a developer can simply configure and supply a JSON file to
+              launch a blockchain in minutes.
             </p>
           </Blockquote>
           <p>
-            Substrate FRAME is a meet in the middle approach that allows for a lot of freedom and configuration without
-            requiring extensive customization. A key benefit with FRAME is the option to select from a growing library
-            of pallets or even create custom pallets.
+            Substrate FRAME is a meet-in-the-middle approach that allows for a lot of freedom and configuration without
+            requiring extensive customization. A key benefit of FRAME is the option to select from a growing library of
+            pallets or custom-build their own.
           </p>
           <Blockquote>
-            Developers are not locked into a particular design which allows for the right balance of customization
-            verses ease of development.
+            <p className="mb-0">
+              Developers aren&apos;t locked into a particular design. This allows for the perfect balance between
+              customization and ease of development.
+            </p>
           </Blockquote>
         </Feature>
       </Section>
@@ -86,22 +87,27 @@ const Open = () => {
           }
         >
           <p>
-            Legacy blockchains often restrict developers to new or custom tools, which can be frustrating and
-            inefficient. Substrate on the other hand lets developers use their preferred software development tools. A
-            key design decision for substrate was to use WebAssembly, a software format that works widely across the
-            web.
+            Great tooling enables faster development, deployment, and debugging. Not only does Substrate have
+            comprehensive, high quality tooling, it also enables developers to use tooling developed by others, since
+            everything is based on the same underlying framework. This means there&apos;s no need to reinvent the wheel
+            with tooling.
+          </p>
+          <p>
+            Tools for obtaining and analyzing data are critical, and Substrate was built with this in mind. Substrate
+            exposes rich telemetry data that can be accessed in a performant, horizontally scalable and resilient way.
+            This data is compatible with various tools designed to analyze and visualize the data.
           </p>
           <Blockquote>
             <p className="mb-0">
-              This allows developers to write blockchain logic in any language that can compile to WebAssembly,
-              including C/C++, C#, Typescript, and Rust all while using their preferred software development tools.
+              Debugging and performance testing tools simplify development. Substrate has a suite of packages for
+              building transactions and performance testing, along with a collection of debugging tools.
             </p>
           </Blockquote>
           <p>
-            It is worth noting that, as one of the longest standing players in the space, Parity has acquired deep
-            technological leadership and has become an influential Rust development house that operates with the most
-            Rust engineers in the world. Because of this, we attract world class talent who come to work with others at
-            the forefront of blockchain.
+            End-user tooling improves the experience of interacting with Substrate blockchain networks. Substrate is the
+            only blockchain framework with an ultra-light client for connecting to the blockchain network directly in
+            the browser without relying on third parties or running additional node infrastructure. Other end-user
+            tooling includes utilities for sharding keys, faucets, wallets, and more.
           </p>
         </Feature>
       </Section>
@@ -116,24 +122,22 @@ const Open = () => {
       >
         <h2 className="text-4xl font-bold">Community</h2>
         <p>
-          The community building with substrate is large, active, and extremely helpful. In fact, many of the pallets
-          have been created by the community. This means developers will not only have a continually have more
-          capabilities they can add to their blockchain, it also means developers can take advantage of blockchain
-          runtime modules that have been hardened and tested by the community.
+          Substrate has a large, active, and extremely helpful builder community. Many of the pallets have been created
+          by the community itself. This means developers will not only continually have more capabilities to add to
+          their blockchain network, it also means they can take advantage of blockchain runtime modules and further
+          innovations that have been tried and tested within the ecosytem.
         </p>
         <p className="font-bold underline-animate">
-          To see what the community is up to check out the{' '}
-          <Link to="/" className="text-substrateBlue">
-            Substrate Community page »{' '}
+          Explore the various ways to{' '}
+          <Link to="/ecosystem" className="text-substrateBlue">
+            get involved with the community »
           </Link>
         </p>
       </Section>
 
       <HighlightBanner icon="open">
-        The combination of an open source, customizable architecture that enables developers to{' '}
-        <strong className="font-bold"> use the tooling of their choice </strong>
-        with a robust active community makes{' '}
-        <strong className="font-bold">Substrate the most open technology for building blockchains.</strong>
+        The combination of an open-source, customizable architecture, rich tooling and a robust active community makes{' '}
+        <strong className="font-bold">Substrate the most open technology for building blockchain networks.</strong>
       </HighlightBanner>
 
       <CardsNav currentPage="Open" />
