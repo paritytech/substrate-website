@@ -281,7 +281,7 @@ const Vision = () => {
                 <BannerLink
                   icon="placeholder"
                   link="/technology/flexible"
-                  text="Discover how Substrate’s flexibility enables modularity and performance "
+                  text="Discover how Substrate’s flexibility enables modularity and performance"
                 />
 
                 <h3 id="decentralization-and-usability" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">

@@ -6,7 +6,7 @@ import { Link } from '../../default/Link';
 const BannerLink = ({ icon, link, text }) => {
   return (
     <Link to={link}>
-      <div className="bg-substrateGray-light dark:bg-substrateBlackish p-8 flex items-center">
+      <div className="bg-substrateGray-light dark:bg-substrateBlackish px-10 py-8 flex items-center">
         <Icon name={icon} className="flex-none h-12 w-12 mr-6" />
         <div>
           <p className="text-lg font-bold mb-0 mr-2 hover:mr-4 transition-all inline">{text}</p>
