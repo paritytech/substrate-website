@@ -56,7 +56,7 @@ export default function Connect() {
           </div>
           <div className="w-full p-8 lg:p-0 relative" style={{ paddingTop: 'calc(1630 / 1630 * 100%)' }}>
             <div className="h-auto top-0 left-0 w-full absolute">
-              <Lottie options={{ animationData }} isClickToPauseDisabled={true} />
+              <Lottie options={{ animationData, loop: false }} isClickToPauseDisabled={true} />
             </div>
           </div>
         </div>
