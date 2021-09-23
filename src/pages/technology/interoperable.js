@@ -13,7 +13,7 @@ import InfoCard from '../../components/layout/technology/InfoCard';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
-import * as animation from '../../images/animation/technology/interoperable.json';
+import * as animation from '../../images/animation/technology/interoperable-cropped.json';
 
 const Interoperable = () => {
   return (

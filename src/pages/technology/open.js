@@ -12,7 +12,7 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
-import * as animation from '../../images/animation/technology/open.json';
+import * as animation from '../../images/animation/technology/open-cropped.json';
 
 const Open = () => {
   return (
