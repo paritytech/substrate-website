@@ -44,8 +44,8 @@ const Vision = () => {
               <Section>
                 <p className="text-3xl mb-12">
                   All Substrate-based chains are <span className="font-semibold">natively compatible</span> with
-                  Polkadot, granting access to paralleled transactions, cross-chain transfers, and a deep support
-                  network.
+                  Polkadot, granting access to a rich, interoperable ecosystem of parachains, applications, and
+                  resources.
                 </p>
                 <h4 id="key-points" className="font-bold mb-8 text-2xl">
                   Key Points:
@@ -90,7 +90,7 @@ const Vision = () => {
                         Building a custom blockchain with Substrate offers greater freedom, flexibility, and
                         optimization
                       </span>{' '}
-                      than building on top of a general-purpose smart contract blockchain.
+                      than building on top of a general-purpose smart-contract blockchain.
                     </p>
                   </li>
                 </ul>
@@ -106,7 +106,8 @@ const Vision = () => {
                     className="h-10 w-10 mr-3 flex-none"
                   />
                   <p className="mb-0">
-                    By <span className="font-bold">Gavin Wood,</span> founder of Polkadot and Parity Technologies
+                    By <span className="font-bold">Gavin Wood,</span> co-founder and former CTO of Ethereum, founder of
+                    Polkadot and Parity Technologies
                   </p>
                 </div>
                 <p>
@@ -151,7 +152,7 @@ const Vision = () => {
                   different priorities in your mind than your own.
                 </p>
                 <p>
-                  Re-using the Ethereum codebase, for example, implies several limitations: having to place all of your
+                  For example, reusing the Ethereum codebase, implies several limitations: having to place all of your
                   business logic in terms of the EVM, being forced to use one of the two EVM languages, having all
                   business logic dynamically metered, and being limited to Ethereum&apos;s transaction pool and lack of
                   core upgradability.
@@ -195,7 +196,7 @@ const Vision = () => {
                 <p>
                   Before long, we knew that many of the components we were building for the Polkadot Relay Chain would
                   be useful when building Polkadot’s parachains. Substrate took shape soon after when we began
-                  collecting together those common components and forming a blockchain framework around them.{' '}
+                  collecting those common components together and forming a blockchain framework around them.{' '}
                   <span className="font-bold">
                     By leveraging the cutting edge software built for the Polkadot Relay Chain, we could provide the
                     parachain community with the best technology for their own chains.
@@ -215,10 +216,10 @@ const Vision = () => {
                 </h3>
                 <p className="text-xl font-semibold mb-4 ">How Substrate relates to the broader goals of Web3</p>
                 <p>
-                  Substrate fulfills two main goals within the overall Web 3 vision: it is the foundational technology
+                  Substrate fulfils two main goals within the overall Web3 vision: it is the foundational technology
                   that allowed us at Parity to build the Polkadot Relay Chain; and, together with the Cumulus project,
-                  it is the de facto SDK for Polkadot, allowing parachain teams to build and deploy their chains into
-                  Polkadot or Kusama.
+                  it is the de facto SDK for Polkadot, allowing parachain teams to build and deploy their chains on
+                  Polkadot.
                 </p>
                 <BlockQuote>
                   Having a flexibile blockchain development platform like Substrate is especially important for
@@ -277,8 +278,8 @@ const Vision = () => {
                 </p>
                 <p>
                   One chief goal of Substrate, as a core component of the Web3 vision, is to ensure true
-                  decentralisation, meaning users do not need to go through intermediaries in order to use
-                  &quot;decentralised&quot; applications. Bitcoin started down this with its &quot;SPV&quot; client
+                  decentralization, meaning users do not need to go through intermediaries in order to use
+                  &quot;decentralized&quot; applications. Bitcoin started down this path with its &quot;SPV&quot; client
                   technology, but for more generalistic chains and frameworks, the task is rather more complex.
                 </p>
                 <p>
@@ -287,7 +288,7 @@ const Vision = () => {
                     technologies, such as Webassembly and libp2p, as well as light-client technology.
                   </span>{' '}
                   Only with an enduring focus on these can we deliver browser and mobile applications with no greater a
-                  barrier to adoption than traditional centralised applications, a critical requirement for delivering
+                  barrier to adoption than traditionally centralized applications, a critical requirement for delivering
                   the promised independence and self-sovereignty of the Web3 vision.
                 </p>
               </Section>
