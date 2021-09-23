@@ -35,9 +35,14 @@ const Open = () => {
       >
         <Feature
           title="Architecture"
-          learnMore="Interested in the modularity of Substrate?"
-          link="/"
-          linkText="Explore Architecture"
+          linkText={
+            <p className="underline-animate">
+              Explore the components of a{' '}
+              <Link to="https://substrate.dev/docs/en/knowledgebase/getting-started/architecture">
+                Substrate-based blockchain node »
+              </Link>
+            </p>
+          }
         >
           <p>
             Substrate uses familiar open protocols such as libp2p and jsonRPC while letting the developer decide how
@@ -73,9 +78,12 @@ const Open = () => {
       >
         <Feature
           title="Tooling"
-          learnMore="Interested in the modularity of Substrate?"
-          link="/"
-          linkText="Explore Architecture"
+          linkText={
+            <p className="underline-animate">
+              Visit the tools list maintained by the{' '}
+              <Link to="/ecosystem/resources/awesome-substrate">Awesome Substrate community »</Link>
+            </p>
+          }
         >
           <p>
             Legacy blockchains often restrict developers to new or custom tools, which can be frustrating and
@@ -116,7 +124,7 @@ const Open = () => {
         <p className="font-bold underline-animate">
           To see what the community is up to check out the{' '}
           <Link to="/" className="text-substrateBlue">
-            Substrate Community page.{' '}
+            Substrate Community page »{' '}
           </Link>
         </p>
       </Section>

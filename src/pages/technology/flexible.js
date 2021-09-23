@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import FlipIcon from '../../components/default/FlipIcon';
+import { Link } from '../../components/default/Link';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import CaseStudyBanner from '../../components/layout/technology/CaseStudyBanner';
@@ -24,7 +25,7 @@ const Flexible = () => {
           use.
         </p>
         <p>
-          This has forced developers to implement workarounds, hard-forks, or simply succumb to limitations, until
+          This has forced them to implement workarounds, hard-forks, or simply succumb to limitations... until
           Substrate.
         </p>
       </Hero>
@@ -38,25 +39,28 @@ const Flexible = () => {
       >
         <Feature
           title="Intentional"
-          learnMore="If you want to know more about this feature"
-          link="/"
-          linkText="Explore Architecture"
+          linkText={
+            <p className="underline-animate">
+              Want to learn more?{' '}
+              <Link to="https://substrate.dev/docs/en/knowledgebase/runtime/frame">
+                Check out the overview documentation »
+              </Link>
+            </p>
+          }
         >
           <p>
-            The root cause of developers having to make tradeoffs is that legacy blockchains are not designed with the
-            specific intent of the applications in mind. General purpose blockchains require developers to work within
-            the rigid boundaries of the design decisions made by others.
+            Legacy blockchains are not designed with the specific intent of the applications in mind. General purpose
+            blockchains require developers to work within the rigid boundaries of the design decisions made by others.
           </p>
           <Blockquote>
             <p className="mb-0">
-              {`Substrate is a fully modular blockchain framework that unleashes developers instead of forcing them to work
-            within the confines of others' design decisions.`}
+              {`Substrate is a fully modular blockchain framework that gives developers maximum freedom instead of forcing them to work within the confines of others' design decisions.`}
             </p>
           </Blockquote>
           <p>
-            Developers can choose, and even hot-swap, components (pallets) such as the network stack, consensus, even
-            the finality engine. Simply select from the growing list of pallets or create your own. Either way, you get
-            to deploy a blockchain purpose built for your use case and even evolve your blockchain as your needs evolve.
+            Developers can choose and even hot-swap components (pallets) such as the network stack, consensus, even the
+            finality engine. Simply select from the growing list of pallets or create your own. Either way, you get to
+            deploy a blockchain network purpose built for your use case, that can evolve with your changing needs.
           </p>
         </Feature>
       </Section>
@@ -64,7 +68,7 @@ const Flexible = () => {
       <CaseStudyBanner icon="acala-logo">
         <p className="font-bold mb-2 text-2xl">
           Discover how Acala leverages Substrate&apos;s flexibility to enable no cost transactions and protect against
-          attacks.
+          MEV and sandwich attacks
         </p>
       </CaseStudyBanner>
 
@@ -79,30 +83,33 @@ const Flexible = () => {
       >
         <Feature
           title="Forkless"
-          learnMore="Learn more about Substrate's modularity:"
-          link="/"
-          linkText="Explore Architecture"
+          linkText={
+            <p className="underline-animate">
+              Perform your first forkless upgrade using{' '}
+              <Link to="https://substrate.dev/docs/en/tutorials/forkless-upgrade/">this tutorial »</Link>
+            </p>
+          }
         >
           <p>
             Upgrading blockchain networks has been notoriously difficult. The legacy approach requires coordinating all
-            node operators to deploy new code in a timely manner which can cause hard forks, a divided network and even
-            community.
+            node operators to deploy new code in a timely manner, which has historically led to hard forks, divided
+            networks, and even split communities.
           </p>
           <Blockquote>
             <p className="mb-0">
-              Substrate based nodes take a different approach which enables automatic upgrades, no user intervention
-              required. The result is blockchain networks can be completely forkless or simply fork less.
+              Substrate-based nodes take a different approach that enables automatic upgrades, no user intervention
+              required. The result is blockchain networks that can be completely forkless, or simply fork less.
             </p>
           </Blockquote>
           <p>
-            This may seem too good to be true, how can a blockchain automatically upgrade? Substrate has a unique
-            property where the runtime (state transition function) is compiled into the blockchain itself. This means
-            nodes update themselves by default rather than through manual intervention. Hard forks only happen when node
-            operators take explicit action.
+            How can a blockchain network automatically upgrade? Substrate has a unique property where the runtime (state
+            transition function) is stored within the blockchain network itself. This means nodes update themselves by
+            default rather than through manual intervention. Hard forks only happen when node operators take explicit
+            action.
           </p>
           <p>
-            Since coordinating node operators is not necessary, upgrades can be more frequent with less issues. Forkless
-            runtime upgrades enable developers to innovate and move forward faster.
+            Since coordinating node operators isn&apos;t necessary, upgrades can be more frequent with less issues.
+            Forkless runtime upgrades enable developers to innovate and move forward faster.
           </p>
         </Feature>
       </Section>
@@ -117,20 +124,26 @@ const Flexible = () => {
       >
         <Feature
           title="Fast"
-          learnMore="Learn more about Substrate's modularity:"
-          link="/"
-          linkText="Explore Architecture"
+          linkText={
+            <p className="underline-animate">
+              Experience running a client directly in your browser with{' '}
+              <Link to="https://substrate.dev/docs/en/tutorials/forkless-upgrade/">Substrate Connect » </Link>
+            </p>
+          }
         >
           <p>
-            The speed of transactions isn’t the only metric that makes a blockchain fast. The speed of development,
-            upgrades, and node syncing are.
+            The speed of transactions isn’t the only metric that makes a blockchain network fast. The speed of
+            development, upgrades, and node syncing is also important.
           </p>
           <Blockquote>
             <p>
-              Unlike many legacy blockchains, which have hard limits for transaction through put, Substrate is
+              Unlike many legacy blockchain networks, which have hard limits for transaction throughput, Substrate is
               configurable. Transaction limits can be lifted through configurable block times, flexible transaction
               queues, and/or horizontal scaling. If your application is limited by gas you can even choose to have
-              gas-less transactions.
+              gas-less transactions. Development is faster since developers can use the tooling they prefer and select
+              from a growing list of pallets instead of building from scratch. Upgrades happen faster thanks to forkless
+              runtime upgrades, and node-syncing is not only lightning fast but more secure and reliable due to
+              Substrate’s &quot;light-client first&quot; design.
             </p>
             <p className="mb-0">
               Development is faster since developers can use the tooling they prefer and select from many different
@@ -140,17 +153,17 @@ const Flexible = () => {
             </p>
           </Blockquote>
           <p>
-            Traditional approaches for syncing nodes require users to run dedicated hardware and wait a long period of
-            time for their node to sync, or as a workaround, use a centralized service provider. With Substrate, users
-            can run a client directly in their browser and interact with a chain in a fully trustless way! Developers
-            can have peace knowing their end users aren’t reliant on separate node infrastructure that is susceptible to
-            downtime or hacking.
+            Traditional approaches for syncing nodes require users to run dedicated hardware and wait a long time for
+            their node to sync, or as a workaround, use a centralized service provider. With Substrate, users can run
+            decentralized in-browser light clients and interact with a chain in a fully trustless way. Developers can
+            relax, knowing their end users aren’t reliant on a separate node infrastructure susceptible to downtime or
+            hacking.
           </p>
         </Feature>
       </Section>
 
       <HighlightBanner icon="flexible">
-        The flexible nature of Substrate alleviates the tension of tradeoffs by{' '}
+        Substrate&apos;s flexibility alleviates the tension of tradeoffs by{' '}
         <strong className="font-bold">enabling developers to create the most optimal blockchain</strong> for their
         specific needs.
       </HighlightBanner>
