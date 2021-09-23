@@ -179,7 +179,7 @@ const Vision = () => {
                   </p>
                 </BlockQuote>
 
-                <div className="my-10 border-b border-black dark:border-substrateGray-dark"></div>
+                <div className="my-8 border-b border-black dark:border-substrateGray-dark"></div>
 
                 <BannerLink
                   icon="placeholder"
@@ -217,7 +217,7 @@ const Vision = () => {
                   </span>
                 </p>
 
-                <div className="my-10 border-b border-black dark:border-substrateGray-dark"></div>
+                <div className="my-8 border-b border-black dark:border-substrateGray-dark"></div>
 
                 <BannerLink
                   icon="placeholder"
@@ -244,7 +244,7 @@ const Vision = () => {
                   heterogeneous sharding system unutilized.
                 </BlockQuote>
 
-                <div className="my-10 border-b border-black dark:border-substrateGray-dark"></div>
+                <div className="my-8 border-b border-black dark:border-substrateGray-dark"></div>
 
                 <BannerLink
                   icon="placeholder"
@@ -276,7 +276,7 @@ const Vision = () => {
                   Relay Chain attests to its performance and flexibility.
                 </p>
 
-                <div className="my-10 border-b border-black dark:border-substrateGray-dark"></div>
+                <div className="my-8 border-b border-black dark:border-substrateGray-dark"></div>
 
                 <BannerLink
                   icon="placeholder"
