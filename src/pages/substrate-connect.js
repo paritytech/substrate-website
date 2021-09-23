@@ -54,8 +54,10 @@ export default function Connect() {
               Get the extension
             </PrimaryButton>
           </div>
-          <div className="w-full p-8 lg:p-0">
-            <Lottie options={{ animationData }} isClickToPauseDisabled={true} />
+          <div className="w-full p-8 lg:p-0 relative" style={{ paddingTop: 'calc(1630 / 1630 * 100%)' }}>
+            <div className="h-auto top-0 left-0 w-full absolute">
+              <Lottie options={{ animationData }} isClickToPauseDisabled={true} />
+            </div>
           </div>
         </div>
       </Section>
