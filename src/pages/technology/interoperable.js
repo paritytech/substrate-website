@@ -178,7 +178,7 @@ const Interoperable = () => {
         or <strong className="font-bold">efficiency</strong>.
       </HighlightBanner>
 
-      <CardsNav currentPage="Interoperable" />
+      <CardsNav heading="Learn more About Our Technology" currentPage="Interoperable" />
 
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>

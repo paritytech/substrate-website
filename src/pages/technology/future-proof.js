@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 
 import FlipIcon from '../../components/default/FlipIcon';
+import { Link } from '../../components/default/Link';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import CaseStudyBanner from '../../components/layout/technology/CaseStudyBanner';
@@ -20,8 +21,8 @@ const FutureProof = () => {
       <SEO title="Future-Proof" />
       <Hero page="Future Proof" animationData={animation}>
         <p>
-          Blockchain technology is evolving at a rapid pace and has spurred in innovation in other areas such Zero
-          Knowledge, consensus mechanisms, cryptographic libraries and much more. It&apos;s challenging enough to keep
+          Blockchain technology is evolving at a rapid pace and has spurred innovation in other areas such as zero
+          knowledge, consensus mechanisms, cryptographic libraries, and much more. It&apos;s challenging enough to keep
           up with technology let alone integrate it. Substrate enables your blockchain to assimilate new technology as
           it comes along.
         </p>
@@ -38,14 +39,17 @@ const FutureProof = () => {
       >
         <Feature
           title="Upgradeable"
-          learnMore="Interested in the modularity of Substrate?"
-          link="/"
-          linkText="Explore Architecture"
+          linkText={
+            <p className="underline-animate">
+              Learn how{' '}
+              <Link to="https://substrate.dev/docs/en/knowledgebase/runtime/upgrades">Substrate upgrades work »</Link>
+            </p>
+          }
         >
           <p>
             With any structure, the foundation is often the most difficult part to modify, and thus upgrade. For this
-            reason Substrate&apos;s base has intentionally been built on an extremely simple and unchanging foundation
-            using the widely accepted open protocol, WebAssembly.
+            reason, Substrate&apos;s base has intentionally been built on an extremely simple and unchanging foundation
+            using the widely-accepted open protocol WebAssembly.
           </p>
           <p>
             Changes occur a layer up from the foundation which not only gives developers a non-opinionated design to
@@ -54,16 +58,16 @@ const FutureProof = () => {
           </p>
           <Blockquote>
             <p className="mb-0">
-              This allows Substrate to adopt new technology as it evolves because it does not require alterations to the
-              foundation. Developers can stay on top of technological advancements and adopt them more quickly with
-              forkless automatic upgrades!
+              This allows Substrate to adopt new technology as it evolves because it doesn&apos;t require alterations to
+              the foundation. Developers can stay on top of technological advancements and adopt them more quickly with
+              forkless automatic upgrades.
             </p>
           </Blockquote>
         </Feature>
       </Section>
 
       <CaseStudyBanner icon="moonbeam-logo">
-        See how Moonbeam continuously adapts to stay Ethereum-compatible.
+        Learn how Moonbeam remains a fully Ethereum-compatible smart contract parachain by continuosly adapting.
       </CaseStudyBanner>
 
       <Section
@@ -76,16 +80,19 @@ const FutureProof = () => {
       >
         <Feature
           title="Composable"
-          learnMore="Interested in the modularity of Substrate?"
-          link="/"
-          linkText="Explore Architecture"
+          linkText={
+            <p className="underline-animate">
+              Explore how <Link to="https://substrate.dev/docs/en/knowledgebase/runtime/frame">FRAME</Link> enables
+              composability »
+            </p>
+          }
         >
           <p>
             As a core design principle, composability enables developers to build a blockchain comprised of components
-            specific to their needs on a battle-tested framework. Developers are free to choose from a numerous list of
+            specific to their needs on a battle-tested framework. Developers are free to choose from a long list of
             pallets or create their own to add the specific functionality they need. A developer may choose to have a
-            pallet to enable smart contracts, or specifically not include pallets to keep their blockchain lean and
-            reduce attack vectors.
+            pallet that enables smart contracts, or specifically not include pallets to keep their blockchain network
+            lean and reduce attack vectors.
           </p>
           <Blockquote>
             <p className="mb-0">
@@ -95,10 +102,9 @@ const FutureProof = () => {
           </Blockquote>
           <p>
             For example, a developer may want to enable users to gain access to accounts even if they lose their private
-            keys or other authentication mechanism. In this case, the developer would simply include the Recovery pallet
-            which enables users to recover an account using trusted “friends”. This example shows how a developer does
-            not have to build functionality on top of their blockchain, rather it is already available and deployed into
-            the runtime itself.
+            keys or other authentication mechanism. In this case, the developer would simply include the Recovery
+            pallet, which enables users to recover an account using trusted friends. Developers don&apos;t need to build
+            new functionality on top; it&apos;s already available and deployed into the runtime itself.
           </p>
         </Feature>
       </Section>
@@ -114,31 +120,34 @@ const FutureProof = () => {
       >
         <Feature
           title="Adaptable"
-          learnMore="Interested in the modularity of Substrate?"
-          link="/"
-          linkText="Explore Architecture"
+          linkText={
+            <p className="underline-animate">
+              Adapt your runtime by adding a pallet using{' '}
+              <Link to="https://substrate.dev/docs/en/tutorials/add-a-pallet/">this tutorial »</Link>
+            </p>
+          }
         >
           <p>
-            An ever growing number of pallets are available, created by both Parity Technologies and the community, that
-            can be combined in many combinations to fit the needs of the desired use case. From an Oracle pallet to a
-            Zero-knowledge verifier pallet, even a Governance pallet, there are numerous existing pallets that can be
-            integrated from the start or after the fact with forkless runtime upgrades.
+            An ever-growing number of pallets are available, created by both Parity Technologies and the community.
+            These can be combined in many combinations to fit the needs of the desired use case. From an Oracle pallet
+            to a Zero-knowledge verifier pallet, even a Governance pallet, there are numerous existing pallets that can
+            be integrated from the start or added later with forkless runtime upgrades.
           </p>
           <Blockquote>
             <p className="mb-0">
-              As existing pallets are enhanced or new ones are created the blockchain can adapt to whatever the future
-              may bring.
+              As existing pallets are enhanced or new ones are created, Substrate-based networks can adapt to whatever
+              the future may bring.
             </p>
           </Blockquote>
           <p>
             Consider a scenario where a small innovation is made with key recovery; a new recovery pallet could be
             created and deployed in a forkless upgrade automatically. Even with a more drastic innovation such as the
-            advent of large scale quantum computing, algorithms can be swapped out for quantum resistant ones.
+            advent of large-scale quantum computing, algorithms can be swapped out for quantum resistant ones.
           </p>
           <Blockquote>
             <p className="mb-0">
-              Substrate’s ability to adapt to new technologies as they arise gives developers an unfair advantage
-              compared to alternatives.
+              Substrate’s ability to adapt to new technologies as they arise gives developers a competitive advantage
+              over alternatives.
             </p>
           </Blockquote>
         </Feature>
@@ -149,7 +158,7 @@ const FutureProof = () => {
         for whatever the <strong className="font-bold">future</strong> brings.
       </HighlightBanner>
 
-      <CardsNav currentPage="Future Proof" />
+      <CardsNav heading="Learn more about what makes Substrate's technology unique" currentPage="Future Proof" />
 
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>

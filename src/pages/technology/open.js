@@ -140,7 +140,7 @@ const Open = () => {
         <strong className="font-bold">Substrate the most open technology for building blockchain networks.</strong>
       </HighlightBanner>
 
-      <CardsNav currentPage="Open" />
+      <CardsNav heading="Learn more about what makes Substrate's technology unique" currentPage="Open" />
 
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>

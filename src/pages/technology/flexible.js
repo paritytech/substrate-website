@@ -168,7 +168,7 @@ const Flexible = () => {
         specific needs.
       </HighlightBanner>
 
-      <CardsNav currentPage="Flexible" />
+      <CardsNav heading="Learn more About Our Technology" currentPage="Flexible" />
 
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>
