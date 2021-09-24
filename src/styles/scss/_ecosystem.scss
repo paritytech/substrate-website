@@ -24,6 +24,8 @@
 
 .ecosystem-home-anim {
   &__item {
+		display: flex;
+		align-items: center;
     overflow: hidden;
 
     @for $i from 1 through 6 {
@@ -38,6 +40,14 @@
   &__logo {
     opacity: 1;
     animation: logoFadeIn 10s ease-in-out 5s infinite both, logoTranslate 10s ease-in-out 5s infinite both;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		> div {
+			overflow: visible;
+			max-width: 5rem;
+		}
 
     &--alternative {
       left: 40px;

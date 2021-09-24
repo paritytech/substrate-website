@@ -14,28 +14,28 @@ import { isBrowser } from '../utils/browser';
 
 const logos = [
   {
-    logo: 'Logo 1',
-    alt: 'Logo 7',
+    logo: <StaticImage src="../images/png/ecosystem/logo-1.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-7.png" />,
   },
   {
-    logo: 'Logo 2',
-    alt: 'Logo 8',
+    logo: <StaticImage src="../images/png/ecosystem/logo-2.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-8.png" />,
   },
   {
-    logo: 'Logo 3',
-    alt: 'Logo 9',
+    logo: <StaticImage src="../images/png/ecosystem/logo-3.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-9.png" />,
   },
   {
-    logo: 'Logo 4',
-    alt: 'Logo 10',
+    logo: <StaticImage src="../images/png/ecosystem/logo-4.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-10.png" />,
   },
   {
-    logo: 'Logo 5',
-    alt: 'Logo 11',
+    logo: <StaticImage src="../images/png/ecosystem/logo-5.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-11.png" />,
   },
   {
-    logo: 'Logo 6',
-    alt: 'Logo 12',
+    logo: <StaticImage src="../images/png/ecosystem/logo-6.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-12.png" />,
   },
 ];
 
