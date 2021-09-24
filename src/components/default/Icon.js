@@ -15,11 +15,18 @@ import forkless from '../../images/svg/forkless.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
 import graduation from '../../images/svg/graduation.svg';
 import hackathons from '../../images/svg/hackathons.svg';
+import developers from '../../images/svg/home/developers.svg';
+import governance from '../../images/svg/home/governance.svg';
+import interoperability from '../../images/svg/home/interoperability.svg';
+import security from '../../images/svg/home/security.svg';
+import teams from '../../images/svg/home/teams.svg';
+import technology from '../../images/svg/home/technology.svg';
 import house from '../../images/svg/house.svg';
 import kusamaLogo from '../../images/svg/kusama_logo.svg';
 import layers from '../../images/svg/layers.svg';
 import lightClient from '../../images/svg/light-client.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
+import mail from '../../images/svg/mail.svg';
 import paperplane from '../../images/svg/paperplane.svg';
 import pen from '../../images/svg/pen.svg';
 import placeholder from '../../images/svg/placeholder.svg';
@@ -56,6 +63,13 @@ import w3fLogo from '../../images/svg/w3f-logo.svg';
 import waLogo from '../../images/svg/wa-logo.svg';
 
 const iconsMap = {
+  /* home */
+  developers: developers,
+  teams: teams,
+  technology: technology,
+  governance: governance,
+  interoperability: interoperability,
+  security: security,
   /* ecosystem */
   opportunities: opportunities,
   resources: resources,
@@ -82,6 +96,7 @@ const iconsMap = {
   chain: chain,
   layers: layers,
   computer: computer,
+  mail: mail,
   /* ui */
   'hamburger-toggle': hamburger,
   'close-x': close,
