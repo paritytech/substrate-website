@@ -271,7 +271,7 @@ export default function BuildersProgram() {
           </div>
         </div>
       </div>
-      <div className="container lg:px-10 py-24">
+      <div className="container lg:px-10 pt-24">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold mb-10">The building blocks for a decentralized and fairer internet.</h2>
           <p className="text-2xl leading-relaxed mb-10">
