@@ -32,3 +32,32 @@
     }
   }
 }
+
+.home-expand {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin-bottom: 1.5rem;
+
+  &--active {
+    -webkit-line-clamp: 100;
+
+    + .home-expand__button {
+      opacity: 0;
+    }
+  }
+
+  &__button {
+    @apply opacity-100 relative pb-1 text-xl font-bold border-b-2 border-substrateBlackish dark:border-white hover:border-navItemColor dark:hover:border-navItemColor cursor-pointer transition;
+
+    &:hover {
+      svg {
+        @apply top-3;
+      }
+    }
+  }
+}

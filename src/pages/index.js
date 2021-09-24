@@ -40,6 +40,7 @@ export default function BuildersProgram() {
   };
 
   const [activeTab, setActiveTab] = useState(1);
+  const [expandedTab, setExpandedTab] = useState(0);
   const [animationIsStopped, playAnimation] = useState(true);
 
   return (
@@ -155,53 +156,85 @@ export default function BuildersProgram() {
           {activeTab === 1 && (
             <div className="lg:col-span-2">
               <h3 className="h2 font-extrabold">Taking the learnings from Ethereum to Substrate</h3>
-              <p className="text-xl leading-relaxed">
-                As Ethereum’s co-founder and first CTO, Gavin Wood developed the Ethereum network and created the
-                smart-contract language Solidity. While groundbreaking at the time, it soon became apparent that
-                Ethereum&apos;s &quot;all-purpose&quot; nature imposed hard constraints on developers – from high gas
-                fees core upgradeability. Blockchain frameworks that try to do everything on a single chain are
-                fundamentally constrained by generalist design choices and force developers to hack clunky work-arounds
-                rather than build specialized solutions.
-              </p>
-              <p className="text-xl leading-relaxed">
-                In order to push the boundaries of blockchain technology, Gavin left the Ethereum Foundation and started
-                Parity, where the team implemented the fastest Ethereum client at the time, and also built a Bitcoin,
-                ZCash, and now, Polkadot client. It’s only from all this deep industry experience that blockchains could
-                be reimagined from the ground up. This led to the creation of Substrate, an open source and future-proof
-                framework that powers a multi-chain, interoperable, and decentralized internet.
-              </p>
+              <div
+                className={cx('home-expand', {
+                  'home-expand--active': expandedTab === 1,
+                })}
+              >
+                <p className="text-xl leading-relaxed">
+                  As Ethereum’s co-founder and first CTO, Gavin Wood developed the Ethereum network and created the
+                  smart-contract language Solidity. While groundbreaking at the time, it soon became apparent that
+                  Ethereum&apos;s &quot;all-purpose&quot; nature imposed hard constraints on developers – from high gas
+                  fees core upgradeability. Blockchain frameworks that try to do everything on a single chain are
+                  fundamentally constrained by generalist design choices and force developers to hack clunky
+                  work-arounds rather than build specialized solutions.
+                </p>
+                <p className="text-xl leading-relaxed">
+                  In order to push the boundaries of blockchain technology, Gavin left the Ethereum Foundation and
+                  started Parity, where the team implemented the fastest Ethereum client at the time, and also built a
+                  Bitcoin, ZCash, and now, Polkadot client. It’s only from all this deep industry experience that
+                  blockchains could be reimagined from the ground up. This led to the creation of Substrate, an open
+                  source and future-proof framework that powers a multi-chain, interoperable, and decentralized
+                  internet.
+                </p>
+              </div>
+              <a className="home-expand__button" onClick={() => setExpandedTab(1)}>
+                Expand
+                <Icon name="arrow-more" className="absolute -r-4 top-2 inline-block ml-2 rotate-90 transition-all" />
+              </a>
             </div>
           )}
           {activeTab === 2 && (
             <div className="lg:col-span-2">
               <h3 className="h2 font-extrabold">Taking the learnings from Ethereum to Substrate</h3>
-              <p className="text-xl leading-relaxed">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              </p>
-              <p className="text-xl leading-relaxed">
-                In order to push the boundaries of blockchain technology, Gavin left the Ethereum Foundation and started
-                Parity, where the team implemented the fastest Ethereum client at the time, and also built a Bitcoin,
-                ZCash, and now, Polkadot client. It’s only from all this deep industry experience that blockchains could
-                be reimagined from the ground up. This led to the creation of Substrate, an open source and future-proof
-                framework that powers a multi-chain, interoperable, and decentralized internet.
-              </p>
+              <div
+                className={cx('home-expand', {
+                  'home-expand--active': expandedTab === 2,
+                })}
+              >
+                <p className="text-xl leading-relaxed">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <p className="text-xl leading-relaxed">
+                  In order to push the boundaries of blockchain technology, Gavin left the Ethereum Foundation and
+                  started Parity, where the team implemented the fastest Ethereum client at the time, and also built a
+                  Bitcoin, ZCash, and now, Polkadot client. It’s only from all this deep industry experience that
+                  blockchains could be reimagined from the ground up. This led to the creation of Substrate, an open
+                  source and future-proof framework that powers a multi-chain, interoperable, and decentralized
+                  internet.
+                </p>
+              </div>
+              <a className="home-expand__button" onClick={() => setExpandedTab(2)}>
+                Expand
+                <Icon name="arrow-more" className="absolute -r-4 top-2 inline-block ml-2 rotate-90 transition-all" />
+              </a>
             </div>
           )}
           {activeTab === 3 && (
             <div className="lg:col-span-2">
               <h3 className="h2 font-extrabold">Taking the learnings from Ethereum to Substrate</h3>
-              <p className="text-xl leading-relaxed">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              </p>
-              <p className="text-xl leading-relaxed">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              </p>
+              <div
+                className={cx('home-expand', {
+                  'home-expand--active': expandedTab === 3,
+                })}
+              >
+                <p className="text-xl leading-relaxed">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <p className="text-xl leading-relaxed">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+              <a className="home-expand__button" onClick={() => setExpandedTab(3)}>
+                Expand
+                <Icon name="arrow-more" className="absolute -r-4 top-2 inline-block ml-2 rotate-90 transition-all" />
+              </a>
             </div>
           )}
         </div>
