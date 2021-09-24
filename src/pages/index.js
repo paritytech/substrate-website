@@ -121,7 +121,7 @@ export default function BuildersProgram() {
       </div>
       <div className="container lg:px-10 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14">
-          <div>
+          <div className="pl-6 lg:pl-0">
             <a
               className={cx('home-tabs__link', {
                 'home-tabs__link--active': activeTab === 1,
@@ -263,7 +263,7 @@ export default function BuildersProgram() {
           <div className="text-center">
             <Link
               to="https://polkadot.network/"
-              className="text-xl border-b-2 pb-1 font-bold hover:border-substrateBlackish dark:hover:border-navItemColor transition-all"
+              className="text-xl border-b-2 pb-1 font-bold border-substrateBlackish dark:border-white hover:border-navItemColor dark:hover:border-navItemColor transition-all"
             >
               Polkadot Network
               <Icon name="external-link" className="inline-block ml-2 mb-1 fill-current dark:text-white" />
@@ -316,7 +316,7 @@ export default function BuildersProgram() {
             <br />
             <Link
               to=""
-              className="inline-block mt-6 text-xl border-b-2 font-bold hover:border-substrateBlackish dark:hover:border-navItemColor transition-all"
+              className="inline-block mt-6 text-xl border-b-2 font-bold border-substrateBlackish dark:border-white hover:border-navItemColor dark:hover:border-navItemColor transition-all"
             >
               Read Case Studies
             </Link>
@@ -342,7 +342,7 @@ export default function BuildersProgram() {
           </p>
           <Link
             to="https://parity.io/"
-            className="text-xl border-b-2 pb-1 font-bold hover:border-substrateBlackish dark:hover:border-navItemColor transition-all"
+            className="text-xl border-b-2 pb-1 font-bold border-substrateBlackish dark:border-white hover:border-navItemColor dark:hover:border-navItemColor transition-all"
           >
             Learn more about Parity
             <Icon name="external-link" className="inline-block ml-2 mb-1 fill-current dark:text-white" />
