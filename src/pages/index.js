@@ -202,9 +202,14 @@ export default function BuildersProgram() {
       </div>
       <div className="bg-substrateGray-light dark:bg-substrateBlackish">
         <div className="container max-w-6xl lg:px-10 pt-16 pb-24">
-          <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)}>
+          <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)} threshold={0.75}>
             <div className="home-hero aspect-w-5 aspect-h-2 mb-8">
-              <Lottie isStopped={animationIsStopped} isClickToPauseDisabled options={polkadotAnimationOptions} />
+              <Lottie
+                isStopped={animationIsStopped}
+                isClickToPauseDisabled
+                options={polkadotAnimationOptions}
+                className="fill-current text-white"
+              />
             </div>
           </InView>
           <p className="text-center text-3xl mb-12" onClick={() => playAnimation(false)}>
