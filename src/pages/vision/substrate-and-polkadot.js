@@ -43,7 +43,7 @@ const Vision = () => {
             <div>
               <Section>
                 <p className="text-3xl mb-12">
-                  All Substrate-based chains are <span className="font-semibold">natively compatible</span> with
+                  All Substrate-based chains are <span className="font-semibold">seamlessly compatible</span> with
                   Polkadot, granting access to a rich, interoperable ecosystem of parachains, applications, and
                   resources.
                 </p>
