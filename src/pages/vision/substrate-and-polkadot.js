@@ -54,42 +54,32 @@ const Vision = () => {
                   <li className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
-                      <span className="font-bold">
-                        Polkadot is a layer-0 protocol and multichain network laying the foundation for the future of
-                        Web3.
-                      </span>{' '}
-                      Substrate is the primary blockchain SDK used by developers to create the parachains that make up
-                      the Polkadot network.
+                      Polkadot is a layer-0 protocol and multichain network laying the foundation for the future of
+                      Web3. Substrate is the primary blockchain SDK used by developers to create the parachains that
+                      make up the Polkadot network.
                     </p>
                   </li>
                   <li className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
-                      <span className="font-bold">
-                        Substrate allows you to create specialized blockchains for any use case, and was used by Parity
-                        Technologies to create Polkadot itself,
-                      </span>{' '}
-                      which attests to its high level of performance, flexibility, and robustness.
+                      Substrate allows you to create specialized blockchains for any use case, and was used by Parity
+                      Technologies to create Polkadot itself, which attests to its high level of performance,
+                      flexibility, and robustness.
                     </p>
                   </li>
                   <li className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
-                      <span className="font-bold">
-                        While Substrate can be used to build any type of blockchain, not just Polkadot parachains,
-                        connecting to Polkadot offers a multitude of benefits,
-                      </span>{' '}
-                      including built-in security, cross-chain interoperability, and access to Polkadot’s growing
-                      ecosystem of platforms, applications, and end-users.
+                      While Substrate can be used to build any type of blockchain, not just Polkadot parachains,
+                      connecting to Polkadot offers a multitude of benefits, including built-in security, cross-chain
+                      interoperability, and access to Polkadot’s growing ecosystem of platforms, applications, and
+                      end-users.
                     </p>
                   </li>
                   <li className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
-                      <span className="font-bold">
-                        Building a custom blockchain with Substrate offers greater freedom, flexibility, and
-                        optimization
-                      </span>{' '}
+                      Building a custom blockchain with Substrate offers greater freedom, flexibility, and optimization
                       than building on top of a general-purpose smart-contract blockchain.
                     </p>
                   </li>
