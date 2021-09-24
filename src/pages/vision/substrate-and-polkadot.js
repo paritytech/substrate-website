@@ -268,7 +268,7 @@ const Vision = () => {
           </div>
         </Section>
       </Article>
-      <ExploreLinkSection />
+      <ExploreLinkSection links={['technology', 'developerHub', 'ecosystem']} />
     </Layout>
   );
 };
