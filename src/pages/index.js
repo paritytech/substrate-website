@@ -292,7 +292,7 @@ export default function BuildersProgram() {
 
         <div className="grid grid-cols-1 lg:grid-cols-11 gap-8 lg:gap-14 mt-56 mb-52">
           <div className="lg:col-span-6 lg:col-start-6">
-            <TeamLogos />
+            <TeamLogos className="max-w-full" />
           </div>
           <div className="lg:col-span-5 lg:col-start-1 lg:row-start-1">
             <h2 className="mb-8 font-extrabold">More than 150 projects are building on Substrate</h2>
@@ -340,16 +340,16 @@ export default function BuildersProgram() {
       </div>
 
       <div className="shadow-xl mb-40">
-        <div className="container lg:px-10 py-10">
-          <span className="inline-block text-2.5xl font-bold leading-relaxed mr-20">Connect With Us</span>
+        <div className="container lg:px-10 py-6">
+          <span className="inline-block text-2.5xl font-bold leading-relaxed mr-20 my-4">Connect With Us</span>
           <Link
             to="https://matrix.to/#/#substrate-technical:matrix.org"
-            className="inline-block text-2xl leading-relaxed mr-20"
+            className="inline-block text-2xl leading-relaxed mr-20 my-4"
           >
             <Icon name="element2" className="inline-block mr-5 w-9 h-9" />
             Substrate Tech Support
           </Link>
-          <Link to="/ecosystem/connect/contact" className="inline-block text-2xl leading-relaxed">
+          <Link to="/ecosystem/connect/contact" className="inline-block text-2xl leading-relaxed my-4">
             <Icon
               name="mail"
               className="fill-current text-substrateBlackish dark:text-white inline-block mr-5 w-9 h-9"
@@ -364,7 +364,7 @@ export default function BuildersProgram() {
           <div className="aspect-w-3 aspect-h-2">
             <div>
               <StaticImage
-                src="../images/photos/home/team.jpg"
+                src="../images/photos/home/newsletter.jpg"
                 className="w-full h-full m-0 relative shadow-xl rounded-md"
               />
             </div>
