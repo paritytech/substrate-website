@@ -215,18 +215,14 @@ const Vision = () => {
                 <p>
                   All blockchains need some sort of business logic that defines (amongst other things) what transactions
                   do. Substrate chains are no different, and business logic is provided through a modular system known
-                  as FRAME. Using FRAME, you can very easily create, compose, and publish components to form your own
+                  as FRAME. Using FRAME, you can very easily create, compose and publish components to form your own
                   specialist business logic.
                 </p>
                 <p>
-                  system known as FRAME. Using FRAME, you can very easily create, compose, and publish components to
-                  form your own specialist business logic.
-                </p>
-                <p>
-                  By providing you with a truly open canvas, together with practical components that can be composed,
-                  reused, and published, Substrate opens up whole new worlds of design space and potential for
-                  innovation. Indeed, the fact that Substrate is the underlying blockchain framework we used to build
-                  the Polkadot Relay Chain attests to its performance and flexibility.
+                  By providing you with a true open canvas, together with practical components that can be composed,
+                  reused, published, Substrate opens up whole new worlds of design space and potential for innovation.
+                  Indeed, the fact that Substrate is the underlying blockchain framework we used to build the Polkadot
+                  Relay Chain attests to its performance and flexibility.
                 </p>
 
                 <BannerLink
