@@ -1,52 +1,70 @@
 import React from 'react';
 
 import Icon from '../../default/Icon';
-import { Link } from '../../default/Link';
+import LineArrowButton from '../../ui/LineArrowButton';
 import Section from '../Section';
 
-const links = [
-  {
-    image: 'placeholder',
-    title: 'Teams',
+const exploreLinks = {
+  technology: {
+    title: 'Technology',
     description:
-      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
+      'Learn why Substrate is the most powerful framework for quickly building customized, future-proof blockchains',
     link: '/technology',
+    linkText: 'Explore the Tech',
+    icon: 'diamond-green',
   },
-  {
-    image: 'placeholder',
-    title: 'Docs',
+  developerHub: {
+    title: 'Developer Hub',
+    description: 'Dive into documentation, tutorials, and resources to immediately get started building with Substrate',
+    link: 'http://docs.substrate.io/',
+    linkText: 'Start building',
+    icon: 'diamond-pink',
+  },
+  vision: {
+    title: 'Vision',
     description:
-      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
-    link: '/technology',
+      'Substrate is the backbone of the Polkadot ecosystem, building the decentralized and fair internet of the future',
+    link: '/vision/substrate-and-polkadot',
+    linkText: 'Discover more',
+    icon: 'diamond-purple',
   },
-  {
-    image: 'placeholder',
+  ecosystem: {
     title: 'Ecosystem',
     description:
-      'Build a customized Substrate chain with its own user interface.Create flexible runtime library. Configure transaction Queue',
-    link: '/technology',
+      'Access resources, maximize opportunities, and connect with a thriving network of Substrate enthusiasts and builders',
+    link: '/ecosystem',
+    linkText: 'Check out the Ecosystem',
+    icon: 'diamond-yellow',
   },
-];
+  projects: {
+    title: 'Projects',
+    description: 'See how Substrate has been implemented by innovative teams in many industries around the world',
+    link: '/ecosystem/projects',
+    linkText: 'Meet The Teams',
+    icon: 'diamond-yellow',
+  },
+};
 
-const ExploreLinkSection = () => {
+const ExploreLinkSection = ({ links }) => {
+  const currentLinks = [];
+
+  links.forEach(link => {
+    currentLinks.push(exploreLinks[link]);
+  });
+
   return (
-    <div className="bg-substrateGray dark:bg-substrateDarkest pb-10 pt-20">
+    <div className="bg-substrateGray-light dark:bg-substrateDarkest pb-10 pt-20">
       <Section>
         <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
         <div className="sm:grid grid-cols-3 gap-6 xl:gap-24">
-          {links.map(({ image, title, description, link }, index) => (
-            <div key={index} className="mb-16 sm:mb-0">
-              <Icon name={image} className="mb-6" />
-              <h5 className="text-xl font-bold mb-6">{title}</h5>
-              <p>{description}</p>
-              <Link to={link}>
-                <p className="font-bold border-b-2 border-black dark:border-white inline hover:mr-1 transition-all">
-                  Explore
-                </p>{' '}
-                <span className="fill-current border-b-0 dark:text-white inline-block">
-                  <Icon name="arrow-more" />
-                </span>
-              </Link>
+          {currentLinks.map(({ title, description, link, linkText, icon }, index) => (
+            <div key={index} className="mb-16 sm:mb-0 flex flex-col justify-between">
+              <div>
+                <Icon name={icon} className="mb-6 w-8 h-8" />
+                <h5 className="text-xl font-bold mb-6">{title}</h5>
+                <p>{description}</p>
+              </div>
+              <LineArrowButton link={link}>{linkText}</LineArrowButton>
             </div>
           ))}
         </div>
