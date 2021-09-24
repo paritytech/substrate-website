@@ -76,9 +76,11 @@ export default function BuildersProgram() {
               <p className="text-xl leading-relaxed">
                 Learn why Substrate is the most powerful framework to quickly build customized future-proof blockchains.
               </p>
-              <LineArrowButton className="inline-block" primary large link="/technology">
-                Explore the tech
-              </LineArrowButton>
+              <div className="absolute bottom-10 left-0 w-full">
+                <LineArrowButton className="inline-block" primary large link="/technology">
+                  Explore the tech
+                </LineArrowButton>
+              </div>
             </Link>
             <Link
               to="/"
@@ -91,9 +93,11 @@ export default function BuildersProgram() {
               <p className="text-xl leading-relaxed">
                 Dive into the docs, tutorials, and resources to immediately get started building with Substrate.
               </p>
-              <LineArrowButton className="inline-block" primary large link="/">
-                Start coding
-              </LineArrowButton>
+              <div className="absolute bottom-10 left-0 w-full">
+                <LineArrowButton className="inline-block" primary large link="/">
+                  Start coding
+                </LineArrowButton>
+              </div>
             </Link>
             <Link
               to="/ecosystem"
@@ -106,9 +110,11 @@ export default function BuildersProgram() {
               <p className="text-xl leading-relaxed">
                 See how Substrate has been implemented in innovative use cases in many industries around the world.
               </p>
-              <LineArrowButton className="inline-block" primary large link="/ecosystem">
-                Discover projects
-              </LineArrowButton>
+              <div className="absolute bottom-10 left-0 w-full">
+                <LineArrowButton className="inline-block" primary large link="/ecosystem">
+                  Discover projects
+                </LineArrowButton>
+              </div>
             </Link>
           </div>
         </div>
