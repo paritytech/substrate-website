@@ -57,7 +57,7 @@ export default function Seminar() {
           <div className="mb-16 md:mb-8">
             <h5 className="mb-8 font-medium text-2xl">Learn and Share</h5>
             <p className="leading-loose">
-              We begin by hearing from a member of the ecosystem and getting insights into what they are working on.
+              We begin by hearing from a member of the ecosystem and getting insights into what they&apos;re working on.
             </p>
             <p className="leading-loose">
               The second half of each seminar is open for Q & A like office hours, so bring your questions. Got code
