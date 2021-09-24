@@ -220,9 +220,9 @@ const Vision = () => {
                 </p>
                 <p>
                   By providing you with a true open canvas, together with practical components that can be composed,
-                  reused, published, Substrate opens up whole new worlds of design space and potential for innovation.
-                  Indeed, the fact that Substrate is the underlying blockchain framework we used to build the Polkadot
-                  Relay Chain attests to its performance and flexibility.
+                  reused and published, Substrate opens up whole new worlds of design space and potential for
+                  innovation. Indeed, the fact that Substrate is the underlying blockchain framework we used to build
+                  the Polkadot Relay Chain attests to its performance and flexibility.
                 </p>
 
                 <BannerLink
