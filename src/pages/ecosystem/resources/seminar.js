@@ -18,13 +18,6 @@ export default function Seminar() {
         <div>
           <h2 className="text-4xl font-bold mb-6">Substrate Seminar</h2>
           <p className="text-xl font-medium capitalize">Biweekly conversations on the cutting-edge of blockchain</p>
-          {/* TODO: Will be put back in the future */}
-          {/* <Link to="/">
-              <p className="font-bold border-b-2 border-black inline hover:mr-1 transition-all">Past Seminars</p>{' '}
-              <span className="fill-current border-b-0 text-black dark:text-white inline-block">
-                <Icon name="arrow-more" />
-              </span>
-            </Link> */}
         </div>
       </Section>
       <Section>
