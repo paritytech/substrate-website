@@ -51,7 +51,7 @@ const Vision = () => {
                   Key Points:
                 </h4>
                 <ul className="mb-12">
-                  <li data-aos="fade-right" data-aos-anchor-placement="top-bottom" className="flex">
+                  <li className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -62,12 +62,7 @@ const Vision = () => {
                       the Polkadot network.
                     </p>
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-delay="100"
-                    className="flex"
-                  >
+                  <li className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -77,12 +72,7 @@ const Vision = () => {
                       which attests to its high level of performance, flexibility, and robustness.
                     </p>
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-delay="200"
-                    className="flex"
-                  >
+                  <li className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -93,12 +83,7 @@ const Vision = () => {
                       ecosystem of platforms, applications, and end-users.
                     </p>
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="top-bottom"
-                    data-aos-delay="300"
-                    className="flex"
-                  >
+                  <li className="flex">
                     <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mt-2 mr-3"></div>
                     <p>
                       <span className="font-bold">
@@ -144,14 +129,11 @@ const Vision = () => {
                   means of securing the chains and allowing them to communicate with each other.
                 </p>
                 <p>
-                  However, although they&apos;re synergistic,{' '}
-                  <span className="font-bold">
-                    Polkadot and Substrate are not dependent on each other. Polkadot parachains can be built and
-                    maintained without ever touching Substrate (though alternative software options for doing so are
-                    currently limited) and chains built with Substrate do not need to be connected to Polkadot or
-                    Kusama.
-                  </span>{' '}
-                  Substrate-based chains can exist as ‘solo-chains’ on an independent basis.
+                  However, although they&apos;re synergistic, Polkadot and Substrate are not dependent on each other.
+                  Polkadot parachains can be built and maintained without ever touching Substrate (though alternative
+                  software options for doing so are currently limited) and chains built with Substrate do not need to be
+                  connected to Polkadot or Kusama. Substrate-based chains can exist as ‘solo-chains’ on an independent
+                  basis.
                 </p>
 
                 <h3 id="greater-possibilities" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
@@ -179,13 +161,7 @@ const Vision = () => {
                   </p>
                 </BlockQuote>
 
-                <div className="my-8 border-b border-black dark:border-substrateGray-dark"></div>
-
-                <BannerLink
-                  icon="placeholder"
-                  link="/technology"
-                  text="Explore how Substrate’s technology removes limitations"
-                />
+                <BannerLink link="/technology" text="Explore how Substrate’s technology removes limitations" />
 
                 <h3 id="the-road-to-substrate" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   The Road to Substrate
@@ -197,10 +173,8 @@ const Vision = () => {
                   When we started building Polkadot at Parity, we considered this and knew that it would not be
                   realistic to build such an innovative new blockchain on top of the existing Ethereum design, even if
                   we were the ones who had designed and written it. Ethereum was simply not the right tool for the job.{' '}
-                  <span className="font-bold">
-                    So we started building Polkadot as an entirely fresh blockchain project without those design
-                    constraints.
-                  </span>
+                  So we started building Polkadot as an entirely fresh blockchain project without those design
+                  constraints.
                 </p>
                 <StaticImage
                   src="../../images/photos/vision/reflection-man.jpg"
@@ -210,17 +184,12 @@ const Vision = () => {
                 <p>
                   Before long, we knew that many of the components we were building for the Polkadot Relay Chain would
                   be useful when building Polkadot’s parachains. Substrate took shape soon after when we began
-                  collecting those common components together and forming a blockchain framework around them.{' '}
-                  <span className="font-bold">
-                    By leveraging the cutting edge software built for the Polkadot Relay Chain, we could provide the
-                    parachain community with the best technology for their own chains.
-                  </span>
+                  collecting those common components together and forming a blockchain framework around them. By
+                  leveraging the cutting edge software built for the Polkadot Relay Chain, we could provide the
+                  parachain community with the best technology for their own chains.
                 </p>
 
-                <div className="my-8 border-b border-black dark:border-substrateGray-dark"></div>
-
                 <BannerLink
-                  icon="placeholder"
                   link="/technology/future-proof"
                   text="No more forks in the road, see why Substrate is the first future proof blockchain framework"
                 />
@@ -244,10 +213,7 @@ const Vision = () => {
                   heterogeneous sharding system unutilized.
                 </BlockQuote>
 
-                <div className="my-8 border-b border-black dark:border-substrateGray-dark"></div>
-
                 <BannerLink
-                  icon="placeholder"
                   link="/technology/interoperable"
                   text="Understand how Substrate’s interoperability enables compatibility and efficiency without sacrificing security"
                 />
@@ -267,19 +233,13 @@ const Vision = () => {
                   form your own specialist business logic.
                 </p>
                 <p>
-                  <span className="font-bold">
-                    By providing you with a truly open canvas, together with practical components that can be composed,
-                    reused, and published, Substrate opens up whole new worlds of design space and potential for
-                    innovation.
-                  </span>{' '}
-                  Indeed, the fact that Substrate is the underlying blockchain framework we used to build the Polkadot
-                  Relay Chain attests to its performance and flexibility.
+                  By providing you with a truly open canvas, together with practical components that can be composed,
+                  reused, and published, Substrate opens up whole new worlds of design space and potential for
+                  innovation. Indeed, the fact that Substrate is the underlying blockchain framework we used to build
+                  the Polkadot Relay Chain attests to its performance and flexibility.
                 </p>
 
-                <div className="my-8 border-b border-black dark:border-substrateGray-dark"></div>
-
                 <BannerLink
-                  icon="placeholder"
                   link="/technology/flexible"
                   text="Discover how Substrate’s flexibility enables modularity and performance"
                 />
@@ -297,13 +257,11 @@ const Vision = () => {
                   technology, but for more generalistic chains and frameworks, the task is rather more complex.
                 </p>
                 <p>
-                  <span className="font-bold">
-                    For this reason, Substrate is dedicated to the use of open, well-adopted and web-literate
-                    technologies, such as Webassembly and libp2p, as well as light-client technology.
-                  </span>{' '}
-                  Only with an enduring focus on these can we deliver browser and mobile applications with no greater a
-                  barrier to adoption than traditionally centralized applications, a critical requirement for delivering
-                  the promised independence and self-sovereignty of the Web3 vision.
+                  For this reason, Substrate is dedicated to the use of open, well-adopted and web-literate
+                  technologies, such as Webassembly and libp2p, as well as light-client technology. Only with an
+                  enduring focus on these can we deliver browser and mobile applications with no greater a barrier to
+                  adoption than traditionally centralized applications, a critical requirement for delivering the
+                  promised independence and self-sovereignty of the Web3 vision.
                 </p>
               </Section>
             </div>

@@ -3,11 +3,10 @@ import React from 'react';
 import Icon from '../../default/Icon';
 import { Link } from '../../default/Link';
 
-const BannerLink = ({ icon, link, text }) => {
+const BannerLink = ({ link, text }) => {
   return (
     <Link to={link}>
-      <div className="bg-substrateGray-light dark:bg-substrateBlackish px-6 py-4 flex items-center mb-20">
-        <Icon name={icon} className="flex-none h-12 w-12 mr-6" />
+      <div className="bg-substrateGray-light dark:bg-substrateBlackish p-6 mb-20">
         <div>
           <p className="text-lg font-bold mb-0 mr-2 hover:mr-4 transition-all inline">{text}</p>
           <span>
