@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import React from 'react';
 
-import Icon from '../../../default/Icon';
+import CaseStudyButton from './CaseStudyButton';
 
 export default function TeamCard(props) {
   const { team, description, logo, index, size, numTeam } = props;
@@ -40,17 +40,7 @@ export default function TeamCard(props) {
           <>{team.description}</>
         )}
       </p>
-      {team.caseStudy && (
-        <div className="flex items-center cursor-pointer">
-          <div
-            className={`flex items-center mr-2 pb-0.5 font-bold border-b-2 border-substrateDark dark:border-white transform transition-all duration-300 ease-in-out group-hover:mr-4`}
-          >
-            <Icon name="case-study" className="h-4 w-4 mr-1 fill-current text-substrateDark dark:text-white" />
-            <span className="mt-0.5">Case Study</span>
-          </div>
-          <span>&#10132;</span>
-        </div>
-      )}
+      {team.caseStudy && <CaseStudyButton link={team.caseStudy} />}
     </div>
   );
 }

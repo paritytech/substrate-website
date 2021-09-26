@@ -3,6 +3,7 @@ import React from 'react';
 
 import Icon from '../../../default/Icon';
 import Tag from '../../../ui/Tag';
+import CaseStudyButton from './CaseStudyButton';
 
 export default function TeamModal(props) {
   const { curTeam, logos, setIsComponentVisible } = props;
@@ -71,6 +72,11 @@ export default function TeamModal(props) {
               </div>
             </div>
             <p>{team.description}</p>
+            {team.caseStudy && (
+              <div className="mb-8">
+                <CaseStudyButton link={team.caseStudy} />
+              </div>
+            )}
             {team.runtimes && (
               <div className="mb-6">
                 <div className="text-sm tracking-wider uppercase">Substrate Runtimes:</div>

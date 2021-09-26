@@ -1,5 +1,4 @@
 import cx from 'classnames';
-import { Link } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
 import TeamCard from './TeamCard';
@@ -37,29 +36,16 @@ export default function AllTeams(props) {
           const numTeam = displayedTeams.length;
           return (
             <div key={index}>
-              {team.caseStudy ? (
-                <Link className="group" to={team.caseStudy}>
-                  <TeamCard
-                    team={team}
-                    description={description}
-                    logo={thisLogo}
-                    size={size}
-                    numTeam={numTeam}
-                    index={index}
-                  />
-                </Link>
-              ) : (
-                <div className="group" onClick={() => handleClick(team)}>
-                  <TeamCard
-                    team={team}
-                    description={description}
-                    logo={thisLogo}
-                    size={size}
-                    numTeam={numTeam}
-                    index={index}
-                  />
-                </div>
-              )}
+              <div className="" onClick={() => handleClick(team)}>
+                <TeamCard
+                  team={team}
+                  description={description}
+                  logo={thisLogo}
+                  size={size}
+                  numTeam={numTeam}
+                  index={index}
+                />
+              </div>
             </div>
           );
         })}
