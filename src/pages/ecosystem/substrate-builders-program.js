@@ -75,7 +75,7 @@ export default function BuildersProgram() {
                 projects. If you are a visionary builder who is considering or already developing a project in the
                 Substrate ecosystem, we want to talk to you.
               </p>
-              <SecondaryButton link="/ecosystem/teams">See Teams</SecondaryButton>
+              <SecondaryButton link="/ecosystem/projects">See Teams</SecondaryButton>
             </div>
           </div>
         </Section>

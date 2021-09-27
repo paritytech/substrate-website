@@ -85,7 +85,7 @@ export default function Home() {
                 parachains, independent layer-1 blockchains, and infrastructure and tooling solutions for a wide range
                 of use cases.
               </p>
-              <PrimaryButton link="/ecosystem/teams">View Teams</PrimaryButton>
+              <PrimaryButton link="/ecosystem/projects">View Teams</PrimaryButton>
             </div>
           </div>
         </Section>
