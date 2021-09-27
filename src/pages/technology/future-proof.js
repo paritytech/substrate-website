@@ -66,7 +66,7 @@ const FutureProof = () => {
         </Feature>
       </Section>
 
-      <CaseStudyBanner icon="moonbeam-logo">
+      <CaseStudyBanner icon="moonbeam-logo" link="/ecosystem/projects/case-studies/moonbeam">
         Learn how Moonbeam remains a fully Ethereum-compatible smart contract parachain by continuosly adapting.
       </CaseStudyBanner>
 

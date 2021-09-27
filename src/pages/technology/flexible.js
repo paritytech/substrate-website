@@ -65,7 +65,7 @@ const Flexible = () => {
         </Feature>
       </Section>
 
-      <CaseStudyBanner icon="acala-logo">
+      <CaseStudyBanner icon="acala-logo" link="/ecosystem/projects/case-studies/acala">
         <p className="font-bold mb-2 text-2xl">
           Discover how Acala leverages Substrate&apos;s flexibility to enable no cost transactions and protect against
           MEV and sandwich attacks
