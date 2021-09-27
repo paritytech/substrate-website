@@ -157,7 +157,7 @@ const NavMain = () => {
   const { menus } = useSiteMenus();
 
   return (
-    <nav>
+    <nav className="navMain">
       <ul className="m-0 flex justify-evenly">
         {menus.main.map(menuItem => {
           return <DropDown key={menuItem.id} menuItem={menuItem}></DropDown>;
