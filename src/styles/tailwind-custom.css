@@ -123,6 +123,14 @@ h3 {
   @apply font-bold;
 }
 
+.navMain a[aria-current='page'] {
+  @apply text-substrateGreen dark:text-white underline;
+}
+
+.navMobile a[aria-current='page'] {
+  @apply font-bold;
+}
+
 /* 404 title */
 
 @supports (-webkit-text-stroke: 1px black) {
