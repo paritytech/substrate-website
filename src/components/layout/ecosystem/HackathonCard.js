@@ -30,7 +30,7 @@ const hackathonCard = ({ hackathon }) => {
           Prize: {prize}
         </p>
         <div dangerouslySetInnerHTML={{ __html: html }}></div>
-        <SecondaryButton link={link}>Join us</SecondaryButton>
+        <SecondaryButton link={link}>Event info</SecondaryButton>
       </div>
     </article>
   );

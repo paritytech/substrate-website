@@ -16,12 +16,10 @@ export default function Hackathons() {
       <Section>
         <h2 className="text-4xl font-bold mb-4">Hackathons</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget libero in purus rutrum condimentum. Phasellus
-          condimentum enim quis purus pellentesque, ut varius magna egestas. Donec libero leo, sagittis vel{' '}
+          Challenge yourself, up your game, and connect with the commmunity. There are great prizes up for grabs, too.
         </p>
-        {hackathons.map((hackathon, idx) => (
-          <HackathonCard key={idx} hackathon={hackathon} />
-        ))}
+        <h3 className="font-medium text-2xl mb-8 mt-10">Recent events:</h3>
+        {hackathons && hackathons.map((hackathon, idx) => <HackathonCard key={idx} hackathon={hackathon} />)}
       </Section>
     </Layout>
   );
