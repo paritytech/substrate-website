@@ -58,3 +58,35 @@
 .mdx-anchor a:hover::before {
   transform: scaleX(1);
 }
+
+// Team Anchor Tags
+.underline-anchor-dark a {
+  position: relative;
+  @apply text-substrateDark;
+  text-decoration: none;
+}
+
+.underline-anchor-dark a:hover {
+  @apply text-substrateDark;
+}
+
+.underline-anchor-dark a::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  @apply bg-substrateDark;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+.underline-anchor-dark a.md-button:hover::before {
+  transform: scaleX(0);
+}
+.underline-anchor-dark a:hover::before {
+  transform: scaleX(1);
+}

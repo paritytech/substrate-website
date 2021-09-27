@@ -1,10 +1,12 @@
 import cx from 'classnames';
 import React from 'react';
 
+import useWindowSize from '../../../../hooks/use-window-size';
 import CaseStudyButton from './CaseStudyButton';
 
 export default function TeamCard(props) {
-  const { team, description, logo, index, size, numTeam } = props;
+  const { team, description, logo, index, numTeam } = props;
+  const size = useWindowSize();
   const smScreen = size.width < 768;
   const mdScreen = size.width > 768 && size.width < 1280;
   const lgScreen = size.width > 1280;
@@ -31,7 +33,7 @@ export default function TeamCard(props) {
           src={logo.node.publicURL}
         />
       )}
-      <p className="mb-6 lg:mb-10 h-[78px]">
+      <p className="mb-16 lg:mb-10 h-[78px]">
         {team.caseStudy ? (
           <>
             {description} {team.description.length > 100 && '...'}
@@ -40,7 +42,7 @@ export default function TeamCard(props) {
           <>{team.description}</>
         )}
       </p>
-      {team.caseStudy && <CaseStudyButton link={team.caseStudy} />}
+      <div className="">{team.caseStudy && <CaseStudyButton link={team.caseStudy} />}</div>
     </div>
   );
 }

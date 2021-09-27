@@ -2,6 +2,7 @@ import cx from 'classnames';
 import React from 'react';
 
 import Icon from '../../../default/Icon';
+import { Link } from '../../../default/Link';
 import Tag from '../../../ui/Tag';
 import CaseStudyButton from './CaseStudyButton';
 
@@ -24,13 +25,15 @@ export default function TeamModal(props) {
                 name="close-x"
               />
             </div>
+            <div className="underline-anchor-dark">
+              <Link className="inline-block" to={team.link}>
+                <div className="flex items-center">
+                  <div className="text-2xl font-bold">{team.name}</div>
+                  <Icon name="external-link" className="h-4 w-4 ml-4 fill-current text-substrateDark dark:text-white" />
+                </div>
+              </Link>
+            </div>
 
-            <a className="inline-block" href={team.link} target="_blank" rel="noreferrer">
-              <div className="flex items-center">
-                <div className="text-2xl font-bold">{team.name}</div>
-                <Icon name="external-link" className="h-4 w-4 ml-4 fill-current text-substrateDark dark:text-white" />
-              </div>
-            </a>
             {thisLogo && (
               <img
                 className="h-[110px] w-[110px] p-0.5 object-contain my-6 dark:bg-gray-300 rounded-full"

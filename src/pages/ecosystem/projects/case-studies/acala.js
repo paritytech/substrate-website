@@ -54,7 +54,7 @@ export default function AcalaCaseStudy({ data }) {
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={acalaData.name} />
           <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{acalaData.name}</div>
         </div>
-        <div className="mb-3 font-bold text-lg md:text-xl">The DeFi and liquidity hub of Polkadot</div>
+        <div className="mb-3 font-bold text-lg md:text-xl">The DeFi and liquidity hub for Polkadot</div>
         <div className="text-lg md:text-xl">Flexibility, Security, Compatibility, Cost</div>
         <div className="my-10">
           <div className="mb-3 md:inline-flex">

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import TeamCard from './TeamCard';
 
 export default function AllTeams(props) {
-  const { teams, setCurTeam, setIsComponentVisible, curType, curCat, logos, size } = props;
+  const { teams, setCurTeam, setIsComponentVisible, curType, curCat, logos } = props;
   const [displayedTeams, setDisplayedTeams] = useState([]);
   const handleClick = team => {
     setCurTeam([team]);
@@ -26,7 +26,11 @@ export default function AllTeams(props) {
   }, [curType, curCat]);
 
   return (
-    <div className={cx('mx-auto xl:w-[1200px] lg:w-[800px]', { 'min-h-800px': displayedTeams.length <= 6 })}>
+    <div
+      className={cx('mx-auto xl:w-[1152px] lg:w-[768px] md:w-[640px] w-[320px]', {
+        'min-h-800px': displayedTeams.length <= 6,
+      })}
+    >
       <div className="flex flex-wrap">
         {displayedTeams.map((team, index) => {
           const description = team.description.substring(0, 100);
@@ -37,14 +41,7 @@ export default function AllTeams(props) {
           return (
             <div key={index}>
               <div className="" onClick={() => handleClick(team)}>
-                <TeamCard
-                  team={team}
-                  description={description}
-                  logo={thisLogo}
-                  size={size}
-                  numTeam={numTeam}
-                  index={index}
-                />
+                <TeamCard team={team} description={description} logo={thisLogo} numTeam={numTeam} index={index} />
               </div>
             </div>
           );
