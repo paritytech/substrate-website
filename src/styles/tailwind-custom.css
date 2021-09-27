@@ -132,3 +132,9 @@ h3 {
     -webkit-text-fill-color: transparent;
   }
 }
+
+/* Lottie */
+
+div[aria-label='animation'] {
+  cursor: default;
+}
