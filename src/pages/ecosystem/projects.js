@@ -4,11 +4,11 @@ import React from 'react';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 
-export default function Teams() {
+export default function Projects() {
   return (
     <Layout layout="sidebar">
-      <SEO title="Teams" />
-      <div>teams</div>
+      <SEO title="Projects" />
+      <div>projects</div>
     </Layout>
   );
 }

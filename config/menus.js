@@ -91,8 +91,8 @@ const ecosystem = [
     id: 'ecosystem.home',
   },
   {
-    url: '/teams',
-    id: 'ecosystem.teams',
+    url: '/projects',
+    id: 'ecosystem.projects',
   },
   {
     url: '/substrate-builders-program',
