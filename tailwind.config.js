@@ -29,6 +29,9 @@ module.exports = {
         '2xl': '1400px',
       },
       colors: {
+        substrateGray: {
+          darkest: '#21232d',
+        },
         substrateGreen: {
           light: '#D4F9EC',
           light2: '#AEF3DC',

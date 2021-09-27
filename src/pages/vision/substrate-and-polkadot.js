@@ -19,8 +19,8 @@ const Vision = () => {
     <Layout mode="full">
       <SEO title="Substrate And Polkadot" />
       <Article>
-        <div className="container -mt-10 mb-8">
-          <div className="w-full lg:w-3/4 lg:mx-auto aspect-w-5 lg:aspect-w-6 aspect-h-2">
+        <header className="container -mt-10 mb-8">
+          <figure className="w-full lg:w-3/4 lg:mx-auto aspect-w-5 lg:aspect-w-6 aspect-h-2">
             <Lottie
               options={{
                 animationData,
@@ -31,8 +31,8 @@ const Vision = () => {
               }}
               isClickToPauseDisabled={true}
             />
-          </div>
-        </div>
+          </figure>
+        </header>
         <Section>
           <div className="flex flex-row-reverse">
             <div className="xl:w-1/3 hidden xl:block">
