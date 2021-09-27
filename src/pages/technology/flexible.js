@@ -42,9 +42,7 @@ const Flexible = () => {
           linkText={
             <p className="underline-animate">
               Want to learn more?{' '}
-              <Link to="https://substrate.dev/docs/en/knowledgebase/runtime/frame">
-                Check out the overview documentation »
-              </Link>
+              <Link to="https://docs.substrate.io/v3/runtime/frame">Check out the overview documentation »</Link>
             </p>
           }
         >
@@ -86,7 +84,7 @@ const Flexible = () => {
           linkText={
             <p className="underline-animate">
               Perform your first forkless upgrade using{' '}
-              <Link to="https://substrate.dev/docs/en/tutorials/forkless-upgrade/">this tutorial »</Link>
+              <Link to="https://docs.substrate.io/tutorials/v3/forkless-upgrades">this tutorial »</Link>
             </p>
           }
         >
