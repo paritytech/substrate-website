@@ -105,7 +105,7 @@ const Interoperable = () => {
         </Feature>
       </Section>
 
-      <CaseStudyBanner icon="astar-logo">
+      <CaseStudyBanner icon="astar-logo" link="/ecosystem/projects/case-studies/astar">
         See Astar&apos;s case study on enabling dApps to co-exist across blockchain networks.
       </CaseStudyBanner>
 
@@ -138,10 +138,8 @@ const Interoperable = () => {
           linkText={
             <p className="underline-animate">
               Read more about{' '}
-              <Link to="https://substrate.dev/docs/en/knowledgebase/learn-substrate/off-chain-features">
-                off-chain features
-              </Link>{' '}
-              in the documentation »
+              <Link to="https://docs.substrate.io/v3/concepts/off-chain-features">off-chain features</Link> in the
+              documentation »
             </p>
           }
         >

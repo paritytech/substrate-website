@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Icon from '../../default/Icon';
+import { Link } from '../../default/Link';
 import LineArrowButton from '../../ui/LineArrowButton';
 import Section from '../Section';
 
@@ -56,16 +57,18 @@ const ExploreLinkSection = ({ links }) => {
     <div className="bg-substrateGray-light dark:bg-substrateDarkest pb-10 pt-20">
       <Section>
         <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
-        <div className="sm:grid grid-cols-3 gap-6 xl:gap-24">
+        <div className="md:grid grid-cols-3 gap-6 xl:gap-10">
           {currentLinks.map(({ title, description, link, linkText, icon }, index) => (
-            <div key={index} className="mb-16 sm:mb-0 flex flex-col justify-between">
-              <div>
-                <Icon name={icon} className="mb-6 w-8 h-8" />
-                <h5 className="text-xl font-bold mb-6">{title}</h5>
-                <p>{description}</p>
+            <Link key={index} to={link}>
+              <div className="h-full hover:bg-white hover:shadow-xl hover:scale-105 rounded-md p-8 mb-16 sm:mb-0 flex flex-col justify-between transition-all">
+                <div>
+                  <Icon name={icon} className="mb-6 w-8 h-8" />
+                  <h5 className="text-xl font-bold mb-6">{title}</h5>
+                  <p>{description}</p>
+                </div>
+                <LineArrowButton link={link}>{linkText}</LineArrowButton>
               </div>
-              <LineArrowButton link={link}>{linkText}</LineArrowButton>
-            </div>
+            </Link>
           ))}
         </div>
       </Section>

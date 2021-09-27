@@ -41,10 +41,7 @@ const Flexible = () => {
           title="Intentional"
           linkText={
             <p className="underline-animate">
-              Want to learn more?{' '}
-              <Link to="https://substrate.dev/docs/en/knowledgebase/runtime/frame">
-                Check out the overview documentation »
-              </Link>
+              Want to learn more? <Link to="https://docs.substrate.io/">Check out the overview documentation »</Link>
             </p>
           }
         >
@@ -65,7 +62,7 @@ const Flexible = () => {
         </Feature>
       </Section>
 
-      <CaseStudyBanner icon="acala-logo">
+      <CaseStudyBanner icon="acala-logo" link="/ecosystem/projects/case-studies/acala">
         <p className="font-bold mb-2 text-2xl">
           Discover how Acala leverages Substrate&apos;s flexibility to enable no cost transactions and protect against
           MEV and sandwich attacks
@@ -86,7 +83,7 @@ const Flexible = () => {
           linkText={
             <p className="underline-animate">
               Perform your first forkless upgrade using{' '}
-              <Link to="https://substrate.dev/docs/en/tutorials/forkless-upgrade/">this tutorial »</Link>
+              <Link to="https://docs.substrate.io/tutorials/v3/forkless-upgrades">this tutorial »</Link>
             </p>
           }
         >
@@ -127,7 +124,7 @@ const Flexible = () => {
           linkText={
             <p className="underline-animate">
               Experience running a client directly in your browser with{' '}
-              <Link to="https://substrate.dev/docs/en/tutorials/forkless-upgrade/">Substrate Connect » </Link>
+              <Link to="/substrate-connect">Substrate Connect » </Link>
             </p>
           }
         >
