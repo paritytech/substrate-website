@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import React from 'react';
 
-export default function Layout({ className, children, children2 }) {
+export default function ArticleCols({ className, children, children2 }) {
   return (
     <article className={cx(className)}>
       <div className="container mb-20 lg:px-10">
