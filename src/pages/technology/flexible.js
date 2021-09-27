@@ -127,7 +127,7 @@ const Flexible = () => {
           linkText={
             <p className="underline-animate">
               Experience running a client directly in your browser with{' '}
-              <Link to="https://substrate.dev/docs/en/tutorials/forkless-upgrade/">Substrate Connect » </Link>
+              <Link to="/substrate-connect">Substrate Connect » </Link>
             </p>
           }
         >

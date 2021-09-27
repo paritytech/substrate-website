@@ -123,16 +123,6 @@ h3 {
   @apply font-bold;
 }
 
-/* Fade out animation - DOES NOT WORK */
-
-[data-aos='fade-out'] {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-[data-aos='fade-out'] .aos-animate {
-  opacity: 0;
-}
 /* 404 title */
 
 @supports (-webkit-text-stroke: 1px black) {
