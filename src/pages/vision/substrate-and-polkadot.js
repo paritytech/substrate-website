@@ -5,7 +5,6 @@ import Lottie from 'react-lottie';
 
 import Gif from '../../components/default/Gif';
 import Article from '../../components/layout/Article';
-import Section from '../../components/layout/Section';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
 import BannerLink from '../../components/layout/vision/BannerLink';
 import ArticleNav from '../../components/site/ArticleNav';
@@ -33,15 +32,10 @@ const Vision = () => {
             />
           </figure>
         </header>
-        <Section>
-          <div className="flex flex-row-reverse">
-            <div className="xl:w-1/3 hidden xl:block">
-              <div className="sticky top-16 pt-16 -mt-16 overflow-y-auto">
-                <ArticleNav />
-              </div>
-            </div>
-            <div>
-              <Section>
+        <div className="container mb-20 lg:px-10">
+          <div className="flex flex-row">
+            <div className="xl:w-2/3 md:px-8 xl:pl-8">
+              <section>
                 <p className="text-3xl mb-12">
                   All Substrate-based chains are <span className="font-semibold">seamlessly compatible</span> with
                   Polkadot, granting access to a rich, interoperable ecosystem of parachains, applications, and
@@ -84,7 +78,8 @@ const Vision = () => {
                     </p>
                   </li>
                 </ul>
-
+              </section>
+              <section>
                 <h1 id="substrate-polkadot-web3-vision" className="mb-8 font-bold text-4xl font-body">
                   Substrate, Polkadot, and the Web3 Vision
                 </h1>
@@ -162,7 +157,7 @@ const Vision = () => {
                 <p>
                   When we started building Polkadot at Parity, we considered this and knew that it would not be
                   realistic to build such an innovative new blockchain on top of the existing Ethereum design, even if
-                  we were the ones who had designed and written it. Ethereum was simply not the right tool for the job.{' '}
+                  we were the ones who had designed and written it. Ethereum was simply not the right tool for the job.
                   So we started building Polkadot as an entirely fresh blockchain project without those design
                   constraints.
                 </p>
@@ -249,10 +244,15 @@ const Vision = () => {
                   adoption than traditionally centralized applications, a critical requirement for delivering the
                   promised independence and self-sovereignty of the Web3 vision.
                 </p>
-              </Section>
+              </section>
+            </div>
+            <div className="xl:w-1/3 hidden xl:block xl:pl-16">
+              <div className="sticky top-16 pt-16 -mt-16 overflow-y-auto">
+                <ArticleNav />
+              </div>
             </div>
           </div>
-        </Section>
+        </div>
       </Article>
       <ExploreLinkSection links={['technology', 'developerHub', 'ecosystem']} />
     </Layout>
