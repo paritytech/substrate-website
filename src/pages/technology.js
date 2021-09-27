@@ -18,17 +18,20 @@ const highlights = [
     icon: 'tools',
     description:
       'No need to reinvent the wheel, Substrate has robust tooling for development, deployment, and debugging.',
+    link: 'https://docs.substrate.io/v3/tools',
   },
   {
     title: 'Light-Client-First Design',
     icon: 'light-client',
     description:
       'Browsers can interact directly with the blockchain network instead of relying on resource-heavy local node infrastructure or third party services.',
+    link: '/substrate-connect',
   },
   {
     title: 'Forkless Upgrades',
     icon: 'forkless-upgrades',
     description: 'Upgrading blockchains has never been easier. With Substrate, everyone stays on the same path.',
+    link: 'https://substrate-docs-staging.netlify.app/v3/runtime/upgrades',
   },
 ];
 
@@ -95,10 +98,10 @@ export default function IndexPage() {
         </Section>
         <Section>
           <ul className="grid sm:grid-cols-3 gap-16 xl:gap-24 list-none m-0">
-            {highlights.map(({ title, icon, description }) => {
+            {highlights.map(({ title, icon, description, link }) => {
               return (
                 <li key={title} className="m-0 hover:opacity-50 transition-opacity">
-                  <Link to="/technology">
+                  <Link to={link}>
                     <div className="w-16 h-16">
                       <Icon name={icon} className="fill-current text-substrateBlackish dark:text-white" />
                     </div>
