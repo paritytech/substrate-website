@@ -103,11 +103,8 @@ export default function AstarCaseStudy({ data }) {
         <p>
           When it comes to smart contracts, multi virtual machines and scalability are the key properties of the
           next-generation smart contract platform. Substrate is a customizable blockchain framework that natively
-          supports WebAssembly smart contracts and has an EVM pallet.
-          <b>
-            This allows Astar to support both of these virtual machines (VMs), allowing them to co-exist and be
-            interoperable with one another.
-          </b>
+          supports WebAssembly smart contracts and has an EVM pallet. This allows Astar to support both of these virtual
+          machines (VMs), allowing them to co-exist and be interoperable with one another.
         </p>
         <p>
           Additionally, Substrate is upgradable without hard forks. This allows Astar to add their layer 2 (L2) and
@@ -119,48 +116,44 @@ export default function AstarCaseStudy({ data }) {
             Result
           </h2>
         </div>
+        <h4>
+          What was the concrete solution or implementation that couldn’t be done without Substrate and is heavily
+          reliant on one or more of the key features of Substrate?
+        </h4>
         <p>
-          <b>Pallets:</b>
-          <ol className="list-outisde ml-6 my-6">
-            <li className="mb-6">
-              dApp Staking: a pallet that allows an account to stake their tokens to a smart contract. This pallet
-              utilizes Substrate’s pallet hooks to set staking rewards for each block
-            </li>
-            <li className="mb-6">
-              Custom Signature Call: This pallet allows accounts to execute Substrate extrinsic calls using an external
-              ECDSA signature (eg: signing a call with Ledger Ethereum account). Thanks to the modularity of Substrate
-              extrinsics, we’re able to wrap native calls with external signatures for expandability.
-            </li>
-            <li className="mb-6">
-              Multi-Virtual Machine: Both the contract pallet and EVM pallet that is part of the Substrate ecosystem
-              allows us to provide multiple contract execution environments. We further improve this usability by
-              allowing interoperability between the two different VMs through precompiled contract calls.
-            </li>
-          </ol>
+          Astar has developed a very innovative concept called “dApps Staking”, which allows an account to stake tokens
+          to a smart contract. This pallet utilizes Substrate’s pallet hooks to set staking rewards for each block.
+          Another feature in Astar’s runtime is the Custom Signature Call. This pallet allows accounts to execute
+          Substrate extrinsic calls using an external ECDSA signature (eg: signing a call with Ledger Ethereum account).
+          Substrate’s extrinsics modularity made it possible to wrap native calls with external signatures for
+          expandability. Finally, a key component of Astar is the Multi Virtual Machine. Both the contract pallet and
+          EVM pallet that are part of the Substrate ecosystem allow the project to provide multiple contract execution
+          environments. This usability was further improved by allowing interoperability between the two different VMs
+          through precompiled contract calls.
         </p>
         <div className="my-10">
           <b>Links and Resources:</b>
           <div className="underline-animate font-bold my-6 leading-loose">
             <div>
-              Website: <a href="https://astar.network">https://astar.network</a>
+              Website: <Link to="https://astar.network">https://astar.network</Link>
             </div>
             <div>
-              Github: <a href="https://github.com/PlasmNetwork/Astar">https://github.com/PlasmNetwork/Astar</a>
+              Github: <Link to="https://github.com/PlasmNetwork/Astar">https://github.com/PlasmNetwork/Astar</Link>
             </div>
             <div>
-              Twitter: <a href="https://twitter.com/AstarNetwork">https://twitter.com/AstarNetwork</a>
+              Twitter: <Link to="https://twitter.com/AstarNetwork">https://twitter.com/AstarNetwork</Link>
             </div>
             <div>
-              Blog: <a href="https://medium.com/astar-network">https://medium.com/astar-network</a>
+              Blog: <Link to="https://medium.com/astar-network">https://medium.com/astar-network</Link>
             </div>
             <div>
               Youtube:{' '}
-              <a href="https://www.youtube.com/channel/UC36JgEF6gqatVSK9xlzzrvQ">
+              <Link to="https://www.youtube.com/channel/UC36JgEF6gqatVSK9xlzzrvQ">
                 https://www.youtube.com/channel/UC36JgEF6gqatVSK9xlzzrvQ
-              </a>
+              </Link>
             </div>
             <div>
-              Tech Community: <a href="https://discord.gg/nywSgQR3NC">https://discord.gg/nywSgQR3NC</a>
+              Tech Community: <Link to="https://discord.gg/nywSgQR3NC">https://discord.gg/nywSgQR3NC</Link>
             </div>
           </div>
         </div>

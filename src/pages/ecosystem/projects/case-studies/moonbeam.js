@@ -54,10 +54,8 @@ export default function MoonbeamCaseStudy({ data }) {
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} objectFit="contain" alt={moonbeamData.name} />
           <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{moonbeamData.name}</div>
         </div>
-        <div className="mb-3 font-bold text-lg md:text-xl">Ethereum-compatible smart contract platform</div>
-        <div className="text-lg md:text-xl">
-          Flexibility Tooling, Community, Forkless, Interoperability, Security, Cost, Future Proof, Modular
-        </div>
+        <div className="mb-3 font-bold text-lg md:text-xl">An Ethereum-compatible smart contract platform</div>
+        <div className="text-lg md:text-xl">Future Proof, Forkless, Interoperability</div>
         <div className="my-10">
           <div className="mb-3 md:inline-flex">
             <div className="mr-8 flex">
@@ -80,10 +78,6 @@ export default function MoonbeamCaseStudy({ data }) {
           name="Derek Yoo, Founder, Moonbeam Network"
           image={data.avatar}
         />
-        {/* <p>
-          Astar Network (previously known as Plasm Network) is a dapp hub in the Polkadot ecosystem, supporting EVM,
-          WebAssembly, and Layer2 solutions like Rollups.
-        </p> */}
         <div className="flex items-center mt-10 mb-6 scroll-margin-top-100">
           <Icon name="knight" className="fill-current text-substrateGreen mr-4" />
           <h2 id="challenge" className="mb-0">
@@ -95,7 +89,7 @@ export default function MoonbeamCaseStudy({ data }) {
           To be fully Ethereum compatible while also building on Substrate and connecting to Polkadot, a project needs
           to keep up with the changes in both ecosystems. Finding ways to harmonize different design decisions between
           Ethereum and Polkadot can be challenging in many areas, including the existential deposit, the ability to lock
-          or reserve tokens and the standard signature scheme..
+          or reserve tokens and the standard signature scheme.
         </p>
         <div className="flex items-center mt-10 mb-6 scroll-margin-top-100">
           <Icon name="check-mark" className="fill-current text-substrateGreen mr-4" />
@@ -104,12 +98,14 @@ export default function MoonbeamCaseStudy({ data }) {
           </h2>
         </div>
         <h4>How did the specific USPs of Substrate solve the challenges faced?</h4>
-        <ul className="list-outisde ml-6 my-6">
-          <li>The modular notion of account ID allowed us to use H160 and get our unified accounts</li>
-          <li>The extensible RPC layer allowed us to implement Ethereum-style RPC endpoints</li>
-          <li>Its modular consensus layer allowed us to build our own consensus framework</li>
-          <li>FRAME itself allows all the great pallets from various repos to compose together well</li>
-        </ul>
+        <p>
+          Leveraging the modular notion of account ID, Moonbeam used H160 to achieve their unified accounts. On top of
+          that, the extensible RPC layer allowed them to implement Ethereum-style RPC endpoints.
+        </p>
+        <p>
+          Finally, because of Substrate’s modular consensus layer, Moonbeam could build their own consensus framework.
+          FRAME itself allows all the great pallets from various projects to compose together well.
+        </p>
         <div className="flex items-center mt-10 mb-6 scroll-margin-top-100">
           <Icon name="graph" className="fill-current text-substrateGreen mr-4" />
           <h2 id="result" className="mb-0">
@@ -121,16 +117,35 @@ export default function MoonbeamCaseStudy({ data }) {
           relying on one or more of the key features of Substrate?
         </h4>
         <p>
-          <b>Pallets:</b>
-          <ol className="list-outisde ml-6 my-6">
-            <li className="mb-6">Frontier&apos;s Pallet EVM and Pallet Ethereum</li>
-            <li className="mb-6">Cumulus&apos; parachain system (all of cumulus, not just the pallets)</li>
-            <li className="mb-6">Our own parachain staking pallet</li>
-            <li className="mb-6">Substrate&apos;s democracy</li>
-          </ol>
+          All of the above resulted in the development of different pallets. To start with, Moonbeam developed the
+          Frontier&apos;s Pallet EVM and Pallet Ethereum, both of which host the logic of the Ethereum Virtual Machine
+          and account management. The Moonbeam team also developed a custom-built staking pallet that any parachain with
+          staking can integrate to allow users to stake and back that parachain’s collators.
+        </p>{' '}
+        <p>
+          Moonbeam added Substrate&apos;s democracy pallet to its runtime to allow for a governance structure. They
+          added almost the same codebase to Moonriver, their canary network, which is now integrated as a parachain on
+          the Kusama network.
         </p>
+        <div className="my-10">
+          <b>Links and Resources:</b>
+          <div className="underline-animate font-bold my-6 leading-loose">
+            <div>
+              Website: <Link to="https://moonbeam.network/">https://moonbeam.network/</Link>
+            </div>
+            <div>
+              Dcoumentation:{' '}
+              <Link
+                href="https://docs.moonbeam.network/
+"
+              >
+                https://docs.moonbeam.network/
+              </Link>
+            </div>
+          </div>
+        </div>
         <div id="runtimes-pallets" className="flex items-center mt-10 mb-6 scroll-margin-top-100">
-          <h2 className="mb-0">Runtimes&Pallets</h2>
+          <h2 className="mb-0">Runtimes</h2>
         </div>
         <span className="tracking-wider uppercase">Substrate Runtimes:</span>
         <div className="flex flex-wrap mb-16">
