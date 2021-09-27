@@ -29,9 +29,9 @@ export default function Seminar() {
               building on Substrate. Run by DevHub, we meet <span className="font-bold">every other Tuesday</span> at{' '}
               <span className="font-bold">14:00UTC.</span>
             </p>
-            <PrimaryButton link="https://web3.foundation/grants/">Live Call</PrimaryButton>
+            <PrimaryButton link="https://www.crowdcast.io/e/substrate-seminar-2">Live Call</PrimaryButton>
             <p className="mb-4 mt-8 font-bold">Add next call to Google Calendar</p>
-            <SecondaryButton>
+            <SecondaryButton link="https://calendar.google.com/calendar/b/1?cid=cGFyaXR5LmlvXzJmc2tqN245cm1qcHE1Y2xiOWc3ZWUzZGhvQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
               <span className="inline font-bold mr-3">Add Call</span>
               <span className="text-white dark:text-black fill-current">
                 <Icon name="calendar" className="inline mb-1" />
