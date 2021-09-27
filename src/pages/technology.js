@@ -26,7 +26,7 @@ const highlights = [
       'Browsers can interact directly with the blockchain network instead of relying on resource-heavy local node infrastructure or third party services.',
   },
   {
-    title: 'Forkless <br/>Upgrades',
+    title: 'Forkless Upgrades',
     icon: 'forkless-upgrades',
     description: 'Upgrading blockchains has never been easier. With Substrate, everyone stays on the same path.',
   },
