@@ -41,8 +41,7 @@ const Flexible = () => {
           title="Intentional"
           linkText={
             <p className="underline-animate">
-              Want to learn more?{' '}
-              <Link to="https://docs.substrate.io/v3/runtime/frame">Check out the overview documentation »</Link>
+              Want to learn more? <Link to="https://docs.substrate.io/">Check out the overview documentation »</Link>
             </p>
           }
         >
