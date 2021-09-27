@@ -15,7 +15,7 @@ import * as animationData from '../images/animation/technology/overview.json';
 const highlights = [
   {
     title: 'Tooling',
-    icon: 'wa-logo',
+    icon: 'tools',
     description:
       'No need to reinvent the wheel, Substrate has robust tooling for development, deployment, and debugging.',
   },

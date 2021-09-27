@@ -59,6 +59,7 @@ import interoperableBase from '../../images/svg/technology/interoperable-base.sv
 import openBase from '../../images/svg/technology/open-base.svg';
 import secure from '../../images/svg/technology/secure.svg';
 import tooling from '../../images/svg/technology/tooling.svg';
+import tools from '../../images/svg/technology/tools.svg';
 import upgradable from '../../images/svg/technology/upgradable.svg';
 import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
@@ -130,6 +131,7 @@ const iconsMap = {
   'diamond-purple': diamondPurple,
   'diamond-green': diamondGreen,
   play: play,
+  tools: tools,
   /* mockup */
   placeholder: placeholder,
   /* social */
