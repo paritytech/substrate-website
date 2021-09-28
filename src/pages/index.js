@@ -252,7 +252,7 @@ export default function BuildersProgram() {
               </div>
             </Link>
           </InView>
-          <p className="text-center text-3xl mb-12 leading-relaxed" onClick={() => playAnimation(false)}>
+          <p className="text-center text-3xl mb-12 leading-normal" onClick={() => playAnimation(false)}>
             Substrate-based chains are designed to seamlessly connect to{' '}
             <span className="font-bold">
               Polkadot, granting access to its system of parallel transactions, cross-chain transfers, and an expanding
