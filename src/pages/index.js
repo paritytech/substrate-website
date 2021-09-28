@@ -82,7 +82,7 @@ export default function BuildersProgram() {
             <Lottie isClickToPauseDisabled options={heroAnimationOptions} />
             <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
               <Parallax y={[100, -100]}>
-                <h1 className="font-title mb-0 text-3xl md:text-4xl lg:text-6xl text-white text-center home-hero__headline">
+                <h1 className="font-title mb-0 mt-10 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
                   The Blockchain Framework
                   <br />
                   for a Multichain Future
@@ -94,13 +94,13 @@ export default function BuildersProgram() {
       </div>
       <div className="bg-substrateGray-light dark:bg-substrateBlackish">
         <div className="container lg:px-10 pb-10">
-          <div className="mx-auto max-w-xl pt-14 pb-12">
+          <div className="mx-auto max-w-xl pt-14 pb-4">
             <p className="text-center text-2xl md:text-3xl leading-relaxed">
               Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use
               case.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14 pb-4">
             {cards.map(({ title, icon, description, link, linkText, delay }, idx) => (
               <div key={idx} className="flex" data-aos="fade-up" data-aos-delay={delay}>
                 <Link
@@ -244,14 +244,16 @@ export default function BuildersProgram() {
       <div className="bg-substrateGray-light dark:bg-substrateBlackish">
         <div className="container max-w-6xl lg:px-10 pt-16 pb-24">
           <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)} threshold={0.75}>
-            <div className="home-hero aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
-              <Lottie
-                isStopped={animationIsStopped}
-                isClickToPauseDisabled
-                options={polkadotAnimationOptions}
-                className="fill-current text-white"
-              />
-            </div>
+            <Link to="/vision/substrate-and-polkadot">
+              <div className="aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
+                <Lottie
+                  isStopped={animationIsStopped}
+                  isClickToPauseDisabled
+                  options={polkadotAnimationOptions}
+                  className="fill-current text-white"
+                />
+              </div>
+            </Link>
           </InView>
           <p className="text-center text-3xl mb-12 leading-relaxed" onClick={() => playAnimation(false)}>
             Substrate-based chains are designed to seamlessly connect to{' '}
@@ -307,38 +309,46 @@ export default function BuildersProgram() {
       <div className="container lg:px-10 pt-24">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold mb-10">The building blocks for a decentralized and fairer internet.</h2>
-          <p className="text-2xl leading-relaxed mb-10">
+          <p className="text-2xl leading-relaxed mb-8">
             Substrate makes building a blockchain far easier, faster, cheaper, and safer than ever before. Blockchains
             built with Substrate are compatible with the Polkadot ecosystem, or can be run independently. Discover more.
           </p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 font-bold text-xl max-w-6xl mx-auto">
-          <div className="flex justify-center" data-aos="fade-up">
-            <Link to="/technology/flexible" className="technology-teaser__icon text-center">
-              <FlexibleIcon />
-              Flexible
-            </Link>
+          <div className="p-8 hover:shadow-xl hover:scale-105 transition-all rounded-md">
+            <div className="flex justify-center" data-aos="fade-up">
+              <Link to="/technology/flexible" className="technology-teaser__icon text-center">
+                <FlexibleIcon />
+                Flexible
+              </Link>
+            </div>
           </div>
-          <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
-            <Link to="/technology/open" className="technology-teaser__icon text-center">
-              <OpenIcon />
-              Open
-            </Link>
+          <div className="p-8 hover:shadow-xl hover:scale-105 transition-all rounded-md">
+            <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
+              <Link to="/technology/open" className="technology-teaser__icon text-center">
+                <OpenIcon />
+                Open
+              </Link>
+            </div>
           </div>
-          <div className="flex justify-center" data-aos="fade-up" data-aos-delay="400">
-            <Link to="/technology/interoperable" className="technology-teaser__icon text-center">
-              <InteroperableIcon />
-              Interoperable
-            </Link>
+          <div className="p-8 hover:shadow-xl hover:scale-105 transition-all rounded-md">
+            <div className="flex justify-center" data-aos="fade-up" data-aos-delay="400">
+              <Link to="/technology/interoperable" className="technology-teaser__icon text-center">
+                <InteroperableIcon />
+                Interoperable
+              </Link>
+            </div>
           </div>
-          <div className="flex justify-center" data-aos="fade-up" data-aos-delay="600">
-            <Link to="/technology/future-proof" className="technology-teaser__icon text-center">
-              <FutureProofIcon />
-              Future-proof
-            </Link>
+          <div className="p-8 hover:shadow-xl hover:scale-105 transition-all rounded-md">
+            <div className="flex justify-center" data-aos="fade-up" data-aos-delay="600">
+              <Link to="/technology/future-proof" className="technology-teaser__icon text-center">
+                <FutureProofIcon />
+                Future-proof
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
+        <div className="text-center mt-14" data-aos="fade-up" data-aos-delay="400">
           <SecondaryButton hero link="/technology">
             Technology Overview
           </SecondaryButton>

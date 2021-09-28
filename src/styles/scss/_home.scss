@@ -1,7 +1,6 @@
 .home-hero {
-
   &__headline {
-    text-shadow: 0 4px 1px rgba(#0A5F3B, 0.25);
+    text-shadow: 2px 2px 15px rgba(#0a5f3b, 0.45);
   }
 
   svg {
@@ -30,12 +29,6 @@
     svg {
       @apply w-36 h-36 mx-auto transition-all;
     }
-
-    &:hover {
-      svg {
-        opacity: 0.5;
-      }
-    }
   }
 }
 
@@ -49,7 +42,7 @@
   transition: max-height 400ms ease-in-out;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -66,11 +59,11 @@
     @media (min-width: 1024px) {
       max-height: 40rem;
     }
-  
+
     @media (min-width: 1400px) {
       max-height: 32rem;
     }
-    
+
     &::after {
       opacity: 0;
     }
