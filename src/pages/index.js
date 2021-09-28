@@ -307,8 +307,9 @@ export default function BuildersProgram() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold mb-10">The building blocks for a decentralized and fairer internet.</h2>
           <p className="text-2xl leading-relaxed mb-8">
-            Substrate makes building a blockchain far easier, faster, cheaper, and safer than ever before. Blockchains
-            built with Substrate are compatible with the Polkadot ecosystem, or can be run independently. Discover more.
+            Substrate makes building a blockchain far easier, faster, cheaper, and safer than ever before. As an open
+            source framework, developers gain free access to a wide codebase developed and used by industry-leading
+            teams powering many of the largest and most secure live networks today. Discover more.
           </p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 font-bold text-xl max-w-6xl mx-auto">
