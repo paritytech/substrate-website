@@ -61,7 +61,7 @@ export default function AcalaCaseStudy({ data }) {
           <div className="mb-3 font-bold text-lg md:text-xl">The DeFi and liquidity hub for Polkadot</div>
           <div className="text-lg md:text-xl">Flexibility, Security, Compatibility, Cost</div>
           <div className="my-10">
-            <div className="mb-3 md:inline-flex">
+            <div className="mb-3">
               <div className="mr-8 flex">
                 <div className="tracking-wider uppercase  mr-3">type:</div>
                 <Types types={acalaData.types} />
@@ -87,9 +87,9 @@ export default function AcalaCaseStudy({ data }) {
             protocols with out-of-the-box cross-chain capabilities and robust security. It offers a suite of financial
             applications with micro gas fees that can be paid in any token.
           </p>
-          <div className="flex items-center mt-10 mb-6 scroll-margin-top-100">
+          <div className="flex items-center mt-10 mb-6 ">
             <Icon name="knight" className="fill-current text-substrateGreen mr-4" />
-            <h2 id="challenge" className="mb-0">
+            <h2 id="challenge" className="mb-0 scroll-margin-top-100">
               Challenge
             </h2>
           </div>
@@ -118,9 +118,9 @@ export default function AcalaCaseStudy({ data }) {
             imposes a challenge to any DeFi platforms that do not support EVM & Solidity as a lot of effort is required
             to onboard developers and existing EVM & Solidity tools and libraries cannot be reused.
           </p>
-          <div className="flex items-center mt-10 mb-6 scroll-margin-top-100">
+          <div className="flex items-center mt-10 mb-6">
             <Icon name="check-mark" className="fill-current text-substrateGreen mr-4" />
-            <h2 id="solution" className="mb-0">
+            <h2 id="solution" className="mb-0 scroll-margin-top-100">
               Solution
             </h2>
           </div>
@@ -152,9 +152,9 @@ export default function AcalaCaseStudy({ data }) {
             advanced features of Acala as well as the multi-chain ecosystem of Polkadot.
           </p>
 
-          <div className="flex items-center mt-10 mb-6 scroll-margin-top-100">
+          <div className="flex items-center mt-10 mb-6">
             <Icon name="graph" className="fill-current text-substrateGreen mr-4" />
-            <h2 id="result" className="mb-0">
+            <h2 id="result" className="mb-0 scroll-margin-top-100">
               Result
             </h2>
           </div>
@@ -194,7 +194,7 @@ export default function AcalaCaseStudy({ data }) {
               </div>
             </div>
           </div>
-          <div className="flex items-center mt-10 mb-6">
+          <div className="mt-10 mb-6">
             <div className="mb-0 text-4xl font-bold">Runtimes</div>
           </div>
           <span className="tracking-wider uppercase">Substrate Runtimes:</span>

@@ -6,6 +6,7 @@ import TeamCard from './TeamCard';
 export default function AllTeams(props) {
   const { teams, setCurTeam, setIsComponentVisible, curType, curCat, logos } = props;
   const [displayedTeams, setDisplayedTeams] = useState([]);
+  const [zeroTeamsText, setZeroTeamsText] = useState('');
   const handleClick = team => {
     setCurTeam([team]);
     setIsComponentVisible(true);
@@ -22,6 +23,7 @@ export default function AllTeams(props) {
           return 1;
         }
       });
+    setZeroTeamsText('Sorry, no matches');
     setDisplayedTeams(filteredTeams);
   }, [curType, curCat]);
 
@@ -33,7 +35,7 @@ export default function AllTeams(props) {
     >
       {displayedTeams.length === 0 ? (
         <div className="text-center mt-20">
-          <p>Sorry, no matches</p>
+          <p>{zeroTeamsText}</p>
         </div>
       ) : (
         <div className="flex flex-wrap">

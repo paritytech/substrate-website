@@ -42,7 +42,7 @@ export default function TeamCard(props) {
           <>{team.description}</>
         )}
       </p>
-      <div className="">{team.caseStudy && <CaseStudyButton link={team.caseStudy} />}</div>
+      {team.caseStudy && <CaseStudyButton link={team.caseStudy} />}
     </div>
   );
 }
