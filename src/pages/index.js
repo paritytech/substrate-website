@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
+import { Parallax } from 'react-scroll-parallax';
 
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
@@ -35,88 +36,95 @@ export default function BuildersProgram() {
     autoplay: false,
     animationData: polkadotAnimationData,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
+      preserveAspectRatio: 'xMidYMid meet',
+      viewBoxSize: '0 640 2160 880',
     },
   };
 
   const [activeTab, setActiveTab] = useState(1);
-  const [expandedTab, setExpandedTab] = useState(0);
+  const [expandedTab, toggleExpandedTab] = useState(false);
   const [animationIsStopped, playAnimation] = useState(true);
 
   return (
-    <Layout mode="full">
+    <Layout mode="full" header="home">
       <SEO title="Home" />
       <div className="-mt-12 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-8 lg:aspect-h-5">
           <div className="home-hero">
             <Lottie isClickToPauseDisabled options={heroAnimationOptions} />
-            <h1 className="text-white text-center home-hero__headline absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
-              The Blockchain Framework
-              <br />
-              for a Multi-chain Future
-            </h1>
+            <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+              <Parallax y={[100, -100]}>
+                <h1 className="font-title text-white text-center home-hero__headline">
+                  The Blockchain Framework
+                  <br />
+                  for a Multi-chain Future
+                </h1>
+              </Parallax>
+            </div>
           </div>
         </div>
       </div>
       <div className="bg-substrateGray-light dark:bg-substrateBlackish">
         <div className="container lg:px-10 pb-10">
           <div className="mx-auto max-w-xl pt-14 pb-12">
-            <p className="text-center text-3xl">
+            <p className="text-center text-3xl leading-relaxed">
               Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use
               case.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14">
-            <Link
-              to="/technology"
-              className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
-              data-aos="fade-up"
-            >
-              <Icon name="technology" className="w-20 h-20 mx-auto mb-12" />
-              <h3 className="text-2.5xl mb-6">Technology</h3>
-              <p className="text-xl leading-relaxed">
-                Learn why Substrate is the most powerful framework to quickly build customized future-proof blockchains.
-              </p>
-              <div className="absolute bottom-10 left-0 w-full">
-                <LineArrowButton className="inline-block" primary large link="/technology">
-                  Explore the tech
-                </LineArrowButton>
-              </div>
-            </Link>
-            <Link
-              to="/"
-              className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <Icon name="developers" className="w-20 h-20 mx-auto mb-12" />
-              <h3 className="text-2.5xl mb-6">Developers</h3>
-              <p className="text-xl leading-relaxed">
-                Dive into the docs, tutorials, and resources to immediately get started building with Substrate.
-              </p>
-              <div className="absolute bottom-10 left-0 w-full">
-                <LineArrowButton className="inline-block" primary large link="/">
-                  Start coding
-                </LineArrowButton>
-              </div>
-            </Link>
-            <Link
-              to="/ecosystem"
-              className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <Icon name="teams" className="w-20 h-20 mx-auto mb-12" />
-              <h3 className="text-2.5xl mb-6">Projects</h3>
-              <p className="text-xl leading-relaxed">
-                See how Substrate has been implemented in innovative use cases in many industries around the world.
-              </p>
-              <div className="absolute bottom-10 left-0 w-full">
-                <LineArrowButton className="inline-block" primary large link="/ecosystem">
-                  Discover projects
-                </LineArrowButton>
-              </div>
-            </Link>
+            <div className="flex" data-aos="fade-up">
+              <Link
+                to="/technology"
+                className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
+              >
+                <Icon name="technology" className="w-16 h-16 mx-auto mb-8" />
+                <h3 className="text-2.5xl mb-6">Technology</h3>
+                <p className="text-xl leading-relaxed">
+                  Learn why Substrate is the most powerful framework to quickly build customized future-proof
+                  blockchains.
+                </p>
+                <div className="absolute bottom-10 left-0 w-full">
+                  <LineArrowButton className="inline-block" primary large link="/technology">
+                    Explore the tech
+                  </LineArrowButton>
+                </div>
+              </Link>
+            </div>
+            <div className="flex" data-aos="fade-up" data-aos-delay="200">
+              <Link
+                to="/"
+                className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
+              >
+                <Icon name="developers" className="w-16 h-16 mx-auto mb-8" />
+                <h3 className="text-2.5xl mb-6">Developers</h3>
+                <p className="text-xl leading-relaxed">
+                  Dive into the docs, tutorials, and resources to immediately get started building with Substrate.
+                </p>
+                <div className="absolute bottom-10 left-0 w-full">
+                  <LineArrowButton className="inline-block" primary large link="/">
+                    Start coding
+                  </LineArrowButton>
+                </div>
+              </Link>
+            </div>
+            <div className="flex" data-aos="fade-up" data-aos-delay="400">
+              <Link
+                to="/ecosystem"
+                className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
+              >
+                <Icon name="teams" className="w-16 h-16 mx-auto mb-8" />
+                <h3 className="text-2.5xl mb-6">Projects</h3>
+                <p className="text-xl leading-relaxed">
+                  See how Substrate has been implemented in innovative use cases in many industries around the world.
+                </p>
+                <div className="absolute bottom-10 left-0 w-full">
+                  <LineArrowButton className="inline-block" primary large link="/ecosystem">
+                    Discover projects
+                  </LineArrowButton>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -158,7 +166,7 @@ export default function BuildersProgram() {
               <h3 className="h2 font-extrabold">Taking the learnings from Ethereum to Substrate</h3>
               <div
                 className={cx('home-expand', {
-                  'home-expand--active': expandedTab === 1,
+                  'home-expand--active': expandedTab,
                 })}
               >
                 <p className="text-xl leading-relaxed">
@@ -178,61 +186,62 @@ export default function BuildersProgram() {
                   internet.
                 </p>
               </div>
-              <a className="home-expand__button" onClick={() => setExpandedTab(1)}>
-                Expand
+              <a className="home-expand__button" onClick={() => toggleExpandedTab(!expandedTab)}>
+                {expandedTab ? 'Collapse' : 'Expand'}
                 <Icon name="arrow-more" className="absolute -r-4 top-2 inline-block ml-2 rotate-90 transition-all" />
               </a>
             </div>
           )}
           {activeTab === 2 && (
             <div className="lg:col-span-2">
-              <h3 className="h2 font-extrabold">Taking the learnings from Ethereum to Substrate</h3>
+              <h3 className="h2 font-extrabold">Don&apos;t start from scratch. Start with Substrate</h3>
               <div
                 className={cx('home-expand', {
-                  'home-expand--active': expandedTab === 2,
+                  'home-expand--active': expandedTab,
                 })}
               >
                 <p className="text-xl leading-relaxed">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                  Substrate takes the hard work out of blockchain development without constraining the possibilities.
+                  From its inception it was designed to be a flexible and modular framework that is highly customizable.
+                  It allows development teams to build specialized blockchains based on academically-researched and
+                  field-tested best practices that have proven their worth on multiple live networks worth billions of
+                  dollars.
                 </p>
                 <p className="text-xl leading-relaxed">
-                  In order to push the boundaries of blockchain technology, Gavin left the Ethereum Foundation and
-                  started Parity, where the team implemented the fastest Ethereum client at the time, and also built a
-                  Bitcoin, ZCash, and now, Polkadot client. It’s only from all this deep industry experience that
-                  blockchains could be reimagined from the ground up. This led to the creation of Substrate, an open
-                  source and future-proof framework that powers a multi-chain, interoperable, and decentralized
-                  internet.
+                  With Substrate, developers gain a tremendous head start by leveraging all the learnings from the top
+                  blockchain development projects around the world on this open-source framework. Just as applications
+                  don&apos;t need to be built from scratch today, neither do blockchains - thanks to Substrate!
                 </p>
               </div>
-              <a className="home-expand__button" onClick={() => setExpandedTab(2)}>
-                Expand
+              <a className="home-expand__button" onClick={() => toggleExpandedTab(!expandedTab)}>
+                {expandedTab ? 'Collapse' : 'Expand'}
                 <Icon name="arrow-more" className="absolute -r-4 top-2 inline-block ml-2 rotate-90 transition-all" />
               </a>
             </div>
           )}
           {activeTab === 3 && (
             <div className="lg:col-span-2">
-              <h3 className="h2 font-extrabold">Taking the learnings from Ethereum to Substrate</h3>
+              <h3 className="h2 font-extrabold">Blockchains without hidden compromises</h3>
               <div
                 className={cx('home-expand', {
-                  'home-expand--active': expandedTab === 3,
+                  'home-expand--active': expandedTab,
                 })}
               >
                 <p className="text-xl leading-relaxed">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                  The aspirational &ldquo;trifecta&rdquo; of being fast, secure, and decentralized has been a constant
+                  pursuit of blockchain scalability. Some are fast and secure, but not adequately
+                  decentralized—therefore offering no great advantages over current centralized solutions. Others are
+                  decentralized and secure but suffer from severe performance issues that don&apos;t allow for practical
+                  widespread impact.
                 </p>
                 <p className="text-xl leading-relaxed">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                  Substrate&apos;s use of open, well-adopted and web-literate technologies allows you to balance these
+                  tradeoffs, which leads to the creation of Web3 solutions that are as easy to adopt as traditional
+                  centralized applications.
                 </p>
               </div>
-              <a className="home-expand__button" onClick={() => setExpandedTab(3)}>
-                Expand
+              <a className="home-expand__button" onClick={() => toggleExpandedTab(!expandedTab)}>
+                {expandedTab ? 'Collapse' : 'Expand'}
                 <Icon name="arrow-more" className="absolute -r-4 top-2 inline-block ml-2 rotate-90 transition-all" />
               </a>
             </div>
@@ -242,7 +251,7 @@ export default function BuildersProgram() {
       <div className="bg-substrateGray-light dark:bg-substrateBlackish">
         <div className="container max-w-6xl lg:px-10 pt-16 pb-24">
           <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)} threshold={0.75}>
-            <div className="home-hero aspect-w-5 aspect-h-2 mb-8">
+            <div className="home-hero aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
               <Lottie
                 isStopped={animationIsStopped}
                 isClickToPauseDisabled
@@ -251,7 +260,7 @@ export default function BuildersProgram() {
               />
             </div>
           </InView>
-          <p className="text-center text-3xl mb-12" onClick={() => playAnimation(false)}>
+          <p className="text-center text-3xl mb-12 leading-relaxed" onClick={() => playAnimation(false)}>
             Substrate-based chains are designed to seamlessly connect to{' '}
             <span className="font-bold">
               Polkadot, granting access to its system of parallel transactions, cross-chain transfers, and an expanding
@@ -291,16 +300,14 @@ export default function BuildersProgram() {
             </div>
           </div>
           <div className="text-center mt-10 mb-8">
-            <PrimaryButton link="/vision/substrate-and-polkadot">Substrate Vision</PrimaryButton>
+            <PrimaryButton hero link="/vision/substrate-and-polkadot">
+              Substrate Vision
+            </PrimaryButton>
           </div>
           <div className="text-center">
-            <Link
-              to="https://polkadot.network/"
-              className="text-xl border-b-2 pb-1 font-bold border-substrateBlackish dark:border-white hover:border-navItemColor dark:hover:border-navItemColor transition-all"
-            >
-              Polkadot Network
-              <Icon name="external-link" className="inline-block ml-2 mb-1 fill-current dark:text-white" />
-            </Link>
+            <LineArrowButton className="inline-block" large icon="external-link" link="https://polkadot.network/">
+              Polkadot.network
+            </LineArrowButton>
           </div>
         </div>
       </div>
@@ -313,30 +320,42 @@ export default function BuildersProgram() {
           </p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 font-bold text-xl max-w-6xl mx-auto">
-          <div className="technology-teaser__icon text-center" data-aos="fade-up">
-            <FlexibleIcon />
-            Flexible
+          <div className="flex justify-center" data-aos="fade-up">
+            <Link to="/technology/flexible" className="technology-teaser__icon text-center">
+              <FlexibleIcon />
+              Flexible
+            </Link>
           </div>
-          <div className="technology-teaser__icon text-center" data-aos="fade-up" data-aos-delay="200">
-            <OpenIcon />
-            Open
+          <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
+            <Link to="/technology/open" className="technology-teaser__icon text-center">
+              <OpenIcon />
+              Open
+            </Link>
           </div>
-          <div className="technology-teaser__icon text-center" data-aos="fade-up" data-aos-delay="400">
-            <InteroperableIcon />
-            Interoperable
+          <div className="flex justify-center" data-aos="fade-up" data-aos-delay="400">
+            <Link to="/technology/interoperable" className="technology-teaser__icon text-center">
+              <InteroperableIcon />
+              Interoperable
+            </Link>
           </div>
-          <div className="technology-teaser__icon text-center" data-aos="fade-up" data-aos-delay="600">
-            <FutureProofIcon />
-            Future-proof
+          <div className="flex justify-center" data-aos="fade-up" data-aos-delay="600">
+            <Link to="/technology/future-proof" className="technology-teaser__icon text-center">
+              <FutureProofIcon />
+              Future-proof
+            </Link>
           </div>
         </div>
         <div className="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
-          <SecondaryButton link="/technology">Technology Overview</SecondaryButton>
+          <SecondaryButton hero link="/technology">
+            Technology Overview
+          </SecondaryButton>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-11 gap-8 lg:gap-14 mt-56 mb-52">
           <div className="lg:col-span-6 lg:col-start-6">
-            <TeamLogos className="max-w-full" />
+            <Link to="/ecosystem/teams">
+              <TeamLogos className="max-w-full" />
+            </Link>
           </div>
           <div className="lg:col-span-5 lg:col-start-1 lg:row-start-1">
             <h2 className="mb-8 font-extrabold">More than 150 projects are building on Substrate</h2>
@@ -345,14 +364,11 @@ export default function BuildersProgram() {
               wave of innovation in the blockchain industry. Learn more about how the ecosystem of builders have
               addressed prominent challenges such as transaction costs, network security, and more.
             </p>
-            <PrimaryButton link="/ecosystem/teams">See All Teams</PrimaryButton>
+            <PrimaryButton link="/ecosystem/teams">See all projects</PrimaryButton>
             <br />
-            <Link
-              to=""
-              className="inline-block mt-6 text-xl border-b-2 font-bold border-substrateBlackish dark:border-white hover:border-navItemColor dark:hover:border-navItemColor transition-all"
-            >
+            <LineArrowButton className="inline-block mt-6" large link="/">
               Read Case Studies
-            </Link>
+            </LineArrowButton>
           </div>
         </div>
 
@@ -373,13 +389,9 @@ export default function BuildersProgram() {
             address the previous limitations of blockchain by creating Substrate and developing the ground-breaking
             Kusama and Polkadot networks.{' '}
           </p>
-          <Link
-            to="https://parity.io/"
-            className="text-xl border-b-2 pb-1 font-bold border-substrateBlackish dark:border-white hover:border-navItemColor dark:hover:border-navItemColor transition-all"
-          >
+          <LineArrowButton className="inline-block" large link="https://parity.io/" icon="external-link">
             Learn more about Parity
-            <Icon name="external-link" className="inline-block ml-2 mb-1 fill-current dark:text-white" />
-          </Link>
+          </LineArrowButton>
         </div>
       </div>
 
@@ -388,18 +400,18 @@ export default function BuildersProgram() {
           <span className="inline-block text-2.5xl font-bold leading-relaxed mr-20 my-4">Connect With Us</span>
           <Link
             to="https://matrix.to/#/#substrate-technical:matrix.org"
-            className="inline-block text-2xl leading-relaxed mr-20 my-4"
+            className="group inline-block text-2xl leading-relaxed mr-20 my-4"
           >
-            <Icon name="element2" className="inline-block mr-5 w-9 h-9" />
+            <Icon name="element2" className="inline-block mr-5 w-9 h-9 transition-all group-hover:opacity-50" />
             Substrate Tech Support
           </Link>
-          <Link to="/ecosystem/connect/contact" className="inline-block text-2xl leading-relaxed my-4">
+          <a href="mailto:general@parity.io" className="group inline-block text-2xl leading-relaxed my-4">
             <Icon
               name="mail"
-              className="fill-current text-substrateBlackish dark:text-white inline-block mr-5 w-9 h-9"
+              className="fill-current text-substrateBlackish dark:text-white inline-block mr-5 w-9 h-9 transition-all group-hover:opacity-50"
             />
             General inquiries
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -422,7 +434,9 @@ export default function BuildersProgram() {
             <p className="text-xl leading-relaxed mb-6 lg:w-1/2">
               Keep up to date with tech updates and helpful resources.
             </p>
-            <SecondaryButton link="/ecosystem/connect/newsletter">Sign up</SecondaryButton>
+            <SecondaryButton hero link="/ecosystem/connect/newsletter">
+              Sign up
+            </SecondaryButton>
           </div>
         </div>
       </div>

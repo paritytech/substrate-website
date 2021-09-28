@@ -52,7 +52,8 @@
     "react-i18next": "^11.8.15",
     "react-intersection-observer": "^8.32.1",
     "react-lottie": "^1.2.3",
-    "react-modal-video": "1.2.8"
+    "react-modal-video": "1.2.8",
+    "react-scroll-parallax": "^2.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",

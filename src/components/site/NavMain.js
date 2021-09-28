@@ -88,7 +88,7 @@ const DropDownItem = ({ data }) => {
   );
 };
 
-const DropDown = ({ menuItem }) => {
+const DropDown = ({ menuItem, header, isScrolled }) => {
   const { t } = useTranslation();
   const { menus } = useSiteMenus();
   const subMenu = buildSubMenu(menus, menuItem);
@@ -99,19 +99,27 @@ const DropDown = ({ menuItem }) => {
     <li className="list-none m-0" key={menuItem.id} ref={ref}>
       <button className="group focus:outline-none" onClick={() => setIsComponentVisible(!isComponentVisible)}>
         <span
-          className={cx('font-medium group-hover:text-substrateGreen', { 'text-substrateGreen': isComponentVisible })}
+          className={cx('font-medium', {
+            'text-substrateGreen':
+              (isComponentVisible && header === 'default') || (isComponentVisible && header === 'home' && isScrolled),
+            'text-white': isComponentVisible && header === 'home' && !isScrolled,
+            'group-hover:text-substrateGreen': header === 'default' || (header === 'home' && isScrolled),
+            'group-hover:text-white': header === 'home' && !isScrolled,
+          })}
         >
           {t(menuItem.id)}
         </span>
         <Icon
           name="arrow-dropdown"
-          className={cx(
-            'inline-block align-middle xl:ml-2 fill-current group-hover:text-substrateGreen dark:text-white',
-            {
-              'transform rotate-180 text-substrateGreen dark:text-substrateGreen': isComponentVisible,
-              'text-black': !isComponentVisible,
-            }
-          )}
+          className={cx('inline-block align-middle xl:ml-2 fill-current dark:text-white', {
+            'transform rotate-180 text-substrateGreen dark:text-substrateGreen':
+              (isComponentVisible && header === 'default') || (isComponentVisible && header === 'home' && isScrolled),
+            'transform rotate-180 text-white dark:text-substrateGreen':
+              isComponentVisible && header === 'home' && !isScrolled,
+            'text-black': !isComponentVisible,
+            'group-hover:text-substrateGreen': header === 'default' || (header === 'home' && isScrolled),
+            'group-hover:text-white': header === 'home' && !isScrolled,
+          })}
         />
       </button>
 
@@ -153,14 +161,14 @@ const DropDown = ({ menuItem }) => {
   );
 };
 
-const NavMain = () => {
+const NavMain = ({ header, isScrolled }) => {
   const { menus } = useSiteMenus();
 
   return (
     <nav>
       <ul className="m-0 flex justify-evenly">
         {menus.main.map(menuItem => {
-          return <DropDown key={menuItem.id} menuItem={menuItem}></DropDown>;
+          return <DropDown header={header} isScrolled={isScrolled} key={menuItem.id} menuItem={menuItem}></DropDown>;
         })}
       </ul>
     </nav>

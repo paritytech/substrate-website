@@ -28,7 +28,13 @@
 .technology-teaser {
   &__icon {
     svg {
-      @apply w-36 h-36 mx-auto;
+      @apply w-36 h-36 mx-auto transition-all;
+    }
+
+    &:hover {
+      svg {
+        opacity: 0.5;
+      }
     }
   }
 }
@@ -38,16 +44,41 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: initial;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
   margin-bottom: 1.5rem;
+  max-height: 10rem;
+  transition: max-height 400ms ease-in-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    opacity: 1;
+    transition: all 400ms ease-in;
+    @apply bg-gradient-to-t	from-white dark:from-substrateDarkest to-transparent;
+  }
 
   &--active {
-    -webkit-line-clamp: 100;
+    max-height: 80rem;
+
+    @media (min-width: 1024px) {
+      max-height: 40rem;
+    }
+  
+    @media (min-width: 1400px) {
+      max-height: 32rem;
+    }
+    
+    &::after {
+      opacity: 0;
+    }
 
     + .home-expand__button {
-      opacity: 0;
+      svg {
+        @apply -rotate-90;
+      }
     }
   }
 
