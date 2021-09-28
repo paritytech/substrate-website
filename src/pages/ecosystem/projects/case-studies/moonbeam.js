@@ -49,7 +49,7 @@ export default function MoonbeamCaseStudy({ data }) {
   const logo = getImage(data.logo);
   return (
     <Layout>
-      <SEO title="Moonbeam Network Case Study" />
+      <SEO title="Moonbeam Case Study" />
       <ArticleCols>
         <CaseStudyBreadcrumb title={`Moonbeam Case Study`} />
         <article className="container px-6 mb-20">
