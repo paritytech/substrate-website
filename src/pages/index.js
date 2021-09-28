@@ -82,10 +82,10 @@ export default function BuildersProgram() {
             <Lottie isClickToPauseDisabled options={heroAnimationOptions} />
             <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
               <Parallax y={[100, -100]}>
-                <h1 className="font-title text-white text-center home-hero__headline">
+                <h1 className="font-title mb-0 text-3xl md:text-4xl lg:text-6xl text-white text-center home-hero__headline">
                   The Blockchain Framework
                   <br />
-                  for a Multi-chain Future
+                  for a Multichain Future
                 </h1>
               </Parallax>
             </div>
@@ -95,7 +95,7 @@ export default function BuildersProgram() {
       <div className="bg-substrateGray-light dark:bg-substrateBlackish">
         <div className="container lg:px-10 pb-10">
           <div className="mx-auto max-w-xl pt-14 pb-12">
-            <p className="text-center text-3xl leading-relaxed">
+            <p className="text-center text-2xl md:text-3xl leading-relaxed">
               Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use
               case.
             </p>
