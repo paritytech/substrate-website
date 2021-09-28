@@ -21,6 +21,34 @@ import FutureProofIcon from '../images/svg/technology/icon-future-proof.svg';
 import InteroperableIcon from '../images/svg/technology/icon-interoperable.svg';
 import OpenIcon from '../images/svg/technology/icon-open.svg';
 
+const cards = [
+  {
+    title: 'Technology',
+    icon: 'technology',
+    description:
+      'Learn why Substrate is the most powerful framework to quickly build customized future-proof blockchains.',
+    link: '/technology',
+    linkText: 'Explore the Tech',
+    delay: 0,
+  },
+  {
+    title: 'Developers',
+    icon: 'developers',
+    description: 'Dive into the docs, tutorials, and resources to immediately get started building with Substrate. ',
+    link: 'https://docs.substrate.io/',
+    linkText: 'Start coding',
+    delay: 200,
+  },
+  {
+    title: 'Projects',
+    icon: 'projects',
+    description: 'See how Substrate has been implemented in innovative use cases in many industries around the world. ',
+    link: '/ecosystem/projects',
+    linkText: 'Discover projects',
+    delay: 400,
+  },
+];
+
 export default function BuildersProgram() {
   const heroAnimationOptions = {
     loop: true,
@@ -48,7 +76,7 @@ export default function BuildersProgram() {
   return (
     <Layout mode="full" header="home">
       <SEO title="Home" />
-      <div className="-mt-12 bg-substrateGreen">
+      <div className="-mt-36 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-8 lg:aspect-h-5">
           <div className="home-hero">
             <Lottie isClickToPauseDisabled options={heroAnimationOptions} />
@@ -73,58 +101,23 @@ export default function BuildersProgram() {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14">
-            <div className="flex" data-aos="fade-up">
-              <Link
-                to="/technology"
-                className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
-              >
-                <Icon name="technology" className="w-16 h-16 mx-auto mb-8" />
-                <h3 className="text-2.5xl mb-6">Technology</h3>
-                <p className="text-xl leading-relaxed">
-                  Learn why Substrate is the most powerful framework to quickly build customized future-proof
-                  blockchains.
-                </p>
-                <div className="absolute bottom-10 left-0 w-full">
-                  <LineArrowButton className="inline-block" primary large link="/technology">
-                    Explore the tech
-                  </LineArrowButton>
-                </div>
-              </Link>
-            </div>
-            <div className="flex" data-aos="fade-up" data-aos-delay="200">
-              <Link
-                to="/"
-                className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
-              >
-                <Icon name="developers" className="w-16 h-16 mx-auto mb-8" />
-                <h3 className="text-2.5xl mb-6">Developers</h3>
-                <p className="text-xl leading-relaxed">
-                  Dive into the docs, tutorials, and resources to immediately get started building with Substrate.
-                </p>
-                <div className="absolute bottom-10 left-0 w-full">
-                  <LineArrowButton className="inline-block" primary large link="/">
-                    Start coding
-                  </LineArrowButton>
-                </div>
-              </Link>
-            </div>
-            <div className="flex" data-aos="fade-up" data-aos-delay="400">
-              <Link
-                to="/ecosystem"
-                className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
-              >
-                <Icon name="teams" className="w-16 h-16 mx-auto mb-8" />
-                <h3 className="text-2.5xl mb-6">Projects</h3>
-                <p className="text-xl leading-relaxed">
-                  See how Substrate has been implemented in innovative use cases in many industries around the world.
-                </p>
-                <div className="absolute bottom-10 left-0 w-full">
-                  <LineArrowButton className="inline-block" primary large link="/ecosystem">
-                    Discover projects
-                  </LineArrowButton>
-                </div>
-              </Link>
-            </div>
+            {cards.map(({ title, icon, description, link, linkText, delay }, idx) => (
+              <div key={idx} className="flex" data-aos="fade-up" data-aos-delay={delay}>
+                <Link
+                  to="/technology"
+                  className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
+                >
+                  <Icon name={icon} className="w-16 h-16 mx-auto mb-8" />
+                  <h3 className="text-2.5xl mb-6">{title}</h3>
+                  <p className="text-xl leading-relaxed">{description}</p>
+                  <div className="absolute bottom-10 left-0 w-full">
+                    <LineArrowButton className="inline-block" primary large link={link}>
+                      {linkText}
+                    </LineArrowButton>
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -353,7 +346,7 @@ export default function BuildersProgram() {
 
         <div className="grid grid-cols-1 lg:grid-cols-11 gap-8 lg:gap-14 mt-56 mb-52">
           <div className="lg:col-span-6 lg:col-start-6">
-            <Link to="/ecosystem/teams">
+            <Link to="/ecosystem/projects">
               <TeamLogos className="max-w-full" />
             </Link>
           </div>
@@ -364,9 +357,11 @@ export default function BuildersProgram() {
               wave of innovation in the blockchain industry. Learn more about how the ecosystem of builders have
               addressed prominent challenges such as transaction costs, network security, and more.
             </p>
-            <PrimaryButton link="/ecosystem/teams">See all projects</PrimaryButton>
+            <PrimaryButton link="/ecosystem/projects" hero={true}>
+              See all projects
+            </PrimaryButton>
             <br />
-            <LineArrowButton className="inline-block mt-6" large link="/">
+            <LineArrowButton className="inline-block mt-6" large link="/ecosystem/projects/case-studies/acala">
               Read Case Studies
             </LineArrowButton>
           </div>

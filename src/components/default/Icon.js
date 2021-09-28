@@ -18,8 +18,8 @@ import hackathons from '../../images/svg/hackathons.svg';
 import developers from '../../images/svg/home/developers.svg';
 import governance from '../../images/svg/home/governance.svg';
 import interoperability from '../../images/svg/home/interoperability.svg';
+import projects from '../../images/svg/home/projects.svg';
 import security from '../../images/svg/home/security.svg';
-import teams from '../../images/svg/home/teams.svg';
 import technology from '../../images/svg/home/technology.svg';
 import house from '../../images/svg/house.svg';
 import kusamaLogo from '../../images/svg/kusama_logo.svg';
@@ -65,7 +65,7 @@ import waLogo from '../../images/svg/wa-logo.svg';
 const iconsMap = {
   /* home */
   developers: developers,
-  teams: teams,
+  projects: projects,
   technology: technology,
   governance: governance,
   interoperability: interoperability,
