@@ -31,22 +31,28 @@ export default function AllTeams(props) {
         'min-h-800px': displayedTeams.length <= 6,
       })}
     >
-      <div className="flex flex-wrap">
-        {displayedTeams.map((team, index) => {
-          const description = team.description.substring(0, 100);
-          const thisLogo = logos.edges.find(logo => {
-            return logo.node.name.toLowerCase() === team.name.toLowerCase();
-          });
-          const numTeam = displayedTeams.length;
-          return (
-            <div key={index}>
-              <div className="" onClick={() => handleClick(team)}>
-                <TeamCard team={team} description={description} logo={thisLogo} numTeam={numTeam} index={index} />
+      {displayedTeams.length === 0 ? (
+        <div className="text-center mt-20">
+          <p>Sorry, no matches</p>
+        </div>
+      ) : (
+        <div className="flex flex-wrap">
+          {displayedTeams.map((team, index) => {
+            const description = team.description.substring(0, 100);
+            const thisLogo = logos.edges.find(logo => {
+              return logo.node.name.toLowerCase() === team.name.toLowerCase();
+            });
+            const numTeam = displayedTeams.length;
+            return (
+              <div key={index}>
+                <div className="" onClick={() => handleClick(team)}>
+                  <TeamCard team={team} description={description} logo={thisLogo} numTeam={numTeam} index={index} />
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
