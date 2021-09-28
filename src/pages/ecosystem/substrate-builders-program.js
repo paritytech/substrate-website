@@ -224,7 +224,7 @@ export default function BuildersProgram() {
         </Section>
 
         <Section>
-          <div className="mt-36 mb-44">
+          <div className="mt-36 mb-20">
             <div className="max-w-screen-md">
               <h2 className="font-bold mb-4 text-3xl md:text-4xl">What the program entails</h2>
               <p className="text-lg font-medium">
@@ -315,15 +315,10 @@ export default function BuildersProgram() {
                 </div>
               </div>
             </div>
-            <div>
-              <p className="text-xl font-bold mt-14">
-                As a builder, you will receive Parity’s support in a systematic manner
-              </p>
-              <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
-                Apply
-              </PrimaryButton>
-            </div>
           </div>
+          <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
+            Apply
+          </PrimaryButton>
         </Section>
 
         <Section>
