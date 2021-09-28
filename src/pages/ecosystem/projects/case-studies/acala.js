@@ -7,6 +7,7 @@ import Icon from '../../../../components/default/Icon';
 import { Link } from '../../../../components/default/Link';
 import ArticleCols from '../../../../components/layout/ArticleCols';
 import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
+import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 import Layout from '../../../../components/site/Layout';
 import SEO from '../../../../components/site/SEO';
 import Tag from '../../../../components/ui/Tag';
@@ -49,10 +50,11 @@ export default function AcalaCaseStudy({ data }) {
   return (
     <Layout>
       <SEO title="Acala Network Case Study" />
-      <ArticleCols children2={'column content'}>
+      <ArticleCols>
+        <CaseStudyBreadcrumb title={'Acala Network Case Study'} />
         <article className="container px-6 mb-20">
           <div className="tracking-wider uppercase mb-4">Case Study</div>
-          <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center scroll-margin-top-100">
+          <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center">
             <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={acalaData.name} />
             <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{acalaData.name}</div>
           </div>
@@ -192,8 +194,8 @@ export default function AcalaCaseStudy({ data }) {
               </div>
             </div>
           </div>
-          <div id="runtimes-pallets" className="flex items-center mt-10 mb-6 scroll-margin-top-100">
-            <h2 className="mb-0">Runtimes</h2>
+          <div className="flex items-center mt-10 mb-6">
+            <div className="mb-0 text-4xl font-bold">Runtimes</div>
           </div>
           <span className="tracking-wider uppercase">Substrate Runtimes:</span>
           <div className="flex flex-wrap mb-16">
