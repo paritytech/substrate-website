@@ -21,7 +21,7 @@ export default function CatFilter(props) {
             onClick={event => setCurCat(event.target.getAttribute('value'))}
             key={index}
             value={category}
-            className={cx('inline-block pr-10 pt-6 cursor-pointer text-sm hover:underline focus:outline-none', {
+            className={cx('inline-block mr-10 mt-6 cursor-pointer text-sm hover:underline focus:outline-none', {
               'font-bold underline': curCat === category,
             })}
           >
