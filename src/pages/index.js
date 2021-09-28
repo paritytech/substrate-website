@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
-import { Parallax } from 'react-scroll-parallax';
 
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
@@ -81,13 +80,11 @@ export default function BuildersProgram() {
           <div className="home-hero">
             <Lottie isClickToPauseDisabled options={heroAnimationOptions} />
             <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
-              <Parallax y={[100, -100]}>
-                <h1 className="font-title mb-0 mt-10 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
-                  The Blockchain Framework
-                  <br />
-                  for a Multichain Future
-                </h1>
-              </Parallax>
+              <h1 className="font-title mb-0 mt-10 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
+                The Blockchain Framework
+                <br />
+                for a Multichain Future
+              </h1>
             </div>
           </div>
         </div>
