@@ -77,7 +77,7 @@ export default function BuildersProgram() {
     <Layout mode="full" header="home">
       <SEO title="Home" />
       <div className="-mt-36 bg-substrateGreen">
-        <div className="aspect-w-12 aspect-h-12 md:aspect-h-8 lg:aspect-h-5">
+        <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
             <Lottie isClickToPauseDisabled options={heroAnimationOptions} />
             <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
