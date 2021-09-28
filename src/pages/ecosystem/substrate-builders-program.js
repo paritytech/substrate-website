@@ -86,9 +86,7 @@ export default function BuildersProgram() {
 
         <Section>
           <div className="max-w-3xl mx-auto mt-36 mb-44">
-            <h2 className="text-center font-bold mb-4 text-3xl md:text-4xl">
-              The program is divided into three tracks
-            </h2>
+            <h2 className="font-bold mb-4 text-3xl md:text-4xl">The program is divided into three tracks</h2>
             {tracks.map(({ title, description, details, icon }, idx) => (
               <div key={idx} className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
                 <h3 className="mb-4 text-xl md:text-2.5xl font-bold">
