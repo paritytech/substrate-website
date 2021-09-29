@@ -155,3 +155,9 @@ h3 {
 div[aria-label='animation'] {
   cursor: default;
 }
+
+@media screen and (max-width: 1400px) {
+  .modal-video-close-btn {
+    transform: translateY(-100%);
+  }
+}
