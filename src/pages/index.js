@@ -313,7 +313,7 @@ export default function BuildersProgram() {
           </p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 font-bold text-xl max-w-6xl mx-auto">
-          <div className="p-8 hover:shadow-xl hover:scale-105 transition-all rounded-md">
+          <div className="p-8 hover:shadow-xl dark:hover:bg-substrateBlackish hover:scale-105 transition-all rounded-md">
             <div className="flex justify-center" data-aos="fade-up">
               <Link to="/technology/flexible" className="technology-teaser__icon text-center">
                 <FlexibleIcon />
@@ -321,7 +321,7 @@ export default function BuildersProgram() {
               </Link>
             </div>
           </div>
-          <div className="p-8 hover:shadow-xl hover:scale-105 transition-all rounded-md">
+          <div className="p-8 hover:shadow-xl dark:hover:bg-substrateBlackish  hover:scale-105 transition-all rounded-md">
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
               <Link to="/technology/open" className="technology-teaser__icon text-center">
                 <OpenIcon />
@@ -329,7 +329,7 @@ export default function BuildersProgram() {
               </Link>
             </div>
           </div>
-          <div className="p-8 hover:shadow-xl hover:scale-105 transition-all rounded-md">
+          <div className="p-8 hover:shadow-xl dark:hover:bg-substrateBlackish  hover:scale-105 transition-all rounded-md">
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="400">
               <Link to="/technology/interoperable" className="technology-teaser__icon text-center">
                 <InteroperableIcon />
@@ -337,7 +337,7 @@ export default function BuildersProgram() {
               </Link>
             </div>
           </div>
-          <div className="p-8 hover:shadow-xl hover:scale-105 transition-all rounded-md">
+          <div className="p-8 hover:shadow-xl dark:hover:bg-substrateBlackish  hover:scale-105 transition-all rounded-md">
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="600">
               <Link to="/technology/future-proof" className="technology-teaser__icon text-center">
                 <FutureProofIcon />

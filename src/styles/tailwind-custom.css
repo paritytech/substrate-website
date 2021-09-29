@@ -19,7 +19,7 @@ p {
 
 /* Links underline animation */
 .underline-animate a {
-  @apply text-substrateBlue;
+  @apply text-substrateBlue dark:text-substrateDarkThemeBlue;
   display: inline-block;
   position: relative;
 }
@@ -32,7 +32,7 @@ p {
   height: 2px;
   left: 0;
   position: absolute;
-  @apply bg-substrateBlue;
+  @apply bg-substrateBlue dark:text-substrateDarkThemeBlue;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }

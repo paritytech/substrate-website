@@ -39,6 +39,7 @@ module.exports = {
         substrateDarkThemeGrey: '#3A424E',
         substrateDarkThemeLightGrey: '#F8FAF9',
         substrateSubtleGrey: '#E0E0E0',
+        substrateDarkThemeBlue: '#0094FF',
       },
       fontSize: {
         '2.5xl': ['1.75rem', { lineHeight: '1.2' }],
