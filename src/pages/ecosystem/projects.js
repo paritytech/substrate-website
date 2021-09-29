@@ -83,7 +83,7 @@ export default function Projects({ data }) {
         </div>
       </Section>
 
-      <section className="container px-6 mb-20">
+      <Section>
         <h2 id="projects" className="mb-8 scroll-margin-top-100">
           Projects
         </h2>
@@ -97,7 +97,7 @@ export default function Projects({ data }) {
           curCat={curCat}
           logos={logos}
         />
-      </section>
+      </Section>
 
       {isComponentVisible && (
         <>
