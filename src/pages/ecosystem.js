@@ -116,8 +116,11 @@ export default function Home() {
 
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
-            <div className="rounded-md overflow-hidden aspect-w-7 aspect-h-5 bg-gray-200 row-start-1 lg:col-start-2">
-              <StaticImage src="../images/photos/ecosystem/builders-program/builders-program.jpg" />
+            <div className="row-start-1 lg:col-start-2">
+              <StaticImage
+                src="../images/photos/ecosystem/builders-program/builders-program.jpg"
+                className="rounded-md"
+              />
             </div>
             <div className="lg:col-start-1">
               <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">

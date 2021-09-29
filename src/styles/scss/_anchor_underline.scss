@@ -62,12 +62,12 @@
 // Team Anchor Tags
 .underline-anchor-dark a {
   position: relative;
-  @apply text-substrateDark;
+  @apply text-substrateDark dark:text-white;
   text-decoration: none;
 }
 
 .underline-anchor-dark a:hover {
-  @apply text-substrateDark;
+  @apply text-substrateDark dark:text-white;
 }
 
 .underline-anchor-dark a::before {
@@ -78,7 +78,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  @apply bg-substrateDark;
+  @apply bg-substrateDark dark:bg-white;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
