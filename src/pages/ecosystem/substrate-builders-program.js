@@ -320,7 +320,7 @@ export default function BuildersProgram() {
         </Section>
 
         <Section>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-36 mb-44">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-24 mt-36 mb-44">
             <div className="lg:col-span-6">
               <h2 className="font-bold mb-4 text-3xl md:text-4xl">FAQ</h2>
               <h4 className="mb-5 font-bold text-lg md:text-2xl">
