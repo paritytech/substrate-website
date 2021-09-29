@@ -6,6 +6,7 @@ import { useSiteMenus } from '../../hooks/use-site-menus';
 import Icon from '../default/Icon';
 import { buildSubMenu, Link, LinkMenu } from '../default/Link';
 import Logo from './Logo';
+import ThemeToggle from './ThemeToggle';
 
 const NavMobileSubMenuItem = ({ data }) => {
   const { t } = useTranslation();
@@ -116,7 +117,7 @@ const NavMobile = ({ toggleMenu }) => {
   };
 
   return (
-    <div className="lg:hidden absolute inset-0 bg-substrateGray-light dark:bg-substrateDarkest z-90 animate-fade-in-right">
+    <div className="navMobile lg:hidden absolute inset-0 bg-substrateGray-light dark:bg-substrateDarkest z-90 animate-fade-in-right">
       <div className="h-16 px-6 flex items-center justify-between">
         <div className="w-32">
           <Link to="/">
@@ -129,6 +130,9 @@ const NavMobile = ({ toggleMenu }) => {
           {menus.main.map(menuItem => {
             return <NavMobileItem key={menuItem.id} menuItem={menuItem} handleSubMenu={handleSubMenu} />;
           })}
+        </div>
+        <div className="px-6">
+          <ThemeToggle />
         </div>
       </div>
       {isMenuItemOpen && <NavMobileSubMenu menuItem={isMenuItemOpen} handleSubMenu={handleSubMenu} />}

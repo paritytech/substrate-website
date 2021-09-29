@@ -10,7 +10,7 @@ export default function AwesomeSubstrate({ data }) {
   const html = data.markdownRemark.html;
 
   return (
-    <Layout layout="sidebar article-nav">
+    <Layout layout="sidebar" hasArticleNav>
       <SEO title="Awesome Substrate" />
       <Section>
         <h1 id="awesome-substrate" className="text-4xl font-bold font-body mb-6">
@@ -18,9 +18,8 @@ export default function AwesomeSubstrate({ data }) {
         </h1>
         <p className="text-lg font-medium">An awesome list is a list of awesome things curated by the community.</p>
         <p>
-          Substrate is a framework for building upgradable, modular and efficient blockchains.
-          <br />
-          Substrate is an open-source library of Rust code that is maintained by{' '}
+          Substrate is a framework for building upgradable, modular and efficient blockchains. Substrate is an
+          open-source library of Rust code that is maintained by{' '}
           <span className="underline-animate underline-animate-thin">
             <Link to="https://parity.io/">Parity Technologies</Link>.
           </span>
@@ -28,7 +27,7 @@ export default function AwesomeSubstrate({ data }) {
       </Section>
       <Section>
         <div
-          className="markdown underline-animate underline-animate-thin pb-48 mb-96"
+          className="markdown underline-animate underline-animate-thin"
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
       </Section>

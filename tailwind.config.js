@@ -29,6 +29,9 @@ module.exports = {
         '2xl': '1400px',
       },
       colors: {
+        substrateGray: {
+          darkest: '#21232d',
+        },
         substrateGreen: {
           light: '#D4F9EC',
           light2: '#AEF3DC',
@@ -39,10 +42,17 @@ module.exports = {
         substrateDarkThemeGrey: '#3A424E',
         substrateDarkThemeLightGrey: '#F8FAF9',
         substrateSubtleGrey: '#E0E0E0',
+        polkaPink: '#E6007A',
       },
       fontSize: {
+        '2.5xl': ['1.75rem', { lineHeight: '1.2' }],
         '7xl': ['5rem', { lineHeight: '1' }],
+        'four-oh-four': ['20rem', { lineHeight: '1' }],
       },
+    },
+    gridTemplateRows: {
+      1: 'repeat(1, minmax(0, 1fr))',
+      7: 'repeat(7, minmax(0, 1fr))',
     },
     boxShadow: {
       md: '0 0 15px 0 rgba(0, 0, 0, 0.05), 0 5px 5px -5px rgba(0, 0, 0, 0.04)',

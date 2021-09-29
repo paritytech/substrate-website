@@ -16,9 +16,9 @@ const HeaderNav = () => {
       <div className="flex items-center py-4">
         <Link
           className="mr-11 md:mr-0 md:ml-9 transform transition-all duration-300 ease-in-out hover:opacity-50"
-          to={siteMetadata.twitter}
+          to={siteMetadata.element}
         >
-          <Icon name="twitter" />
+          <Icon name="element" />
         </Link>
         <Link
           className="mr-11 md:mr-0 md:ml-9 transform transition-all duration-300 ease-in-out hover:opacity-50"
@@ -28,9 +28,15 @@ const HeaderNav = () => {
         </Link>
         <Link
           className="mr-11 md:mr-0 md:ml-9 transform transition-all duration-300 ease-in-out hover:opacity-50"
-          to={siteMetadata.element}
+          to={siteMetadata.github}
         >
-          <Icon name="element" />
+          <Icon name="github" className="fill-current text-white w-6 h-6" />
+        </Link>
+        <Link
+          className="mr-11 md:mr-0 md:ml-9 transform transition-all duration-300 ease-in-out hover:opacity-50"
+          to={siteMetadata.twitter}
+        >
+          <Icon name="twitter" />
         </Link>
       </div>
       <div className="underline-anchor inline-flex flex-col md:flex-row py-6 text-[#DFE3EA] text-xs font-light">

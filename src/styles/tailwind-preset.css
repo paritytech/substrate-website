@@ -12,8 +12,8 @@ main.main-container {
 }
 
 /* Headings */
-h1 {
-  @apply font-title font-bold;
+h1, .h1 {
+  @apply font-body font-extrabold;
 }
 
 h2,
@@ -24,23 +24,24 @@ h6 {
   @apply font-body font-bold;
 }
 
-h1 {
+h1, .h1 {
   @apply mb-3 text-2xl md:text-4xl xl:text-6xl;
+  line-height: 1.2;
 }
 
-h2 {
+h2, .h2 {
   @apply mb-4 text-4xl;
 }
 
-h3 {
+h3, .h3 {
   @apply mb-5 text-3xl;
 }
 
-h4 {
+h4, .h4 {
   @apply mb-6 text-lg md:text-2xl;
 }
 
-h5 {
+h5, .h5 {
   @apply text-xl;
 }
 

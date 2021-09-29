@@ -18,13 +18,6 @@ export default function Seminar() {
         <div>
           <h2 className="text-4xl font-bold mb-6">Substrate Seminar</h2>
           <p className="text-xl font-medium capitalize">Biweekly conversations on the cutting-edge of blockchain</p>
-          {/* TODO: Will be put back in the future */}
-          {/* <Link to="/">
-              <p className="font-bold border-b-2 border-black inline hover:mr-1 transition-all">Past Seminars</p>{' '}
-              <span className="fill-current border-b-0 text-black dark:text-white inline-block">
-                <Icon name="arrow-more" />
-              </span>
-            </Link> */}
         </div>
       </Section>
       <Section>
@@ -36,9 +29,9 @@ export default function Seminar() {
               building on Substrate. Run by DevHub, we meet <span className="font-bold">every other Tuesday</span> at{' '}
               <span className="font-bold">14:00UTC.</span>
             </p>
-            <PrimaryButton link="https://web3.foundation/grants/">Live Call</PrimaryButton>
+            <PrimaryButton link="https://www.crowdcast.io/e/substrate-seminar-2">Live Call</PrimaryButton>
             <p className="mb-4 mt-8 font-bold">Add next call to Google Calendar</p>
-            <SecondaryButton>
+            <SecondaryButton link="https://calendar.google.com/calendar/b/1?cid=cGFyaXR5LmlvXzJmc2tqN245cm1qcHE1Y2xiOWc3ZWUzZGhvQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
               <span className="inline font-bold mr-3">Add Call</span>
               <span className="text-white dark:text-black fill-current">
                 <Icon name="calendar" className="inline mb-1" />
@@ -57,7 +50,7 @@ export default function Seminar() {
           <div className="mb-16 md:mb-8">
             <h5 className="mb-8 font-medium text-2xl">Learn and Share</h5>
             <p className="leading-loose">
-              We begin by hearing from a member of the ecosystem and getting insights into what they are working on.
+              We begin by hearing from a member of the ecosystem and getting insights into what they&apos;re working on.
             </p>
             <p className="leading-loose">
               The second half of each seminar is open for Q & A like office hours, so bring your questions. Got code

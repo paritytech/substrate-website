@@ -16,8 +16,8 @@ export default function Grants() {
           <div>
             <h2 className="text-4xl font-bold mb-6">Grants</h2>
             <p className="max-w-sm mb-8">
-              In support of our mission, the Web3 Foundation grants program funds software development and research in
-              the field of decentralized software protocols.
+              The Web3 Foundation grants program funds software development and research in the field of decentralized
+              software protocols.
             </p>
             <SecondaryButton link="https://web3.foundation/grants/">
               <span className="mb-0 mr-2 inline">Visit Web3 Grants</span>

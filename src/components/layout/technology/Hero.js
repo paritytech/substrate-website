@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import React from 'react';
+import Lottie from 'react-lottie';
 
-import Gif from '../../default/Gif';
 import { Link } from '../../default/Link';
 import Section from '../../layout/Section';
 
@@ -28,7 +28,7 @@ const pages = [
   },
 ];
 
-const Hero = ({ page, image, children }) => {
+const Hero = ({ page, animationData, children }) => {
   return (
     <div className="bg-substrateGray-light dark:bg-substrateBlackish -mt-12 pt-6">
       <Section>
@@ -36,7 +36,7 @@ const Hero = ({ page, image, children }) => {
           {pages.map(({ title, link }) => {
             const current = title === page;
             return (
-              <li key={title} className={cx('m-0 p-0 md:mr-16 lg:mr-24 xl:mr-32')}>
+              <li key={title} className={cx('m-0 p-0 md:mr-16 lg:mr-20 xl:mr-24')}>
                 <Link
                   to={link}
                   className={cx('font-bold hover:text-substrateGreen transition transition-color', {
@@ -52,16 +52,17 @@ const Hero = ({ page, image, children }) => {
 
         <div className="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 lg:gap-x-6">
           <div className="order-1 md:self-end">
-            <p className="tracking-wider lg:tracking-widest text-lg font-light mb-0 uppercase">Substrate Technology</p>
-            <h1
-              data-aos="fade-up"
-              className="py-6 lg:py-10 mb-0 font-title font-extrabold text-6xl xl:text-7xl whitespace-nowrap"
-            >
-              {page}
-            </h1>
+            <p className="tracking-wider lg:tracking-widest text-lg font-light mt-6 mb-6 lg:mb-10 lg:mt-0 uppercase">
+              Substrate Technology
+            </p>
+            <h1 className="lg:mb-10 mb-0 font-title font-extrabold text-6xl xl:text-7xl whitespace-nowrap">{page}</h1>
           </div>
-          <div className="order-3 self-start max-w-lg font-medium">{children}</div>
-          <Gif name={image} alt={page} className="order-2 lg:row-span-2 w-full h-auto mb-10 mt-4 lg:my-10" />
+          <div className="order-3 self-start max-w-lg font-medium mb-8 lg:mb-0">{children}</div>
+          {animationData && (
+            <div className="order-2 lg:row-span-2 w-full h-auto aspect-w-9 aspect-h-7 lg:aspect-h-9">
+              <Lottie options={{ animationData }} width="full" height="full" />
+            </div>
+          )}
         </div>
       </Section>
     </div>
