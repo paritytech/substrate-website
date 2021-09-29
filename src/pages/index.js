@@ -264,7 +264,7 @@ export default function BuildersProgram() {
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-6 rounded-full">
                 <Icon name="interoperability" className="fill-current text-white dark:text-substrateBlackish" />
               </div>
-              <h3 className="text-2xl mb-6">True Interoperablility</h3>
+              <h3 className="text-2xl mb-6 mx-auto">True Interoperablility</h3>
               <p className="text-xl leading-relaxed">
                 By utilizing the Polkadot Relay Chain, all Substrate-based chains can interoperate with others in the
                 ecosystem without the need for bridges.
@@ -274,7 +274,7 @@ export default function BuildersProgram() {
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-6 rounded-full">
                 <Icon name="security" className="fill-current text-white dark:text-substrateBlackish" />
               </div>
-              <h3 className="text-2xl mb-6">Shared Security</h3>
+              <h3 className="text-2xl mb-6 mx-auto">Shared Security</h3>
               <p className="text-xl leading-relaxed">
                 Polkadot’s security is shared without compromise to all chains connected to it, removing the need for
                 and expense of developing your own security network.
@@ -284,7 +284,7 @@ export default function BuildersProgram() {
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-6 rounded-full">
                 <Icon name="governance" className="fill-current text-white dark:text-substrateBlackish" />
               </div>
-              <h3 className="text-2xl mb-6">Sovereign Governance</h3>
+              <h3 className="text-2xl mb-6 mx-auto">Sovereign Governance</h3>
               <p className="text-xl leading-relaxed">
                 While benefiting from the network effects on Polkadot, each chain also maintains independent governance
                 for maximum freedom.
