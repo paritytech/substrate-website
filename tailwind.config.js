@@ -29,6 +29,9 @@ module.exports = {
         '2xl': '1400px',
       },
       colors: {
+        substrateGray: {
+          darkest: '#21232d',
+        },
         substrateGreen: {
           light: '#D4F9EC',
           light2: '#AEF3DC',
@@ -40,6 +43,7 @@ module.exports = {
         substrateDarkThemeLightGrey: '#F8FAF9',
         substrateSubtleGrey: '#E0E0E0',
         substrateDarkThemeBlue: '#0094FF',
+        polkaPink: '#E6007A',
       },
       fontSize: {
         '2.5xl': ['1.75rem', { lineHeight: '1.2' }],

@@ -52,17 +52,17 @@ const developers = [
     internal: true,
   },
   {
-    url: DOCS_URL + '/v3/docs/getting-started/overview',
+    url: DOCS_URL + '/v3/getting-started/overview',
     id: 'developers.docs',
     internal: true,
   },
   {
-    url: DOCS_URL + '/v3/how-to-guides',
+    url: DOCS_URL + '/how-to-guides/v3',
     id: 'developers.how-to-guides',
     internal: true,
   },
   {
-    url: DOCS_URL + '/v3/tutorials',
+    url: DOCS_URL + '/tutorials/v3',
     id: 'developers.tutorials',
     internal: true,
   },
@@ -91,8 +91,8 @@ const ecosystem = [
     id: 'ecosystem.home',
   },
   {
-    url: '/teams',
-    id: 'ecosystem.teams',
+    url: '/projects',
+    id: 'ecosystem.projects',
   },
   {
     url: '/substrate-builders-program',

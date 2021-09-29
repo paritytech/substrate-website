@@ -12,7 +12,6 @@ export const useHackathons = () => {
               html
               frontmatter {
                 title
-                city
                 date
                 prize
                 link

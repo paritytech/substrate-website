@@ -40,6 +40,7 @@ module.exports = {
         substrateWhite: '#F8FAF9',
         substrateRed: '#F2606A',
         substratePurple: '#5A30B4',
+        substratePink: '#E6007A',
         substrateYellow: '#FDAB3D',
         substrateDark: '#242A35',
         substrateBlue: '#4E73F2',
@@ -72,6 +73,7 @@ module.exports = {
         hero: '70vh',
         heroMin: '500px',
         heroMinLg: '700px',
+        '800px': '800px',
       },
       spacing: {
         84: '22rem',

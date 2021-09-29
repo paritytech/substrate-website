@@ -1,6 +1,8 @@
 import React from 'react';
 
+import caseStudy from '../../images/svg/case-study.svg';
 import chain from '../../images/svg/chain.svg';
+import checkMark from '../../images/svg/check-mark.svg';
 import computer from '../../images/svg/computer.svg';
 import contact from '../../images/svg/contact.svg';
 import desktop from '../../images/svg/desktop.svg';
@@ -11,9 +13,10 @@ import explore from '../../images/svg/ecosystem/explore.svg';
 import opportunities from '../../images/svg/ecosystem/opportunities.svg';
 import resources from '../../images/svg/ecosystem/resources.svg';
 import event from '../../images/svg/event.svg';
-import forkless from '../../images/svg/forkless.svg';
+import forklessUpgrades from '../../images/svg/forkless-upgrades.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
 import graduation from '../../images/svg/graduation.svg';
+import graph from '../../images/svg/graph.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import developers from '../../images/svg/home/developers.svg';
 import governance from '../../images/svg/home/governance.svg';
@@ -22,9 +25,13 @@ import projects from '../../images/svg/home/projects.svg';
 import security from '../../images/svg/home/security.svg';
 import technology from '../../images/svg/home/technology.svg';
 import house from '../../images/svg/house.svg';
+import knight from '../../images/svg/knight.svg';
 import kusamaLogo from '../../images/svg/kusama_logo.svg';
 import layers from '../../images/svg/layers.svg';
 import lightClient from '../../images/svg/light-client.svg';
+import logoAcala from '../../images/svg/logo-acala.svg';
+import logoAstar from '../../images/svg/logo-astar.svg';
+import logoMoonbeam from '../../images/svg/logo-moonbeam.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import mail from '../../images/svg/mail.svg';
 import paperplane from '../../images/svg/paperplane.svg';
@@ -45,12 +52,36 @@ import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
 import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
+import adaptable from '../../images/svg/technology/adaptable.svg';
+import architecture from '../../images/svg/technology/architecture.svg';
+import community from '../../images/svg/technology/community.svg';
+import compatible from '../../images/svg/technology/compatible.svg';
+import composable from '../../images/svg/technology/composable.svg';
+import fast from '../../images/svg/technology/fast.svg';
+import flexibleBase from '../../images/svg/technology/flexible-base.svg';
+import forkless from '../../images/svg/technology/forkless.svg';
+import futureProofBase from '../../images/svg/technology/future-proof-base.svg';
+import flexible from '../../images/svg/technology/icon-flexible.svg';
+import futureProof from '../../images/svg/technology/icon-future-proof.svg';
+import interoperable from '../../images/svg/technology/icon-interoperable.svg';
+import open from '../../images/svg/technology/icon-open.svg';
+import intentional from '../../images/svg/technology/intentional.svg';
+import interoperableBase from '../../images/svg/technology/interoperable-base.svg';
+import openBase from '../../images/svg/technology/open-base.svg';
+import secure from '../../images/svg/technology/secure.svg';
+import tooling from '../../images/svg/technology/tooling.svg';
+import tools from '../../images/svg/technology/tools.svg';
+import upgradable from '../../images/svg/technology/upgradable.svg';
 import arrowBack from '../../images/svg/ui/arrow-back.svg';
 import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
 import calendar from '../../images/svg/ui/calendar.svg';
 import close from '../../images/svg/ui/close-x.svg';
+import diamondGreen from '../../images/svg/ui/diamond-green.svg';
+import diamondPink from '../../images/svg/ui/diamond-pink.svg';
+import diamondPurple from '../../images/svg/ui/diamond-purple.svg';
+import diamondYellow from '../../images/svg/ui/diamond-yellow.svg';
 import docs from '../../images/svg/ui/docs.svg';
 import externalLink from '../../images/svg/ui/external-link.svg';
 import hamburger from '../../images/svg/ui/hamburger-toggle.svg';
@@ -81,6 +112,9 @@ const iconsMap = {
   'w3f-logo': w3fLogo,
   'kusama-logo': kusamaLogo,
   'polkadot-logo': polkadotLogo,
+  'acala-logo': logoAcala,
+  'moonbeam-logo': logoMoonbeam,
+  'astar-logo': logoAstar,
   /* headings */
   hackathons: hackathons,
   seminar: seminar,
@@ -111,7 +145,12 @@ const iconsMap = {
   'external-link': externalLink,
   calendar: calendar,
   star: star,
+  'diamond-yellow': diamondYellow,
+  'diamond-pink': diamondPink,
+  'diamond-purple': diamondPurple,
+  'diamond-green': diamondGreen,
   play: play,
+  tools: tools,
   /* mockup */
   placeholder: placeholder,
   /* social */
@@ -127,11 +166,35 @@ const iconsMap = {
   discord: discord,
   /* highlights */
   'wa-logo': waLogo,
-  forkless: forkless,
+  'forkless-upgrades': forklessUpgrades,
   'light-client': lightClient,
   'shield-check-solid': shieldCheckSolid,
   'globe-solid': globeSolid,
   'subconnect-browser-tab': subconnectBrowserTab,
+  'case-study': caseStudy,
+  'check-mark': checkMark,
+  graph: graph,
+  knight: knight,
+  /* technology */
+  flexible: flexible,
+  'future-proof': futureProof,
+  interoperable: interoperable,
+  open: open,
+  fast: fast,
+  'flexible-base': flexibleBase,
+  forkless: forkless,
+  intentional: intentional,
+  architecture: architecture,
+  community: community,
+  'open-base': openBase,
+  tooling: tooling,
+  compatible: compatible,
+  'interoperable-base': interoperableBase,
+  secure: secure,
+  adaptable: adaptable,
+  composable: composable,
+  'future-proof-base': futureProofBase,
+  upgradable: upgradable,
 };
 
 export default function Icon({ name, className }) {

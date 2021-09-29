@@ -165,7 +165,7 @@ const NavMain = ({ header, isScrolled }) => {
   const { menus } = useSiteMenus();
 
   return (
-    <nav>
+    <nav className="navMain">
       <ul className="m-0 flex justify-evenly">
         {menus.main.map(menuItem => {
           return <DropDown header={header} isScrolled={isScrolled} key={menuItem.id} menuItem={menuItem}></DropDown>;

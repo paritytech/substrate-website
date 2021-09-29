@@ -16,16 +16,8 @@ export default function ThemeToggle() {
 
   return (
     <div className="cursor-pointer hover:opacity-60 transition-opacity" onClick={toggleTheme}>
-      {colorMode === 'light' && (
-        <div className="transform -rotate-12">
-          <Icon name="sun" />
-        </div>
-      )}
-      {colorMode === 'dark' && (
-        <div>
-          <Icon name="moon" />
-        </div>
-      )}
+      {colorMode === 'light' && <Icon name="sun" />}
+      {colorMode === 'dark' && <Icon name="moon" className="transform -rotate-12" />}
     </div>
   );
 }

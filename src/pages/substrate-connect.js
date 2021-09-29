@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import Lottie from 'react-lottie';
 
 import Icon from '../components/default/Icon';
 import Section from '../components/layout/Section';
@@ -8,6 +8,7 @@ import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
 import PrimaryButton from '../components/ui/PrimaryButton';
+import * as animationData from '../images/animation/substrate-connect.json';
 
 const networks = [
   {
@@ -41,7 +42,7 @@ export default function Connect() {
       <SEO title="Substrate Connect" />
       <Section>
         <div className="grid lg:grid-cols-2 gap-8">
-          <div className="lg:max-w-md self-center mb-20">
+          <div className="lg:max-w-md self-center mb-8 md:mb-20">
             <p className="tracking-wider lg:tracking-widest font-semibold text-xl mb-2 uppercase">Substrate</p>
             <h1 data-aos="fade-up" className="font-title text-5xl md:text-6xl xl:text-8xl font-extrabold mb-8">
               Connect
@@ -53,11 +54,11 @@ export default function Connect() {
               Get the extension
             </PrimaryButton>
           </div>
-          <StaticImage
-            src="../images/photos/connect/subconillus2x.png"
-            alt="Substrate Connect"
-            className="w-full h-auto"
-          />
+          <div className="w-full p-8 lg:p-0 relative" style={{ paddingTop: 'calc(1630 / 1630 * 100%)' }}>
+            <div className="h-auto top-0 left-0 w-full absolute">
+              <Lottie options={{ animationData, loop: false }} isClickToPauseDisabled={true} />
+            </div>
+          </div>
         </div>
       </Section>
       <div className="bg-substrateGray-light dark:bg-substrateBlackish pt-24 pb-5 mb-20">

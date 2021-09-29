@@ -14,28 +14,28 @@ import { isBrowser } from '../utils/browser';
 
 const logos = [
   {
-    logo: 'Logo 1',
-    alt: 'Logo 7',
+    logo: <StaticImage src="../images/png/ecosystem/logo-1.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-7.png" />,
   },
   {
-    logo: 'Logo 2',
-    alt: 'Logo 8',
+    logo: <StaticImage src="../images/png/ecosystem/logo-2.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-8.png" />,
   },
   {
-    logo: 'Logo 3',
-    alt: 'Logo 9',
+    logo: <StaticImage src="../images/png/ecosystem/logo-3.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-9.png" />,
   },
   {
-    logo: 'Logo 4',
-    alt: 'Logo 10',
+    logo: <StaticImage src="../images/png/ecosystem/logo-4.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-10.png" />,
   },
   {
-    logo: 'Logo 5',
-    alt: 'Logo 11',
+    logo: <StaticImage src="../images/png/ecosystem/logo-5.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-11.png" />,
   },
   {
-    logo: 'Logo 6',
-    alt: 'Logo 12',
+    logo: <StaticImage src="../images/png/ecosystem/logo-6.png" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-12.png" />,
   },
 ];
 
@@ -76,16 +76,16 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:col-span-5 lg:col-start-1 lg:row-start-1">
-              <h1 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">Substrate Teams</h1>
+              <h1 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">Substrate Builders Teams</h1>
               <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">
-                More than 150 teams are building on Substrate
+                More than 150 projects are building on Substrate
               </h3>
               <p className="mb-8 md:text-lg font-medium leading-relaxed">
                 Some of the most exciting projects in decentralized tech are building on Substrate, including
                 parachains, independent layer-1 blockchains, and infrastructure and tooling solutions for a wide range
                 of use cases.
               </p>
-              <PrimaryButton link="/ecosystem/teams">View Teams</PrimaryButton>
+              <PrimaryButton link="/ecosystem/projects">View Projects</PrimaryButton>
             </div>
           </div>
         </Section>
@@ -103,7 +103,7 @@ export default function Home() {
               <div className="absolute left-0 bottom-0 p-8">
                 <h3 className="text-white mb-2">Meet Substrate teams</h3>
                 <p className="text-white opacity-75 m-0 text-lg">
-                  Find out why more than 150 teams are building on Substrate.
+                  Find out why more than 150 projects are building on Substrate.
                 </p>
               </div>
               <Icon
@@ -116,18 +116,18 @@ export default function Home() {
 
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
-            <div className="aspect-w-7 aspect-h-5 bg-gray-200 row-start-1 lg:col-start-2">
-              <div>Foto</div>
+            <div className="rounded-md overflow-hidden aspect-w-7 aspect-h-5 bg-gray-200 row-start-1 lg:col-start-2">
+              <StaticImage src="../images/photos/ecosystem/builders-program/builders-program.jpg" />
             </div>
             <div className="lg:col-start-1">
               <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">
                 Substrate
                 <br /> Builders Program
               </h2>
-              <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Accelerate Your Project</h3>
+              <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Accelerate your project</h3>
               <p className="md:text-lg font-medium">
-                The Substrate Builders Program directly supports you by bringing you Parity’s extensive resources,
-                taking your Substrate ecosystem project to the next level.
+                The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
+                resources, taking your Substrate project to the next level.
               </p>
               <PrimaryButton link="/ecosystem/substrate-builders-program">Learn More</PrimaryButton>
             </div>
@@ -150,12 +150,12 @@ export default function Home() {
               <Icon className="inline-block mr-4" name="opportunities" />
               Opportunities
             </h2>
-            <p className="md:text-lg font-medium">Jump start your project or your career in the blockchain space</p>
+            <p className="md:text-lg font-medium">Jump-start your project or your career in the blockchain space</p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
               <IconCard
                 title="Hackathons"
                 icon="hackathons"
-                description="Ready for the challenge? Build, create, and hack to your heart's content."
+                description="Ready for the challenge? Build, create, and hack."
                 link="/ecosystem/opportunities/hackathons"
                 linkText="Join a hackathon"
                 color="#ffbeed"
@@ -163,7 +163,7 @@ export default function Home() {
               <IconCard
                 title="Grants"
                 icon="dollar"
-                description="Got an idea that's ready to go? Web3 Foundation supports development work contributing to the Web3 goal."
+                description="Got an idea that's ready to go? Web3 Foundation supports open source development work."
                 link="/ecosystem/opportunities/grants"
                 linkText="Apply for a grant"
                 color="#ffbeed"
@@ -172,7 +172,7 @@ export default function Home() {
               <IconCard
                 title="Jobs"
                 icon="desktop"
-                description="We're always on the lookout for talented developers who are passionate about building a better future."
+                description="Substrate projects are always on the lookout for talented developers who are passionate about building a better future."
                 link="/ecosystem/opportunities/jobs"
                 linkText="Find your role"
                 color="#ffbeed"
@@ -195,7 +195,7 @@ export default function Home() {
               <IconCard
                 title="Substrate Seminar"
                 icon="graduation"
-                description="Get the latest on the cutting-edge of blockchain from developers and projects building on Substrate. Every second Tuesday at 14:00 UTC."
+                description="Get the latest on the cutting-edge of blockchain in open seminars with developers and projects building on Substrate."
                 link="/ecosystem/resources/seminar"
                 linkText="Join in"
                 color="#d6ffcf"
@@ -203,7 +203,7 @@ export default function Home() {
               <IconCard
                 title="Awesome Substrate"
                 icon="smile"
-                description="Discover a rich source of content covering everything you need to know to get started, troubleshoot and fine-tune your skills."
+                description="A rich source of content covering everything you need to know to get started, troubleshoot, and fine-tune your skills."
                 link="/ecosystem/resources/awesome-substrate"
                 linkText="Dive in"
                 color="#d6ffcf"
@@ -212,7 +212,7 @@ export default function Home() {
               <IconCard
                 title="Community Resources"
                 icon="house"
-                description="One of Substrate's greatest strengths is its thriving and engaged community, who have created an ever-increasing list of resources."
+                description="One of Substrate's greatest strengths is its thriving and engaged community, which has created an ever-increasing list of resources."
                 link="/ecosystem/resources/community-resources"
                 linkText="Discover more"
                 color="#d6ffcf"
@@ -243,7 +243,7 @@ export default function Home() {
               <IconCard
                 title="Events"
                 icon="event"
-                description="In person or online, from meetups to conferences, there are a growing number of events in the ecosystem."
+                description="In person or online, from meetups to conferences, check out the growing number of events in the ecosystem."
                 link="https://www.parity.io/events/"
                 linkText="Upcoming Events"
                 color="#ccc8ff"
@@ -252,7 +252,7 @@ export default function Home() {
               <IconCard
                 title="Newsletter"
                 icon="paperplane"
-                description="Get the inside view and the latest news popping into your inbox."
+                description="Get the latest technical updates and helpful developer resources right in your inbox."
                 link="/ecosystem/connect/newsletter"
                 linkText="Sign up"
                 color="#ccc8ff"
@@ -261,7 +261,7 @@ export default function Home() {
               <IconCard
                 title="Blog"
                 icon="pen"
-                description="Tech, news, hackathons, events, milestones, and more. Follow our blog for detailed info on the latest updates"
+                description="Tech, news, hackathons, events, milestones, and more. Follow our blog for detailed info on the latest updates."
                 link="https://parity.io/blog"
                 linkText="Head to the blog"
                 color="#ccc8ff"

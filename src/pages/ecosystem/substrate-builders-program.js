@@ -1,5 +1,7 @@
 import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import Lottie from 'react-lottie';
 
 import Icon from '../../components/default/Icon';
 import Article from '../../components/layout/Article';
@@ -11,19 +13,20 @@ import SEO from '../../components/site/SEO';
 import LineArrowButton from '../../components/ui/LineArrowButton';
 import PrimaryButton from '../../components/ui/PrimaryButton';
 import SecondaryButton from '../../components/ui/SecondaryButton';
+import * as animationData from '../../images/animation/ecosystem/builders-program.json';
 
 const tracks = [
   {
     title: 'Chains track',
     description: 'Those that are building impactful chains.',
-    details: '(independent chains, parachains and parathreads)',
+    details: '(independent chains, parachains, and parathreads)',
     icon: 'chain',
   },
   {
     title: 'Infrastructure track',
     description: 'Those that are building Substrate/Polkadot-related infrastructure.',
     details:
-      '(Including bridges, UIs, tooling, smart contract support and validator infrastructure (and potentially more))',
+      '(Including bridges, UIs, tooling, smart contract support, validator infrastructure, and potentially more)',
     icon: 'layers',
   },
   {
@@ -44,7 +47,7 @@ export default function BuildersProgram() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
             <div className="lg:col-start-2">
               <div className="aspect-w-5 aspect-h-3">
-                <div className="bg-gray-200">Illustration</div>
+                <Lottie options={{ animationData, loop: false }} isClickToPauseDisabled={true} />
               </div>
             </div>
             <div className="lg:col-start-1 lg:row-start-1">
@@ -53,8 +56,8 @@ export default function BuildersProgram() {
                 <span className="text-substrateGreen">_</span> <br /> builders program
               </h1>
               <p className="mb-8 text-lg font-medium leading-relaxed">
-                The Substrate Builders Program directly supports you by bringing you Parity’s extensive resources,
-                taking your Substrate ecosystem project to the next level.
+                The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
+                resources, taking your Substrate project to the next level.
               </p>
               <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
                 Apply
@@ -65,26 +68,25 @@ export default function BuildersProgram() {
 
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mt-36 mb-44">
-            <div className="aspect-w-7 aspect-h-4 bg-gray-200 row-start-1 lg:col-start-2">
-              <div>Foto</div>
-            </div>
             <div className="lg:col-start-1 flex justify-center flex-col">
               <h2 className="font-bold mb-4 text-3xl md:text-4xl">Who The Program Is For</h2>
               <p>
-                The Substrate Builders Program identifies, supports and mentors current and potential Substrate-related
-                projects. If you are a visionary builder who is considering or already developing a project in the
+                The Substrate Builders Program identifies, supports, and mentors current and potential Substrate-related
+                projects. If you&apos;re a visionary builder who is considering or already developing a project in the
                 Substrate ecosystem, we want to talk to you.
               </p>
-              <SecondaryButton link="/ecosystem/teams">See Teams</SecondaryButton>
+              <SecondaryButton link="/ecosystem/projects">See Builder Teams</SecondaryButton>
             </div>
+            <StaticImage
+              src="../../images/photos/ecosystem/builders-program/builders-program.jpg"
+              className="rounded-md aspect-w-1 aspect-h-1 w-full h-auto"
+            />
           </div>
         </Section>
 
         <Section>
           <div className="max-w-3xl mx-auto mt-36 mb-44">
-            <h2 className="text-center font-bold mb-4 text-3xl md:text-4xl">
-              The program is divided into three tracks
-            </h2>
+            <h2 className="font-bold mb-4 text-3xl md:text-4xl">The program is divided into three tracks</h2>
             {tracks.map(({ title, description, details, icon }, idx) => (
               <div key={idx} className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
                 <h3 className="mb-4 text-xl md:text-2.5xl font-bold">
@@ -220,12 +222,12 @@ export default function BuildersProgram() {
         </Section>
 
         <Section>
-          <div className="mt-36 mb-44">
+          <div className="mt-36 mb-20">
             <div className="max-w-screen-md">
-              <h2 className="font-bold mb-4 text-3xl md:text-4xl">Substrate Builders Program Benefits</h2>
+              <h2 className="font-bold mb-4 text-3xl md:text-4xl">What the program entails</h2>
               <p className="text-lg font-medium">
-                As a builder, you will receive Parity’s support in a systematic manner, including comprehensive support
-                in the following areas: As a builder,
+                As a builder, you&apos;ll receive Parity’s support in a systematic manner, including comprehensive
+                assistance and advice in the following areas:
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14">
@@ -239,12 +241,12 @@ export default function BuildersProgram() {
                       the same category and category-expert engineers to collaborate and ask questions.
                     </li>
                     <li>
-                      <span className="font-bold">Regular office hours with tech support lead</span> of the program to
-                      give and get feedback and answer questions
+                      <span className="font-bold">Regular office hours with the program&apos;s tech support lead</span>{' '}
+                      to give and get feedback and answer questions
                     </li>
                     <li>
-                      <span className="font-bold">Launch support with materials, calls and more</span> to help projects
-                      launch mainnet successfully
+                      <span className="font-bold">Launch support with materials, calls and more</span> to ensure your
+                      mainnet launch is successful
                     </li>
                     <li>
                       <span className="font-bold">Regular individual check-ins</span>
@@ -269,7 +271,7 @@ export default function BuildersProgram() {
                 </div>
               </div>
               <div>
-                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Community funding:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Community funding opportunities:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
@@ -299,27 +301,22 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Strategy feedback:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Strategy & Feedback:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
                     <li>
                       <span className="font-bold">Regular individual check-ins</span> with every member team (6 week
-                      cycles) to understand roadmap and get feedback
+                      cycles) to understand your roadmap and get feedback
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div>
-              <p className="text-xl font-bold mt-14">
-                As a builder, you will receive Parity’s support in a systematic manner
-              </p>
-              <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
-                Apply
-              </PrimaryButton>
-            </div>
           </div>
+          <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
+            Apply
+          </PrimaryButton>
         </Section>
 
         <Section>
@@ -340,7 +337,7 @@ export default function BuildersProgram() {
               <p className="mb-10">
                 The grants program provides non-dilutive financial support to projects, whereas this program is focused
                 on more comprehensive support throughout a project’s lifecycle. W3F grant recipients are also welcome to
-                apply to the Builders Program!
+                apply to the Substrate Builders Program!
               </p>
               <h4 className="mb-5 font-bold text-lg md:text-2xl">
                 Is the Substrate Builders Program an acceleration or incubation program?
@@ -354,15 +351,15 @@ export default function BuildersProgram() {
                 Apply
               </PrimaryButton>
             </div>
-            <div className="hidden lg:block lg:col-span-6 lg:col-start-7 aspect-w-6 aspect-h-9">
-              <div className="bg-gray-200 hidden lg:block">Image</div>
+            <div className="hidden lg:block lg:col-span-6 rounded-md overflow-hidden lg:col-start-7 aspect-w-6 aspect-h-9">
+              <StaticImage src="../../images/photos/ecosystem/builders-program/builders-program-2.jpg" />
             </div>
           </div>
         </Section>
 
         <Section>
           <h2>Got Questions?</h2>
-          <LineArrowButton link="/ecosystem/connect/contact">Contact us here</LineArrowButton>
+          <LineArrowButton link="/ecosystem/connect/contact">Send us an email here</LineArrowButton>
         </Section>
       </Article>
     </Layout>
