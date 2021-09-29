@@ -41,8 +41,8 @@ const Interoperable = () => {
           linkText={
             <p className="underline-animate">
               Learn more about{' '}
-              <Link to="/ecosystem/resources/awesome-substrate">Cross-Chain Message Passing (XCMP) </Link> across
-              parachains »
+              <Link to="https://wiki.polkadot.network/docs/learn-crosschain">Cross-Chain Message Passing (XCMP) </Link>{' '}
+              across parachains »
             </p>
           }
         >
