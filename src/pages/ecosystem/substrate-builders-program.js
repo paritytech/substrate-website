@@ -79,7 +79,7 @@ export default function BuildersProgram() {
             </div>
             <StaticImage
               src="../../images/photos/ecosystem/builders-program/builders-program.jpg"
-              className="rounded-md aspect-w-1 aspect-h-1 w-full h-auto"
+              className="rounded-md w-full h-auto"
             />
           </div>
         </Section>
@@ -320,8 +320,8 @@ export default function BuildersProgram() {
         </Section>
 
         <Section>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 mt-36 mb-44">
-            <div className="lg:col-span-5">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-36 mb-44">
+            <div className="lg:col-span-6">
               <h2 className="font-bold mb-4 text-3xl md:text-4xl">FAQ</h2>
               <h4 className="mb-5 font-bold text-lg md:text-2xl">
                 Is this support offering exclusive to members of the program?
@@ -351,8 +351,11 @@ export default function BuildersProgram() {
                 Apply
               </PrimaryButton>
             </div>
-            <div className="hidden lg:block lg:col-span-6 rounded-md overflow-hidden lg:col-start-7 aspect-w-6 aspect-h-9">
-              <StaticImage src="../../images/photos/ecosystem/builders-program/builders-program-2.jpg" />
+            <div className="hidden lg:block lg:col-span-6 lg:col-start-7">
+              <StaticImage
+                src="../../images/photos/ecosystem/builders-program/builders-program-2.jpg"
+                className="rounded-md"
+              />
             </div>
           </div>
         </Section>
