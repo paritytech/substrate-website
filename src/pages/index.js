@@ -92,7 +92,7 @@ export default function BuildersProgram() {
       <div className="bg-substrateGray-light dark:bg-substrateBlackish">
         <div className="container lg:px-10 pb-10">
           <div className="mx-auto max-w-xl pt-14 pb-4">
-            <p className="text-center text-2xl md:text-3xl leading-relaxed">
+            <p className="text-center text-2xl md:text-3xl leading-8 md:leading-relaxed">
               Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use
               case.
             </p>
