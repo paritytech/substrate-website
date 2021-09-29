@@ -59,7 +59,6 @@ export default function Projects({ data }) {
               Some of the most exciting projects in decentralized tech are building on Substrate, creating Polkadot
               parachains, independent layer-1 blockchains, and infrastructure.
             </p>
-            <p>Start building</p>
           </div>
           <div
             onClick={() => modalSetOpen(true)}
