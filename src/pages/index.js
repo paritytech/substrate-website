@@ -398,7 +398,7 @@ export default function BuildersProgram() {
         </div>
       </div>
 
-      <div className="shadow-xl mb-40 dark:bg-substrateBlackish">
+      <div className="shadow-xl mb-40 dark:bg-substrateGray-darkest">
         <div className="container lg:px-10 py-6">
           <span className="inline-block text-2.5xl font-bold leading-relaxed mr-20 my-4">Connect With Us</span>
           <Link
