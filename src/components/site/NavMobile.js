@@ -62,7 +62,7 @@ const NavMobileSubMenu = ({ menuItem, handleSubMenu }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="absolute inset-0 bg-substrateGray-light dark:bg-black h-screen animate-fade-in-right">
+    <div className="absolute inset-0 bg-substrateGray-light dark:bg-substrateDarkest h-screen animate-fade-in-right">
       <div className="bg-substrateGreen-light dark:bg-green-700">
         <div className="px-6 h-16 flex items-center justify-between">
           <div className="absolute left-0 top-0 p-6 -mt-0.5 cursor-pointer" onClick={() => handleSubMenu(false)}>
