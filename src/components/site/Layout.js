@@ -45,7 +45,13 @@ function LayoutSidebar({ children, hasArticleNav }) {
   );
 }
 
-export default function Layout({ layout = 'default', mode = 'default', children, hasArticleNav = false }) {
+export default function Layout({
+  layout = 'default',
+  mode = 'default',
+  header = 'default',
+  children,
+  hasArticleNav = false,
+}) {
   useEffect(() => {
     AOS.init({
       disable: 'mobile',
@@ -55,7 +61,7 @@ export default function Layout({ layout = 'default', mode = 'default', children,
 
   return (
     <>
-      <Header mode={mode} />
+      <Header mode={mode} header={header} />
       <main
         className={cx('min-h-screen', {
           'mt-12': layout === 'default',

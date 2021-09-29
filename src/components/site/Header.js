@@ -10,7 +10,7 @@ import NavMain from './NavMain';
 import NavMobile from './NavMobile';
 import ThemeToggle from './ThemeToggle';
 
-const Header = ({ mode }) => {
+const Header = ({ mode, header }) => {
   const scroll = useScrollListener();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -30,12 +30,11 @@ const Header = ({ mode }) => {
 
   return (
     <header
-      className={cx(
-        'sticky top-0 z-10 border-b bg-white dark:bg-substrateDarkest border-gray-200 dark:border-substrateDarkThemeGrey',
-        {
-          'border-b-0': mode === 'full' && !isScrolled,
-        }
-      )}
+      className={cx('sticky top-0 z-10 border-b border-gray-200 dark:border-substrateDarkThemeGrey transition-colors', {
+        'border-b-0': mode === 'full' && !isScrolled,
+        'bg-transparent': header === 'home' && !isScrolled,
+        'bg-white dark:bg-substrateDarkest': header === 'default' || (header === 'home' && isScrolled),
+      })}
     >
       <div className="px-4 xl:px-12">
         <div
@@ -55,7 +54,7 @@ const Header = ({ mode }) => {
           {isMobileNavOpen && <NavMobile toggleMenu={toggleMenu} />}
           <div className="hidden lg:flex lg:justify-between lg:items-center w-full">
             <div className="w-2/3 max-w-3xl">
-              <NavMain />
+              <NavMain header={header} isScrolled={isScrolled} />
             </div>
             <div className=" w-1/2 flex items-center justify-end">
               <div className="pl-8 pr-6">

@@ -42,6 +42,7 @@ module.exports = {
         substrateDarkThemeGrey: '#3A424E',
         substrateDarkThemeLightGrey: '#F8FAF9',
         substrateSubtleGrey: '#E0E0E0',
+        substrateDarkThemeBlue: '#0094FF',
         polkaPink: '#E6007A',
       },
       fontSize: {
