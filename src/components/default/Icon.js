@@ -1,6 +1,8 @@
 import React from 'react';
 
+import caseStudy from '../../images/svg/case-study.svg';
 import chain from '../../images/svg/chain.svg';
+import checkMark from '../../images/svg/check-mark.svg';
 import computer from '../../images/svg/computer.svg';
 import contact from '../../images/svg/contact.svg';
 import desktop from '../../images/svg/desktop.svg';
@@ -14,8 +16,10 @@ import event from '../../images/svg/event.svg';
 import forklessUpgrades from '../../images/svg/forkless-upgrades.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
 import graduation from '../../images/svg/graduation.svg';
+import graph from '../../images/svg/graph.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import house from '../../images/svg/house.svg';
+import knight from '../../images/svg/knight.svg';
 import kusamaLogo from '../../images/svg/kusama_logo.svg';
 import layers from '../../images/svg/layers.svg';
 import lightClient from '../../images/svg/light-client.svg';
@@ -152,6 +156,10 @@ const iconsMap = {
   'shield-check-solid': shieldCheckSolid,
   'globe-solid': globeSolid,
   'subconnect-browser-tab': subconnectBrowserTab,
+  'case-study': caseStudy,
+  'check-mark': checkMark,
+  graph: graph,
+  knight: knight,
   /* technology */
   flexible: flexible,
   'future-proof': futureProof,
