@@ -1,14 +1,19 @@
 import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
+import ModalVideo from 'react-modal-video';
 
 import teamsData from '../../../data/teams.json';
+import Icon from '../../components/default/Icon';
 import AllTeams from '../../components/layout/ecosystem/teams/AllTeams';
 import CatFilter from '../../components/layout/ecosystem/teams/CatFilter';
 import TeamModal from '../../components/layout/ecosystem/teams/TeamModal';
 import TypeFilter from '../../components/layout/ecosystem/teams/TypeFilter';
+import Section from '../../components/layout/Section';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import useComponentVisible from '../../hooks/use-component-visible';
+import { isBrowser } from '../../utils/browser';
 
 export default function Projects({ data }) {
   const { types, categories, teams } = teamsData;
@@ -17,6 +22,8 @@ export default function Projects({ data }) {
   const [curType, setCurType] = useState('All Teams');
   const [curCat, setCurCat] = useState('All');
   const [curTeam, setCurTeam] = useState();
+  const [modalIsOpen, modalSetOpen] = useState(false);
+  const [didMount, setDidMount] = useState(false);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -26,12 +33,45 @@ export default function Projects({ data }) {
     category && setCurCat(category);
   }, []);
 
+  useEffect(() => {
+    setDidMount(true);
+  });
+
   return (
     <Layout>
+      {isBrowser && didMount && (
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          isOpen={modalIsOpen}
+          videoId="WFbUc15ZhgU"
+          onClose={() => modalSetOpen(false)}
+        />
+      )}
       <SEO title="Teams" />
-      <section className="container h-[400px] w-full bg-substrateGray-light dark:bg-substrateDark px-6 mb-20">
-        <h3>_HeroSection</h3>
-      </section>
+      <Section>
+        <div
+          onClick={() => modalSetOpen(true)}
+          className="mt-32 mb-44 aspect-w-4 aspect-h-3 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-12 lg:aspect-h-5 bg-substrateDark rounded-md shadow-xl hover:scale-105 transition-transform cursor-pointer"
+        >
+          <div>
+            <StaticImage
+              src="../images/photos/ecosystem/home/youtube.jpg"
+              className="w-full h-full m-0 relative rounded-md"
+            />
+            <div className="absolute left-0 bottom-0 p-8">
+              <h3 className="text-white mb-2">Meet Substrate teams</h3>
+              <p className="text-white opacity-75 m-0 text-lg">
+                Find out why more than 150 projects are building on Substrate.
+              </p>
+            </div>
+            <Icon
+              name="play"
+              className="hidden sm:block absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 hover:scale-105 transition-transform"
+            />
+          </div>
+        </div>
+      </Section>
       <section className="container px-6 mb-20">
         <h2 id="projects" className="mb-8 scroll-margin-top-100">
           Projects
