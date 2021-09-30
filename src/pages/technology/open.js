@@ -37,7 +37,7 @@ const Open = () => {
           linkText={
             <p className="underline-animate">
               Explore the components of a{' '}
-              <Link to="https://docs.substrate.io/v3/getting-started/architecture">
+              <Link to="https://substrate-docs-staging.netlify.app/v3/getting-started/architecture">
                 Substrate-based blockchain node »
               </Link>
             </p>

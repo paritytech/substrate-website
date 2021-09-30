@@ -138,8 +138,10 @@ const Interoperable = () => {
           linkText={
             <p className="underline-animate">
               Read more about{' '}
-              <Link to="https://docs.substrate.io/v3/concepts/off-chain-features">off-chain features</Link> in the
-              documentation »
+              <Link to="https://substrate-docs-staging.netlify.app/v3/concepts/off-chain-features">
+                off-chain features
+              </Link>{' '}
+              in the documentation »
             </p>
           }
         >

@@ -17,9 +17,10 @@ const exploreLinks = {
   developerHub: {
     title: 'Developer Hub',
     description: 'Dive into documentation, tutorials, and resources to immediately get started building with Substrate',
-    link: 'http://docs.substrate.io/',
+    link: 'http://substrate-docs-staging.netlify.app/',
     linkText: 'Start building',
     icon: 'diamond-pink',
+    sameWindow: true,
   },
   vision: {
     title: 'Vision',
@@ -58,15 +59,17 @@ const ExploreLinkSection = ({ links }) => {
       <Section>
         <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
         <div className="md:grid grid-cols-3 gap-6 xl:gap-10">
-          {currentLinks.map(({ title, description, link, linkText, icon }, index) => (
-            <Link key={index} to={link}>
+          {currentLinks.map(({ title, description, link, linkText, icon, sameWindow }, index) => (
+            <Link key={index} to={link} sameWindow={sameWindow}>
               <div className="h-full hover:bg-white hover:shadow-xl hover:scale-105 rounded-md p-8 mb-16 sm:mb-0 flex flex-col justify-between transition-all dark:hover:bg-substrateBlackish">
                 <div>
                   <Icon name={icon} className="mb-6 w-8 h-8" />
                   <h5 className="text-xl font-bold mb-6">{title}</h5>
                   <p>{description}</p>
                 </div>
-                <LineArrowButton link={link}>{linkText}</LineArrowButton>
+                <LineArrowButton link={link} sameWindow={sameWindow}>
+                  {linkText}
+                </LineArrowButton>
               </div>
             </Link>
           ))}

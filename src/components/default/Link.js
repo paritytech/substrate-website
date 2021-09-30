@@ -1,9 +1,9 @@
 import { Link as LinkI18n } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
-const Link = ({ to, title, children, ...other }) => {
+const Link = ({ to, title, children, sameWindow = false, ...other }) => {
   const external = testExternalLink(to);
-  if (external) {
+  if (external && !sameWindow) {
     return (
       <a href={to} title={title} {...other} target="_blank" rel="noreferrer noopener">
         {children}
