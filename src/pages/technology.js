@@ -18,7 +18,7 @@ const highlights = [
     icon: 'tools',
     description:
       'No need to reinvent the wheel, Substrate has robust tooling for development, deployment, and debugging.',
-    link: 'https://docs.substrate.io/v3/tools',
+    link: 'https://substrate-docs-staging.netlify.app/v3/tools',
   },
   {
     title: 'Light-Client-First Design',
@@ -31,7 +31,7 @@ const highlights = [
     title: 'Forkless Upgrades',
     icon: 'forkless-upgrades',
     description: 'Upgrading blockchains has never been easier. With Substrate, everyone stays on the same path.',
-    link: 'https://docs.substrate.io/v3/runtime/runtime/upgrades',
+    link: 'https://substrate-docs-staging.netlify.app/v3/runtime/upgrades',
   },
 ];
 

@@ -41,7 +41,8 @@ const Flexible = () => {
           title="Intentional"
           linkText={
             <p className="underline-animate">
-              Want to learn more? <Link to="https://docs.substrate.io/">Check out the overview documentation »</Link>
+              Want to learn more?{' '}
+              <Link to="https://substrate-docs-staging.netlify.app/">Check out the overview documentation »</Link>
             </p>
           }
         >
@@ -83,7 +84,9 @@ const Flexible = () => {
           linkText={
             <p className="underline-animate">
               Perform your first forkless upgrade using{' '}
-              <Link to="https://docs.substrate.io/tutorials/v3/forkless-upgrades">this tutorial »</Link>
+              <Link to="https://substrate-docs-staging.netlify.app/tutorials/v3/forkless-upgrades">
+                this tutorial »
+              </Link>
             </p>
           }
         >

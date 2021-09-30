@@ -41,7 +41,8 @@ const FutureProof = () => {
           title="Upgradeable"
           linkText={
             <p className="underline-animate">
-              Learn how <Link to="https://docs.substrate.io/v3/runtime/upgrades">Substrate upgrades work »</Link>
+              Learn how{' '}
+              <Link to="https://substrate-docs-staging.netlify.app/v3/runtime/upgrades">Substrate upgrades work »</Link>
             </p>
           }
         >
@@ -81,7 +82,8 @@ const FutureProof = () => {
           title="Composable"
           linkText={
             <p className="underline-animate">
-              Explore how <Link to="https://docs.substrate.io/v3/runtime/frame">FRAME</Link> enables composability »
+              Explore how <Link to="https://substrate-docs-staging.netlify.app/v3/runtime/frame">FRAME</Link> enables
+              composability »
             </p>
           }
         >
@@ -121,7 +123,7 @@ const FutureProof = () => {
           linkText={
             <p className="underline-animate">
               Adapt your runtime by adding a pallet using{' '}
-              <Link to="https://docs.substrate.io/tutorials/v3/add-a-pallet/">this tutorial »</Link>
+              <Link to="https://substrate-docs-staging.netlify.app/tutorials/v3/add-a-pallet/">this tutorial »</Link>
             </p>
           }
         >

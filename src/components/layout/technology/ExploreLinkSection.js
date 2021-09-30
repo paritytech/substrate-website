@@ -17,7 +17,7 @@ const exploreLinks = {
   developerHub: {
     title: 'Developer Hub',
     description: 'Dive into documentation, tutorials, and resources to immediately get started building with Substrate',
-    link: 'http://docs.substrate.io/',
+    link: 'http://substrate-docs-staging.netlify.app/',
     linkText: 'Start building',
     icon: 'diamond-pink',
   },

@@ -116,7 +116,7 @@ export default function Connect() {
             <PrimaryButton link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
               Get the extension
             </PrimaryButton>
-            <LineArrowButton link="https://docs.substrate.io/" className="block mt-8">
+            <LineArrowButton link="https://substrate-docs-staging.netlify.app/" className="block mt-8">
               Developer Docs
             </LineArrowButton>
           </div>

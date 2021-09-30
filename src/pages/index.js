@@ -34,7 +34,7 @@ const cards = [
     title: 'Developers',
     icon: 'developers',
     description: 'Dive into the docs, tutorials, and resources to immediately get started building with Substrate. ',
-    link: 'https://docs.substrate.io/',
+    link: 'https://substrate-docs-staging.netlify.app/',
     linkText: 'Start coding',
     delay: 200,
   },
