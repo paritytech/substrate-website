@@ -30,7 +30,7 @@ const Header = ({ mode, header }) => {
 
   return (
     <header
-      className={cx('sticky top-0 z-20 border-b border-gray-200 dark:border-substrateDarkThemeGrey transition-colors', {
+      className={cx('sticky top-0 z-10 border-b border-gray-200 dark:border-substrateDarkThemeGrey', {
         'border-b-0': mode === 'full' && !isScrolled,
         'bg-transparent': header === 'home' && !isScrolled,
         'bg-white dark:bg-substrateDarkest': header === 'default' || (header === 'home' && isScrolled),
