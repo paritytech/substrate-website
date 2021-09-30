@@ -54,6 +54,7 @@ export default function BuildersProgram() {
     autoplay: true,
     animationData: heroAnimationData,
     rendererSettings: {
+      progressiveLoad: true,
       preserveAspectRatio: 'xMidYMid slice',
     },
   };
@@ -63,6 +64,7 @@ export default function BuildersProgram() {
     autoplay: false,
     animationData: polkadotAnimationData,
     rendererSettings: {
+      progressiveLoad: true,
       preserveAspectRatio: 'xMidYMid meet',
       viewBoxSize: '0 640 2160 880',
     },
