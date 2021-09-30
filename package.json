@@ -47,6 +47,7 @@
     "netlify-cms-app": "^2.15.20",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
+    "react-device-detect": "^2.0.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.8.15",
