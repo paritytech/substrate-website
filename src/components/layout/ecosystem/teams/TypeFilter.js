@@ -7,7 +7,10 @@ export default function TypeFilter(props) {
     <div className="mb-8">
       <h5 className="font-normal mb-6">Filter by type</h5>
       <div className="lg:hidden">
-        <select className="focus:outline-none text-sm" onChange={event => setCurType(event.target.value)}>
+        <select
+          className="focus:outline-none text-sm dark:bg-darkBackground"
+          onChange={event => setCurType(event.target.value)}
+        >
           {types.map((type, index) => (
             <option key={index} value={type}>
               {type}
