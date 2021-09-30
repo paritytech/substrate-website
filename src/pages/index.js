@@ -243,16 +243,14 @@ export default function BuildersProgram() {
       <div className="bg-substrateGray-light dark:bg-substrateBlackish">
         <div className="container max-w-6xl lg:px-10 pt-16 pb-24">
           <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)} threshold={0.75}>
-            <Link to="/vision/substrate-and-polkadot">
-              <div className="aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
-                <Lottie
-                  isStopped={animationIsStopped}
-                  isClickToPauseDisabled
-                  options={polkadotAnimationOptions}
-                  className="fill-current text-white"
-                />
-              </div>
-            </Link>
+            <div className="aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
+              <Lottie
+                isStopped={animationIsStopped}
+                isClickToPauseDisabled
+                options={polkadotAnimationOptions}
+                className="fill-current text-white"
+              />
+            </div>
           </InView>
           <p className="text-center text-3xl mb-12 leading-normal" onClick={() => playAnimation(false)}>
             Substrate-based chains are designed to seamlessly connect to{' '}
