@@ -55,7 +55,7 @@ export default function IndexPage() {
             </div>
             <div className="order-3 lg:order-2 self-end">
               <div className="w-full aspect-w-10 aspect-h-7 mb-8">
-                <Lottie options={{ animationData }} height="full" width="full" />
+                <Lottie options={{ animationData }} isClickToPauseDisabled height="full" width="full" />
               </div>
             </div>
             <div className="order-2 lg:order-3">
