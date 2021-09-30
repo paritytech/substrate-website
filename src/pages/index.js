@@ -83,14 +83,12 @@ export default function BuildersProgram() {
       <div className="-mt-36 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
-            {!isSafari && <Lottie isStopped={animationIsStopped} options={heroAnimationOptions} />}
-            <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
-              <h1 className="font-title mb-0 mt-10 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
-                The Blockchain Framework
-                <br />
-                for a Multichain Future
-              </h1>
-            </div>
+            {!isSafari && <Lottie options={heroAnimationOptions} />}
+            <h1 className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 font-title mb-0 mt-10 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
+              The Blockchain Framework
+              <br />
+              for a Multichain Future
+            </h1>
           </div>
         </div>
       </div>
