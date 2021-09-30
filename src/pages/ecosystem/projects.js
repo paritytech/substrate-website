@@ -53,13 +53,14 @@ export default function Projects({ data }) {
       <Section>
         <div className="flex flex-col lg:flex-row">
           <div className="self-center lg:pr-12">
-            <h1 className="text-4xl lg:text-5xl font-bold xl:text-6xl">Meet The Teams</h1>
-            <p className="font-semibold text-xl lg:text-2xl">More than 150 projects are building on Substrate</p>
-            <p>
+            <h1 className="text-4xl md:text-5xl font-extrabold xl:text-6xl mb-6">Meet The Teams</h1>
+            <p className="font-semibold text-xl md:text-2xl lg:text-3xl">
+              More than 150 projects are building on Substrate
+            </p>
+            <p className="font-medium text-lg">
               Some of the most exciting projects in decentralized tech are building on Substrate, creating Polkadot
               parachains, independent layer-1 blockchains, and infrastructure.
             </p>
-            <p>Start building</p>
           </div>
           <div
             onClick={() => modalSetOpen(true)}
