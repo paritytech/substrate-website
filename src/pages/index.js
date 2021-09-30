@@ -2,6 +2,7 @@ import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
+import { browserName } from 'react-device-detect';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
 
@@ -49,6 +50,8 @@ const cards = [
 ];
 
 export default function BuildersProgram() {
+  const isSafari = browserName === 'Safari';
+
   const heroAnimationOptions = {
     loop: true,
     autoplay: true,
@@ -80,7 +83,7 @@ export default function BuildersProgram() {
       <div className="-mt-36 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
-            <Lottie isClickToPauseDisabled options={heroAnimationOptions} />
+            {!isSafari && <Lottie isStopped={animationIsStopped} options={heroAnimationOptions} />}
             <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
               <h1 className="font-title mb-0 mt-10 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
                 The Blockchain Framework
@@ -244,12 +247,14 @@ export default function BuildersProgram() {
         <div className="container max-w-6xl lg:px-10 pt-16 pb-24">
           <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)} threshold={0.75}>
             <div className="aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
-              <Lottie
-                isStopped={animationIsStopped}
-                isClickToPauseDisabled
-                options={polkadotAnimationOptions}
-                className="fill-current text-white"
-              />
+              {!isSafari && (
+                <Lottie
+                  isStopped={animationIsStopped}
+                  isClickToPauseDisabled
+                  options={polkadotAnimationOptions}
+                  className="fill-current text-white"
+                />
+              )}
             </div>
           </InView>
           <p className="text-center text-3xl mb-12 leading-normal" onClick={() => playAnimation(false)}>

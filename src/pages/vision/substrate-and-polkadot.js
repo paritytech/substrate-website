@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import { browserName } from 'react-device-detect';
 import Lottie from 'react-lottie';
 
 import Gif from '../../components/default/Gif';
@@ -13,6 +14,8 @@ import SEO from '../../components/site/SEO';
 import BlockQuote from '../../components/ui/Blockquote';
 import * as animationData from '../../images/animation/substrate-polkadot.json';
 
+const isSafari = browserName === 'Safari';
+
 const Vision = () => {
   return (
     <Layout mode="full">
@@ -20,16 +23,18 @@ const Vision = () => {
       <Article>
         <header className="container -mt-10 mb-8">
           <figure className="w-full lg:w-3/4 lg:mx-auto aspect-w-5 lg:aspect-w-6 aspect-h-2">
-            <Lottie
-              options={{
-                animationData,
-                loop: false,
-                rendererSettings: {
-                  preserveAspectRatio: 'xMidYMid slice',
-                },
-              }}
-              isClickToPauseDisabled={true}
-            />
+            {!isSafari && (
+              <Lottie
+                options={{
+                  animationData,
+                  loop: false,
+                  rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice',
+                  },
+                }}
+                isClickToPauseDisabled={true}
+              />
+            )}
           </figure>
         </header>
         <div className="container mb-20 lg:px-10">
