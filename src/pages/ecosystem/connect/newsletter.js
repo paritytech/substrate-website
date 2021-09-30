@@ -16,7 +16,7 @@ export default function Newsletter() {
           alt="Man on computer"
           className="w-full h-auto"
         />
-        <div className="bg-white dark:bg-substrateBlackish md:absolute m-8 md:p-8 mt-8 md:mt-0 rounded-md md:shadow-xl max-w-md top-1/2 left-10 md:-translate-y-1/2">
+        <div className="bg-white dark:bg-transparent md:dark:bg-substrateBlackish md:absolute m-8 md:p-8 mt-8 md:mt-0 rounded-md md:shadow-xl max-w-md top-1/2 left-10 md:-translate-y-1/2">
           <h2 className="text-4xl font-bold mb-4">[WIP]: Newsletter</h2>
           <p className="font-medium text-lg">
             Subscribe for the latest news, technical updates and helpful developer resources.
