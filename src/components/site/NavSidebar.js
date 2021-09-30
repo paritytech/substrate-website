@@ -29,7 +29,7 @@ const NavSidebarSubMenu = ({ parent, category }) => {
             return (
               <li className="font-medium p-0 m-0" key={subMenuItem.id}>
                 <LinkMenu
-                  className={cx('px-6 p-3 block')}
+                  className={cx('px-6 p-3 block hover:font-bold')}
                   prefix={parentItem.url + categoryItem.url}
                   slug={subMenuItem.url}
                   internal={subMenuItem.internal}
