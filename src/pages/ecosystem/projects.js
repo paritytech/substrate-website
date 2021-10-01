@@ -51,7 +51,7 @@ export default function Projects({ data }) {
       <SEO title="Teams" />
 
       <Section>
-        <div className="flex flex-col lg:flex-row">
+        <div className="grid lg:grid-cols-2">
           <div className="self-center lg:pr-12">
             <h1 className="text-4xl md:text-5xl font-extrabold xl:text-6xl mb-6">Meet The Teams</h1>
             <p className="font-semibold text-xl md:text-2xl lg:text-3xl">
@@ -64,19 +64,17 @@ export default function Projects({ data }) {
           </div>
           <div
             onClick={() => modalSetOpen(true)}
-            className="flex-none w-full lg:w-1/2 relative rounded-md shadow-xl hover:scale-105 transition-transform cursor-pointer"
+            className="w-full relative rounded-md shadow-xl hover:scale-105 transition-transform cursor-pointer"
           >
             <StaticImage
               src="../images/photos/ecosystem/home/youtube.jpg"
               alt="Meet Substrate Teams"
               className="aspect-w-3 aspect-h-2 w-full h-full m-0 relative rounded-md"
             />
-            <h3 className="absolute left-0 top-0 p-8 text-white font-bold text-2xl">Meet Substrate teams</h3>
-            <div className="absolute left-0 bottom-0 p-8">
-              <p className="text-white opacity-75 m-0 text-lg">
-                Find out why more than 150 projects are building on Substrate.
-              </p>
-            </div>
+            <h3 className="absolute top-8 left-8 text-white font-bold text-2xl mb-2">Meet Substrate teams</h3>
+            <p className="absolute left-8 bottom-8 text-white opacity-75 m-0 text-lg">
+              Find out why more than 150 projects are building on Substrate.
+            </p>
             <Icon
               name="play"
               className="w-12 h-12 absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 hover:scale-105 transition-transform"
