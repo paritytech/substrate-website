@@ -104,7 +104,7 @@ export default function BuildersProgram() {
             {cards.map(({ title, icon, description, link, linkText, delay }, idx) => (
               <div key={idx} className="flex" data-aos="fade-up" data-aos-delay={delay}>
                 <Link
-                  to="/technology"
+                  to={link}
                   className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
                 >
                   <Icon name={icon} className="w-16 h-16 mx-auto mb-8" />

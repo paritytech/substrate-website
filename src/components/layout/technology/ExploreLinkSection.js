@@ -11,7 +11,7 @@ const exploreLinks = {
     description:
       'Learn why Substrate is the most powerful framework for quickly building customized, future-proof blockchains',
     link: '/technology',
-    linkText: 'Explore the Tech',
+    linkText: 'Explore the tech',
     icon: 'diamond-green',
   },
   developerHub: {
@@ -35,14 +35,14 @@ const exploreLinks = {
     description:
       'Access resources, maximize opportunities, and connect with a thriving network of Substrate enthusiasts and builders',
     link: '/ecosystem',
-    linkText: 'Check out the Ecosystem',
+    linkText: 'Check out the ecosystem',
     icon: 'diamond-yellow',
   },
   projects: {
     title: 'Projects',
     description: 'See how Substrate has been implemented by innovative teams in many industries around the world',
     link: '/ecosystem/projects',
-    linkText: 'Meet The Teams',
+    linkText: 'Meet the teams',
     icon: 'diamond-yellow',
   },
 };
