@@ -147,7 +147,7 @@ const Flexible = () => {
             </p>
             <p className="mb-0">
               Development is faster since developers can use the tooling they prefer and select from many different
-              pallets instead of building from scratch. Upgrades happen faster thanks for forkless runtime upgrades and
+              pallets instead of building from scratch. Upgrades happen faster thanks to forkless runtime upgrades and
               Node-syncing not only happens faster but also is more secure and reliable due to Substrate’s
               &quot;light-client first&quot; design.
             </p>
