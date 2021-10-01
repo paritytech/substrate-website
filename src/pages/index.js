@@ -26,7 +26,7 @@ const cards = [
     title: 'Technology',
     icon: 'technology',
     description:
-      'Learn why Substrate is the most powerful framework to quickly build customized future-proof blockchains.',
+      'Learn why Substrate is the most powerful framework to quickly build customized future proof blockchains.',
     link: '/technology',
     linkText: 'Explore the tech',
     delay: 0,
@@ -96,7 +96,7 @@ export default function BuildersProgram() {
         <div className="container lg:px-10 pb-10">
           <div className="mx-auto max-w-xl pt-14 pb-4">
             <p className="text-center text-2xl md:text-3xl leading-8 md:leading-relaxed">
-              Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use
+              Substrate enables developers to quickly and easily build future proof blockchains optimized for any use
               case.
             </p>
           </div>
@@ -175,7 +175,7 @@ export default function BuildersProgram() {
                   started Parity, where the team implemented the fastest Ethereum client at the time, and also built a
                   Bitcoin, ZCash, and now, Polkadot client. It’s only from all this deep industry experience that
                   blockchains could be reimagined from the ground up. This led to the creation of Substrate, an open
-                  source and future-proof framework that powers a multichain, interoperable, and decentralized internet.
+                  source and future proof framework that powers a multichain, interoperable, and decentralized internet.
                 </p>
               </div>
               <a className="home-expand__button" onClick={() => toggleExpandedTab(!expandedTab)}>
@@ -346,7 +346,7 @@ export default function BuildersProgram() {
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="600">
               <Link to="/technology/future-proof" className="technology-teaser__icon text-center">
                 <FutureProofIcon />
-                Future-proof
+                Future Proof
               </Link>
             </div>
           </div>
