@@ -28,7 +28,7 @@ const cards = [
     description:
       'Learn why Substrate is the most powerful framework to quickly build customized future-proof blockchains.',
     link: '/technology',
-    linkText: 'Explore The Tech',
+    linkText: 'Explore the tech',
     delay: 0,
   },
   {
@@ -36,7 +36,7 @@ const cards = [
     icon: 'developers',
     description: 'Dive into the docs, tutorials, and resources to immediately get started building with Substrate. ',
     link: 'https://substrate-docs-staging.netlify.app/',
-    linkText: 'Start Coding',
+    linkText: 'Start coding',
     delay: 200,
   },
   {
@@ -44,7 +44,7 @@ const cards = [
     icon: 'projects',
     description: 'See how Substrate has been implemented in innovative use cases in many industries around the world. ',
     link: '/ecosystem/projects',
-    linkText: 'Discover Projects',
+    linkText: 'Discover projects',
     delay: 400,
   },
 ];
@@ -375,7 +375,7 @@ export default function BuildersProgram() {
             </PrimaryButton>
             <br />
             <LineArrowButton className="inline-block mt-6" large link="/ecosystem/projects/case-studies/acala">
-              Read Case Studies
+              Read the case studies
             </LineArrowButton>
           </div>
         </div>
