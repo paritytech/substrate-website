@@ -161,3 +161,10 @@ div[aria-label='animation'] {
     transform: translateY(-100%);
   }
 }
+
+/* Primary button transform fix */
+
+.primary-button {
+  clip-path: content-box;
+  -webkit-clip-path: content-box;
+}
