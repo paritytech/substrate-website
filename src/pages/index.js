@@ -2,7 +2,6 @@ import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
-import { browserName } from 'react-device-detect';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
 
@@ -20,6 +19,7 @@ import FlexibleIcon from '../images/svg/technology/icon-flexible.svg';
 import FutureProofIcon from '../images/svg/technology/icon-future-proof.svg';
 import InteroperableIcon from '../images/svg/technology/icon-interoperable.svg';
 import OpenIcon from '../images/svg/technology/icon-open.svg';
+import { isSafari } from '../utils/browser';
 
 const cards = [
   {
@@ -50,8 +50,6 @@ const cards = [
 ];
 
 export default function BuildersProgram() {
-  const isSafari = browserName === 'Safari';
-
   const heroAnimationOptions = {
     loop: true,
     autoplay: true,
@@ -83,6 +81,7 @@ export default function BuildersProgram() {
       <div className="-mt-36 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
+            {/* TODO: fox safari animation */}
             {!isSafari && <Lottie options={heroAnimationOptions} />}
             <h1 className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 font-title mb-0 mt-0 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
               The Blockchain Framework
@@ -245,6 +244,7 @@ export default function BuildersProgram() {
         <div className="container max-w-6xl lg:px-10 pt-16 pb-24">
           <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)} threshold={0.75}>
             <div className="aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
+              {/* TODO: fox safari animation */}
               {!isSafari && (
                 <Lottie
                   isStopped={animationIsStopped}
