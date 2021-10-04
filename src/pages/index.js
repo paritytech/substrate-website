@@ -34,7 +34,7 @@ const cards = [
   {
     title: 'Developers',
     icon: 'developers',
-    description: 'Dive into the docs, tutorials, and resources to immediately get started building with Substrate. ',
+    description: 'Dive into the docs, tutorials, and resources to immediately get started building with Substrate.',
     link: 'https://substrate-docs-staging.netlify.app/',
     linkText: 'Start coding',
     delay: 200,
@@ -42,7 +42,7 @@ const cards = [
   {
     title: 'Projects',
     icon: 'projects',
-    description: 'See how Substrate has been implemented in innovative use cases in many industries around the world. ',
+    description: 'Explore innovative use cases of Substrate implemented across many industries around the world.',
     link: '/ecosystem/projects',
     linkText: 'Discover projects',
     delay: 400,
@@ -164,11 +164,11 @@ export default function BuildersProgram() {
               >
                 <p className="text-xl leading-relaxed">
                   As Ethereum’s co-founder and first CTO, Gavin Wood developed the Ethereum network and created the
-                  smart-contract language Solidity. While groundbreaking at the time, it soon became apparent that
-                  Ethereum’s &quot;all-purpose&quot; nature imposed hard constraints on developers – from high gas fees
-                  to a lack of core upgradeability. Blockchain frameworks that try to do everything on a single chain
-                  are fundamentally constrained by generalist design choices and force developers to hack clunky
-                  workarounds rather than build specialized solutions.
+                  smart-contract language, Solidity. While groundbreaking at the time, it soon became apparent that
+                  Ethereum’s “all-purpose” nature imposed hard constraints on developers—from high gas fees to a lack of
+                  core upgradeability. Blockchain frameworks that try to do everything on a single chain are
+                  fundamentally constrained by generalist design choices and force developers to hack clunky workarounds
+                  rather than build specialized solutions.
                 </p>
                 <p className="text-xl leading-relaxed">
                   In order to push the boundaries of blockchain technology, Gavin left the Ethereum Foundation and
