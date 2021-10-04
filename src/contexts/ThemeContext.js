@@ -1,7 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
-
-// import { isBrowser } from '../utils/browser';
+// import { useEffect } from 'react';
 
 function getInitialColorMode() {
   if (typeof window !== 'undefined') {
@@ -24,21 +22,26 @@ function getInitialColorMode() {
 export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [colorMode, setColorMode] = useState(getInitialColorMode());
+  const [colorMode, rawSetColorMode] = React.useState(getInitialColorMode());
 
-  const setThemeMode = value => {
-    setColorMode(value);
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     rawSetColorMode(getInitialColorMode());
+  //   }
+  // }, []);
+
+  const setColorMode = value => {
+    rawSetColorMode(value);
     // Set Tailwind color mode
     if (value === 'dark') {
       document.documentElement.classList.add('dark');
       document.documentElement.classList.remove('light');
-    } else if (value === 'light') {
+    } else {
       document.documentElement.classList.add('light');
       document.documentElement.classList.remove('dark');
     }
     // Persist on update
     localStorage.theme = value;
   };
-
-  return <ThemeContext.Provider value={{ colorMode, setThemeMode }}>{children}</ThemeContext.Provider>;
+  return <ThemeContext.Provider value={{ colorMode, setColorMode }}>{children}</ThemeContext.Provider>;
 };
