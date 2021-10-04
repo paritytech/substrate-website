@@ -20,8 +20,9 @@ const Open = () => {
       <SEO title="Open" />
       <Hero page="Open" animationData={animation}>
         <p>
-          Developers know that open-source licensing isn&apos;t enough on its own. They need customizable architecture,
-          tooling to support their development, and most importantly, an open and contributing community.
+          Substrate primitives are Apache 2.0 licensed, but developers know that open-source licensing isn&apos;t enough
+          on its own. They need customizable architecture, tooling to support their development, and most importantly,
+          an open and contributing community.
         </p>
       </Hero>
       <Section

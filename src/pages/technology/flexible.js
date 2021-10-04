@@ -25,8 +25,7 @@ const Flexible = () => {
           use.
         </p>
         <p>
-          This has forced them to implement workarounds, hard-forks, or simply succumb to limitations... until
-          Substrate.
+          This has forced them to implement workarounds, hard-forks, or simply succumb to limitations...until Substrate.
         </p>
       </Hero>
       <Section
@@ -52,7 +51,8 @@ const Flexible = () => {
           </p>
           <Blockquote>
             <p className="mb-0">
-              {`Substrate is a fully modular blockchain framework that gives developers maximum freedom instead of forcing them to work within the confines of others' design decisions.`}
+              Substrate is a fully modular blockchain framework that unleashes developers instead of forcing them to
+              work within the confines of others&apos; design decisions.
             </p>
           </Blockquote>
           <p>
@@ -103,9 +103,8 @@ const Flexible = () => {
           </Blockquote>
           <p>
             How can a blockchain network automatically upgrade? Substrate has a unique property where the runtime (state
-            transition function) is stored within the blockchain network itself. This means nodes update themselves by
-            default rather than through manual intervention. Hard forks only happen when node operators take explicit
-            action.
+            transition function) is stored within the blockchain state. This means nodes update themselves by default
+            rather than through manual intervention. Hard forks only happen when node operators take explicit action.
           </p>
           <p>
             Since coordinating node operators isn&apos;t necessary, upgrades can be more frequent with less issues.
@@ -133,31 +132,25 @@ const Flexible = () => {
         >
           <p>
             The speed of transactions isn’t the only metric that makes a blockchain network fast. The speed of
-            development, upgrades, and node syncing is also important.
+            development, upgrades, and user experience is also important.
           </p>
           <Blockquote>
-            <p>
-              Unlike many legacy blockchain networks, which have hard limits for transaction throughput, Substrate is
-              configurable. Transaction limits can be lifted through configurable block times, flexible transaction
-              queues, and/or horizontal scaling. If your application is limited by gas you can even choose to have
-              gas-less transactions. Development is faster since developers can use the tooling they prefer and select
-              from a growing list of pallets instead of building from scratch. Upgrades happen faster thanks to forkless
-              runtime upgrades, and node-syncing is not only lightning fast but more secure and reliable due to
-              Substrate’s &quot;light-client first&quot; design.
-            </p>
             <p className="mb-0">
-              Development is faster since developers can use the tooling they prefer and select from many different
-              pallets instead of building from scratch. Upgrades happen faster thanks to forkless runtime upgrades and
-              Node-syncing not only happens faster but also is more secure and reliable due to Substrate’s
-              &quot;light-client first&quot; design.
+              Unlike many legacy blockchain networks, which have hard limits for transaction throughput, Substrate is
+              configurable. Transaction latency can be alleviated through configurable blocktimes, flexible transaction
+              queues, and/or horizontal scaling. Transaction fees are configurable even to the point of feeless
+              transactions. Development is faster since developers can use the tooling they prefer and select from a
+              growing list of pallets instead of building from scratch. Upgrades happen faster thanks to forkless
+              runtime upgrades.
             </p>
           </Blockquote>
           <p>
-            Traditional approaches for syncing nodes require users to run dedicated hardware and wait a long time for
-            their node to sync, or as a workaround, use a centralized service provider. With Substrate, users can run
-            decentralized in-browser light clients and interact with a chain in a fully trustless way. Developers can
-            relax, knowing their end users aren’t reliant on a separate node infrastructure susceptible to downtime or
-            hacking.
+            Another unique attribute of Substrate is its “light-client-first” design which can run directly in-browser
+            and interact with a chain in a fully trustless way. Traditional approaches for syncing nodes require users
+            to run dedicated hardware and wait a long time for their node to sync, or as a workaround, use a centralized
+            service provider. Substrate light-clients sync lightning fast and drastically increase the decentralization
+            of blockchain networks. Developers can relax, knowing their end users aren’t reliant on a separate node
+            infrastructure susceptible to downtime or hacking.
           </p>
         </Feature>
       </Section>

@@ -26,6 +26,7 @@ const Interoperable = () => {
           data that exists off-chain and cross-chain. This has led to the creation of bridges, oracles, and other
           interoperability protocols, all with their own limitations.
         </p>
+        <p>Substrate takes a unique, multifaceted approach to address these tradeoffs.</p>
       </Hero>
 
       <Section
@@ -47,23 +48,16 @@ const Interoperable = () => {
           }
         >
           <p>
-            Bridges allow for interoperability between blockchain networks; however, they often come with the tradeoff
-            of being centralized and less trustworthy, or decentralized but limited in compatibility. Substrate-based
-            blockchains are natively compatible with each other and can simply use a bridge pallet to enable
-            interoperability between networks in a decentralized and trustless way.
+            Substrate-based blockchain networks have the choice of either operating as a solo chain, a solo chain with a
+            bridge, or integrate as a parachain. A parachain enables independent Substrate-based blockchains to gain
+            interoperability with the other independent blockchains. The secret sauce of parachain interoperability lies
+            in XCMP (Cross-chain Message Passing). XCMP enables parachains to share trusted logic, for example,
+            transferring tokens between networks, without any additional trust assumptions!
           </p>
-          <Blockquote>
-            <p className="mb-0">
-              The secret sauce for native compatibility between Substrate-based blockchain networks is XCMP (Cross-chain
-              Message Passing). XCMP allows Substrate-based networks to communicate with each other without additional
-              trust assumptions.
-            </p>
-          </Blockquote>
           <p>
-            XCMP enables blockchain networks to share trusted logic, for example, transferring tokens between networks.
-            For interoperability with non-Substrate-based networks you&apos;re free to use bridges that are already
-            available or even create your own. If your Substrate chain is integrated with Polkadot, for example, out of
-            the box your blockchain is bridged to Bitcoin, Ethereum, and most major blockchains.
+            Blockchain networks that are not parachains, such as Ethereum, are accessible through parachain bridges. By
+            becoming a parachain on networks such as Polkadot or Kusama, your Substrate-based blockchain also gains
+            interoperability with major blockchains such as Bitcoin and Ethereum while gaining pooled security.
           </p>
         </Feature>
       </Section>
@@ -148,8 +142,9 @@ const Interoperable = () => {
           <p>
             Compute and storage come at a cost in any system, even more so with blockchain networks since many nodes
             perform the same computation and store many copies of the data. Often the concept of &quot;gas&quot; is
-            introduced because of computational resource limitations. With Substrate, gas is completely optional, and
-            the introduction of off-chain features greatly reduces computation and storage costs.
+            introduced because of computational resource limitations. Because of Substrate’s modularity, gas is
+            completely optional, and the introduction of off-chain features greatly reduces computation and storage
+            costs.
           </p>
           <p>
             Off-chain features run in their own execution environment outside of the Substrate runtime. This creates a
