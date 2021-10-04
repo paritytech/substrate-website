@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
+import { isBrowser } from '../../utils/browser';
 import Icon from '../default/Icon';
 
 export default function ThemeToggle() {
@@ -13,6 +14,13 @@ export default function ThemeToggle() {
       setThemeMode('dark');
     }
   }
+
+  React.useEffect(() => {
+    if (isBrowser) {
+      setThemeMode(colorMode);
+      console.log('useffect: ' + colorMode);
+    }
+  }, []);
 
   console.log(colorMode);
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-import { isBrowser } from '../utils/browser';
+// import { isBrowser } from '../utils/browser';
 
 function getInitialColorMode() {
   if (typeof window !== 'undefined') {
@@ -25,13 +25,6 @@ export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [colorMode, setColorMode] = useState(getInitialColorMode());
-
-  useEffect(() => {
-    if (isBrowser) {
-      setColorMode(getInitialColorMode());
-      console.log('useffect: ' + colorMode);
-    }
-  }, []);
 
   const setThemeMode = value => {
     setColorMode(value);
