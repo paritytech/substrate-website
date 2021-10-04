@@ -4,13 +4,13 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import Icon from '../default/Icon';
 
 export default function ThemeToggle() {
-  const { colorMode, setColorMode } = useContext(ThemeContext);
+  const { colorMode, setThemeMode } = useContext(ThemeContext);
 
   function toggleTheme() {
     if (colorMode === 'dark') {
-      setColorMode('light');
+      setThemeMode('light');
     } else {
-      setColorMode('dark');
+      setThemeMode('dark');
     }
   }
 

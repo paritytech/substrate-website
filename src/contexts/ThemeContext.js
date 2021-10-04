@@ -1,8 +1,10 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useState } from 'react';
+
+import { isBrowser } from '../utils/browser';
 
 function getInitialColorMode() {
-  if (typeof window !== 'undefined') {
+  if (isBrowser) {
     const persistedColorPreference = window.localStorage.getItem('theme');
     const hasPersistedPreference = typeof persistedColorPreference === 'string';
 
@@ -22,26 +24,28 @@ function getInitialColorMode() {
 export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [colorMode, rawSetColorMode] = React.useState(getInitialColorMode());
+  const [colorMode, setColorMode] = useState(getInitialColorMode());
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      rawSetColorMode(getInitialColorMode());
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (isBrowser) {
+  //     setColorMode(getInitialColorMode());
+  //   }
+  // }, []);
+  console.log(colorMode);
 
-  const setColorMode = value => {
-    rawSetColorMode(value);
+  const setThemeMode = value => {
+    setColorMode(value);
     // Set Tailwind color mode
-    if (value == 'dark') {
+    if (value === 'dark') {
       document.documentElement.classList.add('dark');
       document.documentElement.classList.remove('light');
-    } else {
+    } else if (value === 'light') {
       document.documentElement.classList.add('light');
       document.documentElement.classList.remove('dark');
     }
     // Persist on update
     localStorage.theme = value;
   };
-  return <ThemeContext.Provider value={{ colorMode, setColorMode }}>{children}</ThemeContext.Provider>;
+
+  return <ThemeContext.Provider value={{ colorMode, setThemeMode }}>{children}</ThemeContext.Provider>;
 };
