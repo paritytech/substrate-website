@@ -159,7 +159,7 @@ const connect = [
     id: 'ecosystem.resources.newsletter',
   },
   {
-    url: 'https://parity.io/blog',
+    url: 'https://www.parity.io/blog/tag/parity-substrate',
     id: 'ecosystem.resources.blog',
   },
 ];
