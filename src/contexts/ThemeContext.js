@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 
-import { isBrowser } from '../utils/browser';
+// import { isBrowser } from '../utils/browser';
 
 function getInitialColorMode() {
-  if (isBrowser) {
+  if (typeof window !== 'undefined') {
     const persistedColorPreference = window.localStorage.getItem('theme');
     const hasPersistedPreference = typeof persistedColorPreference === 'string';
 
