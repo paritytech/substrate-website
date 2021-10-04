@@ -1,5 +1,5 @@
 import React from 'react';
-// import { useEffect } from 'react';
+import { useEffect } from 'react';
 
 function getInitialColorMode() {
   if (typeof window !== 'undefined') {
@@ -24,11 +24,11 @@ export const ThemeContext = React.createContext();
 export const ThemeProvider = ({ children }) => {
   const [colorMode, rawSetColorMode] = React.useState(getInitialColorMode());
 
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     rawSetColorMode(getInitialColorMode());
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      rawSetColorMode(getInitialColorMode());
+    }
+  }, []);
 
   const setColorMode = value => {
     rawSetColorMode(value);
