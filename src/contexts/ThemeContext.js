@@ -31,7 +31,6 @@ export const ThemeProvider = ({ children }) => {
   //     setColorMode(getInitialColorMode());
   //   }
   // }, []);
-  console.log(colorMode);
 
   const setThemeMode = value => {
     setColorMode(value);

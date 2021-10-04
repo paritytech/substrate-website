@@ -14,6 +14,8 @@ export default function ThemeToggle() {
     }
   }
 
+  console.log(colorMode);
+
   return (
     <div className="cursor-pointer hover:opacity-60 transition-opacity" onClick={toggleTheme}>
       {colorMode === 'light' && <Icon name="sun" />}
