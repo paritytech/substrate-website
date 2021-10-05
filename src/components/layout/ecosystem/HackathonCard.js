@@ -1,3 +1,4 @@
+import { format } from 'date-fns';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 
@@ -5,9 +6,13 @@ import Icon from '../../default/Icon';
 import SecondaryButton from '../../ui/SecondaryButton';
 
 const hackathonCard = ({ hackathon }) => {
-  const { title, city, date, prize, featured_image, link } = hackathon.node.frontmatter;
+  const { title, city, date_start, date_end, prize, featured_image, link } = hackathon.node.frontmatter;
   const html = hackathon.node.html;
   const imageData = getImage(featured_image);
+
+  const formatDate = date => {
+    return format(new Date(date), 'dd.MM.yyyy');
+  };
 
   return (
     <article className="p-4 bg-substrateGray-light dark:bg-substrateBlackish rounded-md grid md:grid-cols-2 gap-6 items-center mb-8 shadow-md">
@@ -21,7 +26,7 @@ const hackathonCard = ({ hackathon }) => {
           <span>
             <Icon name="calendar" className="fill-current text-black dark:text-white inline mr-2 mb-1" />
           </span>
-          Date: {date}
+          Date: {formatDate(date_start)} - {formatDate(date_end)}
         </p>
         <p className="mb-2 lg:mb-4 font-semibold">
           <span>
