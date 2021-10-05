@@ -50,8 +50,6 @@ const cards = [
 ];
 
 export default function Home() {
-  const isSafari = browserName === 'Safari';
-
   const heroAnimationOptions = {
     loop: true,
     autoplay: true,
