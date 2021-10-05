@@ -6,13 +6,13 @@ import Icon from '../../default/Icon';
 import SecondaryButton from '../../ui/SecondaryButton';
 
 const hackathonCard = ({ hackathon }) => {
-  const { title, city, date_start, date_end, prize, featured_image, link } = hackathon.node.frontmatter;
-  const html = hackathon.node.html;
-  const imageData = getImage(featured_image);
-
   const formatDate = date => {
     return format(new Date(date), 'dd.MM.yyyy');
   };
+
+  const { title, city, date_start, date_end, prize, featured_image, link } = hackathon.node.frontmatter;
+  const html = hackathon.node.html;
+  const imageData = getImage(featured_image);
 
   return (
     <article className="p-4 bg-substrateGray-light dark:bg-substrateBlackish rounded-md grid md:grid-cols-2 gap-6 items-center mb-8 shadow-md">

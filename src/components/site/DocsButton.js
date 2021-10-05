@@ -1,7 +1,7 @@
-import { Link } from 'gatsby';
 import React from 'react';
 
 import Icon from '../default/Icon';
+import { Link } from '../default/Link';
 
 export default function DocsButton() {
   return (
