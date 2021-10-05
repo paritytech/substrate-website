@@ -1,6 +1,7 @@
 ---
 title: Hackusama
-date: 29.06.2020 - 14.08.2020
+date_start: 2020-06-29
+date_end: 2020-08-14
 prize: $30,000 USD
 link: https://hackusama.devpost.com/
 featured_image: /media/images/hackathons/Hackusama_square.png

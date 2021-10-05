@@ -6,13 +6,17 @@ export const useHackathons = () => {
   } = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(hackathons)/" } }) {
+        allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "//(hackathons)/" } }
+          sort: { fields: frontmatter___date_start, order: DESC }
+        ) {
           edges {
             node {
               html
               frontmatter {
                 title
-                date
+                date_start
+                date_end
                 prize
                 link
                 featured_image {
