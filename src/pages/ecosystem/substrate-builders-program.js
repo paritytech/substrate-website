@@ -80,7 +80,7 @@ export default function BuildersProgram() {
             <StaticImage
               src="../../images/photos/ecosystem/builders-program/builders-program.jpg"
               alt="Two men talking"
-              className="rounded-md w-full h-auto"
+              className="rounded-md overflow-hidden w-full h-auto"
             />
           </div>
         </Section>
@@ -356,7 +356,7 @@ export default function BuildersProgram() {
               <StaticImage
                 src="../../images/photos/ecosystem/builders-program/builders-program-2.jpg"
                 alt="A woman on a computer, wearing headphones"
-                className="rounded-md"
+                className="rounded-md overflow-hidden"
               />
             </div>
           </div>

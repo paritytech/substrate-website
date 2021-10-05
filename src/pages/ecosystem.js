@@ -99,7 +99,7 @@ export default function Home() {
               <StaticImage
                 src="../images/photos/ecosystem/home/youtube.jpg"
                 alt="Meet Substrate teams"
-                className="w-full h-full m-0 relative rounded-md"
+                className="w-full h-full m-0 relative rounded-md overflow-hidden"
               />
               <div className="absolute left-0 bottom-0 p-8">
                 <h3 className="text-white mb-2">Meet Substrate teams</h3>
@@ -121,7 +121,7 @@ export default function Home() {
               <StaticImage
                 src="../images/photos/ecosystem/builders-program/builders-program.jpg"
                 alt="Substrate Builders Program"
-                className="rounded-md"
+                className="rounded-md overflow-hidden"
               />
             </div>
             <div className="lg:col-start-1">

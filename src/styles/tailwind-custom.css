@@ -162,9 +162,15 @@ div[aria-label='animation'] {
   }
 }
 
-/* Primary button transform fix */
+/* Primary button transform fix Safari */
 
 .primary-button {
   clip-path: content-box;
   -webkit-clip-path: content-box;
+}
+
+/* Image rounded corners fix Safari */
+
+.rounded-md.overflow-hidden {
+  mask-image: radial-gradient(white, black);
 }
