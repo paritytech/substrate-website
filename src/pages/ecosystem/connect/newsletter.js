@@ -3,27 +3,21 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import Layout from '../../../components/site/Layout';
+import Newsletter from '../../../components/site/newsletter';
 import SEO from '../../../components/site/SEO';
-import PrimaryButton from '../../../components/ui/PrimaryButton';
 
-export default function Newsletter() {
+export default function NewsletterPage() {
   return (
     <Layout layout="sidebar">
       <SEO title="Newsletter" />
-      <div className="relative">
+      <div className="relative -mt-12 md:mt-0">
         <StaticImage
           src="../../../images/photos/ecosystem/newsletter/newsletter.jpg"
           alt="Man on computer"
           className="w-full h-auto"
         />
-        <div className="bg-white dark:bg-transparent md:dark:bg-substrateBlackish md:absolute m-8 md:p-8 mt-8 md:mt-0 rounded-md md:shadow-xl max-w-md top-1/2 left-10 md:-translate-y-1/2">
-          <h2 className="text-4xl font-bold mb-4">[WIP]: Newsletter</h2>
-          <p className="font-medium text-lg">
-            Subscribe for the latest news, technical updates and helpful developer resources.
-          </p>
-          <PrimaryButton link="https://www.link.com/" fullWidth={true}>
-            [WIP]
-          </PrimaryButton>
+        <div className="bg-white dark:bg-transparent md:dark:bg-substrateBlackish p-4 my-6 md:my-0 md:absolute md:p-8 rounded-md md:shadow-xl max-w-lg top-1/2 left-10 md:-translate-y-1/2">
+          <Newsletter />
         </div>
       </div>
     </Layout>

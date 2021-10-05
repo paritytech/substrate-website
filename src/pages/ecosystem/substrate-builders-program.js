@@ -11,7 +11,7 @@ import Section from '../../components/layout/Section';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import LineArrowButton from '../../components/ui/LineArrowButton';
-import PrimaryButton from '../../components/ui/PrimaryButton';
+import PrimaryButtonLink from '../../components/ui/PrimaryButtonLink';
 import SecondaryButton from '../../components/ui/SecondaryButton';
 import * as animationData from '../../images/animation/ecosystem/builders-program.json';
 
@@ -59,9 +59,9 @@ export default function BuildersProgram() {
                 The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
                 resources, taking your Substrate project to the next level.
               </p>
-              <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
+              <PrimaryButtonLink link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
                 Apply
-              </PrimaryButton>
+              </PrimaryButtonLink>
             </div>
           </div>
         </Section>
@@ -315,9 +315,9 @@ export default function BuildersProgram() {
               </div>
             </div>
           </div>
-          <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
+          <PrimaryButtonLink link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
             Apply
-          </PrimaryButton>
+          </PrimaryButtonLink>
         </Section>
 
         <Section>
@@ -348,9 +348,9 @@ export default function BuildersProgram() {
                 that developers can enroll in. Much of what this program offers, such as technical support and
                 invitations to Polkadot branded events, cannot be offered by an external program.
               </p>
-              <PrimaryButton link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
+              <PrimaryButtonLink link="https://docs.google.com/forms/d/e/1FAIpQLSfEYJE3X0RQs3Kucqthe4D8zyUcV1yEvyIw98L2X9_78b4BVA/viewform">
                 Apply
-              </PrimaryButton>
+              </PrimaryButtonLink>
             </div>
             <div className="hidden lg:block lg:col-span-6 lg:col-start-7">
               <StaticImage

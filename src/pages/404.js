@@ -5,7 +5,7 @@ import React from 'react';
 import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
-import PrimaryButton from '../components/ui/PrimaryButton';
+import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
 
 export default function NotFoundPage() {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ export default function NotFoundPage() {
         <div className="w-2/3 mx-auto mt-20 text-center self-center">
           <h1 className="mb-10 four-oh-four-title text-9xl xl:text-four-oh-four font-body">{t('404.title')}</h1>
           <h2 className="text-4xl mb-10 font-bold">{t('404.message')}</h2>
-          <PrimaryButton onClick={() => navigate(-1)}>Go back</PrimaryButton>
+          <PrimaryButtonLink onClick={() => navigate(-1)}>Go back</PrimaryButtonLink>
         </div>
       </Section>
     </Layout>
