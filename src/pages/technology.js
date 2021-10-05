@@ -114,7 +114,7 @@ export default function Technology() {
           </ul>
         </Section>
         <Section>
-          <div className="relative md:-mt-10">
+          <div className="relative md:-mt-10 overflow-x-hidden">
             <Icon name="diamond-green" className="hidden md:block absolute opacity-20 right-0 w-1/3" />
             <h2 className="text-4xl mb-10 md:pt-16 font-bold">Substrate is uniquely:</h2>
             <div className="grid lg:grid-cols-2 gap-10">
