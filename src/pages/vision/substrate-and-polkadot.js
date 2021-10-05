@@ -31,7 +31,7 @@ const Vision = () => {
                     preserveAspectRatio: 'xMidYMid slice',
                   },
                 }}
-                isClickToPauseDisabled={true}
+                isClickToPauseDisabled
               />
             )}
           </figure>

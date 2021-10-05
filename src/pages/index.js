@@ -81,7 +81,7 @@ export default function Home() {
       <div className="-mt-36 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
-            <Lottie options={heroAnimationOptions} />
+            <Lottie options={heroAnimationOptions} isClickToPauseDisabled />
             <h1 className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 font-title mb-0 mt-0 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
               The Blockchain Framework
               <br />
