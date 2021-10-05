@@ -386,6 +386,7 @@ export default function BuildersProgram() {
             <div>
               <StaticImage
                 src="../images/photos/home/team.jpg"
+                alt="People in an office"
                 className="w-full h-full m-0 relative shadow-xl rounded-md"
               />
             </div>
@@ -429,6 +430,7 @@ export default function BuildersProgram() {
             <div>
               <StaticImage
                 src="../images/photos/home/newsletter.jpg"
+                alt="Woman at computer"
                 className="w-full h-full m-0 relative shadow-xl rounded-md"
               />
             </div>
