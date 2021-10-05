@@ -67,9 +67,9 @@ const developers = [
     internal: true,
   },
   {
-    url: 'https://paritytech.github.io/substrate/',
+    url: DOCS_URL + '/rustdocs',
     id: 'developers.rustdocs',
-    internal: false,
+    internal: true,
   },
   {
     url: DOCS_URL + '/playground',
