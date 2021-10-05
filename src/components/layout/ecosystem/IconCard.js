@@ -18,16 +18,14 @@ const IconCard = ({ title, description, link, delay, icon, color, linkText }) =>
           {title}
         </h3>
         <div className="flex flex-col justify-between">
-          <p className="mb-16 mt-6 pl-5 relative">
+          <div className="mb-16 mt-6 pl-5 relative">
             <div
               className="absolute left-0 top-0 bottom-0 w-1 bg-gray-200 rounded"
               style={{ backgroundColor: color }}
             ></div>
-            {description}
-          </p>
-          <LineArrowButton className="absolute bottom-8" link={link}>
-            {linkText}
-          </LineArrowButton>
+            <p className="mb-0">{description}</p>
+          </div>
+          <LineArrowButton className="absolute bottom-8">{linkText}</LineArrowButton>
         </div>
       </div>
     </Link>

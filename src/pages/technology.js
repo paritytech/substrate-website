@@ -35,7 +35,7 @@ const highlights = [
   },
 ];
 
-export default function IndexPage() {
+export default function Technology() {
   return (
     <Layout mode="full">
       <SEO title="Substrate Technology" />

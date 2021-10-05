@@ -14,28 +14,28 @@ import { isBrowser } from '../utils/browser';
 
 const logos = [
   {
-    logo: <StaticImage src="../images/png/ecosystem/logo-1.png" />,
-    alt: <StaticImage src="../images/png/ecosystem/logo-7.png" />,
+    logo: <StaticImage src="../images/png/ecosystem/logo-1.png" alt="logo" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-7.png" alt="logo" />,
   },
   {
-    logo: <StaticImage src="../images/png/ecosystem/logo-2.png" />,
-    alt: <StaticImage src="../images/png/ecosystem/logo-8.png" />,
+    logo: <StaticImage src="../images/png/ecosystem/logo-2.png" alt="logo" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-8.png" alt="logo" />,
   },
   {
-    logo: <StaticImage src="../images/png/ecosystem/logo-3.png" />,
-    alt: <StaticImage src="../images/png/ecosystem/logo-9.png" />,
+    logo: <StaticImage src="../images/png/ecosystem/logo-3.png" alt="logo" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-9.png" alt="logo" />,
   },
   {
-    logo: <StaticImage src="../images/png/ecosystem/logo-4.png" />,
-    alt: <StaticImage src="../images/png/ecosystem/logo-10.png" />,
+    logo: <StaticImage src="../images/png/ecosystem/logo-4.png" alt="logo" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-10.png" alt="logo" />,
   },
   {
-    logo: <StaticImage src="../images/png/ecosystem/logo-5.png" />,
-    alt: <StaticImage src="../images/png/ecosystem/logo-11.png" />,
+    logo: <StaticImage src="../images/png/ecosystem/logo-5.png" alt="logo" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-11.png" alt="logo" />,
   },
   {
-    logo: <StaticImage src="../images/png/ecosystem/logo-6.png" />,
-    alt: <StaticImage src="../images/png/ecosystem/logo-12.png" />,
+    logo: <StaticImage src="../images/png/ecosystem/logo-6.png" alt="logo" />,
+    alt: <StaticImage src="../images/png/ecosystem/logo-12.png" alt="logo" />,
   },
 ];
 
@@ -98,6 +98,7 @@ export default function Home() {
             <div>
               <StaticImage
                 src="../images/photos/ecosystem/home/youtube.jpg"
+                alt="Meet Substrate teams"
                 className="w-full h-full m-0 relative rounded-md"
               />
               <div className="absolute left-0 bottom-0 p-8">
@@ -119,6 +120,7 @@ export default function Home() {
             <div className="row-start-1 lg:col-start-2">
               <StaticImage
                 src="../images/photos/ecosystem/builders-program/builders-program.jpg"
+                alt="Substrate Builders Program"
                 className="rounded-md"
               />
             </div>

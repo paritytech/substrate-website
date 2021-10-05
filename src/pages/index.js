@@ -26,15 +26,15 @@ const cards = [
     title: 'Technology',
     icon: 'technology',
     description:
-      'Learn why Substrate is the most powerful framework to quickly build customized future-proof blockchains.',
+      'Learn why Substrate is the most powerful framework to quickly build customized future proof blockchains.',
     link: '/technology',
-    linkText: 'Explore the Tech',
+    linkText: 'Explore the tech',
     delay: 0,
   },
   {
     title: 'Developers',
     icon: 'developers',
-    description: 'Dive into the docs, tutorials, and resources to immediately get started building with Substrate. ',
+    description: 'Dive into the docs, tutorials, and resources to immediately get started building with Substrate.',
     link: 'https://substrate-docs-staging.netlify.app/',
     linkText: 'Start coding',
     delay: 200,
@@ -42,14 +42,14 @@ const cards = [
   {
     title: 'Projects',
     icon: 'projects',
-    description: 'See how Substrate has been implemented in innovative use cases in many industries around the world. ',
+    description: 'Explore innovative use cases of Substrate implemented across many industries around the world.',
     link: '/ecosystem/projects',
     linkText: 'Discover projects',
     delay: 400,
   },
 ];
 
-export default function BuildersProgram() {
+export default function Home() {
   const heroAnimationOptions = {
     loop: true,
     autoplay: true,
@@ -81,8 +81,7 @@ export default function BuildersProgram() {
       <div className="-mt-36 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
-            {/* TODO: fox safari animation */}
-            {!isSafari && <Lottie options={heroAnimationOptions} />}
+            <Lottie options={heroAnimationOptions} />
             <h1 className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 font-title mb-0 mt-0 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
               The Blockchain Framework
               <br />
@@ -95,7 +94,7 @@ export default function BuildersProgram() {
         <div className="container lg:px-10 pb-10">
           <div className="mx-auto max-w-xl pt-14 pb-4">
             <p className="text-center text-2xl md:text-3xl leading-8 md:leading-relaxed">
-              Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use
+              Substrate enables developers to quickly and easily build future proof blockchains optimized for any use
               case.
             </p>
           </div>
@@ -103,14 +102,14 @@ export default function BuildersProgram() {
             {cards.map(({ title, icon, description, link, linkText, delay }, idx) => (
               <div key={idx} className="flex" data-aos="fade-up" data-aos-delay={delay}>
                 <Link
-                  to="/technology"
+                  to={link}
                   className="relative pb-14 pt-10 px-4 text-center hover:bg-white dark:hover:bg-darkBackground hover:shadow-xl hover:scale-105 transition-all rounded-md"
                 >
                   <Icon name={icon} className="w-16 h-16 mx-auto mb-8" />
                   <h3 className="text-2.5xl mb-6">{title}</h3>
                   <p className="text-xl leading-relaxed">{description}</p>
                   <div className="absolute bottom-10 left-0 w-full">
-                    <LineArrowButton className="inline-block" primary large link={link}>
+                    <LineArrowButton className="inline-block" primary large>
                       {linkText}
                     </LineArrowButton>
                   </div>
@@ -163,19 +162,18 @@ export default function BuildersProgram() {
               >
                 <p className="text-xl leading-relaxed">
                   As Ethereum’s co-founder and first CTO, Gavin Wood developed the Ethereum network and created the
-                  smart-contract language Solidity. While groundbreaking at the time, it soon became apparent that
-                  Ethereum&apos;s &quot;all-purpose&quot; nature imposed hard constraints on developers – from high gas
-                  fees core upgradeability. Blockchain frameworks that try to do everything on a single chain are
-                  fundamentally constrained by generalist design choices and force developers to hack clunky
-                  work-arounds rather than build specialized solutions.
+                  smart-contract language, Solidity. While groundbreaking at the time, it soon became apparent that
+                  Ethereum’s “all-purpose” nature imposed hard constraints on developers—from high gas fees to a lack of
+                  core upgradeability. Blockchain frameworks that try to do everything on a single chain are
+                  fundamentally constrained by generalist design choices and force developers to hack clunky workarounds
+                  rather than build specialized solutions.
                 </p>
                 <p className="text-xl leading-relaxed">
                   In order to push the boundaries of blockchain technology, Gavin left the Ethereum Foundation and
                   started Parity, where the team implemented the fastest Ethereum client at the time, and also built a
                   Bitcoin, ZCash, and now, Polkadot client. It’s only from all this deep industry experience that
                   blockchains could be reimagined from the ground up. This led to the creation of Substrate, an open
-                  source and future-proof framework that powers a multi-chain, interoperable, and decentralized
-                  internet.
+                  source and future proof framework that powers a multichain, interoperable, and decentralized internet.
                 </p>
               </div>
               <a className="home-expand__button" onClick={() => toggleExpandedTab(!expandedTab)}>
@@ -193,16 +191,17 @@ export default function BuildersProgram() {
                 })}
               >
                 <p className="text-xl leading-relaxed">
-                  Substrate takes the hard work out of blockchain development without constraining the possibilities.
-                  From its inception it was designed to be a flexible and modular framework that is highly customizable.
-                  It allows development teams to build specialized blockchains based on academically-researched and
-                  field-tested best practices that have proven their worth on multiple live networks worth billions of
-                  dollars.
+                  Substrate takes the hard work out of blockchain development without imposing limits often found in
+                  other frameworks. From its inception, it was designed to be a flexible and modular framework that is
+                  highly customizable. It allows development teams to quickly build blockchains based on
+                  academically-researched and field-tested code that have proven their worth on many live networks worth
+                  billions of dollars.
                 </p>
                 <p className="text-xl leading-relaxed">
-                  With Substrate, developers gain a tremendous head start by leveraging all the learnings from the top
-                  blockchain development projects around the world on this open-source framework. Just as applications
-                  don&apos;t need to be built from scratch today, neither do blockchains - thanks to Substrate!
+                  With Substrate, developers don’t need to start from zero. They gain a tremendous head start by being
+                  able to leverage open source software built by Substrate&apos;s large ecosystem of top blockchain
+                  development projects around the world—for free. Just as consumer applications don&apos;t need to be
+                  built from scratch today, neither do blockchains anymore—thanks to Substrate.
                 </p>
               </div>
               <a className="home-expand__button" onClick={() => toggleExpandedTab(!expandedTab)}>
@@ -220,16 +219,18 @@ export default function BuildersProgram() {
                 })}
               >
                 <p className="text-xl leading-relaxed">
-                  The aspirational &ldquo;trifecta&rdquo; of being fast, secure, and decentralized has been a constant
-                  pursuit of blockchain scalability. Some are fast and secure, but not adequately
-                  decentralized—therefore offering no great advantages over current centralized solutions. Others are
-                  decentralized and secure but suffer from severe performance issues that don&apos;t allow for practical
-                  widespread impact.
+                  Pushing the envelope on blockchain scalability requires the balancing act of many factors, such as
+                  speed, security and decentralization. It’s often when trying to optimize one of these pillars that
+                  compromises can be found in others. Some blockchain platforms claim astonishing stats because they’re
+                  not actually decentralized. Others are decentralized but suffer from performance issues that
+                  don&apos;t allow for practical real world impact.
                 </p>
                 <p className="text-xl leading-relaxed">
-                  Substrate&apos;s use of open, well-adopted and web-literate technologies allows you to balance these
-                  tradeoffs, which leads to the creation of Web3 solutions that are as easy to adopt as traditional
-                  centralized applications.
+                  The reality is that every choice has a trade-off; thus it’s about being able to decide on a design
+                  that fits the requirements. It’s with this understanding that Substrate was developed to be as open,
+                  flexible, and upgradeable as possible so that builders are able to optimize for their specific needs.
+                  Its the ability to specialize while still balancing all crucial factors that makes Substrate a pioneer
+                  in truly decentralized real-world solutions.
                 </p>
               </div>
               <a className="home-expand__button" onClick={() => toggleExpandedTab(!expandedTab)}>
@@ -312,7 +313,7 @@ export default function BuildersProgram() {
           <p className="text-2xl leading-relaxed mb-8">
             Substrate makes building a blockchain far easier, faster, cheaper, and safer than ever before. As an open
             source framework, developers gain free access to a wide codebase developed and used by industry-leading
-            teams powering many of the largest and most secure live networks today. Discover more.
+            teams building some of the biggest networks today. Learn more.
           </p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 font-bold text-xl max-w-6xl mx-auto">
@@ -344,7 +345,7 @@ export default function BuildersProgram() {
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="600">
               <Link to="/technology/future-proof" className="technology-teaser__icon text-center">
                 <FutureProofIcon />
-                Future-proof
+                Future Proof
               </Link>
             </div>
           </div>
@@ -373,7 +374,7 @@ export default function BuildersProgram() {
             </PrimaryButton>
             <br />
             <LineArrowButton className="inline-block mt-6" large link="/ecosystem/projects/case-studies/acala">
-              Read Case Studies
+              Read the case studies
             </LineArrowButton>
           </div>
         </div>
@@ -384,6 +385,7 @@ export default function BuildersProgram() {
             <div>
               <StaticImage
                 src="../images/photos/home/team.jpg"
+                alt="People in an office"
                 className="w-full h-full m-0 relative shadow-xl rounded-md"
               />
             </div>
@@ -427,6 +429,7 @@ export default function BuildersProgram() {
             <div>
               <StaticImage
                 src="../images/photos/home/newsletter.jpg"
+                alt="Woman at computer"
                 className="w-full h-full m-0 relative shadow-xl rounded-md"
               />
             </div>

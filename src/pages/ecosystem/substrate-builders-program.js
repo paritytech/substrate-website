@@ -79,6 +79,7 @@ export default function BuildersProgram() {
             </div>
             <StaticImage
               src="../../images/photos/ecosystem/builders-program/builders-program.jpg"
+              alt="Two men talking"
               className="rounded-md w-full h-auto"
             />
           </div>
@@ -354,6 +355,7 @@ export default function BuildersProgram() {
             <div className="hidden lg:block lg:col-span-6 lg:col-start-7">
               <StaticImage
                 src="../../images/photos/ecosystem/builders-program/builders-program-2.jpg"
+                alt="A woman on a computer, wearing headphones"
                 className="rounded-md"
               />
             </div>

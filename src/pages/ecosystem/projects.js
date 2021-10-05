@@ -67,7 +67,7 @@ export default function Projects({ data }) {
             className="w-full relative rounded-md shadow-xl hover:scale-105 transition-transform cursor-pointer"
           >
             <StaticImage
-              src="../images/photos/ecosystem/home/youtube.jpg"
+              src="../../images/photos/ecosystem/home/youtube.jpg"
               alt="Meet Substrate Teams"
               className="aspect-w-3 aspect-h-2 w-full h-full m-0 relative rounded-md"
             />

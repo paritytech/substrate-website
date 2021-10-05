@@ -1,5 +1,11 @@
 [
     {
+        "title": "Substrate Runtime Developer Academy",
+        "provider": "Industry Connect, created by Bryan Chen - co-founder of Acala",
+        "description": "The 6-week course brings together industry expertise and an interactive learning experience through multi-modal content, interactive exercises, practical projects, access to mentors and course creators as well as community-driven support and internship opportunities. The course is taught in English.",
+        "link": "https://www.industryconnect.org/substrate-runtime-developer-academy/"
+    },
+    {
         "title": "Introduction to Substrate blockchain development",
         "provider": "Parity Asia, OneBlock+",
         "description": "This 3-week course covers all the basics and provides an introduction to Polkadot, Substrate and Rust. The course is taught in Chinese.",
