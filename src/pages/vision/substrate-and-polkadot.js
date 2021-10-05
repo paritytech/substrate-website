@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import { browserName } from 'react-device-detect';
 import Lottie from 'react-lottie';
 
 import Gif from '../../components/default/Gif';
@@ -13,8 +12,7 @@ import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import BlockQuote from '../../components/ui/Blockquote';
 import * as animationData from '../../images/animation/substrate-polkadot.json';
-
-const isSafari = browserName === 'Safari';
+import { isSafari } from '../../utils/browser';
 
 const Vision = () => {
   return (
@@ -23,6 +21,7 @@ const Vision = () => {
       <Article>
         <header className="container -mt-10 mb-8">
           <figure className="w-full lg:w-3/4 lg:mx-auto aspect-w-5 lg:aspect-w-6 aspect-h-2">
+            {/* TODO: fox safari animation */}
             {!isSafari && (
               <Lottie
                 options={{

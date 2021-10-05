@@ -9,7 +9,7 @@ const PrimaryButton = ({ children, link, onClick, fullWidth = false, hero = fals
     <Link to={link}>
       <div
         onClick={onClick}
-        className={cx('group bg-substrateGreen inline-flex relative rounded-md overflow-hidden', {
+        className={cx('primary-button group bg-substrateGreen inline-flex relative rounded-md overflow-hidden', {
           'w-full justify-center': fullWidth,
         })}
       >
