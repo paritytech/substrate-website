@@ -241,5 +241,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-remove-trailing-slashes`,
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-simple-analytics',
+      options: {
+        domain: 'api-sa.substrate.io',
+        eventsGlobal: 'sa',
+        events: true,
+        trackPageViews: true,
+      },
+    },
   ],
 };
