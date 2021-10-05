@@ -67,9 +67,7 @@ const ExploreLinkSection = ({ links }) => {
                   <h5 className="text-xl font-bold mb-6">{title}</h5>
                   <p>{description}</p>
                 </div>
-                <LineArrowButton link={link} sameWindow={sameWindow}>
-                  {linkText}
-                </LineArrowButton>
+                <LineArrowButton>{linkText}</LineArrowButton>
               </div>
             </Link>
           ))}

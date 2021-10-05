@@ -49,7 +49,7 @@ const cards = [
   },
 ];
 
-export default function BuildersProgram() {
+export default function Home() {
   const isSafari = browserName === 'Safari';
 
   const heroAnimationOptions = {
@@ -111,7 +111,7 @@ export default function BuildersProgram() {
                   <h3 className="text-2.5xl mb-6">{title}</h3>
                   <p className="text-xl leading-relaxed">{description}</p>
                   <div className="absolute bottom-10 left-0 w-full">
-                    <LineArrowButton className="inline-block" primary large link={link}>
+                    <LineArrowButton className="inline-block" primary large>
                       {linkText}
                     </LineArrowButton>
                   </div>
