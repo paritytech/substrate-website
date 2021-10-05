@@ -22,18 +22,16 @@ function getInitialColorMode() {
 export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [colorMode, rawSetColorMode] = React.useState(getInitialColorMode());
+  const [colorMode, rawSetColorMode] = React.useState(undefined);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      rawSetColorMode(getInitialColorMode());
-    }
+    rawSetColorMode(getInitialColorMode());
   }, []);
 
   const setColorMode = value => {
     rawSetColorMode(value);
     // Set Tailwind color mode
-    if (value == 'dark') {
+    if (value === 'dark') {
       document.documentElement.classList.add('dark');
       document.documentElement.classList.remove('light');
     } else {
