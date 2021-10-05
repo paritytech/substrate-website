@@ -60,7 +60,9 @@ const Header = ({ mode, header }) => {
               <div className="pl-8 pr-6">
                 <DocsButton />
               </div>
-              <ThemeToggle />
+              <div className="w-6 h-6">
+                <ThemeToggle />
+              </div>
             </div>
           </div>
         </div>
