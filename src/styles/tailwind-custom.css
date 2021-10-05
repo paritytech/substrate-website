@@ -171,6 +171,7 @@ div[aria-label='animation'] {
 
 /* Image rounded corners fix Safari */
 
-.rounded-md.overflow-hidden {
+.gatsby-image-wrapper.rounded-md,
+.image-rounded {
   mask-image: radial-gradient(white, black);
 }
