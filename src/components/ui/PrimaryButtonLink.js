@@ -4,7 +4,7 @@ import React from 'react';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
-const PrimaryButton = ({ children, link, onClick, fullWidth = false, hero = false }) => {
+export default function PrimaryButtonLink({ children, link, onClick, fullWidth = false, hero = false }) {
   return (
     <Link to={link}>
       <div
@@ -32,6 +32,4 @@ const PrimaryButton = ({ children, link, onClick, fullWidth = false, hero = fals
       </div>
     </Link>
   );
-};
-
-export default PrimaryButton;
+}
