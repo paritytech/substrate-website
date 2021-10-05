@@ -197,9 +197,9 @@ const iconsMap = {
   upgradable: upgradable,
 };
 
-export default function Icon({ name, className }) {
+export default function Icon({ name, className, ...others }) {
   if (!name) return <span className="w-5"></span>;
   const IconComponent = iconsMap[name];
   if (!IconComponent) return <span className="w-5"></span>;
-  return <IconComponent name={name} className={className}></IconComponent>;
+  return <IconComponent name={name} className={className} {...others}></IconComponent>;
 }
