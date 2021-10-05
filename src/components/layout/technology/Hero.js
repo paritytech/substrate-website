@@ -1,12 +1,10 @@
 import cx from 'classnames';
 import React from 'react';
-import { browserName } from 'react-device-detect';
 import Lottie from 'react-lottie';
 
+import { isSafari } from '../../../utils/browser';
 import { Link } from '../../default/Link';
 import Section from '../../layout/Section';
-
-const isSafari = browserName === 'Safari';
 
 const pages = [
   {
@@ -63,6 +61,7 @@ const Hero = ({ page, animationData, children }) => {
           <div className="order-3 self-start max-w-lg font-medium mb-8 lg:mb-0">{children}</div>
           {animationData && (
             <div className="order-2 lg:row-span-2 w-full h-auto aspect-w-9 aspect-h-7 lg:aspect-h-9">
+              {/* TODO: fox safari animation */}
               {!isSafari && <Lottie options={{ animationData }} isClickToPauseDisabled width="full" height="full" />}
             </div>
           )}

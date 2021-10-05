@@ -2,7 +2,6 @@ import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
-import { browserName } from 'react-device-detect';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
 
@@ -20,6 +19,7 @@ import FlexibleIcon from '../images/svg/technology/icon-flexible.svg';
 import FutureProofIcon from '../images/svg/technology/icon-future-proof.svg';
 import InteroperableIcon from '../images/svg/technology/icon-interoperable.svg';
 import OpenIcon from '../images/svg/technology/icon-open.svg';
+import { isSafari } from '../utils/browser';
 
 const cards = [
   {
@@ -50,8 +50,6 @@ const cards = [
 ];
 
 export default function Home() {
-  const isSafari = browserName === 'Safari';
-
   const heroAnimationOptions = {
     loop: true,
     autoplay: true,
@@ -247,6 +245,7 @@ export default function Home() {
         <div className="container max-w-6xl lg:px-10 pt-16 pb-24">
           <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)} threshold={0.75}>
             <div className="aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
+              {/* TODO: fox safari animation */}
               {!isSafari && (
                 <Lottie
                   isStopped={animationIsStopped}
