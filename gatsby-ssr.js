@@ -32,7 +32,7 @@ const MagicScriptTag = () => {
 };
 
 export const onRenderBody = ({ setPreBodyComponents }) => {
-  setPreBodyComponents(<MagicScriptTag />);
+  setPreBodyComponents(<MagicScriptTag key={1} />);
 };
 
 export const wrapRootElement = ({ element }) => (
