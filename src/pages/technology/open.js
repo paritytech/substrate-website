@@ -12,9 +12,11 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
+import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import * as animation from '../../images/animation/technology/open.json';
 
 const Open = () => {
+  const { siteMetadata } = useSiteMetadata();
   return (
     <Layout>
       <SEO title="Open" />
@@ -38,7 +40,7 @@ const Open = () => {
           linkText={
             <p className="underline-animate">
               Explore the components of a{' '}
-              <Link to="https://substrate-docs-staging.netlify.app/v3/getting-started/architecture">
+              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/getting-started/architecture`}>
                 Substrate-based blockchain node »
               </Link>
             </p>

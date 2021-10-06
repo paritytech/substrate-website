@@ -1,17 +1,17 @@
 import { Link as LinkI18n } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
-// TODO: replace sameWindow with testDocsLink?
-
-const Link = ({ to, title, children, sameWindow = false, ...other }) => {
+const Link = ({ to, title, children, ...other }) => {
   const external = testExternalLink(to);
-  if (external && !sameWindow) {
+  const docsLink = testDocsLink(to);
+
+  if (external) {
     return (
       <a href={to} title={title} {...other} target="_blank" rel="noreferrer noopener">
         {children}
       </a>
     );
-  } else if (external && sameWindow) {
+  } else if (docsLink) {
     return (
       <a href={to} title={title} {...other}>
         {children}
@@ -26,17 +26,18 @@ const Link = ({ to, title, children, sameWindow = false, ...other }) => {
   }
 };
 
-const LinkMenu = ({ prefix, slug, children, internal = null, ...other }) => {
+const LinkMenu = ({ prefix, slug, children, ...other }) => {
   const external = testExternalLink(slug);
-  if (external && internal) {
+  const docsLink = testDocsLink(slug);
+  if (external) {
     return (
-      <a href={slug} {...other}>
+      <a href={slug} {...other} target="_blank" rel="noreferrer noopener">
         {children}
       </a>
     );
-  } else if (external) {
+  } else if (docsLink) {
     return (
-      <a href={slug} {...other} target="_blank" rel="noreferrer noopener">
+      <a href={slug} {...other}>
         {children}
       </a>
     );

@@ -10,32 +10,34 @@ import Card from '../components/layout/technology/Card';
 import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 import * as animationData from '../images/animation/technology/overview.json';
 
-const highlights = [
-  {
-    title: 'Tooling',
-    icon: 'tools',
-    description:
-      'No need to reinvent the wheel, Substrate has robust tooling for development, deployment, and debugging.',
-    link: 'https://substrate-docs-staging.netlify.app/v3/tools',
-  },
-  {
-    title: 'Light-Client-First Design',
-    icon: 'light-client',
-    description:
-      'Browsers can interact directly with the blockchain network instead of relying on resource-heavy local node infrastructure or third party services.',
-    link: '/substrate-connect',
-  },
-  {
-    title: 'Forkless Upgrades',
-    icon: 'forkless-upgrades',
-    description: 'Upgrading blockchains has never been easier. With Substrate, everyone stays on the same path.',
-    link: 'https://substrate-docs-staging.netlify.app/v3/runtime/upgrades',
-  },
-];
-
 export default function Technology() {
+  const { siteMetadata } = useSiteMetadata();
+  const highlights = [
+    {
+      title: 'Tooling',
+      icon: 'tools',
+      description:
+        'No need to reinvent the wheel, Substrate has robust tooling for development, deployment, and debugging.',
+      link: `${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/tools`,
+    },
+    {
+      title: 'Light-Client-First Design',
+      icon: 'light-client',
+      description:
+        'Browsers can interact directly with the blockchain network instead of relying on resource-heavy local node infrastructure or third party services.',
+      link: '/substrate-connect',
+    },
+    {
+      title: 'Forkless Upgrades',
+      icon: 'forkless-upgrades',
+      description: 'Upgrading blockchains has never been easier. With Substrate, everyone stays on the same path.',
+      link: `${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/upgrades`,
+    },
+  ];
+
   return (
     <Layout mode="full">
       <SEO title="Substrate Technology" />

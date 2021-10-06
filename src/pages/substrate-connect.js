@@ -8,6 +8,7 @@ import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
 import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 import * as animationData from '../images/animation/substrate-connect.json';
 
 const networks = [
@@ -37,6 +38,8 @@ const networks = [
 ];
 
 export default function Connect() {
+  const { siteMetadata } = useSiteMetadata();
+
   return (
     <Layout mode="full">
       <SEO title="Substrate Connect" />
@@ -116,7 +119,7 @@ export default function Connect() {
             <PrimaryButtonLink link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
               Get the extension
             </PrimaryButtonLink>
-            <LineArrowButton link="https://substrate-docs-staging.netlify.app/" className="block mt-8">
+            <LineArrowButton link={siteMetadata.docsUrl} className="block mt-8">
               Developer Docs
             </LineArrowButton>
           </div>

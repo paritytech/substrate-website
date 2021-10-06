@@ -49,32 +49,26 @@ const developers = [
   {
     url: DOCS_URL,
     id: 'developers.home',
-    internal: true,
   },
   {
     url: DOCS_URL + '/v3/getting-started/overview',
     id: 'developers.docs',
-    internal: true,
   },
   {
     url: DOCS_URL + '/how-to-guides/v3',
     id: 'developers.how-to-guides',
-    internal: true,
   },
   {
     url: DOCS_URL + '/tutorials/v3',
     id: 'developers.tutorials',
-    internal: true,
   },
   {
     url: DOCS_URL + '/rustdocs',
     id: 'developers.rustdocs',
-    internal: true,
   },
   {
     url: DOCS_URL + '/playground',
     id: 'developers.playground',
-    internal: true,
   },
 ];
 

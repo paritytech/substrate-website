@@ -26,7 +26,6 @@ const ExploreLinkSection = ({ links }) => {
       link: siteMetadata.docsUrl,
       linkText: 'Start building',
       icon: 'diamond-pink',
-      sameWindow: true,
     },
     vision: {
       title: 'Vision',
@@ -62,8 +61,8 @@ const ExploreLinkSection = ({ links }) => {
       <Section>
         <h4 className="text-2xl font-bold mb-16">Explore More Substrate</h4>
         <div className="md:grid grid-cols-3 gap-6 xl:gap-10">
-          {currentLinks.map(({ title, description, link, linkText, icon, sameWindow }, index) => (
-            <Link key={index} to={link} sameWindow={sameWindow}>
+          {currentLinks.map(({ title, description, link, linkText, icon }, index) => (
+            <Link key={index} to={link}>
               <div className="h-full hover:bg-white hover:shadow-xl hover:scale-105 rounded-md p-8 mb-16 sm:mb-0 flex flex-col justify-between transition-all dark:hover:bg-substrateBlackish">
                 <div>
                   <Icon name={icon} className="mb-6 w-8 h-8" />

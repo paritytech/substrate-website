@@ -13,9 +13,12 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
+import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import * as animation from '../../images/animation/technology/flexible.json';
 
-const Flexible = () => {
+export default function Flexible() {
+  const { siteMetadata } = useSiteMetadata();
+
   return (
     <Layout>
       <SEO title="Flexible" />
@@ -40,8 +43,7 @@ const Flexible = () => {
           title="Intentional"
           linkText={
             <p className="underline-animate">
-              Want to learn more?{' '}
-              <Link to="https://substrate-docs-staging.netlify.app/">Check out the overview documentation »</Link>
+              Want to learn more? <Link to={siteMetadata.docsUrl}>Check out the overview documentation »</Link>
             </p>
           }
         >
@@ -84,7 +86,7 @@ const Flexible = () => {
           linkText={
             <p className="underline-animate">
               Perform your first forkless upgrade using{' '}
-              <Link to="https://substrate-docs-staging.netlify.app/tutorials/v3/forkless-upgrades">
+              <Link to={`${siteMetadata.docsUrl}/tutorials/v${siteMetadata.docsVersion}/forkless-upgrades`}>
                 this tutorial »
               </Link>
             </p>
@@ -166,9 +168,7 @@ const Flexible = () => {
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>
   );
-};
-
-export default Flexible;
+}
 
 export const query = graphql`
   query {
