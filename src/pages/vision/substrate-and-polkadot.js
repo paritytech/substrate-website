@@ -12,7 +12,6 @@ import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import BlockQuote from '../../components/ui/Blockquote';
 import * as animationData from '../../images/animation/substrate-polkadot.json';
-import { isSafari } from '../../utils/browser';
 
 const Vision = () => {
   return (
@@ -21,19 +20,16 @@ const Vision = () => {
       <Article>
         <header className="container -mt-10 mb-8">
           <figure className="w-full lg:w-3/4 lg:mx-auto aspect-w-5 lg:aspect-w-6 aspect-h-2">
-            {/* TODO: fox safari animation */}
-            {!isSafari && (
-              <Lottie
-                options={{
-                  animationData,
-                  loop: false,
-                  rendererSettings: {
-                    preserveAspectRatio: 'xMidYMid slice',
-                  },
-                }}
-                isClickToPauseDisabled
-              />
-            )}
+            <Lottie
+              options={{
+                animationData,
+                loop: false,
+                rendererSettings: {
+                  preserveAspectRatio: 'xMidYMid slice',
+                },
+              }}
+              isClickToPauseDisabled
+            />
           </figure>
         </header>
         <div className="container mb-20 lg:px-10">

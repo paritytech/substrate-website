@@ -13,13 +13,12 @@ import LineArrowButton from '../components/ui/LineArrowButton';
 import PrimaryButton from '../components/ui/PrimaryButton';
 import SecondaryButton from '../components/ui/SecondaryButton';
 import * as heroAnimationData from '../images/animation/home/hero.json';
-import * as polkadotAnimationData from '../images/animation/home/substrate-polkadot.json';
+import * as polkadotAnimationData from '../images/animation/home/substrate-polkadot-simple.json';
 import TeamLogos from '../images/svg/home/logos.svg';
 import FlexibleIcon from '../images/svg/technology/icon-flexible.svg';
 import FutureProofIcon from '../images/svg/technology/icon-future-proof.svg';
 import InteroperableIcon from '../images/svg/technology/icon-interoperable.svg';
 import OpenIcon from '../images/svg/technology/icon-open.svg';
-import { isSafari } from '../utils/browser';
 
 const cards = [
   {
@@ -245,15 +244,12 @@ export default function Home() {
         <div className="container max-w-6xl lg:px-10 pt-16 pb-24">
           <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)} threshold={0.75}>
             <div className="aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
-              {/* TODO: fox safari animation */}
-              {!isSafari && (
-                <Lottie
-                  isStopped={animationIsStopped}
-                  isClickToPauseDisabled
-                  options={polkadotAnimationOptions}
-                  className="fill-current text-white"
-                />
-              )}
+              <Lottie
+                isStopped={animationIsStopped}
+                isClickToPauseDisabled
+                options={polkadotAnimationOptions}
+                className="fill-current text-white"
+              />
             </div>
           </InView>
           <p className="text-center text-3xl mb-12 leading-normal" onClick={() => playAnimation(false)}>
