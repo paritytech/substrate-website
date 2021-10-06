@@ -69,7 +69,7 @@ export default function Projects({ data }) {
             <StaticImage
               src="../../images/photos/ecosystem/home/youtube.jpg"
               alt="Meet Substrate Teams"
-              className="aspect-w-3 aspect-h-2 w-full h-full m-0 relative rounded-md"
+              className="aspect-w-3 aspect-h-2 w-full h-full m-0 relative rounded-md overflow-hidden"
             />
             <h3 className="absolute top-8 left-8 text-white font-bold text-2xl mb-2">Meet Substrate teams</h3>
             <p className="absolute left-8 bottom-8 text-white opacity-75 m-0 text-lg">

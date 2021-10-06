@@ -4,12 +4,14 @@ import Icon from './Icon';
 
 const FlipIcon = ({ icons }) => {
   return (
-    <div className="relative w-full h-0" style={{ paddingTop: 'calc(1 / 1 * 100%)' }}>
-      <div className="absolute w-full top-0">
-        <Icon name={icons[0]} className="w-full h-auto" />
-      </div>
-      <div data-aos="fade-in" data-aos-delay="300" className="top-0 bg-white dark:bg-substrateDarkest absolute w-full">
-        <Icon name={icons[1]} className="w-full h-auto" />
+    <div className="relative w-full">
+      <Icon name={icons[0]} className="w-full h-auto" />
+      <div
+        data-aos="fade-in"
+        data-aos-delay="300"
+        className="w-full h-full absolute left-0 top-0 bg-white dark:bg-substrateDarkest"
+      >
+        <Icon name={icons[1]} />
       </div>
     </div>
   );

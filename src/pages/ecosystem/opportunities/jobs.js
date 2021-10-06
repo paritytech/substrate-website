@@ -29,7 +29,7 @@ export default function Jobs() {
           <StaticImage
             src="../../../images/photos/ecosystem/jobs/jobs.jpg"
             alt="Man on computer"
-            className="rounded-md order-first md:order-last w-full aspect-w-1 aspect-h-1"
+            className="rounded-md overflow-hidden order-first md:order-last w-full aspect-w-1 aspect-h-1"
           />
         </div>
       </Section>

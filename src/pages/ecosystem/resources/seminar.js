@@ -21,7 +21,7 @@ export default function Seminar() {
         </div>
       </Section>
       <Section>
-        <div className="grid md:grid-cols-2 md:gap-6 bg-substrateGray-light dark:bg-substrateBlackish rounded-md overflow-hidden">
+        <div className="grid md:grid-cols-2 md:gap-6 bg-substrateGray-light dark:bg-substrateBlackish rounded-md overflow-hidden image-rounded">
           <div className="p-8 self-center">
             <h5 className="text-xl font-bold mb-4">An Open Collaborative Learning Call</h5>
             <p className="max-w-sm leading-loose">

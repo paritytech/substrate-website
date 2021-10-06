@@ -13,13 +13,12 @@ import LineArrowButton from '../components/ui/LineArrowButton';
 import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
 import SecondaryButton from '../components/ui/SecondaryButton';
 import * as heroAnimationData from '../images/animation/home/hero.json';
-import * as polkadotAnimationData from '../images/animation/home/substrate-polkadot.json';
+import * as polkadotAnimationData from '../images/animation/home/substrate-polkadot-simple.json';
 import TeamLogos from '../images/svg/home/logos.svg';
 import FlexibleIcon from '../images/svg/technology/icon-flexible.svg';
 import FutureProofIcon from '../images/svg/technology/icon-future-proof.svg';
 import InteroperableIcon from '../images/svg/technology/icon-interoperable.svg';
 import OpenIcon from '../images/svg/technology/icon-open.svg';
-import { isSafari } from '../utils/browser';
 
 const cards = [
   {
@@ -81,7 +80,7 @@ export default function Home() {
       <div className="-mt-36 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
-            <Lottie options={heroAnimationOptions} />
+            <Lottie options={heroAnimationOptions} isClickToPauseDisabled />
             <h1 className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 font-title mb-0 mt-0 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
               The Blockchain Framework
               <br />
@@ -245,15 +244,12 @@ export default function Home() {
         <div className="container max-w-6xl lg:px-10 pt-16 pb-24">
           <InView as="div" triggerOnce onChange={entry => playAnimation(!entry)} threshold={0.75}>
             <div className="aspect-w-10 aspect-h-6 lg:aspect-h-3 mb-8">
-              {/* TODO: fox safari animation */}
-              {!isSafari && (
-                <Lottie
-                  isStopped={animationIsStopped}
-                  isClickToPauseDisabled
-                  options={polkadotAnimationOptions}
-                  className="fill-current text-white"
-                />
-              )}
+              <Lottie
+                isStopped={animationIsStopped}
+                isClickToPauseDisabled
+                options={polkadotAnimationOptions}
+                className="fill-current text-white"
+              />
             </div>
           </InView>
           <p className="text-center text-3xl mb-12 leading-normal" onClick={() => playAnimation(false)}>

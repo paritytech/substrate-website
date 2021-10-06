@@ -50,7 +50,7 @@
     height: 3rem;
     opacity: 1;
     transition: all 400ms ease-in;
-    @apply bg-gradient-to-t	from-white dark:from-substrateDarkest to-transparent;
+    @apply bg-gradient-to-t	from-white dark:from-substrateDarkest to-transparentWhite dark:to-transparentDarkest;
   }
 
   &--active {
