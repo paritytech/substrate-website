@@ -1,5 +1,7 @@
 # `substrate.io`
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f86ac67b-b1aa-41a7-95ec-3a2d14cb3bad/deploy-status)](https://app.netlify.com/sites/substrate-io-staging/deploys)
+
 **Install**
 
 Navigate into your new site’s directory and install all dependencies.
