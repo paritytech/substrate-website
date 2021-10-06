@@ -50,16 +50,18 @@ const Hero = ({ page, animationData, children }) => {
           })}
         </ul>
 
-        <div className="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 lg:gap-x-6">
+        <div className="grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 lg:gap-x-6">
           <div className="order-1 md:self-end">
             <p className="tracking-wider lg:tracking-widest text-lg font-light mt-6 mb-6 lg:mb-10 lg:mt-0 uppercase">
               Substrate Technology
             </p>
-            <h1 className="lg:mb-10 mb-0 font-title font-extrabold text-6xl xl:text-7xl whitespace-nowrap">{page}</h1>
+            <h1 className="md:mb-6 lg:mb-10 mb-0 font-title font-extrabold text-5xl md:text-6xl xl:text-7xl whitespace-nowrap">
+              {page}
+            </h1>
           </div>
           <div className="order-3 self-start max-w-lg font-medium mb-8 lg:mb-0">{children}</div>
           {animationData && (
-            <div className="order-2 lg:row-span-2 w-full h-auto aspect-w-9 aspect-h-7 lg:aspect-h-9">
+            <div className="order-2 md:row-span-2 w-full h-auto aspect-w-9 aspect-h-7 lg:aspect-h-9">
               <Lottie options={{ animationData }} isClickToPauseDisabled width="full" height="full" />
             </div>
           )}
