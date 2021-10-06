@@ -1,6 +1,8 @@
 import { Link as LinkI18n } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
+// TODO: replace sameWindow with testDocsLink?
+
 const Link = ({ to, title, children, sameWindow = false, ...other }) => {
   const external = testExternalLink(to);
   if (external && !sameWindow) {
@@ -51,7 +53,16 @@ const buildSubMenu = (menus, item) => {
   return menus[item.id];
 };
 
+const testDocsLink = href => {
+  const regex = new RegExp(process.env.GATSBY_DOCS_URL, 'i');
+  const match = regex.test(href);
+  return match;
+};
+
 const testExternalLink = href => {
+  if (testDocsLink(href)) {
+    return false;
+  }
   const regex = new RegExp('^(http|https)://', 'i');
   const match = regex.test(href);
   return match;

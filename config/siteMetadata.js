@@ -8,6 +8,7 @@ module.exports = {
   image_og: '',
   siteUrl: 'https://substrate.io',
   docsUrl: process.env.GATSBY_DOCS_URL,
+  docsVersion: 3,
   author: 'Parity/W3F Web Team',
   pressEmail: 'press@parity.io',
   email: 'info@parity.io',
