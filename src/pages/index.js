@@ -10,7 +10,7 @@ import { Link } from '../components/default/Link';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
-import PrimaryButton from '../components/ui/PrimaryButton';
+import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
 import SecondaryButton from '../components/ui/SecondaryButton';
 import * as heroAnimationData from '../images/animation/home/hero.json';
 import * as polkadotAnimationData from '../images/animation/home/substrate-polkadot-simple.json';
@@ -292,9 +292,9 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-10 mb-8">
-            <PrimaryButton hero link="/vision/substrate-and-polkadot">
+            <PrimaryButtonLink hero link="/vision/substrate-and-polkadot">
               Substrate Vision
-            </PrimaryButton>
+            </PrimaryButtonLink>
           </div>
           <div className="text-center">
             <LineArrowButton className="inline-block" large icon="external-link" link="https://polkadot.network/">
@@ -365,9 +365,9 @@ export default function Home() {
               wave of innovation in the blockchain industry. Learn more about how the ecosystem of builders have
               addressed prominent challenges such as transaction costs, network security, and more.
             </p>
-            <PrimaryButton link="/ecosystem/projects" hero={true}>
+            <PrimaryButtonLink link="/ecosystem/projects" hero={true}>
               See all projects
-            </PrimaryButton>
+            </PrimaryButtonLink>
             <br />
             <LineArrowButton className="inline-block mt-6" large link="/ecosystem/projects/case-studies/acala">
               Read the case studies

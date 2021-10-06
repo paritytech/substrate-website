@@ -9,7 +9,7 @@ import IconCard from '../components/layout/ecosystem/IconCard';
 import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
-import PrimaryButton from '../components/ui/PrimaryButton';
+import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
 import { isBrowser } from '../utils/browser';
 
 const logos = [
@@ -85,7 +85,7 @@ export default function Home() {
                 parachains, independent layer-1 blockchains, and infrastructure and tooling solutions for a wide range
                 of use cases.
               </p>
-              <PrimaryButton link="/ecosystem/projects">View Projects</PrimaryButton>
+              <PrimaryButtonLink link="/ecosystem/projects">View Projects</PrimaryButtonLink>
             </div>
           </div>
         </Section>
@@ -134,7 +134,7 @@ export default function Home() {
                 The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
                 resources, taking your Substrate project to the next level.
               </p>
-              <PrimaryButton link="/ecosystem/substrate-builders-program">Learn More</PrimaryButton>
+              <PrimaryButtonLink link="/ecosystem/substrate-builders-program">Learn More</PrimaryButtonLink>
             </div>
           </div>
         </Section>

@@ -7,7 +7,7 @@ import Icon from '../../../components/default/Icon';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
-import PrimaryButton from '../../../components/ui/PrimaryButton';
+import PrimaryButtonLink from '../../../components/ui/PrimaryButtonLink';
 import SecondaryButton from '../../../components/ui/SecondaryButton';
 
 export default function Seminar() {
@@ -29,7 +29,7 @@ export default function Seminar() {
               building on Substrate. Run by DevHub, we meet <span className="font-bold">every other Tuesday</span> at{' '}
               <span className="font-bold">14:00UTC.</span>
             </p>
-            <PrimaryButton link="https://www.crowdcast.io/e/substrate-seminar-2">Live Call</PrimaryButton>
+            <PrimaryButtonLink link="https://www.crowdcast.io/e/substrate-seminar-2">Live Call</PrimaryButtonLink>
             <p className="mb-4 mt-8 font-bold">Add next call to Google Calendar</p>
             <SecondaryButton link="https://calendar.google.com/calendar/b/1?cid=cGFyaXR5LmlvXzJmc2tqN245cm1qcHE1Y2xiOWc3ZWUzZGhvQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
               <span className="inline font-bold mr-3">Add Call</span>

@@ -9,6 +9,12 @@ const Link = ({ to, title, children, sameWindow = false, ...other }) => {
         {children}
       </a>
     );
+  } else if (external && sameWindow) {
+    return (
+      <a href={to} title={title} {...other}>
+        {children}
+      </a>
+    );
   } else {
     return (
       <LinkI18n to={to} title={title} {...other}>

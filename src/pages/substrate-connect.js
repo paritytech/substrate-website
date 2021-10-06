@@ -7,7 +7,7 @@ import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
-import PrimaryButton from '../components/ui/PrimaryButton';
+import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
 import * as animationData from '../images/animation/substrate-connect.json';
 
 const networks = [
@@ -50,9 +50,9 @@ export default function Connect() {
             <p className="mb-8 text-xl md:text-2xl xl:text-3xl font-bold">
               The easiest way to connect to Polkadot, Kusama, and Substrate-based chains.
             </p>
-            <PrimaryButton link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
+            <PrimaryButtonLink link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
               Get the extension
-            </PrimaryButton>
+            </PrimaryButtonLink>
           </div>
           <div className="w-full p-8 lg:p-0 relative" style={{ paddingTop: 'calc(1630 / 1630 * 100%)' }}>
             <div className="h-auto top-0 left-0 w-full absolute">
@@ -113,9 +113,9 @@ export default function Connect() {
               light clients can run simultaneously and can continuously sync as long as the browser stays open. It works
               on all major browsers and does not require a TLS certificate for connecting to nodes.
             </p>
-            <PrimaryButton link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
+            <PrimaryButtonLink link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
               Get the extension
-            </PrimaryButton>
+            </PrimaryButtonLink>
             <LineArrowButton link="https://substrate-docs-staging.netlify.app/" className="block mt-8">
               Developer Docs
             </LineArrowButton>
