@@ -7,6 +7,8 @@ module.exports = {
   description: `Substrate comes with everything you need to build your blockchain. Use Substrate’s pallets to easily create what you want, or craft your own custom logic.`,
   image_og: '',
   siteUrl: 'https://substrate.io',
+  docsUrl: process.env.GATSBY_DOCS_URL,
+  docsVersion: 3,
   author: 'Parity/W3F Web Team',
   pressEmail: 'press@parity.io',
   email: 'info@parity.io',

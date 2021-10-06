@@ -13,6 +13,8 @@ export const useSiteMetadata = () => {
             description
             image_og
             siteUrl
+            docsUrl
+            docsVersion
             author
             pressEmail
             email

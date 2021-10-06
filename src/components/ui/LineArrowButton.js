@@ -4,10 +4,10 @@ import React from 'react';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
-const LineArrowButton = ({ link, sameWindow, className, primary, large, children, icon = 'arrow-more' }) => {
+const LineArrowButton = ({ link, className, primary, large, children, icon = 'arrow-more' }) => {
   if (link) {
     return (
-      <Link to={link} sameWindow={sameWindow}>
+      <Link to={link}>
         <LineArrowButtonContent className={className} primary={primary} large={large} icon={icon}>
           {children}
         </LineArrowButtonContent>

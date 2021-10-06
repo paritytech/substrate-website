@@ -21,7 +21,6 @@ export const useSiteMenus = () => {
             developers {
               id
               url
-              internal
             }
             vision {
               id

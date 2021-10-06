@@ -14,9 +14,11 @@ import InfoCard from '../../components/layout/technology/InfoCard';
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
+import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import * as animation from '../../images/animation/technology/interoperable.json';
 
 const Interoperable = () => {
+  const { siteMetadata } = useSiteMetadata();
   return (
     <Layout>
       <SEO title="Interoperable" />
@@ -132,7 +134,7 @@ const Interoperable = () => {
           linkText={
             <p className="underline-animate">
               Read more about{' '}
-              <Link to="https://substrate-docs-staging.netlify.app/v3/concepts/off-chain-features">
+              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/concepts/off-chain-features`}>
                 off-chain features
               </Link>{' '}
               in the documentation »

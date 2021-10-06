@@ -12,6 +12,7 @@ import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
 import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
 import SecondaryButton from '../components/ui/SecondaryButton';
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 import * as heroAnimationData from '../images/animation/home/hero.json';
 import * as polkadotAnimationData from '../images/animation/home/substrate-polkadot-simple.json';
 import TeamLogos from '../images/svg/home/logos.svg';
@@ -20,35 +21,8 @@ import FutureProofIcon from '../images/svg/technology/icon-future-proof.svg';
 import InteroperableIcon from '../images/svg/technology/icon-interoperable.svg';
 import OpenIcon from '../images/svg/technology/icon-open.svg';
 
-const cards = [
-  {
-    title: 'Technology',
-    icon: 'technology',
-    description:
-      'Learn why Substrate is the most powerful framework to quickly build customized future proof blockchains.',
-    link: '/technology',
-    linkText: 'Explore the tech',
-    delay: 0,
-  },
-  {
-    title: 'Developers',
-    icon: 'developers',
-    description: 'Dive into the docs, tutorials, and resources to immediately get started building with Substrate.',
-    link: 'https://substrate-docs-staging.netlify.app/',
-    linkText: 'Start coding',
-    delay: 200,
-  },
-  {
-    title: 'Projects',
-    icon: 'projects',
-    description: 'Explore innovative use cases of Substrate implemented across many industries around the world.',
-    link: '/ecosystem/projects',
-    linkText: 'Discover projects',
-    delay: 400,
-  },
-];
-
 export default function Home() {
+  const { siteMetadata } = useSiteMetadata();
   const heroAnimationOptions = {
     loop: true,
     autoplay: true,
@@ -69,6 +43,34 @@ export default function Home() {
       viewBoxSize: '0 640 2160 880',
     },
   };
+
+  const cards = [
+    {
+      title: 'Technology',
+      icon: 'technology',
+      description:
+        'Learn why Substrate is the most powerful framework to quickly build customized future proof blockchains.',
+      link: '/technology',
+      linkText: 'Explore the tech',
+      delay: 0,
+    },
+    {
+      title: 'Developers',
+      icon: 'developers',
+      description: 'Dive into the docs, tutorials, and resources to immediately get started building with Substrate.',
+      link: siteMetadata.docsUrl,
+      linkText: 'Start coding',
+      delay: 200,
+    },
+    {
+      title: 'Projects',
+      icon: 'projects',
+      description: 'Explore innovative use cases of Substrate implemented across many industries around the world.',
+      link: '/ecosystem/projects',
+      linkText: 'Discover projects',
+      delay: 400,
+    },
+  ];
 
   const [activeTab, setActiveTab] = useState(1);
   const [expandedTab, toggleExpandedTab] = useState(false);

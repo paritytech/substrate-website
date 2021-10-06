@@ -13,9 +13,11 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
+import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import * as animation from '../../images/animation/technology/future-proof.json';
 
 const FutureProof = () => {
+  const { siteMetadata } = useSiteMetadata();
   return (
     <Layout>
       <SEO title="Future-Proof" />
@@ -42,7 +44,9 @@ const FutureProof = () => {
           linkText={
             <p className="underline-animate">
               Learn how{' '}
-              <Link to="https://substrate-docs-staging.netlify.app/v3/runtime/upgrades">Substrate upgrades work »</Link>
+              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/upgrades`}>
+                Substrate upgrades work »
+              </Link>
             </p>
           }
         >
@@ -82,8 +86,8 @@ const FutureProof = () => {
           title="Composable"
           linkText={
             <p className="underline-animate">
-              Explore how <Link to="https://substrate-docs-staging.netlify.app/v3/runtime/frame">FRAME</Link> enables
-              composability »
+              Explore how <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/frame`}>FRAME</Link>{' '}
+              enables composability »
             </p>
           }
         >
@@ -123,7 +127,9 @@ const FutureProof = () => {
           linkText={
             <p className="underline-animate">
               Adapt your runtime by adding a pallet using{' '}
-              <Link to="https://substrate-docs-staging.netlify.app/tutorials/v3/add-a-pallet/">this tutorial »</Link>
+              <Link to={`${siteMetadata.docsUrl}/tutorials/v${siteMetadata.docsVersion}/add-a-pallet/`}>
+                this tutorial »
+              </Link>
             </p>
           }
         >
