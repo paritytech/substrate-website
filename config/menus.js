@@ -1,4 +1,4 @@
-const DOCS_URL = 'https://substrate-docs-staging.netlify.app';
+const DOCS_URL = process.env.GATSBY_DOCS_URL;
 
 /* the main menu, ids of items must match
    the submenu's key of this js object */
