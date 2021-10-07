@@ -24,7 +24,11 @@ function getUrlColorMode(location) {
   const searchParams = new URL(currentUrl).searchParams;
   const mode = searchParams.get('mode');
 
-  if (mode === 'dark' || mode === 'light') return mode;
+  if (mode === 'dark' || mode === 'light') {
+    searchParams.delete('mode');
+    window.history.replaceState(null, null, location.pathname + searchParams);
+    return mode;
+  }
 
   return false;
 }
