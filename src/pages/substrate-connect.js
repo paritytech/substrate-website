@@ -47,9 +47,7 @@ export default function Connect() {
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="lg:max-w-md self-center mb-8 md:mb-20">
             <p className="tracking-wider lg:tracking-widest font-semibold text-xl mb-2 uppercase">Substrate</p>
-            <h1 data-aos="fade-up" className="font-title text-5xl md:text-6xl xl:text-8xl font-extrabold mb-8">
-              Connect
-            </h1>
+            <h1 className="font-title text-5xl md:text-6xl xl:text-8xl font-extrabold mb-8">Connect</h1>
             <p className="mb-8 text-xl md:text-2xl xl:text-3xl font-bold">
               The easiest way to connect to Polkadot, Kusama, and Substrate-based chains.
             </p>
