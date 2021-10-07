@@ -164,7 +164,7 @@ const FutureProof = () => {
         for whatever the <strong className="font-bold">future</strong> brings.
       </HighlightBanner>
 
-      <CardsNav heading="Learn more about what makes Substrate's technology unique" currentPage="Future-Proof" />
+      <CardsNav currentPage="Future-Proof" />
 
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>

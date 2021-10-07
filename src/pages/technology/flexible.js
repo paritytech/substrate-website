@@ -163,7 +163,7 @@ export default function Flexible() {
         specific needs.
       </HighlightBanner>
 
-      <CardsNav heading="Learn more About Our Technology" currentPage="Flexible" />
+      <CardsNav currentPage="Flexible" />
 
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>
