@@ -24,8 +24,7 @@ function getUrlColorMode(location) {
   const searchParams = new URL(currentUrl).searchParams;
   const mode = searchParams.get('mode');
 
-  if (mode === 'dark') return 'dark';
-  if (mode === 'light') return 'light';
+  if (mode === 'dark' || mode === 'light') return mode;
 
   return false;
 }
