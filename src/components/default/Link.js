@@ -7,7 +7,6 @@ const DocsLink = ({ to, title, children, ...other }) => {
   const { colorMode } = useContext(ThemeContext);
 
   const handleDocsLink = (e, to) => {
-    if (colorMode === 'light') return;
     e.preventDefault();
     window.location.href = to + `?mode=${colorMode}`;
   };
