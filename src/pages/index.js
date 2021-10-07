@@ -49,7 +49,7 @@ export default function Home() {
       title: 'Technology',
       icon: 'technology',
       description:
-        'Learn why Substrate is the most powerful framework to quickly build customized future proof blockchains.',
+        'Learn why Substrate is the most powerful framework to quickly build customized future-proof blockchains.',
       link: '/technology',
       linkText: 'Explore the tech',
       delay: 0,
@@ -309,8 +309,8 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-extrabold mb-10">The building blocks for a decentralized and fairer internet.</h2>
           <p className="text-2xl leading-relaxed mb-8">
-            Substrate makes building a blockchain far easier, faster, cheaper, and safer than ever before. As an open
-            source framework, developers gain free access to a wide codebase developed and used by industry-leading
+            Substrate makes building a blockchain far easier, faster, cheaper, and safer than ever before. As an
+            open-source framework, developers gain free access to a wide codebase developed and used by industry-leading
             teams building some of the biggest networks today. Learn more.
           </p>
         </div>
@@ -343,7 +343,7 @@ export default function Home() {
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="600">
               <Link to="/technology/future-proof" className="technology-teaser__icon text-center">
                 <FutureProofIcon />
-                Future Proof
+                Future-Proof
               </Link>
             </div>
           </div>

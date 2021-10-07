@@ -21,7 +21,7 @@ const FutureProof = () => {
   return (
     <Layout>
       <SEO title="Future-Proof" />
-      <Hero page="Future Proof" animationData={animation}>
+      <Hero page="Future-Proof" animationData={animation}>
         <p>
           Blockchain technology is evolving at a rapid pace and has spurred innovation in other areas such as zero
           knowledge, consensus mechanisms, cryptographic libraries, and much more. It&apos;s challenging enough to keep
@@ -135,9 +135,9 @@ const FutureProof = () => {
         >
           <p>
             An ever-growing number of pallets are available, created by both Parity Technologies and the community.
-            These can be combined in many combinations to fit the needs of the desired use case. From an Oracle pallet
-            to a Zero-knowledge verifier pallet, even a Governance pallet, there are numerous existing pallets that can
-            be integrated from the start or added later with forkless runtime upgrades.
+            These can be combined in many combinations to fit the needs of the desired use case. From the Oracle pallet
+            to the Zero-Knowledge Verifier pallet and the Governance pallet, there are numerous existing pallets that
+            can be integrated from the start or added later with forkless runtime upgrades.
           </p>
           <Blockquote>
             <p className="mb-0">
@@ -160,11 +160,11 @@ const FutureProof = () => {
       </Section>
 
       <HighlightBanner icon="future-proof">
-        Founders and Developers can be confident that their blockchain is <strong className="font-bold">ready</strong>{' '}
+        Founders and developers can be confident that their blockchain is <strong className="font-bold">ready</strong>{' '}
         for whatever the <strong className="font-bold">future</strong> brings.
       </HighlightBanner>
 
-      <CardsNav heading="Learn more about what makes Substrate's technology unique" currentPage="Future Proof" />
+      <CardsNav heading="Learn more about what makes Substrate's technology unique" currentPage="Future-Proof" />
 
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>

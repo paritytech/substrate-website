@@ -78,7 +78,7 @@ export default function Technology() {
                 </Link>{' '}
                 and{' '}
                 <Link className="text-substrateBlue" to="/technology/future-proof">
-                  future proof
+                  future-proof
                 </Link>{' '}
                 blockchain framework.
               </p>
@@ -124,7 +124,7 @@ export default function Technology() {
                 <Card page="Flexible" mode="horizontal" />
                 <Card page="Open" mode="horizontal" delay={200} />
                 <Card page="Interoperable" mode="horizontal" delay={400} />
-                <Card page="Future Proof" mode="horizontal" delay={600} />
+                <Card page="Future-Proof" mode="horizontal" delay={600} />
               </div>
             </div>
           </Section>

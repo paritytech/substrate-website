@@ -23,7 +23,7 @@ const pages = [
     link: '/technology/interoperable',
   },
   {
-    title: 'Future Proof',
+    title: 'Future-Proof',
     link: '/technology/future-proof',
   },
 ];

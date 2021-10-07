@@ -133,7 +133,7 @@ const Vision = () => {
                   different priorities in your mind than your own.
                 </p>
                 <p>
-                  For example, reusing the Ethereum codebase, implies several limitations: having to place all of your
+                  For example, reusing the Ethereum codebase implies several limitations: having to place all of your
                   business logic in terms of the EVM, being forced to use one of the two EVM languages, having all
                   business logic dynamically metered, and being limited to Ethereum&apos;s transaction pool and lack of
                   core upgradability.

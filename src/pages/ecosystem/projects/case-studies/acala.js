@@ -58,7 +58,7 @@ export default function AcalaCaseStudy({ data }) {
             <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={acalaData.name} />
             <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{acalaData.name}</div>
           </div>
-          <div className="mb-3 font-bold text-lg md:text-xl">The DeFi and liquidity hub for Polkadot</div>
+          <div className="mb-3 font-bold text-lg md:text-xl">DeFi and liquidity hub for Polkadot</div>
           <div className="text-lg md:text-xl">Flexibility, Security, Compatibility, Cost</div>
           <div className="my-10">
             <div className="mb-3">
@@ -102,7 +102,7 @@ export default function AcalaCaseStudy({ data }) {
             This involves a lot more work and brings them unwanted exposure to the crypto market.
           </p>
           <p>
-            Oracle is a very important component in many DeFi protocols. Oracle operators fetch external data and feed
+            Oracles are a very important component in many DeFi protocols. Oracle operators fetch external data and feed
             them back to the blockchain. However, there are few major issues with existing oracle solutions on current
             major DeFi platforms. Firstly, oracle feed transactions are beneficial to the platform, but those
             transactions are still subject to a transaction fee. This significantly increases the cost of using oracles
@@ -149,7 +149,7 @@ export default function AcalaCaseStudy({ data }) {
             platform with minimal changes, and Solidity developers can develop DeFi applications on Acala with familiar
             tools and libraries. At the same time, they can still customize the Acala EVM+ to include new features that
             are not available on other EVM platforms. This will allow Solidity smart contracts to also leverage all the
-            advanced features of Acala as well as the multi-chain ecosystem of Polkadot.
+            advanced features of Acala as well as the multichain ecosystem of Polkadot.
           </p>
 
           <div className="flex items-center mt-10 mb-6">
@@ -166,17 +166,17 @@ export default function AcalaCaseStudy({ data }) {
             Acala developed and implemented a set of Substrate pallets with different capabilities. All of these could
             be achieved thanks to the modularity of Substrate. To start with, the{' '}
             <Link to="https://github.com/AcalaNetwork/Acala/blob/master/modules/transaction-payment/src/lib.rs">
-              Transaction Payment Pallet{' '}
+              Transaction Payment pallet{' '}
             </Link>{' '}
             handles the fees to be paid in different assets. It uses a DEX to handle the transaction fees, and the
             SignedExtension to execute them. This pallet is very tightly coupled with the{' '}
             <Link to="https://github.com/open-web3-stack/open-runtime-module-library/blob/master/oracle/src/lib.rs">
-              Oracle Pallet
+              Oracle pallet
             </Link>
             , which is feeless and equipped with MEV Protection, thanks to the way Substrate allows each pallet to be
             built. The Oracle pallet leverages the Weight Class in Substrate and the ability to customize the
             information to be dispatched. On top of all of that, Acala also built its own implementation of the{' '}
-            <Link to="https://github.com/AcalaNetwork/Acala/blob/master/modules/evm/src/lib.rs">EVM Pallet</Link>{' '}
+            <Link to="https://github.com/AcalaNetwork/Acala/blob/master/modules/evm/src/lib.rs">EVM pallet</Link>{' '}
             leveraging on the extensibility property of all pallets in Substrate. Finally, Acala is also utilizing{' '}
             <Link to="https://github.com/AcalaNetwork/Acala/blob/master/modules/evm-accounts/src/lib.rs">
               ECDSA Crypto

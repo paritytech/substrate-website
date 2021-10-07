@@ -250,7 +250,7 @@ export default function Home() {
                 icon="event"
                 description="In person or online, from meetups to conferences, check out the growing number of events in the ecosystem."
                 link="https://www.parity.io/events/"
-                linkText="Upcoming Events"
+                linkText="Upcoming events"
                 color="#ccc8ff"
                 delay="200"
               />

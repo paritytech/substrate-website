@@ -134,7 +134,7 @@ export default function Flexible() {
         >
           <p>
             The speed of transactions isn’t the only metric that makes a blockchain network fast. The speed of
-            development, upgrades, and user experience is also important.
+            development, upgrades, and user experience are also important.
           </p>
           <Blockquote>
             <p className="mb-0">
