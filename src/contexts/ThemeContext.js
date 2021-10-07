@@ -22,15 +22,16 @@ function getInitialColorMode() {
 export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children, value }) => {
-  const { location } = value;
   const [colorMode, rawSetColorMode] = React.useState(undefined);
-
-  const currentUrl = location.href;
-  const searchParams = new URL(currentUrl).searchParams;
-  const mode = searchParams.get('mode');
 
   useEffect(() => {
     rawSetColorMode(getInitialColorMode());
+
+    const { location } = value;
+    const currentUrl = location.href;
+    const searchParams = new URL(currentUrl).searchParams;
+    const mode = searchParams.get('mode');
+
     if (mode === 'dark') {
       setColorMode(mode);
     }
