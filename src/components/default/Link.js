@@ -9,7 +9,7 @@ const DocsLink = ({ to, title, children, ...other }) => {
   const handleDocsLink = (e, to) => {
     if (colorMode === 'light') return;
     e.preventDefault();
-    window.location.href = to + `?m=${colorMode}`;
+    window.location.href = to + `?mode=${colorMode}`;
   };
 
   return (
