@@ -115,7 +115,7 @@ export default function Technology() {
             })}
           </ul>
         </Section>
-        <div className="w-screen overflow-x-hidden">
+        <div className="w-screen max-w-full overflow-x-hidden overflow-y-hidden">
           <Section>
             <div className="relative md:-mt-10">
               <Icon name="diamond-green" className="hidden md:block absolute opacity-20 right-0 w-1/3" />

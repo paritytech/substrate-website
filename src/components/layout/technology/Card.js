@@ -64,7 +64,7 @@ const Card = ({ page, delay, mode }) => {
             <p className="mb-6">{description}</p>
           </div>
           <div className="absolute bottom-8">
-            <LineArrowButton>Read More</LineArrowButton>
+            <LineArrowButton>Read more</LineArrowButton>
           </div>
         </div>
       </div>

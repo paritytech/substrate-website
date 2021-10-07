@@ -8,7 +8,7 @@ const pages = ['Flexible', 'Open', 'Interoperable', 'Future Proof'];
 
 const CardsNav = ({ heading, currentPage }) => {
   return (
-    <div className="w-screen overflow-x-hidden">
+    <div className="w-screen max-w-full overflow-x-hidden overflow-y-hidden">
       <Section>
         <div className="relative">
           <Icon name="diamond-green" className="hidden md:block absolute opacity-20 right-0 w-1/3" />
