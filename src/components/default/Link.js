@@ -1,5 +1,23 @@
 import { Link as LinkI18n } from 'gatsby-plugin-react-i18next';
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { ThemeContext } from '../../contexts/ThemeContext';
+
+const DocsLink = ({ to, title, children, ...other }) => {
+  const { colorMode } = useContext(ThemeContext);
+
+  const handleDocsLink = (e, to) => {
+    if (colorMode === 'light') return;
+    e.preventDefault();
+    window.location.href = to + `?m=${colorMode}`;
+  };
+
+  return (
+    <a href={to} title={title} onClick={e => handleDocsLink(e, to)} {...other}>
+      {children}
+    </a>
+  );
+};
 
 const Link = ({ to, title, children, ...other }) => {
   const external = testExternalLink(to);
@@ -13,9 +31,9 @@ const Link = ({ to, title, children, ...other }) => {
     );
   } else if (docsLink) {
     return (
-      <a href={to} title={title} {...other}>
+      <DocsLink to={to} title={title} {...other}>
         {children}
-      </a>
+      </DocsLink>
     );
   } else {
     return (
@@ -26,7 +44,7 @@ const Link = ({ to, title, children, ...other }) => {
   }
 };
 
-const LinkMenu = ({ prefix, slug, children, ...other }) => {
+const LinkMenu = ({ prefix, slug, title, children, ...other }) => {
   const external = testExternalLink(slug);
   const docsLink = testDocsLink(slug);
   if (external) {
@@ -37,9 +55,9 @@ const LinkMenu = ({ prefix, slug, children, ...other }) => {
     );
   } else if (docsLink) {
     return (
-      <a href={slug} {...other}>
+      <DocsLink to={slug} title={title} {...other}>
         {children}
-      </a>
+      </DocsLink>
     );
   } else {
     return (
