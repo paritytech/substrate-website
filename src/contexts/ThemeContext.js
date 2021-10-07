@@ -37,10 +37,11 @@ export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children, value }) => {
   const [colorMode, rawSetColorMode] = React.useState(undefined);
+  const { location } = value;
 
   useEffect(() => {
     rawSetColorMode(getInitialColorMode());
-    if (getUrlColorMode(value.location)) setColorMode(getUrlColorMode(value.location));
+    if (getUrlColorMode(location)) setColorMode(getUrlColorMode(location));
   }, []);
 
   const setColorMode = value => {
