@@ -51,10 +51,10 @@ const Interoperable = () => {
         >
           <p>
             Substrate-based blockchain networks have the choice of either operating as a solo chain, a solo chain with a
-            bridge, or integrate as a parachain. A parachain enables independent Substrate-based blockchains to gain
-            interoperability with the other independent blockchains. The secret sauce of parachain interoperability lies
-            in XCMP (Cross-chain Message Passing). XCMP enables parachains to share trusted logic, for example,
-            transferring tokens between networks, without any additional trust assumptions!
+            bridge, or to integrate as a parachain. Integrating as a parachain enables independent Substrate-based
+            blockchains to gain interoperability with the other independent blockchains. The secret sauce of parachain
+            interoperability lies in XCMP (Cross-Chain Message Passing). XCMP enables parachains to share trusted logic,
+            for example, transferring tokens between networks, without any additional trust assumptions!
           </p>
           <p>
             Blockchain networks that are not parachains, such as Ethereum, are accessible through parachain bridges. By
@@ -175,7 +175,7 @@ const Interoperable = () => {
         or <strong className="font-bold">efficiency</strong>.
       </HighlightBanner>
 
-      <CardsNav heading="Learn more About Our Technology" currentPage="Interoperable" />
+      <CardsNav currentPage="Interoperable" />
 
       <ExploreLinkSection links={['developerHub', 'vision', 'ecosystem']} />
     </Layout>

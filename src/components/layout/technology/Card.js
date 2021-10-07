@@ -25,7 +25,7 @@ const cards = [
     icon: 'interoperable',
   },
   {
-    title: 'Future Proof',
+    title: 'Future-Proof',
     link: '/technology/future-proof',
     description: `Substrate enables developers to change their architecture as their needs evolve, ensuring that their blockchain network is ready for whatever the future brings. `,
     icon: 'future-proof',

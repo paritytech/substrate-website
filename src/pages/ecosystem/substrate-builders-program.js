@@ -17,13 +17,13 @@ import * as animationData from '../../images/animation/ecosystem/builders-progra
 
 const tracks = [
   {
-    title: 'Chains track',
+    title: 'Chains Track',
     description: 'Those that are building impactful chains.',
     details: '(independent chains, parachains, and parathreads)',
     icon: 'chain',
   },
   {
-    title: 'Infrastructure track',
+    title: 'Infrastructure Track',
     description: 'Those that are building Substrate/Polkadot-related infrastructure.',
     details:
       '(Including bridges, UIs, tooling, smart contract support, validator infrastructure, and potentially more)',
@@ -239,7 +239,7 @@ export default function BuildersProgram() {
                   <ul className="benefits-list">
                     <li>
                       <span className="font-bold">Category-specific chat support with other program members</span> of
-                      the same category and category-expert engineers to collaborate and ask questions.
+                      the same category and category-expert engineers to collaborate and ask questions
                     </li>
                     <li>
                       <span className="font-bold">Regular office hours with the program&apos;s tech support lead</span>{' '}
@@ -302,7 +302,7 @@ export default function BuildersProgram() {
                   </ul>
                 </div>
 
-                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Strategy & Feedback:</h3>
+                <h3 className="mt-16 lg:mt-24 mb-4 text-2xl">Strategy & feedback:</h3>
                 <div className="relative pl-12 lg:pr-16">
                   <div className="absolute top-0 bottom-0 left-1 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
