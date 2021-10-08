@@ -4,7 +4,7 @@ import { Link } from '../../../default/Link';
 
 export default function BreadcrumbNav(props) {
   return (
-    <nav className="hidden md:block px-4 mb-10 text-sm underline-animate underline-animate-thin font-medium">
+    <nav className="hidden md:block mb-10 text-sm underline-animate underline-animate-thin font-medium">
       <Link to="/ecosystem">
         <span>Ecosystem</span>
       </Link>

@@ -29,8 +29,8 @@ export default function AllTeams(props) {
 
   return (
     <div
-      className={cx('mx-auto xl:w-[1152px] lg:w-[768px] md:w-[640px] w-[320px]', {
-        'min-h-800px': displayedTeams.length <= 6,
+      className={cx('', {
+        'min-h-screen': displayedTeams.length <= 6,
       })}
     >
       {displayedTeams.length === 0 ? (
@@ -38,7 +38,7 @@ export default function AllTeams(props) {
           <p>{zeroTeamsText}</p>
         </div>
       ) : (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap pl-px -mr-px">
           {displayedTeams.map((team, index) => {
             const description = team.description.substring(0, 100);
             const thisLogo = logos.edges.find(logo => {
@@ -46,10 +46,8 @@ export default function AllTeams(props) {
             });
             const numTeam = displayedTeams.length;
             return (
-              <div key={index}>
-                <div className="" onClick={() => handleClick(team)}>
-                  <TeamCard team={team} description={description} logo={thisLogo} numTeam={numTeam} index={index} />
-                </div>
+              <div key={index} className="w-1/1 md:w-1/2 xl:w-1/3 -mt-px -ml-px" onClick={() => handleClick(team)}>
+                <TeamCard team={team} description={description} logo={thisLogo} numTeam={numTeam} index={index} />
               </div>
             );
           })}

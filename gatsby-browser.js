@@ -6,13 +6,11 @@ import React from 'react';
 import { DataProvider } from './src/contexts/DataContext';
 import { ThemeProvider } from './src/contexts/ThemeContext';
 
-export const wrapRootElement = ({ element }) => (
-  <ThemeProvider>
-    <div>{element}</div>
-  </ThemeProvider>
+export const wrapPageElement = ({ element, props }) => (
+  <DataProvider value={props}>
+    <ThemeProvider value={props}>{element}</ThemeProvider>
+  </DataProvider>
 );
-
-export const wrapPageElement = ({ element, props }) => <DataProvider value={props}>{element}</DataProvider>;
 
 export const shouldUpdateScroll = () => {
   window.scrollTo(0, 0);
