@@ -366,8 +366,8 @@ export default function Home() {
           </SecondaryButton>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-11 gap-8 lg:gap-14 mt-40 mb-40">
-          <div className="lg:col-span-6 lg:col-start-6">
+        <div className="grid grid-cols-1 lg:grid-cols-11 md:gap-10 lg:gap-14 mt-24 md:mt-40 mb-40">
+          <div className="lg:col-span-6 lg:col-start-6 md:mb-0">
             <Link to="/ecosystem/projects">
               <TeamLogos className="max-w-full mx-auto" />
             </Link>
