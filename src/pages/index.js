@@ -120,6 +120,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="container lg:px-10 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14">
           <div className="pl-6 lg:pl-0">
