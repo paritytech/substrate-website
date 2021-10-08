@@ -413,7 +413,7 @@ export default function Home() {
 
       <div className="shadow-xl mb-40 dark:bg-substrateGray-darkest">
         <div className="container md:flex lg:px-10 py-6">
-          <p className="inline-block md:w-1/2 lg:w-auto text-2xl font-bold leading-relaxed mb-0 mr-20 my-4">
+          <p className="inline-block md:w-1/2 lg:w-auto text-2xl font-bold leading-relaxed md:mb-0 mr-20 my-4">
             Connect With Us
           </p>
           <div>
