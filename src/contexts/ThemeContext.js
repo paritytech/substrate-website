@@ -35,19 +35,18 @@ function getUrlColorMode(location) {
   return false;
 }
 
-const referrer = document.referrer;
-
 export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children, value }) => {
   const [colorMode, rawSetColorMode] = React.useState(undefined);
-  const referrerInfra = testInfraLink(referrer);
 
   useEffect(() => {
     const { location } = value;
     rawSetColorMode(getInitialColorMode());
     if (getUrlColorMode(location)) setColorMode(getUrlColorMode(location));
     // reset scroll position to top when navigate between stacks
+    const referrer = document.referrer;
+    const referrerInfra = testInfraLink(referrer);
     if (referrerInfra) window.scrollTo(0, 0);
   }, []);
 
