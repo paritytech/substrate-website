@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
 
+import { testInfraLink } from '../components/default/Link';
+
 function getInitialColorMode() {
   if (typeof window !== 'undefined') {
     const persistedColorPreference = window.localStorage.getItem('theme');
@@ -33,15 +35,20 @@ function getUrlColorMode(location) {
   return false;
 }
 
+const referrer = document.referrer;
+
 export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children, value }) => {
   const [colorMode, rawSetColorMode] = React.useState(undefined);
+  const referrerInfra = testInfraLink(referrer);
 
   useEffect(() => {
     const { location } = value;
     rawSetColorMode(getInitialColorMode());
     if (getUrlColorMode(location)) setColorMode(getUrlColorMode(location));
+    // reset scroll position to top when navigate between stacks
+    if (referrerInfra) window.scrollTo(0, 0);
   }, []);
 
   const setColorMode = value => {
