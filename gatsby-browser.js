@@ -13,3 +13,9 @@ export const wrapRootElement = ({ element }) => (
 );
 
 export const wrapPageElement = ({ element, props }) => <DataProvider value={props}>{element}</DataProvider>;
+
+export const shouldUpdateScroll = () => {
+  window.scrollTo(0, 0);
+
+  return false;
+};
