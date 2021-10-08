@@ -4,11 +4,11 @@ import React from 'react';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
-const LineArrowButton = ({ link, className, primary, large, children, icon = 'arrow-more' }) => {
+const LineArrowButton = ({ link, className, primary, centered, large, children, icon = 'arrow-more' }) => {
   if (link) {
     return (
       <Link to={link}>
-        <LineArrowButtonContent className={className} primary={primary} large={large} icon={icon}>
+        <LineArrowButtonContent className={className} primary={primary} centered={centered} large={large} icon={icon}>
           {children}
         </LineArrowButtonContent>
       </Link>
@@ -16,20 +16,21 @@ const LineArrowButton = ({ link, className, primary, large, children, icon = 'ar
   }
 
   return (
-    <LineArrowButtonContent className={className} primary={primary} large={large} icon={icon}>
+    <LineArrowButtonContent className={className} primary={primary} centered={centered} large={large} icon={icon}>
       {children}
     </LineArrowButtonContent>
   );
 };
 
-const LineArrowButtonContent = ({ className, primary, large, children, icon = 'arrow-more' }) => {
+const LineArrowButtonContent = ({ className, primary, centered, large, children, icon = 'arrow-more' }) => {
   return (
     <div className={className}>
       <p
         className={cx('font-bold pb-1 mr-0.5 border-b-2 inline hover:mr-2 transition-all', {
           'border-substrateGreen text-substrateGreen': primary,
           'border-black dark:border-white': !primary,
-          'text-xl': large,
+          'md:text-lg': large,
+          'hover:ml-1.5': centered,
         })}
       >
         {children}
@@ -39,7 +40,7 @@ const LineArrowButtonContent = ({ className, primary, large, children, icon = 'a
           name={icon}
           className={cx({
             'fill-current text-substrateGreen': primary,
-            'w-3 h-3': large,
+            'w-3 h-3': icon === 'external-link',
           })}
         />
       </span>
