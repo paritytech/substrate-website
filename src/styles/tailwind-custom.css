@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .container {
   @apply px-4;
 }

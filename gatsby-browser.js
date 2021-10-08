@@ -11,3 +11,9 @@ export const wrapPageElement = ({ element, props }) => (
     <ThemeProvider value={props}>{element}</ThemeProvider>
   </DataProvider>
 );
+
+export const shouldUpdateScroll = () => {
+  window.scrollTo(0, 0);
+
+  return false;
+};

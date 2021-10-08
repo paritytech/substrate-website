@@ -9,7 +9,7 @@
 }
 
 .home-tabs__link {
-  @apply relative inline-block text-xl font-bold leading-relaxed mb-8 transition-all cursor-pointer border-b-2 clear-right text-navItemColor border-transparent hover:text-substrateBlackish dark:hover:text-white;
+  @apply relative inline-block md:text-lg font-bold leading-relaxed mb-2 md:mb-8 transition-all cursor-pointer border-b-2 clear-right text-navItemColor border-transparent hover:text-substrateBlackish dark:hover:text-white;
 
   svg {
     @apply transition-all absolute -left-8 top-3 opacity-0;
@@ -76,7 +76,7 @@
   }
 
   &__button {
-    @apply opacity-100 relative pb-1 text-xl font-bold border-b-2 border-substrateBlackish dark:border-white hover:border-navItemColor dark:hover:border-navItemColor cursor-pointer transition;
+    @apply opacity-100 relative pb-1 md:text-lg font-bold border-b-2 border-substrateBlackish dark:border-white hover:border-navItemColor dark:hover:border-navItemColor cursor-pointer transition;
 
     &:hover {
       svg {
