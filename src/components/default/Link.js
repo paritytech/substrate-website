@@ -1,9 +1,26 @@
 import { Link as LinkI18n } from 'gatsby-plugin-react-i18next';
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { ThemeContext } from '../../contexts/ThemeContext';
+
+const InfraLink = ({ to, title, children, ...other }) => {
+  const { colorMode } = useContext(ThemeContext);
+
+  const handleClick = (e, to) => {
+    e.preventDefault();
+    window.location.href = to + `?mode=${colorMode}`;
+  };
+
+  return (
+    <a href={to} title={title} onClick={e => handleClick(e, to)} {...other}>
+      {children}
+    </a>
+  );
+};
 
 const Link = ({ to, title, children, ...other }) => {
   const external = testExternalLink(to);
-  const docsLink = testDocsLink(to);
+  const infraLink = testInfraLink(to);
 
   if (external) {
     return (
@@ -11,11 +28,11 @@ const Link = ({ to, title, children, ...other }) => {
         {children}
       </a>
     );
-  } else if (docsLink) {
+  } else if (infraLink) {
     return (
-      <a href={to} title={title} {...other}>
+      <InfraLink to={to} title={title} {...other}>
         {children}
-      </a>
+      </InfraLink>
     );
   } else {
     return (
@@ -26,20 +43,20 @@ const Link = ({ to, title, children, ...other }) => {
   }
 };
 
-const LinkMenu = ({ prefix, slug, children, ...other }) => {
+const LinkMenu = ({ prefix, slug, title, children, ...other }) => {
   const external = testExternalLink(slug);
-  const docsLink = testDocsLink(slug);
+  const infraLink = testInfraLink(slug);
   if (external) {
     return (
       <a href={slug} {...other} target="_blank" rel="noreferrer noopener">
         {children}
       </a>
     );
-  } else if (docsLink) {
+  } else if (infraLink) {
     return (
-      <a href={slug} {...other}>
+      <InfraLink to={slug} title={title} {...other}>
         {children}
-      </a>
+      </InfraLink>
     );
   } else {
     return (
@@ -54,14 +71,14 @@ const buildSubMenu = (menus, item) => {
   return menus[item.id];
 };
 
-const testDocsLink = href => {
+const testInfraLink = href => {
   const regex = new RegExp(process.env.GATSBY_DOCS_URL, 'i');
   const match = regex.test(href);
   return match;
 };
 
 const testExternalLink = href => {
-  if (testDocsLink(href)) {
+  if (testInfraLink(href)) {
     return false;
   }
   const regex = new RegExp('^(http|https)://', 'i');

@@ -19,13 +19,29 @@ function getInitialColorMode() {
   return 'light';
 }
 
+function getUrlColorMode(location) {
+  const currentUrl = location.href;
+  const searchParams = new URL(currentUrl).searchParams;
+  const mode = searchParams.get('mode');
+
+  if (mode === 'dark' || mode === 'light') {
+    searchParams.delete('mode');
+    window.history.replaceState(null, null, location.pathname + searchParams);
+    return mode;
+  }
+
+  return false;
+}
+
 export const ThemeContext = React.createContext();
 
-export const ThemeProvider = ({ children }) => {
+export const ThemeProvider = ({ children, value }) => {
   const [colorMode, rawSetColorMode] = React.useState(undefined);
 
   useEffect(() => {
+    const { location } = value;
     rawSetColorMode(getInitialColorMode());
+    if (getUrlColorMode(location)) setColorMode(getUrlColorMode(location));
   }, []);
 
   const setColorMode = value => {
@@ -41,5 +57,6 @@ export const ThemeProvider = ({ children }) => {
     // Persist on update
     localStorage.theme = value;
   };
+
   return <ThemeContext.Provider value={{ colorMode, setColorMode }}>{children}</ThemeContext.Provider>;
 };
