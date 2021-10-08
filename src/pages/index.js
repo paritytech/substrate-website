@@ -319,7 +319,9 @@ export default function Home() {
 
       <div className="container lg:px-10 pt-24 lg:pt-40">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-extrabold mb-6 md:mb-10">The building blocks for a decentralized and fairer internet.</h2>
+          <h2 className="font-extrabold max-w-3xl mx-auto mb-6 md:mb-10">
+            The building blocks for a decentralized and fairer internet.
+          </h2>
           <p className="text-lg leading-relaxed mb-8">
             Substrate makes building a blockchain far easier, faster, cheaper, and safer than ever before. As an
             open-source framework, developers gain free access to a wide codebase developed and used by industry-leading
