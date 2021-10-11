@@ -23,6 +23,7 @@ import OpenIcon from '../images/svg/technology/icon-open.svg';
 
 export default function Home() {
   const { siteMetadata } = useSiteMetadata();
+
   const heroAnimationOptions = {
     loop: true,
     autoplay: true,
