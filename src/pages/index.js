@@ -76,6 +76,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState(1);
   const [expandedTab, toggleExpandedTab] = useState(false);
   const [animationIsStopped, playAnimation] = useState(true);
+  const [heroAnimIsLoaded, setHeroAnimIsLoaded] = useState(false);
 
   return (
     <Layout mode="full" header="home">
@@ -83,7 +84,25 @@ export default function Home() {
       <div className="-mt-36 -mt-36-px bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
-            <Lottie options={heroAnimationOptions} isClickToPauseDisabled />
+            <div
+              className={cx('home-hero__anim w-full h-full transition-all transform duration-1000', {
+                'opacity-0 scale-75': !heroAnimIsLoaded,
+                'opacity-100 scale-100': heroAnimIsLoaded,
+              })}
+            >
+              <Lottie
+                options={heroAnimationOptions}
+                isClickToPauseDisabled
+                eventListeners={[
+                  {
+                    eventName: 'DOMLoaded',
+                    callback: () => {
+                      setHeroAnimIsLoaded(true);
+                    },
+                  },
+                ]}
+              />
+            </div>
             <h1 className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 font-title mb-0 mt-0 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
               The Blockchain Framework
               <br />
@@ -390,7 +409,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center mt-40 mb-40">
+        <div className="max-w-4xl mx-auto md:text-center mt-40 mb-40">
           <h2 className="font-extrabold">The team behind Substrate</h2>
           <div className="aspect-w-14 aspect-h-5 my-12">
             <div>
