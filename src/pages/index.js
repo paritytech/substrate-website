@@ -409,7 +409,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center mt-40 mb-40">
+        <div className="max-w-4xl mx-auto md:text-center mt-40 mb-40">
           <h2 className="font-extrabold">The team behind Substrate</h2>
           <div className="aspect-w-14 aspect-h-5 my-12">
             <div>
