@@ -22,8 +22,8 @@ Config URL variables based on your preferable local setup. URL will be used for 
 - `GATSBY_DOCS_URL` represents project serving documentation
 
 ```
-GATSBY_IO_URL=http://localhost:8000  // default substrate.io if not set
-GATSBY_DOCS_URL=http://localhost:8001 // default docs.substrate.io if not set
+GATSBY_IO_URL=http://localhost:8000
+GATSBY_DOCS_URL=http://localhost:8001
 ```
 
 **Start development server**
