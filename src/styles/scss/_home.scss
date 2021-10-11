@@ -1,5 +1,8 @@
 .home-hero {
-  @apply opacity-0 transition-opacity duration-1000;
+  &__anim {
+    @apply opacity-0 transition-opacity duration-1000;
+  }
+
   &__headline {
     text-shadow: 2px 2px 15px rgba(#0a5f3b, 0.45);
   }
