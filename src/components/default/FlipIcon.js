@@ -9,7 +9,6 @@ const FlipIcon = ({ icons }) => {
       <div
         data-aos="fade-in"
         data-aos-delay="300"
-        data-aos-disable="false"
         className="w-full h-full absolute left-0 top-0 bg-white dark:bg-substrateDarkest"
       >
         <Icon name={icons[1]} />

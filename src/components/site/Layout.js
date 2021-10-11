@@ -54,7 +54,7 @@ export default function Layout({
 }) {
   useEffect(() => {
     AOS.init({
-      disable: 'mobile',
+      disable: false,
       duration: 600,
     });
   }, []);
