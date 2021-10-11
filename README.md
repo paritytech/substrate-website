@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f86ac67b-b1aa-41a7-95ec-3a2d14cb3bad/deploy-status)](https://app.netlify.com/sites/substrate-io-staging/deploys)
 
-**Install**
+## Install
 
 Navigate into your new site’s directory and install all dependencies.
 
@@ -10,7 +10,23 @@ Navigate into your new site’s directory and install all dependencies.
 yarn
 ```
 
-**Development**
+## Development
+
+**Configure environment variables**
+
+Copy `example.env.development` and rename to `.env.development`
+
+Config URL variables based on your preferable local setup. URL will be used for links generation between documentation and platform stack
+
+- `GATSBY_IO_URL`: represents this project (platform website)
+- `GATSBY_DOCS_URL` represents project serving documentation
+
+```
+GATSBY_IO_URL=http://localhost:8000  // default substrate.io if not set
+GATSBY_DOCS_URL=http://localhost:8001 // default docs.substrate.io if not set
+```
+
+**Start development server**
 
 Navigate into your new site’s directory and use the following command to start the development server locally.
 
