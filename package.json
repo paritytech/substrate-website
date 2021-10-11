@@ -10,8 +10,8 @@
   "license": "0BSD",
   "scripts": {
     "develop": "gatsby develop -p 8000",
-    "build": "gatsby build -p 8000",
-    "serve": "gatsby serve -p 8000",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "npm-run-all lint:**",
