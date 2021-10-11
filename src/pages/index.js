@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
 
@@ -23,7 +23,6 @@ import OpenIcon from '../images/svg/technology/icon-open.svg';
 
 export default function Home() {
   const { siteMetadata } = useSiteMetadata();
-  const heroAnim = useRef(null);
 
   const heroAnimationOptions = {
     loop: true,
@@ -83,19 +82,8 @@ export default function Home() {
       <SEO title="Home" />
       <div className="-mt-36 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
-          <div className="home-hero" ref={heroAnim}>
-            <Lottie
-              options={heroAnimationOptions}
-              isClickToPauseDisabled
-              eventListeners={[
-                {
-                  eventName: 'DOMLoaded',
-                  callback: () => {
-                    heroAnim.current.style.opacity = 1;
-                  },
-                },
-              ]}
-            />
+          <div className="home-hero">
+            <Lottie options={heroAnimationOptions} isClickToPauseDisabled />
             <h1 className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 font-title mb-0 mt-0 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight text-white text-center home-hero__headline">
               The Blockchain Framework
               <br />
