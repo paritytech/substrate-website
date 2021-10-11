@@ -47,7 +47,10 @@ export const ThemeProvider = ({ children, value }) => {
     // reset scroll position to top when navigate between stacks
     const referrer = document.referrer;
     const referrerInfra = testInfraLink(referrer);
-    if (referrerInfra) window.scrollTo(0, 0);
+    // if (referrerInfra) window.scrollTo(0, 0);
+    if (referrerInfra) console.log(referrer);
+    console.log(referrer);
+    window.scrollTo(0, 0);
   }, []);
 
   const setColorMode = value => {
