@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <Layout mode="full" header="home">
       <SEO title="Home" />
-      <div className="-mt-36 bg-substrateGreen">
+      <div className="-mt-36 -mt-36-px bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
             <Lottie options={heroAnimationOptions} isClickToPauseDisabled />
