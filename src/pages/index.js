@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
 
@@ -23,7 +23,6 @@ import OpenIcon from '../images/svg/technology/icon-open.svg';
 
 export default function Home() {
   const { siteMetadata } = useSiteMetadata();
-  const heroAnim = useRef(null);
 
   const heroAnimationOptions = {
     loop: true,
@@ -77,6 +76,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState(1);
   const [expandedTab, toggleExpandedTab] = useState(false);
   const [animationIsStopped, playAnimation] = useState(true);
+  const [heroAnimIsLoaded, setHeroAnimIsLoaded] = useState(false);
 
   return (
     <Layout mode="full" header="home">
@@ -84,7 +84,12 @@ export default function Home() {
       <div className="-mt-36 bg-substrateGreen">
         <div className="aspect-w-12 aspect-h-12 md:aspect-h-10 lg:aspect-h-8 xl:aspect-h-6 2xl:aspect-h-5">
           <div className="home-hero">
-            <div className="home-hero__anim w-full h-full" ref={heroAnim}>
+            <div
+              className={cx('home-hero__anim w-full h-full transition-all transform duration-1000', {
+                'opacity-0 scale-75': !heroAnimIsLoaded,
+                'opacity-100 scale-100': heroAnimIsLoaded,
+              })}
+            >
               <Lottie
                 options={heroAnimationOptions}
                 isClickToPauseDisabled
@@ -92,7 +97,7 @@ export default function Home() {
                   {
                     eventName: 'DOMLoaded',
                     callback: () => {
-                      heroAnim.current.style.opacity = 1;
+                      setHeroAnimIsLoaded(true);
                     },
                   },
                 ]}

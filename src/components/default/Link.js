@@ -86,4 +86,4 @@ const testExternalLink = href => {
   return match;
 };
 
-export { Link, buildSubMenu, testExternalLink, LinkMenu };
+export { Link, buildSubMenu, testExternalLink, testInfraLink, LinkMenu };
