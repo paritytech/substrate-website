@@ -172,6 +172,12 @@ div[aria-label='animation'] {
   mask-image: radial-gradient(white, black);
 }
 
+/* utils */
+
+.-mt-36-px {
+  margin-top: calc(-9rem - 1px)
+}
+
 .border-3 {
   border-width: 3px;
 }

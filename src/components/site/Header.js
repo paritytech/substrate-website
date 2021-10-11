@@ -21,7 +21,7 @@ const Header = ({ mode, header }) => {
 
   useEffect(() => {
     /* TODO: add into context */
-    if (scroll.y > 15) {
+    if (scroll.y > 30) {
       setIsScrolled(true);
     } else if (scroll.y < 1) {
       setIsScrolled(false);
@@ -31,9 +31,11 @@ const Header = ({ mode, header }) => {
   return (
     <header
       className={cx('sticky top-0 z-50 border-b border-gray-200 dark:border-substrateDarkThemeGrey', {
-        'border-b-0': mode === 'full' && !isScrolled,
-        'bg-transparent': header === 'home' && !isScrolled,
+        'border-transparent dark:border-transparent': mode === 'full' && !isScrolled,
+        'bg-transparent transition-colors': header === 'home' && !isScrolled,
         'bg-white dark:bg-substrateDarkest': header === 'default' || (header === 'home' && isScrolled),
+        'duration-75': header === 'home' && !isScrolled,
+        'duration-200': header === 'home' && isScrolled,
       })}
     >
       <div className="px-4 xl:px-12">
