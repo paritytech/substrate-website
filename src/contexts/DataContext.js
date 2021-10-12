@@ -32,8 +32,8 @@ const defaultContext = {
 
 const DataContext = React.createContext(defaultContext);
 
-const DataProvider = ({ children, value }) => {
-  const { location, pageContext } = value;
+const DataProvider = ({ children, props }) => {
+  const { location, pageContext } = props;
 
   return (
     <DataContext.Provider
