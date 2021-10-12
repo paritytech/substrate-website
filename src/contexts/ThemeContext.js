@@ -56,8 +56,8 @@ export const ThemeProvider = ({ children }) => {
   if (testQueryMode(searchParams)) {
     setColorMode(testQueryMode(searchParams));
     searchParams.delete('mode');
-
-    window.history.replaceState(null, null, location.pathname + searchParams);
+    // remove mode param from query
+    window.history.replaceState(null, null, location.pathname + (searchParams.toString() ? '?' + searchParams : ''));
   }
 
   // update color mode if not set from query
