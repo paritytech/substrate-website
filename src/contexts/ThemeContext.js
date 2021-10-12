@@ -20,13 +20,15 @@ function getInitialColorMode() {
 }
 
 function testQueryMode(searchParams) {
-  const mode = searchParams.get('mode');
+  if (searchParams) {
+    const mode = searchParams.get('mode');
 
-  if (mode === 'dark' || mode === 'light') {
-    return mode;
-  } else {
-    return false;
-  }
+    if (mode === 'dark' || mode === 'light') {
+      return mode;
+    } else {
+      return false;
+    }
+  } else return false;
 }
 
 export const ThemeContext = React.createContext();
@@ -34,7 +36,7 @@ export const ThemeContext = React.createContext();
 export const ThemeProvider = ({ children }) => {
   const [colorMode, rawSetColorMode] = React.useState(undefined);
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
-  const searchParams = new URL(currentUrl).searchParams;
+  const searchParams = currentUrl && new URL(currentUrl).searchParams;
 
   const setColorMode = value => {
     rawSetColorMode(value);
