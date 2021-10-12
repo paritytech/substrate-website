@@ -35,10 +35,6 @@ export const onRenderBody = ({ setPreBodyComponents }) => {
   setPreBodyComponents(<MagicScriptTag key={1} />);
 };
 
-export const wrapRootElement = ({ element }) => (
-  <ThemeProvider>
-    <div>{element}</div>
-  </ThemeProvider>
-);
+export const wrapRootElement = ({ element }) => <ThemeProvider>{element}</ThemeProvider>;
 
-export const wrapPageElement = ({ element, props }) => <DataProvider value={props}>{element}</DataProvider>;
+export const wrapPageElement = ({ element, props }) => <DataProvider props={props}>{element}</DataProvider>;
