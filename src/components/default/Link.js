@@ -3,16 +3,25 @@ import React, { useContext } from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 
+const addTrailingSlash = url => {
+  const lastChar = url.substr(-1);
+  if (lastChar != '/') {
+    url = url + '/';
+  }
+
+  return url;
+};
+
 const InfraLink = ({ to, title, children, ...other }) => {
   const { colorMode } = useContext(ThemeContext);
 
   const handleClick = (e, to) => {
     e.preventDefault();
-    window.location.href = to + `?mode=${colorMode}`;
+    window.location.href = addTrailingSlash(to) + `?mode=${colorMode}`;
   };
 
   return (
-    <a href={to} title={title} onClick={e => handleClick(e, to)} {...other}>
+    <a href={addTrailingSlash(to)} title={title} onClick={e => handleClick(e, to)} {...other}>
       {children}
     </a>
   );
@@ -36,7 +45,7 @@ const Link = ({ to, title, children, ...other }) => {
     );
   } else {
     return (
-      <LinkI18n to={to} title={title} {...other}>
+      <LinkI18n to={addTrailingSlash(to)} title={title} {...other}>
         {children}
       </LinkI18n>
     );
@@ -60,7 +69,7 @@ const LinkMenu = ({ prefix, slug, title, children, ...other }) => {
     );
   } else {
     return (
-      <LinkI18n to={prefix + slug} {...other}>
+      <LinkI18n to={addTrailingSlash(prefix + slug)} {...other}>
         {children}
       </LinkI18n>
     );
