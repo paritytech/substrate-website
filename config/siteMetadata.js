@@ -5,7 +5,7 @@ module.exports = {
   title: `Substrate_`,
   title_meta: `Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use case.`,
   description: `Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use case.`,
-  image_og: '',
+  image_og: `${process.env.GATSBY_IO_URL}/img/substrate_og.png`,
   siteUrl: process.env.GATSBY_IO_URL,
   docsUrl: process.env.GATSBY_DOCS_URL,
   docsVersion: 3,
