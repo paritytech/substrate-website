@@ -130,7 +130,7 @@ const Vision = () => {
                 <p>
                   Developing a new project specific to your use-case by reusing a general-purpose smart-contract
                   blockchain forces you to inherit all of that blockchain’s design decisions, which are often made with
-                  different priorities in your mind than your own.
+                  different priorities in mind than your own.
                 </p>
                 <p>
                   For example, reusing the Ethereum codebase implies several limitations: having to place all of your
