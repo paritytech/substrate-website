@@ -40,7 +40,7 @@ const Open = () => {
           linkText={
             <p className="underline-animate">
               Explore the components of a{' '}
-              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/getting-started/architecture`}>
+              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/getting-started/architecture/`}>
                 Substrate-based blockchain node »
               </Link>
             </p>
@@ -85,7 +85,7 @@ const Open = () => {
           linkText={
             <p className="underline-animate">
               Visit the tools list maintained by the{' '}
-              <Link to="/ecosystem/resources/awesome-substrate">Awesome Substrate community »</Link>
+              <Link to="/ecosystem/resources/awesome-substrate/">Awesome Substrate community »</Link>
             </p>
           }
         >
@@ -132,7 +132,7 @@ const Open = () => {
         </p>
         <p className="font-bold underline-animate">
           Explore the various ways to{' '}
-          <Link to="/ecosystem" className="text-substrateBlue">
+          <Link to="/ecosystem/" className="text-substrateBlue">
             get involved with the community »
           </Link>
         </p>
