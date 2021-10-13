@@ -24,12 +24,13 @@ function scrollToAnchor(location, mainNavHeight = 100) {
     // Fix scrolling for ids starting with numbers
     // https://stackoverflow.com/a/20306237/1268612
     const hash = location.hash.replace(/^#(\d)/, '#\\3$1');
-    const item = document.querySelector(`${hash}`).offsetTop;
+    const item = document.querySelector(`${hash}`);
 
-    window.scrollTo({
-      top: item - mainNavHeight,
-      behavior: 'instant',
-    });
+    if (item)
+      window.scrollTo({
+        top: item.offsetTop - mainNavHeight,
+        behavior: 'instant',
+      });
   } else if (location) {
     window.scrollTo(0, 0);
   }
