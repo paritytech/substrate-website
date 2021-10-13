@@ -31,3 +31,28 @@ export const shouldUpdateScroll = ({ routerProps: { location } }) => {
   window.scrollTo(0, 0);
   return false;
 };
+
+export const onRouteUpdate = ({ location }) => scrollToAnchor(location);
+
+/**
+ *
+ * @desc - a function to jump to the correct scroll position
+ * @param {Object} location -
+ * @param {Number} [mainNavHeight] - the height of any persistent nav -> document.querySelector(`nav`)
+ */
+function scrollToAnchor(location, mainNavHeight = 100) {
+  // Check for location so build does not fail
+  if (location && location.hash) {
+    // Fix scrolling for ids starting with numbers
+    // https://stackoverflow.com/a/20306237/1268612
+    const hash = location.hash.replace(/^#(\d)/, '#\\3$1');
+    const item = document.querySelector(`${hash}`).offsetTop;
+
+    window.scrollTo({
+      top: item - mainNavHeight,
+      behavior: 'instant',
+    });
+  }
+
+  return true;
+}
