@@ -1,2 +1,5 @@
 /builders-program /ecosystem/substrate-builders-program 301!
 /substrate-users /ecosystem/projects 301!
+
+# Catch all
+/* / 301
