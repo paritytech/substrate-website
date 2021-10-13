@@ -3,9 +3,19 @@ import React, { useContext } from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 
-const addTrailingSlash = url => {
-  url += url.endsWith('/') ? '' : '/';
-  return url;
+const addTrailingSlash = uri => {
+  const addSlash = uri => {
+    uri += uri.endsWith('/') ? '' : '/';
+    return uri;
+  };
+
+  if (uri.indexOf('#') > 0) {
+    const hash = uri.substring(uri.indexOf('#'), uri.length);
+    uri = addSlash(uri.replace(hash, ''));
+    return uri + hash;
+  }
+  uri = addSlash(uri);
+  return uri;
 };
 
 const InfraLink = ({ to, title, children, ...other }) => {
