@@ -1,5 +1,12 @@
-/builders-program /ecosystem/substrate-builders-program 301!
-/substrate-users /ecosystem/projects 301!
+# Legacy links
+/builders-program /ecosystem/substrate-builders-program/ 301!
+/substrate-users /ecosystem/projects/ 301!
+
+# Category pages
+/vision /vision/substrate-and-polkadot/ 301!
+/ecosystem/opportunities /ecosystem/opportunities/hackathons/ 301!
+/ecosystem/resources /ecosystem/resources/seminar/ 301!
+/ecosystem/connect /ecosystem/connect/contact/ 301!
 
 # Catch all
 /* / 301
