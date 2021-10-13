@@ -117,7 +117,10 @@ export default function Connect() {
             <PrimaryButtonLink link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
               Get the extension
             </PrimaryButtonLink>
-            <LineArrowButton link={siteMetadata.docsUrl} className="block mt-8">
+            <LineArrowButton
+              link={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/integration/substrate-connect/`}
+              className="block mt-8"
+            >
               Developer Docs
             </LineArrowButton>
           </div>
