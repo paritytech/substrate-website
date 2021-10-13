@@ -16,17 +16,6 @@ export const shouldUpdateScroll = ({ routerProps: { location } }) => {
   if (!window || !location) {
     return [0, 0];
   }
-  // TODO: bypass forcing scroll programmatically on pages with article nav
-  const bypassPages = [
-    '/vision/substrate-and-polkadot/',
-    '/ecosystem/resources/awesome-substrate/',
-    '/ecosystem/projects/case-studies/acala/',
-    '/ecosystem/projects/case-studies/moonbeam/',
-    '/ecosystem/projects/case-studies/astar/',
-  ];
-  if (bypassPages.includes(location.pathname)) {
-    return false;
-  }
 
   window.scrollTo(0, 0);
   return false;
