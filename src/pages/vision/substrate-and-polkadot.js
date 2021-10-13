@@ -146,7 +146,7 @@ const Vision = () => {
                   </p>
                 </BlockQuote>
 
-                <BannerLink link="/technology" text="Explore how Substrate’s technology removes limitations" />
+                <BannerLink link="/technology/" text="Explore how Substrate’s technology removes limitations" />
 
                 <h3 id="the-road-to-substrate" className="text-polkaPink font-bold mb-4 mt-12 text-2xl">
                   The Road to Substrate
@@ -175,7 +175,7 @@ const Vision = () => {
                 </p>
 
                 <BannerLink
-                  link="/technology/future-proof"
+                  link="/technology/future-proof/"
                   text="No more forks in the road, see why Substrate is the first future proof blockchain framework"
                 />
 
@@ -199,7 +199,7 @@ const Vision = () => {
                 </BlockQuote>
 
                 <BannerLink
-                  link="/technology/interoperable"
+                  link="/technology/interoperable/"
                   text="Understand how Substrate’s interoperability enables compatibility and efficiency without sacrificing security"
                 />
 
@@ -221,7 +221,7 @@ const Vision = () => {
                 </p>
 
                 <BannerLink
-                  link="/technology/flexible"
+                  link="/technology/flexible/"
                   text="Discover how Substrate’s flexibility enables modularity and performance"
                 />
 

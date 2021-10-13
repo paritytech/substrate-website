@@ -85,7 +85,7 @@ export default function Home() {
                 parachains, independent layer-1 blockchains, and infrastructure and tooling solutions for a wide range
                 of use cases.
               </p>
-              <PrimaryButtonLink link="/ecosystem/projects">View Projects</PrimaryButtonLink>
+              <PrimaryButtonLink link="/ecosystem/projects/">View Projects</PrimaryButtonLink>
             </div>
           </div>
         </Section>
@@ -134,7 +134,7 @@ export default function Home() {
                 The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
                 resources, taking your Substrate project to the next level.
               </p>
-              <PrimaryButtonLink link="/ecosystem/substrate-builders-program">Learn More</PrimaryButtonLink>
+              <PrimaryButtonLink link="/ecosystem/substrate-builders-program/">Learn More</PrimaryButtonLink>
             </div>
           </div>
         </Section>
@@ -161,7 +161,7 @@ export default function Home() {
                 title="Hackathons"
                 icon="hackathons"
                 description="Ready for the challenge? Build, create, and hack."
-                link="/ecosystem/opportunities/hackathons"
+                link="/ecosystem/opportunities/hackathons/"
                 linkText="Join a hackathon"
                 color="#ffbeed"
               />
@@ -169,7 +169,7 @@ export default function Home() {
                 title="Grants"
                 icon="dollar"
                 description="Got an idea that's ready to go? Web3 Foundation supports open source development work."
-                link="/ecosystem/opportunities/grants"
+                link="/ecosystem/opportunities/grants/"
                 linkText="Apply for a grant"
                 color="#ffbeed"
                 delay="200"
@@ -178,7 +178,7 @@ export default function Home() {
                 title="Jobs"
                 icon="desktop"
                 description="Substrate projects are always on the lookout for talented developers who are passionate about building a better future."
-                link="/ecosystem/opportunities/jobs"
+                link="/ecosystem/opportunities/jobs/"
                 linkText="Find your role"
                 color="#ffbeed"
                 delay="400"
@@ -201,7 +201,7 @@ export default function Home() {
                 title="Substrate Seminar"
                 icon="graduation"
                 description="Get the latest on the cutting-edge of blockchain in open seminars with developers and projects building on Substrate."
-                link="/ecosystem/resources/seminar"
+                link="/ecosystem/resources/seminar/"
                 linkText="Join in"
                 color="#d6ffcf"
               />
@@ -209,7 +209,7 @@ export default function Home() {
                 title="Awesome Substrate"
                 icon="smile"
                 description="A rich source of content covering everything you need to know to get started, troubleshoot, and fine-tune your skills."
-                link="/ecosystem/resources/awesome-substrate"
+                link="/ecosystem/resources/awesome-substrate/"
                 linkText="Dive in"
                 color="#d6ffcf"
                 delay="200"
@@ -218,7 +218,7 @@ export default function Home() {
                 title="Community Resources"
                 icon="house"
                 description="One of Substrate's greatest strengths is its thriving and engaged community, which has created an ever-increasing list of resources."
-                link="/ecosystem/resources/community-resources"
+                link="/ecosystem/resources/community-resources/"
                 linkText="Discover more"
                 color="#d6ffcf"
                 delay="400"
@@ -241,7 +241,7 @@ export default function Home() {
                 title="Contact"
                 icon="contact"
                 description="Haven't found what you're looking for?"
-                link="/ecosystem/connect/contact"
+                link="/ecosystem/connect/contact/"
                 linkText="Get in touch"
                 color="#ccc8ff"
               />
@@ -258,7 +258,7 @@ export default function Home() {
                 title="Newsletter"
                 icon="paperplane"
                 description="Get the latest technical updates and helpful developer resources right in your inbox."
-                link="/ecosystem/connect/newsletter"
+                link="/ecosystem/connect/newsletter/"
                 linkText="Sign up"
                 color="#ccc8ff"
                 delay="400"

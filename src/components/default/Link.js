@@ -3,16 +3,31 @@ import React, { useContext } from 'react';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 
+const addTrailingSlash = uri => {
+  const addSlash = uri => {
+    uri += uri.endsWith('/') ? '' : '/';
+    return uri;
+  };
+
+  if (uri.indexOf('#') > 0) {
+    const hash = uri.substring(uri.indexOf('#'), uri.length);
+    uri = addSlash(uri.replace(hash, ''));
+    return uri + hash;
+  }
+  uri = addSlash(uri);
+  return uri;
+};
+
 const InfraLink = ({ to, title, children, ...other }) => {
   const { colorMode } = useContext(ThemeContext);
 
   const handleClick = (e, to) => {
     e.preventDefault();
-    window.location.href = to + `?mode=${colorMode}`;
+    window.location.href = addTrailingSlash(to) + `?mode=${colorMode}`;
   };
 
   return (
-    <a href={to} title={title} onClick={e => handleClick(e, to)} {...other}>
+    <a href={addTrailingSlash(to)} title={title} onClick={e => handleClick(e, to)} {...other}>
       {children}
     </a>
   );
@@ -36,7 +51,7 @@ const Link = ({ to, title, children, ...other }) => {
     );
   } else {
     return (
-      <LinkI18n to={to} title={title} {...other}>
+      <LinkI18n to={addTrailingSlash(to)} title={title} {...other}>
         {children}
       </LinkI18n>
     );
@@ -60,7 +75,7 @@ const LinkMenu = ({ prefix, slug, title, children, ...other }) => {
     );
   } else {
     return (
-      <LinkI18n to={prefix + slug} {...other}>
+      <LinkI18n to={addTrailingSlash(prefix + slug)} {...other}>
         {children}
       </LinkI18n>
     );
