@@ -4,11 +4,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
 const addTrailingSlash = url => {
-  const lastChar = url.substr(-1);
-  if (lastChar != '/') {
-    url = url + '/';
-  }
-
+  url += url.endsWith('/') ? '' : '/';
   return url;
 };
 
