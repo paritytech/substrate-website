@@ -69,7 +69,7 @@ export default function Connect() {
             A fast, secure, and decentralized way to interact with Polkadot, Kusama, and their parachains right in the
             browser, Substrate Connect helps you build better end-user experiences for Web3 apps.
           </p>
-          <LineArrowButton link="/technology">Substrate Technology</LineArrowButton>
+          <LineArrowButton link="/technology/">Substrate Technology</LineArrowButton>
           <div className="w-full md:w-1/2 border-b border-substrateSubtleGrey dark:border-substrateDarkThemeGrey my-16"></div>
           <div className="grid md:grid-cols-2 gap-8">
             <div>

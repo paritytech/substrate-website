@@ -65,7 +65,7 @@ export default function Flexible() {
         </Feature>
       </Section>
 
-      <CaseStudyBanner icon="acala-logo" link="/ecosystem/projects/case-studies/acala">
+      <CaseStudyBanner icon="acala-logo" link="/ecosystem/projects/case-studies/acala/">
         <p className="font-bold mb-2 text-2xl">
           Discover how Acala leverages Substrate&apos;s flexibility to enable no cost transactions and protect against
           MEV and sandwich attacks
@@ -86,7 +86,7 @@ export default function Flexible() {
           linkText={
             <p className="underline-animate">
               Perform your first forkless upgrade using{' '}
-              <Link to={`${siteMetadata.docsUrl}/tutorials/v${siteMetadata.docsVersion}/forkless-upgrades`}>
+              <Link to={`${siteMetadata.docsUrl}/tutorials/v${siteMetadata.docsVersion}/forkless-upgrades/`}>
                 this tutorial »
               </Link>
             </p>
@@ -128,7 +128,7 @@ export default function Flexible() {
           linkText={
             <p className="underline-animate">
               Experience running a client directly in your browser with{' '}
-              <Link to="/substrate-connect">Substrate Connect » </Link>
+              <Link to="/substrate-connect/">Substrate Connect » </Link>
             </p>
           }
         >

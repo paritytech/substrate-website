@@ -15,7 +15,7 @@ const ExploreLinkSection = ({ links }) => {
       title: 'Technology',
       description:
         'Learn why Substrate is the most powerful framework for quickly building customized, future-proof blockchains',
-      link: '/technology',
+      link: '/technology/',
       linkText: 'Explore the tech',
       icon: 'diamond-green',
     },
@@ -31,7 +31,7 @@ const ExploreLinkSection = ({ links }) => {
       title: 'Vision',
       description:
         'Substrate is the backbone of the Polkadot ecosystem, building the decentralized and fair internet of the future',
-      link: '/vision/substrate-and-polkadot',
+      link: '/vision/substrate-and-polkadot/',
       linkText: 'Discover more',
       icon: 'diamond-purple',
     },
@@ -39,14 +39,14 @@ const ExploreLinkSection = ({ links }) => {
       title: 'Ecosystem',
       description:
         'Access resources, maximize opportunities, and connect with a thriving network of Substrate enthusiasts and builders',
-      link: '/ecosystem',
+      link: '/ecosystem/',
       linkText: 'Check out the ecosystem',
       icon: 'diamond-yellow',
     },
     projects: {
       title: 'Projects',
       description: 'See how Substrate has been implemented by innovative teams in many industries around the world',
-      link: '/ecosystem/projects',
+      link: '/ecosystem/projects/',
       linkText: 'Meet the teams',
       icon: 'diamond-yellow',
     },
