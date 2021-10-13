@@ -157,14 +157,14 @@ export default function MoonbeamCaseStudy({ data }) {
         <h4>More Case Studies</h4>
         <div className="underline-animate text-substrateBlue font-bold leading-8">
           <div className="block">
-            <Link to="/ecosystem/projects/case-studies/acala">Acala Network Case Study</Link>
+            <Link to="/ecosystem/projects/case-studies/acala/">Acala Network Case Study</Link>
           </div>
           <div className="block">
-            <Link to="/ecosystem/projects/case-studies/astar">Astar Network Case Study</Link>
+            <Link to="/ecosystem/projects/case-studies/astar/">Astar Network Case Study</Link>
           </div>
           <br />
           <div className="block">
-            <Link to="/ecosystem/projects">See All Projects</Link>
+            <Link to="/ecosystem/projects/">See All Projects</Link>
           </div>
         </div>
       </ArticleCols>

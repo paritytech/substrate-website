@@ -21,20 +21,20 @@ export default function Technology() {
       icon: 'tools',
       description:
         'No need to reinvent the wheel, Substrate has robust tooling for development, deployment, and debugging.',
-      link: `${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/tools`,
+      link: `${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/tools/`,
     },
     {
       title: 'Light-Client-First Design',
       icon: 'light-client',
       description:
         'Browsers can interact directly with the blockchain network instead of relying on resource-heavy local node infrastructure or third party services.',
-      link: '/substrate-connect',
+      link: '/substrate-connect/',
     },
     {
       title: 'Forkless Upgrades',
       icon: 'forkless-upgrades',
       description: 'Upgrading blockchains has never been easier. With Substrate, everyone stays on the same path.',
-      link: `${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/upgrades`,
+      link: `${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/upgrades/`,
     },
   ];
 
@@ -67,17 +67,17 @@ export default function Technology() {
               </p>
               <p className="underline-animate text-xl md:text-2xl xl:text-3xl font-bold">
                 Welcome to Substrate, the only{' '}
-                <Link className="text-substrateBlue" to="/technology/flexible">
+                <Link className="text-substrateBlue" to="/technology/flexible/">
                   flexible,
                 </Link>{' '}
-                <Link className="text-substrateBlue" to="/technology/open">
+                <Link className="text-substrateBlue" to="/technology/open/">
                   open,
                 </Link>{' '}
-                <Link className="text-substrateBlue" to="/technology/interoperable">
+                <Link className="text-substrateBlue" to="/technology/interoperable/">
                   interoperable,
                 </Link>{' '}
                 and{' '}
-                <Link className="text-substrateBlue" to="/technology/future-proof">
+                <Link className="text-substrateBlue" to="/technology/future-proof/">
                   future-proof
                 </Link>{' '}
                 blockchain framework.
@@ -91,7 +91,7 @@ export default function Technology() {
                 with different limitations around scale, governance, forks, interoperability, and upgrades.
               </p>
               <p className="font-bold underline-animate underline-animate-thin">
-                Substrate was born from the <Link to="/vision/substrate-and-polkadot">vision</Link> that developers
+                Substrate was born from the <Link to="/vision/substrate-and-polkadot/">vision</Link> that developers
                 shouldn&apos;t have to recreate fundamentals when building and optimizing a blockchain. Read below to
                 learn why Substrate is the best technology to build on, now and into the future.
               </p>

@@ -8,25 +8,25 @@ import LineArrowButton from '../../ui/LineArrowButton';
 const cards = [
   {
     title: 'Flexible',
-    link: '/technology/flexible',
+    link: '/technology/flexible/',
     description: `Substrate's flexibility alleviates the tension of tradeoffs by enabling developers to create the optimal blockchain for their specific needs.`,
     icon: 'flexible',
   },
   {
     title: 'Open',
-    link: '/technology/open',
+    link: '/technology/open/',
     description: `The combination of an open-source, customizable architecture, rich tooling and a robust, active community makes Substrate the most open way to build.`,
     icon: 'open',
   },
   {
     title: 'Interoperable',
-    link: '/technology/interoperable',
+    link: '/technology/interoperable/',
     description: `Interoperability without foregoing compatibility, security, or efficiency; learn how Substrate takes a unique, multifaceted approach to address each of these factors.`,
     icon: 'interoperable',
   },
   {
     title: 'Future-Proof',
-    link: '/technology/future-proof',
+    link: '/technology/future-proof/',
     description: `Substrate enables developers to change their architecture as their needs evolve, ensuring that their blockchain network is ready for whatever the future brings. `,
     icon: 'future-proof',
   },

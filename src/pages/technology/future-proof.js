@@ -44,7 +44,7 @@ const FutureProof = () => {
           linkText={
             <p className="underline-animate">
               Learn how{' '}
-              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/upgrades`}>
+              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/upgrades/`}>
                 Substrate upgrades work »
               </Link>
             </p>
@@ -70,7 +70,7 @@ const FutureProof = () => {
         </Feature>
       </Section>
 
-      <CaseStudyBanner icon="moonbeam-logo" link="/ecosystem/projects/case-studies/moonbeam">
+      <CaseStudyBanner icon="moonbeam-logo" link="/ecosystem/projects/case-studies/moonbeam/">
         Learn how Moonbeam remains a fully Ethereum-compatible smart contract parachain by continuosly adapting.
       </CaseStudyBanner>
 
@@ -86,7 +86,7 @@ const FutureProof = () => {
           title="Composable"
           linkText={
             <p className="underline-animate">
-              Explore how <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/frame`}>FRAME</Link>{' '}
+              Explore how <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/frame/`}>FRAME</Link>{' '}
               enables composability »
             </p>
           }

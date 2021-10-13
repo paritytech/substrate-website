@@ -51,7 +51,7 @@ export default function Home() {
       icon: 'technology',
       description:
         'Learn why Substrate is the most powerful framework to quickly build customized future-proof blockchains.',
-      link: '/technology',
+      link: '/technology/',
       linkText: 'Explore the tech',
       delay: 0,
     },
@@ -67,7 +67,7 @@ export default function Home() {
       title: 'Projects',
       icon: 'projects',
       description: 'Explore innovative use cases of Substrate implemented across many industries around the world.',
-      link: '/ecosystem/projects',
+      link: '/ecosystem/projects/',
       linkText: 'Discover projects',
       delay: 400,
     },
@@ -327,7 +327,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-10 mb-8">
-            <PrimaryButtonLink link="/vision/substrate-and-polkadot">Substrate Vision</PrimaryButtonLink>
+            <PrimaryButtonLink link="/vision/substrate-and-polkadot/">Substrate Vision</PrimaryButtonLink>
           </div>
           <div className="text-center">
             <LineArrowButton className="inline-block" centered icon="external-link" link="https://polkadot.network/">
@@ -351,7 +351,7 @@ export default function Home() {
         <div className="grid grid-cols-2 lg:grid-cols-4 font-bold text-lg max-w-6xl mx-auto">
           <div className="p-8 hover:shadow-xl dark:hover:bg-substrateBlackish hover:scale-105 transition-all rounded-md">
             <div className="flex justify-center" data-aos="fade-up">
-              <Link to="/technology/flexible" className="technology-teaser__icon text-center">
+              <Link to="/technology/flexible/" className="technology-teaser__icon text-center">
                 <FlexibleIcon />
                 Flexible
               </Link>
@@ -359,7 +359,7 @@ export default function Home() {
           </div>
           <div className="p-8 hover:shadow-xl dark:hover:bg-substrateBlackish  hover:scale-105 transition-all rounded-md">
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
-              <Link to="/technology/open" className="technology-teaser__icon text-center">
+              <Link to="/technology/open/" className="technology-teaser__icon text-center">
                 <OpenIcon />
                 Open
               </Link>
@@ -367,7 +367,7 @@ export default function Home() {
           </div>
           <div className="p-8 hover:shadow-xl dark:hover:bg-substrateBlackish  hover:scale-105 transition-all rounded-md">
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="400">
-              <Link to="/technology/interoperable" className="technology-teaser__icon text-center">
+              <Link to="/technology/interoperable/" className="technology-teaser__icon text-center">
                 <InteroperableIcon />
                 Interoperable
               </Link>
@@ -375,7 +375,7 @@ export default function Home() {
           </div>
           <div className="p-8 hover:shadow-xl dark:hover:bg-substrateBlackish  hover:scale-105 transition-all rounded-md">
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="600">
-              <Link to="/technology/future-proof" className="technology-teaser__icon text-center">
+              <Link to="/technology/future-proof/" className="technology-teaser__icon text-center">
                 <FutureProofIcon />
                 Future-Proof
               </Link>
@@ -383,14 +383,14 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center mt-14" data-aos="fade-up" data-aos-delay="400">
-          <SecondaryButton link="/technology">
+          <SecondaryButton link="/technology/">
             <p className="p-1 mb-0">Technology Overview</p>
           </SecondaryButton>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-11 sm:gap-8 md:gap-10 lg:gap-14 mt-24 md:mt-40 mb-40">
           <div className="lg:col-span-6 lg:col-start-6 md:mb-0">
-            <Link to="/ecosystem/projects">
+            <Link to="/ecosystem/projects/">
               <TeamLogos className="max-w-full mx-auto" />
             </Link>
           </div>
@@ -401,9 +401,9 @@ export default function Home() {
               wave of innovation in the blockchain industry. Learn more about how the ecosystem of builders have
               addressed prominent challenges such as transaction costs, network security, and more.
             </p>
-            <PrimaryButtonLink link="/ecosystem/projects">See all projects</PrimaryButtonLink>
+            <PrimaryButtonLink link="/ecosystem/projects/">See all projects</PrimaryButtonLink>
             <br />
-            <LineArrowButton className="inline-block mt-6" link="/ecosystem/projects/case-studies/acala">
+            <LineArrowButton className="inline-block mt-6" link="/ecosystem/projects/case-studies/acala/">
               Read the case studies
             </LineArrowButton>
           </div>
@@ -477,7 +477,7 @@ export default function Home() {
             <p className="text-lg leading-relaxed mb-6 xl:w-1/2">
               Keep up to date with tech updates and helpful resources.
             </p>
-            <SecondaryButton link="/ecosystem/connect/newsletter">
+            <SecondaryButton link="/ecosystem/connect/newsletter/">
               <p className="mb-0 p-1">Sign up</p>
             </SecondaryButton>
           </div>
