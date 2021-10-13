@@ -208,14 +208,14 @@ export default function AcalaCaseStudy({ data }) {
         <h4>More Case Studies</h4>
         <div className="font-bold leading-8 underline-animate">
           <div className="block">
-            <Link to="/ecosystem/projects/case-studies/astar">Astar Network Case Study</Link>
+            <Link to="/ecosystem/projects/case-studies/astar/">Astar Network Case Study</Link>
           </div>
           <div className="block">
-            <Link to="/ecosystem/projects/case-studies/moonbeam">Moonbeam Case Study</Link>
+            <Link to="/ecosystem/projects/case-studies/moonbeam/">Moonbeam Case Study</Link>
           </div>
           <br />
           <div className="block">
-            <Link to="/ecosystem/projects">See All Projects</Link>
+            <Link to="/ecosystem/projects/">See All Projects</Link>
           </div>
         </div>
       </ArticleCols>
