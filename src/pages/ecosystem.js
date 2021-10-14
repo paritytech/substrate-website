@@ -109,7 +109,7 @@ export default function Home() {
               </div>
               <Icon
                 name="play"
-                className="hidden sm:block absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 hover:scale-105 transition-transform"
+                className="w-12 h-12 md:w-24 md:h-24 absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 hover:scale-105 transition-transform"
               />
             </div>
           </div>
