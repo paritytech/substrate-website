@@ -44,7 +44,7 @@ const Interoperable = () => {
           linkText={
             <p className="underline-animate">
               Learn more about{' '}
-              <Link to="https://wiki.polkadot.network/docs/learn-crosschain">Cross-Chain Message Passing (XCMP) </Link>{' '}
+              <Link to="https://wiki.polkadot.network/docs/learn-crosschain/">Cross-Chain Message Passing (XCMP) </Link>{' '}
               across parachains »
             </p>
           }
@@ -78,7 +78,7 @@ const Interoperable = () => {
           linkText={
             <p className="underline-animate">
               Learn more about{' '}
-              <Link to="https://wiki.polkadot.network/docs/learn-security">shared security using Polkadot »</Link>
+              <Link to="https://wiki.polkadot.network/docs/learn-security/">shared security using Polkadot »</Link>
             </p>
           }
         >
@@ -101,7 +101,7 @@ const Interoperable = () => {
         </Feature>
       </Section>
 
-      <CaseStudyBanner icon="astar-logo" link="/ecosystem/projects/case-studies/astar">
+      <CaseStudyBanner icon="astar-logo" link="/ecosystem/projects/case-studies/astar/">
         See Astar&apos;s case study on enabling dApps to co-exist across blockchain networks.
       </CaseStudyBanner>
 
@@ -134,7 +134,7 @@ const Interoperable = () => {
           linkText={
             <p className="underline-animate">
               Read more about{' '}
-              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/concepts/off-chain-features`}>
+              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/concepts/off-chain-features/`}>
                 off-chain features
               </Link>{' '}
               in the documentation »

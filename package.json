@@ -27,6 +27,7 @@
     "gatsby-omni-font-loader": "^1.3.1",
     "gatsby-plugin-breadcrumb": "^12.1.1",
     "gatsby-plugin-eslint": "^2.0.8",
+    "gatsby-plugin-force-trailing-slashes": "^1.0.5",
     "gatsby-plugin-image": "^1.2.0",
     "gatsby-plugin-manifest": "^3.2.0",
     "gatsby-plugin-netlify-cms": "^5.8.0",

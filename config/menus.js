@@ -51,23 +51,23 @@ const developers = [
     id: 'developers.home',
   },
   {
-    url: DOCS_URL + '/v3/getting-started/overview',
+    url: DOCS_URL + '/v3/getting-started/overview/',
     id: 'developers.docs',
   },
   {
-    url: DOCS_URL + '/how-to-guides/v3',
+    url: DOCS_URL + '/how-to-guides/v3/',
     id: 'developers.how-to-guides',
   },
   {
-    url: DOCS_URL + '/tutorials/v3',
+    url: DOCS_URL + '/tutorials/v3/',
     id: 'developers.tutorials',
   },
   {
-    url: DOCS_URL + '/rustdocs',
+    url: DOCS_URL + '/rustdocs/',
     id: 'developers.rustdocs',
   },
   {
-    url: DOCS_URL + '/playground',
+    url: DOCS_URL + '/playground/',
     id: 'developers.playground',
   },
 ];
@@ -145,7 +145,7 @@ const connect = [
     id: 'ecosystem.resources.contact',
   },
   {
-    url: 'https://www.parity.io/events',
+    url: 'https://www.parity.io/events/',
     id: 'ecosystem.resources.events',
   },
   {
@@ -153,18 +153,18 @@ const connect = [
     id: 'ecosystem.resources.newsletter',
   },
   {
-    url: 'https://www.parity.io/blog/tag/parity-substrate',
+    url: 'https://www.parity.io/blog/tag/parity-substrate/',
     id: 'ecosystem.resources.blog',
   },
 ];
 
 const legal = [
   {
-    url: 'https://www.parity.io/privacy',
+    url: 'https://www.parity.io/privacy/',
     id: 'legal.privacy',
   },
   {
-    url: 'https://www.parity.io/terms',
+    url: 'https://www.parity.io/terms/',
     id: 'legal.terms',
   },
 ];

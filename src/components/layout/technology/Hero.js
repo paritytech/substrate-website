@@ -8,23 +8,23 @@ import Section from '../../layout/Section';
 const pages = [
   {
     title: 'Overview',
-    link: '/technology',
+    link: '/technology/',
   },
   {
     title: 'Flexible',
-    link: '/technology/flexible',
+    link: '/technology/flexible/',
   },
   {
     title: 'Open',
-    link: '/technology/open',
+    link: '/technology/open/',
   },
   {
     title: 'Interoperable',
-    link: '/technology/interoperable',
+    link: '/technology/interoperable/',
   },
   {
     title: 'Future-Proof',
-    link: '/technology/future-proof',
+    link: '/technology/future-proof/',
   },
 ];
 
