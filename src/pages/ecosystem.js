@@ -101,9 +101,9 @@ export default function Home() {
                 alt="Meet Substrate teams"
                 className="w-full h-full m-0 relative rounded-md"
               />
-              <div className="absolute left-0 bottom-0 p-8">
-                <h3 className="text-white mb-2">Meet Substrate teams</h3>
-                <p className="text-white opacity-75 m-0 text-lg">
+              <div className="absolute left-0 bottom-0 p-4 sm:p-8">
+                <h3 className="text-white mb-2 text-2xl md:text-3xl">Meet Substrate teams</h3>
+                <p className="text-white opacity-75 m-0 text-base md:text-lg">
                   Find out why more than 150 projects are building on Substrate.
                 </p>
               </div>
