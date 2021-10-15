@@ -7,10 +7,10 @@ import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 
-export default function Confirmation() {
+export default function ThankYou() {
   return (
     <Layout>
-      <SEO title="Confirmation" />
+      <SEO title="Thank You" />
       <Section col={2} children2={<Icon name="placeholder" className="w-full h-auto" />}>
         <div className="h-full flex">
           <div className="self-center pr-8">
