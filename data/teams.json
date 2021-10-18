@@ -72,14 +72,6 @@
       "description": "Polkadot will enable a completely decentralized web where users are in control. It is built to connect chains, networks, oracles, and future technologies that are yet to be created."
     },
     {
-      "name": "ABMatrix",
-      "link": "http://www.abmatrix.cn/#/",
-      "category":[ "File Storage","All"],
-      "types": ["All Teams",  "Building for Polkadot"],
-      "tag": "Chain",
-      "description": "The ABMatrix project is a decentralized data storage and distribution network. Users who share their data storage and processing power are rewarded with the ABM token."
-    },
-    {
       "name": "Adoriasoft",
       "link": "https://adoriasoft.com/",
       "category":[ "Infrastructure","All"],
@@ -213,7 +205,7 @@
       "category":[ "Gaming","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Celer Network enables fast, easy and secure off-chain transactions for payment transactions and generalized off-chain smart contract"
+      "description": "Celer Network enables fast, easy and secure off-chain transactions for payment transactions and generalized off-chain smart contract."
     },
     {
       "name": "Centrifuge",
@@ -290,14 +282,6 @@
           "link": "#"
         }
       ]
-    },
-    {
-      "name": "Cybex.dot",
-      "link": "https://cybex.io/en/",
-      "category":[ "DeFi","All"],
-      "types": ["All Teams",  "Building for Polkadot"],
-      "tag": "Chain",
-      "description": "Cybex is a decentralized exchange featuring real-time order matching. It features a Real-time Order Matching Engine."
     },
     {
       "name": "Darwinia",
@@ -611,7 +595,7 @@
       "category":[ "Identity","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Lientry is a network support cross-chain aggregated identities. They are building whole ecosystem tools for future identities and data.",
+      "description": "Lientry is a network supporting cross-chain aggregated identities. They are building whole ecosystem tools for future identities and data.",
       "runtimes": [
         {
           "title":"parachain-runtime",
