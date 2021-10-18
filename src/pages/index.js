@@ -192,10 +192,11 @@ export default function Home() {
                 </p>
                 <p className="md:text-lg leading-relaxed">
                   In order to push the boundaries of blockchain technology, Gavin left the Ethereum Foundation and
-                  started Parity, where the team implemented the fastest Ethereum client at the time, and also built a
-                  Bitcoin, ZCash, and now, Polkadot client. It’s only from all this deep industry experience that
-                  blockchains could be reimagined from the ground up. This led to the creation of Substrate, an open
-                  source and future proof framework that powers a multichain, interoperable, and decentralized internet.
+                  started Parity, which implemented the fastest Ethereum client at the time. In the early days of
+                  Parity, the team also built a Bitcoin and ZCash client before moving on to spearhead Polkadot. It’s
+                  only from all this deep industry experience that blockchains could be reimagined from the ground up.
+                  This led to the creation of Substrate, an open source and future proof framework that powers a
+                  multichain, interoperable, and decentralized internet.
                 </p>
               </div>
               <a className="home-expand__button" onClick={() => toggleExpandedTab(!expandedTab)}>
@@ -423,9 +424,9 @@ export default function Home() {
           <p className="text-lg leading-relaxed my-12">
             Parity Technologies is the software development company behind some of the world’s most trusted Web3
             technology. It was founded in 2015 and succeeded in building some of the fastest and most secure open-source
-            software for Ethereum, Bitcoin, Zcash, and the decentralized web. Several years later it has evolved to
-            address the previous limitations of blockchain by creating Substrate and developing the ground-breaking
-            Kusama and Polkadot networks.{' '}
+            software for the decentralized web, including clients for Ethereum, Bitcoin, and Zcash. Parity has now moved
+            on from these to address the previous limitations of blockchain technology, creating Substrate and
+            developing the ground-breaking Kusama and Polkadot networks.
           </p>
           <LineArrowButton className="inline-block" centered link="https://parity.io/" icon="external-link">
             Learn more about Parity
