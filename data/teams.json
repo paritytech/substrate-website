@@ -181,7 +181,7 @@
       "category":[ "Infrastructure","All"],
       "types": ["All Teams", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Infrastructure & Tooling",
-      "description": "Bison Trails is a validator as a Service provider. It powers critical infrastructure for the world’s leading digital asset exchanges, custodians, funds, and applications."
+      "description": "Bison Trails is a Validator as a Service provider. It powers critical infrastructure for the world’s leading digital asset exchanges, custodians, funds, and applications."
     },
     {
       "name": "Blockdaemon",
@@ -557,7 +557,7 @@
       "category":[ "Infrastructure","All"],
       "types": ["All Teams"],
       "tag": "Chain",
-      "description": "Kulupu is a proof of work blockchain with on-chain governance and online upgrade. It is one of the first blockchains that combine PoW consensus engine with forkless upgrades."
+      "description": "Kulupu is a proof-of-work blockchain with on-chain governance and online upgrade. It is one of the first blockchains that combine PoW consensus engine with forkless upgrades."
     },
     {
       "name": "Kusama Network",
@@ -784,7 +784,7 @@
       "category":[ "DeFi","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Parallel finance is the first decentralized lending/borrowing and staking protocol built on top of the Polkadot ecosystem."
+      "description": "Parallel Finance is the first decentralized lending/borrowing and staking protocol built on top of the Polkadot ecosystem."
     },
     {
       "name": "Polkassembly",
@@ -815,7 +815,7 @@
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
       "caseStudy": "case-studies/astar",
-      "description": "Plasm Network is a scaling dApps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
+      "description": "Astar Network is a scaling dApps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
     },
     {
       "name": "Polimec",
@@ -992,7 +992,7 @@
       "description": "Subspace is a next-generation blockchain that allows anyone to participate in consensus."
     },
     {
-      "name": "TEEREX",
+      "name": "Integritee",
       "link": "https://www.scs.ch/",
       "category":[ "Identity","All"],
       "types": ["All Teams", "Building for Polkadot"],
@@ -1078,7 +1078,7 @@
       "category":[ "DeFi","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "HydraDX is a cross-chain Automatic Market Maker (AMM) that  uses it's own algorithm named CFMM. The HydraDX team has won Hackusama.",
+      "description": "HydraDX is a cross-chain Automatic Market Maker (AMM) that  uses its own algorithm named CFMM. The HydraDX team has won Hackusama.",
       "runtimes": [
         {
           "title":"hydra-dx-runtime",
@@ -1200,7 +1200,7 @@
       "category":[ "Gaming","All"],
       "types": ["All Teams", "Substrate Builders Program", "Enterprise-ready", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Bit.Country enables WASM and Ethereum-compatible smart contract for developers to build dApps and games to run on the network."
+      "description": "Bit.Country is a decentralized world where everyone can start their own metaverse with the token economy and DAO."
     },
     {
       "name": "Sensorium Corporation",
