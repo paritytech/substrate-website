@@ -14,7 +14,7 @@ import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
 import { useSiteMetadata } from '../../hooks/use-site-metadata';
-import * as animation from '../../images/animation/technology/flexible.json';
+import * as animation from '../../images/animation/technology/flexible-edges.json';
 
 export default function Flexible() {
   const { siteMetadata } = useSiteMetadata();
