@@ -19,7 +19,7 @@ export default function Hackathons() {
           Challenge yourself, up your game, and connect with the commmunity. There are great prizes up for grabs, too.
         </p>
         {upcoming && (
-          <div className="mb-20">
+          <div className="mb-16">
             <h3 className="font-medium text-2xl mb-8 mt-10">Upcoming events:</h3>
             {upcoming.map((hackathon, idx) => (
               <HackathonCard key={idx} hackathon={hackathon} />
