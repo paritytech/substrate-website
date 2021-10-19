@@ -17,13 +17,18 @@ export default function CommunityResources() {
           <p className="font-medium mb-12">An ever-growing list of educational resources provided by the community.</p>
           <h5 className="text-2xl font-semibold mb-6">List Of Resources</h5>
           <ul className="ml-0 list-none">
-            {resources.map(({ title, provider, description, link }) => (
+            {resources.map(({ title, provider, description, link, note, noteLink }) => (
               <li key={title} className="mb-6 border-b border-substrateBlackish last-of-type:border-none">
                 <p className="font-semibold underline-animate underline-animate-thin mb-2 leading-relaxed">
                   <Link to={link}>{title}</Link>
                 </p>
                 <p className="font-bold mb-2">{provider}</p>
                 <p className="leading-relaxed">{description}</p>
+                {note && (
+                  <p className="underline-animate underline-animate-thin">
+                    {note} <Link to={noteLink}>{noteLink}</Link>
+                  </p>
+                )}
               </li>
             ))}
           </ul>

@@ -3,7 +3,9 @@
         "title": "Substrate Runtime Developer Academy",
         "provider": "Industry Connect, created by Bryan Chen - co-founder of Acala",
         "description": "The 6-week course brings together industry expertise and an interactive learning experience through multi-modal content, interactive exercises, practical projects, access to mentors and course creators as well as community-driven support and internship opportunities. The course is taught in English.",
-        "link": "https://www.industryconnect.org/substrate-runtime-developer-academy/"
+        "link": "https://www.industryconnect.org/substrate-runtime-developer-academy/",
+        "note": "Due to the upgrades of the Substrate technology and the workload associated to keep the content up-to-date, Industry Connect and the Academy partners have paused the registration for the academy. To learn the most recent Substrate technologies, please visit",
+        "noteLink": "https://docs.substrate.io/"
     },
     {
         "title": "Introduction to Substrate blockchain development",
