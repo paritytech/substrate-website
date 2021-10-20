@@ -42,7 +42,7 @@ export default function Contact() {
             <h5 className="text-xl font-extrabold mb-4">General Inquiries</h5>
             <p className="max-w-sm">Got a more general question? Send us an email.</p>
             <p className="text-substrateBlue font-bold underline-animate">
-              <a href="mailto:general@parity.io">general@parity.io</a>
+              <a href="mailto:info@parity.io">info@parity.io</a>
             </p>
           </div>
         </div>
