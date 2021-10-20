@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { Link } from '../components/default/Link';
 import Section from '../components/layout/Section';
@@ -9,6 +10,9 @@ import SEO from '../components/site/SEO';
 export default function ThankYou() {
   return (
     <Layout>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <SEO title="Thank You" />
       <Section>
         <h1 className="mb-20 mt-20 md:mt-52 text-4xl sm:text-5xl md:text-6xl font-body font-extrabold">
