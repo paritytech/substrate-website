@@ -72,14 +72,6 @@
       "description": "Polkadot will enable a completely decentralized web where users are in control. It is built to connect chains, networks, oracles, and future technologies that are yet to be created."
     },
     {
-      "name": "ABMatrix",
-      "link": "http://www.abmatrix.cn/#/",
-      "category":[ "File Storage","All"],
-      "types": ["All Teams",  "Building for Polkadot"],
-      "tag": "Chain",
-      "description": "The ABMatrix project is a decentralized data storage and distribution network. Users who share their data storage and processing power are rewarded with the ABM token."
-    },
-    {
       "name": "Adoriasoft",
       "link": "https://adoriasoft.com/",
       "category":[ "Infrastructure","All"],
@@ -107,7 +99,7 @@
       "name": "Aleph Zero",
       "link": "https://alephzero.org/",
       "category":[ "Smart Contracts","All"],
-      "types": ["All Teams", "Substrate Builders Program"],
+      "types": ["All Teams"],
       "tag": "Chain",
       "description": "Aleph Zero is a peer-reviewed DAG-based platform that's scalable, private, and developer-friendly."
     },
@@ -139,7 +131,7 @@
       "name": "Automata Network",
       "link": "https://www.ata.network/",
       "category":[ "Infrastructure","All"],
-      "types": ["All Teams", "Substrate Builders Program"],
+      "types": ["All Teams"],
       "tag": "Infrastructure & Tooling",
       "description": "Automata Network is a decentralized protocol that provides middleware-like traceless privacy services for decentralized applications."
     },
@@ -181,7 +173,7 @@
       "category":[ "Infrastructure","All"],
       "types": ["All Teams", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Infrastructure & Tooling",
-      "description": "Bison Trails is a validator as a Service provider. It powers critical infrastructure for the world’s leading digital asset exchanges, custodians, funds, and applications."
+      "description": "Bison Trails is a Validator as a Service provider. It powers critical infrastructure for the world’s leading digital asset exchanges, custodians, funds, and applications."
     },
     {
       "name": "Blockdaemon",
@@ -195,7 +187,7 @@
       "name": "Bluzelle",
       "link": "https://bluzelle.com/",
       "category":[ "File Storage","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "types": ["All Teams", "Building for Polkadot"],
       "tag": "Decentralized Application",
       "description": "The Bluzelle project enables Dapps to store their data in a place that is both decentralized and mutable."
     },
@@ -213,7 +205,7 @@
       "category":[ "Gaming","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Celer Network enables fast, easy and secure off-chain transactions for payment transactions and generalized off-chain smart contract"
+      "description": "Celer Network enables fast, easy and secure off-chain transactions for payment transactions and generalized off-chain smart contract."
     },
     {
       "name": "Centrifuge",
@@ -290,14 +282,6 @@
           "link": "#"
         }
       ]
-    },
-    {
-      "name": "Cybex.dot",
-      "link": "https://cybex.io/en/",
-      "category":[ "DeFi","All"],
-      "types": ["All Teams",  "Building for Polkadot"],
-      "tag": "Chain",
-      "description": "Cybex is a decentralized exchange featuring real-time order matching. It features a Real-time Order Matching Engine."
     },
     {
       "name": "Darwinia",
@@ -539,7 +523,7 @@
       "name": "Interlay",
       "link": "https://www.interlay.io/",
       "category":[ "Bridge","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
       "description": "Interlay makes decentralized finance interoperable and enables use of any digital asset and cryptocurrency with any blockchain platform."
     },
@@ -557,7 +541,7 @@
       "category":[ "Infrastructure","All"],
       "types": ["All Teams"],
       "tag": "Chain",
-      "description": "Kulupu is a proof of work blockchain with on-chain governance and online upgrade. It is one of the first blockchains that combine PoW consensus engine with forkless upgrades."
+      "description": "Kulupu is a proof-of-work blockchain with on-chain governance and online upgrade. It is one of the first blockchains that combine PoW consensus engine with forkless upgrades."
     },
     {
       "name": "Kusama Network",
@@ -611,7 +595,7 @@
       "category":[ "Identity","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Lientry is a network support cross-chain aggregated identities. They are building whole ecosystem tools for future identities and data.",
+      "description": "Lientry is a network supporting cross-chain aggregated identities. They are building whole ecosystem tools for future identities and data.",
       "runtimes": [
         {
           "title":"parachain-runtime",
@@ -639,7 +623,7 @@
       "name": "MantraDAO",
       "link": "https://mantradao.com/",
       "category":[ "DeFi","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "types": ["All Teams", "Building for Polkadot"],
       "tag": "Decentralized Application",
       "description": "They MantraDAO project is a community-governed DeFi platform focusing on Staking, Lending, and Governance."
     },
@@ -784,7 +768,7 @@
       "category":[ "DeFi","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Parallel finance is the first decentralized lending/borrowing and staking protocol built on top of the Polkadot ecosystem."
+      "description": "Parallel Finance is the first decentralized lending/borrowing and staking protocol built on top of the Polkadot ecosystem."
     },
     {
       "name": "Polkassembly",
@@ -815,7 +799,7 @@
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
       "caseStudy": "case-studies/astar",
-      "description": "Plasm Network is a scaling dApps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
+      "description": "Astar Network is a scaling dApps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
     },
     {
       "name": "Polimec",
@@ -986,13 +970,13 @@
     {
       "name": "Subspace Network",
       "link": "https://www.subspace.network/",
-      "category":[ "Social","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "category":[ "File Storage","All"],
+      "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Subspace is a next-generation blockchain that allows anyone to participate in consensus."
+      "description": "Subspace is a protocol that is fully interoperable with any layer one, allowing it to serve as an infrastructure layer for the entire Web3 ecosystem."
     },
     {
-      "name": "TEEREX",
+      "name": "Integritee",
       "link": "https://www.scs.ch/",
       "category":[ "Identity","All"],
       "types": ["All Teams", "Building for Polkadot"],
@@ -1078,7 +1062,7 @@
       "category":[ "DeFi","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "HydraDX is a cross-chain Automatic Market Maker (AMM) that  uses it's own algorithm named CFMM. The HydraDX team has won Hackusama.",
+      "description": "HydraDX is a cross-chain Automatic Market Maker (AMM) that  uses its own algorithm named CFMM. The HydraDX team has won Hackusama.",
       "runtimes": [
         {
           "title":"hydra-dx-runtime",
@@ -1124,7 +1108,7 @@
       "category":[ "DeFi","All"],
       "types": ["All Teams",  "Building for Polkadot"],
       "tag": "Decentralized Application",
-      "description": "DIA (Decentralised Information Asset) is an open-source oracle platform that enables market actors to source, supply and share trustable data."
+      "description": "DIA (Decentralised Information Asset) is an open-source oracle platform that enables market actors to source, supply, and share trustable data."
     },
     {
       "name": "SubSocial",
@@ -1174,7 +1158,7 @@
       "name": "DOTMog",
       "link": "https://dotmog.com/",
       "category":[ "Gaming","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "types": ["All Teams", "Building for Polkadot"],
       "tag": "Decentralized Application",
       "description": "DOT Mog is a substrate-based Unity3D Game."
     },
@@ -1190,7 +1174,7 @@
       "name": "Dora Factory",
       "link": "https://dorafactory.org/",
       "category":[ "Infrastructure","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "types": ["All Teams", "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
       "description": "Dora Factory is a programmable DAO-as-a-Service open infrastructure on Substrate."
     },
@@ -1198,15 +1182,15 @@
       "name": "Bit.Country",
       "link": "https://bit.country/",
       "category":[ "Gaming","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Enterprise-ready", "Building for Polkadot"],
+      "types": ["All Teams", "Enterprise-ready", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Bit.Country enables WASM and Ethereum-compatible smart contract for developers to build dApps and games to run on the network."
+      "description": "Bit.Country is a decentralized world where everyone can start their own metaverse with the token economy and DAO."
     },
     {
       "name": "Sensorium Corporation",
       "link": "https://sensoriumxr.com/ ",
       "category":[ "Gaming","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Enterprise-ready", "Building for Polkadot"],
+      "types": ["All Teams", "Enterprise-ready", "Building for Polkadot"],
       "tag": "Chain",
       "description": "Sensorium Galaxy  leverages state-of-the-art blockchain technologies to make the future of content distribution safe for both the public and artists."
     },
@@ -1214,7 +1198,7 @@
       "name": "TEA Project",
       "link": "https://teaproject.org/#/",
       "category":["Privacy", "All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
       "description": "Elk Insight is developing TEA,a layer2 trusted computing solution on top of a Substrate-based blockchain."
     },
@@ -1257,7 +1241,14 @@
       "types": ["All Teams", "Enterprise-ready", "Building for Polkadot"],
       "tag": "Chain",
       "description": "Energy Web is accelerating a low-carbon, customer-centric electricity system by enabling any energy asset owned by any customer to participate in any energy market."
+    },
+      {  
+      "name": "Konomi",
+      "link": "https://www.konomi.network/",
+      "category":["DeFi", "All"],
+      "types": ["All Teams", "Building for Polkadot"],
+      "tag": "Chain",
+      "description": "Konomi is a decentralized money market protocol on Polkadot."
     }
-
     ]
 }
