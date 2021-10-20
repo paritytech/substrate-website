@@ -101,15 +101,15 @@ export default function Home() {
                 alt="Meet Substrate teams"
                 className="w-full h-full m-0 relative rounded-md"
               />
-              <div className="absolute left-0 bottom-0 p-8">
-                <h3 className="text-white mb-2">Meet Substrate teams</h3>
-                <p className="text-white opacity-75 m-0 text-lg">
+              <div className="absolute left-0 bottom-0 p-4 sm:p-8">
+                <h3 className="text-white mb-2 text-2xl md:text-3xl">Meet Substrate teams</h3>
+                <p className="text-white opacity-75 m-0 text-base md:text-lg">
                   Find out why more than 150 projects are building on Substrate.
                 </p>
               </div>
               <Icon
                 name="play"
-                className="hidden sm:block absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 hover:scale-105 transition-transform"
+                className="w-12 h-12 md:w-24 md:h-24 absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 hover:scale-105 transition-transform"
               />
             </div>
           </div>
