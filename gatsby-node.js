@@ -7,18 +7,3 @@ exports.onCreateNode = props => {
     addSlugFieldToMarkdown(props);
   }
 };
-
-exports.createSchemaCustomization = ({ actions, schema }) => {
-  actions.createTypes([
-    schema.buildObjectType({
-      name: 'MarkdownRemark',
-      interfaces: ['Node'],
-      fields: {
-        isFuture: {
-          type: 'Boolean!',
-          resolve: s => new Date(s.frontmatter.date_end) > new Date(),
-        },
-      },
-    }),
-  ]);
-};
