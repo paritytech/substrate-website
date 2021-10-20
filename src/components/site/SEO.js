@@ -68,9 +68,12 @@ export default function SEO({ children = null, description = '', lang = 'en', me
           name: 'twitter:image',
           content: image,
         },
+        noindex && {
+          name: 'robots',
+          content: 'noindex',
+        },
       ].concat(meta)}
     >
-      {noindex && <meta name="robots" content="noindex" />}
       {children}
     </Helmet>
   );
