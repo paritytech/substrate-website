@@ -35,6 +35,5 @@ export const useHackathons = () => {
       }
     `
   );
-
   return { hackathons };
 };

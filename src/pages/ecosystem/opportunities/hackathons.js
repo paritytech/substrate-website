@@ -29,12 +29,9 @@ export default function Hackathons() {
             <div key={idx}>
               {isUpcoming(hackathon) && idx === 0 ? (
                 <h3 className="font-medium text-2xl mb-8 mt-14">Upcoming events:</h3>
-              ) : (
-                idx === 0 ||
-                (!isUpcoming(hackathon) && isUpcoming(hackathons[idx - 1]) && (
-                  <h3 className="font-medium text-2xl mb-8 mt-14">Past events:</h3>
-                ))
-              )}
+              ) : idx === 0 || (!isUpcoming(hackathon) && isUpcoming(hackathons[idx - 1])) ? (
+                <h3 className="font-medium text-2xl mb-8 mt-14">Past events:</h3>
+              ) : null}
               <HackathonCard hackathon={hackathon} />
             </div>
           );
