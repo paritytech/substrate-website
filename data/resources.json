@@ -1,12 +1,5 @@
 [
     {
-        "title": "Substrate Runtime Developer Academy",
-        "provider": "Industry Connect, created by Bryan Chen - co-founder of Acala",
-        "description": "The 6-week course brings together industry expertise and an interactive learning experience through multi-modal content, interactive exercises, practical projects, access to mentors and course creators as well as community-driven support and internship opportunities. The course is taught in English.",
-        "link": "https://www.industryconnect.org/substrate-runtime-developer-academy/",
-        "note": "Due to the upgrades of the Substrate technology and the workload associated to keep the content up-to-date, Industry Connect and the Academy partners have paused the registration for the academy."
-    },
-    {
         "title": "Introduction to Substrate blockchain development",
         "provider": "Parity Asia, OneBlock+",
         "description": "This 3-week course covers all the basics and provides an introduction to Polkadot, Substrate and Rust. The course is taught in Chinese.",
@@ -17,5 +10,12 @@
         "provider": "Parity Asia, OneBlock+",
         "description": "This course covers six lessons, ranging from basic Substrate development to advanced topics like off-chain workers and smart contracts. It features interactive content with lectures, videos and homework. The course is taught in Chinese.",
         "link": "https://appbhteffsi3308.h5.xiaoeknow.com/v1/goods/goods_detail/p_5ec3ea2420742_CLpF1b3F?type=3"
+    },
+    {
+        "title": "Substrate Runtime Developer Academy",
+        "provider": "Industry Connect, created by Bryan Chen - co-founder of Acala",
+        "description": "The 6-week course brings together industry expertise and an interactive learning experience through multi-modal content, interactive exercises, practical projects, access to mentors and course creators as well as community-driven support and internship opportunities. The course is taught in English.",
+        "link": "https://www.industryconnect.org/substrate-runtime-developer-academy/",
+        "note": "Due to the upgrades of the Substrate technology and the workload associated to keep the content up-to-date, Industry Connect and the Academy partners have paused the registration for the academy."
     }
 ]
