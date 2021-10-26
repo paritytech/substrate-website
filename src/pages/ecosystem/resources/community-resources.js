@@ -24,7 +24,11 @@ export default function CommunityResources() {
                 </p>
                 <p className="font-bold mb-2">{provider}</p>
                 <p className="leading-relaxed">{description}</p>
-                {note && <p>{note}</p>}
+                {note && (
+                  <p className="font-medium italic border dark:border-substrateGray-dark p-3 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
+                    {note}
+                  </p>
+                )}
               </li>
             ))}
           </ul>
