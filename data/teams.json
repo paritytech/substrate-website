@@ -311,7 +311,7 @@
     },
     {
       "name": "Deeper Network",
-      "link": "https://deepernetwork.io/",
+      "link": "https://www.deeper.network/",
       "category":[ "Identity","All"],
       "types": ["All Teams", "Substrate Builders Program"],
       "tag": "Chain",
@@ -1096,7 +1096,7 @@
     },
     {
       "name": "SushiSwap",
-      "link": "https://sushiswap.fi/",
+      "link": "https://sushi.com/",
       "category":[ "DeFi","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Decentralized Application",
