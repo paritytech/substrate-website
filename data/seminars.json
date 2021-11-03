@@ -1,19 +1,15 @@
 [
   {
-    "date": "19 Oct",
-    "description": "The Substrate new documentation hub is here and Parity’s Sacha Lansky and Lead Web Developer Imad Arain are super excited to present it to you. In this seminar, join us to learn about the improved UX features implemented to make Substrate docs easier to navigate and learn with. Learn how to navigate existing content efficiently and how to contribute new content following our contribution guidelines. Join and bring your questions to participate."
-  },
-  {
-    "date": "2 Nov",
-    "description": "In this seminar, Parity Developer Advocate Sacha Lansky will walk through some of Substrate’s key concepts by diving into some intermediate level how-to guides. In doing so, he plans to showcase different implementations of certain concepts and their APIs, with a focus on how to write pallets that are customized for a particular use case. Topics will include: pallet coupling, origins and runtime configurations."
-  },
-  {
     "date": "16 Nov",
     "description": "Alain a.k.a Brenzi, co-founder at Integritee will dive into ways to leverage off-chain capabilities as second-layer solutions for Substrate based chains. Topics will include off-chain workers and the benefits of sidechain architectures."
   },
   {
     "date": "30 Nov",
-    "description": "Michal Swietek, Co-founder of Aleph will be presenting Aleph: the first asynchronous Byzantine Fault Tolerant consensus protocol that achieves asymptotically optimal performance: constant latency and communication complexity. The goal of this talk is to give a bird’s eye view of Aleph, it’s implementation in Rust and our experience in integrating it as a finality gadget in Substrate (replacing GRANDPA with Aleph). The differences between Aleph and GRANDPA will be discussed, including performance benchmarks and some tradeoffs."
+    "description": "Michal Swietek, Co-founder of Aleph will be presenting Aleph, the first asynchronous Byzantine Fault Tolerant consensus protocol that achieves asymptotically optimal performance: constant latency and communication complexity. The goal of this seminar is to give a bird’s eye view of Aleph, its implementation in Rust and our experience in integrating it as a finality gadget in Substrate (replacing GRANDPA with Aleph). The differences between Aleph and GRANDPA will be discussed, including performance benchmarks and some tradeoffs."
+  },
+  {
+    "date": "14 Dec",
+    "description": "Shelven, the Lead Researcher of Phala Network, will demonstrate how to to build a BTC price oracle with a Telegram bot in 50 lines of code in Phala's native Fat Contract (confidential ink! smart contract). In this workshop, you will learn how to leverage Fat Contract’s unique features like asynchronous HTTP request and computation-intensive tasks in ink! language."
   }
 ]
 
