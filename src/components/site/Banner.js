@@ -20,7 +20,7 @@ const Banner = () => {
   return (
     <div
       className={cx(
-        'hidden md:block fixed z-50 right-8 bottom-8 max-w-xs p-4 transition-opacity bg-substrateGray-light dark:bg-substrateGray-darkest m-0 shadow-xxl rounded-md',
+        'hidden md:block fixed z-50 right-8 bottom-8 max-w-xs p-6 transition-opacity bg-substrateGray-light dark:bg-substrateGray-darkest m-0 shadow-xxl rounded-md',
         {
           'opacity-0': isScrolled,
         }
