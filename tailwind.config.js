@@ -52,6 +52,9 @@ module.exports = {
         '7xl': ['5rem', { lineHeight: '1' }],
         'four-oh-four': ['20rem', { lineHeight: '1' }],
       },
+      boxShadow: {
+        xxl: '0 0 25px 0 rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      },
     },
     gridTemplateRows: {
       1: 'repeat(1, minmax(0, 1fr))',
