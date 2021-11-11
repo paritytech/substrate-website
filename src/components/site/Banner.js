@@ -10,7 +10,7 @@ const Banner = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    if (scroll.y > 30) {
+    if (scroll.y > 300) {
       setIsScrolled(true);
     } else if (scroll.y < 1) {
       setIsScrolled(false);
@@ -20,7 +20,7 @@ const Banner = () => {
   return (
     <div
       className={cx(
-        'fixed z-50 right-8 bottom-8 max-w-xs p-4 transition-opacity bg-substrateGray-light dark:bg-substrateGray-darkest m-0 shadow-xxl rounded-md',
+        'hidden md:block fixed z-50 right-8 bottom-8 max-w-xs p-4 transition-opacity bg-substrateGray-light dark:bg-substrateGray-darkest m-0 shadow-xxl rounded-md',
         {
           'opacity-0': isScrolled,
         }
