@@ -9,7 +9,7 @@ const Banner = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    if (scroll.y > 30) {
+    if (scroll.y > 1) {
       setIsScrolled(true);
     } else if (scroll.y < 1) {
       setIsScrolled(false);
