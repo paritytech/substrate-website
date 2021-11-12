@@ -55,6 +55,9 @@ module.exports = {
       boxShadow: {
         xxl: '0 0 25px 0 rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
       },
+      zIndex: {
+        '-10': -10,
+      },
     },
     gridTemplateRows: {
       1: 'repeat(1, minmax(0, 1fr))',
