@@ -142,7 +142,7 @@ export default function Home() {
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-start-3 relative hidden lg:block">
-              <div className="absolute top-12 -right-20 w-full aspect-w-1 aspect-h-1">
+              <div className="absolute top-12 -right-8 w-full aspect-w-1 aspect-h-1">
                 <Icon name="explore" />
               </div>
             </div>
