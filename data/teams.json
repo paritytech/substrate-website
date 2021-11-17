@@ -970,7 +970,7 @@
     {
       "name": "Subspace Network",
       "link": "https://www.subspace.network/",
-      "category":[ "File Storage","All"],
+      "category":[ "Infrastructure","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
       "description": "Subspace is a protocol that is fully interoperable with any layer one, allowing it to serve as an infrastructure layer for the entire Web3 ecosystem."
@@ -1163,8 +1163,8 @@
       "description": "DOT Mog is a substrate-based Unity3D Game."
     },
     {
-      "name": "Patract Hub",
-      "link": "https://dotmog.com/",
+      "name": "Patract Labs",
+      "link": "https://patract.io/",
       "category":[ "Infrastructure","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
@@ -1249,6 +1249,46 @@
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
       "description": "Konomi is a decentralized money market protocol on Polkadot."
+    },
+    {  
+      "name": "Sub.ID",
+      "link": "https://sub.id/#/",
+      "category":["Infrastructure", "All"],
+      "types": ["All Teams", "Building for Polkadot"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Sub.ID allows you to track all your wallet balances across different Substrate Chain in an easy way."
+    },
+    {  
+      "name": "Talisman",
+      "link": "https://talisman.xyz/",
+      "category":["Wallet", "All"],
+      "types": ["All Teams", "Building for Polkadot"],
+      "tag": "Infrastructure & Tooling",
+      "description": "Talisman is a multichain Wallet for the Kusama and Polkadot Ecosystems."
+    },
+    {  
+      "name": "InvArch",
+      "link": "https://invarch.io/",
+      "category":["Social", "All"],
+      "types": ["All Teams", "Building for Polkadot"],
+      "tag": "Chain",
+      "description": "A Multi-Chain IP Management and Development Protocol for the Polkadot ecosystem."
+    },
+    {  
+      "name": "BitGreen",
+      "link": "https://bitgreen.org/",
+      "category":["DeFi", "All"],
+      "types": ["All Teams", "Building for Polkadot"],
+      "tag": "Chain",
+      "description": "BitGreen is a blockchain that's purpose-built for impact, financial inclusion, energy, and human potential."
+    },
+    {  
+      "name": "SkyeKiwi",
+      "link": "https://skye.kiwi/",
+      "category":["Infrastructure", "All"],
+      "types": ["All Teams", "Building for Polkadot"],
+      "tag": "Chain",
+      "description": "SkyeKiwi is a decentralized secret sharing protocol."
     }
     ]
 }
