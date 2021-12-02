@@ -48,7 +48,7 @@ export default function Projects({ data }) {
           onClose={() => modalSetOpen(false)}
         />
       )}
-      <SEO title="Teams" />
+      <SEO title="Projects" />
 
       <Section>
         <div className="grid lg:grid-cols-2">
