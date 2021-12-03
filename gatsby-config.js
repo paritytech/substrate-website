@@ -4,6 +4,7 @@ require('dotenv').config({
 });
 
 const siteMetadata = require('./config/siteMetadata');
+const crumbLabels = require('./crumbLabels');
 
 module.exports = {
   siteMetadata,
@@ -220,24 +221,7 @@ module.exports = {
           `**/ecosystem/`,
         ],
         // crumbLabelUpdates: optional, update specific crumbLabels in the path
-        crumbLabelUpdates: [
-          {
-            pathname: '/ecosystem',
-            crumbLabel: 'Ecosystem',
-          },
-          {
-            pathname: '/ecosystem/opportunities',
-            crumbLabel: 'Opportunities',
-          },
-          {
-            pathname: '/ecosystem/resources',
-            crumbLabel: 'Resources',
-          },
-          {
-            pathname: '/ecosystem/connect',
-            crumbLabel: 'Connect',
-          },
-        ],
+        crumbLabelUpdates: crumbLabels,
       },
     },
     'gatsby-plugin-sitemap',
