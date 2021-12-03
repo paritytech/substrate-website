@@ -52,9 +52,8 @@ module.exports = {
       },
     },
 
-    /* Progressive Web App + Offline functionality
-       (docs: https://gatsby.dev/offline) */
-    /* `gatsby-plugin-offline`, */
+    /* removing registered legacy worker from gatsby-plugin-offline */
+    'gatsby-plugin-remove-serviceworker',
 
     /* add seo headers and page titles, from pages/components */
     'gatsby-plugin-react-helmet',
