@@ -4,7 +4,7 @@ require('dotenv').config({
 });
 
 const siteMetadata = require('./config/siteMetadata');
-const crumbLabels = require('./crumbLabels');
+const crumbLabels = require('./config/crumbLabels');
 
 module.exports = {
   siteMetadata,
