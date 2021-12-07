@@ -9,7 +9,6 @@ const Banner = () => {
   const [isBannerOpen, setIsBannerOpen] = useSessionStorage('banner', true);
 
   const banner = useBanner();
-  console.log(banner);
   const {
     node: {
       html,
@@ -17,13 +16,14 @@ const Banner = () => {
     },
   } = banner;
 
+  if (!isBannerOpen) {
+    return null;
+  }
+
   return (
     <div
       className={cx(
-        'hidden md:block fixed z-50 right-10 bottom-8 max-w-sm p-6 transition-all text-white dark:text-black dark:bg-substrateGray bg-substrateBlackish m-0 shadow-xxl rounded-md',
-        {
-          'opacity-0 -z-10': !isBannerOpen,
-        }
+        'hidden md:block fixed z-50 right-10 bottom-8 max-w-sm p-6 transition-all text-white dark:text-black dark:bg-substrateGray bg-substrateBlackish m-0 shadow-xxl rounded-md'
       )}
     >
       <h4 className="mb-2 font-bold text-2xl">{title}</h4>
