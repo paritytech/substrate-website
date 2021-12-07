@@ -6,10 +6,13 @@ import { isBrowser } from '../../utils/browser';
 import Icon from '../default/Icon';
 
 function getSessionStorageOrDefault(key, defaultValue) {
-  if (!isBrowser) return defaultValue;
-  const stored = window.sessionStorage.getItem(key);
-  if (!stored) return defaultValue;
-  return JSON.parse(stored);
+  if (isBrowser) {
+    const stored = window.sessionStorage.getItem(key);
+    if (!stored) return defaultValue;
+    return JSON.parse(stored);
+  }
+
+  return defaultValue;
 }
 
 const Banner = () => {
