@@ -1,14 +1,11 @@
 import cx from 'classnames';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { useBanner } from '../../hooks/use-banner';
-import useScrollListener from '../../hooks/use-scroll-listener';
 import useSessionStorage from '../../hooks/use-session-storage';
 import Icon from '../default/Icon';
 
 const Banner = () => {
-  const scroll = useScrollListener();
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isBannerOpen, setIsBannerOpen] = useSessionStorage('banner', true);
 
   const { banner } = useBanner();
@@ -17,20 +14,12 @@ const Banner = () => {
     frontmatter: { title },
   } = banner;
 
-  useEffect(() => {
-    if (scroll.y > 300) {
-      setIsScrolled(true);
-    } else if (scroll.y < 1) {
-      setIsScrolled(false);
-    }
-  }, [scroll.y]);
-
   return (
     <div
       className={cx(
         'hidden md:block fixed z-50 right-10 bottom-8 max-w-sm p-6 transition-all text-white dark:text-black dark:bg-substrateGray bg-substrateBlackish m-0 shadow-xxl rounded-md',
         {
-          'opacity-0 -z-10': isScrolled || !isBannerOpen,
+          'opacity-0 -z-10': !isBannerOpen,
         }
       )}
     >
