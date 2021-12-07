@@ -1,13 +1,18 @@
 import cx from 'classnames';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { useBanner } from '../../hooks/use-banner';
-import useSessionStorage from '../../hooks/use-session-storage';
+import { isBrowser } from '../../utils/browser';
 import Icon from '../default/Icon';
 
-const Banner = () => {
-  const [isBannerOpen, setIsBannerOpen] = useSessionStorage('banner', true);
+function getSessionStorageOrDefault(key, defaultValue) {
+  if (!isBrowser) return defaultValue;
+  const stored = window.sessionStorage.getItem(key);
+  if (!stored) return defaultValue;
+  return JSON.parse(stored);
+}
 
+const Banner = () => {
   const banner = useBanner();
   const {
     node: {
@@ -15,6 +20,14 @@ const Banner = () => {
       frontmatter: { title },
     },
   } = banner;
+
+  const [isBannerOpen, setIsBannerOpen] = useState(getSessionStorageOrDefault('banner', true));
+
+  useEffect(() => {
+    if (isBrowser) {
+      window.sessionStorage.setItem('banner', JSON.stringify(isBannerOpen));
+    }
+  }, [isBannerOpen]);
 
   return (
     <>
