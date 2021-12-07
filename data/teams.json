@@ -146,7 +146,7 @@
     {
       "name": "Aventus",
       "link": "https://www.aventus.io/",
-      "category":[ "Gaming","All"],
+      "category":[ "DeFi","All"],
       "types": ["All Teams", "Substrate Builders Program"],
       "tag": "Chain",
       "description": "Aventus is a digital assets-focused blockchain-based protocol that transforms oversight, standardisation, trust and innovation across enterprises’ supply chains."
@@ -340,12 +340,12 @@
       "description": "Dock is an open source network providing infrastructure and tools for issuing verifiable credentials using blockchain technology."
     },
     {
-      "name": "dTrade",
-      "link": "https://dtrade.org/",
+      "name": "Firefly",
+      "link": "https://firefly.exchange/",
       "category":[ "DeFi","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Decentralized Application",
-      "description": "dTrade is the first synthetic asset and futures trading protocol on Polkadot."
+      "description": "Firefly is the first derivatives exchange protocol on Polkadot."
     }, 
     {
       "name": "Edgeware",
@@ -1155,12 +1155,12 @@
       "description": "DatDot is a Distributed (peer-to-peer ) File Hosting Network, leveraging on the Dat Protocol and Substrate."
     },
     {
-      "name": "DOTMog",
-      "link": "https://dotmog.com/",
+      "name": "Ajuna Network",
+      "link": "https://ajuna.io/",
       "category":[ "Gaming","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Decentralized Application",
-      "description": "DOT Mog is a substrate-based Unity3D Game."
+      "description": "Ajuna Network is an infrastructure for Blockhain Games, featureing a full featured UnitySDK and UnrealSDK built on Substrate."
     },
     {
       "name": "Patract Labs",
