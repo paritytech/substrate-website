@@ -5,16 +5,6 @@ import { useBanner } from '../../hooks/use-banner';
 import { isBrowser } from '../../utils/browser';
 import Icon from '../default/Icon';
 
-function getSessionStorageOrDefault(key, defaultValue) {
-  if (isBrowser) {
-    const stored = window.sessionStorage.getItem(key);
-    if (!stored) return defaultValue;
-    return JSON.parse(stored);
-  }
-
-  return defaultValue;
-}
-
 const Banner = () => {
   const banner = useBanner();
   const {
@@ -31,6 +21,16 @@ const Banner = () => {
       window.sessionStorage.setItem('banner', JSON.stringify(isBannerOpen));
     }
   }, [isBannerOpen]);
+
+  function getSessionStorageOrDefault(key, defaultValue) {
+    if (isBrowser) {
+      const stored = window.sessionStorage.getItem(key);
+      if (!stored) return defaultValue;
+      return JSON.parse(stored);
+    }
+
+    return defaultValue;
+  }
 
   return (
     <>
