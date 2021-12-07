@@ -8,10 +8,13 @@ import Icon from '../default/Icon';
 const Banner = () => {
   const [isBannerOpen, setIsBannerOpen] = useSessionStorage('banner', true);
 
-  const { banner } = useBanner();
+  const banner = useBanner();
+  console.log(banner);
   const {
-    html,
-    frontmatter: { title },
+    node: {
+      html,
+      frontmatter: { title },
+    },
   } = banner;
 
   return (
