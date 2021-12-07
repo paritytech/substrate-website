@@ -191,3 +191,7 @@ div[aria-label='animation'] {
 .banner strong {
   @apply font-bold;
 }
+
+.banner a {
+  @apply text-substrateDarkThemeBlue dark:text-substrateBlue;
+}
