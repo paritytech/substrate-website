@@ -2,7 +2,7 @@ import cx from 'classnames';
 import React, { useEffect, useState } from 'react';
 
 import { useBanner } from '../../hooks/use-banner';
-// import { isBrowser } from '../../utils/browser';
+import { isBrowser } from '../../utils/browser';
 import Icon from '../default/Icon';
 
 const Banner = () => {
@@ -21,7 +21,7 @@ const Banner = () => {
   }, [isBannerOpen]);
 
   function getSessionStorageOrDefault(key, defaultValue) {
-    const stored = typeof window !== `undefined` && window.sessionStorage.getItem(key);
+    const stored = isBrowser && window.sessionStorage.getItem(key);
     if (!stored) {
       return defaultValue;
     }
