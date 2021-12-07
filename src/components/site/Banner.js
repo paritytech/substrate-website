@@ -2,7 +2,7 @@ import cx from 'classnames';
 import React, { useEffect, useState } from 'react';
 
 import { useBanner } from '../../hooks/use-banner';
-import { isBrowser } from '../../utils/browser';
+// import { isBrowser } from '../../utils/browser';
 import Icon from '../default/Icon';
 
 const Banner = () => {
@@ -17,19 +17,15 @@ const Banner = () => {
   const [isBannerOpen, setIsBannerOpen] = useState(getSessionStorageOrDefault('banner', true));
 
   useEffect(() => {
-    if (isBrowser) {
-      window.sessionStorage.setItem('banner', JSON.stringify(isBannerOpen));
-    }
+    window.sessionStorage.setItem('banner', JSON.stringify(isBannerOpen));
   }, [isBannerOpen]);
 
   function getSessionStorageOrDefault(key, defaultValue) {
-    if (isBrowser) {
-      const stored = window.sessionStorage.getItem(key);
-      if (!stored) return defaultValue;
-      return JSON.parse(stored);
+    const stored = typeof window !== `undefined` && window.sessionStorage.getItem(key);
+    if (!stored) {
+      return defaultValue;
     }
-
-    return defaultValue;
+    return JSON.parse(stored);
   }
 
   return (
