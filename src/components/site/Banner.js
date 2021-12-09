@@ -1,23 +1,18 @@
 import cx from 'classnames';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { useBanner } from '../../hooks/use-banner';
 import { useSessionStorage } from '../../hooks/use-session-storage';
 import Icon from '../default/Icon';
 
 const Banner = () => {
-  const [renderBanner, setRenderBanner] = useState(null);
   const { isBannerOpen, setIsBannerOpen } = useSessionStorage('banner', true);
 
   const banners = useBanner();
 
-  useEffect(() => {
-    setRenderBanner(isBannerOpen);
-  }, [isBannerOpen]);
-
   return (
     <>
-      {renderBanner && (
+      {isBannerOpen && (
         <div
           className={cx(
             'hidden md:block fixed z-50 right-10 bottom-8 max-w-sm p-6 transition-all text-white dark:text-black dark:bg-substrateGray bg-substrateBlackish m-0 shadow-xxl rounded-md'
