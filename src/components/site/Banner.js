@@ -6,7 +6,7 @@ import { useSessionStorage } from '../../hooks/use-session-storage';
 import Icon from '../default/Icon';
 
 const Banner = () => {
-  const { isBannerOpen, setIsBannerOpen } = useSessionStorage('banner');
+  const { isBannerOpen, setIsBannerOpen } = useSessionStorage('banner', true);
 
   const banners = useBanner();
 
