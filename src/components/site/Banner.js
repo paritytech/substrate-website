@@ -8,11 +8,7 @@ import Icon from '../default/Icon';
 const Banner = () => {
   const { isBannerOpen, setIsBannerOpen } = useSessionStorage('banner');
 
-  const banner = useBanner();
-  const {
-    html,
-    frontmatter: { title },
-  } = banner[0].node;
+  const banners = useBanner();
 
   return (
     <>
@@ -22,11 +18,26 @@ const Banner = () => {
             'hidden md:block fixed z-50 right-10 bottom-8 max-w-sm p-6 transition-all text-white dark:text-black dark:bg-substrateGray bg-substrateBlackish m-0 shadow-xxl rounded-md'
           )}
         >
-          <h4 className="mb-2 font-bold text-2xl">{title}</h4>
-          <div
-            dangerouslySetInnerHTML={{ __html: html }}
-            className="banner underline-animate underline-animate-thin"
-          ></div>
+          {banners.map(
+            (
+              {
+                node: {
+                  html,
+                  frontmatter: { title },
+                },
+              },
+              idx
+            ) => (
+              <>
+                {idx !== 0 && <div className="h-0.5 my-2 bg-substrateDarkThemeGrey dark:bg-substrateSubtleGrey"></div>}
+                <h4 className="mb-2 font-bold text-2xl">{title}</h4>
+                <div
+                  dangerouslySetInnerHTML={{ __html: html }}
+                  className="banner underline-animate underline-animate-thin"
+                ></div>
+              </>
+            )
+          )}
 
           <div
             className="absolute right-4 top-4 cursor-pointer duration-150 ease-in-out hover:scale-110"
