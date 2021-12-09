@@ -7,12 +7,11 @@ import Icon from '../default/Icon';
 
 const Banner = () => {
   const { isBannerOpen, setIsBannerOpen } = useSessionStorage('banner', true);
-
-  const banners = useBanner();
+  const { banners } = useBanner();
 
   return (
     <>
-      {isBannerOpen && (
+      {banners.length > 0 && isBannerOpen && (
         <div
           className={cx(
             'hidden md:block fixed z-50 right-10 bottom-8 max-w-sm p-6 transition-all text-white dark:text-black dark:bg-substrateGray bg-substrateBlackish m-0 shadow-xxl rounded-md'
@@ -28,14 +27,16 @@ const Banner = () => {
               },
               idx
             ) => (
-              <div key={idx}>
-                {idx !== 0 && <div className="h-0.5 my-2 bg-substrateDarkThemeGrey dark:bg-substrateSubtleGrey"></div>}
-                <h4 className="mb-2 font-bold text-2xl">{title}</h4>
-                <div
-                  dangerouslySetInnerHTML={{ __html: html }}
-                  className="banner underline-animate underline-animate-thin"
-                ></div>
-              </div>
+              <>
+                {idx > 0 && <hr className="mt-3 mb-2 border-substrateDarkThemeGrey dark:border-substrateSubtleGrey" />}
+                <div className="banner" key={idx}>
+                  <span className="block pr-2 mb-2 font-bold text-xl">{title}</span>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: html }}
+                    className="underline-animate underline-animate-thin"
+                  ></div>
+                </div>
+              </>
             )
           )}
 
