@@ -1,10 +1,6 @@
 ---
-date_end: 2021-12-12
 title: "Example title"
 active: true
 ---
 
 This is an example banner. 
-
-The banner which will render on the website is the one which 
-both has active set to true, and has the highest date_end.

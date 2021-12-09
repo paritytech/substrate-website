@@ -1,5 +1,4 @@
 ---
-date_end: 2020-12-30
 title: "StackExchange Forum"
 active: true
 ---

@@ -8,8 +8,6 @@ export const useBanner = () => {
       query {
         allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "//(banner)/" }, frontmatter: { active: { eq: true } } }
-          sort: { fields: frontmatter___date_end, order: DESC }
-          limit: 1
         ) {
           edges {
             node {
@@ -24,5 +22,5 @@ export const useBanner = () => {
     `
   );
 
-  return banner[0];
+  return banner;
 };
