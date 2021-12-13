@@ -812,9 +812,10 @@
     {
       "name": "Polkadex",
       "link": "https://www.polkadex.trade",
-      "category":[ "DeFi","All"],
+      "category":[ "DeFi", "Infrastructure", "All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
+      "caseStudy": "case-studies/polkadex",
       "description": "Polkadex is a Open Source, Decentralized Exchange Platform that features feeless trades, Market Order, AMM and full focus on UI."
     },
     {
