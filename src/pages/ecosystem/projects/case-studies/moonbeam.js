@@ -162,6 +162,12 @@ export default function MoonbeamCaseStudy({ data }) {
           <div className="block">
             <Link to="/ecosystem/projects/case-studies/astar/">Astar Network Case Study</Link>
           </div>
+          <div className="block">
+            <Link to="/ecosystem/projects/case-studies/polkadex/">Polkadex Case Study</Link>
+          </div>
+          <div className="block">
+            <Link to="/ecosystem/projects/case-studies/unique/">Unique Network Case Study</Link>
+          </div>
           <br />
           <div className="block">
             <Link to="/ecosystem/projects/">See All Projects</Link>
