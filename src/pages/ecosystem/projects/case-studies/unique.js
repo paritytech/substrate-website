@@ -155,7 +155,7 @@ export default function UniqueCaseStudy({ data }) {
         </p>
 
         <p>
-          <span className="font-bold">Pallets</span>(3-6 as top priority):
+          <span className="font-bold">Pallets </span>(3-6 as top priority):
         </p>
         <ol className="ml-4">
           <li>nft</li>
