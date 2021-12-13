@@ -197,6 +197,9 @@ export default function PolkadexCaseStudy({ data }) {
           <div className="block">
             <Link to="/ecosystem/projects/case-studies/acala/">Acala Case Study</Link>
           </div>
+          <div className="block">
+            <Link to="/ecosystem/projects/case-studies/unique/">Unique Case Study</Link>
+          </div>
           <br />
           <div className="block">
             <Link to="/ecosystem/projects/">See All Projects</Link>

@@ -1,6 +1,6 @@
 {
 	"types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
-  "categories": ["All", "DeFi", "Wallet", "Identity", "Social", "Smart Contracts", "File Storage", "IoT", "Gaming", "Bridge", "Infrastructure", "Relay Chain"],
+  "categories": ["All", "DeFi", "Wallet", "Identity", "Social", "Smart Contracts", "File Storage", "IoT", "Gaming", "Bridge", "Infrastructure", "Relay Chain", "NFTs", "Trading Infrastructure"],
   "teams": [
     {
       "name": "Acala Network",
@@ -812,8 +812,8 @@
     {
       "name": "Polkadex",
       "link": "https://www.polkadex.trade",
-      "category":[ "DeFi", "Infrastructure", "All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "category":[ "DeFi", "Trading Infrastructure", "All"],
+      "types": ["All Teams", "Substrate Builders Program"],
       "tag": "Chain",
       "caseStudy": "case-studies/polkadex",
       "description": "Polkadex is a Open Source, Decentralized Exchange Platform that features feeless trades, Market Order, AMM and full focus on UI."
@@ -1019,9 +1019,10 @@
     {
       "name": "Unique Network",
       "link": "https://usetech.com/blockchain/",
-      "category":[ "Gaming","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "category":[ "NFTs","All"],
+      "types": ["All Teams", "Substrate Builders Program"],
       "tag": "Chain",
+      "caseStudy": "case-studies/unique",
       "description": "UseTech is developing Unique Network, an NFT Substrate-base Parachain. The network was first launched on Hackusama."
     },
     {
