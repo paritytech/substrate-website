@@ -22,7 +22,7 @@ export default function Hackathons() {
       <Section>
         <h2 className="text-4xl font-bold mb-4">Hackathons</h2>
         <p>
-          Challenge yourself, up your game, and connect with the commmunity. There are great prizes up for grabs, too.
+          Challenge yourself, up your game, and connect with the community. There are great prizes up for grabs, too.
         </p>
         {hackathons.map((hackathon, idx) => {
           return (
