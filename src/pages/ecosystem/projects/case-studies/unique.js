@@ -184,13 +184,13 @@ export default function UniqueCaseStudy({ data }) {
         <h4>More Case Studies</h4>
         <div className="font-bold leading-8 underline-animate">
           <div className="block">
+            <Link to="/ecosystem/projects/case-studies/acala/">Acala Case Study</Link>
+          </div>
+          <div className="block">
             <Link to="/ecosystem/projects/case-studies/astar/">Astar Network Case Study</Link>
           </div>
           <div className="block">
             <Link to="/ecosystem/projects/case-studies/moonbeam/">Moonbeam Case Study</Link>
-          </div>
-          <div className="block">
-            <Link to="/ecosystem/projects/case-studies/acala/">Acala Case Study</Link>
           </div>
           <div className="block">
             <Link to="/ecosystem/projects/case-studies/polkadex/">Polkadex Case Study</Link>

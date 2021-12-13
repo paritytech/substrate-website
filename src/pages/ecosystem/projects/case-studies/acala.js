@@ -213,6 +213,12 @@ export default function AcalaCaseStudy({ data }) {
           <div className="block">
             <Link to="/ecosystem/projects/case-studies/moonbeam/">Moonbeam Case Study</Link>
           </div>
+          <div className="block">
+            <Link to="/ecosystem/projects/case-studies/polkadex/">Polkadex Case Study</Link>
+          </div>
+          <div className="block">
+            <Link to="/ecosystem/projects/case-studies/unique/">Unique Network Case Study</Link>
+          </div>
           <br />
           <div className="block">
             <Link to="/ecosystem/projects/">See All Projects</Link>
