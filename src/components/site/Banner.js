@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { useBanner } from '../../hooks/use-banner';
 import { useSessionStorage } from '../../hooks/use-session-storage';
@@ -28,16 +28,16 @@ const Banner = () => {
               },
               idx
             ) => (
-              <>
+              <Fragment key={idx}>
                 {idx > 0 && <hr className="mt-3 mb-2 border-substrateDarkThemeGrey dark:border-substrateSubtleGrey" />}
-                <div className="banner" key={idx}>
+                <div className="banner">
                   <span className="block pr-2 mb-2 font-bold text-xl">{title}</span>
                   <div
                     dangerouslySetInnerHTML={{ __html: html }}
                     className="underline-animate underline-animate-thin"
                   ></div>
                 </div>
-              </>
+              </Fragment>
             )
           )}
 

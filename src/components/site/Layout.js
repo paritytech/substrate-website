@@ -71,8 +71,8 @@ export default function Layout({
         {layout === 'default' && <>{children}</>}
         {layout === 'sidebar' && <LayoutSidebar hasArticleNav={hasArticleNav}>{children}</LayoutSidebar>}
       </main>
-      <Footer />
       <Banner />
+      <Footer />
     </>
   );
 }
