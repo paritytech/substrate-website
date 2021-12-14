@@ -13,6 +13,8 @@ export default function BreadcrumbNav(props) {
         <span>Projects</span>
       </Link>
       <span className="mx-2">»</span>
+      <span>Case Studies</span>
+      <span className="mx-2">»</span>
       <span>{props.title}</span>
     </nav>
   );

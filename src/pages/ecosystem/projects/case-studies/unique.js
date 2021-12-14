@@ -50,7 +50,7 @@ export default function UniqueCaseStudy({ data }) {
     <Layout layout="sidebar" hasBreadcrumbs={false}>
       <SEO title="Unique Network Case Study" />
       <Section>
-        <CaseStudyBreadcrumb title={'Unique Network Case Study'} />
+        <CaseStudyBreadcrumb title={'Unique Network'} />
         <div className="tracking-wider uppercase mb-4">Case Study</div>
         <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center">
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={uniqueData.name} />

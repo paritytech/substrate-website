@@ -51,7 +51,7 @@ export default function MoonbeamCaseStudy({ data }) {
     <Layout layout="sidebar" hasBreadcrumbs={false}>
       <SEO title="Moonbeam Case Study" />
       <Section>
-        <CaseStudyBreadcrumb title={`Moonbeam Case Study`} />
+        <CaseStudyBreadcrumb title={`Moonbeam`} />
         <div className="tracking-wider uppercase mb-4">Case Study</div>
         <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center">
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} objectFit="contain" alt={moonbeamData.name} />

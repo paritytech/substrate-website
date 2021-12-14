@@ -51,7 +51,7 @@ export default function AcalaCaseStudy({ data }) {
     <Layout layout="sidebar" hasBreadcrumbs={false}>
       <SEO title="Acala Network Case Study" />
       <Section>
-        <CaseStudyBreadcrumb title={'Acala Network Case Study'} />
+        <CaseStudyBreadcrumb title={'Acala Network'} />
         <div className="tracking-wider uppercase mb-4">Case Study</div>
         <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center">
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={acalaData.name} />
