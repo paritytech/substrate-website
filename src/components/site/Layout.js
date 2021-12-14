@@ -62,6 +62,7 @@ export default function Layout({
 
   return (
     <>
+      <Banner />
       <Header mode={mode} header={header} />
       <main
         className={cx('min-h-screen', {
@@ -72,7 +73,6 @@ export default function Layout({
         {layout === 'sidebar' && <LayoutSidebar hasArticleNav={hasArticleNav}>{children}</LayoutSidebar>}
       </main>
       <Footer />
-      <Banner />
     </>
   );
 }
