@@ -9,7 +9,7 @@
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
       "description": "Acala is a decentralized stablecoin platform that powers cross-blockchain open finance applications.",
-      "caseStudy": "case-studies/acala",
+      "caseStudy": "case-studies/acala/",
       "runtimes": [
         {
           "title":"acala-runtime",
@@ -658,7 +658,7 @@
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
       "description": "Decentralized and permissionless, Moonbeam provides an Ethereum-compatible smart contract platform that makes it easy to build natively interoperable applications.",
-      "caseStudy": "case-studies/moonbeam",
+      "caseStudy": "case-studies/moonbeam/",
       "runtimes": [
         {
           "title":"moonbase-runtime",
@@ -798,7 +798,7 @@
       "category":[ "Smart Contracts","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
-      "caseStudy": "case-studies/astar",
+      "caseStudy": "case-studies/astar/",
       "description": "Astar Network is a scaling dApps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
     },
     {
@@ -815,7 +815,7 @@
       "category":[ "DeFi", "Trading Infrastructure", "All"],
       "types": ["All Teams", "Substrate Builders Program"],
       "tag": "Chain",
-      "caseStudy": "case-studies/polkadex",
+      "caseStudy": "case-studies/polkadex/",
       "description": "Polkadex is a Open Source, Decentralized Exchange Platform that features feeless trades, Market Order, AMM and full focus on UI."
     },
     {
@@ -1022,7 +1022,7 @@
       "category":[ "NFTs","All"],
       "types": ["All Teams", "Substrate Builders Program"],
       "tag": "Chain",
-      "caseStudy": "case-studies/unique",
+      "caseStudy": "case-studies/unique/",
       "description": "UseTech is developing Unique Network, an NFT Substrate-base Parachain. The network was first launched on Hackusama."
     },
     {
