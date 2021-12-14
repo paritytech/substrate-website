@@ -5,9 +5,9 @@ import React from 'react';
 import teamsData from '../../../../../data/teams.json';
 import Icon from '../../../../components/default/Icon';
 import { Link } from '../../../../components/default/Link';
-import ArticleCols from '../../../../components/layout/ArticleCols';
 import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
+import Section from '../../../../components/layout/Section';
 import Layout from '../../../../components/site/Layout';
 import SEO from '../../../../components/site/SEO';
 
@@ -47,9 +47,9 @@ export default function PolkadexCaseStudy({ data }) {
   const polkadexData = teamsData.teams.find(team => team.name === 'Polkadex');
   const logo = getImage(data.logo);
   return (
-    <Layout>
+    <Layout layout="sidebar" hasBreadcrumbs={false}>
       <SEO title="Polkadex Case Study" />
-      <ArticleCols>
+      <Section>
         <CaseStudyBreadcrumb title={'Polkadex Case Study'} />
         <div className="tracking-wider uppercase mb-4">Case Study</div>
         <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center">
@@ -192,9 +192,6 @@ export default function PolkadexCaseStudy({ data }) {
             <Link to="/ecosystem/projects/case-studies/acala/">Acala Case Study</Link>
           </div>
           <div className="block">
-            <Link to="/ecosystem/projects/case-studies/astar/">Astar Network Case Study</Link>
-          </div>
-          <div className="block">
             <Link to="/ecosystem/projects/case-studies/moonbeam/">Moonbeam Case Study</Link>
           </div>
           <div className="block">
@@ -205,7 +202,7 @@ export default function PolkadexCaseStudy({ data }) {
             <Link to="/ecosystem/projects/">See All Projects</Link>
           </div>
         </div>
-      </ArticleCols>
+      </Section>
     </Layout>
   );
 }
