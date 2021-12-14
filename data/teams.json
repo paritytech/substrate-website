@@ -1,6 +1,6 @@
 {
 	"types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
-  "categories": ["All", "DeFi", "Wallet", "Identity", "Social", "Smart Contracts", "File Storage", "IoT", "Gaming", "Bridge", "Infrastructure", "Relay Chain", "NFTs", "Trading Infrastructure"],
+  "categories": ["All", "DeFi", "Wallet", "Identity", "Social", "Smart Contracts", "File Storage", "IoT", "Gaming", "Bridge", "Infrastructure", "Relay Chain", "NFTs"],
   "teams": [
     {
       "name": "Acala Network",
@@ -812,7 +812,7 @@
     {
       "name": "Polkadex",
       "link": "https://www.polkadex.trade",
-      "category":[ "DeFi", "Trading Infrastructure", "All"],
+      "category":[ "DeFi", "Infrastructure", "All"],
       "types": ["All Teams", "Substrate Builders Program"],
       "tag": "Chain",
       "caseStudy": "case-studies/polkadex/",
