@@ -90,8 +90,10 @@ export default function Projects({ data }) {
           Projects
         </h2>
         <TypeFilter types={types} curType={curType} setCurType={setCurType} />
-        <CaseStudyFilter showCaseStudies={showCaseStudies} setShowCaseStudies={setShowCaseStudies} />
-        <CatFilter categories={categories} curCat={curCat} setCurCat={setCurCat} />
+        <div className="flex flex-col md:flex-row md:items-end gap-4 lg:gap-6 mb-8">
+          <CatFilter categories={categories} curCat={curCat} setCurCat={setCurCat} />
+          <CaseStudyFilter showCaseStudies={showCaseStudies} setShowCaseStudies={setShowCaseStudies} />
+        </div>
         <AllTeams
           teams={teams}
           setCurTeam={setCurTeam}

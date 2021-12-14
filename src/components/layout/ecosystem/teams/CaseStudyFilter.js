@@ -2,8 +2,8 @@ import React from 'react';
 
 const CaseStudyFilter = ({ showCaseStudies, setShowCaseStudies }) => {
   return (
-    <div className="flex w-full lg:justify-end lg:-mb-14 case-studies">
-      <p className="inline pr-3 cursor-pointer" onClick={() => setShowCaseStudies(!showCaseStudies)}>
+    <div className="flex case-studies mb-2">
+      <p className="inline pr-3 cursor-pointer mb-0" onClick={() => setShowCaseStudies(!showCaseStudies)}>
         Show only Case Studies
       </p>
       <input

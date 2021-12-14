@@ -4,8 +4,8 @@ import React from 'react';
 export default function TypeFilter(props) {
   const { types, curType, setCurType } = props;
   return (
-    <div className="mb-8">
-      <h5 className="font-normal mb-6">Filter by type</h5>
+    <div className="mb-4 lg:mb-8">
+      <h5 className="font-normal mb-2 lg:mb-3">Filter by type</h5>
       <div className="lg:hidden">
         <select
           className="focus:outline-none text-sm dark:bg-darkBackground"
