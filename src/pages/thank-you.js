@@ -9,7 +9,9 @@ import SEO from '../components/site/SEO';
 export default function ThankYou() {
   return (
     <Layout>
-      <SEO title="Thank You" noindex />
+      <SEO title="Thank You">
+        <meta name="robots" content="noindex" />
+      </SEO>
       <Section>
         <h1 className="mb-20 mt-20 md:mt-52 text-4xl sm:text-5xl md:text-6xl font-body font-extrabold">
           Thanks For Your Submission.
