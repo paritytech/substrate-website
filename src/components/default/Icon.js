@@ -13,6 +13,7 @@ import explore from '../../images/svg/ecosystem/explore.svg';
 import opportunities from '../../images/svg/ecosystem/opportunities.svg';
 import resources from '../../images/svg/ecosystem/resources.svg';
 import event from '../../images/svg/event.svg';
+import flag from '../../images/svg/flag.svg';
 import forklessUpgrades from '../../images/svg/forkless-upgrades.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
 import graduation from '../../images/svg/graduation.svg';
@@ -175,6 +176,7 @@ const iconsMap = {
   'check-mark': checkMark,
   graph: graph,
   knight: knight,
+  flag: flag,
   /* technology */
   flexible: flexible,
   'future-proof': futureProof,

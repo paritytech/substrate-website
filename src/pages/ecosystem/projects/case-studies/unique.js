@@ -88,7 +88,7 @@ export default function UniqueCaseStudy({ data }) {
           Solidity. Unique Network is built to enable the next generation of NFT use cases.
         </p>
         <div className="flex items-center mt-10 mb-6 ">
-          <Icon name="knight" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="challenge" className="mb-0 scroll-margin-top-100">
             Challenge
           </h2>
@@ -104,7 +104,7 @@ export default function UniqueCaseStudy({ data }) {
           regular payments.
         </p>
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="check-mark" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="solution" className="mb-0 scroll-margin-top-100">
             Solution
           </h2>
@@ -119,7 +119,7 @@ export default function UniqueCaseStudy({ data }) {
         </p>
 
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="graph" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="result" className="mb-0 scroll-margin-top-100">
             Result
           </h2>

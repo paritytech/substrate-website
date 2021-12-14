@@ -85,7 +85,7 @@ export default function AstarCaseStudy({ data }) {
           WebAssembly, and Layer2 solutions like Rollups.
         </p>
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="knight" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="challenge" className="mb-0 scroll-margin-top-100">
             Challenge
           </h2>
@@ -96,7 +96,7 @@ export default function AstarCaseStudy({ data }) {
           supports smart contract functionalities well would be a great benefit to the Polkadot ecosystem.
         </p>
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="check-mark" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="solution" className="mb-0 scroll-margin-top-100">
             Solution
           </h2>
@@ -113,7 +113,7 @@ export default function AstarCaseStudy({ data }) {
           basic income pallet accordingly.
         </p>
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="graph" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="result" className="mb-0 scroll-margin-top-100">
             Result
           </h2>

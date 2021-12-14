@@ -189,7 +189,7 @@ div[aria-label='animation'] {
 }
 
 .case-studies input[type='checkbox'] + label {
-  @apply inline-block relative h-4 w-4 mt-1 border border-substrateDark dark:border-white rounded-sm;
+  @apply inline-block relative cursor-pointer h-4 w-4 mt-1 border border-substrateDark dark:border-white rounded-sm;
 }
 
 .case-studies input[type='checkbox']:checked + label::after {
