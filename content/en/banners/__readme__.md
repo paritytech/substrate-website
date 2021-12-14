@@ -1,5 +1,5 @@
 ---
-title: "Example Banner Title"
+title: "Example Banner Title (optional)"
 active: false
 ---
 
@@ -13,6 +13,6 @@ DO NOT delete or rename this readme file and follow the instructions bellow:
 
 4. Keep in mind to be short as possible (max 160 characters) as the Banner UI could get quite big.
 
-5. In case of using multiple banners they will be stacked in the Banner UI in an alphabetical order.
+5. One banner is optimal but the UI supports two if really needed. In such a case they will be stacked in the Banner UI in an alphabetical order.
 
 6. You can archive banners by setting "active: false" to exclude it from the Banner UI.

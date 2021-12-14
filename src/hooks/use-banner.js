@@ -12,6 +12,7 @@ export const useBanner = () => {
             frontmatter: { active: { eq: true } }
           }
           sort: { fields: fields___slug, order: ASC }
+          limit: 2
         ) {
           edges {
             node {

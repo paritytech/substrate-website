@@ -8,10 +8,11 @@ import Icon from '../default/Icon';
 const Banner = () => {
   const { isBannerOpen, setIsBannerOpen } = useSessionStorage('banner', true);
   const { banners } = useBanner();
+  const hasActiveBanner = banners.length > 0;
 
   return (
     <>
-      {banners.length > 0 && isBannerOpen && (
+      {hasActiveBanner && isBannerOpen && (
         <div
           className={cx(
             'hidden md:block fixed z-50 right-10 bottom-8 max-w-sm p-6 transition-all text-white dark:text-black dark:bg-substrateGray bg-substrateBlackish m-0 shadow-xxl rounded-md'
