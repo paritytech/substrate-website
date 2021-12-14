@@ -107,10 +107,7 @@ export default function Projects({ data }) {
 
       {isComponentVisible && (
         <>
-          <div
-            id="content-container"
-            className="flex justify-center items-center fixed inset-0 z-50 px-4 animate-fade-in"
-          >
+          <div id="content-container" className="flex justify-center items-center fixed inset-0 z-50 px-4">
             <div
               ref={ref}
               className="bg-white h-auto dark:bg-darkBackground w-full max-w-md p-6 rounded-lg border-2 border-substrateDark shadow-xl"
