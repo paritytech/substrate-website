@@ -79,7 +79,7 @@ export default function PolkadexCaseStudy({ data }) {
         <Blockqoute
           text="“The core principles that I enforced for Polkadex Orderbook include bringing a world-class UX without compromising user fund security. This is possible due to the flexibility and modular nature of the Substrate Framework.”"
           name="Gautham J, CEO, Polkadex"
-          image={data.avatar}
+          image={false}
         />
         <p>
           Polkadex introduces a trading infrastructure without compromises. This trading infrastructure includes a

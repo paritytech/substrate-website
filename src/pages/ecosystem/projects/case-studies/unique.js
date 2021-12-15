@@ -77,7 +77,7 @@ export default function UniqueCaseStudy({ data }) {
         <Blockqoute
           text="“Flexibility is the strongest side of Substrate - it allows unmatched customization that is needed to handle non-fungible asset classes on-chain. We used it to create the next generation NFT chain, capable of supporting innovative use cases and liberating NFTs from the collectables.”"
           name="Greg Zaytsev and Alexander Mitrovich, Founders, Unique Network"
-          image={data.avatar}
+          image={false}
         />
         <p>
           Unique Network is a Substrate-based NFT chain for the Polkadot and Kusama ecosystems. It provides all basic
