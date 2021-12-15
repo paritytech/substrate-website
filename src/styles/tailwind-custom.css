@@ -182,6 +182,21 @@ div[aria-label='animation'] {
   border-width: 3px;
 }
 
+/* Case studies filter checkbox */
+
+.case-studies input[type='checkbox'] {
+  display: none;
+}
+
+.case-studies input[type='checkbox'] + label {
+  @apply inline-block relative cursor-pointer h-4 w-4 mt-1 border border-substrateDark dark:border-white rounded-sm;
+}
+
+.case-studies input[type='checkbox']:checked + label::after {
+  content: '✔';
+  @apply inline-block absolute left-0.5 text-xs text-substrateDark dark:text-white;
+}
+
 /* Banner */
 
 .banner p {
