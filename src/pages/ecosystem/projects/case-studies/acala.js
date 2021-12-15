@@ -123,7 +123,7 @@ export default function AcalaCaseStudy({ data }) {
             Solution
           </h2>
         </div>
-        <h4>How did the specific USPs of Substrate solve the challenges faced?</h4>
+        <h4>How did the specific features of Substrate solve the challenges faced?</h4>
         <p>Acala aims to be a user-friendly, secure, and efficient platform for DeFi applications.</p>
         <p>
           Substrate is very flexible. That allows customizing almost everything, including fee payment logic. Acala

@@ -101,7 +101,7 @@ export default function AstarCaseStudy({ data }) {
             Solution
           </h2>
         </div>
-        <h4>How did the specific USPs of Substrate solve the challenges faced?</h4>
+        <h4>How did the specific features of Substrate solve the challenges faced?</h4>
         <p>
           When it comes to smart contracts, multi virtual machines and scalability are the key properties of the
           next-generation smart contract platform. Substrate is a customizable blockchain framework that natively

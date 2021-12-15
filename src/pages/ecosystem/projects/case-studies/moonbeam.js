@@ -100,7 +100,7 @@ export default function MoonbeamCaseStudy({ data }) {
             Solution
           </h2>
         </div>
-        <h4>How did the specific USPs of Substrate solve the challenges faced?</h4>
+        <h4>How did the specific features of Substrate solve the challenges faced?</h4>
         <p>
           Leveraging the modular notion of account ID, Moonbeam used H160 to achieve their unified accounts. On top of
           that, the extensible RPC layer allowed them to implement Ethereum-style RPC endpoints.

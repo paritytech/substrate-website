@@ -111,7 +111,7 @@ export default function PolkadexCaseStudy({ data }) {
             Solution
           </h2>
         </div>
-        <h4>How did the specific USPs of Substrate solve the challenges faced?</h4>
+        <h4>How did the specific features of Substrate solve the challenges faced?</h4>
         <p>
           In the Polkapool pallet, Polkadex utilizes Substrate’s flexibility to solve the problem of front-running
           attacks, without compromises, in just ten lines of code. This is made possible by modifying transaction

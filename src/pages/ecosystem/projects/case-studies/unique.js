@@ -109,7 +109,7 @@ export default function UniqueCaseStudy({ data }) {
             Solution
           </h2>
         </div>
-        <h4>How did the specific USPs of Substrate solve the challenges faced?</h4>
+        <h4>How did the specific features of Substrate solve the challenges faced?</h4>
         <p>
           <i>Rigid economic model challenge: </i>Substrate allows customization of transaction handling on all
           transaction stages.
