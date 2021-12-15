@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import { useSiteMetadata } from '../../hooks/use-site-metadata';
 
-export default function SEO({ children = null, description = '', lang = 'en', meta = [], title, noindex = false }) {
+export default function SEO({ children = null, description = '', lang = 'en', meta = [], title }) {
   const { siteMetadata } = useSiteMetadata();
 
   const metaDescription = description || siteMetadata.description || '';
@@ -67,10 +67,6 @@ export default function SEO({ children = null, description = '', lang = 'en', me
         {
           name: 'twitter:image',
           content: image,
-        },
-        noindex && {
-          name: 'robots',
-          content: 'noindex',
         },
       ].concat(meta)}
     >

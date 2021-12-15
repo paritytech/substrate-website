@@ -196,3 +196,17 @@ div[aria-label='animation'] {
   content: '✔';
   @apply inline-block absolute left-0.5 text-xs text-substrateDark dark:text-white;
 }
+
+/* Banner */
+
+.banner p {
+  @apply mb-0;
+}
+
+.banner strong {
+  @apply font-bold;
+}
+
+.banner a {
+  @apply text-substrateDarkThemeBlue dark:text-substrateBlue;
+}

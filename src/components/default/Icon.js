@@ -53,6 +53,7 @@ import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
 import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
+import substrate from '../../images/svg/substrate.svg';
 import adaptable from '../../images/svg/technology/adaptable.svg';
 import architecture from '../../images/svg/technology/architecture.svg';
 import community from '../../images/svg/technology/community.svg';
@@ -116,6 +117,7 @@ const iconsMap = {
   'acala-logo': logoAcala,
   'moonbeam-logo': logoMoonbeam,
   'astar-logo': logoAstar,
+  substrate: substrate,
   /* headings */
   hackathons: hackathons,
   seminar: seminar,
