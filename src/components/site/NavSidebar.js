@@ -2,19 +2,13 @@ import cx from 'classnames';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
-import { teams } from '../../../data/teams.json';
+import data from '../../../data/teams.json';
 import DataContext from '../../contexts/DataContext';
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import { Link, LinkMenu } from '../default/Link';
 
-const filterMenuItem = (menu, parent) => {
-  const parentItem = menu.filter(function (menuItem) {
-    return menuItem.url.includes(parent);
-  });
-  return Object.assign(...parentItem);
-};
-
 const NavSidebarCaseStudySubMenu = () => {
+  const teams = data.teams;
   const caseStudies = teams.filter(team => 'caseStudy' in team);
 
   return (
@@ -34,6 +28,13 @@ const NavSidebarCaseStudySubMenu = () => {
       </ul>
     </>
   );
+};
+
+const filterMenuItem = (menu, parent) => {
+  const parentItem = menu.filter(function (menuItem) {
+    return menuItem.url.includes(parent);
+  });
+  return Object.assign(...parentItem);
 };
 
 const NavSidebarSubMenu = ({ parent, category }) => {
@@ -66,6 +67,7 @@ const NavSidebarSubMenu = ({ parent, category }) => {
     </>
   );
 };
+
 export default function NavSidebar() {
   return (
     <DataContext.Consumer>
