@@ -9,5 +9,8 @@
 /ecosystem/resources /ecosystem/resources/seminar 301!
 /ecosystem/connect /ecosystem/connect/contact 301!
 
+# Decommissioned pages
+/ecosystem/resources/community-resources /ecosystem/resources/awesome-substrate 301!
+
 # Catch all
 /* / 301

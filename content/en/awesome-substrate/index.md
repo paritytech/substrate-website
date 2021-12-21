@@ -1,4 +1,4 @@
-## Official Resources
+## Resources
 
 - [Official Homepage](https://substrate.io/) - Vision, ecosystem, opportunities, and much more.
   - [Docs](https://docs.substrate.io/) - Developer documentation.
@@ -9,6 +9,13 @@
 - [Developer Hub GitHub](https://github.com/substrate-developer-hub/) - Developer Hub repositories.
 - [Ecosystem Projects](https://substrate.io/ecosystem/projects/) - Projects and teams building with
   Substrate.
+- Technical Papers
+
+  - [Polkadot Lightpaper](https://polkadot.network/Polkadot-lightpaper.pdf)
+  - [Polkadot: Vision for a heterogeneous multi-chain framework](https://github.com/polkadot-io/polkadotpaper/raw/master/PolkaDotPaper.pdf)
+  - [Overview of Polkadot and its Design Considerations](https://arxiv.org/abs/2005.13456.pdf)
+    - [Chinese Translation](https://github.com/AmadeusGB/Overview-of-Polkadot) (by community)
+
 - [DotJobs](https://dotjobs.net/) - A job board for the Substrate and Polkadot ecosystem projects,
   maintained by [Stateless.Money](https://stateless.money/).
 - [Polkadot Stack](https://github.com/w3f/Grants-Program/blob/master/docs/polkadot_stack.md) - An
@@ -49,22 +56,22 @@
   - [Sub0 Conference Oct. 2020](https://www.youtube.com/playlist?list=PLp0_ueXY_enUZk1RuEAU9ly5h0wy5FuLs)
   - [Sub0 Conference Dec. 2019](https://www.youtube.com/playlist?list=PLp0_ueXY_enWZ4UZE7rM0hdT8Z_ZTjU5V)
   - [Sub0 Conference Apr. 2019](https://www.youtube.com/playlist?list=PLp0_ueXY_enWqrfP_vR4PLhzQj76fLT8y)
-- [New Seminar Crowdcast]( https://www.crowdcast.io/e/substrate-seminar-2/) - Upcoming events and
+- [New Seminar Crowdcast](https://www.crowdcast.io/e/substrate-seminar-2/) - Upcoming events and
   latest recordings.
-- [Old Seminar Crowdcast]( https://www.crowdcast.io/e/substrate-seminar/) - Archive only.
+- [Old Seminar Crowdcast](https://www.crowdcast.io/e/substrate-seminar/) - Archive only.
 - [Substrate: A Rustic Vision for Polkadot by Gavin Wood at Web3 Summit 2018](https://www.youtube.com/watch?v=0IoUZdDi5Is)
 - [Polkadot Network Technical Explainers](https://www.youtube.com/playlist?list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8)
 
 ## Templates
 
 - [Base](https://github.com/substrate-developer-hub/substrate-node-template) - Minimal FRAME-based
-  node, ready for hacking. 
+  node, ready for hacking.
 - [Parachain](https://github.com/substrate-developer-hub/substrate-parachain-template) - Cumulus
-  enabled Substrate node, ready for hacking.   
+  enabled Substrate node, ready for hacking.
 - [Frontier](https://github.com/substrate-developer-hub/frontier-node-template/) - Fronter enabled
-  EVM and Ethereum RPC compatible Substrate node, ready for hacking. 
+  EVM and Ethereum RPC compatible Substrate node, ready for hacking.
 - [Front-End](https://github.com/substrate-developer-hub/substrate-front-end-template) - Polkadot-JS
-  API and [React](https://reactjs.org/) app to build front-ends for Substrate-based chains. 
+  API and [React](https://reactjs.org/) app to build front-ends for Substrate-based chains.
 - [`substrate-stencil`](https://github.com/kaichaosun/substrate-stencil) - A template for a
   Substrate node that includes staking and governance capabilities.
 
@@ -73,7 +80,7 @@
 - [Included in Substrate](https://github.com/paritytech/substrate/tree/master/frame) - Officially
   supported.
 - [Open Runtime Module Library (ORML)](https://github.com/open-web3-stack/open-runtime-module-library) - Community
-  maintained collection of Substrate runtime modules. 
+  maintained collection of Substrate runtime modules.
 - [Sunshine Bounty](https://github.com/sunshine-protocol/sunshine-bounty/tree/master/pallets) - Distributed
   autonomous organization (DAO) for administering a bounty program.
 - [Sunshine Identity](https://github.com/sunshine-protocol/sunshine-keybase/tree/master/identity/pallet) - Keybase-inspired
@@ -110,7 +117,7 @@
 - [Python Substrate Interface](https://github.com/polkascan/py-substrate-interface) - Maintained by
   [Polkascan Foundation](https://polkascan.org/).
 - [Go Substrate RPC Client](https://github.com/centrifuge/go-substrate-rpc-client/) - Maintained by
-  [Centrifuge](https://centrifuge.io/). 
+  [Centrifuge](https://centrifuge.io/).
 - [Substrate C++ API](https://github.com/usetech-llc/polkadot_api_cpp) - Maintained by
   [Usetech](https://usetech.com/blockchain/).
 - [Substrate .Net API](https://github.com/usetech-llc/polkadot_api_dotnet) - Maintained by
@@ -119,11 +126,10 @@
   [nuget](https://www.nuget.org/packages/SubstrateNetApi/), and
   [Unity 3D integration example](https://github.com/darkfriend77/Unity3DExample) - Maintained by
   [DOTMog](https://dotmog.com/).
-- [Kotlin Substrate Client](https://github.com/NodleCode/substrate-client-kotlin) - Maintained by 
+- [Kotlin Substrate Client](https://github.com/NodleCode/substrate-client-kotlin) - Maintained by
   [Nodle.io](https://github.com/NodleCode)
 - [`sube`](https://github.com/virto-network/sube) - Lightweight Rust client library and CLI with support for type information.
 - [Subscan Go Utilities](https://github.com/itering/subscan-essentials) - SS58 and more, developed by Subscan.
-
 
 ## Mobile
 
@@ -256,6 +262,7 @@
 - [TypeScript](https://github.com/polkadot-js/api/tree/master/packages/types) - Maintained by
   Polkadot-JS.
 - [Go](https://github.com/itering/scale.go) - Maintained by [Itering](https://www.itering.com/).
+- [C](https://github.com/MatthewDarnell/cScale) - Maintained by Matthew Darnell.
 - [C++](https://github.com/soramitsu/kagome/tree/master/core/scale) - Maintained by Soramitsu.
 - [Haskell](https://github.com/airalab/hs-web3/tree/master/src/Codec) - Maintained by
   [Robonomics Network](https://robonomics.network/).
