@@ -50,7 +50,7 @@ export default function Newsletter({ footer = false }) {
               <div className={cn('', { 'lg:grid grid-cols-2 gap-4': footer })}>
                 <input
                   className={cn(
-                    'w-full max-w-lg h-16 flex-1 mb-6 border-3 rounded-lg border-black dark:placeholder-white text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center',
+                    'w-full max-w-lg h-16 flex-1 mb-6 border-3 rounded-lg border-black text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center',
                     {
                       'bg-substrateBlackish border-white text-white': footer,
                       'dark:bg-substrateDarkest dark:border-substrateGray-dark text-black dark:text-white': !footer,
