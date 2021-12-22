@@ -30,7 +30,7 @@ export default function Newsletter({ footer = false }) {
   return (
     <>
       {!formSubmitted && (
-        <div className={cn('w-full', { ' pt-8 border-b-2 border-gray-600': footer })}>
+        <div className={cn('w-full', { ' pt-8 pb-8 border-b-2 border-gray-600': footer })}>
           <div className="flex items-center">
             <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />
             <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
