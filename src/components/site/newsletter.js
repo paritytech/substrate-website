@@ -49,7 +49,7 @@ export default function Newsletter({ footer = false }) {
               <input type="hidden" name="v" value="2" />
               <div className={cn('', { 'lg:grid grid-cols-2 gap-4': footer })}>
                 <input
-                  className="w-full max-w-lg h-16 flex-1 mb-6 border-3 rounded-lg border-black dark:bg-substrateDarkest dark:border-substrateGray-dark dark:placeholder-white text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center"
+                  className="w-full max-w-lg h-16 flex-1 mb-6 border-3 rounded-lg border-black dark:bg-substrateDarkest dark:border-substrateGray-dark dark:placeholder-white text-bodyBg text-xl text-black dark:text-white p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center"
                   type="email"
                   name="email"
                   placeholder="Email Address"
