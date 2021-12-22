@@ -35,7 +35,7 @@ export default function Newsletter({ footer = false }) {
             {footer && <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />}
             <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
           </div>
-          <div className={cn('', { 'lg:grid lg:grid-cols-3 gap-4': footer })}>
+          <div className={cn('', { 'lg:grid lg:grid-cols-3 gap-6': footer })}>
             <p className="font-bold text-lg max-w-lg">
               Subscribe for the latest news, technical updates and helpful developer resources.
             </p>
@@ -47,7 +47,7 @@ export default function Newsletter({ footer = false }) {
               <input type="hidden" name="m" value="0" />
               <input type="hidden" name="act" value="sub" />
               <input type="hidden" name="v" value="2" />
-              <div className={cn('', { 'lg:grid grid-cols-2 gap-4': footer })}>
+              <div className={cn('', { 'lg:grid grid-cols-2 gap-6': footer })}>
                 <input
                   className={cn(
                     'w-full max-w-lg h-16 flex-1 mb-6 border-3 rounded-lg border-black text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center',
