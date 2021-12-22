@@ -61,16 +61,16 @@ export default function Newsletter({ footer = false }) {
                   placeholder={footer ? 'Type your Email Address' : 'Email Address'}
                   required
                 />
-                <div>
+                <div className="max-w-lg">
                   <button
-                    className="w-full max-w-lg bg-substrateGreen hover:bg-white text-white hover:text-substrateGreen align-items mb-6 px-9 py-4 text-xl font-bold transition duration-200 focus:outline-none focus:ring-2 rounded-lg border-3 border-substrateGreen"
+                    className="w-full bg-substrateGreen hover:bg-white text-white hover:text-substrateGreen align-items mb-6 px-9 py-4 text-xl font-bold transition duration-200 focus:outline-none focus:ring-2 rounded-lg border-3 border-substrateGreen"
                     type="submit"
                     value="Submit"
                     onSubmit={event => handleSubmit(event)}
                   >
                     Subscribe
                   </button>
-                  <p className="text-sm">
+                  <p className={cn('text-sm', { ' text-right': footer })}>
                     To see how we use your information please see our{' '}
                     <span className="underline-animate underline-animate-thin">
                       <Link to="https://www.parity.io/privacy/">privacy policy</Link>
