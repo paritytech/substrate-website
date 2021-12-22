@@ -32,7 +32,7 @@ export default function Newsletter({ footer = false }) {
       {!formSubmitted && (
         <div className={cn('w-full', { ' pt-8 pb-8 border-b-2 border-gray-600': footer })}>
           <div className="flex items-center">
-            <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />
+            {footer && <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />}
             <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
           </div>
           <div className={cn('', { 'lg:grid lg:grid-cols-3 gap-4': footer })}>
@@ -49,10 +49,16 @@ export default function Newsletter({ footer = false }) {
               <input type="hidden" name="v" value="2" />
               <div className={cn('', { 'lg:grid grid-cols-2 gap-4': footer })}>
                 <input
-                  className="w-full max-w-lg h-16 flex-1 mb-6 border-3 rounded-lg border-black dark:bg-substrateDarkest dark:border-substrateGray-dark dark:placeholder-white text-bodyBg text-xl text-black dark:text-white p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center"
+                  className={cn(
+                    'w-full max-w-lg h-16 flex-1 mb-6 border-3 rounded-lg border-black dark:placeholder-white text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center',
+                    {
+                      'bg-substrateBlackish border-white text-white': footer,
+                      'dark:bg-substrateDarkest dark:border-substrateGray-dark text-black dark:text-white': !footer,
+                    }
+                  )}
                   type="email"
                   name="email"
-                  placeholder="Email Address"
+                  placeholder={footer ? 'Type your Email Address' : 'Email Address'}
                   required
                 />
                 <div>
