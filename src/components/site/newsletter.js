@@ -88,14 +88,18 @@ export default function Newsletter({ widget = false }) {
         </div>
       )}
       {formSubmitted && (
-        <div className={cn('w-full', { 'pt-8 pb-8 border-b-2 border-gray-600': !widget })}>
+        <div className={cn('w-full', { 'pt-12 pb-16 border-b-2 border-gray-600': !widget })}>
           <div className="flex items-center">
             {!widget && <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />}
             <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
           </div>
-          <p className="font-bold text-lg">
-            To complete the subscription process, please click the link in the email we just sent you.
-          </p>
+          <div className="flex">
+            {!widget && <Icon name="check-mark" className="h-6 w-6 mb-4 ml-1 mr-5 rounded-full" />}
+
+            <p className="font-bold text-lg">
+              To complete the subscription process, please click the link in the email we just sent you.
+            </p>
+          </div>
           <p className="text-sm">
             For more news, follow{' '}
             <span className="underline-animate underline-animate-thin">
