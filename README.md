@@ -6,8 +6,7 @@
 <h1 align="center">Substrate Website</h1>
 <h3 align="center">https://substrate.io</h3>
 
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f86ac67b-b1aa-41a7-95ec-3a2d14cb3bad/deploy-status)](https://app.netlify.com/sites/substrate-io-staging/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f86ac67b-b1aa-41a7-95ec-3a2d14cb3bad/deploy-status)](https://app.netlify.com/sites/substrate-io/deploys)
 
 ## Content contribution, PRs and merging flow
 + PR providing content (`json`, `md`...): open PR against `main` branch (production)
