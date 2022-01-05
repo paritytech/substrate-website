@@ -57,7 +57,6 @@ export default function AstarCaseStudy({ data }) {
           <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{astarData.name}</div>
         </div>
         <div className="mb-3 font-bold text-lg md:text-xl">A multi virtual machine dapp hub</div>
-        <div className="text-lg md:text-xl">Flexibility, Interoperability, Security</div>
         <div className="my-10">
           <div className="mb-3">
             <div className="mr-8 flex">
