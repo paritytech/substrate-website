@@ -34,37 +34,30 @@ export default function Newsletter({ widget = false }) {
   };
 
   return (
-    <>
+    <div className={!widget && 'pt-12 pb-8'}>
+      <div className="flex items-center">
+        {!widget && <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />}
+        <h2
+          className={cn('font-bold mb-4', {
+            'text-2xl': !widget,
+            'text-4xl': widget,
+          })}
+        >
+          Newsletter
+        </h2>
+      </div>
       {!formSubmitted && (
         <div
           className={cn('w-full border-b-2 border-gray-600', {
-            ' pt-0 pb-0 border-b-0': widget,
-            'pt-12 pb-8': !widget,
+            'border-b-0': widget,
           })}
         >
-          <div className="flex items-center">
-            {!widget && <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />}
-            <h2
-              className={cn('font-bold mb-4', {
-                'text-2xl': !widget,
-                'text-4xl': widget,
-              })}
-            >
-              Newsletter
-            </h2>
-          </div>
-          <div className={cn('', { 'lg:grid lg:grid-cols-3 gap-6': !widget })}>
+          <div className={!widget && 'lg:grid lg:grid-cols-3 gap-6'}>
             <p className="font-semibold text-lg max-w-lg lg:max-w-7xl">
               Subscribe for the latest news, technical updates and helpful developer resources.
             </p>
             <form className="col-span-2" onSubmit={event => handleSubmit(event)}>
-              <input type="hidden" name="u" value="11" />
-              <input type="hidden" name="f" value="11" />
-              <input type="hidden" name="s" />
-              <input type="hidden" name="c" value="0" />
-              <input type="hidden" name="m" value="0" />
-              <input type="hidden" name="act" value="sub" />
-              <input type="hidden" name="v" value="2" />
+              <ActiveCampaign />
               <div className={cn('', { 'lg:flex gap-6': !widget })}>
                 <input
                   className={cn(
@@ -100,7 +93,7 @@ export default function Newsletter({ widget = false }) {
                   >
                     {loading ? 'Sending...' : 'Subscribe'}
                   </button>
-                  <p className={cn('text-sm', { ' lg:text-center': !widget })}>
+                  <p className={cn('text-sm', { 'lg:text-center': !widget })}>
                     To see how we use your information please see our{' '}
                     <span className="underline-animate underline-animate-thin">
                       <Link to="https://www.parity.io/privacy/">privacy policy</Link>
@@ -113,18 +106,7 @@ export default function Newsletter({ widget = false }) {
         </div>
       )}
       {formSubmitted && (
-        <div className={cn('w-full', { 'pt-12 pb-16 border-b-2 border-gray-600': !widget })}>
-          <div className="flex items-center">
-            {!widget && <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />}
-            <h2
-              className={cn('font-bold mb-4', {
-                'text-2xl': !widget,
-                'text-4xl': widget,
-              })}
-            >
-              Newsletter
-            </h2>
-          </div>
+        <div className={cn('w-full', { 'pb-16 border-b-2 border-gray-600': !widget })}>
           <div className="flex">
             {!widget && <Icon data-aos="fade" name="check-mark" className="h-7 w-7 mb-4 mr-5 rounded-full" />}
             <p className="font-semibold text-lg">
@@ -140,6 +122,18 @@ export default function Newsletter({ widget = false }) {
           </p>
         </div>
       )}
-    </>
+    </div>
   );
 }
+
+const ActiveCampaign = () => (
+  <>
+    <input type="hidden" name="u" value="11" />
+    <input type="hidden" name="f" value="11" />
+    <input type="hidden" name="s" />
+    <input type="hidden" name="c" value="0" />
+    <input type="hidden" name="m" value="0" />
+    <input type="hidden" name="act" value="sub" />
+    <input type="hidden" name="v" value="2" />
+  </>
+);
