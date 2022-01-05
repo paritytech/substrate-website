@@ -92,7 +92,7 @@ export default function Newsletter({ widget = false }) {
                     value="Submit"
                     onSubmit={event => handleSubmit(event)}
                   >
-                    {loading ? 'Loading' : 'Subscribe'}
+                    {loading ? 'Sending...' : 'Subscribe'}
                   </button>
                   <p className={cn('text-sm', { ' lg:text-center': !widget })}>
                     To see how we use your information please see our{' '}
