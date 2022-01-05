@@ -25,7 +25,7 @@ export default function Newsletter({ widget = false }) {
         setFormSubmitted(!formSubmitted);
         setTimeout(() => {
           setFormSubmitted(false);
-        }, 15000);
+        }, 5000);
       })
       .catch(error => {
         setLoading(false);
