@@ -113,7 +113,7 @@ export default function Newsletter({ widget = false }) {
             <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
           </div>
           <div className="flex">
-            {!widget && <Icon data-aos="fade" name="check-mark" className="h-6 w-6 mb-4 ml-1 mr-5 rounded-full" />}
+            {!widget && <Icon name="check-mark" className="h-6 w-6 mb-4 ml-1 mr-5 rounded-full" />}
 
             <p className="font-bold text-lg">
               To complete the subscription process, please click the link in the email we just sent you.
