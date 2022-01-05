@@ -39,7 +39,7 @@ export default function Newsletter({ widget = false }) {
         <div
           className={cn('w-full border-b-2 border-gray-600', {
             ' pt-0 pb-0 border-b-0': widget,
-            'pt-8 pb-4': !widget,
+            'pt-12 pb-8': !widget,
           })}
         >
           <div className="flex items-center">
