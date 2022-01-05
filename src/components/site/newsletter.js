@@ -68,10 +68,10 @@ export default function Newsletter({ widget = false }) {
               <div className={cn('', { 'lg:flex gap-6': !widget })}>
                 <input
                   className={cn(
-                    'w-full flex-1 h-16 mb-6 border-3 rounded-lg border-black text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center',
+                    'w-full flex-1 mb-6 border-3 rounded-lg border-black text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center',
                     {
-                      'bg-substrateBlackish border-white text-white max-w-sm': !widget,
-                      'dark:bg-substrateDarkest dark:border-substrateGray-dark text-black dark:text-white max-w-lg':
+                      'bg-substrateBlackish border-white text-white max-w-sm h-12': !widget,
+                      'dark:bg-substrateDarkest dark:border-substrateGray-dark text-black dark:text-white max-w-lg h-16':
                         widget,
                     }
                   )}
@@ -87,7 +87,13 @@ export default function Newsletter({ widget = false }) {
                   })}
                 >
                   <button
-                    className="w-full bg-substrateGreen hover:bg-white text-white hover:text-substrateGreen align-items mb-4 px-9 py-4 text-xl font-bold transition duration-200 focus:outline-none focus:ring-2 rounded-lg border-3 border-substrateGreen"
+                    className={cn(
+                      'w-full bg-substrateGreen hover:bg-white text-white hover:text-substrateGreen align-items mb-4 px-9 text-xl font-bold transition duration-200 focus:outline-none focus:ring-2 rounded-lg border-3 border-substrateGreen',
+                      {
+                        'h-16': widget,
+                        'h-12': !widget,
+                      }
+                    )}
                     type="submit"
                     value="Submit"
                     onSubmit={event => handleSubmit(event)}
@@ -113,8 +119,7 @@ export default function Newsletter({ widget = false }) {
             <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
           </div>
           <div className="flex">
-            {!widget && <Icon data-aos="fade" name="check-mark" className="h-6 w-6 mb-4 ml-1 mr-5 rounded-full" />}
-
+            {!widget && <Icon data-aos="fade" name="check-mark" className="h-7 w-7 mb-4 mr-5 rounded-full" />}
             <p className="font-bold text-lg">
               To complete the subscription process, please click the link in the email we just sent you.
             </p>
