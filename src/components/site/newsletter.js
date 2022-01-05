@@ -25,7 +25,7 @@ export default function Newsletter({ widget = false }) {
         setFormSubmitted(!formSubmitted);
         setTimeout(() => {
           setFormSubmitted(false);
-        }, 5000);
+        }, 15000);
       })
       .catch(error => {
         setLoading(false);
@@ -45,7 +45,7 @@ export default function Newsletter({ widget = false }) {
           <div className="flex items-center">
             {!widget && <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />}
             <h2
-              className={cn('text-4xl font-bold mb-4', {
+              className={cn('font-bold mb-4', {
                 'text-2xl': !widget,
                 'text-4xl': widget,
               })}
@@ -113,7 +113,7 @@ export default function Newsletter({ widget = false }) {
             <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
           </div>
           <div className="flex">
-            {!widget && <Icon name="check-mark" className="h-6 w-6 mb-4 ml-1 mr-5 rounded-full" />}
+            {!widget && <Icon data-aos="fade" name="check-mark" className="h-6 w-6 mb-4 ml-1 mr-5 rounded-full" />}
 
             <p className="font-bold text-lg">
               To complete the subscription process, please click the link in the email we just sent you.
