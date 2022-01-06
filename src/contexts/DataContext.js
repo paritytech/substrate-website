@@ -2,7 +2,7 @@ import React from 'react';
 
 const serializePathname = pathname => {
   // trailing slash would add empty array item
-  pathname = pathname.replace(/\/$/, '');
+  if (pathname !== '/') pathname = pathname.replace(/\/$/, '');
 
   const pathnames = pathname.toString().split('/');
   // remove empty string item before first '/'
@@ -25,6 +25,7 @@ const pageSlug = pathArray => {
 
 const pageTitle = pathArray => {
   const pageSlug = pathArray[pathArray.length - 1];
+  console.log(pathArray);
   return toTitleCase(pageSlug);
 };
 
