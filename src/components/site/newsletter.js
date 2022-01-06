@@ -34,7 +34,12 @@ export default function Newsletter({ widget = false }) {
   };
 
   return (
-    <div className={!widget && 'pt-12 pb-8'}>
+    <div
+      className={cn('', {
+        'pt-10 pb-10 w-full border-b-2 border-gray-600': !widget,
+        'border-b-0': widget,
+      })}
+    >
       <div className="flex items-center">
         {!widget && <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />}
         <h2
@@ -47,66 +52,60 @@ export default function Newsletter({ widget = false }) {
         </h2>
       </div>
       {!formSubmitted && (
-        <div
-          className={cn('w-full border-b-2 border-gray-600', {
-            'border-b-0': widget,
-          })}
-        >
-          <div className={!widget && 'lg:grid lg:grid-cols-3 gap-6'}>
-            <p className="font-semibold text-lg max-w-lg lg:max-w-7xl">
-              Subscribe for the latest news, technical updates and helpful developer resources.
-            </p>
-            <form className="col-span-2" onSubmit={event => handleSubmit(event)}>
-              <ActiveCampaign />
-              <div className={cn('', { 'lg:flex gap-6': !widget })}>
-                <input
+        <div className={!widget && 'lg:grid lg:grid-cols-3 gap-6'}>
+          <p className="mb-6 font-semibold text-lg max-w-lg lg:max-w-7xl">
+            Subscribe for the latest news, technical updates and helpful developer resources.
+          </p>
+          <form className="col-span-2" onSubmit={event => handleSubmit(event)}>
+            <ActiveCampaign />
+            <div className={cn('', { 'lg:flex gap-6': !widget })}>
+              <input
+                className={cn(
+                  'w-full flex-1 mb-6 border-3 rounded-lg border-black text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center',
+                  {
+                    'bg-substrateBlackish border-white text-white max-w-sm h-12': !widget,
+                    'dark:bg-substrateDarkest dark:border-substrateGray-dark dark:placeholder-white text-black dark:text-white max-w-lg h-16':
+                      widget,
+                  }
+                )}
+                type="email"
+                name="email"
+                placeholder={!widget ? 'Type your Email Address' : 'Email Address'}
+                required
+              />
+              <div
+                className={cn('lg:w-lg flex-1', {
+                  'max-w-sm': !widget,
+                  'max-w-lg': widget,
+                })}
+              >
+                <button
                   className={cn(
-                    'w-full flex-1 mb-6 border-3 rounded-lg border-black text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center',
+                    'w-full bg-substrateGreen hover:bg-white text-white hover:text-substrateGreen align-items px-9 text-xl font-bold transition duration-200 focus:outline-none focus:ring-2 rounded-lg border-3 border-substrateGreen',
                     {
-                      'bg-substrateBlackish border-white text-white max-w-sm h-12': !widget,
-                      'dark:bg-substrateDarkest dark:border-substrateGray-dark text-black dark:text-white max-w-lg h-16':
-                        widget,
+                      'h-16 mb-6': widget,
+                      'h-12 mb-4': !widget,
                     }
                   )}
-                  type="email"
-                  name="email"
-                  placeholder={!widget ? 'Type your Email Address' : 'Email Address'}
-                  required
-                />
-                <div
-                  className={cn('lg:w-lg flex-1', {
-                    'max-w-sm': !widget,
-                    'max-w-lg': widget,
-                  })}
+                  type="submit"
+                  value="Submit"
+                  onSubmit={event => handleSubmit(event)}
                 >
-                  <button
-                    className={cn(
-                      'w-full bg-substrateGreen hover:bg-white text-white hover:text-substrateGreen align-items mb-4 px-9 text-xl font-bold transition duration-200 focus:outline-none focus:ring-2 rounded-lg border-3 border-substrateGreen',
-                      {
-                        'h-16': widget,
-                        'h-12': !widget,
-                      }
-                    )}
-                    type="submit"
-                    value="Submit"
-                    onSubmit={event => handleSubmit(event)}
-                  >
-                    {loading ? 'Sending...' : 'Subscribe'}
-                  </button>
-                  <p className={cn('text-sm', { 'lg:text-center': !widget })}>
-                    To see how we use your information please see our{' '}
-                    <span className="underline-animate underline-animate-thin">
-                      <Link to="https://www.parity.io/privacy/">privacy policy</Link>
-                    </span>
-                  </p>
-                </div>
+                  {loading ? 'Sending...' : 'Subscribe'}
+                </button>
+                <p className={cn('mb-6 text-sm', { 'mb-0 lg:text-center': !widget })}>
+                  To see how we use your information please see our{' '}
+                  <span className="underline-animate underline-animate-thin">
+                    <Link to="https://www.parity.io/privacy/">privacy policy</Link>
+                  </span>
+                </p>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       )}
       {formSubmitted && (
-        <div className={cn('w-full', { 'pb-16 border-b-2 border-gray-600': !widget })}>
+        <div className="pb-16">
           <div className="flex">
             {!widget && <Icon data-aos="fade" name="check-mark" className="h-7 w-7 mb-4 mr-5 rounded-full" />}
             <p className="font-semibold text-lg">
