@@ -1,6 +1,9 @@
 import React from 'react';
 
 const serializePathname = pathname => {
+  // trailing slash would add empty array item
+  pathname = pathname.replace(/\/$/, '');
+
   const pathnames = pathname.toString().split('/');
   // remove empty string item before first '/'
   pathnames.shift();
