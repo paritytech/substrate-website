@@ -25,7 +25,6 @@ const pageSlug = pathArray => {
 
 const pageTitle = pathArray => {
   const pageSlug = pathArray[pathArray.length - 1];
-  console.log(pathArray);
   return toTitleCase(pageSlug);
 };
 
