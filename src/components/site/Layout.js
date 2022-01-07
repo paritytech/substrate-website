@@ -37,7 +37,7 @@ function LayoutSidebar({ children, hasArticleNav, hasBreadcrumbs }) {
           </div>
           {hasArticleNav && (
             <div className="xl:w-1/3 hidden xl:block">
-              <div className="sticky top-16 pt-16 -mt-16 overflow-y-auto">
+              <div className="sticky top-16 pt-16 -mt-16">
                 <ArticleNav />
               </div>
             </div>

@@ -10,7 +10,7 @@ const ArticleNav = () => {
   useIntersectionObserver(setActiveId);
 
   return (
-    <nav aria-label="Table of contents" className="max-h-full overflow-auto">
+    <nav aria-label="Table of contents" className="article-nav overflow-auto">
       <Headings headings={headings} activeId={activeId} />
     </nav>
   );
