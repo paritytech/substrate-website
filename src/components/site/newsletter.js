@@ -6,7 +6,7 @@ import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
 export default function Newsletter({ layout = 'default' }) {
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(true);
   const [loading, setLoading] = useState(false);
   const { siteMetadata } = useSiteMetadata();
 
@@ -43,7 +43,7 @@ export default function Newsletter({ layout = 'default' }) {
       })}
     >
       <div className="flex items-center">
-        {!widget && <Icon name="paperplane" className="mb-4 mr-4 fill-current text-white" />}
+        {!widget && <Icon name="paperplane" className="h-7 w-7 mb-4 mr-4 fill-current text-white" />}
         <h2
           className={cn('font-bold mb-4', {
             'text-2xl': !widget,
@@ -109,8 +109,8 @@ export default function Newsletter({ layout = 'default' }) {
       {formSubmitted && (
         <div>
           <div className="flex">
-            {!widget && <Icon name="check-mark" className="flex-shrink-0 h-7 w-7 mb-4 mr-5 rounded-full" />}
-            <p className="font-semibold text-lg">
+            {!widget && <Icon name="check-mark" className="flex-shrink-0 h-7 w-7 mb-4 mr-4 rounded-full" />}
+            <p className="font-semibold text-lg ml-0.5">
               To complete the subscription process, please click the link in the email we just sent you.
             </p>
           </div>
