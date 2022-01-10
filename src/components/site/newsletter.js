@@ -36,7 +36,7 @@ export default function Newsletter({ widget = false }) {
   return (
     <div
       className={cn('', {
-        'pt-10 pb-10 w-full border-b-2 border-gray-600': !widget,
+        'min-h-414 sm:min-h-386 lg:min-h-234 xl:min-h-234 pt-10 pb-10 w-full border-b-2 border-gray-600': !widget,
         'border-b-0': widget,
       })}
     >
@@ -105,9 +105,11 @@ export default function Newsletter({ widget = false }) {
         </div>
       )}
       {formSubmitted && (
-        <div className="pb-16">
+        <div>
           <div className="flex">
-            {!widget && <Icon data-aos="fade" name="check-mark" className="h-7 w-7 mb-4 mr-5 rounded-full" />}
+            {!widget && (
+              <Icon data-aos="fade" name="check-mark" className="flex-shrink-0 h-7 w-7 mb-4 mr-5 rounded-full" />
+            )}
             <p className="font-semibold text-lg">
               To complete the subscription process, please click the link in the email we just sent you.
             </p>
