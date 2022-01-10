@@ -60,8 +60,6 @@ module.exports = {
       },
       minHeight: {
         238: '238px',
-        386: '386px',
-        414: '414px',
       },
     },
     gridTemplateRows: {
