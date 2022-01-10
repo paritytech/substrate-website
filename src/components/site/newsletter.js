@@ -36,7 +36,7 @@ export default function Newsletter({ widget = false }) {
   return (
     <div
       className={cn('', {
-        'min-h-414 sm:min-h-386 lg:min-h-234 xl:min-h-234 pt-10 pb-10 w-full border-b-2 border-gray-600': !widget,
+        'min-h-414 xs:min-h-386 lg:min-h-234 xl:min-h-234 pt-10 pb-10 w-full border-b-2 border-gray-600': !widget,
         'border-b-0': widget,
       })}
     >
