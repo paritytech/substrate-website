@@ -109,9 +109,7 @@ export default function Newsletter({ layout = 'default' }) {
       {formSubmitted && (
         <div>
           <div className="flex">
-            {!widget && (
-              <Icon data-aos="fade" name="check-mark" className="flex-shrink-0 h-7 w-7 mb-4 mr-5 rounded-full" />
-            )}
+            {!widget && <Icon name="check-mark" className="flex-shrink-0 h-7 w-7 mb-4 mr-5 rounded-full" />}
             <p className="font-semibold text-lg">
               To complete the subscription process, please click the link in the email we just sent you.
             </p>
