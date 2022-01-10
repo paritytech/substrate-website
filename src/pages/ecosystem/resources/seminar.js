@@ -31,7 +31,7 @@ export default function Seminar() {
             </p>
             <PrimaryButtonLink link="https://www.crowdcast.io/e/substrate-seminar-2">Live Call</PrimaryButtonLink>
             <p className="mb-4 mt-8 font-bold">Add next call to Google Calendar</p>
-            <SecondaryButton link="https://calendar.google.com/calendar/embed?src=c_vqplji7qv6j0op5kngp0dtr53s%40group.calendar.google.com&ctz=Europe%2FBerlin">
+            <SecondaryButton link="https://calendar.google.com/calendar/u/0?cid=Y192cXBsamk3cXY2ajBvcDVrbmdwMGR0cjUzc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
               <span className="inline font-bold mr-3">Add Call</span>
               <span className="text-white dark:text-black fill-current">
                 <Icon name="calendar" className="inline mb-1" />
