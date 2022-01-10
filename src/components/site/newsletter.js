@@ -6,7 +6,7 @@ import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
 export default function Newsletter({ layout = 'default' }) {
-  const [formSubmitted, setFormSubmitted] = useState(true);
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const { siteMetadata } = useSiteMetadata();
 
