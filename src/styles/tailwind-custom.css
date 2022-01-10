@@ -210,17 +210,3 @@ div[aria-label='animation'] {
 .banner a {
   @apply text-substrateDarkThemeBlue dark:text-substrateBlue;
 }
-
-/* Footer newsletter block */
-
-@media screen and (max-width: 380px) {
-  .footer-newsletter {
-    @apply min-h-414;
-  }
-}
-
-@media screen and (min-width: 380px) and (max-width: 1024px) {
-  .footer-newsletter {
-    min-height: 386px;
-  }
-}

@@ -38,7 +38,7 @@ export default function Newsletter({ layout = 'default' }) {
   return (
     <div
       className={cn('', {
-        'footer-newsletter lg:min-h-238 pt-10 pb-10 w-full border-b-2 border-gray-600': !widget,
+        'lg:min-h-238 pt-10 pb-10 w-full border-b-2 border-gray-600': !widget,
         'border-b-0': widget,
       })}
     >
