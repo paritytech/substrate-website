@@ -58,9 +58,6 @@ module.exports = {
       zIndex: {
         '-10': -10,
       },
-      minHeight: {
-        238: '238px',
-      },
     },
     gridTemplateRows: {
       1: 'repeat(1, minmax(0, 1fr))',

@@ -5,6 +5,18 @@ import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
+const ActiveCampaign = () => (
+  <>
+    <input type="hidden" name="u" value="11" />
+    <input type="hidden" name="f" value="11" />
+    <input type="hidden" name="s" />
+    <input type="hidden" name="c" value="0" />
+    <input type="hidden" name="m" value="0" />
+    <input type="hidden" name="act" value="sub" />
+    <input type="hidden" name="v" value="2" />
+  </>
+);
+
 export default function Newsletter({ layout = 'default' }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -38,7 +50,7 @@ export default function Newsletter({ layout = 'default' }) {
   return (
     <div
       className={cn('', {
-        'lg:min-h-238 pt-10 pb-10 w-full border-b-2 border-gray-600': !widget,
+        'lg:min-h-[238px] pt-10 pb-10 w-full border-b-2 border-gray-600': !widget,
         'border-b-0': widget,
       })}
     >
@@ -126,15 +138,3 @@ export default function Newsletter({ layout = 'default' }) {
     </div>
   );
 }
-
-const ActiveCampaign = () => (
-  <>
-    <input type="hidden" name="u" value="11" />
-    <input type="hidden" name="f" value="11" />
-    <input type="hidden" name="s" />
-    <input type="hidden" name="c" value="0" />
-    <input type="hidden" name="m" value="0" />
-    <input type="hidden" name="act" value="sub" />
-    <input type="hidden" name="v" value="2" />
-  </>
-);
