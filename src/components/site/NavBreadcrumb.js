@@ -12,10 +12,8 @@ export default function NavBreadcrumb() {
           crumbSeparator=""
           crumbLabel={pageTitle}
           hiddenCrumbs={['/']}
-          /*
-              keep only parent link and disable children links (eg):
-              "/ecosystem/resources/awesome-substrate" and "/ecosystem/resources/"
-              */
+          /* keep parent as a link and disable children links (eg):
+          "/<ecosystem>/resources/awesome-substrate" and "/<ecosystem>/resources/" */
           disableLinks={[`/${pathArray[0]}/${pathArray[1]}/${pathArray[2]}`, `/${pathArray[0]}/${pathArray[1]}`]}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />

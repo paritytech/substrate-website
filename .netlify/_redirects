@@ -1,5 +1,5 @@
 # Netlify app domain
-https://substrate-io.netlify.app/* https://substrate.io/:splat 301!
+https://substrate-website.netlify.app/* https://substrate.io/:splat 301!
 
 # Legacy links
 /builders-program /ecosystem/substrate-builders-program 301!
@@ -11,6 +11,9 @@ https://substrate-io.netlify.app/* https://substrate.io/:splat 301!
 /ecosystem/opportunities /ecosystem/opportunities/hackathons 301!
 /ecosystem/resources /ecosystem/resources/seminar 301!
 /ecosystem/connect /ecosystem/connect/contact 301!
+
+# Decommissioned pages
+/ecosystem/resources/community-resources /ecosystem/resources/awesome-substrate 301!
 
 # Catch all
 /* / 301

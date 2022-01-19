@@ -4,8 +4,8 @@ import React from 'react';
 export default function TypeFilter(props) {
   const { types, curType, setCurType } = props;
   return (
-    <div className="mb-8">
-      <h5 className="font-normal mb-6">Filter by type</h5>
+    <div className="mb-4 lg:mb-8">
+      <h5 className="font-normal mb-2 lg:mb-3">Filter by type</h5>
       <div className="lg:hidden">
         <select
           className="focus:outline-none text-sm dark:bg-darkBackground"
@@ -29,14 +29,14 @@ export default function TypeFilter(props) {
                 key={index}
                 value={type}
                 className={cx(
-                  'w-1/4 h-11 font-bold text-sm flex justify-center items-center hover:bg-substrateDark hover:text-white cursor-pointer transform transition-all duration-150 ease-in-out ',
+                  'w-1/4 h-11 relative font-bold text-sm flex justify-center items-center hover:bg-substrateDark hover:text-white cursor-pointer transform transition-colors duration-150 ease-in-out ',
                   { 'rounded-tl rounded-bl': index === 0 },
                   { 'rounded-br rounded-tr': index === 3 },
                   { 'bg-substrateDark text-white': curType === type }
                 )}
               >
                 {type}
-                {curType === type && <span className="ml-6">&#10003;</span>}
+                {curType === type && <span className="absolute right-2 xl:right-4">&#10003;</span>}
               </div>
             );
           })}

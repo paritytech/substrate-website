@@ -13,6 +13,7 @@ import explore from '../../images/svg/ecosystem/explore.svg';
 import opportunities from '../../images/svg/ecosystem/opportunities.svg';
 import resources from '../../images/svg/ecosystem/resources.svg';
 import event from '../../images/svg/event.svg';
+import flag from '../../images/svg/flag.svg';
 import forklessUpgrades from '../../images/svg/forkless-upgrades.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
 import graduation from '../../images/svg/graduation.svg';
@@ -52,6 +53,7 @@ import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
 import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
+import substrate from '../../images/svg/substrate.svg';
 import adaptable from '../../images/svg/technology/adaptable.svg';
 import architecture from '../../images/svg/technology/architecture.svg';
 import community from '../../images/svg/technology/community.svg';
@@ -115,6 +117,7 @@ const iconsMap = {
   'acala-logo': logoAcala,
   'moonbeam-logo': logoMoonbeam,
   'astar-logo': logoAstar,
+  substrate: substrate,
   /* headings */
   hackathons: hackathons,
   seminar: seminar,
@@ -175,6 +178,7 @@ const iconsMap = {
   'check-mark': checkMark,
   graph: graph,
   knight: knight,
+  flag: flag,
   /* technology */
   flexible: flexible,
   'future-proof': futureProof,

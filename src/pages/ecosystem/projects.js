@@ -6,6 +6,7 @@ import ModalVideo from 'react-modal-video';
 import teamsData from '../../../data/teams.json';
 import Icon from '../../components/default/Icon';
 import AllTeams from '../../components/layout/ecosystem/teams/AllTeams';
+import CaseStudyFilter from '../../components/layout/ecosystem/teams/CaseStudyFilter';
 import CatFilter from '../../components/layout/ecosystem/teams/CatFilter';
 import TeamModal from '../../components/layout/ecosystem/teams/TeamModal';
 import TypeFilter from '../../components/layout/ecosystem/teams/TypeFilter';
@@ -22,6 +23,7 @@ export default function Projects({ data }) {
   const [curType, setCurType] = useState('All Teams');
   const [curCat, setCurCat] = useState('All');
   const [curTeam, setCurTeam] = useState();
+  const [showCaseStudies, setShowCaseStudies] = useState(false);
   const [modalIsOpen, modalSetOpen] = useState(false);
   const [didMount, setDidMount] = useState(false);
 
@@ -88,23 +90,24 @@ export default function Projects({ data }) {
           Projects
         </h2>
         <TypeFilter types={types} curType={curType} setCurType={setCurType} />
-        <CatFilter categories={categories} curCat={curCat} setCurCat={setCurCat} />
+        <div className="flex flex-col md:flex-row md:items-end gap-4 lg:gap-6 mb-8">
+          <CatFilter categories={categories} curCat={curCat} setCurCat={setCurCat} />
+          <CaseStudyFilter showCaseStudies={showCaseStudies} setShowCaseStudies={setShowCaseStudies} />
+        </div>
         <AllTeams
           teams={teams}
           setCurTeam={setCurTeam}
           setIsComponentVisible={setIsComponentVisible}
           curType={curType}
           curCat={curCat}
+          showCaseStudies={showCaseStudies}
           logos={logos}
         />
       </Section>
 
       {isComponentVisible && (
         <>
-          <div
-            id="content-container"
-            className="flex justify-center items-center fixed inset-0 z-50 px-4 animate-fade-in"
-          >
+          <div id="content-container" className="flex justify-center items-center fixed inset-0 z-50 px-4">
             <div
               ref={ref}
               className="bg-white h-auto dark:bg-darkBackground w-full max-w-md p-6 rounded-lg border-2 border-substrateDark shadow-xl"

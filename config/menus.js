@@ -133,10 +133,6 @@ const resources = [
     url: '/awesome-substrate',
     id: 'ecosystem.resources.awesome-substrate',
   },
-  {
-    url: '/community-resources',
-    id: 'ecosystem.resources.community-resources',
-  },
 ];
 
 const connect = [
