@@ -83,7 +83,7 @@
       "name": "AirGap",
       "link": "https://airgap.it/",
       "category":[ "Wallet","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "types": ["All Teams", "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
       "description": "AirGap provides a system through AirWallet and AirVault to store your private keys offline in your day to day phone."
     },
@@ -1018,12 +1018,11 @@
     },
     {
       "name": "Unique Network",
-      "link": "https://usetech.com/blockchain/",
-      "category":[ "NFTs","All"],
-      "types": ["All Teams", "Substrate Builders Program"],
+      "link": "https://unique.network/",
+      "category":[ "Gaming","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "caseStudy": "case-studies/unique/",
-      "description": "UseTech is developing Unique Network, an NFT Substrate-base Parachain. The network was first launched on Hackusama."
+      "description": "Unique Network is an infrastructure for the next generation NFTs, offering developers independence from network-wide transaction fees and upgrades."
     },
     {
       "name": "Valibre",
@@ -1291,6 +1290,22 @@
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
       "description": "SkyeKiwi is a decentralized secret sharing protocol."
+    },
+    {  
+      "name": "Nova Wallet",
+      "link": "https://novawallet.io/",
+      "category":["Wallet", "All"],
+      "types": ["All Teams", "Building for Polkadot"],
+      "tag": "Infrastructure",
+      "description": "Nova Wallet is a  mobile wallet that allows for managing Polkadot ecosystem tokens, staking and  contributions to crowdloans."
+    },
+    {  
+      "name": "Fractal",
+      "link": "https://protocol.fractal.id/",
+      "category":["Identity", "All"],
+      "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
+      "tag": "Chain",
+      "description": "A substrate chain that is bridging the gap between data privacy and data integrity."
     }
     ]
 }
