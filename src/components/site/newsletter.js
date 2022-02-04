@@ -19,7 +19,7 @@ const ActiveCampaign = () => (
 
 export default function Newsletter({ layout = 'default' }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [failedSubmission, SetFailedSubmission] = useState(false);
+  const [failedSubmission, setFailedSubmission] = useState(false);
   const [loading, setLoading] = useState(false);
   const { siteMetadata } = useSiteMetadata();
 
@@ -43,7 +43,7 @@ export default function Newsletter({ layout = 'default' }) {
       })
       .catch(error => {
         setLoading(false);
-        SetFailedSubmission(true);
+        setFailedSubmission(true);
         console.log('Request failed', error);
       });
   };
