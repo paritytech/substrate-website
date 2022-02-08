@@ -210,9 +210,3 @@ div[aria-label='animation'] {
 .banner a {
   @apply text-substrateDarkThemeBlue dark:text-substrateBlue;
 }
-
-/* Max-height ArticleNav */
-
-.article-nav {
-  max-height: calc(100vh - 80px);
-}
