@@ -1,15 +1,11 @@
 [
   {
-    "date": "16 Nov",
-    "description": "Alain a.k.a Brenzi, co-founder at Integritee will dive into ways to leverage off-chain capabilities as second-layer solutions for Substrate based chains. Topics will include off-chain workers and the benefits of sidechain architectures."
+    "date": "16 Feb",
+    "description": "Parity developer advocate Sacha Lansky will be hosting a special panel discussion with parachain builders present at the ETH Denver 2022 conference. Panelists include developers from Astar, Interlay, Centrifuge, Parallel, Phala and Manta, who will be sharing their journeys building with Substrate."
   },
   {
-    "date": "30 Nov",
-    "description": "Michal Swietek, Co-founder of Aleph will be presenting Aleph, the first asynchronous Byzantine Fault Tolerant consensus protocol that achieves asymptotically optimal performance: constant latency and communication complexity. The goal of this seminar is to give a bird’s eye view of Aleph, its implementation in Rust and our experience in integrating it as a finality gadget in Substrate (replacing GRANDPA with Aleph). The differences between Aleph and GRANDPA will be discussed, including performance benchmarks and some tradeoffs."
-  },
-  {
-    "date": "14 Dec",
-    "description": "Shelven, the Lead Researcher of Phala Network, will demonstrate how to to build a BTC price oracle with a Telegram bot in 50 lines of code in Phala's native Fat Contract (confidential ink! smart contract). In this workshop, you will learn how to leverage Fat Contract’s unique features like asynchronous HTTP request and computation-intensive tasks in ink! language."
+    "date": "1 March",
+    "description": "Substrate Chaoscope: exploring economic attack vectors on Substrate runtimes. Substrate Chaoscope is an RPC instrumentation toolkit for pallet-chaos, designed to make Substrate runtimes behave in ways that they're not supposed to. Parity ecosystem success engineer Bernardo will talk about how to use this toolkit to explore the economic implications in different weight configurations; runtime attack vectors and edge cases; and raise awareness about best practices in runtime engineering."
   }
 ]
 
