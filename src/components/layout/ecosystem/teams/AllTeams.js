@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import TeamCard from './TeamCard';
 
 export default function AllTeams(props) {
-  const { teams, setCurTeam, setIsComponentVisible, curType, curCat, logos } = props;
+  const { teams, setCurTeam, setIsComponentVisible, curType, curCat, showCaseStudies, logos } = props;
   const [displayedTeams, setDisplayedTeams] = useState([]);
   const [zeroTeamsText, setZeroTeamsText] = useState('');
   const handleClick = team => {
@@ -15,6 +15,7 @@ export default function AllTeams(props) {
     const filteredTeams = teams
       .filter(team => team.types.includes(curType))
       .filter(team => team.category.includes(curCat))
+      .filter(team => (showCaseStudies ? 'caseStudy' in team : team))
       .sort((a, b) => {
         if (a.name.toLowerCase() < b.name.toLowerCase()) {
           return -1;
@@ -25,7 +26,7 @@ export default function AllTeams(props) {
       });
     setZeroTeamsText('Sorry, no matches');
     setDisplayedTeams(filteredTeams);
-  }, [curType, curCat]);
+  }, [curType, curCat, showCaseStudies]);
 
   return (
     <div

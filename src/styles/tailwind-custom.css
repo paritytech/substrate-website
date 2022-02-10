@@ -175,9 +175,38 @@ div[aria-label='animation'] {
 /* utils */
 
 .-mt-36-px {
-  margin-top: calc(-9rem - 1px)
+  margin-top: calc(-9rem - 1px);
 }
 
 .border-3 {
   border-width: 3px;
+}
+
+/* Case studies filter checkbox */
+
+.case-studies input[type='checkbox'] {
+  display: none;
+}
+
+.case-studies input[type='checkbox'] + label {
+  @apply inline-block relative cursor-pointer h-4 w-4 mt-1 border border-substrateDark dark:border-white rounded-sm;
+}
+
+.case-studies input[type='checkbox']:checked + label::after {
+  content: '✔';
+  @apply inline-block absolute left-0.5 text-xs text-substrateDark dark:text-white;
+}
+
+/* Banner */
+
+.banner p {
+  @apply mb-0;
+}
+
+.banner strong {
+  @apply font-bold;
+}
+
+.banner a {
+  @apply text-substrateDarkThemeBlue dark:text-substrateBlue;
 }

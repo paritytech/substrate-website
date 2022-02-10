@@ -7,8 +7,9 @@ import Header from '../site/Header';
 import NavBreadcrumb from '../site/NavBreadcrumb';
 import NavSidebar from '../site/NavSidebar';
 import ArticleNav from './ArticleNav';
+import Banner from './Banner';
 
-function LayoutSidebar({ children, hasArticleNav }) {
+function LayoutSidebar({ children, hasArticleNav, hasBreadcrumbs }) {
   return (
     <div className="flex">
       <div className="hidden lg:block min-h-screen lg:h-auto lg:bg-substrateGray-light border-r lg:dark:bg-substrateBlackish dark:border-substrateDarkThemeGrey">
@@ -27,14 +28,16 @@ function LayoutSidebar({ children, hasArticleNav }) {
               'xl:w-2/3': hasArticleNav,
             })}
           >
-            <div className="container hidden md:block lg:px-10 lg:max-w-6xl m-auto mb-10 underline-animate underline-animate-thin">
-              <NavBreadcrumb />
-            </div>
+            {hasBreadcrumbs && (
+              <div className="container hidden md:block lg:px-10 lg:max-w-6xl m-auto mb-10 underline-animate underline-animate-thin">
+                <NavBreadcrumb />
+              </div>
+            )}
             {children}
           </div>
           {hasArticleNav && (
             <div className="xl:w-1/3 hidden xl:block">
-              <div className="sticky top-16 pt-16 -mt-16 overflow-y-auto">
+              <div className="sticky top-16 pt-16 -mt-16 pb-8">
                 <ArticleNav />
               </div>
             </div>
@@ -51,6 +54,7 @@ export default function Layout({
   header = 'default',
   children,
   hasArticleNav = false,
+  hasBreadcrumbs = true,
 }) {
   useEffect(() => {
     AOS.init({
@@ -61,6 +65,7 @@ export default function Layout({
 
   return (
     <>
+      <Banner />
       <Header mode={mode} header={header} />
       <main
         className={cx('min-h-screen', {
@@ -68,7 +73,11 @@ export default function Layout({
         })}
       >
         {layout === 'default' && <>{children}</>}
-        {layout === 'sidebar' && <LayoutSidebar hasArticleNav={hasArticleNav}>{children}</LayoutSidebar>}
+        {layout === 'sidebar' && (
+          <LayoutSidebar hasArticleNav={hasArticleNav} hasBreadcrumbs={hasBreadcrumbs}>
+            {children}
+          </LayoutSidebar>
+        )}
       </main>
       <Footer />
     </>

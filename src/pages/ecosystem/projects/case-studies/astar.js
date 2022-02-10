@@ -5,9 +5,9 @@ import React from 'react';
 import teamsData from '../../../../../data/teams.json';
 import Icon from '../../../../components/default/Icon';
 import { Link } from '../../../../components/default/Link';
-import ArticleCols from '../../../../components/layout/ArticleCols';
 import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
+import Section from '../../../../components/layout/Section';
 import Layout from '../../../../components/site/Layout';
 import SEO from '../../../../components/site/SEO';
 
@@ -47,17 +47,16 @@ export default function AstarCaseStudy({ data }) {
   const astarData = teamsData.teams.find(team => team.name === 'Astar Network');
   const logo = getImage(data.logo);
   return (
-    <Layout>
+    <Layout layout="sidebar" hasBreadcrumbs={false}>
       <SEO title="Astar Network Case Study" />
-      <ArticleCols>
-        <CaseStudyBreadcrumb title={'Astar Network Case Study'} />
+      <Section>
+        <CaseStudyBreadcrumb title={'Astar Network'} />
         <div className="tracking-wider uppercase mb-4">Case Study</div>
         <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center">
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={astarData.name} />
           <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{astarData.name}</div>
         </div>
         <div className="mb-3 font-bold text-lg md:text-xl">A multi virtual machine dapp hub</div>
-        <div className="text-lg md:text-xl">Flexibility, Interoperability, Security</div>
         <div className="my-10">
           <div className="mb-3">
             <div className="mr-8 flex">
@@ -85,7 +84,7 @@ export default function AstarCaseStudy({ data }) {
           WebAssembly, and Layer2 solutions like Rollups.
         </p>
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="knight" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="challenge" className="mb-0 scroll-margin-top-100">
             Challenge
           </h2>
@@ -96,12 +95,12 @@ export default function AstarCaseStudy({ data }) {
           supports smart contract functionalities well would be a great benefit to the Polkadot ecosystem.
         </p>
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="check-mark" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="solution" className="mb-0 scroll-margin-top-100">
             Solution
           </h2>
         </div>
-        <h4>How did the specific USPs of Substrate solve the challenges faced?</h4>
+        <h4>How did the specific features of Substrate solve the challenges faced?</h4>
         <p>
           When it comes to smart contracts, multi virtual machines and scalability are the key properties of the
           next-generation smart contract platform. Substrate is a customizable blockchain framework that natively
@@ -113,7 +112,7 @@ export default function AstarCaseStudy({ data }) {
           basic income pallet accordingly.
         </p>
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="graph" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="result" className="mb-0 scroll-margin-top-100">
             Result
           </h2>
@@ -167,12 +166,15 @@ export default function AstarCaseStudy({ data }) {
           <div className="block">
             <Link to="/ecosystem/projects/case-studies/moonbeam/">Moonbeam Case Study</Link>
           </div>
+          <div className="block">
+            <Link to="/ecosystem/projects/case-studies/polkadex/">Polkadex Case Study</Link>
+          </div>
           <br />
           <div className="block">
             <Link to="/ecosystem/projects/">See All Projects</Link>
           </div>
         </div>
-      </ArticleCols>
+      </Section>
     </Layout>
   );
 }

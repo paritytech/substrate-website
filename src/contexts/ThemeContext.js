@@ -1,8 +1,10 @@
 import React from 'react';
 import { useEffect } from 'react';
 
+import { isBrowser } from '../utils/browser';
+
 function getInitialColorMode() {
-  if (typeof window !== 'undefined') {
+  if (isBrowser) {
     const persistedColorPreference = window.localStorage.getItem('theme');
     const hasPersistedPreference = typeof persistedColorPreference === 'string';
 
@@ -35,7 +37,7 @@ export const ThemeContext = React.createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [colorMode, rawSetColorMode] = React.useState(undefined);
-  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const currentUrl = isBrowser ? window.location.href : '';
   const searchParams = currentUrl && new URL(currentUrl).searchParams;
 
   const setColorMode = value => {

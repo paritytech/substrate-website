@@ -5,9 +5,9 @@ import React from 'react';
 import teamsData from '../../../../../data/teams.json';
 import Icon from '../../../../components/default/Icon';
 import { Link } from '../../../../components/default/Link';
-import ArticleCols from '../../../../components/layout/ArticleCols';
 import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
+import Section from '../../../../components/layout/Section';
 import Layout from '../../../../components/site/Layout';
 import SEO from '../../../../components/site/SEO';
 import Tag from '../../../../components/ui/Tag';
@@ -48,17 +48,16 @@ export default function AcalaCaseStudy({ data }) {
   const acalaData = teamsData.teams.find(team => team.name === 'Acala Network');
   const logo = getImage(data.logo);
   return (
-    <Layout>
+    <Layout layout="sidebar" hasBreadcrumbs={false}>
       <SEO title="Acala Network Case Study" />
-      <ArticleCols>
-        <CaseStudyBreadcrumb title={'Acala Network Case Study'} />
+      <Section>
+        <CaseStudyBreadcrumb title={'Acala Network'} />
         <div className="tracking-wider uppercase mb-4">Case Study</div>
         <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center">
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={acalaData.name} />
           <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{acalaData.name}</div>
         </div>
         <div className="mb-3 font-bold text-lg md:text-xl">DeFi and liquidity hub for Polkadot</div>
-        <div className="text-lg md:text-xl">Flexibility, Security, Compatibility, Cost</div>
         <div className="my-10">
           <div className="mb-3">
             <div className="mr-8 flex">
@@ -87,7 +86,7 @@ export default function AcalaCaseStudy({ data }) {
           applications with micro gas fees that can be paid in any token.
         </p>
         <div className="flex items-center mt-10 mb-6 ">
-          <Icon name="knight" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="challenge" className="mb-0 scroll-margin-top-100">
             Challenge
           </h2>
@@ -118,12 +117,12 @@ export default function AcalaCaseStudy({ data }) {
           developers and existing EVM & Solidity tools and libraries cannot be reused.
         </p>
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="check-mark" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="solution" className="mb-0 scroll-margin-top-100">
             Solution
           </h2>
         </div>
-        <h4>How did the specific USPs of Substrate solve the challenges faced?</h4>
+        <h4>How did the specific features of Substrate solve the challenges faced?</h4>
         <p>Acala aims to be a user-friendly, secure, and efficient platform for DeFi applications.</p>
         <p>
           Substrate is very flexible. That allows customizing almost everything, including fee payment logic. Acala
@@ -151,7 +150,7 @@ export default function AcalaCaseStudy({ data }) {
         </p>
 
         <div className="flex items-center mt-10 mb-6">
-          <Icon name="graph" className="fill-current text-substrateGreen mr-4" />
+          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="result" className="mb-0 scroll-margin-top-100">
             Result
           </h2>
@@ -213,12 +212,15 @@ export default function AcalaCaseStudy({ data }) {
           <div className="block">
             <Link to="/ecosystem/projects/case-studies/moonbeam/">Moonbeam Case Study</Link>
           </div>
+          <div className="block">
+            <Link to="/ecosystem/projects/case-studies/polkadex/">Polkadex Case Study</Link>
+          </div>
           <br />
           <div className="block">
             <Link to="/ecosystem/projects/">See All Projects</Link>
           </div>
         </div>
-      </ArticleCols>
+      </Section>
     </Layout>
   );
 }
