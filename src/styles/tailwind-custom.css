@@ -210,3 +210,20 @@ div[aria-label='animation'] {
 .banner a {
   @apply text-substrateDarkThemeBlue dark:text-substrateBlue;
 }
+
+/* Past Seminars Table */
+
+.past-seminars-table td,
+.past-seminars-table th {
+  @apply p-2 text-left border-substrateSubtleGrey;
+}
+
+.past-seminars-table tr:nth-child(2n + 1):not(:nth-child(1)) {
+  @apply bg-substrateGray-light;
+}
+
+.past-seminars-table tr:last-child td:first-child {
+  @apply bg-red-200;
+  border-bottom-left-radius: 8px;
+  border: 1px solid black;
+}

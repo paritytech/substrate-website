@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-import seminars from '../../../../data/seminars.json';
+// import seminars from '../../../../data/seminars.json';
 import Icon from '../../../components/default/Icon';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
@@ -64,7 +64,7 @@ export default function Seminar() {
             </p>
           </div>
           <div className="order-first md:order-last">
-            <h5 className="mb-8 font-medium text-2xl">Upcoming Seminars</h5>
+            {/* <h5 className="mb-8 font-medium text-2xl">Upcoming Seminars</h5>
             {seminars.map(({ date, description }, idx) => (
               <div key={idx}>
                 <p className="text-substrateGreen font-bold fill-current">
@@ -75,7 +75,7 @@ export default function Seminar() {
                   {description}
                 </p>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </Section>
