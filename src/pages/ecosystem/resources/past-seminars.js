@@ -25,12 +25,27 @@ export default function PastSeminars() {
                   <Icon name="calendar" className="fill-current text-white" />{' '}
                 </div>
               </th>
-              <th className="rounded-tr-lg">Description</th>
+              <th className="border-r">Speaker(s)</th>
+              <th className="border-r">Description</th>
+              <th className="rounded-tr-lg">Tags</th>
             </tr>
-            {seminars.map(({ date, description }, idx) => (
+            {seminars.map(({ year, date, speakers, description, tags }, idx) => (
               <tr key={idx}>
-                <td className="whitespace-nowrap">{date}</td>
+                <td className="whitespace-nowrap">
+                  {date} {year}
+                </td>
+                <td>{speakers}</td>
                 <td className="font-semibold">{description}</td>
+                <td>
+                  {tags.map((tag, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-[#F2F6FD] py-2 px-3 mb-2 mr-2 inline-block rounded-md border border-[#BCC3ED]"
+                    >
+                      {tag}
+                    </div>
+                  ))}
+                </td>
               </tr>
             ))}
           </table>
