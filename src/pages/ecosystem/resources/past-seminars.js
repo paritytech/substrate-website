@@ -17,7 +17,7 @@ export default function PastSeminars() {
         </h1>
       </Section>
       <Section>
-        <div className="border border-substrateSubtleGrey rounded-[9px] overflow-hidden">
+        <div className="border border-substrateSubtleGrey rounded-[9px] overflow-scroll">
           <table className="past-seminars-table">
             <tr className="bg-substrateBlackish text-white">
               <th className="rounded-tl-lg border-r">
@@ -35,7 +35,7 @@ export default function PastSeminars() {
                   {date} {year}
                 </td>
                 <td>{speakers}</td>
-                <td className="font-semibold">{description}</td>
+                <td className="font-semibold min-w-[300px]">{description}</td>
                 <td>
                   {tags.map((tag, idx) => (
                     <div

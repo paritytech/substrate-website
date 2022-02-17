@@ -8,21 +8,21 @@
   },
   {
     "year": "2022",
-    "date": "1 March",
+    "date": "01 Mar",
     "speakers": "Sacha Lansky",
     "description": "Substrate Chaoscope: exploring economic attack vectors on Substrate runtimes. Substrate Chaoscope is an RPC instrumentation toolkit for pallet-chaos, designed to make Substrate runtimes behave in ways that they're not supposed to. Parity ecosystem success engineer Bernardo will talk about how to use this toolkit to explore the economic implications in different weight configurations; runtime attack vectors and edge cases; and raise awareness about best practices in runtime engineering.",
     "tags": ["Security"]
   },
   {
     "year": "2021",
-    "date": "19 March",
+    "date": "19 Mar",
     "speakers": "Sacha Lansky",
     "description": "Test entry",
     "tags": ["Runtime"]
   },
   {
     "year": "2021",
-    "date": "29 March",
+    "date": "29 Mar",
     "speakers": "Sacha Lansky",
     "description": "Another test entry",
     "tags": ["Kusama", "AssemblyScript"]
