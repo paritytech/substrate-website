@@ -127,7 +127,7 @@ export default function Equilibrium({ data }) {
             Solution
           </h2>
         </div>
-        <h4>How did the specific features of Substrate solve the challenges faced?</h4>
+        <h4>What does Equilibrium do differently?</h4>
         <p className="font-bold mb-2">Making DeFi interoperable</p>
         <p>
           By building on Substrate, Equilibrium connects to other blockchain networks and significantly expands the
@@ -148,16 +148,8 @@ export default function Equilibrium({ data }) {
           the liquidity needed to cover debt is supplied by liquidity providers in advance. These liquidity providers
           are rewarded in native tokens for insuring the system against liquidations.
         </p>
-        <div className="flex items-center mt-10 mb-6">
-          <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
-          <h2 id="result" className="mb-0 scroll-margin-top-100">
-            Result
-          </h2>
-        </div>
-        <h4>
-          What was the concrete solution or implementation that couldn’t be done without Substrate and is heavily
-          reliant on one or more of the key features of Substrate?
-        </h4>
+        <h4>How did the specific features of Substrate solve the challenges faced?</h4>
+
         <p className="font-bold mb-2">Flexibility</p>
         <p>Equilibrium uses the following flexible advantages of Substrate:</p>
         <ul className="mb-6">
@@ -178,6 +170,7 @@ export default function Equilibrium({ data }) {
           node. Off-chain workers help speed up the chain by offloading some of the business logic and computations
           related to oracles, interest fee write-offs, reward redistributions, and margin calls.{' '}
         </p>
+        <p>Off-chain workers allow for building a faster, more efficient decentralized exchange.</p>
         <p className="font-bold mb-2">Interoperability</p>
         <p>
           Parachains and the “blockchain of blockchains” paradigm behind Polkadot let Equilibrium build great products
@@ -186,8 +179,39 @@ export default function Equilibrium({ data }) {
           analogues. Equilibrium already has bridges to the ETH and BSC networks, and will be connected to the entire
           Polkadot ecosystem as a parachain.
         </p>
-        <p>Off-chain workers allow for building a faster, more efficient decentralized exchange.</p>
         <div className="my-10">
+          <div className="flex items-center mt-10 mb-6">
+            <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
+            <h2 id="result" className="mb-0 scroll-margin-top-100">
+              Result
+            </h2>
+          </div>
+          <h4>
+            What was the concrete solution or implementation that couldn’t be done without Substrate and is heavily
+            reliant on one or more of the key features of Substrate?
+          </h4>
+          <p>
+            While all well known DeFi protocols work with aggregates in a ‘one size fits all’ model due to limitations
+            of the underlying technology, Equilibrium leverages Substrate technology to treat each borrower
+            individually.
+          </p>
+          <p>
+            Off-chain workers let Equilibrium perform heavy computation and introduce additional actions for nodes. With
+            the help of off-chain workers, Equilibrium can manage individual user portfolios with different combinations
+            of collateral assets (positive balances) and debt assets (negative balances).
+          </p>
+          <p>
+            It is important to make sure that off-chain actions do not lead to ‘unpleasant’ consequences for the
+            blockchain, since they occur without consensus from the entire network. This is where one-way functions come
+            to the rescue. Equilibrium offloads heavy computations to off-chain workers. The end result is better
+            performance and low cost while still being able to validate the computations on chain.
+          </p>
+          <p>
+            Equilibrium has several validators that are doing this intensive computation work. Since this work should
+            not be duplicated, each separate node works only with its own subset of user accounts. Equilibrium avoids
+            the duplication problem with a validate_unsigned method in the background — transaction dependencies are
+            used to set user processing priority and process each request only once.
+          </p>
           <b>Links and Resources:</b>
           <div className="underline-animate font-bold my-6 leading-loose">
             <div>
