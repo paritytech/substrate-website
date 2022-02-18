@@ -77,6 +77,7 @@ export default function Equilibrium({ data }) {
         <Blockqoute
           text="“​We were dissatisfied with how DeFi 1.0 worked; the lack of blockchain interconnection, difficulty in moving liquidity, and more. We wanted a unified DeFi multi-tool, that's why we built Equilibrium using Substrate.”"
           name="Alex Melikhov, Co-Founder, Equilibrium"
+          image={data.avatar}
         />
         <p>
           Equilibrium is a cross-chain DeFi solution that brings all known DeFi primitives to work in a seamless and
@@ -252,7 +253,7 @@ export const query = graphql`
         gatsbyImageData(placeholder: TRACED_SVG)
       }
     }
-    avatar: file(relativePath: { eq: "photos/case-studies/hoon-kim-astar.png" }) {
+    avatar: file(relativePath: { eq: "photos/case-studies/alex-melikhov-equilibrium.jpeg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: TRACED_SVG)
       }
