@@ -82,16 +82,9 @@ export default function Equilibrium({ data }) {
           Equilibrium is a cross-chain DeFi solution that brings all known DeFi primitives to work in a seamless and
           unified way. It offers users a unique money market with novel liquidation mechanics — by using bailouts, no
           auctions are needed, and liquidity providers (bailsmen) supply liquidity in advance. Combined with on-chain
-          risk modeling, the platform allows for use cases like:
+          risk modeling, the platform allows for use cases like: Borrowing, lending and stablecoin generation.
         </p>
-        <div className="flex justify-evenly font-bold">
-          <p>Borrowing</p>
-          <p>Lending</p>
-          <p>Stablecoin generation</p>
-        </div>
-        <p className="text-center font-bold">
-          A decentralized exchange with spot, margin, and derivative trading products
-        </p>
+        <p>A decentralized exchange with spot, margin, and derivative trading products.</p>
         <div className="flex items-center mt-10 mb-6">
           <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
           <h2 id="challenge" className="mb-0 scroll-margin-top-100">
