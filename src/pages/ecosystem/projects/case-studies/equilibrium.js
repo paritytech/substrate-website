@@ -146,7 +146,7 @@ export default function Equilibrium({ data }) {
 
         <p className="font-bold mb-2">Flexibility</p>
         <p>Equilibrium uses the following flexible advantages of Substrate:</p>
-        <ul className="mb-6">
+        <ul className="mb-6 pl-2">
           <li>Blockchain upgrades are automatic and avoid the problems associated with forking.</li>
           <li>
             The blockchain produced is fully customizable: block lengths, transaction limits, transaction fees, storage
