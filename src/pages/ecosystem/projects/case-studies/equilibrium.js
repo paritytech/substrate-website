@@ -248,7 +248,7 @@ export const query = graphql`
         }
       }
     }
-    logo: file(relativePath: { eq: "logos/equilibrium.jpg" }) {
+    logo: file(relativePath: { eq: "logos/equilibrium.png" }) {
       childImageSharp {
         gatsbyImageData(placeholder: TRACED_SVG)
       }
