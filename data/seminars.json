@@ -1,30 +1,22 @@
 [
   {
-    "year": "2022",
-    "date": "16 Feb",
+    "date": "16 Feb 2022",
     "speakers": "Sacha Lansky",
-    "description": "Parity developer advocate Sacha Lansky will be hosting a special panel discussion with parachain builders present at the ETH Denver 2022 conference. Panelists include developers from Astar, Interlay, Centrifuge, Parallel, Phala and Manta, who will be sharing their journeys building with Substrate.",
-    "tags": ["Parachain", "ETH Denver 2022"]
+    "title": "Parity developer advocate Sacha Lansky will be hosting a special panel discussion with parachain builders present at the ETH Denver 2022 conference. Panelists include developers from Astar, Interlay, Centrifuge, Parallel, Phala and Manta, who will be sharing their journeys building with Substrate."
   },
   {
-    "year": "2022",
-    "date": "01 Mar",
+    "date": "01 Mar 2022",
     "speakers": "Sacha Lansky",
-    "description": "Substrate Chaoscope: exploring economic attack vectors on Substrate runtimes. Substrate Chaoscope is an RPC instrumentation toolkit for pallet-chaos, designed to make Substrate runtimes behave in ways that they're not supposed to. Parity ecosystem success engineer Bernardo will talk about how to use this toolkit to explore the economic implications in different weight configurations; runtime attack vectors and edge cases; and raise awareness about best practices in runtime engineering.",
-    "tags": ["Security"]
+    "title": "Substrate Chaoscope: exploring economic attack vectors on Substrate runtimes. Substrate Chaoscope is an RPC instrumentation toolkit for pallet-chaos, designed to make Substrate runtimes behave in ways that they're not supposed to. Parity ecosystem success engineer Bernardo will talk about how to use this toolkit to explore the economic implications in different weight configurations; runtime attack vectors and edge cases; and raise awareness about best practices in runtime engineering."
   },
   {
-    "year": "2021",
-    "date": "19 Mar",
+    "date": "19 Mar 2021",
     "speakers": "Sacha Lansky",
-    "description": "Test entry",
-    "tags": ["Runtime"]
+    "title": "Test entry"
   },
   {
-    "year": "2021",
-    "date": "29 Mar",
+    "date": "29 Mar 2021",
     "speakers": "Sacha Lansky",
-    "description": "Another test entry",
-    "tags": ["Kusama", "AssemblyScript"]
+    "title": "Another test entry"
   }
 ]

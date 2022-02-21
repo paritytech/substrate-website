@@ -26,26 +26,13 @@ export default function PastSeminars() {
                 </div>
               </th>
               <th className="border-r">Speaker(s)</th>
-              <th className="border-r">Description</th>
-              <th className="rounded-tr-lg">Tags</th>
+              <th className="border-r">Title</th>
             </tr>
-            {seminars.map(({ year, date, speakers, description, tags }, idx) => (
+            {seminars.map(({ date, speakers, title }, idx) => (
               <tr key={idx}>
-                <td className="whitespace-nowrap">
-                  {date} {year}
-                </td>
+                <td className="whitespace-nowrap">{date}</td>
                 <td>{speakers}</td>
-                <td className="font-semibold min-w-[300px]">{description}</td>
-                <td>
-                  {tags.map((tag, idx) => (
-                    <div
-                      key={idx}
-                      className="bg-[#F2F6FD] py-2 px-3 mb-2 mr-2 inline-block rounded-md border border-[#BCC3ED]"
-                    >
-                      {tag}
-                    </div>
-                  ))}
-                </td>
+                <td className="font-semibold min-w-[300px]">{title}</td>
               </tr>
             ))}
           </table>
