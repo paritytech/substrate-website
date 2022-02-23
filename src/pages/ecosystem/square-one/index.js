@@ -2,15 +2,18 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import Lottie from 'react-lottie';
 
+import Icon from '../../../components/default/Icon';
 import GeneralInfo from '../../../components/layout/ecosystem/square-one/GeneralInfo';
+import RequirementsInfo from '../../../components/layout/ecosystem/square-one/RequirementsInfo';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 import PrimaryButtonLink from '../../../components/ui/PrimaryButtonLink';
 import * as animationData from '../../../images/animation/ecosystem/square-one.json';
+import IndustryConnectLogo from '../../../images/png/sqaure-one/industry-connect.png';
 
 export default function SquareOne({ data }) {
-  const { heroInfo, generalInfo } = data;
+  const { heroInfo, generalInfo, requirementsInfo } = data;
   const {
     frontmatter: { title, subTitle, paragraphOne, paragraphTwo, heroButtonText, heroButtonLink },
   } = heroInfo;
@@ -38,7 +41,24 @@ export default function SquareOne({ data }) {
           <GeneralInfo data={generalInfo.edges} />
         </div>
       </div>
-      <Section></Section>
+      <Section className="hidden lg:block">
+        <div className="flex justify-around items-center mt-40 pb-32">
+          <Icon name="polkadot-logo" className="w-64 fill-current dark:text-white" />
+          <Icon name="w3f-logo" className="w-56 fill-current text-black dark:text-white" />
+          <img src={IndustryConnectLogo} alt="Industry Connect Logo" className="w-[230px] h-auto rounded" />
+        </div>
+      </Section>
+      <Section className="mt-20 lg:mt-0">
+        <div className="mb-12 lg:text-center">
+          <h2 className="text-2xl lg:font-extrabold lg:text-4xl mb-6">Begin your tailer-made Substrate journey</h2>
+          <p className="capitalize text-xl">
+            Explore the Substrate guide to the resources available to your team, based on your needs:
+          </p>
+        </div>
+        <div>
+          <RequirementsInfo data={requirementsInfo.edges} />
+        </div>
+      </Section>
     </Layout>
   );
 }
@@ -75,6 +95,18 @@ export const query = graphql`
             order
           }
           html
+        }
+      }
+    }
+    requirementsInfo: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(square-one/requirements)/" } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            link
+            description
+          }
         }
       }
     }
