@@ -59,9 +59,7 @@ export default function BuildersProgram() {
                 The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
                 resources, taking your Substrate project to the next level.
               </p>
-              <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">
-                Apply
-              </PrimaryButtonLink>
+              <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">Apply</PrimaryButtonLink>
             </div>
           </div>
         </Section>
@@ -315,9 +313,7 @@ export default function BuildersProgram() {
               </div>
             </div>
           </div>
-          <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">
-            Apply
-          </PrimaryButtonLink>
+          <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">Apply</PrimaryButtonLink>
         </Section>
 
         <Section>
@@ -348,9 +344,7 @@ export default function BuildersProgram() {
                 that developers can enroll in. Much of what this program offers, such as technical support and
                 invitations to Polkadot branded events, cannot be offered by an external program.
               </p>
-              <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">
-                Apply
-              </PrimaryButtonLink>
+              <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">Apply</PrimaryButtonLink>
             </div>
             <div className="hidden lg:block lg:col-span-6 lg:col-start-7">
               <StaticImage
