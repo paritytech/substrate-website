@@ -21,10 +21,10 @@ export default function PastSeminars() {
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {seminars.map(({ title, date, description, link }, idx) => (
             <div key={idx} className="shadow-xl p-8 max-w-md rounded-md bg-white dark:bg-substrateBlackish">
-              <h3 className="text-xl font-bold">{title}</h3>
-              <div className="flex">
+              <h3 className="text-xl font-bold mb-4">{title}</h3>
+              <div className="flex mb-4">
                 <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />
-                <p>{date}</p>
+                <p className="mb-0">{date}</p>
               </div>
               <p>{description}</p>
               <LineArrowButton link={link} primary>
