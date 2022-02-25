@@ -3,7 +3,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import Icon from '../../../components/default/Icon';
-// import seminars from '../../../../data/seminars.json';
 import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
