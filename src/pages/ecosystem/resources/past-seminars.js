@@ -6,6 +6,7 @@ import Icon from '../../../components/default/Icon';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
+import LineArrowButton from '../../../components/ui/LineArrowButton';
 
 export default function PastSeminars() {
   return (
@@ -17,25 +18,20 @@ export default function PastSeminars() {
         </h1>
       </Section>
       <Section>
-        <div className="border border-substrateSubtleGrey rounded-[9px] overflow-scroll">
-          <table className="past-seminars-table">
-            <tr className="bg-substrateBlackish text-white">
-              <th className="rounded-tl-lg border-r">
-                <div className="flex justify-center my-2">
-                  <Icon name="calendar" className="fill-current text-white" />{' '}
-                </div>
-              </th>
-              <th className="border-r">Speaker(s)</th>
-              <th className="border-r">Title</th>
-            </tr>
-            {seminars.map(({ date, speakers, title }, idx) => (
-              <tr key={idx}>
-                <td className="whitespace-nowrap">{date}</td>
-                <td>{speakers}</td>
-                <td className="font-semibold min-w-[300px]">{title}</td>
-              </tr>
-            ))}
-          </table>
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+          {seminars.map(({ title, date, description, link }, idx) => (
+            <div key={idx} className="shadow-xl p-8 max-w-md rounded-md bg-white dark:bg-substrateBlackish">
+              <h3 className="text-xl font-bold">{title}</h3>
+              <div className="flex">
+                <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />
+                <p>{date}</p>
+              </div>
+              <p>{description}</p>
+              <LineArrowButton link={link} primary>
+                Watch
+              </LineArrowButton>
+            </div>
+          ))}
         </div>
       </Section>
     </Layout>

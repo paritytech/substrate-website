@@ -80,6 +80,7 @@ import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
 import calendar from '../../images/svg/ui/calendar.svg';
 import close from '../../images/svg/ui/close-x.svg';
+import date from '../../images/svg/ui/date.svg';
 import diamondGreen from '../../images/svg/ui/diamond-green.svg';
 import diamondPink from '../../images/svg/ui/diamond-pink.svg';
 import diamondPurple from '../../images/svg/ui/diamond-purple.svg';
@@ -147,6 +148,7 @@ const iconsMap = {
   sun: sun,
   'external-link': externalLink,
   calendar: calendar,
+  date: date,
   star: star,
   'diamond-yellow': diamondYellow,
   'diamond-pink': diamondPink,
