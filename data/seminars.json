@@ -1,26 +1,26 @@
 [
   {
-    "title": "Test title",
-    "date": "16 Feb 2022",
-    "description": "Parity developer advocate Sacha Lansky will be hosting a special panel discussion with parachain builders present at the ETH Denver 2022 conference. Panelists include developers from Astar, Interlay, Centrifuge, Parallel, Phala and Manta, who will be sharing their journeys building with Substrate.",
+    "title": "Kilt: Building DID management tools with substrate",
+    "date": "24 Feb 2022",
+    "description": "Join a global community dedicated to sharing expertise and spreading the word about building on Substrate and Polkadot.",
     "link": "-"
   },
   {
-    "title": "Test title",
-    "date": "01 Mar 2022",
-    "description": "Substrate Chaoscope: exploring economic attack vectors on Substrate runtimes. Substrate Chaoscope is an RPC instrumentation toolkit for pallet-chaos, designed to make Substrate runtimes behave in ways that they're not supposed to. Parity ecosystem success engineer Bernardo will talk about how to use this toolkit to explore the economic implications in different weight configurations; runtime attack vectors and edge cases; and raise awareness about best practices in runtime engineering.",
+    "title": "Moonbeam Learnings with Joshy Orndorff",
+    "date": "18 Jan 2022",
+    "description": "Join a global community dedicated to sharing expertise and spreading the word about building on Substrate and Polkadot.",
     "link": "-"
   },
   {
-    "title": "Test title",
-    "date": "19 Mar 2021",
-    "description": "Test entry",
+    "title": "Rust Syntax for Substrate",
+    "date": "15 Dec 2021",
+    "description": "Join a global community dedicated to sharing expertise and spreading the word about building on Substrate and Polkadot.",
     "link": "-"
   },
   {
-    "title": "Test title",
-    "date": "29 Mar 2021",
-    "description": "Another test entry",
+    "title": "Frame 2",
+    "date": "07 Nov 2021",
+    "description": "Join a global community dedicated to sharing expertise and spreading the word about building on Substrate and Polkadot.",
     "link": "-"
   }
 ]
