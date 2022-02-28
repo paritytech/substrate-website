@@ -49,5 +49,16 @@ export const query = graphql`
         }
       }
     }
+    allYoutubeVideo {
+      nodes {
+        id
+        title
+        cover {
+          childImageSharp {
+            gatsbyImageData(width: 200, layout: FIXED, placeholder: BLURRED)
+          }
+        }
+      }
+    }
   }
 `;

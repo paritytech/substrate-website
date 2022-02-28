@@ -44,6 +44,24 @@ GATSBY_WEBSITE_URL=http://localhost:8000
 GATSBY_DOCS_URL=http://localhost:8001
 ```
 
+In addition to these variables, for the plugin `gatsby-source-youtube` to work, more ENV vars will be needed.  These can
+be fetched with the local node script added by the plugin, which can be called like so: `yarn gatsby-source-youtube-token`.
+
+It will generate for us the correct keys and put them in the `.env` file.
+
+```
+GOOGLE_OAUTH_CLIENT_ID=2...m.apps.googleusercontent.com
+GOOGLE_OAUTH_CLIENT_SECRET=Q...axL
+YOUTUBE_TOKEN={"access_token":"ya...J0","refresh_token":"1..mE","scope":"https://www.googleapis.com/auth/youtube.readonly","token_type":"Bearer","expiry_date":1598284554759}
+```
+
+> We will have to create a OAuth 2 app + consent screen to be able to generate the CLIENT_ID & SECRET
+
+> Remember to also limit the API key access to Youtube Data only in Google Developers Console.
+
+> The source youtube plugin gives access to 4 new graphql queries, `allYoutubePlaylist`, `allYoutubeVideo`,
+> `youtubePlaylist`, `youtubeVideo`.
+
 **Start development server**
 
 Navigate into your new site’s directory and use the following command to start the development server locally.
@@ -77,7 +95,7 @@ To extract the strings that needs to be translated, it is possible to run `yarn 
 
 ### netlify-cms (currently not in use)
 
-`netlify-cms-app` & `gatsby-plugin-netlify-cms` are used to setup `[netlify-cms](https://www.netlifycms.org)` for this project.
+`netlify-cms-app` & `gatsby-plugin-netlify-cms` are used to setup [netlify-cms](https://www.netlifycms.org) for this project.
 
 The gatsby gatsby-config pluggin, points to the file `src/cms/index.js`, as entry file of the configuration.
 

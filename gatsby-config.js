@@ -236,5 +236,14 @@ module.exports = {
         excludedPaths: [`/404.html`],
       },
     },
+    {
+      resolve: "gatsby-source-youtube",
+      options: {
+        channelId: [
+          /* youtube.com/c/PolkadotNetwork */
+          'UCB7PbjuZLEba_znc7mEGNgw',
+        ],
+      },
+    },
   ],
 };
