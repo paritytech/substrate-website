@@ -119,7 +119,7 @@ const opportunities = [
     id: 'ecosystem.opportunities.grants',
   },
   {
-    url: 'https://careers.substrate.io/jobs/',
+    url: 'https://careers.substrate.io/',
     id: 'ecosystem.opportunities.careers',
   },
 ];
