@@ -4,6 +4,7 @@ import Lottie from 'react-lottie';
 
 import Icon from '../../../components/default/Icon';
 import GeneralInfo from '../../../components/layout/ecosystem/square-one/GeneralInfo';
+import InitiativeSection from '../../../components/layout/ecosystem/square-one/InitiativeSection';
 import RequirementsInfo from '../../../components/layout/ecosystem/square-one/RequirementsInfo';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
@@ -17,6 +18,7 @@ export default function SquareOne({ data }) {
   const {
     frontmatter: { title, subTitle, paragraphOne, paragraphTwo, heroButtonText, heroButtonLink },
   } = heroInfo;
+
   return (
     <Layout mode="full">
       <SEO title="Substrate Square One" />
@@ -59,6 +61,7 @@ export default function SquareOne({ data }) {
           <RequirementsInfo data={requirementsInfo.edges} />
         </div>
       </Section>
+      <InitiativeSection />
     </Layout>
   );
 }
@@ -106,6 +109,7 @@ export const query = graphql`
             title
             link
             description
+            order
           }
         }
       }
