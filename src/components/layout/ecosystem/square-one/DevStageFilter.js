@@ -7,7 +7,7 @@ export default function DevStageFilter({ currentStage, setCurrentStage }) {
     <select
       className={cx(
         'mb-2 w-full cursor-pointer text-sm',
-        'sm:w-auto sm:border-transparent sm:pl-0 sm:mr-6 ',
+        'sm:w-auto sm:mr-6 ',
         'dark:bg-darkBackground',
         'focus:outline-none'
       )}

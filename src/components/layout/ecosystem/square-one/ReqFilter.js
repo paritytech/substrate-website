@@ -15,12 +15,7 @@ export default function ReqFilter({ currentReq, setCurrentReq }) {
   ];
   return (
     <select
-      className={cx(
-        'mb-2 w-full cursor-pointer text-sm',
-        'sm:w-auto sm:border-transparent sm:pl-0',
-        'dark:bg-darkBackground',
-        'focus:outline-none'
-      )}
+      className={cx('mb-2 w-full cursor-pointer text-sm', 'sm:w-auto', 'dark:bg-darkBackground', 'focus:outline-none')}
       value={currentReq}
       onChange={event => setCurrentReq(event.target.value)}
     >
