@@ -14,7 +14,7 @@ import * as animationData from '../../../images/animation/ecosystem/square-one.j
 import IndustryConnectLogo from '../../../images/png/sqaure-one/industry-connect.png';
 
 export default function SquareOne({ data }) {
-  const { heroInfo, generalInfo, requirementsInfo } = data;
+  const { heroInfo, generalInfo, requirementsInfo, initiativesInfo, substrateJourney } = data;
   const {
     frontmatter: { title, subTitle, paragraphOne, paragraphTwo, heroButtonText, heroButtonLink },
   } = heroInfo;
@@ -61,7 +61,17 @@ export default function SquareOne({ data }) {
           <RequirementsInfo data={requirementsInfo.edges} />
         </div>
       </Section>
-      <InitiativeSection />
+      <InitiativeSection data={initiativesInfo.edges} />
+      <Section>Hubspot Form</Section>
+      <Section>
+        <div className="pb-10 lg:pb-32">
+          <h2 className="font-extrabold text-4xl mb-6">{substrateJourney.edges[0].node.frontmatter.title}</h2>
+          <div
+            className="max-w-xl underline-animate underline-animate-thin"
+            dangerouslySetInnerHTML={{ __html: substrateJourney.edges[0].node.html }}
+          ></div>
+        </div>
+      </Section>
     </Layout>
   );
 }
@@ -111,6 +121,32 @@ export const query = graphql`
             description
             order
           }
+        }
+      }
+    }
+    initiativesInfo: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(square-one/initiatives)/" } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            org
+            description
+            link
+            requirements
+            devStage
+          }
+        }
+      }
+    }
+    substrateJourney: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(square-one/substrate-journey)/" } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+          }
+          html
         }
       }
     }

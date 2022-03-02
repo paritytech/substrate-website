@@ -16,22 +16,18 @@ const Tag = ({ title }) => (
   </button>
 );
 
-export default function InitiativeCard() {
+export default function InitiativeCard({ delay, title, description, org, link, requirements }) {
   return (
-    <Link to={'#'} data-aos="fade-up" data-aos-delay={0}>
+    <Link to={link} data-aos="fade-up" data-aos-delay={delay}>
       <div className="p-6 shadow-md transition-transform rounded-md bg-substrateGray-light lg:dark:bg-substrateBlackish hover:scale-105 ">
-        <h3 className="mb-0 text-2xl">Web3 Grants</h3>
-        <p className="text-sm font-semibold">Web3 Foundation</p>
-        <p className="mb-5 overflow-hidden">
-          The Web3 Foundation grants program funds software development and research in the field of decentralized
-          software protocols. To know more about how to prepare a grant proposal and details about the Web3 Foundation
-          Grants Program check out here.
-        </p>
+        <h3 className="mb-0 text-2xl lg:truncate">{title}</h3>
+        <p className="text-sm font-semibold">{org}</p>
+        <p className="mb-6 text-sm lg:h-20 lg:line-clamp-4">{description}</p>
         <hr className="border border-substrateGray" />
         <div className="flex flex-wrap mb-6">
-          <Tag title="Funding" />
-          <Tag title="Education" />
-          <Tag title="Development" />
+          {requirements.map((req, index) => (
+            <Tag key={index} title={req} />
+          ))}
         </div>
         <LineArrowButton>Learn More</LineArrowButton>
       </div>
