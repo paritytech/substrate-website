@@ -107,6 +107,10 @@ const ecosystem = [
     id: 'ecosystem.connect',
     child: 'connect',
   },
+  {
+    url: '/square-one',
+    id: 'ecosystem.square-one',
+  },
 ];
 
 const opportunities = [
