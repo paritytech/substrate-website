@@ -19,7 +19,7 @@ const Tag = ({ title }) => (
 export default function InitiativeCard({ delay, title, description, org, link, requirements }) {
   return (
     <Link to={link} data-aos="fade-up" data-aos-delay={delay}>
-      <div className="p-6 shadow-md transition-transform rounded-md bg-substrateGray-light lg:dark:bg-substrateBlackish hover:scale-105 ">
+      <div className="py-8 px-6 shadow-md transition-transform rounded-md bg-substrateGray-light dark:bg-substrateDark hover:scale-105 ">
         <h3 className="mb-0 text-2xl lg:truncate">{title}</h3>
         <p className="text-sm font-semibold">{org}</p>
         <p className="mb-6 text-sm lg:h-20 lg:line-clamp-4">{description}</p>
