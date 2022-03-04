@@ -237,12 +237,14 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-youtube",
+      resolve: 'gatsby-source-youtube',
       options: {
         channelId: [
           /* youtube.com/c/PolkadotNetwork */
           'UCB7PbjuZLEba_znc7mEGNgw',
         ],
+        /* Substrate Seminar playlist */
+        playlistId: 'PLp0_ueXY_enXRfoaW7sTudeQH10yDvFOS',
       },
     },
   ],

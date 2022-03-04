@@ -1,14 +1,16 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import seminars from '../../../../data/seminars.json';
+// import seminars from '../../../../data/seminars.json';
 import Icon from '../../../components/default/Icon';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 import LineArrowButton from '../../../components/ui/LineArrowButton';
 
-export default function PastSeminars() {
+export default function PastSeminars({ data }) {
+  const { videos } = data.youtubePlaylist;
+
   return (
     <Layout layout="sidebar">
       <SEO title="Past Seminars" />
@@ -19,15 +21,15 @@ export default function PastSeminars() {
       </Section>
       <Section>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-          {seminars.map(({ title, date, description, link }, idx) => (
+          {videos.map(({ id, title, publishedAt, description }, idx) => (
             <div key={idx} className="shadow-xl p-8 max-w-md rounded-md bg-white dark:bg-substrateBlackish">
               <h3 className="text-xl font-bold mb-4">{title}</h3>
               <div className="flex mb-4">
                 <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />
-                <p className="mb-0">{date}</p>
+                <p className="mb-0">{publishedAt}</p>
               </div>
               <p>{description}</p>
-              <LineArrowButton link={link} primary>
+              <LineArrowButton link={`https://www.youtube.com/watch?v=${id}`} primary>
                 Watch
               </LineArrowButton>
             </div>
@@ -49,10 +51,12 @@ export const query = graphql`
         }
       }
     }
-    allYoutubeVideo {
-      nodes {
+    youtubePlaylist {
+      videos {
         id
         title
+        publishedAt
+        description
         cover {
           childImageSharp {
             gatsbyImageData(width: 200, layout: FIXED, placeholder: BLURRED)
