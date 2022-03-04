@@ -1,7 +1,7 @@
+import { format } from 'date-fns';
 import { graphql } from 'gatsby';
 import React from 'react';
 
-// import seminars from '../../../../data/seminars.json';
 import Icon from '../../../components/default/Icon';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
@@ -21,14 +21,14 @@ export default function PastSeminars({ data }) {
       </Section>
       <Section>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-          {videos.map(({ id, title, publishedAt, description }, idx) => (
+          {videos.map(({ id, title, publishedAt }, idx) => (
             <div key={idx} className="shadow-xl p-8 max-w-md rounded-md bg-white dark:bg-substrateBlackish">
               <h3 className="text-xl font-bold mb-4">{title}</h3>
               <div className="flex mb-4">
                 <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />
-                <p className="mb-0">{publishedAt}</p>
+                <p className="mb-0">{format(new Date(publishedAt), 'dd MMM yyyy')}</p>
               </div>
-              <p>{description}</p>
+              {/* <p>{description}</p> */}
               <LineArrowButton link={`https://www.youtube.com/watch?v=${id}`} primary>
                 Watch
               </LineArrowButton>
