@@ -4,6 +4,7 @@ import Lottie from 'react-lottie';
 
 import Icon from '../../../components/default/Icon';
 import GeneralInfo from '../../../components/layout/ecosystem/square-one/GeneralInfo';
+import HubspotFormReact from '../../../components/layout/ecosystem/square-one/HubspotFormReact';
 import InitiativeSection from '../../../components/layout/ecosystem/square-one/InitiativeSection';
 import RequirementsInfo from '../../../components/layout/ecosystem/square-one/RequirementsInfo';
 import Section from '../../../components/layout/Section';
@@ -62,8 +63,13 @@ export default function SquareOne({ data }) {
         </div>
       </Section>
       <InitiativeSection data={initiativesInfo.edges} />
-      <Section>Hubspot Form</Section>
-      <Section>
+      <Section className="relative pt-4 sm:pt-24">
+        <Icon name="diamond-green" className="hidden md:block absolute top-56 -left-80 opacity-20 w-1/3" />
+        <div className="mx-auto sm:p-8 max-w-[36.5rem] sm:shadow-xl bg-white dark:bg-darkBackground sm:dark:bg-substrateDark">
+          <HubspotFormReact />
+        </div>
+      </Section>
+      <Section className="pt-4 sm:pt-24">
         <div className="pb-10 lg:pb-32">
           <h2 className="font-extrabold text-4xl mb-6">{substrateJourney.edges[0].node.frontmatter.title}</h2>
           <div

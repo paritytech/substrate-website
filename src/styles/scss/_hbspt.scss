@@ -1,0 +1,58 @@
+.hs-form {
+  @apply text-substrateDark dark:text-white;
+
+  ul {
+    @apply list-none;
+  }
+
+  p {
+    @apply text-sm;
+  }
+
+  input[type='submit'] {
+    @apply bg-substrateGreen rounded-md cursor-pointer;
+    @apply text-lg font-bold text-white;
+    @apply px-7 py-2;
+    @apply hover:scale-105 focus:bg-substrateGreen-dark;
+  }
+
+  .hs-form-field {
+    @apply text-lg font-semibold mb-4;
+
+    .hs-input[type='text'] {
+      @apply w-full mt-2 rounded-lg border border-gray-300;
+      @apply dark:bg-darkBackground sm:dark:bg-substrateDark;
+      @apply focus:outline-none focus:ring-1 focus:ring-substrateDark;
+    }
+
+    .hs-input[type='email'] {
+      @apply w-full mt-2 rounded-lg border border-gray-300;
+      @apply dark:bg-darkBackground sm:dark:bg-substrateDark;
+      @apply focus:outline-none focus:ring-1 focus:ring-substrateDark;
+    }
+
+    .hs-form-radio-display {
+      @apply flex items-center py-1 text-base cursor-pointer;
+    }
+
+    .hs-input[type='radio'] {
+      @apply mr-2 fill-current text-substrateDark dark:text-substrateGreen cursor-pointer focus:outline-none focus:ring-0;
+    }
+
+    .hs-form-booleancheckbox-display {
+      @apply flex items-center py-1 text-sm cursor-pointer;
+    }
+
+    .hs-input[type='checkbox'] {
+      @apply mr-2 fill-current text-substrateDark dark:text-substrateGreen cursor-pointer focus:outline-none focus:ring-0;
+    }
+
+    .hs-form-required {
+      @apply text-substrateRed ml-1;
+    }
+
+    .hs-error-msgs {
+      @apply text-substrateRed text-sm mt-1;
+    }
+  }
+}
