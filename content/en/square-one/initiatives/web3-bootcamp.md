@@ -4,9 +4,7 @@ org: Web3 Foundation
 description: Web3 Foundation and Parity Technologies have teamed up with Wanxiang Blockchain Labs and New Chainbase in China to launch a six-month Shanghai-based Web 3.0 Bootcamp to help high potential teams build their PoC. To know more check this out
 link: https://bootcamp.web3.foundation/
 requirements:
-  - Funding
   - Education
-  - Development
 devStage:
   - Ideation
   - EarlyStage

@@ -93,7 +93,7 @@ export const query = graphql`
         }
       }
     }
-    heroInfo: markdownRemark(fileAbsolutePath: { regex: "//(square-one-hero/hero.md)/" }) {
+    heroInfo: markdownRemark(fileAbsolutePath: { regex: "//(hero-section/hero.md)/" }) {
       id
       frontmatter {
         title
@@ -104,7 +104,7 @@ export const query = graphql`
         heroButtonLink
       }
     }
-    generalInfo: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(square-one-info)/" } }) {
+    generalInfo: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(info-section)/" } }) {
       edges {
         node {
           id

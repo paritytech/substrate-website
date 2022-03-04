@@ -5,8 +5,6 @@ description: The Web3 Foundation grants program funds software development and r
 link: https://web3.foundation/grants/
 requirements:
 - Funding 
-- Education
-- Development
 devStage: 
 - Ideation
 - EarlyStage

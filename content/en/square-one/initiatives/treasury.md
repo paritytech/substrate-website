@@ -5,8 +5,7 @@ description: Any activity or project that benefits Polkadot can be funded by the
 link: https://wiki.polkadot.network/docs/learn-treasury
 requirements:
 - Funding 
-- Education
-- Development
+- Community Engagement
 devStage: 
 - Ideation
 - EarlyStage

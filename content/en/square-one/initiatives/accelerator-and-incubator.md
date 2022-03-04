@@ -4,9 +4,9 @@ org: Web3 Foundation
 description: We have accelerator and incubator partnership all across the globe
 link: "#"
 requirements:
-  - Funding
   - Education
-  - Development
+  - Funding
+  - Product Development
 devStage:
   - Ideation
   - EarlyStage

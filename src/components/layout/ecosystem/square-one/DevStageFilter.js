@@ -14,7 +14,7 @@ export default function DevStageFilter({ currentStage, setCurrentStage }) {
       value={currentStage}
       onChange={event => setCurrentStage(event.target.value)}
     >
-      <option value="all">All Devleopment Stages</option>
+      <option value="all">All Development Stages</option>
       {developmentStages.map((stage, index) => (
         <option key={index} value={stage}>
           {stage}
