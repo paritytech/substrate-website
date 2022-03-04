@@ -8,5 +8,5 @@ requirements:
   - Product Building
 devStage:
   - Ideation
-  - EarlyStage
+  - Early Stage
 ---

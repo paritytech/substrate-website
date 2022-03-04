@@ -5,7 +5,5 @@ description: Start your journey in the Polkadot ecosystem by joining the communi
 link: https://polkadot.network/polkadot-ambassador-program/
 requirements:
   - Community Engagement
-devStage:
-  - Ideation
-  - EarlyStage
+devStage: []
 ---

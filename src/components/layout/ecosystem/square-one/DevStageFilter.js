@@ -2,7 +2,7 @@ import cx from 'classnames';
 import React from 'react';
 
 export default function DevStageFilter({ currentStage, setCurrentStage }) {
-  const developmentStages = ['Ideation', 'Early Stage', 'Prototype Stage', 'MVP'];
+  const devStages = ['Ideation', 'Early Stage', 'Prototype Stage', 'MVP'];
   return (
     <select
       className={cx(
@@ -15,7 +15,7 @@ export default function DevStageFilter({ currentStage, setCurrentStage }) {
       onChange={event => setCurrentStage(event.target.value)}
     >
       <option value="all">All Development Stages</option>
-      {developmentStages.map((stage, index) => (
+      {devStages.map((stage, index) => (
         <option key={index} value={stage}>
           {stage}
         </option>

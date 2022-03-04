@@ -7,6 +7,5 @@ requirements:
   - Tech Mentoring
   - Product Building
 devStage:
-  - Ideation
-  - EarlyStage
+  - MVP
 ---

@@ -8,5 +8,5 @@ requirements:
 - Community Engagement
 devStage: 
 - Ideation
-- EarlyStage
+- Early Stage
 ---

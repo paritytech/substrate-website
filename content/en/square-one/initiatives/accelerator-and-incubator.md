@@ -2,12 +2,14 @@
 title: Accelerators & Incubators
 org: Web3 Foundation
 description: We have accelerator and incubator partnership all across the globe
-link: "#"
+link: /ecosystem/square-one/accelerators-and-incubators/
 requirements:
   - Education
   - Funding
   - Product Development
 devStage:
   - Ideation
-  - EarlyStage
+  - Early Stage
+  - Prototype Stage
+  - MVP
 ---

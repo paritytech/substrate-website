@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import Section from '../../../layout/Section';
 import DevStageFilter from './DevStageFilter';
 import InitiativeCard from './InitiativeCard';
 import ReqFilter from './ReqFilter';
@@ -11,16 +10,26 @@ export default function InitiativeSection({ data }) {
   const [displayedData, setDisplayedData] = useState([]);
 
   useEffect(() => {
-    if (currentReq !== 'all') {
-      const filteredData = data.filter(({ node }) => node.frontmatter.requirements.includes(currentReq));
-      setDisplayedData(filteredData);
-    } else {
-      setDisplayedData(data);
-    }
-  }, [currentReq]);
+    const filteredData = data
+      .filter(({ node }) => {
+        if (currentStage === 'all') {
+          return node;
+        } else {
+          return node.frontmatter.devStage.includes(currentStage);
+        }
+      })
+      .filter(({ node }) => {
+        if (currentReq === 'all') {
+          return node;
+        } else {
+          return node.frontmatter.requirements.includes(currentReq);
+        }
+      });
+    setDisplayedData(filteredData);
+  }, [currentStage, currentReq]);
 
   return (
-    <Section>
+    <>
       <h2 className="text-4xl mb-8 md:pt-16 font-bold">Initiatives</h2>
       <p className="text-lg">Filter by development stage or requirement</p>
       <div className="mb-8">
@@ -44,6 +53,6 @@ export default function InitiativeSection({ data }) {
           );
         })}
       </div>
-    </Section>
+    </>
   );
 }

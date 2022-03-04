@@ -62,7 +62,9 @@ export default function SquareOne({ data }) {
           <RequirementsInfo data={requirementsInfo.edges} />
         </div>
       </Section>
-      <InitiativeSection data={initiativesInfo.edges} />
+      <Section>
+        <InitiativeSection data={initiativesInfo.edges} />
+      </Section>
       <Section className="relative pt-4 sm:pt-24">
         <Icon name="diamond-green" className="hidden md:block absolute top-56 -left-80 opacity-20 w-1/3" />
         <div className="mx-auto sm:p-8 max-w-[36.5rem] sm:shadow-xl bg-white dark:bg-darkBackground sm:dark:bg-substrateDark">

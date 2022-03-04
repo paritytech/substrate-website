@@ -7,5 +7,4 @@ requirements:
   - Education
 devStage:
   - Ideation
-  - EarlyStage
 ---

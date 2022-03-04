@@ -6,6 +6,5 @@ link: https://web3.foundation/grants/
 requirements:
 - Funding 
 devStage: 
-- Ideation
-- EarlyStage
+- Early Stage
 ---
