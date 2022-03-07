@@ -28,7 +28,6 @@ export default function PastSeminars({ data }) {
                 <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />
                 <p className="mb-0">{format(new Date(publishedAt), 'dd MMM yyyy')}</p>
               </div>
-              {/* <p>{description}</p> */}
               <LineArrowButton link={`https://www.youtube.com/watch?v=${id}`} primary>
                 Watch
               </LineArrowButton>
@@ -56,7 +55,6 @@ export const query = graphql`
         id
         title
         publishedAt
-        description
         cover {
           childImageSharp {
             gatsbyImageData(width: 200, layout: FIXED, placeholder: BLURRED)
