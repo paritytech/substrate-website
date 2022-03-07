@@ -23,7 +23,9 @@ export default function PastSeminars({ data }) {
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {videos.map(({ id, title, publishedAt }, idx) => (
             <div key={idx} className="shadow-xl p-8 max-w-md rounded-md bg-white dark:bg-substrateBlackish">
-              <h3 className="text-xl font-bold mb-4">{title}</h3>
+              <h3 className="text-xl font-bold mb-4">
+                {title.slice(0, 18) === 'Substrate Seminar:' ? title.slice(18) : title}
+              </h3>
               <div className="flex mb-4">
                 <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />
                 <p className="mb-0">{format(new Date(publishedAt), 'dd MMM yyyy')}</p>
