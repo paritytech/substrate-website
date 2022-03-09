@@ -113,8 +113,13 @@ const buildSubMenu = (menus, item) => {
 };
 
 const testInfraLink = href => {
-  const regex = new RegExp(process.env.GATSBY_DOCS_URL, 'i');
-  const match = regex.test(href);
+  const regexList = [
+    new RegExp(process.env.GATSBY_WEBSITE_URL, 'i'),
+    new RegExp(process.env.GATSBY_DOCS_URL, 'i'),
+    new RegExp(process.env.GATSBY_MARKETPLACE_URL, 'i'),
+    new RegExp(process.env.GATSBY_CAREERS_URL, 'i'),
+  ];
+  const match = regexList.some(rx => rx.test(href));
   return match;
 };
 

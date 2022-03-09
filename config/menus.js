@@ -1,4 +1,5 @@
 const DOCS_URL = process.env.GATSBY_DOCS_URL;
+const CAREERS_URL = process.env.GATSBY_CAREERS_URL;
 
 /* the main menu, ids of items must match
    the submenu's key of this js object */
@@ -119,7 +120,7 @@ const opportunities = [
     id: 'ecosystem.opportunities.grants',
   },
   {
-    url: 'https://careers.substrate.io',
+    url: CAREERS_URL,
     id: 'ecosystem.opportunities.careers',
   },
 ];

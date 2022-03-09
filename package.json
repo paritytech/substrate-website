@@ -9,7 +9,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "develop": "gatsby develop -p 8000",
+    "develop": "gatsby develop -p 8100",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
