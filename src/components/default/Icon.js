@@ -47,6 +47,8 @@ import element from '../../images/svg/social/element.svg';
 import element2 from '../../images/svg/social/element2.svg';
 import github from '../../images/svg/social/github.svg';
 import reddit from '../../images/svg/social/reddit.svg';
+import se from '../../images/svg/social/se.svg';
+import se2 from '../../images/svg/social/se2.svg';
 import so from '../../images/svg/social/so.svg';
 import so2 from '../../images/svg/social/so2.svg';
 import twitter from '../../images/svg/social/twitter.svg';
@@ -161,6 +163,8 @@ const iconsMap = {
   twitter2: twitter2,
   'stack-overflow': so,
   'stack-overflow-2': so2,
+  'stack-exchange': se,
+  'stack-exchange-2': se2,
   element: element,
   element2: element2,
   youtube: youtube,

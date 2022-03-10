@@ -19,4 +19,5 @@ module.exports = {
   telegram: 'https://t.me/parity_technologies',
   gitter: 'https://gitter.im/paritytech/parity',
   stackoverflow: 'https://stackoverflow.com/questions/tagged/substrate',
+  stackexchange: 'https://substrate.stackexchange.com',
 };

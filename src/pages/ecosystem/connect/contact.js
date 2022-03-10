@@ -26,8 +26,8 @@ export default function Contact() {
               <Link to="https://stackoverflow.com/questions/tagged/substrate">
                 <Icon name="stack-overflow-2" className="inline hover:opacity-50 transition-all" />
               </Link>
-              <Link className="mt-1" to="https://matrix.to/#/#substrate-technical:matrix.org">
-                <Icon name="element2" className="inline hover:opacity-50 transition-all" />
+              <Link to="https://substrate.stackexchange.com">
+                <Icon name="stack-exchange-2" className="inline hover:opacity-50 transition-all" />
               </Link>
             </div>
           </div>
