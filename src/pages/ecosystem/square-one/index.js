@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import React from 'react';
+import React, { useState } from 'react';
 import Lottie from 'react-lottie';
 
 import Icon from '../../../components/default/Icon';
@@ -19,6 +19,8 @@ export default function SquareOne({ data }) {
   const {
     frontmatter: { title, subTitle, paragraphOne, paragraphTwo, heroButtonText, heroButtonLink },
   } = heroInfo;
+  const [currentStage, setCurrentStage] = useState('all');
+  const [currentReq, setCurrentReq] = useState('all');
 
   return (
     <Layout mode="full">
@@ -59,11 +61,20 @@ export default function SquareOne({ data }) {
           </p>
         </div>
         <div>
-          <RequirementsInfo data={requirementsInfo.edges} />
+          <RequirementsInfo data={requirementsInfo.edges} setCurrentReq={setCurrentReq} />
         </div>
       </Section>
       <Section>
-        <InitiativeSection data={initiativesInfo.edges} />
+        <div id="initiatives">
+          <InitiativeSection
+            data={initiativesInfo.edges}
+            reqFilterData={requirementsInfo.edges}
+            currentReq={currentReq}
+            setCurrentReq={setCurrentReq}
+            currentStage={currentStage}
+            setCurrentStage={setCurrentStage}
+          />
+        </div>
       </Section>
       <Section className="relative pt-4 sm:pt-24 sm:pb-20">
         <Icon name="diamond-green" className="hidden md:block absolute top-56 -left-80 opacity-20 w-1/3 -z-10" />

@@ -1,29 +1,7 @@
 import cx from 'classnames';
-import { graphql, useStaticQuery } from 'gatsby';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-export default function ReqFilter({ currentReq, setCurrentReq }) {
-  const reqData = useStaticQuery(graphql`
-    {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(square-one/initiatives)/" } }) {
-        edges {
-          node {
-            id
-            frontmatter {
-              requirements
-            }
-          }
-        }
-      }
-    }
-  `);
-  const [requirements, setRequirements] = useState([]);
-  useEffect(() => {
-    reqData.allMarkdownRemark.edges.map(({ node }) => {
-      setRequirements(prevState => [...new Set([...prevState, ...node.frontmatter.requirements])]);
-    });
-  }, []);
-
+export default function ReqFilter({ data, currentReq, setCurrentReq }) {
   return (
     <select
       className={cx('mb-2 w-full cursor-pointer text-sm', 'sm:w-auto', 'dark:bg-darkBackground', 'focus:outline-none')}
@@ -31,11 +9,21 @@ export default function ReqFilter({ currentReq, setCurrentReq }) {
       onChange={event => setCurrentReq(event.target.value)}
     >
       <option value="all">All Requirements</option>
-      {requirements.map((req, index) => (
-        <option key={index} value={req}>
-          {req}
-        </option>
-      ))}
+      {data
+        .sort((a, b) => {
+          if (a.node.frontmatter.title < b.node.frontmatter.title) {
+            return -1;
+          }
+          if (a.node.frontmatter.title > b.node.frontmatter.title) {
+            return 1;
+          }
+          return 0;
+        })
+        .map(({ node }, index) => (
+          <option key={index} value={node.frontmatter.title}>
+            {node.frontmatter.title}
+          </option>
+        ))}
     </select>
   );
 }

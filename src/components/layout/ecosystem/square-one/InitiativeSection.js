@@ -4,9 +4,14 @@ import DevStageFilter from './DevStageFilter';
 import InitiativeCard from './InitiativeCard';
 import ReqFilter from './ReqFilter';
 
-export default function InitiativeSection({ data }) {
-  const [currentStage, setCurrentStage] = useState('all');
-  const [currentReq, setCurrentReq] = useState('all');
+export default function InitiativeSection({
+  data,
+  reqFilterData,
+  currentReq,
+  setCurrentReq,
+  currentStage,
+  setCurrentStage,
+}) {
   const [displayedData, setDisplayedData] = useState([]);
 
   useEffect(() => {
@@ -34,7 +39,7 @@ export default function InitiativeSection({ data }) {
       <p className="text-lg">Filter by development stage or requirement</p>
       <div className="mb-8">
         <DevStageFilter currentStage={currentStage} setCurrentStage={setCurrentStage} />
-        <ReqFilter currentReq={currentReq} setCurrentReq={setCurrentReq} />
+        <ReqFilter data={reqFilterData} currentReq={currentReq} setCurrentReq={setCurrentReq} />
       </div>
       <div className="w-1/1 grid grid-col-1 lg:grid-cols-2 gap-y-8 lg:gap-x-8">
         {displayedData.map((node, index) => {

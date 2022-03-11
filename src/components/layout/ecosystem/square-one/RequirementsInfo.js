@@ -2,7 +2,7 @@ import React from 'react';
 
 import InfoCard from '../../../ui/InfoCard';
 
-export default function RequirementsInfo({ data }) {
+export default function RequirementsInfo({ data, setCurrentReq }) {
   return (
     <div className="md:flex md:flex-wrap md:justify-center">
       {data
@@ -16,7 +16,7 @@ export default function RequirementsInfo({ data }) {
               delay={index * 200}
               title={node.frontmatter.title}
               description={node.frontmatter.description}
-              link={node.frontmatter.link}
+              setCurrentReq={setCurrentReq}
             />
           );
         })}
