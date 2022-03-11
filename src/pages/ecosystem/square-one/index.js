@@ -65,8 +65,8 @@ export default function SquareOne({ data }) {
       <Section>
         <InitiativeSection data={initiativesInfo.edges} />
       </Section>
-      <Section className="relative pt-4 sm:pt-24">
-        <Icon name="diamond-green" className="hidden md:block absolute top-56 -left-80 opacity-20 w-1/3" />
+      <Section className="relative pt-4 sm:pt-24 sm:pb-20">
+        <Icon name="diamond-green" className="hidden md:block absolute top-56 -left-80 opacity-20 w-1/3 -z-10" />
         <div className="mx-auto sm:p-8 max-w-[36.5rem] sm:shadow-xl bg-white dark:bg-darkBackground sm:dark:bg-substrateDark">
           <HubspotFormReact />
         </div>

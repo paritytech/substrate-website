@@ -16,6 +16,10 @@
     @apply hover:scale-105 focus:bg-substrateGreen-dark;
   }
 
+  select {
+    @apply mt-2 rounded-lg border border-gray-300 dark:bg-substrateDark focus:outline-none focus:ring-0;
+  }
+
   .hs-form-field {
     @apply text-lg font-semibold mb-4;
 
@@ -32,7 +36,7 @@
     }
 
     .hs-form-radio-display {
-      @apply flex items-center py-1 text-base cursor-pointer;
+      @apply flex items-center mt-2 py-1 text-base cursor-pointer;
     }
 
     .hs-input[type='radio'] {
