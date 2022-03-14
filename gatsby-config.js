@@ -217,6 +217,10 @@ module.exports = {
             pathname: '/ecosystem/connect',
             crumbLabel: 'Connect',
           },
+          {
+            pathname: '/ecosystem/square-one',
+            crumbLabel: 'Square One',
+          },
         ],
       },
     },

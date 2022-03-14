@@ -1,0 +1,60 @@
+import { graphql } from 'gatsby';
+import React from 'react';
+
+import Section from '../../../components/layout/Section';
+import Layout from '../../../components/site/Layout';
+import NavBreadcrumb from '../../../components/site/NavBreadcrumb';
+import SEO from '../../../components/site/SEO';
+import BlueTag from '../../../components/ui/BlueTag';
+
+export default function AcceleratorsAndIncubators({ data }) {
+  const { pageInfo } = data;
+
+  return (
+    <Layout mode="full">
+      <SEO title="Substrate Delivery Partners Program" />
+      <Section>
+        <div className="hidden md:block mb-12 underline-animate underline-animate-thin capitalize">
+          <NavBreadcrumb />
+        </div>
+        <div className="mb-20">
+          <div className="mb-4">
+            {pageInfo.frontmatter.requirements.map((req, index) => (
+              <BlueTag key={index} title={req} />
+            ))}
+          </div>
+          <div className="mb-4 text-4xl sm:text-5xl font-bold">{pageInfo.frontmatter.title}</div>
+          <div className="font-semibold text-xl sm:text-2xl">{pageInfo.frontmatter.org}</div>
+        </div>
+        <div className="markdown underline-animate underline-animate-thin max-w-4xl">
+          <div dangerouslySetInnerHTML={{ __html: pageInfo.html }}></div>
+        </div>
+      </Section>
+    </Layout>
+  );
+}
+
+export const query = graphql`
+  {
+    locales: allLocale {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+    pageInfo: markdownRemark(frontmatter: { title: { eq: "Accelerators & Incubators" } }) {
+      id
+      frontmatter {
+        title
+        org
+        requirements
+        devStage
+        description
+      }
+      html
+    }
+  }
+`;

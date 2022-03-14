@@ -44,21 +44,31 @@ export default function InitiativeSection({
       </div>
       {displayedData.length > 0 ? (
         <div className="w-1/1 grid grid-col-1 lg:grid-cols-2 gap-y-8 lg:gap-x-8">
-          {displayedData.map((node, index) => {
-            const {
-              node: { frontmatter },
-            } = node;
-            return (
-              <InitiativeCard
-                key={index}
-                title={frontmatter.title}
-                description={frontmatter.description}
-                org={frontmatter.org}
-                link={frontmatter.link}
-                requirements={frontmatter.requirements}
-              />
-            );
-          })}
+          {displayedData
+            .sort((a, b) => {
+              if (a.node.frontmatter.title < b.node.frontmatter.title) {
+                return -1;
+              }
+              if (a.node.frontmatter.title > b.node.frontmatter.title) {
+                return 1;
+              }
+              return 0;
+            })
+            .map((node, index) => {
+              const {
+                node: { frontmatter },
+              } = node;
+              return (
+                <InitiativeCard
+                  key={index}
+                  title={frontmatter.title}
+                  description={frontmatter.description}
+                  org={frontmatter.org}
+                  link={frontmatter.link}
+                  requirements={frontmatter.requirements}
+                />
+              );
+            })}
         </div>
       ) : (
         <div className="border dark:border-substrateGray-dark rounded-md flex flex-col items-center py-8">

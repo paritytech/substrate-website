@@ -1,20 +1,8 @@
-import cx from 'classnames';
 import React from 'react';
 
 import { Link } from '../../../default/Link';
+import BlueTag from '../../../ui/BlueTag';
 import LineArrowButton from '../../../ui/LineArrowButton';
-
-const Tag = ({ title }) => (
-  <button
-    className={cx(
-      'inline-block text-xs mr-4 px-3 py-2 rounded cursor-text',
-      'bg-substrateBlue bg-opacity-5 dark:bg-substrateDark',
-      'border border-substrateBlue  border-opacity-20 dark:border-substrateWhite'
-    )}
-  >
-    {title}
-  </button>
-);
 
 export default function InitiativeCard({ title, description, org, link, requirements }) {
   return (
@@ -26,7 +14,7 @@ export default function InitiativeCard({ title, description, org, link, requirem
         <hr className="border border-substrateGray" />
         <div className="flex flex-wrap mb-6">
           {requirements.map((req, index) => (
-            <Tag key={index} title={req} />
+            <BlueTag key={index} title={req} />
           ))}
         </div>
         <LineArrowButton>Learn More</LineArrowButton>
