@@ -1,5 +1,5 @@
 ---
-title: Builder for Builders
+title: Builders for Builders
 org: Parity Technologies
 description: Builders for Builders is an initiative that empowers parachain teams to build their own thriving communities by adopting the Substrate Builders Program framework.
 link: https://www.parity.io/blog/substrate-builders-program-update-builders-for-builders
