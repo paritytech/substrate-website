@@ -20,8 +20,12 @@
     @apply mt-2 rounded-lg border border-gray-300 dark:bg-substrateDark focus:outline-none focus:ring-0;
   }
 
+  h3 {
+    @apply text-2xl;
+  }
+
   .hs-form-field {
-    @apply text-lg font-semibold mb-4;
+    @apply text-base font-semibold mb-4;
 
     .hs-input[type='text'] {
       @apply w-full mt-2 rounded-lg border border-gray-300;

@@ -56,9 +56,7 @@ export default function SquareOne({ data }) {
       <Section className="mt-20 lg:mt-0">
         <div className="mb-12 lg:text-center">
           <h2 className="text-2xl lg:font-extrabold lg:text-4xl mb-6">Begin your tailer-made Substrate journey</h2>
-          <p className="capitalize text-xl">
-            Explore the Substrate guide to the resources available to your team, based on your needs:
-          </p>
+          <p className="text-xl">Explore the resources available to your team, based on your needs:</p>
         </div>
         <div>
           <RequirementsInfo data={requirementsInfo.edges} setCurrentReq={setCurrentReq} />
