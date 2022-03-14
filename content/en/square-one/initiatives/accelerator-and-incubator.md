@@ -10,6 +10,6 @@ requirements:
 devStage:
   - Ideation
   - Early Stage
-  - Prototype Stage
+  - Prototype Stage 
   - MVP
 ---
