@@ -39,7 +39,7 @@ const networks = [
 
 function ExtensionLinks() {
   return (
-    <div className="flex flex-col md:flex-row gap-3 w-[221px] md:w-full">
+    <div className="flex flex-col sm:flex-row gap-3 w-[221px] sm:w-full">
       <PrimaryButtonLink
         fullWidth
         link="https://chrome.google.com/webstore/detail/substrate-connect-extensi/khccbhhbocaaklceanjginbdheafklai"
