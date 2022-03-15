@@ -4,13 +4,21 @@ import React from 'react';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
-export default function PrimaryButtonLink({ children, link, onClick, fullWidth = false, hero = false }) {
+export default function PrimaryButtonLink({
+  children,
+  link,
+  onClick,
+  fullWidth = false,
+  fullWidthLeftAlign = false,
+  hero = false,
+}) {
   return (
     <Link to={link}>
       <div
         onClick={onClick}
         className={cx('primary-button group bg-substrateGreen inline-flex relative rounded-md overflow-hidden', {
           'w-full justify-center': fullWidth,
+          'w-full': fullWidthLeftAlign,
         })}
       >
         <p
