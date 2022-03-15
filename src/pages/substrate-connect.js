@@ -39,7 +39,6 @@ const networks = [
 
 function ExtensionLinks() {
   return (
-    // Test
     <div className="flex flex-col md:flex-row gap-3 w-[221px] md:w-full">
       <PrimaryButtonLink
         fullWidth
