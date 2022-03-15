@@ -39,17 +39,17 @@ const networks = [
 
 function ExtensionLinks() {
   return (
-    <div className="flex flex-col gap-3 w-[305px]">
+    <div className="flex flex-col md:flex-row gap-3 w-[221px] md:w-full">
       <PrimaryButtonLink
         fullWidth
         link="https://chrome.google.com/webstore/detail/substrate-connect-extensi/khccbhhbocaaklceanjginbdheafklai"
       >
         <Icon name="chrome" className="inline mr-2" />
-        Get the extension for Chrome
+        Chrome extension
       </PrimaryButtonLink>
       <PrimaryButtonLink fullWidth link="https://addons.mozilla.org/en-US/firefox/addon/substrate-connect/">
         <Icon name="firefox" className="inline mr-2" />
-        Get the extension for Firefox
+        Firefox extension
       </PrimaryButtonLink>
     </div>
   );
