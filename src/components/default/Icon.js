@@ -81,6 +81,7 @@ import arrowDropdown from '../../images/svg/ui/arrow-dropdown.svg';
 import arrowMore from '../../images/svg/ui/arrow-more.svg';
 import arrowNext from '../../images/svg/ui/arrow-next.svg';
 import calendar from '../../images/svg/ui/calendar.svg';
+import chrome from '../../images/svg/ui/chrome.svg';
 import close from '../../images/svg/ui/close-x.svg';
 import diamondGreen from '../../images/svg/ui/diamond-green.svg';
 import diamondPink from '../../images/svg/ui/diamond-pink.svg';
@@ -88,6 +89,7 @@ import diamondPurple from '../../images/svg/ui/diamond-purple.svg';
 import diamondYellow from '../../images/svg/ui/diamond-yellow.svg';
 import docs from '../../images/svg/ui/docs.svg';
 import externalLink from '../../images/svg/ui/external-link.svg';
+import firefox from '../../images/svg/ui/firefox.svg';
 import hamburger from '../../images/svg/ui/hamburger-toggle.svg';
 import moon from '../../images/svg/ui/moon.svg';
 import play from '../../images/svg/ui/play.svg';
@@ -156,6 +158,8 @@ const iconsMap = {
   'diamond-green': diamondGreen,
   play: play,
   tools: tools,
+  chrome: chrome,
+  firefox: firefox,
   /* mockup */
   placeholder: placeholder,
   /* social */

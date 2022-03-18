@@ -10,7 +10,7 @@ export default function PrimaryButtonLink({ children, link, onClick, fullWidth =
       <div
         onClick={onClick}
         className={cx('primary-button group bg-substrateGreen inline-flex relative rounded-md overflow-hidden', {
-          'w-full justify-center': fullWidth,
+          'w-full': fullWidth,
         })}
       >
         <p

@@ -37,6 +37,24 @@ const networks = [
   },
 ];
 
+function ExtensionLinks() {
+  return (
+    <div className="flex flex-col sm:flex-row gap-3 w-[221px] sm:w-full">
+      <PrimaryButtonLink
+        fullWidth
+        link="https://chrome.google.com/webstore/detail/substrate-connect-extensi/khccbhhbocaaklceanjginbdheafklai"
+      >
+        <Icon name="chrome" className="inline mr-2" />
+        Chrome extension
+      </PrimaryButtonLink>
+      <PrimaryButtonLink fullWidth link="https://addons.mozilla.org/en-US/firefox/addon/substrate-connect/">
+        <Icon name="firefox" className="inline mr-2" />
+        Firefox extension
+      </PrimaryButtonLink>
+    </div>
+  );
+}
+
 export default function Connect() {
   const { siteMetadata } = useSiteMetadata();
 
@@ -51,9 +69,7 @@ export default function Connect() {
             <p className="mb-8 text-xl md:text-2xl xl:text-3xl font-bold">
               The easiest way to connect to Polkadot, Kusama, and Substrate-based chains.
             </p>
-            <PrimaryButtonLink link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
-              Get the extension
-            </PrimaryButtonLink>
+            <ExtensionLinks />
           </div>
           <div className="w-full p-8 lg:p-0 relative" style={{ paddingTop: 'calc(1630 / 1630 * 100%)' }}>
             <div className="h-auto top-0 left-0 w-full absolute">
@@ -114,9 +130,7 @@ export default function Connect() {
               light clients can run simultaneously and can continuously sync as long as the browser stays open. It works
               on all major browsers and does not require a TLS certificate for connecting to nodes.
             </p>
-            <PrimaryButtonLink link="https://github.com/paritytech/substrate-connect/tree/master/projects/extension">
-              Get the extension
-            </PrimaryButtonLink>
+            <ExtensionLinks />
             <LineArrowButton
               link={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/integration/substrate-connect/`}
               className="block mt-8"
