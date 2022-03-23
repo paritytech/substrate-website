@@ -117,7 +117,7 @@
       "category":[ "Infrastructure","All"],
       "types": ["All Teams", "Substrate Builders Program",  "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
-      "description": "A decentralized platform that provides infrastructure services for DApp developers, DApp users,and operators."
+      "description": "A decentralized platform that provides infrastructure services for dapp developers, dapp users, and operators."
     },
     {
       "name": "Attic Lab",
@@ -1015,7 +1015,7 @@
       "category":[ "Wallet","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
-      "description": "Trust wallet is a mobile crypto wallet allowing on/off ramps from fiat to cryptocurrencies. It also host a Dapp browser."
+      "description": "Trust wallet is a mobile crypto wallet allowing on/off ramps from fiat to cryptocurrencies. It also host a dapp browser."
     },
     {
       "name": "Unique Network",

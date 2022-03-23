@@ -76,7 +76,7 @@ export default function AcalaCaseStudy({ data }) {
           </div>
         </div>
         <Blockqoute
-          text="“Acala is a DeFi and liquidity hub for Polkadot that leverages Substrate to provide a parachain and Ethereum-compatible DApp platform customized for DeFi developers and users. Substrate allows us to build DeFi primitives and optimizations to improve developer and user experience, while Substrate and Polkadot’s upgradability enables us to future-proof our chain.”"
+          text="“Acala is a DeFi and liquidity hub for Polkadot that leverages Substrate to provide a parachain and Ethereum-compatible dapp platform customized for DeFi developers and users. Substrate allows us to build DeFi primitives and optimizations to improve developer and user experience, while Substrate and Polkadot’s upgradability enables us to future-proof our chain.”"
           name="Bryan Chen, Co-founder of Acala"
           image={data.avatar}
         />
