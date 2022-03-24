@@ -117,7 +117,7 @@
       "category":[ "Infrastructure","All"],
       "types": ["All Teams", "Substrate Builders Program",  "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
-      "description": "A decentralized platform that provides infrastructure services for DApp developers, DApp users,and operators."
+      "description": "A decentralized platform that provides infrastructure services for dapp developers, dapp users, and operators."
     },
     {
       "name": "Attic Lab",
@@ -189,7 +189,7 @@
       "category":[ "File Storage","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Decentralized Application",
-      "description": "The Bluzelle project enables Dapps to store their data in a place that is both decentralized and mutable."
+      "description": "The Bluzelle project enables dapps to store their data in a place that is both decentralized and mutable."
     },
     {
       "name": "Caelum Labs",
@@ -634,7 +634,7 @@
       "category":[ "Wallet","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
-      "description": "Math Wallet is the an extension wallet that support multi-chain dApps. It includes token transfers, portfolio management and Blockchain news."
+      "description": "Math Wallet is the an extension wallet that support multi-chain dapps. It includes token transfers, portfolio management and Blockchain news."
     },
     {
       "name": "Matter Labs",
@@ -800,7 +800,7 @@
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
       "caseStudy": "case-studies/astar/",
-      "description": "Astar Network is a scaling dApps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
+      "description": "Astar Network is a scaling dapps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
     },
     {
       "name": "Polimec",
@@ -1015,7 +1015,7 @@
       "category":[ "Wallet","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
-      "description": "Trust wallet is a mobile crypto wallet allowing on/off ramps from fiat to cryptocurrencies. It also host a Dapp browser."
+      "description": "Trust wallet is a mobile crypto wallet allowing on/off ramps from fiat to cryptocurrencies. It also host a dapp browser."
     },
     {
       "name": "Unique Network",
@@ -1023,6 +1023,7 @@
       "category":[ "Gaming","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
+      "caseStudy": "case-studies/unique/",
       "description": "Unique Network is an infrastructure for the next generation NFTs, offering developers independence from network-wide transaction fees and upgrades."
     },
     {

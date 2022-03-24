@@ -122,7 +122,7 @@ export default function AstarCaseStudy({ data }) {
           reliant on one or more of the key features of Substrate?
         </h4>
         <p>
-          Astar has developed a very innovative concept called “dApps Staking”, which allows an account to stake tokens
+          Astar has developed a very innovative concept called “Dapps Staking”, which allows an account to stake tokens
           to a smart contract. This pallet utilizes Substrate’s pallet hooks to set staking rewards for each block.
           Another feature in Astar’s runtime is the Custom Signature Call. This pallet allows accounts to execute
           Substrate extrinsic calls using an external ECDSA signature (eg: signing a call with Ledger Ethereum account).

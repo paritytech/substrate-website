@@ -102,7 +102,7 @@ const Interoperable = () => {
       </Section>
 
       <CaseStudyBanner icon="astar-logo" link="/ecosystem/projects/case-studies/astar/">
-        See Astar&apos;s case study on enabling dApps to co-exist across blockchain networks.
+        See Astar&apos;s case study on enabling dapps to co-exist across blockchain networks.
       </CaseStudyBanner>
 
       <Section
