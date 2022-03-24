@@ -1,5 +1,5 @@
 ---
-title: "StackExchange Forum"
+title: "Use our StackExchange"
 active: true
 ---
 
