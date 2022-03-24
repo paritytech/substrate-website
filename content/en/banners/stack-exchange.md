@@ -1,8 +1,8 @@
 ---
-title: "StackExchange Forum"
-active: false
+title: "Use our StackExchange"
+active: true
 ---
 
-The Substrate community is campaigning for a dedicated [StackExchange](https://area51.stackexchange.com/proposals/126136/substrate-blockchain-framework) forum!
+The Substrate developer community is in the beta phase of its Stack Exchange campaign and needs your help. **We have until April 7th to increase the engagement on the site, otherwise it will get shut down.**
 
-**Please help us by following and committing to your desire for it [here.](https://area51.stackexchange.com/proposals/126136/substrate-blockchain-framework)**
+[Visit the page here](https://substrate.stackexchange.com/) and help us get past the beta phase by asking questions, upvoting or downvoting existing questions or providing answers. 
