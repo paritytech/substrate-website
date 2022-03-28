@@ -4,7 +4,7 @@ import InfoCard from '../../../ui/InfoCard';
 
 export default function RequirementsInfo({ data, setCurrentReq }) {
   return (
-    <div className="md:flex md:flex-wrap md:justify-center">
+    <div className="grid md:grid-cols-2 xl:grid-cols-3 auto-rows-fr gap-y-14 lg:gap-y-6">
       {data
         .sort((a, b) => {
           return a.node.frontmatter.order - b.node.frontmatter.order;
