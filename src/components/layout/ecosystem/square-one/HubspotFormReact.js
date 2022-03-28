@@ -22,7 +22,6 @@ export default function HubspotFormReact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const handleSubmit = () => {
     setFormSubmitted(true);
-    window.scrollBy(0, -500);
   };
   return (
     <>
