@@ -218,7 +218,7 @@ div[aria-label='animation'] {
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: #24CC85;
+  stroke: #24cc85;
   fill: none;
   animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 }
@@ -232,8 +232,8 @@ div[aria-label='animation'] {
   stroke: #fff;
   stroke-miterlimit: 10;
   margin: 10% auto;
-  box-shadow: inset 0px 0px 0px #24CC85;
-  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  box-shadow: inset 0px 0px 0px #24cc85;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
 }
 
 .checkmark__check {
@@ -249,7 +249,8 @@ div[aria-label='animation'] {
   }
 }
 @keyframes scale {
-  0%, 100% {
+  0%,
+  100% {
     transform: none;
   }
   50% {
@@ -258,6 +259,13 @@ div[aria-label='animation'] {
 }
 @keyframes fill {
   100% {
-    box-shadow: inset 0px 0px 0px 30px #24CC85;
+    box-shadow: inset 0px 0px 0px 30px #24cc85;
   }
+}
+
+/* Hubspot form spacing fix */
+
+.hs-form-field,
+.hs-form h3 {
+  margin-bottom: 2rem !important;
 }
