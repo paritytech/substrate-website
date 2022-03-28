@@ -55,7 +55,7 @@ export default function SquareOne({ data }) {
       </Section>
       <Section className="mt-20 lg:mt-0">
         <div className="mb-12 lg:text-center">
-          <h2 className="text-2xl lg:font-extrabold lg:text-4xl mb-6">Begin your tailer-made Substrate journey</h2>
+          <h2 className="text-2xl lg:font-extrabold lg:text-4xl mb-6">Begin your tailor-made Substrate journey</h2>
           <p className="text-xl">Explore the resources available to your team, based on your needs:</p>
         </div>
         <div>
