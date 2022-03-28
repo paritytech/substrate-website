@@ -8,8 +8,11 @@ export default function Accordion({ title, text }) {
   return (
     <div className={cx('')}>
       <div className="flex items-center justify-between capitalize mb-8" onClick={() => setIsOpen(!isOpen)}>
-        <p className="mb-0 text-xl font-medium w-3/4">{title}</p>
-        <Icon name="arrow-dropdown" className={cx('duration-300 ease-in-out', { '-rotate-180': isOpen })} />
+        <p className="mb-0 text-xl font-medium w-3/4 cursor-pointer lg:cursor-default">{title}</p>
+        <Icon
+          name="arrow-dropdown"
+          className={cx('fill-current duration-300 ease-in-out cursor-pointer', { '-rotate-180': isOpen })}
+        />
       </div>
       <div
         className={cx(
