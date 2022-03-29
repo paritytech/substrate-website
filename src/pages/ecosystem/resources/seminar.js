@@ -64,18 +64,14 @@ export default function Seminar() {
             </p>
           </div>
           <div className="order-first md:order-last">
-            <h5 className="mb-8 font-medium text-2xl">Upcoming Seminars</h5>
-            {seminars.map(({ date, description }, idx) => (
-              <div key={idx}>
-                <p className="text-substrateGreen font-bold fill-current">
-                  <Icon name="calendar" className="inline mb-1 mr-3" />
-                  {date}
-                </p>
-                <p className="border-b border-substrateBlackish dark:border-substrateDarkThemeGrey pb-8 leading-loose">
-                  {description}
-                </p>
-              </div>
-            ))}
+            <h5 className="mb-8 font-medium text-2xl">View Past Seminars</h5>
+            <p className="leading-loose">
+              Check out our{' '}
+              <span className="underline-animate underline-animate-thin">
+                <Link to="https://www.youtube.com/playlist?list=PLp0_ueXY_enXRfoaW7sTudeQH10yDvFOS">Youtube playlist</Link>
+              </span>
+              {' '}to revisit past seminars.
+            </p>
           </div>
         </div>
       </Section>
