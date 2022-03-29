@@ -39,7 +39,7 @@ export default function SquareOne({ data }) {
             <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">{subTitle}</h3>
             <p className="mb-8 md:text-lg font-medium leading-relaxed">{paragraphOne}</p>
             <p className="mb-8 md:text-lg font-medium leading-relaxed">{paragraphTwo}</p>
-            <PrimaryButton onClick={() => connect.current.scrollIntoView({ behavior: 'smooth' })}>
+            <PrimaryButton onClick={() => window.scrollTo({ top: connect.current.offsetTop - 60, behavior: 'smooth' })}>
               {heroButtonText}
             </PrimaryButton>
           </div>
