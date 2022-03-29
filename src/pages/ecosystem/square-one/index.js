@@ -3,8 +3,8 @@ import React, { useRef, useState } from 'react';
 import Lottie from 'react-lottie';
 
 import Icon from '../../../components/default/Icon';
+import ContactForm from '../../../components/layout/ecosystem/square-one/ContactForm';
 import GeneralInfo from '../../../components/layout/ecosystem/square-one/GeneralInfo';
-import HubspotFormReact from '../../../components/layout/ecosystem/square-one/HubspotFormReact';
 import InitiativeSection from '../../../components/layout/ecosystem/square-one/InitiativeSection';
 import RequirementsInfo from '../../../components/layout/ecosystem/square-one/RequirementsInfo';
 import Section from '../../../components/layout/Section';
@@ -82,7 +82,7 @@ export default function SquareOne({ data }) {
       <Section className="relative pt-4 sm:pt-24 sm:pb-20">
         <Icon name="diamond-green" className="hidden md:block absolute top-56 -left-80 opacity-20 w-1/3 -z-10" />
         <div className="mx-auto sm:p-8 max-w-[36.5rem] sm:shadow-xl bg-white dark:bg-darkBackground sm:dark:bg-substrateDark">
-          <HubspotFormReact connect={connect} />
+          <ContactForm connect={connect} />
         </div>
       </Section>
     </Layout>
