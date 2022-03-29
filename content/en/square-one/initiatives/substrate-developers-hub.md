@@ -5,6 +5,7 @@ description: The center of knowledge for all things Substrate. Access a library 
 link: https://docs.substrate.io
 requirements:
   - Tech Mentoring
+  - Education
 devStage:
   - Ideation
 ---
