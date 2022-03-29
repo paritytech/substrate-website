@@ -12,7 +12,6 @@ import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 import PrimaryButton from '../../../components/ui/PrimaryButton';
 import * as animationData from '../../../images/animation/ecosystem/square-one.json';
-import IndustryConnectLogo from '../../../images/png/sqaure-one/industry-connect.png';
 
 export default function SquareOne({ data }) {
   const { heroInfo, generalInfo, requirementsInfo, initiativesInfo } = data;
@@ -54,7 +53,10 @@ export default function SquareOne({ data }) {
         <div className="flex justify-around items-center mt-40 pb-32">
           <Icon name="polkadot-logo" className="w-64 fill-current dark:text-white" />
           <Icon name="w3f-logo" className="w-56 fill-current text-black dark:text-white" />
-          <img src={IndustryConnectLogo} alt="Industry Connect Logo" className="w-[230px] h-auto rounded" />
+          <span className="cursor-default font-extrabold text-3xl">
+            Substrate
+            <br /> Developer Hub
+          </span>
         </div>
       </Section>
       <Section className="mt-20 lg:mt-0">
