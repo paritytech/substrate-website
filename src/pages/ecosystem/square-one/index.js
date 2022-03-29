@@ -10,14 +10,14 @@ import RequirementsInfo from '../../../components/layout/ecosystem/square-one/Re
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
-import PrimaryButtonLink from '../../../components/ui/PrimaryButtonLink';
+import PrimaryButton from '../../../components/ui/PrimaryButton';
 import * as animationData from '../../../images/animation/ecosystem/square-one.json';
 import IndustryConnectLogo from '../../../images/png/sqaure-one/industry-connect.png';
 
 export default function SquareOne({ data }) {
   const { heroInfo, generalInfo, requirementsInfo, initiativesInfo } = data;
   const {
-    frontmatter: { title, subTitle, paragraphOne, paragraphTwo, heroButtonText, heroButtonLink },
+    frontmatter: { title, subTitle, paragraphOne, paragraphTwo, heroButtonText },
   } = heroInfo;
   const [currentStage, setCurrentStage] = useState('all');
   const [currentReq, setCurrentReq] = useState('all');
@@ -39,7 +39,9 @@ export default function SquareOne({ data }) {
             <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">{subTitle}</h3>
             <p className="mb-8 md:text-lg font-medium leading-relaxed">{paragraphOne}</p>
             <p className="mb-8 md:text-lg font-medium leading-relaxed">{paragraphTwo}</p>
-            <PrimaryButtonLink link={heroButtonLink}>{heroButtonText}</PrimaryButtonLink>
+            <PrimaryButton onClick={() => connect.current.scrollIntoView({ behavior: 'smooth' })}>
+              {heroButtonText}
+            </PrimaryButton>
           </div>
         </div>
       </Section>
@@ -106,7 +108,6 @@ export const query = graphql`
         paragraphOne
         paragraphTwo
         heroButtonText
-        heroButtonLink
       }
     }
     generalInfo: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(info-section)/" } }) {

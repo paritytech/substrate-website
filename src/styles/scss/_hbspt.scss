@@ -13,7 +13,7 @@
     @apply bg-substrateGreen rounded-md cursor-pointer;
     @apply text-lg font-bold text-white;
     @apply px-7 py-2;
-    @apply hover:scale-105 focus:bg-substrateGreen-dark;
+    @apply hover:text-substrateGreen hover:bg-white hover:ring-2 ring-substrateGreen transition duration-200;
   }
 
   select {
@@ -22,10 +22,12 @@
 
   h3 {
     @apply text-2xl;
+    margin-bottom: 2rem !important;
   }
 
   .hs-form-field {
     @apply text-base font-semibold mb-4;
+    margin-bottom: 2rem !important;
 
     .hs-input[type='text'] {
       @apply w-full mt-2 rounded-lg border border-gray-300;

@@ -262,10 +262,3 @@ div[aria-label='animation'] {
     box-shadow: inset 0px 0px 0px 30px #24cc85;
   }
 }
-
-/* Hubspot form spacing fix */
-
-.hs-form-field,
-.hs-form h3 {
-  margin-bottom: 2rem !important;
-}
