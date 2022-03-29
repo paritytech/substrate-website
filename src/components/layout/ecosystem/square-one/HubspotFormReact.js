@@ -14,7 +14,7 @@ const Confirmation = () => {
         </svg>
       </div>
       <p className="text-2xl font-bold mb-2">Thanks for reaching out</p>
-      <p>We will get back to you as soon as possible.</p>
+      <p className="mb-20">We will get back to you as soon as possible.</p>
     </div>
   );
 };
@@ -32,7 +32,7 @@ export default function HubspotFormReact({ connect }) {
         id="hubspotForm"
         className={cx('grid items-center transition-height duration-500', {
           'h-[940px] md:h-[924px]': !formSubmitted,
-          'h-[314px]': formSubmitted,
+          'h-[360px]': formSubmitted,
         })}
       >
         {!formSubmitted ? (
