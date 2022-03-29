@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import React, { useState } from 'react';
 import HubspotForm from 'react-hubspot-form';
 
@@ -27,7 +28,13 @@ export default function HubspotFormReact({ connect }) {
 
   return (
     <>
-      <div id="hubspotForm">
+      <div
+        id="hubspotForm"
+        className={cx('grid items-center transition-height duration-500', {
+          'h-[940px] md:h-[924px]': !formSubmitted,
+          'h-[314px]': formSubmitted,
+        })}
+      >
         {!formSubmitted ? (
           <HubspotForm
             portalId="7592558"
