@@ -12,7 +12,7 @@ const Confirmation = () => {
           <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
         </svg>
       </div>
-      <p className="text-2xl font-bold mb-2">Thanks for Reaching Out</p>
+      <p className="text-2xl font-bold mb-2">Thanks for reaching out</p>
       <p>We will get back to you as soon as possible.</p>
     </div>
   );
