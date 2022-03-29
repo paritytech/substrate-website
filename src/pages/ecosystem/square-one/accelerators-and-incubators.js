@@ -15,7 +15,7 @@ export default function AcceleratorsAndIncubators({ data }) {
       <SEO title="Substrate Delivery Partners Program" />
       <Section>
         <div className="hidden md:block mb-12 underline-animate underline-animate-thin capitalize">
-          <NavBreadcrumb />
+          <NavBreadcrumb linkMiddleParent />
         </div>
         <div className="mb-20">
           <div className="mb-4">
