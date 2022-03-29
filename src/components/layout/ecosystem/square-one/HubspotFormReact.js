@@ -18,11 +18,13 @@ const Confirmation = () => {
   );
 };
 
-export default function HubspotFormReact() {
+export default function HubspotFormReact({ connect }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const handleSubmit = () => {
     setFormSubmitted(true);
+    connect.current.scrollIntoView({ behavior: 'smooth' });
   };
+
   return (
     <>
       <div id="hubspotForm">
