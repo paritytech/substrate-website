@@ -18,13 +18,13 @@ Developing relationships with incubators and accelerators is a common way for Su
 
 We encourage teams to do their own research into the variety of viable incubator and accelerator programs available on the market, but those listed below offer a range of benefits.
 
-**Incubators**
+###### Incubators
 
 - [Polychain Genesis](https://polychain.capital/)
 - [Open DeFi](https://www.opendefi.network/)
 - [Lumos Labs](https://www.lumoslabs.co/)
 
-**Accelerators**
+###### Accelerators
 
 - [UC Berkeley Blockchain Xcelerator](https://scet.berkeley.edu/blockchain-lab/)
 - [Upright](https://www.upright.gg/)

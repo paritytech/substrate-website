@@ -87,7 +87,7 @@ h3 {
 }
 
 .markdown h6 {
-  @apply text-base my-4;
+  @apply text-base mt-6 mb-4;
 }
 
 .markdown strong {
