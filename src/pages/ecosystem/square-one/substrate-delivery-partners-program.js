@@ -26,7 +26,7 @@ export default function DeliveryPartners({ data }) {
           <div className="mb-4 text-4xl sm:text-5xl font-bold">{pageInfo.frontmatter.title}</div>
           <div className="font-semibold text-xl sm:text-2xl">{pageInfo.frontmatter.org}</div>
         </div>
-        <div className="markdown underline-animate underline-animate-thin max-w-4xl">
+        <div className="markdown underline-animate underline-animate-thin max-w-4xl pb-20">
           <div dangerouslySetInnerHTML={{ __html: pageInfo.html }}></div>
         </div>
       </Section>

@@ -71,7 +71,7 @@ h3 {
 }
 
 .markdown ul {
-  @apply ml-8;
+  @apply ml-8 mb-4;
 }
 
 .markdown ul ul {
@@ -84,6 +84,14 @@ h3 {
 
 .markdown h3 {
   @apply mt-14 mb-6 text-2xl font-medium;
+}
+
+.markdown h6 {
+  @apply text-base my-4;
+}
+
+.markdown strong {
+  @apply font-bold;
 }
 
 .markdown p {
