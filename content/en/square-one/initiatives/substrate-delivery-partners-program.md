@@ -15,13 +15,12 @@ Substrate teams have access to a rich ecosystem of motivated third-parties inter
 
 ###### What can a Delivery Partner do for me?
 
-Delivery Partners are split into two categories:
-
-- **Tier one:** Well-scaled, dependable teams with a lot of experience
-- **Tier two:** Newer teams using the Substrate stack
-
 Think of Delivery Partners as a resource to help develop and expand your Substrate project. Whether you’re an early stage team with funding but no solid tech, or a team who has developed an idea but not quite to a PoC level, Partners’ experience and networking value across the Substrate community can provide practical ways to develop your ideas.
 
 ###### How can I be introduced to a Delivery Partner?
 
 A member of Parity’s ecosystem development team will connect Delivery Partners directly with interested parties.
+
+###### How do I join the Delivery Partners Program?
+
+Reach out by using [our contact form.](/ecosystem/square-one#connect)

@@ -25,7 +25,7 @@ export default function SquareOne({ data }) {
 
   return (
     <Layout mode="full">
-      <SEO title="Substrate Square One" />
+      <SEO title="Square One" />
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-11 gap-8 lg:gap-16">
           <div className="hidden lg:block lg:col-span-6 lg:col-start-6">
