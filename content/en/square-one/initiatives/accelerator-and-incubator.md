@@ -38,4 +38,4 @@ We encourage teams to do their own research into the variety of viable incubator
 - [SparkLabs](https://sparklabs.co.kr/lb/index.php)
 - [Challenge X](https://www.facebook.com/events/2647379755550977/)
 
-Reach out by using [our contact form.](/ecosystem/square-one#connect)
+To learn more, reach out by using [our contact form.](/ecosystem/square-one#connect)
