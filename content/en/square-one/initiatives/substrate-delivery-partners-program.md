@@ -21,6 +21,10 @@ Think of Delivery Partners as a resource to help develop and expand your Substra
 
 A member of Parity’s ecosystem development team will connect Delivery Partners directly with interested parties.
 
+###### What if I want to join as a Delivery Partner?
+
+If you want to join in as a Delivery partner, reach out to us via [this contact form.](/ecosystem/square-one#connect)
+
 ###### How do I join the Delivery Partners Program?
 
 Reach out by using [our contact form.](/ecosystem/square-one#connect)
