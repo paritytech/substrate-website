@@ -145,6 +145,10 @@ const resources = [
     url: 'https://github.com/substrate-developer-hub/awesome-substrate/blob/master/README.md',
     id: 'ecosystem.resources.awesome-substrate',
   },
+  {
+    url: '/rococo-network',
+    id: 'ecosystem.resources.rococo-network',
+  },
 ];
 
 const connect = [
