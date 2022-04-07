@@ -2,8 +2,8 @@ import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-import seminars from '../../../../data/seminars.json';
 import Icon from '../../../components/default/Icon';
+import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -54,23 +54,22 @@ export default function Seminar() {
               <span className="underline-animate underline-animate-thin">
                 <Link to="https://www.crowdcast.io/e/substrate-seminar-2/">on Crowdcast</Link>.
               </span>
-              , where attendees are encouraged to ask questions and interact directly with the presenters. 
-              They typically take the format of learning from other developers using Substrate, who 
-              present their insights on what they&apos;re working on.
+              , where attendees are encouraged to ask questions and interact directly with the presenters. They
+              typically take the format of learning from other developers using Substrate, who present their insights on
+              what they&apos;re working on.
             </p>
             <p className="leading-loose">
-              The end of a seminar is always open for Q & A, so bring your questions. Got code
-              that doesn’t compile? Bring that along too! Participants will be invited on-screen to share their work
-              and their questions if they want to. You may also want to provide feedback to an upcoming seminar plan by looking through
-              the proposed topics in the{' '}
+              The end of a seminar is always open for Q & A, so bring your questions. Got code that doesn’t compile?
+              Bring that along too! Participants will be invited on-screen to share their work and their questions if
+              they want to. You may also want to provide feedback to an upcoming seminar plan by looking through the
+              proposed topics in the{' '}
               <span className="underline-animate underline-animate-thin">
                 <Link to="https://github.com/substrate-developer-hub/substrate-seminar/">dedicated GitHub repository</Link>.
               </span>
             </p>
             <p className="leading-loose">
-              Seminars are generally developer-oriented, but less technical participants and questions are also
-              welcome. If your questions turn out to be off-topic, we&apos;ll make sure to point you to the resources
-              you need.
+              Seminars are generally developer-oriented, but less technical participants and questions are also welcome.
+              If your questions turn out to be off-topic, we&apos;ll make sure to point you to the resources you need.
             </p>
           </div>
           <div className="order-first md:order-last">
@@ -78,9 +77,11 @@ export default function Seminar() {
             <p className="leading-loose">
               Check out our{' '}
               <span className="underline-animate underline-animate-thin">
-                <Link to="https://www.youtube.com/playlist?list=PLp0_ueXY_enXRfoaW7sTudeQH10yDvFOS">Youtube playlist</Link>
-              </span>
-              {' '}to revisit past seminars.
+                <Link to="https://www.youtube.com/playlist?list=PLp0_ueXY_enXRfoaW7sTudeQH10yDvFOS">
+                  Youtube playlist
+                </Link>
+              </span>{' '}
+              to revisit past seminars.
             </p>
           </div>
         </div>
