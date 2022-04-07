@@ -133,6 +133,10 @@ const resources = [
     url: '/awesome-substrate',
     id: 'ecosystem.resources.awesome-substrate',
   },
+  {
+    url: '/rococo-network',
+    id: 'ecosystem.resources.rococo-network',
+  },
 ];
 
 const connect = [
