@@ -29,7 +29,7 @@ export default function Seminar() {
               building on Substrate. Run by DevHub, we meet <span className="font-bold">every other Tuesday</span> at{' '}
               <span className="font-bold">14:00UTC.</span>
             </p>
-            <PrimaryButtonLink link="https://github.com/sacha-l/substrate-seminar/issues/new">Propose a topic</PrimaryButtonLink>
+            <PrimaryButtonLink link="https://github.com/substrate-developer-hub/substrate-seminar/issues/new">Propose a topic</PrimaryButtonLink>
             <p className="mb-4 mt-8 font-bold">Add the schedule to your calendar</p>
             <SecondaryButton link="https://calendar.google.com/calendar/u/0?cid=Y192cXBsamk3cXY2ajBvcDVrbmdwMGR0cjUzc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
               <span className="inline font-bold mr-3">Add schedule</span>
@@ -64,7 +64,7 @@ export default function Seminar() {
               and their questions if they want to. You may also want to provide feedback to an upcoming seminar plan by looking through
               the proposed topics in the{' '}
               <span className="underline-animate underline-animate-thin">
-                <Link to="https://github.com/sacha-l/substrate-seminar">dedicated GitHub repository</Link>.
+                <Link to="https://github.com/substrate-developer-hub/substrate-seminar/">dedicated GitHub repository</Link>.
               </span>
             </p>
             <p className="leading-loose">
