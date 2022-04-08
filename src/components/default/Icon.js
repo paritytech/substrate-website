@@ -39,6 +39,7 @@ import paperplane from '../../images/svg/paperplane.svg';
 import pen from '../../images/svg/pen.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import polkadotLogo from '../../images/svg/polkadot-logo.svg';
+import becomeParathread from '../../images/svg/rococo/become-parathread.svg';
 import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
 import smile from '../../images/svg/smile.svg';
@@ -199,6 +200,8 @@ const iconsMap = {
   composable: composable,
   'future-proof-base': futureProofBase,
   upgradable: upgradable,
+  /* */
+  'become-parathread': becomeParathread,
 };
 
 export default function Icon({ name, className, ...others }) {
