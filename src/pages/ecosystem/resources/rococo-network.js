@@ -28,9 +28,30 @@ export default function Rococo() {
       </Section>
       <Section>
         <h2 className="text-2xl font-bold mb-6">Parachain lifecycle</h2>
-        <div className="flex">
+        <div className="flex flex-wrap gap-x-8 gap-y-2">
           <div>
-            <Icon name="become-parathread" />
+            <Icon className="mb-4" name="become-parathread" />
+            <p>1. Become parathread</p>
+          </div>
+          <div>
+            <Icon className="mb-4" name="onboarding" />
+            <p>2. Onboarding</p>
+          </div>
+          <div>
+            <Icon className="mb-4" name="upgrading" />
+            <p>3. Upgrading</p>
+          </div>
+          <div>
+            <Icon className="mb-4" name="parachain" />
+            <p>4. Parachain</p>
+          </div>
+          <div>
+            <Icon className="mb-4" name="downgrading" />
+            <p>5. Downgrading</p>
+          </div>
+          <div>
+            <Icon className="mb-4" name="parathread" />
+            <p>6. Parathread</p>
           </div>
         </div>
       </Section>

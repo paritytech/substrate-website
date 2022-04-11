@@ -40,6 +40,11 @@ import pen from '../../images/svg/pen.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import polkadotLogo from '../../images/svg/polkadot-logo.svg';
 import becomeParathread from '../../images/svg/rococo/become-parathread.svg';
+import downgrading from '../../images/svg/rococo/downgrading.svg';
+import onboarding from '../../images/svg/rococo/onboarding.svg';
+import parachain from '../../images/svg/rococo/parachain.svg';
+import parathread from '../../images/svg/rococo/parathread.svg';
+import upgrading from '../../images/svg/rococo/upgrading.svg';
 import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
 import smile from '../../images/svg/smile.svg';
@@ -200,8 +205,13 @@ const iconsMap = {
   composable: composable,
   'future-proof-base': futureProofBase,
   upgradable: upgradable,
-  /* */
+  /* rococo assets */
   'become-parathread': becomeParathread,
+  onboarding: onboarding,
+  upgrading: upgrading,
+  parachain: parachain,
+  downgrading: downgrading,
+  parathread: parathread,
 };
 
 export default function Icon({ name, className, ...others }) {
