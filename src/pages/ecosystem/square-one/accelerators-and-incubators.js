@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import Section from '../../../components/layout/Section';
@@ -23,12 +24,21 @@ export default function AcceleratorsAndIncubators({ data }) {
               <BlueTag key={index} title={req} />
             ))}
           </div>
-          <div className="mb-4 text-4xl sm:text-5xl font-bold">{pageInfo.frontmatter.title}</div>
-          <div className="font-semibold text-xl sm:text-2xl">{pageInfo.frontmatter.org}</div>
+          <h1 className="mb-4 text-4xl sm:text-5xl font-bold">{pageInfo.frontmatter.title}</h1>
+          <h3 className="font-semibold text-xl sm:text-2xl">{pageInfo.frontmatter.org}</h3>
         </div>
         <div className="markdown underline-animate underline-animate-thin max-w-4xl pb-20">
           <div dangerouslySetInnerHTML={{ __html: pageInfo.html }}></div>
         </div>
+      </Section>
+      <Section>
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-12">Accelerators</h2>
+        <div className="w-52">
+          <StaticImage src="../../../images/logos/square-one/polychain.png" alt="Polychain Network" className="" />
+        </div>
+      </Section>
+      <Section>
+        <h2 className="text-3xl sm:text-4xl font-extrabold">Incubators</h2>
       </Section>
     </Layout>
   );
