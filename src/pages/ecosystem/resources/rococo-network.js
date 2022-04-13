@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
-import React from 'react';
+import Prism from 'prismjs';
+import React, { useEffect } from 'react';
 
 import Icon from '../../../components/default/Icon';
 import { Link } from '../../../components/default/Link';
@@ -8,6 +9,10 @@ import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
 
 export default function Rococo() {
+  useEffect(() => {
+    Prism.highlightAll();
+  });
+
   return (
     <Layout layout="sidebar">
       <SEO title="Rococo Network" />
@@ -65,6 +70,16 @@ export default function Rococo() {
             <p>6. Parathread</p>
           </div>
         </div>
+      </Section>
+      <Section>
+        <h2 className="text-2xl font-bold mb-6">Obtaining ROC</h2>
+        <p className="underline-animate underline-animate-thin">
+          ROC are available in the <a href="https://app.element.io/#/room/#rococo-faucet:matrix.org">Rococo Faucet</a>{' '}
+          channel on Matrix. To receive ROC tokens, use the command:
+        </p>
+        <pre>
+          <code className="language-powershell">!drip YOUR_ROCOCO_ADDRESS</code>
+        </pre>
       </Section>
     </Layout>
   );

@@ -48,6 +48,7 @@
     "gatsby-transformer-sharp": "^3.2.0",
     "i18next": "^20.2.4",
     "netlify-cms-app": "^2.15.20",
+    "prismjs": "^1.27.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-device-detect": "^2.0.0",
