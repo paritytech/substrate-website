@@ -23,7 +23,7 @@ export default function Rococo() {
             Rococo is a testnet built for parachains. Rococo utilizes{' '}
             <Link to="https://github.com/paritytech/cumulus">Cumulus</Link> and XCMP (Cross-Chain Message Passing) to
             send transfers and messages between parachains and the Relay Chain. Every message is sent to the Relay
-            Chain,then from the Relay Chain to the desired parachain.{' '}
+            Chain, then from the Relay Chain to the desired parachain.{' '}
           </p>
           <p>
             Rococo currently runs{' '}
