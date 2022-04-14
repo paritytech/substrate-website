@@ -27,12 +27,12 @@ export default function AcceleratorsAndIncubators({ data }) {
           <h1 className="mb-4 text-4xl sm:text-5xl font-bold">{pageInfo.frontmatter.title}</h1>
           <h3 className="font-semibold text-xl sm:text-2xl">{pageInfo.frontmatter.org}</h3>
         </div>
-        <div className="markdown underline-animate underline-animate-thin max-w-4xl pb-20">
+        <div className="markdown underline-animate underline-animate-thin max-w-4xl pb-10">
           <div dangerouslySetInnerHTML={{ __html: pageInfo.html }}></div>
         </div>
       </Section>
       <Section>
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-12">Incubators</h2>
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-14">Incubators</h2>
         <div className="flex flex-wrap gap-8 items-center">
           {pageInfo.frontmatter.incubators.map((img, idx) => (
             <GatsbyImage key={idx} image={getImage(img)} alt={img.name} className="rounded-lg" />
@@ -40,7 +40,7 @@ export default function AcceleratorsAndIncubators({ data }) {
         </div>
       </Section>
       <Section>
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-12">Accelerators</h2>
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-14">Accelerators</h2>
         <div className="flex flex-wrap gap-8 items-center">
           {pageInfo.frontmatter.accelerators.map((img, idx) => (
             <GatsbyImage key={idx} image={getImage(img)} alt={img.name} className="rounded-lg" />
