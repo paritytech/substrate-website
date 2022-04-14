@@ -110,7 +110,7 @@ module.exports = {
             resolve: `gatsby-remark-relative-images`,
             options: {
               staticFolderName: `${__dirname}`, // `/media/` already in img.src
-              include: ['featured_image', 'markdownremark'],
+              include: ['incubators', 'accelerators', 'featured_image', 'markdownremark'],
             },
           },
           // gatsby-remark-relative-images must go before gatsby-remark-images

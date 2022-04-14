@@ -12,6 +12,22 @@ devStage:
   - Early Stage
   - Prototype Stage
   - MVP
+incubators:
+  - /media/images/square-one/polychain.png
+  - /media/images/square-one/opendefi.png
+  - /media/images/square-one/lumos.png
+accelerators:
+  - /media/images/square-one/berkeley.png
+  - /media/images/square-one/upright.png
+  - /media/images/square-one/alchemist.png
+  - /media/images/square-one/techstars.png
+  - /media/images/square-one/outlier-ventures.png
+  - /media/images/square-one/sparklabs.jpg
+  - /media/images/square-one/web3-bootcamp.svg
+  - /media/images/square-one/openwebcollective.jpg
+  - /media/images/square-one/defi-alliance.png
+  - /media/images/square-one/xchallenge.png
+  - /media/images/square-one/longhash.png
 ---
 
 Developing relationships with incubators and accelerators is a common way for Substrate teams to develop or expand their projects at different stages.

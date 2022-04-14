@@ -16,7 +16,7 @@ export default function NavBreadcrumb({ linkMiddleParent = false }) {
           "/<ecosystem>/resources/awesome-substrate" and "/<ecosystem>/resources/" */
           disableLinks={[
             `/${pathArray[0]}/${pathArray[1]}/${pathArray[2]}`,
-            !linkMiddleParent && `/${pathArray[0]}/${pathArray[1]}`,
+            !linkMiddleParent ? `/${pathArray[0]}/${pathArray[1]}` : '',
           ]}
           className="breadcrumb__list breadcrumb__list__item breadcrumb__separator breadcrumb__link breadcrumb__link__active"
         />

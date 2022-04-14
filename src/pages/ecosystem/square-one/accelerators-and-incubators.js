@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import Section from '../../../components/layout/Section';
@@ -32,13 +32,20 @@ export default function AcceleratorsAndIncubators({ data }) {
         </div>
       </Section>
       <Section>
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-12">Accelerators</h2>
-        <div className="w-52">
-          <StaticImage src="../../../images/logos/square-one/polychain.png" alt="Polychain Network" className="" />
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-12">Incubators</h2>
+        <div className="flex flex-wrap gap-4 items-center">
+          {pageInfo.frontmatter.incubators.map((img, idx) => (
+            <GatsbyImage key={idx} image={getImage(img)} alt={img.name} className="rounded-lg" />
+          ))}
         </div>
       </Section>
       <Section>
-        <h2 className="text-3xl sm:text-4xl font-extrabold">Incubators</h2>
+        <h2 className="text-3xl sm:text-4xl font-extrabold">Accelerators</h2>
+        <div className="flex flex-wrap gap-4 items-center">
+          {pageInfo.frontmatter.accelerators.map((img, idx) => (
+            <GatsbyImage key={idx} image={getImage(img)} alt={img.name} className="rounded-lg" />
+          ))}
+        </div>
       </Section>
     </Layout>
   );
@@ -63,6 +70,18 @@ export const query = graphql`
         requirements
         devStage
         description
+        incubators {
+          childImageSharp {
+            gatsbyImageData(height: 100)
+          }
+          name
+        }
+        accelerators {
+          childImageSharp {
+            gatsbyImageData(height: 100)
+          }
+          name
+        }
       }
       html
     }
