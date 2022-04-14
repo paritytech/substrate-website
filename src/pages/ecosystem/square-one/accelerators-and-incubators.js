@@ -73,13 +73,13 @@ export const query = graphql`
         incubators {
           name
           childImageSharp {
-            gatsbyImageData(height: 70)
+            gatsbyImageData(height: 100)
           }
         }
         accelerators {
           name
           childImageSharp {
-            gatsbyImageData(height: 70)
+            gatsbyImageData(height: 100)
           }
         }
       }

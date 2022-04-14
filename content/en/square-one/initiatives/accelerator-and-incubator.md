@@ -21,11 +21,11 @@ accelerators:
   - /media/images/square-one/upright.png
   - /media/images/square-one/alchemist.png
   - /media/images/square-one/techstars.png
-  - /media/images/square-one/outlier-ventures.png
-  - /media/images/square-one/sparklabs.jpg
-  - /media/images/square-one/web3-bootcamp.svg
-  - /media/images/square-one/openwebcollective.jpg
-  - /media/images/square-one/defi-alliance.png
+  - /media/images/square-one/outlier.png
+  - /media/images/square-one/sparklabs.png
+  - /media/images/square-one/bootcamp.png
+  - /media/images/square-one/owc.png
+  - /media/images/square-one/defialliance.png
   - /media/images/square-one/xchallenge.png
   - /media/images/square-one/longhash.png
 ---
