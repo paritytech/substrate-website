@@ -1,6 +1,6 @@
 ---
 title: "Polkadot Decoded June 2022"
-active: true
+active: false
 ---
 
 **The vote is on!**
