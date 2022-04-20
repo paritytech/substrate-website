@@ -17,6 +17,22 @@ const illustrations = [
     name: 'onboarding',
     description: '2. Onboarding',
   },
+  {
+    name: 'upgrading',
+    description: '3. Upgrading',
+  },
+  {
+    name: 'parachain',
+    description: '4. Parachain',
+  },
+  {
+    name: 'downgrading',
+    description: '5. Downgrading',
+  },
+  {
+    name: 'parathread',
+    description: '6. Parathread',
+  },
 ];
 
 export default function Rococo() {
@@ -58,7 +74,7 @@ export default function Rococo() {
         <div className="flex flex-wrap gap-x-8 gap-y-2">
           {illustrations.map(({ name, description }, idx) => (
             <div key={idx}>
-              <Icon className="mb-4 fill-current dark:text-white border dark:bg-[#1C1C1C]" name={name} />
+              <Icon className="mb-4 fill-current dark:text-white border " name={name} />
               <p>{description}</p>
             </div>
           ))}
