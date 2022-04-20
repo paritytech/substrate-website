@@ -161,7 +161,7 @@
     },
     {
       "name": "Bifrost",
-      "link": "https://bifrost.finance/en",
+      "link": "https://bifrost.finance/",
       "category":[ "DeFi","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
