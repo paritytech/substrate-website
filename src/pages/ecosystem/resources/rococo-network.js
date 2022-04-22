@@ -80,7 +80,7 @@ export default function Rococo({ data }) {
 
       <Section>
         <div
-          className="rococo underline-animate underline-animate-thin"
+          className="rococo pb-20 underline-animate underline-animate-thin"
           dangerouslySetInnerHTML={{ __html: data.markdown.html }}
         ></div>
       </Section>
