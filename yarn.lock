@@ -7670,6 +7670,20 @@ gatsby-remark-images@^5.7.0:
     unist-util-select "^3.0.4"
     unist-util-visit-parents "^3.1.1"
 
+gatsby-remark-prismjs-copy-button@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs-copy-button/-/gatsby-remark-prismjs-copy-button-0.3.1.tgz#5d772d64b4fce0bee417c7ea7fe39b5a34403d62"
+  integrity sha512-/A3BuZSdmI62+uSitAbgqdoS3QtYX4kiz9DZZgc1qMqpPss07YTmU8dFuVNxnNDP13h9jAMfr3BxP7J60ATZSg==
+
+gatsby-remark-prismjs@^6.12.1:
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-6.12.1.tgz#bea464b1b35f15989d44dcad0643319169da4eac"
+  integrity sha512-1OUub2uIR4oYKi1FJIlDh/egjePdH7rwA1H8Ja6/icx8ctLM3+2ZYEJUHdGmW59QzyzgJpZlEQtJ8R+4lcuv0g==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    parse-numeric-range "^1.2.0"
+    unist-util-visit "^2.0.3"
+
 gatsby-remark-relative-images@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images/-/gatsby-remark-relative-images-2.0.2.tgz#17a26ba15762670c8125a33ecd8316a0124cb06f"
@@ -12249,6 +12263,11 @@ parse-latin@^4.0.0:
     nlcst-to-string "^2.0.0"
     unist-util-modify-children "^2.0.0"
     unist-util-visit-children "^1.0.0"
+
+parse-numeric-range@^1.2.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/parse-numeric-range/-/parse-numeric-range-1.3.0.tgz#7c63b61190d61e4d53a1197f0c83c47bb670ffa3"
+  integrity sha512-twN+njEipszzlMJd4ONUYgSfZPDxgHhT9Ahed5uTigpQn90FggW4SA/AIPq/6a149fTbE9qBEcSwE3FAEp6wQQ==
 
 parse-path@^4.0.0:
   version "4.0.3"
