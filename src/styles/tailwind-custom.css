@@ -210,3 +210,25 @@ div[aria-label='animation'] {
 .banner a {
   @apply text-substrateDarkThemeBlue dark:text-substrateBlue;
 }
+
+/* Rococo markdown */
+
+.rococo h2 {
+  @apply text-2xl mb-6 mt-12;
+}
+
+.rococo strong {
+  @apply font-bold;
+}
+
+.rococo div pre {
+  @apply mb-10;
+}
+
+.rococo h3 {
+  @apply text-base mb-4;
+}
+
+.rococo ul {
+  @apply ml-4;
+}

@@ -122,6 +122,15 @@ module.exports = {
           {
             resolve: `gatsby-remark-external-links`,
           },
+          // add copy button to code blocks
+          `gatsby-remark-prismjs-copy-button`,
+          // style code blocks
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              showLineNumbers: false,
+            },
+          },
           // add IDs to headings generated from markdown
           {
             resolve: `gatsby-remark-autolink-headers`,

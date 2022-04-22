@@ -1,6 +1,5 @@
 import { graphql } from 'gatsby';
-import Prism from 'prismjs';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import Icon from '../../../components/default/Icon';
 import { Link } from '../../../components/default/Link';
@@ -35,14 +34,11 @@ const illustrations = [
   },
 ];
 
-export default function Rococo() {
-  useEffect(() => {
-    Prism.highlightAll();
-  });
-
+export default function Rococo({ data }) {
   return (
     <Layout layout="sidebar">
       <SEO title="Rococo Network" />
+
       <Section className="grid md:grid-cols-3 underline-animate underline-animate-thin">
         <h1 className="order-1 md:order-none md:col-start-1 md:col-span-2 text-4xl font-bold font-body mb-12">
           Rococo Network
@@ -69,6 +65,7 @@ export default function Rococo() {
           <Icon name="rococo-logo" />
         </div>
       </Section>
+
       <Section>
         <h2 className="text-2xl font-bold mb-6">Parachain lifecycle</h2>
         <div className="flex flex-wrap gap-x-8 gap-y-2">
@@ -80,15 +77,12 @@ export default function Rococo() {
           ))}
         </div>
       </Section>
+
       <Section>
-        <h2 className="text-2xl font-bold mb-6">Obtaining ROC</h2>
-        <p className="underline-animate underline-animate-thin">
-          ROC are available in the <a href="https://app.element.io/#/room/#rococo-faucet:matrix.org">Rococo Faucet</a>{' '}
-          channel on Matrix. To receive ROC tokens, use the command:
-        </p>
-        <pre>
-          <code className="language-powershell">!drip YOUR_ROCOCO_ADDRESS</code>
-        </pre>
+        <div
+          className="rococo underline-animate underline-animate-thin"
+          dangerouslySetInnerHTML={{ __html: data.markdown.html }}
+        ></div>
       </Section>
     </Layout>
   );
@@ -104,6 +98,12 @@ export const query = graphql`
           language
         }
       }
+    }
+    markdown: markdownRemark(frontmatter: { title: { eq: "Rococo content" } }) {
+      frontmatter {
+        title
+      }
+      html
     }
   }
 `;
