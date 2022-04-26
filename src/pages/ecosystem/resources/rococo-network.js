@@ -1,11 +1,14 @@
 import { graphql } from 'gatsby';
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Icon from '../../../components/default/Icon';
 import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
+import { ThemeContext } from '../../../contexts/ThemeContext';
+import becomeParathread from '../../../images/jpg/become-parathread.jpg';
+import becomeParathreadDark from '../../../images/jpg/become-parathread-dark.jpg';
 
 const illustrations = [
   {
@@ -35,6 +38,8 @@ const illustrations = [
 ];
 
 export default function Rococo({ data }) {
+  const { colorMode } = useContext(ThemeContext);
+
   return (
     <Layout layout="sidebar">
       <SEO title="Rococo Network" />
@@ -67,6 +72,8 @@ export default function Rococo({ data }) {
       </Section>
 
       <Section>
+        <img src={colorMode === 'light' ? becomeParathread : becomeParathreadDark} alt="Become Parathread" />
+
         <h2 className="text-2xl font-bold mb-6">Parachain lifecycle</h2>
         <div className="flex flex-wrap gap-x-8 gap-y-2">
           {illustrations.map(({ name, description }, idx) => (
