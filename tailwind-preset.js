@@ -177,5 +177,5 @@ module.exports = {
       boxSizing: ['hover', 'focus'],
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio'), require('@tailwindcss/line-clamp')],
 };
