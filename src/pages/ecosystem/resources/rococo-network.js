@@ -35,6 +35,8 @@ const illustrations = [
 ];
 
 export default function Rococo({ data }) {
+  const { obtainingRoc, reserveParaId } = data;
+
   return (
     <Layout layout="sidebar">
       <SEO title="Rococo Network" />
@@ -79,10 +81,12 @@ export default function Rococo({ data }) {
       </Section>
 
       <Section>
-        <div
-          className="rococo pb-20 underline-animate underline-animate-thin"
-          dangerouslySetInnerHTML={{ __html: data.markdown.html }}
-        ></div>
+        <h2 className="text-2xl font-bold mb-6">{obtainingRoc.frontmatter.title}</h2>
+        <div dangerouslySetInnerHTML={{ __html: obtainingRoc.html }} className="mb-8"></div>
+
+        <h2 className="text-2xl font-bold mb-6">Off-chain steps</h2>
+        <h3 className="text-base mb-4">{reserveParaId.frontmatter.title}</h3>
+        <div dangerouslySetInnerHTML={{ __html: reserveParaId.html }}></div>
       </Section>
     </Layout>
   );
@@ -99,7 +103,13 @@ export const query = graphql`
         }
       }
     }
-    markdown: markdownRemark(frontmatter: { title: { eq: "Rococo content" } }) {
+    obtainingRoc: markdownRemark(frontmatter: { title: { eq: "Obtaining ROC" } }) {
+      frontmatter {
+        title
+      }
+      html
+    }
+    reserveParaId: markdownRemark(frontmatter: { title: { eq: "Reserve para ID" } }) {
       frontmatter {
         title
       }
