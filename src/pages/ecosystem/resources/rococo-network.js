@@ -73,7 +73,9 @@ export default function Rococo({ data }) {
         <div className="flex flex-wrap gap-x-8 gap-y-2">
           {illustrations.map(({ name, description }, idx) => (
             <div key={idx}>
-              <Icon className="mb-4 fill-current dark:text-white border " name={name} />
+              <div className="w-[300px] h-[300px]">
+                <Icon className="mb-4 fill-current dark:text-white border border-[#828282] w-full h-full" name={name} />
+              </div>
               <p>{description}</p>
             </div>
           ))}
