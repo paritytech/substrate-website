@@ -35,10 +35,13 @@ import logoAstar from '../../images/svg/logo-astar.svg';
 import logoMoonbeam from '../../images/svg/logo-moonbeam.svg';
 import logoWhite from '../../images/svg/logo-white.svg';
 import mail from '../../images/svg/mail.svg';
+import map from '../../images/svg/map.svg';
+import noResults from '../../images/svg/no-results.svg';
 import paperplane from '../../images/svg/paperplane.svg';
 import pen from '../../images/svg/pen.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import polkadotLogo from '../../images/svg/polkadot-logo.svg';
+import question from '../../images/svg/question.svg';
 import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
 import smile from '../../images/svg/smile.svg';
@@ -56,6 +59,7 @@ import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
 import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
 import substrate from '../../images/svg/substrate.svg';
+import team from '../../images/svg/team.svg';
 import adaptable from '../../images/svg/technology/adaptable.svg';
 import architecture from '../../images/svg/technology/architecture.svg';
 import community from '../../images/svg/technology/community.svg';
@@ -175,6 +179,11 @@ const iconsMap = {
   reddit: reddit,
   github: github,
   discord: discord,
+  /* square one */
+  team: team,
+  question: question,
+  map: map,
+  'no-results': noResults,
   /* highlights */
   'wa-logo': waLogo,
   'forkless-upgrades': forklessUpgrades,
