@@ -1,7 +1,7 @@
 ---
 title: Accelerators & Incubators
-org: Web3 Foundation
-description: We have accelerator and incubator partnership all across the globe
+org: Various Organizations
+description: There are a range of accelerators and incubators supporting the Substrate builder community.
 link: /ecosystem/square-one/accelerators-and-incubators/
 requirements:
   - Education
