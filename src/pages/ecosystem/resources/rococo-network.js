@@ -87,6 +87,7 @@ export default function Rococo({ data }) {
         <div dangerouslySetInnerHTML={{ __html: obtainingRoc.html }} className="mb-8"></div>
 
         <h2 className="text-2xl font-bold mb-6">Off-chain steps</h2>
+
         <h3 className="text-base mb-4">{reserveParaId.frontmatter.title}</h3>
         <div className="mb-8" dangerouslySetInnerHTML={{ __html: reserveParaId.html }}></div>
 
@@ -98,6 +99,37 @@ export default function Rococo({ data }) {
 
         <h3 className="text-base mb-4">{registerWasm.frontmatter.title}</h3>
         <div className="mb-8" dangerouslySetInnerHTML={{ __html: registerWasm.html }}></div>
+
+        <h3 className="text-base mb-4">Add an end point</h3>
+        <p>Placeholder paragraph</p>
+        <h3 className="text-base mb-4">Add your network logo</h3>
+        <p>Placeholder paragraph</p>
+
+        <h2 className="text-2xl font-bold mb-6">Learn more</h2>
+        <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
+        <ul className="underline-animate underline-animate-thin ml-6 mb-8">
+          <li>
+            <Link to="https://docs.substrate.io/tutorials/v3/cumulus/start-relay/">Cumulus Tutorial</Link> — Run and
+            launch your own parathread or parachain.
+          </li>
+          <li>
+            <Link to="https://w3f.github.io/parachain-implementers-guide/">Implementer&apos;s Guide</Link> — The
+            Polkadot Parachain Host Implementer&apos;s Guide.
+          </li>
+          <li>
+            <Link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-rpc.polkadot.io#/explorer">Rococo UI</Link> —
+            Access the Rococo UI at Rococo Polkadot-JS Apps.
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-bold mb-6">Support</h2>
+        <h3 className="text-base mb-4">Access technical support from across the community.</h3>
+        <p className="underline-animate underline-animate-thin">
+          <Link to="https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation">
+            Parachain Technical matrix chat channel
+          </Link>{' '}
+          — Reach out!
+        </p>
       </Section>
     </Layout>
   );
