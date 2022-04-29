@@ -35,7 +35,7 @@ const illustrations = [
 ];
 
 export default function Rococo({ data }) {
-  const { obtainingRoc, reserveParaId } = data;
+  const { obtainingRoc, reserveParaId, buildParachain, runSyncCollator, registerWasm } = data;
 
   return (
     <Layout layout="sidebar">
@@ -88,7 +88,16 @@ export default function Rococo({ data }) {
 
         <h2 className="text-2xl font-bold mb-6">Off-chain steps</h2>
         <h3 className="text-base mb-4">{reserveParaId.frontmatter.title}</h3>
-        <div dangerouslySetInnerHTML={{ __html: reserveParaId.html }}></div>
+        <div className="mb-8" dangerouslySetInnerHTML={{ __html: reserveParaId.html }}></div>
+
+        <h3 className="text-base mb-4">{buildParachain.frontmatter.title}</h3>
+        <div className="mb-8" dangerouslySetInnerHTML={{ __html: buildParachain.html }}></div>
+
+        <h3 className="text-base mb-4">{runSyncCollator.frontmatter.title}</h3>
+        <div className="mb-8" dangerouslySetInnerHTML={{ __html: runSyncCollator.html }}></div>
+
+        <h3 className="text-base mb-4">{registerWasm.frontmatter.title}</h3>
+        <div className="mb-8" dangerouslySetInnerHTML={{ __html: registerWasm.html }}></div>
       </Section>
     </Layout>
   );
@@ -112,6 +121,24 @@ export const query = graphql`
       html
     }
     reserveParaId: markdownRemark(frontmatter: { title: { eq: "Reserve para ID" } }) {
+      frontmatter {
+        title
+      }
+      html
+    }
+    buildParachain: markdownRemark(frontmatter: { title: { eq: "Build parachain using para ID" } }) {
+      frontmatter {
+        title
+      }
+      html
+    }
+    runSyncCollator: markdownRemark(frontmatter: { title: { eq: "Run and sync collator" } }) {
+      frontmatter {
+        title
+      }
+      html
+    }
+    registerWasm: markdownRemark(frontmatter: { title: { eq: "Register Wasm and chain spec" } }) {
       frontmatter {
         title
       }
