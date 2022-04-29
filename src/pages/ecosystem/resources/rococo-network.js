@@ -84,7 +84,7 @@ export default function Rococo({ data }) {
 
       <Section>
         <h2 className="text-2xl font-bold mb-6">{obtainingRoc.frontmatter.title}</h2>
-        <div dangerouslySetInnerHTML={{ __html: obtainingRoc.html }} className="mb-8"></div>
+        <div dangerouslySetInnerHTML={{ __html: obtainingRoc.html }} className="mb-12"></div>
 
         <h2 className="text-2xl font-bold mb-6">Off-chain steps</h2>
 
@@ -102,6 +102,7 @@ export default function Rococo({ data }) {
 
         <h3 className="text-base mb-4">Add an end point</h3>
         <p className="mb-6">Placeholder paragraph</p>
+
         <h3 className="text-base mb-4">Add your network logo</h3>
         <p className="mb-12">Placeholder paragraph</p>
 
