@@ -101,13 +101,13 @@ export default function Rococo({ data }) {
         <div className="mb-8" dangerouslySetInnerHTML={{ __html: registerWasm.html }}></div>
 
         <h3 className="text-base mb-4">Add an end point</h3>
-        <p>Placeholder paragraph</p>
+        <p className="mb-6">Placeholder paragraph</p>
         <h3 className="text-base mb-4">Add your network logo</h3>
-        <p>Placeholder paragraph</p>
+        <p className="mb-12">Placeholder paragraph</p>
 
         <h2 className="text-2xl font-bold mb-6">Learn more</h2>
         <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
-        <ul className="underline-animate underline-animate-thin ml-6 mb-8">
+        <ul className="underline-animate underline-animate-thin ml-6 mb-12">
           <li>
             <Link to="https://docs.substrate.io/tutorials/v3/cumulus/start-relay/">Cumulus Tutorial</Link> — Run and
             launch your own parathread or parachain.
@@ -124,7 +124,7 @@ export default function Rococo({ data }) {
 
         <h2 className="text-2xl font-bold mb-6">Support</h2>
         <h3 className="text-base mb-4">Access technical support from across the community.</h3>
-        <p className="underline-animate underline-animate-thin">
+        <p className="underline-animate underline-animate-thin mb-6">
           <Link to="https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation">
             Parachain Technical matrix chat channel
           </Link>{' '}
