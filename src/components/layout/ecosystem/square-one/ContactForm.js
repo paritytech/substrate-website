@@ -31,13 +31,7 @@ export default function ContactForm({ connect }) {
 
   return (
     <>
-      <div
-        id="hubspotForm"
-        className={cx('grid items-center transition-height duration-500', {
-          'h-[940px] md:h-[924px]': !formSubmitted,
-          'h-[360px]': formSubmitted,
-        })}
-      >
+      <div id="hubspotForm" className={cx('grid items-center')}>
         {!formSubmitted ? (
           <HubspotForm
             portalId="7592558"
