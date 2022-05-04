@@ -3,6 +3,7 @@ import React from 'react';
 
 import seminars from '../../../../data/seminars.json';
 import Icon from '../../../components/default/Icon';
+import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -17,21 +18,26 @@ export default function PastSeminars() {
           Past Seminars
         </h1>
       </Section>
+
       <Section>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 auto-rows-fr">
           {seminars.map(({ id, title, date }, idx) => (
-            <div key={idx} className="shadow-xl p-8 max-w-md rounded-md bg-white dark:bg-substrateBlackish">
-              <h3 className="text-xl font-bold mb-4">
-                {title.slice(0, 18) === 'Substrate Seminar:' ? title.slice(18) : title}
-              </h3>
-              <div className="flex mb-4">
-                <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />
-                <p className="mb-0">{date}</p>
+            <Link to={`https://www.youtube.com/watch?v=${id}`} key={idx}>
+              <div className="h-full shadow-xl p-8 max-w-md rounded-md bg-white dark:bg-substrateBlackish flex flex-col justify-between hover:scale-105 transition-transform">
+                <h3 className="text-xl font-bold mb-4">
+                  {title.slice(0, 18) === 'Substrate Seminar:' ? title.slice(18) : title}
+                </h3>
+                <div>
+                  <div className="flex mb-4">
+                    <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />
+                    <p className="mb-0">{date}</p>
+                  </div>
+                  <LineArrowButton link={`https://www.youtube.com/watch?v=${id}`} primary>
+                    Watch
+                  </LineArrowButton>
+                </div>
               </div>
-              <LineArrowButton link={`https://www.youtube.com/watch?v=${id}`} primary>
-                Watch
-              </LineArrowButton>
-            </div>
+            </Link>
           ))}
         </div>
       </Section>
