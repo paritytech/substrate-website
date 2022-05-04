@@ -28,7 +28,7 @@ export default function Seminar() {
               building on Substrate. Run by DevHub, we meet <span className="font-bold">every other Tuesday</span> at{' '}
               <span className="font-bold">14:00UTC.</span>
             </p>
-            <div className="max-w-xs sm:mr-20">
+            <div className="max-w-[220px]">
               <SecondaryButton
                 className="mb-3 w-full flex justify-center"
                 link="https://calendar.google.com/calendar/u/0?cid=Y192cXBsamk3cXY2ajBvcDVrbmdwMGR0cjUzc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
