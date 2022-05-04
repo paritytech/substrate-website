@@ -23,20 +23,26 @@ export default function Seminar() {
               <br /> open to everyone.
             </h5>
             <p className="max-w-sm leading-loose">
-              Join a collaborative learning space, where we hear from developers and projects building on Substrate. Run
-              by DevHub, we meet <span className="font-bold">every other Tuesday</span> at{' '}
+              Substrate Seminar is a biweekly collaborative learning space, where we hear from developers and projects
+              building on Substrate. Run by DevHub, we meet <span className="font-bold">every other Tuesday</span> at{' '}
               <span className="font-bold">14:00UTC.</span>
             </p>
-            <div className="flex flex-wrap gap-2">
-              <div>
-                <SecondaryButton link="https://calendar.google.com/calendar/u/0?cid=Y192cXBsamk3cXY2ajBvcDVrbmdwMGR0cjUzc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-                  <span className="inline font-bold mr-3">View Calendar</span>
-                  <span className="text-white dark:text-black fill-current">
-                    <Icon name="calendar" className="inline mb-2 mt-1" />
-                  </span>
-                </SecondaryButton>
-              </div>
-              <PrimaryButtonLink link="https://www.crowdcast.io/e/substrate-seminar-2">Join Call</PrimaryButtonLink>
+            <div className="max-w-xs sm:mr-20">
+              <SecondaryButton
+                className="mb-2 w-full flex justify-center"
+                link="https://calendar.google.com/calendar/u/0?cid=Y192cXBsamk3cXY2ajBvcDVrbmdwMGR0cjUzc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+              >
+                <span className="inline font-bold mr-3">Add schedule</span>
+                <span className="text-white dark:text-black fill-current">
+                  <Icon name="calendar" className="inline mb-1" />
+                </span>
+              </SecondaryButton>
+              <PrimaryButtonLink
+                fullWidth
+                link="https://github.com/substrate-developer-hub/substrate-seminar/issues/new"
+              >
+                Propose a topic
+              </PrimaryButtonLink>
             </div>
           </div>
           <StaticImage

@@ -4,7 +4,7 @@ import React from 'react';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
-export default function PrimaryButtonLink({ children, link, onClick, fullWidth = false, hero = false }) {
+export default function PrimaryButtonLink({ children, link, onClick, fullWidth = false }) {
   return (
     <Link to={link}>
       <div
@@ -13,19 +13,13 @@ export default function PrimaryButtonLink({ children, link, onClick, fullWidth =
           'w-full justify-center': fullWidth,
         })}
       >
-        <p
-          className={cx('font-bold text-white mb-0 transition-all', {
-            'mx-8 group-hover:ml-5 group-hover:mr-11 py-4 text-xl': hero,
-            'mx-6 group-hover:ml-4 group-hover:mr-8 py-3': !hero,
-          })}
-        >
+        <p className={cx('font-bold text-white mb-0 transition-all mx-6 group-hover:ml-4 group-hover:mr-8 py-3')}>
           {children}
         </p>
         <div
-          className={cx('bg-substrateGreen-dark absolute flex h-full transition-transform fill-current text-white', {
-            'px-2 -right-7 group-hover:-translate-x-7': hero,
-            'px-1 -right-5 group-hover:-translate-x-5': !hero,
-          })}
+          className={cx(
+            'bg-substrateGreen-dark absolute flex h-full transition-transform fill-current text-white px-1 -right-5 group-hover:-translate-x-5'
+          )}
         >
           <Icon name="arrow-more" className="self-center" />
         </div>
