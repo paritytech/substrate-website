@@ -77,7 +77,7 @@ To extract the strings that needs to be translated, it is possible to run `yarn 
 
 ### netlify-cms (currently not in use)
 
-`netlify-cms-app` & `gatsby-plugin-netlify-cms` are used to setup [netlify-cms](https://www.netlifycms.org) for this project.
+`netlify-cms-app` & `gatsby-plugin-netlify-cms` are used to setup `[netlify-cms](https://www.netlifycms.org)` for this project.
 
 The gatsby gatsby-config pluggin, points to the file `src/cms/index.js`, as entry file of the configuration.
 
