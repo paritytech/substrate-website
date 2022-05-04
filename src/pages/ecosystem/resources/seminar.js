@@ -40,6 +40,7 @@ export default function Seminar() {
               </SecondaryButton>
               <PrimaryButtonLink
                 fullWidth
+                slim
                 link="https://github.com/substrate-developer-hub/substrate-seminar/issues/new"
               >
                 Propose a topic

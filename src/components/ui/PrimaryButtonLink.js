@@ -4,7 +4,7 @@ import React from 'react';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
-export default function PrimaryButtonLink({ children, link, onClick, fullWidth = false }) {
+export default function PrimaryButtonLink({ children, link, onClick, fullWidth = false, slim = false }) {
   return (
     <Link to={link}>
       <div
@@ -13,7 +13,12 @@ export default function PrimaryButtonLink({ children, link, onClick, fullWidth =
           'w-full justify-center': fullWidth,
         })}
       >
-        <p className={cx('font-bold text-white mb-0 transition-all mx-6 group-hover:ml-4 group-hover:mr-8 py-3')}>
+        <p
+          className={cx('font-bold text-white mb-0 transition-all mx-6 group-hover:ml-4 group-hover:mr-8', {
+            'py-3': !slim,
+            'py-2': slim,
+          })}
+        >
           {children}
         </p>
         <div
