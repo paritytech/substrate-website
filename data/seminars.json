@@ -1,26 +1,66 @@
 [
+  { "id": "K5i_BpuZAnE", "title": "Substrate Seminar: Substrate's developer resources", "date": "26 Apr 2022" },
   {
-    "title": "Kilt: Building DID management tools with substrate",
-    "date": "24 Feb 2022",
-    "description": "Join a global community dedicated to sharing expertise and spreading the word about building on Substrate and Polkadot.",
-    "link": "-"
+    "id": "8be5vgVCPjY",
+    "title": "Substrate Seminar: Building Decentralized Applications with Virto's Wallet API",
+    "date": "20 Apr 2022"
   },
   {
-    "title": "Moonbeam Learnings with Joshy Orndorff",
-    "date": "18 Jan 2022",
-    "description": "Join a global community dedicated to sharing expertise and spreading the word about building on Substrate and Polkadot.",
-    "link": "-"
+    "id": "xbjdhTO7VtA",
+    "title": "Substrate Seminar: Imbue network - crowdfunding DAO built with Substrate",
+    "date": "04 Apr 2022"
   },
   {
-    "title": "Rust Syntax for Substrate",
-    "date": "15 Dec 2021",
-    "description": "Join a global community dedicated to sharing expertise and spreading the word about building on Substrate and Polkadot.",
-    "link": "-"
+    "id": "IiAkJAfZsug",
+    "title": "Substrate Seminar: Adding new validators to a live test network",
+    "date": "17 Mar 2022"
   },
   {
-    "title": "Frame 2",
-    "date": "07 Nov 2021",
-    "description": "Join a global community dedicated to sharing expertise and spreading the word about building on Substrate and Polkadot.",
-    "link": "-"
-  }
+    "id": "227actvWlXY",
+    "title": "Substrate Seminar: Substrate Chaoscope - exploring economic attack vectors on Substrate runtimes",
+    "date": "08 Mar 2022"
+  },
+  {
+    "id": "NrG3co6UWEg",
+    "title": "Substrate: Blockchain Framework in Rust - Workshop at @ETHDenver",
+    "date": "17 Feb 2022"
+  },
+  {
+    "id": "MtPRWRqrn9c",
+    "title": "Substrate Seminar: Learning from parachain builders (Fireside Chat With Polkadot Parachain Builders)",
+    "date": "17 Feb 2022"
+  },
+  { "id": "0FvcABti7yk", "title": "Substrate Seminar: Testing parachain runtimes with Simnode", "date": "02 Feb 2022" },
+  {
+    "id": "I5OFGNVvzOc",
+    "title": "Substrate Seminar: OpenBrush: a library to build ink! smart contracts",
+    "date": "19 Jan 2022"
+  },
+  { "id": "aZGj4FhkY6A", "title": "Substrate Seminar: A BTC price bot with Phala's ink!", "date": "21 Dec 2021" },
+  {
+    "id": "jIy0gzTLBus",
+    "title": "Substrate Seminar: Aleph — a New Finality Gadget for Substrate Chains",
+    "date": "01 Dec 2021"
+  },
+  {
+    "id": "oVSLkw2qYk0",
+    "title": "Substrate Seminar: Off-chain Capabilities in Substrate Chains",
+    "date": "17 Nov 2021"
+  },
+  {
+    "id": "69uCTnvzL60",
+    "title": "Substrate Seminar: Pallet Fundamentals and Ways to Build With Them",
+    "date": "03 Nov 2021"
+  },
+  { "id": "VVU3Io2dACY", "title": "Rust Syntax for Substrate", "date": "04 Feb 2021" },
+  {
+    "id": "Ok2JMLM0RXI",
+    "title": "Limechain Assembly Script Libraries for Developing on Polkadot Stack",
+    "date": "03 Feb 2021"
+  },
+  { "id": "5pLHzKMCEtg", "title": "Substrate FRAME v2", "date": "03 Feb 2021" },
+  { "id": "UaCGimsqLpg", "title": "Network Security for Substrate", "date": "03 Feb 2021" },
+  { "id": "ZfrbA7H05Aw", "title": "Building PIRL - nominated POS community-based blockchain", "date": "03 Feb 2021" },
+  { "id": "o6UQIXKsrZ8", "title": "Permissioned Network in Substrate", "date": "03 Feb 2021" },
+  { "id": "bg9l72vvu2s", "title": "Substrate Seminar: FRAME's Origin Primitive", "date": "27 Nov 2020" }
 ]
