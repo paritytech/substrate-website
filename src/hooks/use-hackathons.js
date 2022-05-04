@@ -7,7 +7,7 @@ export const useHackathons = () => {
     graphql`
       query {
         allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "//(hackathons)/" } }
+          filter: { fileAbsolutePath: { regex: "//(hackathons)//" } }
           sort: { fields: frontmatter___date_start, order: DESC }
         ) {
           edges {
