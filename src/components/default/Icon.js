@@ -101,6 +101,7 @@ import play from '../../images/svg/ui/play.svg';
 import sidebarToggle from '../../images/svg/ui/sidebar-toggle.svg';
 import star from '../../images/svg/ui/star.svg';
 import sun from '../../images/svg/ui/sun.svg';
+import time from '../../images/svg/ui/time.svg';
 import w3fLogo from '../../images/svg/w3f-logo.svg';
 import waLogo from '../../images/svg/wa-logo.svg';
 
@@ -166,6 +167,7 @@ const iconsMap = {
   tools: tools,
   chrome: chrome,
   firefox: firefox,
+  time: time,
   /* mockup */
   placeholder: placeholder,
   /* social */
