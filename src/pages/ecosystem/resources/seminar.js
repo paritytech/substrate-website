@@ -30,7 +30,7 @@ export default function Seminar() {
             </p>
             <div className="max-w-xs sm:mr-20">
               <SecondaryButton
-                className="mb-2 w-full flex justify-center"
+                className="mb-3 w-full flex justify-center"
                 link="https://calendar.google.com/calendar/u/0?cid=Y192cXBsamk3cXY2ajBvcDVrbmdwMGR0cjUzc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
               >
                 <span className="inline font-bold mr-3">Add schedule</span>
