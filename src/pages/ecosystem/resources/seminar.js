@@ -14,6 +14,7 @@ export default function Seminar() {
   return (
     <Layout layout="sidebar">
       <SEO title="Seminar" />
+
       <Section>
         <h2 className="text-4xl font-bold mb-10">Substrate Seminar</h2>
         <div className="grid md:grid-cols-2 md:gap-6 bg-substrateGray-light dark:bg-substrateBlackish rounded-md overflow-hidden image-rounded">
@@ -52,6 +53,17 @@ export default function Seminar() {
           />
         </div>
       </Section>
+
+      <Section>
+        <h5 className="mb-8 font-medium text-2xl">Previous Seminars</h5>
+        <p className="leading-loose underline-animate underline-animate-thin">
+          Browse our <Link to="/ecosystem/resources/past-seminars">list of past seminars</Link> or watch the{' '}
+          <Link to="https://www.youtube.com/playlist?list=PLp0_ueXY_enXRfoaW7sTudeQH10yDvFOS">
+            seminars on Youtube.
+          </Link>
+        </p>
+      </Section>
+
       <Section>
         <div>
           <h5 className="mb-8 font-medium text-2xl">Learn and Share</h5>
@@ -64,17 +76,6 @@ export default function Seminar() {
           <p className="leading-loose">
             The seminar is generally developer-oriented, but less technical participants and questions are also welcome.
             If your questions turn out to be off-topic, we&apos;ll point in the direction of the resources you need.
-          </p>
-        </div>
-      </Section>
-      <Section>
-        <div>
-          <h5 className="mb-8 font-medium text-2xl">Past Seminars</h5>
-          <p className="leading-loose">
-            You can watch or read about past seminars{' '}
-            <span className="underline-animate underline-animate-thin">
-              <Link to="/ecosystem/resources/past-seminars">here.</Link>
-            </span>
           </p>
         </div>
       </Section>
