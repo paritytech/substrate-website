@@ -20,10 +20,10 @@ export default function PastSeminars() {
       </Section>
 
       <Section>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 auto-rows-fr">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 auto-rows-fr">
           {seminars.map(({ id, title, date }, idx) => (
             <Link to={`https://www.youtube.com/watch?v=${id}`} key={idx}>
-              <div className="h-full shadow-xl p-8 max-w-md rounded-md bg-white dark:bg-substrateBlackish flex flex-col justify-between hover:scale-105 transition-transform">
+              <div className="h-full shadow-xl p-8 rounded-md bg-white dark:bg-substrateBlackish flex flex-col justify-between hover:scale-105 transition-transform">
                 <h3 className="text-xl font-bold mb-4">
                   {title.slice(0, 18) === 'Substrate Seminar:' ? title.slice(18) : title}
                 </h3>
