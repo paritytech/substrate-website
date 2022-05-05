@@ -9,7 +9,7 @@ export default function ExploreCommunityProjects() {
       items: [
         {
           name: 'Canvas',
-          link: 'http://www.example.com/',
+          link: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-canvas-rpc.polkadot.io#/explorer',
           description: 'A smart contract testnet on Roccoco.',
         },
         {
@@ -54,7 +54,7 @@ export default function ExploreCommunityProjects() {
         },
         {
           name: 'Solang Solidity Compiler',
-          link: 'https://ink-playground.xyz/',
+          link: 'https://solang.readthedocs.io/',
           description: 'Write Solidity contracts.',
         },
         {
