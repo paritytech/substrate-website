@@ -66,7 +66,7 @@ export default function SmartContracts() {
       </Section>
 
       <Section>
-        <div className="grid sm:grid-cols-2 gap-8 justify-center md:my-36 max-w-5xl mx-auto">
+        <div id="tutorials" className="grid sm:grid-cols-2 gap-8 justify-center md:my-40 max-w-5xl mx-auto">
           {tutorials.map(({ title, description, image, difficulty, time }, idx) => (
             <div
               key={idx}
@@ -116,7 +116,7 @@ export default function SmartContracts() {
         </div>
       </Section>
 
-      <Section className="md:mb-36">
+      <Section className="md:mb-40">
         <h2 className="text-4xl font-extrabold mb-8">Explore Code Samples</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center auto-rows-fr">
           {cards.map(({ title, description, link }, idx) => (
