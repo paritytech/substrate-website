@@ -1,5 +1,5 @@
+import cx from 'classnames';
 import { graphql } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import Icon from '../components/default/Icon';
@@ -8,6 +8,23 @@ import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import PrimaryButton from '../components/ui/PrimaryButton';
+
+const tutorials = [
+  {
+    title: 'Write Smart Contracts',
+    description: 'Learn to build and deploy an ERC20 token smart contract with ink!',
+    image: '/img/contracts-tutorials-1.jpeg',
+    difficulty: 1,
+    time: '1 Hr',
+  },
+  {
+    title: 'Frontier Workshop',
+    description: 'Learn to build and deploy an ERC20 token smart contract with ink!',
+    image: 'img/contracts-tutorials-2.jpeg',
+    difficulty: 2,
+    time: '1 Hr',
+  },
+];
 
 export default function SmartContracts() {
   return (
@@ -26,34 +43,51 @@ export default function SmartContracts() {
         </div>
         <div>Illustration</div>
       </Section>
-      <Section className="grid md:grid-cols-2 gap-8">
-        <div className="bg-substrateGray-light dark:bg-substrateBlackish rounded-md overflow-hidden">
-          <div className="overflow-hidden">
-            <StaticImage
-              src="../images/jpg/contracts-tutorials-1.jpeg"
-              alt="Tutorial illustration"
-              className="overflow-hidden hover:scale-110 transition-transform"
-            />
-          </div>
-          <div className="p-4">
-            <h4 className="text-2xl mb-6">Write Smart Contracts</h4>
-            <p className="text-base mb-6">Learn to build and deploy an ERC20 token smart contract with ink!</p>
-            <div className="flex justify-between">
-              <div className="flex">
-                <p className="text-sm uppercase tracking-wider">Beginner</p>
-                <div className="flex ml-1 mt-1">
-                  <span className="mx-1 inline-block w-3 h-3 bg-substrateDark dark:bg-substrateGray rounded-full"></span>
-                  <span className="mx-1 inline-block w-3 h-3 bg-substrateDark bg-opacity-10 dark:bg-substrateGray dark:bg-opacity-50 rounded-full"></span>
-                  <span className="mx-1 inline-block w-3 h-3 bg-substrateDark bg-opacity-10 dark:bg-substrateGray dark:bg-opacity-50 rounded-full"></span>
+
+      <Section className="grid sm:grid-cols-2 gap-8 max-w-5xl justify-center">
+        {tutorials.map(({ title, description, image, difficulty, time }, idx) => (
+          <div
+            key={idx}
+            className="bg-substrateGray-light dark:bg-substrateBlackish rounded-md max-w-md overflow-hidden"
+          >
+            <div className="overflow-hidden">
+              <img
+                src={image}
+                alt={title}
+                className="overflow-hidden w-full h-24 md:h-60 object-cover hover:scale-110 transition-transform"
+              />
+            </div>
+            <div className="p-4">
+              <h4 className="text-2xl mb-6">{title}</h4>
+              <p className="text-base mb-6">{description}</p>
+              <div className="flex justify-between items-center">
+                <div className="flex">
+                  <p className="mb-0 text-sm uppercase tracking-wider">
+                    {difficulty === 1 ? 'Beginner' : difficulty === 2 ? 'Intermediate' : difficulty === 3 && 'Advanced'}
+                  </p>
+                  <div className="flex ml-1 mt-1">
+                    {[...Array(3)].map((_, idx) => (
+                      <span
+                        key={idx}
+                        className={cx('mx-1 inline-block w-3 h-3 bg-substrateDark dark:bg-substrateGray rounded-full', {
+                          'bg-opacity-50': difficulty <= idx,
+                        })}
+                      ></span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center">
-                <Icon name="time" />
-                <span>1 Hr</span>
+                <div className="flex items-center">
+                  <Icon name="time" />
+                  <span>{time}</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        ))}
+      </Section>
+
+      <Section>
+        <h2 className="text-4xl font-extrabold mb-8">Explore Code Samples</h2>
       </Section>
     </Layout>
   );
