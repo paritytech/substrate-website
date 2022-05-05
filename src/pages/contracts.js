@@ -4,9 +4,11 @@ import React from 'react';
 
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
+import Card from '../components/layout/Card';
 import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
+import LineArrowButton from '../components/ui/LineArrowButton';
 import PrimaryButton from '../components/ui/PrimaryButton';
 
 const tutorials = [
@@ -19,10 +21,28 @@ const tutorials = [
   },
   {
     title: 'Frontier Workshop',
-    description: 'Learn to build and deploy an ERC20 token smart contract with ink!',
+    description: 'A workshop to configure a Substrate node to run Substrate EVM and Solidity contracts',
     image: 'img/contracts-tutorials-2.jpeg',
     difficulty: 2,
     time: '1 Hr',
+  },
+];
+
+const cards = [
+  {
+    title: 'ERC20 Contract',
+    description: 'Learn to write an ERC20 contract.',
+    link: 'https://www.ink-playground.xyz/?id=73034cd9a3c0ddf6cbc7ee94380f624b',
+  },
+  {
+    title: 'Incrementer',
+    description: 'Learn to write a simple incrementer contract.',
+    link: 'https://www.example.com/',
+  },
+  {
+    title: 'DNS Contract',
+    description: 'Learn to write a DNS contract.',
+    link: 'https://www.ink-playground.xyz/?id=926d08d4afd109f981214cc4999ad48e',
   },
 ];
 
@@ -44,7 +64,7 @@ export default function SmartContracts() {
         <div>Illustration</div>
       </Section>
 
-      <Section className="grid sm:grid-cols-2 gap-8 max-w-5xl justify-center">
+      <Section className="grid sm:grid-cols-2 gap-8 max-w-5xl justify-center my-36">
         {tutorials.map(({ title, description, image, difficulty, time }, idx) => (
           <div
             key={idx}
@@ -88,6 +108,24 @@ export default function SmartContracts() {
 
       <Section>
         <h2 className="text-4xl font-extrabold mb-8">Explore Code Samples</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center auto-rows-fr">
+          {cards.map(({ title, description, link }, idx) => (
+            <Link key={idx} to={link}>
+              <Card className="p-8 h-full flex flex-col justify-between max-w-md">
+                <div>
+                  <h4>{title}</h4>
+                  <p>{description}</p>
+                </div>
+                <LineArrowButton>Open in Playground</LineArrowButton>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <h2 className="text-4xl font-extrabold mb-8">Explore Community Projects</h2>
+        <p className="text-base mb-6">Browse through different networks, tooling and further resources.</p>
       </Section>
     </Layout>
   );
