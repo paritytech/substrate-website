@@ -10,10 +10,11 @@ import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
-import PrimaryButton from '../components/ui/PrimaryButton';
+import SecondaryButton from '../components/ui/SecondaryButton';
 
 const tutorials = [
   {
+    link: 'https://docs.substrate.io/tutorials/v3/ink-workshop/pt1/',
     title: 'Write Smart Contracts',
     description: 'Learn to build and deploy an ERC20 token smart contract with ink!',
     image: '/img/contracts-tutorials-1.jpeg',
@@ -21,9 +22,10 @@ const tutorials = [
     time: '1 Hr',
   },
   {
+    link: 'https://docs.substrate.io/tutorials/v3/frontier/',
     title: 'Frontier Workshop',
     description: 'A workshop to configure a Substrate node to run Substrate EVM and Solidity contracts',
-    image: 'img/contracts-tutorials-2.jpeg',
+    image: '/img/contracts-tutorials-2.jpeg',
     difficulty: 2,
     time: '1 Hr',
   },
@@ -58,31 +60,45 @@ export default function SmartContracts() {
             Substrate supports both WebAssembly and Ethereum smart contracts out of the box, giving you a range of
             languages and tools to write powerful contracts.
           </p>
-          <Link to="#tutorials">
-            <PrimaryButton>Get Started</PrimaryButton>
-          </Link>
+          <p>
+            Find out more about the different ways to implement smart contracts{' '}
+            <span className="underline-animate underline-animate-thin">
+              <Link to="https://docs.substrate.io/v3/runtime/smart-contracts/">in the docs »</Link>
+            </span>
+          </p>
         </div>
         <div>Illustration</div>
       </Section>
 
       <Section>
-        <div id="tutorials" className="grid sm:grid-cols-2 gap-8 justify-center md:my-40 max-w-5xl mx-auto">
-          {tutorials.map(({ title, description, image, difficulty, time }, idx) => (
+        <div
+          id="tutorials"
+          className="grid sm:grid-cols-2 auto-rows-max gap-8 justify-center md:my-40 max-w-5xl mx-auto"
+        >
+          {tutorials.map(({ link, title, description, image, difficulty, time }, idx) => (
             <div
               key={idx}
-              className="bg-substrateGray-light dark:bg-substrateBlackish rounded-md max-w-md overflow-hidden"
+              className="bg-substrateGray-light dark:bg-substrateBlackish rounded-md max-w-md overflow-hidden h-full flex flex-col justify-between"
             >
-              <div className="overflow-hidden">
-                <img
-                  src={image}
-                  alt={title}
-                  className="overflow-hidden w-full h-24 md:h-60 object-cover hover:scale-110 transition-transform"
-                />
+              <div>
+                <Link to={link}>
+                  <div className="overflow-hidden">
+                    <img
+                      src={image}
+                      alt={title}
+                      className="overflow-hidden w-full h-24 md:h-60 object-cover hover:scale-110 transition-transform"
+                    />
+                  </div>
+                </Link>
+                <div className="p-6 pb-0">
+                  <Link to={link}>
+                    <h4 className="text-2xl mb-6">{title}</h4>
+                  </Link>
+                  <p className="text-base mb-0">{description}</p>
+                </div>
               </div>
-              <div className="p-4">
-                <h4 className="text-2xl mb-6">{title}</h4>
-                <p className="text-base mb-6">{description}</p>
-                <div className="flex justify-between items-center">
+              <div className="p-6">
+                <div className="flex justify-between items-center mb-2">
                   <div className="flex">
                     <p className="mb-0 text-sm uppercase tracking-wider">
                       {difficulty === 1
@@ -110,6 +126,9 @@ export default function SmartContracts() {
                     <span>{time}</span>
                   </div>
                 </div>
+                <hr />
+
+                <SecondaryButton link={link}>Try it now!</SecondaryButton>
               </div>
             </div>
           ))}
