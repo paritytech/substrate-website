@@ -157,8 +157,6 @@ export default function SmartContracts() {
       </Section>
 
       <Section>
-        <h2 className="text-4xl font-extrabold mb-8">Explore Community Projects</h2>
-        <p className="text-base mb-6">Browse through different networks, tooling and further resources.</p>
         <ExploreCommunityProjects />
       </Section>
     </Layout>
