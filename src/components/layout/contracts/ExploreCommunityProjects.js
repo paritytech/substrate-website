@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from '../../default/Link';
 
 export default function ExploreCommunityProjects() {
-  const content = [
+  const links = [
     {
       name: 'Networks',
       items: [
@@ -65,27 +65,28 @@ export default function ExploreCommunityProjects() {
       ],
     },
   ];
+
   return (
-    <div className="md:flex md:justify-start xl:justify-between">
-      {content.map((section, index) => (
-        <div key={index} className="md:w-96 xl:mr-6">
-          <div className="mb-14">
-            <div className="text-2xl font-extrabold mb-9">{section.name}</div>
-            <ul className="px-4 leading-7 ml-0">
-              {section.items.map((item, index) => (
+    <>
+      <h2 className="text-4xl font-extrabold mb-6">Explore Community Projects</h2>
+      <p className="text-base mb-8">Browse through different networks, tooling and further resources.</p>
+      <div className="md:flex xl:justify-between">
+        {links.map((column, idx) => (
+          <div key={idx} className="mb-14 flex-1">
+            <h4 className="text-2xl font-extrabold mb-9">{column.name}</h4>
+            <ul className="px-4 ml-0 lg:mr-10">
+              {column.items.map((item, index) => (
                 <Link key={index} to={item.link}>
-                  <li className="ml-0 pl-0">
-                    <div className="">
-                      <b>{item.name}</b>
-                    </div>
-                    <p className="leading-7">{item.description}</p>
+                  <li>
+                    <h5 className="font-bold mb-1 text-base">{item.name}</h5>
+                    <p className="mb-6">{item.description}</p>
                   </li>
                 </Link>
               ))}
             </ul>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }
