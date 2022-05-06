@@ -1,6 +1,7 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import React from 'react';
+import Lottie from 'react-lottie';
 
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
@@ -11,6 +12,7 @@ import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
 import SecondaryButton from '../components/ui/SecondaryButton';
+import * as animationData from '../images/animation/technology/flexible.json';
 
 const tutorials = [
   {
@@ -53,7 +55,7 @@ export default function SmartContracts() {
   return (
     <Layout>
       <SEO title="Smart Contracts" />
-      <Section className="grid grid-cols-2">
+      <Section className="grid grid-cols-2 items-center">
         <div>
           <h1 className="mb-8 font-title font-extrabold text-5xl md:text-6xl">Smart Contracts</h1>
           <p className="text-base mb-6 max-w-md">
@@ -67,7 +69,9 @@ export default function SmartContracts() {
             </span>
           </p>
         </div>
-        <div>Illustration</div>
+        <div className="w-full aspect-w-10 aspect-h-7 mb-8">
+          <Lottie options={{ animationData }} isClickToPauseDisabled height="full" width="full" />
+        </div>
       </Section>
 
       <Section>
