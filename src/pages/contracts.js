@@ -62,7 +62,7 @@ export default function SmartContracts() {
             Substrate supports both WebAssembly and Ethereum smart contracts out of the box, giving you a range of
             languages and tools to write powerful contracts.
           </p>
-          <p>
+          <p className="text-base mb-0 max-w-md">
             Find out more about the different ways to implement smart contracts{' '}
             <span className="underline-animate underline-animate-thin">
               <Link to="https://docs.substrate.io/v3/runtime/smart-contracts/">in the docs »</Link>
