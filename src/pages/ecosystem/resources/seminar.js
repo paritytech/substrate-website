@@ -16,7 +16,7 @@ export default function Seminar() {
       <SEO title="Seminar" />
 
       <Section>
-        <h2 className="text-4xl font-bold mb-10">Substrate Seminar</h2>
+        <h1 className="text-4xl font-bold mb-10">Substrate Seminar</h1>
         <div className="grid md:grid-cols-2 md:gap-6 bg-substrateGray-light dark:bg-substrateBlackish rounded-md overflow-hidden image-rounded">
           <div className="p-8 self-center">
             <h5 className="text-2xl font-medium mb-4">
@@ -56,7 +56,7 @@ export default function Seminar() {
       </Section>
 
       <Section>
-        <h5 className="mb-8 font-medium text-2xl">Previous Seminars</h5>
+        <h2 className="mb-8 font-medium text-2xl">Previous Seminars</h2>
         <p className="leading-loose underline-animate underline-animate-thin">
           Browse our <Link to="/ecosystem/resources/past-seminars">list of past seminars</Link> or watch the{' '}
           <Link to="https://www.youtube.com/playlist?list=PLp0_ueXY_enXRfoaW7sTudeQH10yDvFOS">
@@ -66,7 +66,7 @@ export default function Seminar() {
       </Section>
 
       <Section className="underline-animate underline-animate-thin">
-        <h5 className="mb-8 font-medium text-2xl">Learn and Share</h5>
+        <h2 className="mb-8 font-medium text-2xl">Learn and Share</h2>
         <p className="mb-6">
           Seminars are hosted <Link to="https://www.crowdcast.io/e/substrate-seminar-2/">on Crowdcast</Link>, where
           attendees are encouraged to ask questions and interact directly with the presenters. They typically take the
