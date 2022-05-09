@@ -75,10 +75,7 @@ export default function SmartContracts() {
       </Section>
 
       <Section>
-        <div
-          id="tutorials"
-          className="grid sm:grid-cols-2 auto-rows-max gap-8 justify-center md:my-40 max-w-5xl mx-auto"
-        >
+        <div className="grid sm:grid-cols-2 auto-rows-max gap-8 justify-center md:my-40 max-w-5xl mx-auto">
           {tutorials.map(({ link, title, description, image, difficulty, time }, idx) => (
             <div
               key={idx}
