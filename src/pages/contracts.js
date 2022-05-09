@@ -12,7 +12,7 @@ import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
 import SecondaryButton from '../components/ui/SecondaryButton';
-import * as animationData from '../images/animation/technology/flexible.json';
+import * as animationData from '../images/animation/technology/flexible-edges.json';
 
 const tutorials = [
   {
@@ -102,7 +102,7 @@ export default function SmartContracts() {
                 </div>
               </div>
               <div className="p-6">
-                <div className="flex justify-between items-center mb-2">
+                <div className="flex flex-wrap justify-between items-center mb-2">
                   <div className="flex">
                     <p className="mb-0 text-sm uppercase tracking-wider">
                       {difficulty === 1
@@ -146,8 +146,8 @@ export default function SmartContracts() {
             <Link key={idx} to={link}>
               <Card className="p-8 h-full flex flex-col justify-between max-w-md">
                 <div>
-                  <h4>{title}</h4>
-                  <p>{description}</p>
+                  <h4 className="text-2xl mb-6">{title}</h4>
+                  <p className="mb-6">{description}</p>
                 </div>
                 <LineArrowButton>Open in Playground</LineArrowButton>
               </Card>
