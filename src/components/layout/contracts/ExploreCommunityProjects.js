@@ -77,7 +77,7 @@ export default function ExploreCommunityProjects() {
             <ul className="px-4 ml-0 lg:mr-10">
               {column.items.map((item, index) => (
                 <Link key={index} to={item.link}>
-                  <li>
+                  <li className="hover:opacity-60 transition-opacity">
                     <h5 className="font-bold mb-1 text-base">{item.name}</h5>
                     <p className="mb-6">{item.description}</p>
                   </li>
