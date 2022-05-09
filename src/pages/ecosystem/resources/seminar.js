@@ -80,7 +80,7 @@ export default function Seminar() {
           in the{' '}
           <Link to="https://github.com/substrate-developer-hub/substrate-seminar/">dedicated GitHub repository.</Link>
         </p>
-        <p>
+        <p className="mb-0">
           Seminars are generally developer-oriented, but less technical participants and questions are also welcome. If
           your questions turn out to be off-topic, we&apos;ll make sure to point you to the resources you need.
         </p>
