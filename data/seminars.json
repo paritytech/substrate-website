@@ -1,12 +1,66 @@
 [
+  { "id": "K5i_BpuZAnE", "title": "Substrate's developer resources", "date": "26 Apr 2022" },
   {
-    "date": "16 Feb",
-    "description": "Parity developer advocate Sacha Lansky will be hosting a special panel discussion with parachain builders present at the ETH Denver 2022 conference. Panelists include developers from Astar, Interlay, Centrifuge, Parallel, Phala and Manta, who will be sharing their journeys building with Substrate."
+    "id": "8be5vgVCPjY",
+    "title": "Building decentralized applications with Virto's Wallet API",
+    "date": "20 Apr 2022"
   },
   {
-    "date": "1 March",
-    "description": "Substrate Chaoscope: exploring economic attack vectors on Substrate runtimes. Substrate Chaoscope is an RPC instrumentation toolkit for pallet-chaos, designed to make Substrate runtimes behave in ways that they're not supposed to. Parity ecosystem success engineer Bernardo will talk about how to use this toolkit to explore the economic implications in different weight configurations; runtime attack vectors and edge cases; and raise awareness about best practices in runtime engineering."
-  }
+    "id": "xbjdhTO7VtA",
+    "title": "Imbue network - crowdfunding DAO built with Substrate",
+    "date": "04 Apr 2022"
+  },
+  {
+    "id": "IiAkJAfZsug",
+    "title": "Adding new validators to a live test network",
+    "date": "17 Mar 2022"
+  },
+  {
+    "id": "227actvWlXY",
+    "title": "Substrate Chaoscope - exploring economic attack vectors on Substrate runtimes",
+    "date": "08 Mar 2022"
+  },
+  {
+    "id": "NrG3co6UWEg",
+    "title": "Substrate: Blockchain Framework in Rust - Workshop at @ETHDenver",
+    "date": "17 Feb 2022"
+  },
+  {
+    "id": "MtPRWRqrn9c",
+    "title": "Fireside chat with Polkadot parachain builders",
+    "date": "17 Feb 2022"
+  },
+  { "id": "0FvcABti7yk", "title": "Testing parachain runtimes with Simnode", "date": "02 Feb 2022" },
+  {
+    "id": "I5OFGNVvzOc",
+    "title": "OpenBrush: a library to build ink! smart contracts",
+    "date": "19 Jan 2022"
+  },
+  { "id": "aZGj4FhkY6A", "title": "A BTC price bot with Phala's ink!", "date": "21 Dec 2021" },
+  {
+    "id": "jIy0gzTLBus",
+    "title": "Aleph — a new finality gadget for Substrate chains",
+    "date": "01 Dec 2021"
+  },
+  {
+    "id": "oVSLkw2qYk0",
+    "title": "Off-chain capabilities in Substrate chains",
+    "date": "17 Nov 2021"
+  },
+  {
+    "id": "69uCTnvzL60",
+    "title": "Pallet fundamentals and ways to build with them",
+    "date": "03 Nov 2021"
+  },
+  { "id": "VVU3Io2dACY", "title": "Rust syntax for Substrate", "date": "04 Feb 2021" },
+  {
+    "id": "Ok2JMLM0RXI",
+    "title": "Limechain Assembly Script libraries for developing on Polkadot stack",
+    "date": "03 Feb 2021"
+  },
+  { "id": "5pLHzKMCEtg", "title": "Substrate FRAME v2", "date": "03 Feb 2021" },
+  { "id": "UaCGimsqLpg", "title": "Network security for Substrate", "date": "03 Feb 2021" },
+  { "id": "ZfrbA7H05Aw", "title": "Building PIRL - nominated POS community-based blockchain", "date": "03 Feb 2021" },
+  { "id": "o6UQIXKsrZ8", "title": "Permissioned Network in Substrate", "date": "03 Feb 2021" },
+  { "id": "bg9l72vvu2s", "title": "FRAME's Origin Primitive", "date": "27 Nov 2020" }
 ]
-
-

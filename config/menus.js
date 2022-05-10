@@ -135,6 +135,10 @@ const resources = [
     id: 'ecosystem.resources.seminar',
   },
   {
+    url: '/past-seminars',
+    id: 'ecosystem.resources.past-seminars',
+  },
+  {
     url: '/awesome-substrate',
     id: 'ecosystem.resources.awesome-substrate',
   },
