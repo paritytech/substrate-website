@@ -27,7 +27,7 @@
   },
   {
     "id": "MtPRWRqrn9c",
-    "title": "Substrate Seminar: Learning from parachain builders (Fireside Chat With Polkadot Parachain Builders)",
+    "title": "Substrate Seminar: fireside chat with Polkadot parachain builders",
     "date": "17 Feb 2022"
   },
   { "id": "0FvcABti7yk", "title": "Substrate Seminar: Testing parachain runtimes with Simnode", "date": "02 Feb 2022" },
@@ -44,12 +44,12 @@
   },
   {
     "id": "oVSLkw2qYk0",
-    "title": "Substrate Seminar: Off-chain Capabilities in Substrate Chains",
+    "title": "Substrate Seminar: off-chain capabilities in Substrate chains",
     "date": "17 Nov 2021"
   },
   {
     "id": "69uCTnvzL60",
-    "title": "Substrate Seminar: Pallet Fundamentals and Ways to Build With Them",
+    "title": "Substrate Seminar: pallet fundamentals and ways to build with them",
     "date": "03 Nov 2021"
   },
   { "id": "VVU3Io2dACY", "title": "Rust syntax for Substrate", "date": "04 Feb 2021" },
