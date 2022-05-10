@@ -1,4 +1,5 @@
 const DOCS_URL = process.env.GATSBY_DOCS_URL;
+const CAREERS_URL = process.env.GATSBY_CAREERS_URL;
 
 /* the main menu, ids of items must match
    the submenu's key of this js object */
@@ -107,6 +108,10 @@ const ecosystem = [
     id: 'ecosystem.connect',
     child: 'connect',
   },
+  {
+    url: '/square-one',
+    id: 'ecosystem.square-one',
+  },
 ];
 
 const opportunities = [
@@ -119,8 +124,8 @@ const opportunities = [
     id: 'ecosystem.opportunities.grants',
   },
   {
-    url: '/jobs',
-    id: 'ecosystem.opportunities.jobs',
+    url: CAREERS_URL,
+    id: 'ecosystem.opportunities.careers',
   },
 ];
 

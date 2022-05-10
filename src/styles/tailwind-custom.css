@@ -71,7 +71,7 @@ h3 {
 }
 
 .markdown ul {
-  @apply ml-8;
+  @apply ml-8 mb-4;
 }
 
 .markdown ul ul {
@@ -84,6 +84,14 @@ h3 {
 
 .markdown h3 {
   @apply mt-14 mb-6 text-2xl font-medium;
+}
+
+.markdown h6 {
+  @apply text-base mt-6 mb-4;
+}
+
+.markdown strong {
+  @apply font-bold;
 }
 
 .markdown p {
@@ -209,4 +217,56 @@ div[aria-label='animation'] {
 
 .banner a {
   @apply text-substrateDarkThemeBlue dark:text-substrateBlue;
+}
+
+/* Hubspot Confirmation Checkmark Animation */
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #24cc85;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #24cc85;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #24cc85;
+  }
 }

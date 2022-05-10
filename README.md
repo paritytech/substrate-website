@@ -34,14 +34,15 @@ yarn
 
 Copy `example.env.development` and rename to `.env.development`
 
-Config URL variables based on your preferable local setup. URL will be used for links generation between documentation and platform stack
+Config URL variables based on your preferable local setup. URL will be used for links generation between Substrate websites.
 
-- `GATSBY_WEBSITE_URL`: represents this project (Substrate website)
-- `GATSBY_DOCS_URL` represents project serving documentation
+Default localhost port configuration:
 
-```
-GATSBY_WEBSITE_URL=http://localhost:8000
-GATSBY_DOCS_URL=http://localhost:8001
+```env
+GATSBY_WEBSITE_URL=http://localhost:8100
+GATSBY_DOCS_URL=http://localhost:8200
+GATSBY_MARKETPLACE_URL=http://localhost:8300
+GATSBY_CAREERS_URL=https://careers.substrate.io
 ```
 
 **Start development server**

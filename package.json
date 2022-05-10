@@ -9,7 +9,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "develop": "gatsby develop -p 8000",
+    "develop": "gatsby develop -p 8100",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -20,6 +20,7 @@
     "extract-locales": "yarn run babel --config-file ./babel-extract-locales.config.js -o tmp/chunk.js 'src/**/*.{js,jsx}' && rm -rf tmp"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.3.1",
     "aos": "^2.3.4",
     "classnames": "^2.3.1",
     "date-fns": "^2.25.0",
@@ -52,6 +53,7 @@
     "react-device-detect": "^2.0.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-hubspot-form": "^1.3.7",
     "react-i18next": "^11.8.15",
     "react-intersection-observer": "^8.32.1",
     "react-lottie": "^1.2.3",

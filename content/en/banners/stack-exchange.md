@@ -1,8 +1,8 @@
 ---
-title: "StackExchange Forum"
-active: false
+title: "Use our StackExchange"
+active: true
 ---
 
-The Substrate community is campaigning for a dedicated [StackExchange](https://area51.stackexchange.com/proposals/126136/substrate-blockchain-framework) forum!
-
-**Please help us by following and committing to your desire for it [here.](https://area51.stackexchange.com/proposals/126136/substrate-blockchain-framework)**
+Have a question related to something you're building with Substrate? 
+Check out [our Stack Exchange](https://substrate.stackexchange.com/) &mdash; your question may already be answered. 
+If it isn't, have a look at [what makes a good question](https://substrate.stackexchange.com/help/how-to-ask) and ask it 😃.
