@@ -2,7 +2,7 @@
   { "id": "K5i_BpuZAnE", "title": "Substrate Seminar: Substrate's developer resources", "date": "26 Apr 2022" },
   {
     "id": "8be5vgVCPjY",
-    "title": "Substrate Seminar: Building Decentralized Applications with Virto's Wallet API",
+    "title": "Substrate Seminar: Building decentralized applications with Virto's Wallet API",
     "date": "20 Apr 2022"
   },
   {
@@ -39,7 +39,7 @@
   { "id": "aZGj4FhkY6A", "title": "Substrate Seminar: A BTC price bot with Phala's ink!", "date": "21 Dec 2021" },
   {
     "id": "jIy0gzTLBus",
-    "title": "Substrate Seminar: Aleph — a New Finality Gadget for Substrate Chains",
+    "title": "Substrate Seminar: Aleph — a new finality gadget for Substrate chains",
     "date": "01 Dec 2021"
   },
   {
@@ -52,14 +52,14 @@
     "title": "Substrate Seminar: Pallet Fundamentals and Ways to Build With Them",
     "date": "03 Nov 2021"
   },
-  { "id": "VVU3Io2dACY", "title": "Rust Syntax for Substrate", "date": "04 Feb 2021" },
+  { "id": "VVU3Io2dACY", "title": "Rust syntax for Substrate", "date": "04 Feb 2021" },
   {
     "id": "Ok2JMLM0RXI",
-    "title": "Limechain Assembly Script Libraries for Developing on Polkadot Stack",
+    "title": "Limechain Assembly Script libraries for developing on Polkadot stack",
     "date": "03 Feb 2021"
   },
   { "id": "5pLHzKMCEtg", "title": "Substrate FRAME v2", "date": "03 Feb 2021" },
-  { "id": "UaCGimsqLpg", "title": "Network Security for Substrate", "date": "03 Feb 2021" },
+  { "id": "UaCGimsqLpg", "title": "Network security for Substrate", "date": "03 Feb 2021" },
   { "id": "ZfrbA7H05Aw", "title": "Building PIRL - nominated POS community-based blockchain", "date": "03 Feb 2021" },
   { "id": "o6UQIXKsrZ8", "title": "Permissioned Network in Substrate", "date": "03 Feb 2021" },
   { "id": "bg9l72vvu2s", "title": "Substrate Seminar: FRAME's Origin Primitive", "date": "27 Nov 2020" }
