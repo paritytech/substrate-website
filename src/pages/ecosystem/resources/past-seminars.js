@@ -24,9 +24,7 @@ export default function PastSeminars() {
           {seminars.map(({ id, title, date }, idx) => (
             <Link to={`https://www.youtube.com/watch?v=${id}`} key={idx}>
               <div className="h-full shadow-xl p-8 rounded-md bg-white dark:bg-substrateBlackish flex flex-col justify-between hover:scale-105 transition-transform">
-                <h3 className="text-xl font-bold mb-4">
-                  {title.slice(0, 18) === 'Substrate Seminar:' ? title.slice(18) : title}
-                </h3>
+                <h3 className="text-xl font-bold mb-4">{title}</h3>
                 <div>
                   <div className="flex mb-4">
                     <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />

@@ -1,23 +1,23 @@
 [
-  { "id": "K5i_BpuZAnE", "title": "Substrate Seminar: Substrate's developer resources", "date": "26 Apr 2022" },
+  { "id": "K5i_BpuZAnE", "title": "Substrate's developer resources", "date": "26 Apr 2022" },
   {
     "id": "8be5vgVCPjY",
-    "title": "Substrate Seminar: Building decentralized applications with Virto's Wallet API",
+    "title": "Building decentralized applications with Virto's Wallet API",
     "date": "20 Apr 2022"
   },
   {
     "id": "xbjdhTO7VtA",
-    "title": "Substrate Seminar: Imbue network - crowdfunding DAO built with Substrate",
+    "title": "Imbue network - crowdfunding DAO built with Substrate",
     "date": "04 Apr 2022"
   },
   {
     "id": "IiAkJAfZsug",
-    "title": "Substrate Seminar: Adding new validators to a live test network",
+    "title": "Adding new validators to a live test network",
     "date": "17 Mar 2022"
   },
   {
     "id": "227actvWlXY",
-    "title": "Substrate Seminar: Substrate Chaoscope - exploring economic attack vectors on Substrate runtimes",
+    "title": "Substrate Chaoscope - exploring economic attack vectors on Substrate runtimes",
     "date": "08 Mar 2022"
   },
   {
@@ -27,29 +27,29 @@
   },
   {
     "id": "MtPRWRqrn9c",
-    "title": "Substrate Seminar: Fireside chat with Polkadot parachain builders",
+    "title": "Fireside chat with Polkadot parachain builders",
     "date": "17 Feb 2022"
   },
-  { "id": "0FvcABti7yk", "title": "Substrate Seminar: Testing parachain runtimes with Simnode", "date": "02 Feb 2022" },
+  { "id": "0FvcABti7yk", "title": "Testing parachain runtimes with Simnode", "date": "02 Feb 2022" },
   {
     "id": "I5OFGNVvzOc",
-    "title": "Substrate Seminar: OpenBrush: a library to build ink! smart contracts",
+    "title": "OpenBrush: a library to build ink! smart contracts",
     "date": "19 Jan 2022"
   },
-  { "id": "aZGj4FhkY6A", "title": "Substrate Seminar: A BTC price bot with Phala's ink!", "date": "21 Dec 2021" },
+  { "id": "aZGj4FhkY6A", "title": "A BTC price bot with Phala's ink!", "date": "21 Dec 2021" },
   {
     "id": "jIy0gzTLBus",
-    "title": "Substrate Seminar: Aleph — a new finality gadget for Substrate chains",
+    "title": "Aleph — a new finality gadget for Substrate chains",
     "date": "01 Dec 2021"
   },
   {
     "id": "oVSLkw2qYk0",
-    "title": "Substrate Seminar: Off-chain capabilities in Substrate chains",
+    "title": "Off-chain capabilities in Substrate chains",
     "date": "17 Nov 2021"
   },
   {
     "id": "69uCTnvzL60",
-    "title": "Substrate Seminar: Pallet fundamentals and ways to build with them",
+    "title": "Pallet fundamentals and ways to build with them",
     "date": "03 Nov 2021"
   },
   { "id": "VVU3Io2dACY", "title": "Rust syntax for Substrate", "date": "04 Feb 2021" },
@@ -62,5 +62,5 @@
   { "id": "UaCGimsqLpg", "title": "Network security for Substrate", "date": "03 Feb 2021" },
   { "id": "ZfrbA7H05Aw", "title": "Building PIRL - nominated POS community-based blockchain", "date": "03 Feb 2021" },
   { "id": "o6UQIXKsrZ8", "title": "Permissioned Network in Substrate", "date": "03 Feb 2021" },
-  { "id": "bg9l72vvu2s", "title": "Substrate Seminar: FRAME's Origin Primitive", "date": "27 Nov 2020" }
+  { "id": "bg9l72vvu2s", "title": "FRAME's Origin Primitive", "date": "27 Nov 2020" }
 ]
