@@ -147,7 +147,7 @@ export default function SmartContracts() {
                 <Icon name="fountain-pen" className="m-4 fill-current text-white dark:text-substrateBlackish" />
               </div>
               <h3 className="text-xl mb-4 md:mb-6 mx-auto">Write</h3>
-              <p className="leading-relaxed mb-6 max-w-sm">
+              <p className="leading-relaxed mb-6 max-w-sm mx-auto">
                 Open a boilerplate contract in the ink! Playground and start writing.
               </p>
               <LineArrowButton centered primary link="https://www.ink-playground.xyz/">
@@ -159,7 +159,9 @@ export default function SmartContracts() {
                 <Icon name="wrench" className="m-4 fill-current text-white dark:text-substrateBlackish" />
               </div>
               <h3 className="text-xl mb-4 md:mb-6 mx-auto">Compile</h3>
-              <p className="leading-relaxed mb-6 max-w-sm">Compile your contract directly in the ink! Playground.</p>
+              <p className="leading-relaxed mb-6 max-w-sm mx-auto">
+                Compile your contract directly in the ink! Playground.
+              </p>
               <LineArrowButton centered primary link="https://www.ink-playground.xyz/">
                 Open ink! Playground
               </LineArrowButton>
@@ -169,7 +171,7 @@ export default function SmartContracts() {
                 <Icon name="rocket" className="m-4 fill-current text-white dark:text-substrateBlackish" />
               </div>
               <h3 className="text-xl mb-4 md:mb-6 mx-auto">Upload and Deploy</h3>
-              <p className="leading-relaxed mb-6 max-w-sm">
+              <p className="leading-relaxed mb-6 max-w-sm mx-auto">
                 Take your compiled contract bundle to the Contracts UI and deploy it on a local node or testnet.
               </p>
               <LineArrowButton centered primary link="https://contracts.substrate.io/">
