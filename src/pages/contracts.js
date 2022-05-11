@@ -136,6 +136,48 @@ export default function SmartContracts() {
         </div>
       </Section>
 
+      <div className=" bg-substrateGray-light pt-20 pb-10 my-20">
+        <Section>
+          <h2 className="text-2xl md:text-3xl text-center mt-10 mb-14 max-w-xl mx-auto">
+            Write, compile and deploy your contract without leaving the browser.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-14">
+            <div className="text-center" data-aos="fade-up">
+              <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
+                <Icon name="fountain-pen" className="m-4 fill-current text-white dark:text-substrateBlackish" />
+              </div>
+              <h3 className="text-xl mb-4 md:mb-6 mx-auto">Write</h3>
+              <p className="leading-relaxed">Open a boilerplate contract in the ink! Playground and start writing.</p>
+              <LineArrowButton centered primary link="https://www.ink-playground.xyz/">
+                Open ink! Playground
+              </LineArrowButton>
+            </div>
+            <div className="text-center" data-aos="fade-up" data-aos-delay="200">
+              <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
+                <Icon name="wrench" className="m-4 fill-current text-white dark:text-substrateBlackish" />
+              </div>
+              <h3 className="text-xl mb-4 md:mb-6 mx-auto">Compile</h3>
+              <p className="leading-relaxed">Compile your contract directly in the ink! Playground.</p>
+              <LineArrowButton centered primary link="https://www.ink-playground.xyz/">
+                Open ink! Playground
+              </LineArrowButton>
+            </div>
+            <div className="text-center" data-aos="fade-up" data-aos-delay="400">
+              <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
+                <Icon name="rocket" className="m-4 fill-current text-white dark:text-substrateBlackish" />
+              </div>
+              <h3 className="text-xl mb-4 md:mb-6 mx-auto">Upload and Deploy</h3>
+              <p className="leading-relaxed">
+                Take your compiled contract bundle to the Contracts UI and deploy it on a local node or testnet.
+              </p>
+              <LineArrowButton centered primary link="https://contracts.substrate.io/">
+                Open Contracts UI
+              </LineArrowButton>
+            </div>
+          </div>
+        </Section>
+      </div>
+
       <Section className="md:mb-40">
         <h2 className="text-4xl font-extrabold mb-8">Explore Code Samples</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center auto-rows-fr">
