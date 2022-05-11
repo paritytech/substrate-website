@@ -142,7 +142,7 @@ export default function SmartContracts() {
             Write, compile and deploy your contract without leaving the browser.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-14">
-            <div className="text-center" data-aos="fade-up">
+            <div className="text-center mb-8" data-aos="fade-up">
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
                 <Icon name="fountain-pen" className="m-4 fill-current text-white dark:text-substrateBlackish" />
               </div>
@@ -152,7 +152,7 @@ export default function SmartContracts() {
                 Open ink! Playground
               </LineArrowButton>
             </div>
-            <div className="text-center" data-aos="fade-up" data-aos-delay="200">
+            <div className="text-center mb-8" data-aos="fade-up" data-aos-delay="200">
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
                 <Icon name="wrench" className="m-4 fill-current text-white dark:text-substrateBlackish" />
               </div>
@@ -162,7 +162,7 @@ export default function SmartContracts() {
                 Open ink! Playground
               </LineArrowButton>
             </div>
-            <div className="text-center" data-aos="fade-up" data-aos-delay="400">
+            <div className="text-center mb-8" data-aos="fade-up" data-aos-delay="400">
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
                 <Icon name="rocket" className="m-4 fill-current text-white dark:text-substrateBlackish" />
               </div>
