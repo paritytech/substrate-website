@@ -136,7 +136,7 @@ export default function SmartContracts() {
         </div>
       </Section>
 
-      <div className=" bg-substrateGray-light pt-20 pb-10 my-20">
+      <div className="bg-substrateGray-light dark:bg-substrateBlackish pt-20 pb-10 my-20">
         <Section>
           <h2 className="text-2xl md:text-3xl text-center mt-10 mb-14 max-w-xl mx-auto">
             Write, compile and deploy your contract without leaving the browser.
