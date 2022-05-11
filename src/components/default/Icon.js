@@ -15,6 +15,7 @@ import resources from '../../images/svg/ecosystem/resources.svg';
 import event from '../../images/svg/event.svg';
 import flag from '../../images/svg/flag.svg';
 import forklessUpgrades from '../../images/svg/forkless-upgrades.svg';
+import fountainPen from '../../images/svg/fountain-pen.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
 import graduation from '../../images/svg/graduation.svg';
 import graph from '../../images/svg/graph.svg';
@@ -42,6 +43,7 @@ import pen from '../../images/svg/pen.svg';
 import placeholder from '../../images/svg/placeholder.svg';
 import polkadotLogo from '../../images/svg/polkadot-logo.svg';
 import question from '../../images/svg/question.svg';
+import rocket from '../../images/svg/rocket.svg';
 import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
 import smile from '../../images/svg/smile.svg';
@@ -104,6 +106,7 @@ import sun from '../../images/svg/ui/sun.svg';
 import time from '../../images/svg/ui/time.svg';
 import w3fLogo from '../../images/svg/w3f-logo.svg';
 import waLogo from '../../images/svg/wa-logo.svg';
+import wrench from '../../images/svg/wrench.svg';
 
 const iconsMap = {
   /* home */
@@ -200,6 +203,9 @@ const iconsMap = {
   graph: graph,
   knight: knight,
   flag: flag,
+  'fountain-pen': fountainPen,
+  wrench: wrench,
+  rocket: rocket,
   /* technology */
   flexible: flexible,
   'future-proof': futureProof,
