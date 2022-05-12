@@ -9,7 +9,7 @@ export default function ExploreCommunityProjects() {
       items: [
         {
           name: 'Canvas',
-          link: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-canvas-rpc.polkadot.io#/explorer',
+          link: 'https://paritytech.github.io/ink-docs/canvas',
           description: 'A smart contract testnet on Roccoco.',
         },
         {
