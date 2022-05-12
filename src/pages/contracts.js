@@ -144,7 +144,7 @@ export default function SmartContracts() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-14">
             <div className="text-center mb-8" data-aos="fade-up">
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
-                <Icon name="fountain-pen" className="m-4 fill-current text-white dark:text-substrateBlackish" />
+                <Icon name="fountain-pen" className="m-3 fill-current text-white dark:text-substrateBlackish" />
               </div>
               <h3 className="text-xl mb-4 md:mb-6 mx-auto">Write</h3>
               <p className="leading-relaxed mb-6 max-w-sm mx-auto">
@@ -156,7 +156,7 @@ export default function SmartContracts() {
             </div>
             <div className="text-center mb-8" data-aos="fade-up" data-aos-delay="200">
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
-                <Icon name="wrench" className="m-4 fill-current text-white dark:text-substrateBlackish" />
+                <Icon name="wrench" className="m-3 fill-current text-white dark:text-substrateBlackish" />
               </div>
               <h3 className="text-xl mb-4 md:mb-6 mx-auto">Compile</h3>
               <p className="leading-relaxed mb-6 max-w-sm mx-auto">
@@ -168,7 +168,7 @@ export default function SmartContracts() {
             </div>
             <div className="text-center mb-8" data-aos="fade-up" data-aos-delay="400">
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
-                <Icon name="rocket" className="m-4 fill-current text-white dark:text-substrateBlackish" />
+                <Icon name="rocket" className="m-3 fill-current text-white dark:text-substrateBlackish" />
               </div>
               <h3 className="text-xl mb-4 md:mb-6 mx-auto">Upload and Deploy</h3>
               <p className="leading-relaxed mb-6 max-w-sm mx-auto">
