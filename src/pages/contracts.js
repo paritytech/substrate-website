@@ -136,9 +136,9 @@ export default function SmartContracts() {
         </div>
       </Section>
 
-      <div className="bg-substrateGray-light dark:bg-substrateBlackish pt-20 pb-10 my-20">
-        <Section>
-          <h2 className="text-2xl md:text-3xl text-center mt-10 mb-14 max-w-xl mx-auto">
+      <section className="bg-substrateGray-light dark:bg-substrateBlackish py-20 my-20">
+        <div className="container">
+          <h2 className="text-2xl md:text-3xl text-center mb-14 max-w-xl mx-auto">
             Write, compile and deploy your contract without leaving the browser.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-14">
@@ -179,8 +179,8 @@ export default function SmartContracts() {
               </LineArrowButton>
             </div>
           </div>
-        </Section>
-      </div>
+        </div>
+      </section>
 
       <Section className="md:mb-40">
         <h2 className="text-4xl font-extrabold mb-8">Explore Code Samples</h2>
