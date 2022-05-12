@@ -55,7 +55,7 @@ export default function SmartContracts() {
   return (
     <Layout>
       <SEO title="Smart Contracts" />
-      <Section className="grid grid-cols-2 items-center">
+      <Section className="grid md:grid-cols-2 items-center">
         <div>
           <h1 className="mb-8 font-title font-extrabold text-5xl md:text-6xl">Smart Contracts</h1>
           <p className="text-base mb-6 max-w-md">
@@ -69,7 +69,7 @@ export default function SmartContracts() {
             </span>
           </p>
         </div>
-        <div className="w-full aspect-w-10 aspect-h-7 mb-8">
+        <div className="hidden md:block w-full aspect-w-10 aspect-h-7 mb-8">
           <Lottie options={{ animationData }} isClickToPauseDisabled height="full" width="full" />
         </div>
       </Section>
