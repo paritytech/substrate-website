@@ -69,7 +69,7 @@ export default function SmartContracts() {
             </span>
           </p>
         </div>
-        <div className="hidden md:block w-full aspect-w-10 aspect-h-7 mb-8">
+        <div className="hidden md:block w-full aspect-w-8 aspect-h-7 mb-8">
           {/* <Lottie options={{ animationData }} isClickToPauseDisabled height="full" width="full" /> */}
           <Icon name="smart-contracts" />
         </div>
