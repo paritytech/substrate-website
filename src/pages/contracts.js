@@ -1,8 +1,8 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import React from 'react';
-import Lottie from 'react-lottie';
 
+// import Lottie from 'react-lottie';
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
 import Card from '../components/layout/Card';
@@ -12,7 +12,7 @@ import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
 import SecondaryButton from '../components/ui/SecondaryButton';
-import * as animationData from '../images/animation/technology/flexible-edges.json';
+// import * as animationData from '../images/animation/technology/flexible-edges.json';
 
 const tutorials = [
   {
@@ -70,7 +70,8 @@ export default function SmartContracts() {
           </p>
         </div>
         <div className="hidden md:block w-full aspect-w-10 aspect-h-7 mb-8">
-          <Lottie options={{ animationData }} isClickToPauseDisabled height="full" width="full" />
+          {/* <Lottie options={{ animationData }} isClickToPauseDisabled height="full" width="full" /> */}
+          <Icon name="smart-contracts" />
         </div>
       </Section>
 
@@ -136,7 +137,7 @@ export default function SmartContracts() {
         </div>
       </Section>
 
-      <section className="bg-substrateGray-light dark:bg-substrateBlackish py-20 my-20">
+      <section className="bg-substrateGray-light dark:bg-substrateBlackish py-20 my-20 md:mb-40">
         <div className="container">
           <h2 className="text-2xl md:text-3xl text-center mb-14 max-w-xl mx-auto">
             Write, compile and deploy your contract without leaving the browser.

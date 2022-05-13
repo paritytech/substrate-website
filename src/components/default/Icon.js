@@ -46,6 +46,7 @@ import question from '../../images/svg/question.svg';
 import rocket from '../../images/svg/rocket.svg';
 import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
+import smartContracts from '../../images/svg/smart-contracts.svg';
 import smile from '../../images/svg/smile.svg';
 import discord from '../../images/svg/social/discord.svg';
 import element from '../../images/svg/social/element.svg';
@@ -226,6 +227,8 @@ const iconsMap = {
   composable: composable,
   'future-proof-base': futureProofBase,
   upgradable: upgradable,
+  /* Smart Contracts */
+  'smart-contracts': smartContracts,
 };
 
 export default function Icon({ name, className, ...others }) {
