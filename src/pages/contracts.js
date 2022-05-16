@@ -2,7 +2,6 @@ import cx from 'classnames';
 import { graphql } from 'gatsby';
 import React from 'react';
 
-// import Lottie from 'react-lottie';
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
 import Card from '../components/layout/Card';
@@ -12,7 +11,6 @@ import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
 import SecondaryButton from '../components/ui/SecondaryButton';
-// import * as animationData from '../images/animation/technology/flexible-edges.json';
 
 const tutorials = [
   {
@@ -70,7 +68,6 @@ export default function SmartContracts() {
           </p>
         </div>
         <div className="hidden md:block w-full aspect-w-8 aspect-h-7 mb-8">
-          {/* <Lottie options={{ animationData }} isClickToPauseDisabled height="full" width="full" /> */}
           <Icon name="smart-contracts" />
         </div>
       </Section>
