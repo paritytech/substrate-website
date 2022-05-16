@@ -16,7 +16,7 @@ const TutorialCard = ({ tutorial }) => {
             <img
               src={image}
               alt={title}
-              className="overflow-hidden w-full h-24 md:h-60 object-cover hover:scale-110 transition-transform"
+              className="overflow-hidden w-full h-28 md:h-60 object-cover hover:scale-110 transition-transform"
             />
           </div>
         </Link>
