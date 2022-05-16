@@ -1,4 +1,3 @@
-import cx from 'classnames';
 import { graphql } from 'gatsby';
 import React from 'react';
 
@@ -6,11 +5,11 @@ import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
 import Card from '../components/layout/Card';
 import ExploreCommunityProjects from '../components/layout/contracts/ExploreCommunityProjects';
+import TutorialCard from '../components/layout/contracts/TutorialCard';
 import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
-import SecondaryButton from '../components/ui/SecondaryButton';
 
 const tutorials = [
   {
@@ -74,62 +73,8 @@ export default function SmartContracts() {
 
       <Section>
         <div className="grid sm:grid-cols-2 auto-rows-max gap-8 justify-center md:my-40 max-w-5xl mx-auto">
-          {tutorials.map(({ link, title, description, image, difficulty, time }, idx) => (
-            <div
-              key={idx}
-              className="bg-substrateGray-light dark:bg-substrateBlackish rounded-md max-w-md overflow-hidden h-full flex flex-col justify-between"
-            >
-              <div>
-                <Link to={link}>
-                  <div className="overflow-hidden">
-                    <img
-                      src={image}
-                      alt={title}
-                      className="overflow-hidden w-full h-24 md:h-60 object-cover hover:scale-110 transition-transform"
-                    />
-                  </div>
-                </Link>
-                <div className="p-6 pb-0">
-                  <Link to={link}>
-                    <h4 className="text-2xl mb-6">{title}</h4>
-                  </Link>
-                  <p className="text-base mb-0">{description}</p>
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="flex flex-wrap justify-between items-center mb-2">
-                  <div className="flex">
-                    <p className="mb-0 text-sm uppercase tracking-wider">
-                      {difficulty === 1
-                        ? 'Beginner'
-                        : difficulty === 2
-                        ? 'Intermediate'
-                        : difficulty === 3 && 'Advanced'}
-                    </p>
-                    <div className="flex ml-1 mt-1">
-                      {[...Array(3)].map((_, idx) => (
-                        <span
-                          key={idx}
-                          className={cx(
-                            'mx-1 inline-block w-3 h-3 bg-substrateDark dark:bg-substrateGray rounded-full',
-                            {
-                              'bg-opacity-10 dark:bg-opacity-20': difficulty <= idx,
-                            }
-                          )}
-                        ></span>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <Icon name="time" />
-                    <span>{time}</span>
-                  </div>
-                </div>
-                <hr />
-
-                <SecondaryButton link={link}>Try it now!</SecondaryButton>
-              </div>
-            </div>
+          {tutorials.map((tutorial, idx) => (
+            <TutorialCard key={idx} tutorial={tutorial} />
           ))}
         </div>
       </Section>
