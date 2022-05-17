@@ -85,7 +85,9 @@ const Open = () => {
           linkText={
             <p className="underline-animate">
               Visit the tools list maintained by the{' '}
-              <Link to="/ecosystem/resources/awesome-substrate/">Awesome Substrate community »</Link>
+              <Link to="https://github.com/substrate-developer-hub/awesome-substrate/blob/master/README.md">
+                Awesome Substrate community »
+              </Link>
             </p>
           }
         >

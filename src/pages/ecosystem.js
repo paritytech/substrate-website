@@ -209,7 +209,7 @@ export default function Home() {
                 title="Awesome Substrate"
                 icon="smile"
                 description="A rich source of content covering everything you need to know to get started, troubleshoot, and fine-tune your skills."
-                link="/ecosystem/resources/awesome-substrate/"
+                link="https://github.com/substrate-developer-hub/awesome-substrate/blob/master/README.md"
                 linkText="Dive in"
                 color="#d6ffcf"
                 delay="200"
