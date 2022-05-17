@@ -1,26 +1,21 @@
 # Netlify app domain
-
 https://substrate-website.netlify.app/* https://substrate.io/:splat 301!
 
 # Legacy links
-
 /builders-program /ecosystem/substrate-builders-program 301!
 /substrate-users /ecosystem/projects 301!
 /newsletter /ecosystem/connect/newsletter 301!
 
 # Category pages
-
 /vision /vision/substrate-and-polkadot 301!
 /ecosystem/opportunities /ecosystem/opportunities/hackathons 301!
 /ecosystem/resources /ecosystem/resources/seminar 301!
 /ecosystem/connect /ecosystem/connect/contact 301!
 
 # Decommissioned pages
-
 /ecosystem/resources/community-resources /ecosystem/resources/awesome-substrate 301!
 /ecosystem/opportunities/jobs/ https://careers.substrate.io 301!
 /ecosystem/resources/awesome-substrate https://github.com/substrate-developer-hub/awesome-substrate/blob/master/README.md 301!
 
 # Catch all
-
 /* / 301
