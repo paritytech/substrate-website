@@ -14,7 +14,9 @@ export default function PastSeminars() {
     <Layout layout="sidebar">
       <SEO title="Past Seminars" />
       <Section>
-        <h1 className="text-4xl font-bold font-body mb-6">Past Seminars</h1>
+        <h1 id="awesome-substrate" className="text-4xl font-bold font-body mb-6">
+          Past Seminars
+        </h1>
       </Section>
 
       <Section>
