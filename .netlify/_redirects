@@ -23,4 +23,4 @@ https://substrate-website.netlify.app/* https://substrate.io/:splat 301!
 
 # Catch all
 
-/\* / 301
+/* / 301
