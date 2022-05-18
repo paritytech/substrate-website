@@ -34,12 +34,12 @@ export default function ExploreCommunityProjects() {
         },
         {
           name: 'Contracts UI',
-          link: 'https://contracts.substrate.io/',
+          link: 'https://contracts-ui.substrate.io/',
           description: 'Deploy and interact with smart contracts on Substrate-based chains.',
         },
         {
           name: 'ink! Playground',
-          link: 'https://ink-playground.xyz/',
+          link: 'https://ink-playground.substrate.io/',
           description: 'Prototype and share ink! smart contracts in-browser.',
         },
       ],
@@ -49,12 +49,12 @@ export default function ExploreCommunityProjects() {
       items: [
         {
           name: 'ink! Documentation',
-          link: 'https://paritytech.github.io/ink-docs/',
+          link: 'https://ink.substrate.io/',
           description: 'Dive deep into the ink! smart contract language.',
         },
         {
           name: 'Solang Solidity Compiler',
-          link: 'https://solang.readthedocs.io/',
+          link: 'https://solang.readthedocs.io/en/latest/#',
           description: 'Write Solidity contracts.',
         },
         {
