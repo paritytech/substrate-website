@@ -34,17 +34,17 @@ const cards = [
   {
     title: 'ERC20 Contract',
     description: 'Learn to write an ERC20 contract.',
-    link: 'https://www.ink-playground.xyz/?id=73034cd9a3c0ddf6cbc7ee94380f624b',
+    link: 'https://ink-playground.substrate.io/?id=c700979d399f9a7ab27569b25e332d18',
   },
   {
     title: 'Incrementer',
     description: 'Learn to write a simple incrementer contract.',
-    link: 'https://www.example.com/',
+    link: 'https://ink-playground.substrate.io/?id=269b6720894ec48d076ef943f8e613f1',
   },
   {
     title: 'DNS Contract',
     description: 'Learn to write a DNS contract.',
-    link: 'https://www.ink-playground.xyz/?id=926d08d4afd109f981214cc4999ad48e',
+    link: 'https://ink-playground.substrate.io/?id=9c194d676c83265d5c32bacac45b7d98',
   },
 ];
 
@@ -93,7 +93,7 @@ export default function SmartContracts() {
               <p className="leading-relaxed mb-6 max-w-sm mx-auto">
                 Open a boilerplate contract in the ink! Playground and start writing.
               </p>
-              <LineArrowButton centered primary link="https://www.ink-playground.xyz/">
+              <LineArrowButton centered primary link="https://ink-playground.substrate.io/">
                 Open ink! Playground
               </LineArrowButton>
             </div>
@@ -105,7 +105,7 @@ export default function SmartContracts() {
               <p className="leading-relaxed mb-6 max-w-sm mx-auto">
                 Compile your contract directly in the ink! Playground.
               </p>
-              <LineArrowButton centered primary link="https://www.ink-playground.xyz/">
+              <LineArrowButton centered primary link="https://ink-playground.substrate.io/">
                 Open ink! Playground
               </LineArrowButton>
             </div>
@@ -117,7 +117,7 @@ export default function SmartContracts() {
               <p className="leading-relaxed mb-6 max-w-sm mx-auto">
                 Take your compiled contract bundle to the Contracts UI and deploy it on a local node or testnet.
               </p>
-              <LineArrowButton centered primary link="https://contracts.substrate.io/">
+              <LineArrowButton centered primary link="https://contracts-ui.substrate.io/">
                 Open Contracts UI
               </LineArrowButton>
             </div>
