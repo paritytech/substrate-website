@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby';
+import { Link } from 'gatsby-plugin-substrate/src/components/default/Link';
 import React from 'react';
 
 import FlipIcon from '../../components/default/FlipIcon';
-import { Link } from '../../components/default/Link';
 import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import CaseStudyBanner from '../../components/layout/technology/CaseStudyBanner';

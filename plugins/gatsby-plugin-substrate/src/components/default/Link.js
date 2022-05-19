@@ -45,10 +45,11 @@ const addTrailingSlash = uri => {
 };
 
 const InfraLink = ({ to, title, children, ...other }) => {
-  const { colorMode } = useContext(ThemeContext);
+  const ctx = useContext(ThemeContext);
 
   const handleClick = (e, to) => {
     e.preventDefault();
+    if (!('colorMode' in ctx)) return;
     window.location.href = addTrailingSlash(to) + `?mode=${colorMode}`;
   };
 

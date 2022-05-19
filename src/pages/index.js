@@ -1,12 +1,12 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby-plugin-substrate/src/components/default/Link';
 import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
 
 import Icon from '../components/default/Icon';
-import { Link } from '../components/default/Link';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';

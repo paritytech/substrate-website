@@ -104,7 +104,7 @@ import sun from '../../images/svg/ui/sun.svg';
 import w3fLogo from '../../images/svg/w3f-logo.svg';
 import waLogo from '../../images/svg/wa-logo.svg';
 
-const iconsMap = {
+export const iconsMap = {
   /* home */
   developers: developers,
   projects: projects,

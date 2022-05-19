@@ -1,11 +1,11 @@
 import cx from 'classnames';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, LinkMenu } from 'gatsby-plugin-substrate/src/components/default/Link';
 import React from 'react';
 
 import data from '../../../data/teams.json';
 import DataContext from '../../contexts/DataContext';
 import { useSiteMenus } from '../../hooks/use-site-menus';
-import { Link, LinkMenu } from '../default/Link';
 
 const NavSidebarCaseStudySubMenu = () => {
   const teams = data.teams;

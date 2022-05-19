@@ -1,7 +1,7 @@
+import { Link } from 'gatsby-plugin-substrate/src/components/default/Link';
 import React from 'react';
 
 import Icon from '../../default/Icon';
-import { Link } from '../../default/Link';
 import LineArrowButton from '../../ui/LineArrowButton';
 
 const IconCard = ({ title, description, link, delay, icon, color, linkText }) => {

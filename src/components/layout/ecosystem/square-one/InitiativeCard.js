@@ -1,6 +1,6 @@
+import { Link } from 'gatsby-plugin-substrate/src/components/default/Link';
 import React from 'react';
 
-import { Link } from '../../../default/Link';
 import BlueTag from '../../../ui/BlueTag';
 import LineArrowButton from '../../../ui/LineArrowButton';
 
