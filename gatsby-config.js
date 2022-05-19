@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata,
   plugins: [
     /* Custom ESLint to your Gatsby dev environment  */
-    { resolve: 'gatsby-plugin-substrate' },
+    { resolve: 'gatsby-plugin-substrate-ui' },
     {
       resolve: 'gatsby-plugin-eslint',
       options: {

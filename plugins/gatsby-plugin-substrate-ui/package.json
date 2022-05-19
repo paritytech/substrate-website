@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-plugin-substrate",
+  "name": "gatsby-plugin-substrate-ui",
   "version": "1.0.0",
   "description": "A minimal boilerplate for the essential files Gatsby looks for in a plugin",
   "main": "index.js",

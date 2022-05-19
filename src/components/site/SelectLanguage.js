@@ -1,5 +1,5 @@
 import { useI18next } from 'gatsby-plugin-react-i18next';
-import { Link } from 'gatsby-plugin-substrate/src/components/default/Link';
+import { Link } from 'gatsby-plugin-substrate-ui/src/components/default/Link';
 import React from 'react';
 
 const SelectLanguage = () => {

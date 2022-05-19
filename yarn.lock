@@ -7529,7 +7529,7 @@ gatsby-plugin-sitemap@^4.10.0:
     minimatch "^3.0.4"
     sitemap "^7.0.0"
 
-"gatsby-plugin-substrate@file:plugins/gatsby-plugin-substrate":
+"gatsby-plugin-substrate-ui@file:plugins/gatsby-plugin-substrate-ui":
   version "1.0.0"
 
 gatsby-plugin-typescript@^3.7.1:
