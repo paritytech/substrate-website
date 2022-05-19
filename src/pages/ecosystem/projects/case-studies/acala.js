@@ -47,6 +47,7 @@ const Categories = ({ categories }) => (
 export default function AcalaCaseStudy({ data }) {
   const acalaData = teamsData.teams.find(team => team.name === 'Acala Network');
   const logo = getImage(data.logo);
+
   return (
     <Layout layout="sidebar" hasBreadcrumbs={false}>
       <SEO title="Acala Network Case Study" />
@@ -55,7 +56,7 @@ export default function AcalaCaseStudy({ data }) {
         <div className="tracking-wider uppercase mb-4">Case Study</div>
         <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center">
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={acalaData.name} />
-          <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{acalaData.name}</div>
+          <h1 className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{acalaData.name}</h1>
         </div>
         <div className="mb-3 font-bold text-lg md:text-xl">DeFi and liquidity hub for Polkadot</div>
         <div className="my-10">
