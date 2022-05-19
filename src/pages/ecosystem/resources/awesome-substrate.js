@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { Link } from 'gatsby-plugin-substrate-ui/src/components/default/Link';
+import { Link } from 'gatsby-plugin-substrate/src/components/default/Link';
 import React from 'react';
 
 import Section from '../../../components/layout/Section';

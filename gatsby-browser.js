@@ -1,7 +1,7 @@
 import './src/styles/global.css';
 import './src/styles/scss/styles.scss';
 
-import { ThemeProvider } from 'gatsby-plugin-substrate-ui/src/contexts/ThemeContext';
+import { ThemeProvider } from 'gatsby-plugin-substrate/src/contexts/ThemeContext';
 import React from 'react';
 
 import { DataProvider } from './src/contexts/DataContext';
