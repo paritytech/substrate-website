@@ -49,8 +49,8 @@ const InfraLink = ({ to, title, children, ...other }) => {
 
   const handleClick = (e, to) => {
     e.preventDefault();
-    if (!ctx['colorMode']) return;
-    window.location.href = addTrailingSlash(to) + `?mode=${ctx.colorMode}`;
+    const colorMode = ctx.colorMode || 'light';
+    window.location.href = addTrailingSlash(to) + `?mode=${colorMode}`;
   };
 
   return (
