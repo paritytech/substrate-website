@@ -15,12 +15,12 @@ export default function ExploreCommunityProjects() {
         {
           name: 'Moonbeam',
           link: '/ecosystem/projects/case-studies/moonbeam/',
-          description: 'An Ethereum-compatible smart contract parachain.',
+          description: 'An Ethereum-compatible smart contract parachain on Polkadot.',
         },
         {
           name: 'Astar',
           link: '/ecosystem/projects/case-studies/astar/',
-          description: 'Jump right into the technical components required to build a parachain.',
+          description: 'Astar Network is a scaling dapps platform on Polkadot.',
         },
       ],
     },
