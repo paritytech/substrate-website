@@ -73,7 +73,7 @@ const Link = ({ to, title, children, ...other }) => {
   } else if (infraLink) {
     return (
       <InfraLink to={to} title={title} {...other}>
-        {children}yo
+        {children}
       </InfraLink>
     );
   } else {
