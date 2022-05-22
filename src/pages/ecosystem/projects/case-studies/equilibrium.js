@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby-plugin-substrate/src/components/default/Link';
+import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import teamsData from '../../../../../data/teams.json';

@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React, { useState } from 'react';
 
-import Icon from '../default/Icon';
+import { Icon } from '../default/Icon';
 import { Link } from '../default/Link';
 
 const ActiveCampaign = () => (
@@ -16,7 +16,7 @@ const ActiveCampaign = () => (
   </>
 );
 
-export default function Newsletter({ layout = 'default', iconsMap = {} }) {
+export function Newsletter({ layout = 'default', iconsMap = {} }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [failedSubmission, setFailedSubmission] = useState(false);
   const [loading, setLoading] = useState(false);

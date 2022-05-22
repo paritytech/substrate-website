@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import { Link } from 'gatsby-plugin-substrate/src/components/default/Link';
+import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 const SecondaryButton = ({ children, className, link }) => {

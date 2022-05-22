@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import Newsletter from 'gatsby-plugin-substrate/src/components/site/newsletter';
+import { Newsletter } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import Icon, { iconsMap } from '../default/Icon';

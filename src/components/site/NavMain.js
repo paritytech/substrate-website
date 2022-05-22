@@ -1,6 +1,6 @@
 import cx from 'classnames';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { buildSubMenu, LinkMenu } from 'gatsby-plugin-substrate/src/components/default/Link';
+import { buildSubMenu, LinkMenu } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
 
 import useComponentVisible from '../../hooks/use-component-visible';

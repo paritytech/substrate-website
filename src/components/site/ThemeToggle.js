@@ -1,4 +1,4 @@
-import { ThemeContext } from 'gatsby-plugin-substrate/src/contexts/ThemeContext';
+import { ThemeContext } from 'gatsby-plugin-substrate';
 import React, { useContext } from 'react';
 
 import Icon from '../default/Icon';

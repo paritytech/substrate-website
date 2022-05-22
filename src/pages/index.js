@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby-plugin-substrate/src/components/default/Link';
+import { Link } from 'gatsby-plugin-substrate';
 import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';

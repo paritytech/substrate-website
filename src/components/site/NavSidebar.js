@@ -1,6 +1,6 @@
 import cx from 'classnames';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { Link, LinkMenu } from 'gatsby-plugin-substrate/src/components/default/Link';
+import { Link, LinkMenu } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import data from '../../../data/teams.json';

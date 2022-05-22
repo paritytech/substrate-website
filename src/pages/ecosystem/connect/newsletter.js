@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import Newsletter from 'gatsby-plugin-substrate/src/components/site/newsletter';
+import { Newsletter } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import Layout from '../../../components/site/Layout';
