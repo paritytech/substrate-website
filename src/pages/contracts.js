@@ -31,24 +31,6 @@ const tutorials = [
   },
 ];
 
-const cards = [
-  {
-    title: 'ERC20 Contract',
-    description: 'Learn to write an ERC20 contract.',
-    link: 'https://ink-playground.substrate.io/?id=c700979d399f9a7ab27569b25e332d18',
-  },
-  {
-    title: 'Incrementer',
-    description: 'Learn to write a simple incrementer contract.',
-    link: 'https://ink-playground.substrate.io/?id=269b6720894ec48d076ef943f8e613f1',
-  },
-  {
-    title: 'DNS Contract',
-    description: 'Learn to write a DNS contract.',
-    link: 'https://ink-playground.substrate.io/?id=9c194d676c83265d5c32bacac45b7d98',
-  },
-];
-
 const highlights = [
   {
     icon: 'fountain-pen',
@@ -70,6 +52,24 @@ const highlights = [
     description: 'Take your compiled contract bundle to the Contracts UI and deploy it on a local node or testnet.',
     link: 'https://paritytech.github.io/contracts-ui/',
     linkText: 'Open Contracts UI',
+  },
+];
+
+const cards = [
+  {
+    title: 'ERC20 Contract',
+    description: 'Learn to write an ERC20 contract.',
+    link: 'https://ink-playground.substrate.io/?id=c700979d399f9a7ab27569b25e332d18',
+  },
+  {
+    title: 'Incrementer',
+    description: 'Learn to write a simple incrementer contract.',
+    link: 'https://ink-playground.substrate.io/?id=269b6720894ec48d076ef943f8e613f1',
+  },
+  {
+    title: 'DNS Contract',
+    description: 'Learn to write a DNS contract.',
+    link: 'https://ink-playground.substrate.io/?id=9c194d676c83265d5c32bacac45b7d98',
   },
 ];
 
