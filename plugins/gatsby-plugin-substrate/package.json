@@ -1,0 +1,12 @@
+{
+  "name": "gatsby-plugin-substrate",
+  "version": "1.0.0",
+  "description": "A plugin consisting of our shared substrate components, utils etc",
+  "main": "index.js",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "author": " W3F/Parity WebOps <webops@web3.foundation>",
+  "license": "0BSD"
+}

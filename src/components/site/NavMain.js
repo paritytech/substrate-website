@@ -1,11 +1,11 @@
 import cx from 'classnames';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { buildSubMenu, LinkMenu } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
 
 import useComponentVisible from '../../hooks/use-component-visible';
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import Icon from '../default/Icon';
-import { buildSubMenu, LinkMenu } from '../default/Link';
 
 const itemClass = 'pl-6 pr-12 py-2';
 
