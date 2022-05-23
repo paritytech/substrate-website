@@ -117,7 +117,7 @@ export default function SmartContracts() {
               <p className="leading-relaxed mb-6 max-w-sm mx-auto">
                 Take your compiled contract bundle to the Contracts UI and deploy it on a local node or testnet.
               </p>
-              <LineArrowButton centered primary link="https://contracts-ui.substrate.io/">
+              <LineArrowButton centered primary link="https://paritytech.github.io/contracts-ui/">
                 Open Contracts UI
               </LineArrowButton>
             </div>
