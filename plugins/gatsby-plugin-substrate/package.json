@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-substrate",
   "version": "1.0.0",
-  "description": "A minimal boilerplate for the essential files Gatsby looks for in a plugin",
+  "description": "A plugin consisting of our shared substrate components, utils etc",
   "main": "index.js",
   "keywords": [
     "gatsby",
