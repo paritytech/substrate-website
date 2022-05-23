@@ -5,6 +5,7 @@ import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
 import Card from '../components/layout/Card';
 import ExploreCommunityProjects from '../components/layout/contracts/ExploreCommunityProjects';
+import Highlight from '../components/layout/contracts/Highlight';
 import TutorialCard from '../components/layout/contracts/TutorialCard';
 import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
@@ -48,6 +49,30 @@ const cards = [
   },
 ];
 
+const highlights = [
+  {
+    icon: 'fountain-pen',
+    title: 'Write',
+    description: 'Open a boilerplate contract in the ink! Playground and start writing.',
+    link: 'https://ink-playground.substrate.io/',
+    linkText: 'Open ink! Playground',
+  },
+  {
+    icon: 'wrench',
+    title: 'Compile',
+    description: 'Compile your contract directly in the ink! Playground.',
+    link: 'https://ink-playground.substrate.io/',
+    linkText: 'Open ink! Playground',
+  },
+  {
+    icon: 'rocket',
+    title: 'Upload and Deploy',
+    description: 'Take your compiled contract bundle to the Contracts UI and deploy it on a local node or testnet.',
+    link: 'https://paritytech.github.io/contracts-ui/',
+    linkText: 'Open Contracts UI',
+  },
+];
+
 export default function SmartContracts() {
   return (
     <Layout>
@@ -85,42 +110,9 @@ export default function SmartContracts() {
             Write, compile and deploy your contract without leaving the browser.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-14">
-            <div className="text-center mb-8" data-aos="fade-up">
-              <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
-                <Icon name="fountain-pen" className="m-3 fill-current text-white dark:text-substrateBlackish" />
-              </div>
-              <h3 className="text-xl mb-4 md:mb-6 mx-auto">Write</h3>
-              <p className="leading-relaxed mb-6 max-w-sm mx-auto">
-                Open a boilerplate contract in the ink! Playground and start writing.
-              </p>
-              <LineArrowButton centered primary link="https://ink-playground.substrate.io/">
-                Open ink! Playground
-              </LineArrowButton>
-            </div>
-            <div className="text-center mb-8" data-aos="fade-up" data-aos-delay="200">
-              <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
-                <Icon name="wrench" className="m-3 fill-current text-white dark:text-substrateBlackish" />
-              </div>
-              <h3 className="text-xl mb-4 md:mb-6 mx-auto">Compile</h3>
-              <p className="leading-relaxed mb-6 max-w-sm mx-auto">
-                Compile your contract directly in the ink! Playground.
-              </p>
-              <LineArrowButton centered primary link="https://ink-playground.substrate.io/">
-                Open ink! Playground
-              </LineArrowButton>
-            </div>
-            <div className="text-center mb-8" data-aos="fade-up" data-aos-delay="400">
-              <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
-                <Icon name="rocket" className="m-3 fill-current text-white dark:text-substrateBlackish" />
-              </div>
-              <h3 className="text-xl mb-4 md:mb-6 mx-auto">Upload and Deploy</h3>
-              <p className="leading-relaxed mb-6 max-w-sm mx-auto">
-                Take your compiled contract bundle to the Contracts UI and deploy it on a local node or testnet.
-              </p>
-              <LineArrowButton centered primary link="https://paritytech.github.io/contracts-ui/">
-                Open Contracts UI
-              </LineArrowButton>
-            </div>
+            {highlights.map((highlight, idx) => (
+              <Highlight highlight={highlight} key={idx} />
+            ))}
           </div>
         </div>
       </section>
