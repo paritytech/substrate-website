@@ -5,15 +5,6 @@ require('dotenv').config({
 
 module.exports = {
   plugins: [
-    /* work with images
-       - need to be after sourcing images
-       - docs: https://www.gatsbyjs.com/plugins/gatsby-plugin-image */
-    `gatsby-plugin-image`,
-    /* transform and get data from images */
-    `gatsby-plugin-sharp`,
-    /* querying for images used in dynamic components */
-    `gatsby-transformer-sharp`,
-
     {
       resolve: `gatsby-plugin-react-i18next`,
       options: {

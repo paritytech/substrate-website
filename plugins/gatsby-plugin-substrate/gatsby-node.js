@@ -11,4 +11,4 @@
  *
  * See: https://www.gatsbyjs.com/docs/creating-a-local-plugin/#developing-a-local-plugin-that-is-outside-your-project
  */
-exports.onPreInit = () => console.log('Loaded gatsby-starter-plugin');
+exports.onPreInit = () => console.log('Loaded gatsby-plugin-substrate');
