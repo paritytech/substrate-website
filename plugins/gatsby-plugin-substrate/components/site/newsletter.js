@@ -16,7 +16,7 @@ const ActiveCampaign = () => (
   </>
 );
 
-export function Newsletter({ layout = 'default', iconsMap = {} }) {
+export function Newsletter({ layout = 'default' }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [failedSubmission, setFailedSubmission] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -54,9 +54,7 @@ export function Newsletter({ layout = 'default', iconsMap = {} }) {
       })}
     >
       <div className="flex items-center">
-        {!widget && (
-          <Icon IconComponent={iconsMap['paperplane']} className="h-7 w-7 mb-4 mr-4 fill-current text-white" />
-        )}
+        {!widget && <Icon name="paperplane" className="h-7 w-7 mb-4 mr-4 fill-current text-white" />}
         <h2
           className={cn('font-bold mb-4', {
             'text-2xl': !widget,
@@ -135,9 +133,7 @@ export function Newsletter({ layout = 'default', iconsMap = {} }) {
       {formSubmitted && (
         <div>
           <div className="flex">
-            {!widget && (
-              <Icon IconComponent={iconsMap['check-mark']} className="flex-shrink-0 h-7 w-7 mb-4 mr-4 rounded-full" />
-            )}
+            {!widget && <Icon name="check-mark" className="flex-shrink-0 h-7 w-7 mb-4 mr-4 rounded-full" />}
             <p className="font-semibold text-lg ml-0.5">
               To complete the subscription process, please click the link in the email we just sent you.
             </p>
