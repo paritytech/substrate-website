@@ -10,7 +10,7 @@
   "author": " W3F/Parity WebOps <webops@web3.foundation>",
   "license": "0BSD",
   "scripts": {
-    "svg": "npx @svgr/cli svg/raw --out-dir svg/out --icon --svgo-config .svgorc.json"
+    "svg": "npx @svgr/cli svg/raw --out-dir svg/out .svgorc.json"
   },
   "devDependencies": {
     "@svgr/cli": "^5.4.0"

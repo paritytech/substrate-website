@@ -2,36 +2,36 @@ import * as React from 'react';
 
 function SvgLogos(props) {
   return (
-    <svg
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="1em"
-      height="1em"
-      fill="none"
-      viewBox="0 0 600 480"
-      {...props}
-    >
-      <circle cx={380} cy={60} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={540} cy={420} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={540} cy={240} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={540} cy={60} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={380} cy={420} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={220} cy={60} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={60} cy={420} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={60} cy={60} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={220} cy={420} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={380} cy={240} r={60} fill="currentColor" opacity={0.85} />
-      <circle cx={220} cy={240} r={60} fill="currentColor" opacity={0.8} />
-      <circle cx={60} cy={240} r={60} fill="currentColor" opacity={0.8} />
+    <svg xmlnsXlink="http://www.w3.org/1999/xlink" width={600} height={480} fill="none" {...props}>
+      <circle cx={380} cy={60} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={540} cy={420} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={540} cy={240} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={540} cy={60} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={380} cy={420} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={220} cy={60} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={60} cy={420} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={60} cy={60} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={220} cy={420} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={380} cy={240} r={60} fill="#fff" opacity={0.85} />
+      <circle cx={220} cy={240} r={60} fill="#fff" opacity={0.8} />
+      <circle cx={60} cy={240} r={60} fill="#fff" opacity={0.8} />
       <path
-        fill="currentColor"
+        fill="url(#logos_svg__paint0_linear)"
         fillRule="evenodd"
-        d="M42.875 227c1.781 0 3.226 1.456 3.226 3.252a3.25 3.25 0 01-2.125 3.057v16.845c2.308-.103 4.454-.529 6.36-1.234v-12.914a3.252 3.252 0 01-2.125-3.057c0-1.796 1.445-3.252 3.226-3.252 1.782 0 3.227 1.456 3.227 3.252a3.252 3.252 0 01-2.126 3.057v11.918c2.12-1.156 3.819-2.719 4.945-4.607a3.795 3.795 0 01-1.244-2.817c0-2.094 1.684-3.791 3.761-3.791.17 0 .339.011.503.034 2.865-5.021 9.008-8.062 16.337-8.139l.285-.001H88.9c.608 0 1.101.497 1.101 1.109 0 .591-.458 1.074-1.036 1.108l-.065.002h-2.11v16.869a3.25 3.25 0 012.125 3.057c0 1.796-1.444 3.252-3.226 3.252s-3.226-1.456-3.226-3.252a3.25 3.25 0 012.125-3.057v-16.869h-6.36v16.869a3.25 3.25 0 012.125 3.057c0 1.796-1.445 3.252-3.227 3.252-1.781 0-3.226-1.456-3.226-3.252a3.25 3.25 0 012.125-3.057v-16.845c-2.308.103-4.454.529-6.36 1.234v12.914a3.252 3.252 0 012.125 3.057c0 1.796-1.445 3.252-3.226 3.252-1.782 0-3.227-1.456-3.227-3.252 0-1.406.886-2.603 2.126-3.057v-11.918c-2.12 1.156-3.819 2.719-4.945 4.607a3.795 3.795 0 011.244 2.817c0 2.094-1.684 3.791-3.761 3.791-.17 0-.339-.011-.503-.034-2.865 5.021-9.008 8.062-16.337 8.139l-.285.001H31.1c-.608 0-1.101-.497-1.101-1.109 0-.591.458-1.074 1.036-1.108l.065-.002h2.11v-16.869a3.25 3.25 0 01-2.125-3.057c0-1.796 1.444-3.252 3.226-3.252s3.226 1.456 3.226 3.252a3.252 3.252 0 01-2.125 3.057v16.869h6.36v-16.869a3.25 3.25 0 01-2.125-3.057c0-1.796 1.445-3.252 3.227-3.252zM524.486 417.49l-12.42 5.648c-2.761 1.256-2.753 5.223.013 6.468l30.62 13.783a6.937 6.937 0 005.749-.024l19.496-8.97c2.741-1.26 2.735-5.199-.008-6.453l-12.26-5.602-7.227 3.325a6.933 6.933 0 01-5.749.024l-18.214-8.199z"
+        d="M42.875 227c1.781 0 3.226 1.456 3.226 3.252a3.25 3.25 0 01-2.125 3.057v16.845c2.308-.103 4.454-.529 6.36-1.234v-12.914a3.252 3.252 0 01-2.125-3.057c0-1.796 1.445-3.252 3.226-3.252 1.782 0 3.227 1.456 3.227 3.252a3.252 3.252 0 01-2.126 3.057v11.918c2.12-1.156 3.819-2.719 4.945-4.607a3.795 3.795 0 01-1.244-2.817c0-2.094 1.684-3.791 3.761-3.791.17 0 .339.011.503.034 2.865-5.021 9.008-8.062 16.337-8.139l.285-.001H88.9c.608 0 1.101.497 1.101 1.109 0 .591-.458 1.074-1.036 1.108l-.065.002h-2.11v16.869a3.25 3.25 0 012.125 3.057c0 1.796-1.444 3.252-3.226 3.252s-3.226-1.456-3.226-3.252a3.25 3.25 0 012.125-3.057v-16.869h-6.36v16.869a3.25 3.25 0 012.125 3.057c0 1.796-1.445 3.252-3.227 3.252-1.781 0-3.226-1.456-3.226-3.252a3.25 3.25 0 012.125-3.057v-16.845c-2.308.103-4.454.529-6.36 1.234v12.914a3.252 3.252 0 012.125 3.057c0 1.796-1.445 3.252-3.226 3.252-1.782 0-3.227-1.456-3.227-3.252 0-1.406.886-2.603 2.126-3.057v-11.918c-2.12 1.156-3.819 2.719-4.945 4.607a3.795 3.795 0 011.244 2.817c0 2.094-1.684 3.791-3.761 3.791-.17 0-.339-.011-.503-.034-2.865 5.021-9.008 8.062-16.337 8.139l-.285.001H31.1c-.608 0-1.101-.497-1.101-1.109 0-.591.458-1.074 1.036-1.108l.065-.002h2.11v-16.869a3.25 3.25 0 01-2.125-3.057c0-1.796 1.444-3.252 3.226-3.252s3.226 1.456 3.226 3.252a3.252 3.252 0 01-2.125 3.057v16.869h6.36v-16.869a3.25 3.25 0 01-2.125-3.057c0-1.796 1.445-3.252 3.227-3.252z"
         clipRule="evenodd"
       />
       <path
-        fill="currentColor"
-        d="M531.923 394.623a6.932 6.932 0 015.757.005l30.26 13.827c2.743 1.254 2.748 5.193.008 6.454l-19.496 8.969a6.933 6.933 0 01-5.749.024l-30.621-13.783c-2.765-1.245-2.773-5.212-.012-6.467l19.853-9.029zM350 210h60v60h-60z"
+        fill="url(#logos_svg__paint1_linear)"
+        fillRule="evenodd"
+        d="M524.486 417.49l-12.42 5.648c-2.761 1.256-2.753 5.223.013 6.468l30.62 13.783a6.937 6.937 0 005.749-.024l19.496-8.97c2.741-1.26 2.735-5.199-.008-6.453l-12.26-5.602-7.227 3.325a6.933 6.933 0 01-5.749.024l-18.214-8.199z"
+        clipRule="evenodd"
       />
+      <path
+        fill="url(#logos_svg__paint2_linear)"
+        d="M531.923 394.623a6.932 6.932 0 015.757.005l30.26 13.827c2.743 1.254 2.748 5.193.008 6.454l-19.496 8.969a6.933 6.933 0 01-5.749.024l-30.621-13.783c-2.765-1.245-2.773-5.212-.012-6.467l19.853-9.029z"
+      />
+      <path fill="url(#logos_svg__pattern0)" d="M350 210h60v60h-60z" />
       <mask
         id="logos_svg__a"
         style={{
@@ -43,21 +43,40 @@ function SvgLogos(props) {
         y={30}
         maskUnits="userSpaceOnUse"
       >
-        <circle cx={380} cy={60} r={30} fill="currentColor" />
+        <circle cx={380} cy={60} r={30} fill="#C4C4C4" />
       </mask>
       <g mask="url(#logos_svg__a)">
-        <path fill="currentColor" d="M350 30h60v60h-60z" />
+        <path fill="url(#logos_svg__pattern1)" d="M350 30h60v60h-60z" />
       </g>
       <path
-        fill="currentColor"
+        fill="url(#logos_svg__paint3_linear)"
         fillRule="evenodd"
-        d="M231.456 249.679l11.463 9.678v-.242c.976-1.21 1.952-2.661 2.927-4.113l-12.927-7.5-1.463 2.177zM234.893 240.006h14.878v.242c0 1.451-.244 2.903-.488 4.355v.967c-.244 1.452-.732 2.904-1.22 4.355v.242l-14.146-5.08c.732-1.452.976-3.146.976-5.081zM246.109 225.001c.732 1.452 1.463 2.903 1.951 4.355l.244.242v.242c.488 1.451.976 2.903 1.22 4.355v.242l-14.635 2.661c-.487-2.661-1.463-5.081-3.17-7.016l11.463-9.678v.242l2.927 4.355zM222.683 225.242C221.707 225 220.976 225 220 225v-15c1.707 0 3.415.242 5.122.484 1.707.242 3.171.726 4.878 1.21 1.463.483 3.171 1.209 4.634 2.177 1.464.726 2.683 1.694 4.146 2.903h.244l-9.512 11.371c-1.219-1.21-2.927-1.935-4.39-2.661-.732 0-1.707-.242-2.439-.242z"
+        d="M231.456 249.679l11.463 9.678v-.242c.976-1.21 1.952-2.661 2.927-4.113l-12.927-7.5-1.463 2.177z"
         clipRule="evenodd"
       />
       <path
-        fill="currentColor"
-        d="M220 210v15c-8.293 0-15.122 6.774-15.122 15 0 8.226 6.829 15 15.122 15 4.39 0 8.78-1.935 11.463-5.323l11.464 9.678C237.317 266.129 228.78 270 220 270a29.91 29.91 0 01-30-30c0-16.694 13.171-30 30-30zm14.146 35.081l14.147 5.08c-.488 1.694-1.464 3.145-2.195 4.839l-12.927-7.5c.244-.726.731-1.452.975-2.419zm15.366-10.404c.244 1.694.488 3.388.488 5.323h-14.878c0-.968 0-1.694-.244-2.661l14.634-2.662zm-10.244-17.661c1.22 1.21 2.683 2.419 3.659 3.629l-11.464 9.678c-.487-.726-1.219-1.21-1.951-1.936l9.756-11.371zM30 30h60v60H30z"
+        fill="url(#logos_svg__paint4_linear)"
+        fillRule="evenodd"
+        d="M234.893 240.006h14.878v.242c0 1.451-.244 2.903-.488 4.355v.967c-.244 1.452-.732 2.904-1.22 4.355v.242l-14.146-5.08c.732-1.452.976-3.146.976-5.081z"
+        clipRule="evenodd"
       />
+      <path
+        fill="url(#logos_svg__paint5_linear)"
+        fillRule="evenodd"
+        d="M246.109 225.001c.732 1.452 1.463 2.903 1.951 4.355l.244.242v.242c.488 1.451.976 2.903 1.22 4.355v.242l-14.635 2.661c-.487-2.661-1.463-5.081-3.17-7.016l11.463-9.678v.242l2.927 4.355z"
+        clipRule="evenodd"
+      />
+      <path
+        fill="url(#logos_svg__paint6_linear)"
+        fillRule="evenodd"
+        d="M222.683 225.242C221.707 225 220.976 225 220 225v-15c1.707 0 3.415.242 5.122.484 1.707.242 3.171.726 4.878 1.21 1.463.483 3.171 1.209 4.634 2.177 1.464.726 2.683 1.694 4.146 2.903h.244l-9.512 11.371c-1.219-1.21-2.927-1.935-4.39-2.661-.732 0-1.707-.242-2.439-.242z"
+        clipRule="evenodd"
+      />
+      <path
+        fill="#1D2667"
+        d="M220 210v15c-8.293 0-15.122 6.774-15.122 15 0 8.226 6.829 15 15.122 15 4.39 0 8.78-1.935 11.463-5.323l11.464 9.678C237.317 266.129 228.78 270 220 270a29.91 29.91 0 01-30-30c0-16.694 13.171-30 30-30zm14.146 35.081l14.147 5.08c-.488 1.694-1.464 3.145-2.195 4.839l-12.927-7.5c.244-.726.731-1.452.975-2.419zm15.366-10.404c.244 1.694.488 3.388.488 5.323h-14.878c0-.968 0-1.694-.244-2.661l14.634-2.662zm-10.244-17.661c1.22 1.21 2.683 2.419 3.659 3.629l-11.464 9.678c-.487-.726-1.219-1.21-1.951-1.936l9.756-11.371z"
+      />
+      <path fill="url(#logos_svg__pattern2)" d="M30 30h60v60H30z" />
       <mask
         id="logos_svg__b"
         style={{
@@ -69,31 +88,33 @@ function SvgLogos(props) {
         y={390}
         maskUnits="userSpaceOnUse"
       >
-        <circle cx={380} cy={420} r={30} fill="currentColor" />
+        <circle cx={380} cy={420} r={30} fill="#C4C4C4" />
       </mask>
       <g mask="url(#logos_svg__b)">
-        <path fill="currentColor" d="M347.805 387.805h64.39v64.39h-64.39z" />
+        <path fill="url(#logos_svg__pattern3)" d="M347.805 387.805h64.39v64.39h-64.39z" />
       </g>
+      <path fill="url(#logos_svg__pattern4)" d="M193 33h60v53h-60z" />
+      <path fill="url(#logos_svg__pattern5)" d="M510 210h60v60h-60z" />
       <path
-        fill="currentColor"
-        d="M193 33h60v53h-60zM510 210h60v60h-60zM36.58 401.254c10.352-12.935 29.23-15.028 42.166-4.675 12.934 10.353 15.028 29.232 4.675 42.167-10.353 12.934-29.232 15.028-42.167 4.675-12.935-10.353-15.028-29.232-4.675-42.167z"
+        fill="url(#logos_svg__paint7_linear)"
+        d="M36.58 401.254c10.352-12.935 29.23-15.028 42.166-4.675 12.934 10.353 15.028 29.232 4.675 42.167-10.353 12.934-29.232 15.028-42.167 4.675-12.935-10.353-15.028-29.232-4.675-42.167z"
       />
       <path
-        fill="currentColor"
+        fill="url(#logos_svg__paint8_linear)"
         d="M44.517 400.847c7.562-9.449 21.914-10.527 32.057-2.409 10.142 8.118 12.234 22.358 4.672 31.806s-21.915 10.526-32.057 2.408c-10.143-8.117-12.234-22.357-4.672-31.805z"
       />
       <path
-        fill="currentColor"
+        fill="url(#logos_svg__paint9_linear)"
         d="M52.025 401.874c5.476-6.841 15.84-7.644 23.148-1.794 7.31 5.85 8.796 16.138 3.32 22.979-5.475 6.841-15.839 7.644-23.148 1.794-7.309-5.85-8.795-16.138-3.32-22.979z"
       />
-      <path fill="currentColor" d="M60.21 403.215a9.608 9.608 0 1115 12.007 9.608 9.608 0 01-15-12.007z" />
+      <path fill="#fff" d="M60.21 403.215a9.608 9.608 0 1115 12.007 9.608 9.608 0 01-15-12.007z" />
       <path
-        fill="currentColor"
+        fill="#F653A2"
         fillRule="evenodd"
         d="M510 60.001L540.011 30 570 60.009 540.011 90 510 60.001zm47.732-9.005c-1.247 1.394-3.966 4.902-3.966 9.005 0 4.103 2.719 7.611 3.966 9.005-8.01-.424-14.414-9.005-14.414-9.005s6.404-8.58 14.414-9.005zm-35.42 0c8.009.424 14.413 9.005 14.413 9.005s-6.404 8.58-14.413 9.005c1.246-1.394 3.965-4.902 3.965-9.005 0-4.103-2.719-7.611-3.965-9.005zm-1.27.053c-1.267 1.427-3.919 4.9-3.919 8.952 0 4.069 2.673 7.553 3.934 8.968l6.488 6.493.031-.03c2.597-2.54 6.914-5.877 11.837-6.132-1.24 1.382-3.972 4.895-3.972 9.006 0 4.11 2.732 7.623 3.972 9.005l.598.626.597-.626c1.24-1.382 3.972-4.895 3.972-9.005 0-4.111-2.732-7.624-3.972-9.006 4.942.256 9.274 3.619 11.868 6.162l6.641-6.646.015-.018c1.313-1.508 3.788-4.882 3.788-8.797 0-3.93-2.494-7.315-3.803-8.815l-6.61-6.615-.03.03c-2.595 2.543-6.927 5.906-11.869 6.161 1.24-1.381 3.972-4.894 3.972-9.005 0-4.11-2.732-7.624-3.972-9.005l-.597-.687-.598.687c-1.24 1.381-3.972 4.894-3.972 9.005 0 4.11 2.732 7.624 3.972 9.005-4.961-.256-9.308-3.644-11.899-6.191l-6.472 6.479z"
         clipRule="evenodd"
       />
-      <path fill="currentColor" d="M190 390h60v60h-60z" />
+      <path fill="url(#logos_svg__pattern6)" d="M190 390h60v60h-60z" />
       <defs>
         <linearGradient
           id="logos_svg__paint0_linear"
@@ -103,9 +124,9 @@ function SvgLogos(props) {
           y2={220.121}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" />
-          <stop offset={0.714} stopColor="currentColor" />
-          <stop offset={1} stopColor="currentColor" />
+          <stop stopColor="#FE3876" />
+          <stop offset={0.714} stopColor="#7C30DD" />
+          <stop offset={1} stopColor="#3A30DD" />
         </linearGradient>
         <linearGradient
           id="logos_svg__paint1_linear"
@@ -115,8 +136,8 @@ function SvgLogos(props) {
           y2={427.92}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" />
-          <stop offset={1} stopColor="currentColor" />
+          <stop stopColor="#EF18AC" />
+          <stop offset={1} stopColor="#FAD972" />
         </linearGradient>
         <linearGradient
           id="logos_svg__paint2_linear"
@@ -126,8 +147,8 @@ function SvgLogos(props) {
           y2={417.22}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" />
-          <stop offset={1} stopColor="currentColor" />
+          <stop stopColor="#5314F1" />
+          <stop offset={1} stopColor="#04E2FF" />
         </linearGradient>
         <linearGradient
           id="logos_svg__paint3_linear"
@@ -137,7 +158,7 @@ function SvgLogos(props) {
           y2={256.157}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" stopOpacity={0} />
+          <stop stopColor="#fff" stopOpacity={0} />
           <stop offset={1} stopOpacity={0.1} />
         </linearGradient>
         <linearGradient
@@ -148,7 +169,7 @@ function SvgLogos(props) {
           y2={247.321}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" stopOpacity={0} />
+          <stop stopColor="#fff" stopOpacity={0} />
           <stop offset={1} stopOpacity={0.1} />
         </linearGradient>
         <linearGradient
@@ -159,7 +180,7 @@ function SvgLogos(props) {
           y2={236.594}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" stopOpacity={0} />
+          <stop stopColor="#fff" stopOpacity={0} />
           <stop offset={1} stopOpacity={0.1} />
         </linearGradient>
         <linearGradient
@@ -170,7 +191,7 @@ function SvgLogos(props) {
           y2={226.262}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" stopOpacity={0} />
+          <stop stopColor="#fff" stopOpacity={0} />
           <stop offset={1} stopOpacity={0.1} />
         </linearGradient>
         <linearGradient
@@ -181,8 +202,8 @@ function SvgLogos(props) {
           y2={396.579}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" />
-          <stop offset={0.557} stopColor="currentColor" />
+          <stop stopColor="#03345A" />
+          <stop offset={0.557} stopColor="#00457A" />
         </linearGradient>
         <linearGradient
           id="logos_svg__paint8_linear"
@@ -192,8 +213,8 @@ function SvgLogos(props) {
           y2={398.438}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" />
-          <stop offset={1} stopColor="currentColor" />
+          <stop stopColor="#0A7EA3" />
+          <stop offset={1} stopColor="#075886" />
         </linearGradient>
         <linearGradient
           id="logos_svg__paint9_linear"
@@ -203,8 +224,8 @@ function SvgLogos(props) {
           y2={400.08}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="currentColor" />
-          <stop offset={1} stopColor="currentColor" />
+          <stop stopColor="#10C5C5" />
+          <stop offset={1} stopColor="#167897" />
         </linearGradient>
         <pattern id="logos_svg__pattern0" width={1} height={1} patternContentUnits="objectBoundingBox">
           <use transform="scale(.0009)" xlinkHref="#logos_svg__image0" />

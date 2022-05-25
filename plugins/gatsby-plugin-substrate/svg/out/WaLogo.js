@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgWaLogo(props) {
   return (
-    <svg xmlnsXlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 48 48" {...props}>
+    <svg xmlnsXlink="http://www.w3.org/1999/xlink" width={48} height={48} {...props}>
       <defs>
         <path id="wa-logo_svg__a" d="M0 0h48v48H0z" />
       </defs>
