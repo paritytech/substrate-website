@@ -65,6 +65,7 @@ import {
   LogoMoonbeam,
   LogoWhite,
   Mail,
+  Map,
   Moon,
   NoResults,
   OpenBase,
