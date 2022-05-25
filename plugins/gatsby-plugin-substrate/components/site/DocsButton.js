@@ -1,10 +1,10 @@
-import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import { useSiteMetadata } from '../../hooks/use-site-metadata';
-import Icon from '../default/Icon';
+import { Icon } from '../default/Icon';
+import { Link } from '../default/Link';
 
-export default function DocsButton() {
+export function DocsButton() {
   const { siteMetadata } = useSiteMetadata();
   const docsLink = siteMetadata.docsUrl + '/v' + siteMetadata.docsVersion;
 

@@ -1,12 +1,11 @@
 import cx from 'classnames';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { buildSubMenu, Link, LinkMenu } from 'gatsby-plugin-substrate';
 import React, { useState } from 'react';
 
 import { useSiteMenus } from '../../hooks/use-site-menus';
-import Icon from '../default/Icon';
-import Logo from './Logo';
-import ThemeToggle from './ThemeToggle';
+import { Icon } from '../default/Icon';
+import { buildSubMenu, Link, LinkMenu } from '../default/Link';
+import { ThemeToggle } from './ThemeToggle';
 
 const NavMobileSubMenuItem = ({ data }) => {
   const { t } = useTranslation();
@@ -108,7 +107,7 @@ const NavMobileItem = ({ menuItem, handleSubMenu }) => {
   );
 };
 
-const NavMobile = ({ toggleMenu }) => {
+const NavMobile = ({ toggleMenu, Logo }) => {
   const { menus } = useSiteMenus();
   const [isMenuItemOpen, setIsMenuItemOpen] = useState(false);
 
@@ -143,4 +142,4 @@ const NavMobile = ({ toggleMenu }) => {
   );
 };
 
-export default NavMobile;
+export { NavMobile };

@@ -1,6 +1,5 @@
+import { isBrowser } from 'gatsby-plugin-substrate';
 import { useEffect, useState } from 'react';
-
-import { isBrowser } from '../utils/browser';
 
 function getSessionStorageOrDefault(key, defaultValue) {
   const stored = isBrowser && window.sessionStorage.getItem(key);

@@ -2,15 +2,14 @@ import cx from 'classnames';
 import { Link } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
-import useScrollListener from '../../hooks/use-scroll-listener';
-import Icon from '../default/Icon';
-import Logo from '../site/Logo';
-import DocsButton from './DocsButton';
-import NavMain from './NavMain';
-import NavMobile from './NavMobile';
-import ThemeToggle from './ThemeToggle';
+import { useScrollListener } from '../../hooks/use-scroll-listener';
+import { Icon } from '../default/Icon';
+import { DocsButton } from './DocsButton';
+import { NavMain } from './NavMain';
+import { NavMobile } from './NavMobile';
+import { ThemeToggle } from './ThemeToggle';
 
-const Header = ({ mode, header }) => {
+export const Header = ({ mode, header, Logo }) => {
   const scroll = useScrollListener();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -72,5 +71,3 @@ const Header = ({ mode, header }) => {
     </header>
   );
 };
-
-export default Header;

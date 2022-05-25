@@ -1,8 +1,6 @@
 import cx from 'classnames';
-import { Link } from 'gatsby-plugin-substrate';
+import { Icon, Link } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import Icon from '../default/Icon';
 
 const LineArrowButton = ({ link, className, primary, centered, large, children, icon = 'arrow-more' }) => {
   if (link) {

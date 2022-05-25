@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { Link } from 'gatsby-plugin-substrate';
+import { Link, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import FlipIcon from '../../components/default/FlipIcon';
@@ -12,7 +12,6 @@ import HighlightBanner from '../../components/layout/technology/HighlightBanner'
 import Layout from '../../components/site/Layout';
 import SEO from '../../components/site/SEO';
 import Blockquote from '../../components/ui/Blockquote';
-import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import * as animation from '../../images/animation/technology/open.json';
 
 const Open = () => {

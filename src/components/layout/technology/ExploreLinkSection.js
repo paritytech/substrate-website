@@ -1,8 +1,6 @@
-import { Link } from 'gatsby-plugin-substrate';
+import { Icon, Link, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import { useSiteMetadata } from '../../../hooks/use-site-metadata';
-import Icon from '../../default/Icon';
 import LineArrowButton from '../../ui/LineArrowButton';
 import Section from '../Section';
 

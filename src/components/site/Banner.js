@@ -1,9 +1,9 @@
 import cx from 'classnames';
+import { Icon } from 'gatsby-plugin-substrate';
 import React, { Fragment } from 'react';
 
 import { useBanner } from '../../hooks/use-banner';
 import { useSessionStorage } from '../../hooks/use-session-storage';
-import Icon from '../default/Icon';
 
 const Banner = () => {
   const [isBannerOpen, setIsBannerOpen] = useSessionStorage('banner', true);

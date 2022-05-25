@@ -1,8 +1,7 @@
 import cx from 'classnames';
-import { Link } from 'gatsby-plugin-substrate';
+import { Icon, Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Icon from '../../default/Icon';
 import LineArrowButton from '../../ui/LineArrowButton';
 
 const cards = [

@@ -1,7 +1,6 @@
+import { useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-
-import { useSiteMetadata } from '../../hooks/use-site-metadata';
 
 export default function SEO({ children = null, description = '', lang = 'en', meta = [], title }) {
   const { siteMetadata } = useSiteMetadata();

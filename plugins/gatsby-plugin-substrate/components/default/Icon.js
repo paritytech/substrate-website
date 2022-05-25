@@ -224,5 +224,5 @@ export function Icon({ name, className, ...others }) {
   if (!name) return <span className="w-5"></span>;
   const IconComponent = iconsMap[name];
   if (!IconComponent) return <span className="w-5"></span>;
-  return <IconComponent name={name} className={className} {...others}></IconComponent>;
+  return <IconComponent className={className} {...others}></IconComponent>;
 }

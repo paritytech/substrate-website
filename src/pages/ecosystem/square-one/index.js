@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby';
+import { Icon } from 'gatsby-plugin-substrate';
 import React, { useRef, useState } from 'react';
 import Lottie from 'react-lottie';
 
-import Icon from '../../../components/default/Icon';
 import ContactForm from '../../../components/layout/ecosystem/square-one/ContactForm';
 import GeneralInfo from '../../../components/layout/ecosystem/square-one/GeneralInfo';
 import InitiativeSection from '../../../components/layout/ecosystem/square-one/InitiativeSection';

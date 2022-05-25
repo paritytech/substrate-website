@@ -1,10 +1,9 @@
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby-plugin-substrate';
+import { Icon, Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import teamsData from '../../../../../data/teams.json';
-import Icon from '../../../../components/default/Icon';
 import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 import Section from '../../../../components/layout/Section';

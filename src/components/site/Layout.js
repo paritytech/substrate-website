@@ -1,13 +1,14 @@
 import AOS from 'aos';
 import cx from 'classnames';
+import { Header } from 'gatsby-plugin-substrate';
 import React, { useEffect } from 'react';
 
 import Footer from '../site/Footer';
-import Header from '../site/Header';
 import NavBreadcrumb from '../site/NavBreadcrumb';
 import NavSidebar from '../site/NavSidebar';
 import ArticleNav from './ArticleNav';
 import Banner from './Banner';
+import Logo from './Logo';
 
 function LayoutSidebar({ children, hasArticleNav, hasBreadcrumbs }) {
   return (
@@ -66,7 +67,7 @@ export default function Layout({
   return (
     <>
       <Banner />
-      <Header mode={mode} header={header} />
+      <Header mode={mode} header={header} Logo={Logo} />
       <main
         className={cx('min-h-screen', {
           'mt-12': layout === 'default',

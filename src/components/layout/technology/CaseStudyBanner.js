@@ -1,6 +1,6 @@
+import { Icon } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Icon from '../../default/Icon';
 import LineArrowButton from '../../ui/LineArrowButton';
 import Section from '../Section';
 

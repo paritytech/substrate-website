@@ -1,18 +1,16 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby-plugin-substrate';
+import { Icon, Link, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
 
-import Icon from '../components/default/Icon';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import LineArrowButton from '../components/ui/LineArrowButton';
 import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
 import SecondaryButton from '../components/ui/SecondaryButton';
-import { useSiteMetadata } from '../hooks/use-site-metadata';
 import * as heroAnimationData from '../images/animation/home/hero.json';
 import * as polkadotAnimationData from '../images/animation/home/substrate-polkadot-simple.json';
 import TeamLogos from '../images/svg/home/logos.svg';

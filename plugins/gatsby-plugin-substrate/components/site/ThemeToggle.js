@@ -1,9 +1,9 @@
-import { ThemeContext } from 'gatsby-plugin-substrate';
 import React, { useContext } from 'react';
 
-import Icon from '../default/Icon';
+import { ThemeContext } from '../../contexts/ThemeContext';
+import { Icon } from '../default/Icon';
 
-export default function ThemeToggle() {
+export function ThemeToggle() {
   const { colorMode, setColorMode } = useContext(ThemeContext);
 
   function toggleTheme() {

@@ -1,9 +1,8 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby-plugin-substrate';
+import { Icon, Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Icon from '../../../components/default/Icon';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';

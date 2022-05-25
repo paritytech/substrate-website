@@ -1,10 +1,6 @@
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { Link } from 'gatsby-plugin-substrate';
+import { Icon, Link, useSiteMenus, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import { useSiteMenus } from '../../hooks/use-site-menus';
-import { useSiteMetadata } from '../../hooks/use-site-metadata';
-import Icon from '../default/Icon';
 
 const HeaderNav = () => {
   const { t } = useTranslation();

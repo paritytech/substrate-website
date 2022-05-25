@@ -1,9 +1,9 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Icon } from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
 
-import Icon from '../../components/default/Icon';
 import Article from '../../components/layout/Article';
 import BorderCard from '../../components/layout/ecosystem/BorderCard';
 import ColorCard from '../../components/layout/ecosystem/ColorCard';

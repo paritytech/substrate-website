@@ -1,7 +1,5 @@
-import { Link } from 'gatsby-plugin-substrate';
+import { Icon, Link } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import Icon from '../../../default/Icon';
 
 export default function CaseStudyButton({ link }) {
   return (
