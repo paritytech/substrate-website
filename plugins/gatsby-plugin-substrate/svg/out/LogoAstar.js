@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgLogoAstar(props) {
   return (
-    <svg width={80} height={81} fill="none" {...props}>
+    <svg width={80} height={81} fill="none" viewBox="0 0 80 81" {...props}>
       <g clipPath="url(#logo-astar_svg__clip0)">
         <path
           fill="url(#logo-astar_svg__paint0_linear)"

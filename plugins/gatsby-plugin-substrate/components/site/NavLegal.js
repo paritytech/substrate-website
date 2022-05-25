@@ -1,8 +1,12 @@
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { Icon, Link, useSiteMenus, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-const HeaderNav = () => {
+import { useSiteMenus } from '../../hooks/use-site-menus';
+import { useSiteMetadata } from '../../hooks/use-site-metadata';
+import { Icon } from '../default/Icon';
+import { Link } from '../default/Link';
+
+const NavLegal = () => {
   const { t } = useTranslation();
   const { menus } = useSiteMenus();
   const { siteMetadata } = useSiteMetadata();
@@ -53,4 +57,4 @@ const HeaderNav = () => {
   );
 };
 
-export default HeaderNav;
+export { NavLegal };

@@ -1,9 +1,10 @@
 import { Link } from 'gatsby';
-import { Icon, Newsletter } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import NavFooter from './NavFooter';
-import NavLegal from './NavLegal';
+import { Icon } from '../default/Icon';
+import { NavFooter } from './NavFooter';
+import { NavLegal } from './NavLegal';
+import { Newsletter } from './newsletter';
 
 const Footer = () => {
   return (
@@ -24,4 +25,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export { Footer };

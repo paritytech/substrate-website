@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgFlag(props) {
   return (
-    <svg width={32} height={32} fill="none" {...props}>
+    <svg width={32} height={32} fill="none" viewBox="0 0 32 32" {...props}>
       <path
         fill="#24CC85"
         fillRule="evenodd"

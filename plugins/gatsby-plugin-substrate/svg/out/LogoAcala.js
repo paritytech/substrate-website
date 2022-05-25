@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgLogoAcala(props) {
   return (
-    <svg width={80} height={80} fill="none" {...props}>
+    <svg width={80} height={80} fill="none" viewBox="0 0 80 80" {...props}>
       <path
         fill="url(#logo-acala_svg__paint0_linear)"
         fillRule="evenodd"

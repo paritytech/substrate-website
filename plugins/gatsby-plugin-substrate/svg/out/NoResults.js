@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgNoResults(props) {
   return (
-    <svg width={241} height={193} fill="none" {...props}>
+    <svg width={241} height={193} fill="none" viewBox="0 0 241 193" {...props}>
       <g clipPath="url(#no-results_svg__clip0_6597_13663)">
         <path
           fill="#fff"

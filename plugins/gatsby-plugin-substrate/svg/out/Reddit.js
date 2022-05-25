@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgReddit(props) {
   return (
-    <svg width={30} height={30} fill="none" {...props}>
+    <svg width={30} height={30} fill="none" viewBox="0 0 30 30" {...props}>
       <path fill="#FF4500" d="M30.001 15a15 15 0 11-30-.001 15 15 0 0130 .001z" />
       <path
         fill="#fff"

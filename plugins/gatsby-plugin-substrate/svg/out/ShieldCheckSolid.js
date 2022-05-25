@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgShieldCheckSolid(props) {
   return (
-    <svg width={46} height={46} fill="none" {...props}>
+    <svg width={46} height={46} fill="none" viewBox="0 0 46 46" {...props}>
       <g clipPath="url(#shield-check-solid_svg__clip0)">
         <path
           fill="#24CC85"

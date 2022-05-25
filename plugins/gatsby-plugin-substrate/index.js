@@ -4,6 +4,7 @@ export * from './components/default/Link';
 export * from './components/site/newsletter';
 export * from './components/site/Header';
 export * from './components/site/ThemeToggle';
+export * from './components/site/Footer';
 
 export * from './contexts/ThemeContext';
 export * from './utils/browser';

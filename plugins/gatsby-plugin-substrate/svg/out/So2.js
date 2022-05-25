@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgSo2(props) {
   return (
-    <svg width={30} height={36} fill="none" {...props}>
+    <svg width={30} height={36} fill="none" viewBox="0 0 30 36" {...props}>
       <path
         fill="#BBB"
         fillRule="evenodd"

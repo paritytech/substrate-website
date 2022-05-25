@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgSubconnectBrowserTab(props) {
   return (
-    <svg width={436} height={420} fill="none" {...props}>
+    <svg width={436} height={420} fill="none" viewBox="0 0 436 420" {...props}>
       <g filter="url(#subconnectBrowserTab_svg__filter0_d)">
         <rect width={420} height={362} x={8} y={48} fill="#fff" rx={4} />
       </g>

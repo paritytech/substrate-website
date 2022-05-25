@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgKnight(props) {
   return (
-    <svg width={32} height={32} fill="none" {...props}>
+    <svg width={32} height={32} fill="none" viewBox="0 0 32 32" {...props}>
       <path
         d="M3.429 32H28.57A3.429 3.429 0 0032 28.571V3.43A3.429 3.429 0 0028.571 0H3.43A3.429 3.429 0 000 3.429V28.57A3.429 3.429 0 003.429 32z"
         clipRule="evenodd"

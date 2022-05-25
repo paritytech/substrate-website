@@ -1,9 +1,8 @@
 import AOS from 'aos';
 import cx from 'classnames';
-import { Header } from 'gatsby-plugin-substrate';
+import { Footer, Header } from 'gatsby-plugin-substrate';
 import React, { useEffect } from 'react';
 
-import Footer from '../site/Footer';
 import NavBreadcrumb from '../site/NavBreadcrumb';
 import NavSidebar from '../site/NavSidebar';
 import ArticleNav from './ArticleNav';

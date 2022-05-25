@@ -2,7 +2,14 @@ import * as React from 'react';
 
 function SvgLogos(props) {
   return (
-    <svg xmlnsXlink="http://www.w3.org/1999/xlink" width={600} height={480} fill="none" {...props}>
+    <svg
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width={600}
+      height={480}
+      fill="none"
+      viewBox="0 0 600 480"
+      {...props}
+    >
       <circle cx={380} cy={60} r={60} fill="#fff" opacity={0.85} />
       <circle cx={540} cy={420} r={60} fill="#fff" opacity={0.85} />
       <circle cx={540} cy={240} r={60} fill="#fff" opacity={0.85} />

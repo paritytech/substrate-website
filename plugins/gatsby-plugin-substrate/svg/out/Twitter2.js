@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function SvgTwitter2(props) {
   return (
-    <svg width={30} height={30} fill="none" {...props}>
+    <svg width={30} height={30} fill="none" viewBox="0 0 30 30" {...props}>
       <g clipPath="url(#twitter2_svg__clip0)">
         <path
           fill="#1DA1F2"

@@ -4,6 +4,9 @@
       "removeDoctype": true
     },
     {
+      "removeViewBox": false
+    },
+    {
       "removeXMLProcInst": true
     },
     {
