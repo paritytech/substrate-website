@@ -3,9 +3,9 @@ import * as React from 'react';
 function SvgResources(props) {
   return (
     <svg width={34} height={37} fill="none" viewBox="0 0 34 37" {...props}>
-      <path fill="#D6FFCF" d="M34 10.672L6 0l2.8 28.459 7 2.541L34 10.672z" />
-      <path fill="#83DE74" d="M5.5 0L0 27.95 11 31 5.5 0z" />
-      <path fill="#4EB63D" d="M14.468 37L0 28.16h10.851L34 11 14.468 37z" />
+      <path fill="#D6FFCF" d="M34 10.6721L6 0L8.8 28.459L15.8 31L34 10.6721Z" />
+      <path fill="#83DE74" d="M5.5 0L0 27.9508L11 31L5.5 0Z" />
+      <path fill="#4EB63D" d="M14.4681 37L0 28.16H10.8511L34 11L14.4681 37Z" />
     </svg>
   );
 }

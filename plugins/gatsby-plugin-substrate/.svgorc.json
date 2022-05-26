@@ -28,7 +28,7 @@
       "inlineStyles": true
     },
     {
-      "minifyStyles": true
+      "minifyStyles": false
     },
     {
       "convertStyleToAttrs": true
@@ -40,7 +40,7 @@
       "prefixIds": true
     },
     {
-      "removeRasterImages": true
+      "removeRasterImages": false
     },
     {
       "removeUselessDefs": true
@@ -59,9 +59,6 @@
     },
     {
       "removeUselessStrokeAndFill": true
-    },
-    {
-      "removeUselessDefs": true
     },
     {
       "cleanupEnableBackground": true
@@ -85,7 +82,7 @@
       "collapseGroups": true
     },
     {
-      "convertPathData": true
+      "convertPathData": false
     },
     {
       "convertTransform": true

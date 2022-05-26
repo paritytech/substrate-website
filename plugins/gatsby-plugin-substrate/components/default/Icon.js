@@ -51,6 +51,7 @@ import {
   HamburgerToggle,
   House,
   IconFlexible,
+  IconFutureProof,
   IconInteroperable,
   IconOpen,
   Intentional,
@@ -201,7 +202,7 @@ export const iconsMap = {
   flag: Flag,
   /* technology */
   flexible: IconFlexible,
-  'future-proof': FutureProofBase,
+  'future-proof': IconFutureProof,
   interoperable: IconInteroperable,
   open: IconOpen,
   fast: Fast,
