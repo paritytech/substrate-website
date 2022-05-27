@@ -136,7 +136,7 @@ const NavMobile = ({ toggleMenu, Logo }) => {
       </div>
       {isMenuItemOpen && <NavMobileSubMenu menuItem={isMenuItemOpen} handleSubMenu={handleSubMenu} />}
       <div className="absolute top-0 right-0 h-auto cursor-pointer p-6 -mt-0.5" onClick={toggleMenu}>
-        <Icon name="close-x" />
+        <Icon name="close-x" className="fill-current text-black dark:text-white" />
       </div>
     </div>
   );
