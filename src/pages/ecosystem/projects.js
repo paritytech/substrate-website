@@ -25,7 +25,6 @@ export default function Projects({ data }) {
   const [curTeam, setCurTeam] = useState();
   const [showCaseStudies, setShowCaseStudies] = useState(false);
   const [modalIsOpen, modalSetOpen] = useState(false);
-  const [didMount, setDidMount] = useState(false);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -35,13 +34,9 @@ export default function Projects({ data }) {
     category && setCurCat(category);
   }, []);
 
-  useEffect(() => {
-    setDidMount(true);
-  });
-
   return (
     <Layout>
-      {isBrowser && didMount && (
+      {isBrowser && (
         <ModalVideo
           channel="youtube"
           autoplay
