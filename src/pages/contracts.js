@@ -50,7 +50,7 @@ const highlights = [
     icon: 'rocket',
     title: 'Upload and Deploy',
     description: 'Take your compiled contract bundle to the Contracts UI and deploy it on a local node or testnet.',
-    link: 'https://paritytech.github.io/contracts-ui/',
+    link: 'https://contracts-ui.substrate.io/',
     linkText: 'Open Contracts UI',
   },
 ];

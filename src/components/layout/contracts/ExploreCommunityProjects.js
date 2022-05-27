@@ -34,7 +34,7 @@ export default function ExploreCommunityProjects() {
         },
         {
           name: 'Contracts UI',
-          link: 'https://paritytech.github.io/contracts-ui/',
+          link: 'https://contracts-ui.substrate.io/',
           description: 'Deploy and interact with smart contracts on Substrate-based chains.',
         },
         {
