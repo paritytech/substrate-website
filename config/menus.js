@@ -71,10 +71,6 @@ const developers = [
     url: DOCS_URL + '/playground/',
     id: 'developers.playground',
   },
-  {
-    url: '/contracts/',
-    id: 'developers.contracts',
-  },
 ];
 
 const vision = [
