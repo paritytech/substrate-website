@@ -55,7 +55,7 @@ export default function MoonbeamCaseStudy({ data }) {
         <div className="tracking-wider uppercase mb-4">Case Study</div>
         <div id="overview" className="mb-6 flex flex-col sm:flex-row sm:items-center">
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} objectFit="contain" alt={moonbeamData.name} />
-          <div className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{moonbeamData.name}</div>
+          <h1 className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{moonbeamData.name}</h1>
         </div>
         <div className="mb-3 font-bold text-lg md:text-xl">An Ethereum-compatible smart contract platform</div>
         <div className="my-10">

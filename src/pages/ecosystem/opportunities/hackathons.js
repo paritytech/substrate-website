@@ -20,7 +20,7 @@ export default function Hackathons() {
     <Layout layout="sidebar">
       <SEO title="Hackathons" />
       <Section>
-        <h2 className="text-4xl font-bold mb-4">Hackathons</h2>
+        <h1 className="text-4xl font-bold mb-4">Hackathons</h1>
         <p>
           Challenge yourself, up your game, and connect with the community. There are great prizes up for grabs, too.
         </p>

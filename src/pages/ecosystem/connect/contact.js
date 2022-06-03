@@ -12,7 +12,7 @@ export default function Contact() {
     <Layout layout="sidebar">
       <SEO title="Contact" />
       <Section>
-        <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
+        <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
         <p className="font-medium">Still got questions? Get in touch!</p>
       </Section>
       <Section>
