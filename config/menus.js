@@ -1,5 +1,6 @@
 const DOCS_URL = process.env.GATSBY_DOCS_URL;
 const CAREERS_URL = process.env.GATSBY_CAREERS_URL;
+const WEBSITE_URL = process.env.GATSBY_WEBSITE_URL;
 
 /* the main menu, ids of items must match
    the submenu's key of this js object */
@@ -70,6 +71,10 @@ const developers = [
   {
     url: DOCS_URL + '/playground/',
     id: 'developers.playground',
+  },
+  {
+    url: WEBSITE_URL + '/smart-contracts/',
+    id: 'developers.smart-contracts',
   },
 ];
 
