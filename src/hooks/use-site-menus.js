@@ -14,22 +14,66 @@ export const useSiteMenus = () => {
               id
               url
             }
-            technology {
+            footerMain {
               id
               url
             }
+            technology {
+              title
+              subtitle
+              menu {
+                id
+                heading
+                links {
+                  text
+                  href
+                  subText
+                }
+              }
+            }
             developers {
-              id
-              url
+              title
+              subtitle
+              menu {
+                id
+                heading
+                links {
+                  text
+                  href
+                  subText
+                }
+              }
+            }
+            about {
+              title
+              subtitle
+              menu {
+                id
+                heading
+                links {
+                  text
+                  href
+                  subText
+                }
+              }
             }
             vision {
               id
               url
             }
             ecosystem {
-              id
-              url
-              child
+              title
+              subtitle
+              gridArea
+              menu {
+                id
+                heading
+                links {
+                  text
+                  href
+                  subText
+                }
+              }
             }
             opportunities {
               id

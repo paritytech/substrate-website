@@ -1,90 +1,62 @@
 import cx from 'classnames';
+import { Link } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import useComponentVisible from '../../hooks/use-component-visible';
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import Icon from '../default/Icon';
-import { buildSubMenu, LinkMenu } from '../default/Link';
+import { buildSubMenu } from '../default/Link';
 
-const itemClass = 'pl-6 pr-12 py-2';
-
-const ChildMenu = ({ slugPrefix, childMenu }) => {
+const DropDownItem = ({ item }) => {
   const { t } = useTranslation();
-
   return (
-    <ul className="w-56 pt-4 m-0 list-none absolute top-0 left-full h-full rounded-tr-md rounded-br-md shadow-lg ring-1 ring-black dark:ring-white bg-white dark:bg-substrateDarkest">
-      {childMenu.map(childMenuItem => {
-        return (
-          <li
-            className="whitespace-nowrap m-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium text-black"
-            key={childMenuItem.id}
-          >
-            <LinkMenu
-              className={cx(itemClass, 'block')}
-              prefix={slugPrefix}
-              slug={childMenuItem.url}
-              internal={childMenuItem.internal}
-            >
-              {t(childMenuItem.id)}
-            </LinkMenu>
-          </li>
-        );
+    <div
+      className={cx(`p-9`, {
+        'max-w-[320px]': item.menu.length === 1,
+        'max-w-[640px]': item.menu.length >= 2,
       })}
-    </ul>
-  );
-};
-
-const DropDownItem = ({ data }) => {
-  const { t } = useTranslation();
-  const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
-
-  const handleChildMenuOpen = () => {
-    setIsComponentVisible(!isComponentVisible);
-    data.setIsChildMenuOpen(true);
-  };
-
-  useEffect(() => {
-    !isComponentVisible && data.setIsChildMenuOpen(false);
-  }, [isComponentVisible]);
-
-  return (
-    <li
-      className={cx(
-        'm-0 focus:outline-none focus:bg-substrateBlueBg hover:text-substrateGreen hover:underline dark:text-white font-medium cursor-pointer',
-        {
-          'hover:text-black': isComponentVisible,
-        }
-      )}
     >
-      {data.childMenu ? (
-        <div ref={ref}>
-          <div
-            className={cx(itemClass, 'pr-24', {
-              'bg-substrateGreen-light dark:bg-green-700 underline': isComponentVisible,
-            })}
-            onClick={handleChildMenuOpen}
-          >
-            <span>{t(data.subMenuItem.id)}</span>
-            <span className="absolute right-6 pt-1.5">
-              <Icon name="arrow-next" className="fill-current text-black dark:text-white" />
-            </span>
-          </div>
-          {isComponentVisible && (
-            <ChildMenu slugPrefix={data.menuItem.url + data.subMenuItem.url} childMenu={data.childMenu} />
-          )}
-        </div>
-      ) : (
-        <LinkMenu
-          className={cx(itemClass, 'block')}
-          prefix={data.menuItem.url}
-          slug={data.subMenuItem.url}
-          internal={data.subMenuItem.internal}
-        >
-          {t(data.subMenuItem.id)}
-        </LinkMenu>
-      )}
-    </li>
+      <div className="pb-5">
+        <Link className="no-underline" to="/">
+          <h3 className="text-lg m-0 text-substrateGreen uppercase">{t(item.title)}</h3>
+        </Link>
+        <p className="m-0 text-sm italic" style={{ color: '#626872' }}>
+          {t(item.subtitle)}
+        </p>
+      </div>
+      <div
+        className={cx(`grid grid-cols-${Math.min(item.menu.length, 3)} gap-y-5 gap-x-10`)}
+        style={{ gridTemplateAreas: item.gridArea || 'none' }}
+      >
+        {item.menu.map(({ heading, links }, index) => {
+          return (
+            <div key={index} {...(item.gridArea && { style: { gridArea: `grid-item-${index}` } })}>
+              {heading && <p className="text-base m-0 mb-1 uppercase">{heading}</p>}
+              <ul className="m-0">
+                {links &&
+                  links.map((link, index) => (
+                    <li key={index} className="list-none m-0 leading-3">
+                      {link.text && link.href && (
+                        <Link className="no-underline" to={link.href}>
+                          <span className="text-sm leading-6 text-substrateBlackish dark:text-white font-bold capitalize block hover:text-substrateGreen hover:underline">
+                            {t(link.text)}
+                          </span>
+                        </Link>
+                      )}
+                      {link.subText && (
+                        <span className="text-sm text-substrateBlackish dark:text-white italic leading-4">
+                          {t(link.subText)}
+                        </span>
+                      )}
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
@@ -92,17 +64,20 @@ const DropDown = ({ menuItem, header, isScrolled }) => {
   const { t } = useTranslation();
   const { menus } = useSiteMenus();
   const subMenu = buildSubMenu(menus, menuItem);
-  const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
-  const [isChildMenuOpen, setIsChildMenuOpen] = useState(false);
+  const {
+    ref,
+    isComponentVisible: isDropdownVisible,
+    setIsComponentVisible: setIsDropdownVisible,
+  } = useComponentVisible(false);
 
   return (
     <li className="list-none m-0" key={menuItem.id} ref={ref}>
-      <button className="group focus:outline-none" onClick={() => setIsComponentVisible(!isComponentVisible)}>
+      <button className="group" onClick={() => setIsDropdownVisible(!isDropdownVisible)}>
         <span
-          className={cx('font-medium', {
+          className={cx('font-medium capitalize', {
             'text-substrateGreen':
-              (isComponentVisible && header === 'default') || (isComponentVisible && header === 'home' && isScrolled),
-            'text-white': isComponentVisible && header === 'home' && !isScrolled,
+              (isDropdownVisible && header === 'default') || (isDropdownVisible && header === 'home' && isScrolled),
+            'text-white': isDropdownVisible && header === 'home' && !isScrolled,
             'group-hover:text-substrateGreen': header === 'default' || (header === 'home' && isScrolled),
             'group-hover:text-white': header === 'home' && !isScrolled,
           })}
@@ -113,47 +88,31 @@ const DropDown = ({ menuItem, header, isScrolled }) => {
           name="arrow-dropdown"
           className={cx('inline-block align-middle xl:ml-2 fill-current dark:text-white', {
             'transform rotate-180 text-substrateGreen dark:text-substrateGreen':
-              (isComponentVisible && header === 'default') || (isComponentVisible && header === 'home' && isScrolled),
+              (isDropdownVisible && header === 'default') || (isDropdownVisible && header === 'home' && isScrolled),
             'transform rotate-180 text-white dark:text-substrateGreen':
-              isComponentVisible && header === 'home' && !isScrolled,
-            'text-black': !isComponentVisible,
+              isDropdownVisible && header === 'home' && !isScrolled,
+            'text-black': !isDropdownVisible,
             'group-hover:text-substrateGreen': header === 'default' || (header === 'home' && isScrolled),
             'group-hover:text-white': header === 'home' && !isScrolled,
           })}
         />
       </button>
 
-      {isComponentVisible && subMenu && (
+      {isDropdownVisible && subMenu && (
         <div
           className={cx('absolute mt-4', {
-            'animate-fade-in-down': isComponentVisible,
-            'animate-fade-out': !isComponentVisible,
+            'animate-fade-in-down': isDropdownVisible,
+            'animate-fade-out': !isDropdownVisible,
           })}
         >
           <ul
             className={cx(
-              'm-0 list-none relative pt-4 pb-5 bg-white dark:bg-substrateDarkest shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md',
-              {
-                'rounded-tr-none rounded-br-none': isChildMenuOpen,
-              }
+              'm-0 list-none relative bg-white dark:bg-substrateDarkest shadow-lg ring-1 ring-substrateDark dark:ring-white rounded-md'
             )}
           >
-            {subMenu.map(subMenuItem => {
-              const child = subMenuItem.child;
-              const childMenu = menus[child];
-
-              return (
-                <DropDownItem
-                  key={subMenuItem.id}
-                  data={{
-                    menuItem,
-                    subMenuItem,
-                    childMenu,
-                    setIsChildMenuOpen,
-                  }}
-                ></DropDownItem>
-              );
-            })}
+            <li className="list-none m-0">
+              <DropDownItem item={subMenu} />
+            </li>
           </ul>
         </div>
       )}
@@ -168,7 +127,7 @@ const NavMain = ({ header, isScrolled }) => {
     <nav className="navMain">
       <ul className="m-0 flex justify-evenly">
         {menus.main.map(menuItem => {
-          return <DropDown header={header} isScrolled={isScrolled} key={menuItem.id} menuItem={menuItem}></DropDown>;
+          return <DropDown header={header} isScrolled={isScrolled} key={menuItem.id} menuItem={menuItem} />;
         })}
       </ul>
     </nav>

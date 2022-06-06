@@ -8,51 +8,55 @@ import { buildSubMenu, Link, LinkMenu } from '../default/Link';
 import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
 
-const NavMobileSubMenuItem = ({ data }) => {
+const NavSubItemHeading = ({ heading, hasChildren, isOpen = false }) => {
   const { t } = useTranslation();
-  const { menuItem, subMenuItem, childMenu } = data;
-  const [isChildMenuOpen, setIsChildMenuOpen] = useState(false);
+  return (
+    <div className="block relative text-black dark:text-white hover:no-underline px-6 py-3 text-lg hover:font-bold font-medium cursor-pointer">
+      <span className="capitalize">{t(heading)}</span>
+      {hasChildren && (
+        <Icon
+          name="arrow-dropdown"
+          className={cx('absolute transform right-0 top-0 mr-6 mt-4 w-6 h-6 fill-current text-black dark:text-white', {
+            'rotate-180': isOpen,
+          })}
+        />
+      )}
+    </div>
+  );
+};
 
-  const itemStyle =
-    'block relative text-black dark:text-white hover:no-underline px-6 py-3 text-lg hover:font-bold font-medium cursor-pointer';
+const NavMobileSubMenuItem = ({ subMenuItem }) => {
+  const { t } = useTranslation();
+  const [isChildMenuOpen, setIsChildMenuOpen] = useState(true);
 
   return (
-    <>
-      {childMenu ? (
-        <div onClick={() => setIsChildMenuOpen(!isChildMenuOpen)}>
-          <div className={cx(itemStyle)}>
-            <span className={cx({ 'font-bold': isChildMenuOpen })}>{t(subMenuItem.id)}</span>
-            <Icon
-              name="arrow-dropdown"
-              className={cx(
-                'absolute transform right-0 top-0 mr-6 mt-4 w-6 h-6 fill-current text-black dark:text-white',
-                { 'rotate-180': isChildMenuOpen }
-              )}
-            />
-          </div>
-          <div className={cx({ hidden: !isChildMenuOpen })}>
-            {childMenu.map(childMenuItem => {
-              return (
-                <div key={childMenuItem.id}>
-                  <LinkMenu
-                    className="block font-medium hover:font-bold pl-12 mb-0 py-3"
-                    prefix={menuItem.url + subMenuItem.url}
-                    slug={childMenuItem.url}
-                    internal={childMenuItem.internal}
-                  >
-                    {t(childMenuItem.id)}
-                  </LinkMenu>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      ) : (
-        <LinkMenu className={itemStyle} prefix={menuItem.url} slug={subMenuItem.url} internal={subMenuItem.internal}>
-          {t(subMenuItem.id)}
-        </LinkMenu>
+    <div onClick={() => setIsChildMenuOpen(!isChildMenuOpen)}>
+      {subMenuItem.heading && (
+        <NavSubItemHeading
+          heading={subMenuItem.heading}
+          hasChildren={subMenuItem.links.length}
+          isOpen={isChildMenuOpen}
+        />
       )}
-    </>
+
+      <div className={cx({ hidden: !isChildMenuOpen })}>
+        {subMenuItem.links.map(childMenuItem => {
+          return (
+            <div key={childMenuItem.id}>
+              <LinkMenu
+                className={cx('block font-medium hover:font-bold pl-12 mb-0 py-3 capitalize', {
+                  'pl-0': !subMenuItem.heading,
+                })}
+                slug={childMenuItem.href}
+              >
+                {!subMenuItem.heading && <NavSubItemHeading heading={childMenuItem.text} hasChildren={false} />}
+                {subMenuItem.heading && t(childMenuItem.text)}
+              </LinkMenu>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
@@ -72,20 +76,8 @@ const NavMobileSubMenu = ({ menuItem, handleSubMenu }) => {
         </div>
       </div>
       <div className="pt-7 h-[calc(100vh-100px)] overflow-auto">
-        {subMenu.map(subMenuItem => {
-          const child = subMenuItem.child;
-          const childMenu = menus[child];
-
-          return (
-            <NavMobileSubMenuItem
-              key={subMenuItem.id}
-              data={{
-                menuItem,
-                subMenuItem,
-                childMenu,
-              }}
-            />
-          );
+        {subMenu.menu.map((subMenuItem, index) => {
+          return <NavMobileSubMenuItem key={index} subMenuItem={subMenuItem} />;
         })}
       </div>
     </div>
@@ -101,7 +93,7 @@ const NavMobileItem = ({ menuItem, handleSubMenu }) => {
       onClick={() => handleSubMenu(menuItem)}
     >
       <div className="flex items-center justify-between focus:outline-none cursor-pointer">
-        <div className="text-2xl">{t(menuItem.id)}</div>
+        <div className="text-2xl capitalize">{t(menuItem.id)}</div>
         <Icon name="arrow-next" className="fill-current text-black dark:text-white w-5 h-5" />
       </div>
     </div>

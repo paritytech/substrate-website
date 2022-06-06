@@ -136,10 +136,6 @@ h3 {
   @apply font-bold;
 }
 
-.navMain a[aria-current='page'] {
-  @apply text-substrateGreen dark:text-white underline;
-}
-
 .navMobile a[aria-current='page'] {
   @apply font-bold;
 }
