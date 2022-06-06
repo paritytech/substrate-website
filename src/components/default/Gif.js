@@ -2,11 +2,9 @@ import { Icon } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import substratePolkadot from '../../images/gif/substrate-polkadot.gif';
-import placeholder from '../../images/svg/placeholder.svg';
 
 const gifMap = {
   /* Heroes */
-  placeholder,
   'substrate-polkadot': substratePolkadot,
 };
 

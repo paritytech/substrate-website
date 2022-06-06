@@ -41,6 +41,7 @@ import {
   FlexibleBase,
   Forkless,
   ForklessUpgrades,
+  FountainPen,
   FutureProofBase,
   Github,
   GlobeSolid,
@@ -80,6 +81,7 @@ import {
   Question,
   Reddit,
   Resources,
+  Rocket,
   Se,
   Se2,
   Secure,
@@ -87,6 +89,7 @@ import {
   Seminar,
   ShieldCheckSolid,
   SidebarToggle,
+  SmartContracts,
   Smile,
   So,
   So2,
@@ -96,6 +99,7 @@ import {
   Sun,
   Team,
   Technology,
+  Time,
   Tooling,
   Tools,
   Twitter,
@@ -103,6 +107,7 @@ import {
   Upgradable,
   W3FLogo,
   WaLogo,
+  Wrench,
   Youtube,
 } from '../../svg/out';
 
@@ -168,6 +173,7 @@ export const iconsMap = {
   tools: Tools,
   chrome: Chrome,
   firefox: Firefox,
+  time: Time,
   /* mockup */
   placeholder: Placeholder,
   /* social */
@@ -200,6 +206,9 @@ export const iconsMap = {
   graph: Graph,
   knight: Knight,
   flag: Flag,
+  'fountain-pen': FountainPen,
+  wrench: Wrench,
+  rocket: Rocket,
   /* technology */
   flexible: IconFlexible,
   'future-proof': IconFutureProof,
@@ -220,6 +229,8 @@ export const iconsMap = {
   composable: Composable,
   'future-proof-base': FutureProofBase,
   upgradable: Upgradable,
+  /* Smart Contracts */
+  'smart-contracts': SmartContracts,
 };
 
 export function Icon({ name, className, ...others }) {

@@ -13,3 +13,5 @@ export * from './hooks/use-component-visible';
 export * from './hooks/use-scroll-listener';
 export * from './hooks/use-site-menus';
 export * from './hooks/use-site-metadata';
+
+export * from './svg/out';

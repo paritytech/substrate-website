@@ -1,7 +1,16 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Icon, Link, useSiteMetadata } from 'gatsby-plugin-substrate';
+import {
+  Icon,
+  IconFlexible as FlexibleIcon,
+  IconFutureProof as FutureProofIcon,
+  IconInteroperable as InteroperableIcon,
+  IconOpen as OpenIcon,
+  Link,
+  Logos as TeamLogos,
+  useSiteMetadata,
+} from 'gatsby-plugin-substrate';
 import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
@@ -13,11 +22,6 @@ import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
 import SecondaryButton from '../components/ui/SecondaryButton';
 import * as heroAnimationData from '../images/animation/home/hero.json';
 import * as polkadotAnimationData from '../images/animation/home/substrate-polkadot-simple.json';
-import TeamLogos from '../images/svg/home/logos.svg';
-import FlexibleIcon from '../images/svg/technology/icon-flexible.svg';
-import FutureProofIcon from '../images/svg/technology/icon-future-proof.svg';
-import InteroperableIcon from '../images/svg/technology/icon-interoperable.svg';
-import OpenIcon from '../images/svg/technology/icon-open.svg';
 
 export default function Home() {
   const { siteMetadata } = useSiteMetadata();
