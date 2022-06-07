@@ -8,9 +8,9 @@ export default function ExploreCommunityProjects() {
       name: 'Networks',
       items: [
         {
-          name: 'Canvas',
-          link: 'https://paritytech.github.io/ink-docs/canvas',
-          description: 'A smart contract testnet on Roccoco.',
+          name: 'Contracts Testnet',
+          link: 'https://ink.substrate.io/testnet/',
+          description: 'A smart contract testnet on Rococo.',
         },
         {
           name: 'Moonbeam',
