@@ -1,8 +1,8 @@
 import cx from 'classnames';
+import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import Icon from '../default/Icon';
-import { Link } from '../default/Link';
 
 export default function PrimaryButtonLink({ children, link, onClick, fullWidth = false, slim = false }) {
   return (

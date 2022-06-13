@@ -22,10 +22,9 @@ export const useSiteMenus = () => {
               title
               subtitle
               menu {
-                id
                 heading
                 links {
-                  text
+                  id
                   href
                   subText
                 }
@@ -35,10 +34,9 @@ export const useSiteMenus = () => {
               title
               subtitle
               menu {
-                id
                 heading
                 links {
-                  text
+                  id
                   href
                   subText
                 }
@@ -48,10 +46,9 @@ export const useSiteMenus = () => {
               title
               subtitle
               menu {
-                id
                 heading
                 links {
-                  text
+                  id
                   href
                   subText
                 }
@@ -66,10 +63,9 @@ export const useSiteMenus = () => {
               subtitle
               gridArea
               menu {
-                id
                 heading
                 links {
-                  text
+                  id
                   href
                   subText
                 }

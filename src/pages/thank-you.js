@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
+import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import { Link } from '../components/default/Link';
 import Section from '../components/layout/Section';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';

@@ -4,6 +4,7 @@
   "developers": "Developers",
   "vision": "Vision",
   "ecosystem": "Ecosystem",
+  "about": "About",
 
   "technology.overview": "Overview",
   "technology.flexible": "Flexible",
@@ -17,30 +18,41 @@
   "developers.tutorials": "Tutorials",
   "developers.rustdocs": "Rust Docs",
   "developers.playground": "Playground",
+  "developers.smart-contracts": "Smart Contracts",
+  "developers.blockchain-basics": "Blockchain Basics",
+  "developers.substrate-architecture": "Substrate Architecture",
+  "developers.build-a-local-blockchain": "Build a local blockchain",
+  "developers.rust-api": "Rust API",
+  "developers.polkadotjs-api": "PolkadotJS API",
+  "developers.pallet-marketplace": "Pallet marketplace",
+  "developers.code-playground": "Code Playground",
+  "developers.light-client": "Light Client",
+  "developers.square-one": "Square One",
+
+  "about.connect": "Connect",
+  "about.careers": "Careers",
+  "about.events": "Events",
+  "about.newsletter": "Newsletter",
+  "about.blog": "Blog",
 
   "vision.substrate-and-polkadot": "Substrate & Polkadot",
 
-  "ecosystem.home": "Home",
-  "ecosystem.projects": "Projects",
-  "ecosystem.substrate-builders-program": "Builders Program",
+  "ecosystem.get-started.home": "Home",
+  "ecosystem.get-started.projects": "Projects",
+
+  "ecosystem.initiatives.substrate-builders-program": "Builders Program",
+  "ecosystem.initiatives.square-one": "Square One",
+
   "ecosystem.opportunities": "Opportunities",
   "ecosystem.resources": "Resources",
   "ecosystem.connect": "Connect",
-  "ecosystem.square-one": "Square One",
 
   "ecosystem.opportunities.hackathons": "Hackathons",
   "ecosystem.opportunities.grants": "Grants",
-  "ecosystem.opportunities.careers": "Careers",
+  "ecosystem.opportunities.jobs": "Jobs",
 
   "ecosystem.resources.seminar": "Substrate Seminar",
-  "ecosystem.resources.past-seminars": "Past Seminars",
   "ecosystem.resources.awesome-substrate": "Awesome Substrate",
-  "ecosystem.resources.community-resources": "Community Resources",
-
-  "ecosystem.resources.contact": "Contact",
-  "ecosystem.resources.events": "Events",
-  "ecosystem.resources.newsletter": "Newsletter",
-  "ecosystem.resources.blog": "Blog",
 
   "legal.privacy": "Privacy Policy",
   "legal.terms": "Terms of Services",

@@ -8,6 +8,7 @@ const siteMetadata = require('./config/siteMetadata');
 module.exports = {
   siteMetadata,
   plugins: [
+    { resolve: 'gatsby-plugin-substrate' },
     /* Custom ESLint to your Gatsby dev environment  */
     {
       resolve: 'gatsby-plugin-eslint',

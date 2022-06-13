@@ -1,6 +1,6 @@
+import { ThemeContext } from 'gatsby-plugin-substrate';
 import React, { useContext } from 'react';
 
-import { ThemeContext } from '../../contexts/ThemeContext';
 import Icon from '../default/Icon';
 
 export default function ThemeToggle() {

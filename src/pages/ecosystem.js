@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
 import Icon from '../components/default/Icon';
@@ -41,15 +41,10 @@ const logos = [
 
 export default function Home() {
   const [modalIsOpen, modalSetOpen] = useState(false);
-  const [didMount, setDidMount] = useState(false);
-
-  useEffect(() => {
-    setDidMount(true);
-  });
 
   return (
     <Layout mode="full">
-      {isBrowser && didMount && (
+      {isBrowser && (
         <ModalVideo
           channel="youtube"
           autoplay
@@ -213,15 +208,6 @@ export default function Home() {
                 linkText="Dive in"
                 color="#d6ffcf"
                 delay="200"
-              />
-              <IconCard
-                title="Community Resources"
-                icon="house"
-                description="One of Substrate's greatest strengths is its thriving and engaged community, which has created an ever-increasing list of resources."
-                link="/ecosystem/resources/community-resources/"
-                linkText="Discover more"
-                color="#d6ffcf"
-                delay="400"
               />
             </div>
           </div>

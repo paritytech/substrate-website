@@ -1,8 +1,7 @@
 import cn from 'classnames';
 import React, { useState } from 'react';
 
-import { useSiteMetadata } from '../../hooks/use-site-metadata';
-import Icon from '../default/Icon';
+import { Icon } from '../default/Icon';
 import { Link } from '../default/Link';
 
 const ActiveCampaign = () => (
@@ -17,11 +16,10 @@ const ActiveCampaign = () => (
   </>
 );
 
-export default function Newsletter({ layout = 'default' }) {
+export function Newsletter({ layout = 'default', iconsMap = {} }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [failedSubmission, setFailedSubmission] = useState(false);
   const [loading, setLoading] = useState(false);
-  const { siteMetadata } = useSiteMetadata();
 
   const widget = layout === 'widget';
 
@@ -56,7 +54,9 @@ export default function Newsletter({ layout = 'default' }) {
       })}
     >
       <div className="flex items-center">
-        {!widget && <Icon name="paperplane" className="h-7 w-7 mb-4 mr-4 fill-current text-white" />}
+        {!widget && (
+          <Icon IconComponent={iconsMap['paperplane']} className="h-7 w-7 mb-4 mr-4 fill-current text-white" />
+        )}
         <h2
           className={cn('font-bold mb-4', {
             'text-2xl': !widget,
@@ -135,7 +135,9 @@ export default function Newsletter({ layout = 'default' }) {
       {formSubmitted && (
         <div>
           <div className="flex">
-            {!widget && <Icon name="check-mark" className="flex-shrink-0 h-7 w-7 mb-4 mr-4 rounded-full" />}
+            {!widget && (
+              <Icon IconComponent={iconsMap['check-mark']} className="flex-shrink-0 h-7 w-7 mb-4 mr-4 rounded-full" />
+            )}
             <p className="font-semibold text-lg ml-0.5">
               To complete the subscription process, please click the link in the email we just sent you.
             </p>
@@ -143,7 +145,7 @@ export default function Newsletter({ layout = 'default' }) {
           <p className="text-sm">
             For more news, follow{' '}
             <span className="underline-animate underline-animate-thin">
-              <Link to={siteMetadata.twitter}>@substrate_io</Link>
+              <Link to="https://twitter.com/substrate_io">@substrate_io</Link>
             </span>{' '}
             on Twitter.
           </p>

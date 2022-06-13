@@ -47,27 +47,26 @@ const technology = {
   subtitle: 'All Substrate chains are seamlessly compatible with Polkadot.',
   menu: [
     {
-      id: 'technology.overview',
       heading: '',
       links: [
-        { text: 'overview', href: DOCS_URL, subText: '' },
+        { id: 'technology.overview', href: DOCS_URL, subText: '' },
         {
-          text: 'flexible',
+          id: 'technology.flexible',
           href: `${DOCS_URL}/v3/getting-started/architecture/`,
           subText: '',
         },
         {
-          text: 'open',
+          id: 'technology.open',
           href: `/flexible`,
           subText: '',
         },
         {
-          text: 'interoperable',
+          id: 'technology.interoperable',
           href: `/flexible`,
           subText: '',
         },
         {
-          text: 'future-proof',
+          id: 'technology.future-proof',
           href: `/flexible`,
           subText: '',
         },
@@ -81,62 +80,56 @@ const developers = {
   subtitle: 'Go from blockchain newbie to Substrate expert.',
   menu: [
     {
-      id: 'developers.started',
       heading: 'Get Started',
       links: [
-        { text: 'blockchain basics', href: DOCS_URL, subText: '' },
+        { id: 'developers.blockchain-basics', href: DOCS_URL, subText: '' },
         {
-          text: 'substrate architecture',
+          id: 'developers.substrate-architecture',
           href: `${DOCS_URL}/v3/getting-started/architecture/`,
           subText: '',
         },
       ],
     },
     {
-      id: 'developers.learn',
       heading: 'Learn by doing',
       links: [
         {
-          text: 'Build a local blockchain',
+          id: 'developers.build-a-local-blockchain',
           href: `${DOCS_URL}/tutorials/v3/create-your-first-substrate-chain/`,
           subText: '',
         },
-        { text: 'Smart contracts', href: '/contracts', subText: '' },
+        { id: 'developers.smart-contracts', href: '/contracts', subText: '' },
       ],
     },
     {
-      id: 'developers.technical',
       heading: 'Get Technical',
       links: [
-        { text: 'Rust API', href: '/', subText: '' },
-        { text: 'PolkadotJS API', href: 'https://polkadot.js.org/docs/api/', subText: '' },
+        { id: 'developers.rust-api', href: '/', subText: '' },
+        { id: 'developers.polkadotjs-api', href: 'https://polkadot.js.org/docs/api/', subText: '' },
       ],
     },
     {
-      id: 'developers.docs',
       heading: 'Documentation',
       links: [
-        { text: 'Docs', href: `${DOCS_URL}/v3/getting-started/overview/`, subText: '' },
-        { text: 'How to guides', href: `${DOCS_URL}/how-to-guides/v3/`, subText: '' },
-        { text: 'Tutorials', href: `${DOCS_URL}/tutorials/v3/`, subText: '' },
-        { text: 'Rust Docs', href: `${DOCS_URL}/rustdocs/`, subText: '' },
+        { id: 'developers.docs', href: `${DOCS_URL}/v3/getting-started/overview/`, subText: '' },
+        { id: 'developers.how-to-guides', href: `${DOCS_URL}/how-to-guides/v3/`, subText: '' },
+        { id: 'developers.tutorials', href: `${DOCS_URL}/tutorials/v3/`, subText: '' },
+        { id: 'developers.rustdocs', href: `${DOCS_URL}/rustdocs/`, subText: '' },
       ],
     },
     {
-      id: 'developers.resources',
       heading: 'Resources',
       links: [
-        { text: 'Pallet marketplace', href: 'https://marketplace.substrate.io', subText: '' },
-        { text: 'Code playground', href: `${DOCS_URL}/playground`, subText: '' },
-        { text: 'Light client', href: '/substrate-connect', subText: '' },
+        { id: 'developers.pallet-marketplace', href: 'https://marketplace.substrate.io', subText: '' },
+        { id: 'developers.code-playground', href: `${DOCS_URL}/playground`, subText: '' },
+        { id: 'developers.light-client', href: '/substrate-connect', subText: '' },
       ],
     },
     {
-      id: 'developers.support',
       heading: 'Support',
       links: [
         {
-          text: 'Square one',
+          id: 'developers.square-one',
           href: '/ecosystem/square-one/',
           subText: 'Find Initiatives or funding that match your current development stage.',
         },
@@ -157,28 +150,26 @@ const about = {
   subtitle: 'The Road to Substrate.',
   menu: [
     {
-      id: 'developers.started',
       heading: 'Connect',
       links: [
-        { text: 'contact', href: DOCS_URL, subText: '' },
+        { id: 'about.connect', href: DOCS_URL, subText: '' },
         {
-          text: 'careers',
+          id: 'about.careers',
           href: `${DOCS_URL}/v3/getting-started/architecture/`,
           subText: '',
         },
-        { text: 'events', href: DOCS_URL, subText: '' },
+        { id: 'about.events', href: DOCS_URL, subText: '' },
         {
-          text: 'newsletter',
+          id: 'about.newsletter',
           href: `${DOCS_URL}/v3/getting-started/architecture/`,
           subText: '',
         },
-        { text: 'blog', href: DOCS_URL, subText: '' },
+        { id: 'about.blog', href: DOCS_URL, subText: '' },
       ],
     },
     {
-      id: 'developers.started',
       heading: 'Vision',
-      links: [{ text: 'substrate and polkadot', href: DOCS_URL, subText: '' }],
+      links: [{ id: 'vision.substrate-and-polkadot', href: DOCS_URL, subText: '' }],
     },
   ],
 };
@@ -190,52 +181,48 @@ const ecosystem = {
              'grid-item-3 grid-item-1 grid-item-2'`,
   menu: [
     {
-      id: 'ecosystem.started',
       heading: 'Get Started',
       links: [
-        { text: 'ecosystem home', href: DOCS_URL, subText: '' },
+        { id: 'ecosystem.get-started.home', href: DOCS_URL, subText: '' },
         {
-          text: 'explore projects',
+          id: 'ecosystem.get-started.projects',
           href: `${DOCS_URL}/v3/getting-started/architecture/`,
           subText: '',
         },
       ],
     },
     {
-      id: 'ecosystem.learn',
       heading: 'Resources',
       links: [
         {
-          text: 'Seminars',
+          id: 'ecosystem.resources.seminar',
           href: `${DOCS_URL}/tutorials/v3/create-your-first-substrate-chain/`,
           subText: '',
         },
-        { text: 'Awesome substrate', href: '/contracts', subText: '' },
+        { id: 'ecosystem.resources.awesome-substrate', href: '/contracts', subText: '' },
       ],
     },
     {
-      id: 'ecosystem.technical',
       heading: 'Initiatives',
       links: [
         {
-          text: 'Builders program',
+          id: 'ecosystem.initiatives.substrate-builders-program',
           href: '/',
           subText: 'Support and mentorship to take your substrate project to the next level.',
         },
         {
-          text: 'Square one',
+          id: 'ecosystem.initiatives.square-one',
           href: '/ecosystem/square-one/',
           subText: 'Find Initiatives or funding that match your current development stage.',
         },
       ],
     },
     {
-      id: 'ecosystem.resources',
       heading: 'opportunities',
       links: [
-        { text: 'hackathons', href: 'https://marketplace.substrate.io', subText: '' },
-        { text: 'grants', href: `${DOCS_URL}/playground`, subText: '' },
-        { text: 'jobs', href: '/substrate-connect', subText: '' },
+        { id: 'ecosystem.opportunities.hackathons', href: 'https://marketplace.substrate.io', subText: '' },
+        { id: 'ecosystem.opportunities.grants', href: `${DOCS_URL}/playground`, subText: '' },
+        { id: 'ecosystem.opportunities.jobs', href: '/substrate-connect', subText: '' },
       ],
     },
   ],

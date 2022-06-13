@@ -1,7 +1,7 @@
+import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import Icon from '../../default/Icon';
-import { Link } from '../../default/Link';
 
 const BannerLink = ({ link, text }) => {
   return (

@@ -1,10 +1,10 @@
 import cx from 'classnames';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { buildSubMenu, Link, LinkMenu } from 'gatsby-plugin-substrate';
 import React, { useState } from 'react';
 
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import Icon from '../default/Icon';
-import { buildSubMenu, Link, LinkMenu } from '../default/Link';
 import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
 
@@ -40,17 +40,17 @@ const NavMobileSubMenuItem = ({ subMenuItem }) => {
       )}
 
       <div className={cx({ hidden: !isChildMenuOpen })}>
-        {subMenuItem.links.map(childMenuItem => {
+        {subMenuItem.links.map((childMenuItem, index) => {
           return (
-            <div key={childMenuItem.id}>
+            <div key={index}>
               <LinkMenu
                 className={cx('block font-medium hover:font-bold pl-12 mb-0 py-3 capitalize', {
                   'pl-0': !subMenuItem.heading,
                 })}
                 slug={childMenuItem.href}
               >
-                {!subMenuItem.heading && <NavSubItemHeading heading={childMenuItem.text} hasChildren={false} />}
-                {subMenuItem.heading && t(childMenuItem.text)}
+                {!subMenuItem.heading && <NavSubItemHeading heading={childMenuItem.id} hasChildren={false} />}
+                {subMenuItem.heading && t(childMenuItem.id)}
               </LinkMenu>
             </div>
           );

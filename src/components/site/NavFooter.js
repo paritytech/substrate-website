@@ -1,8 +1,7 @@
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
 import { useSiteMenus } from '../../hooks/use-site-menus';
-import { Link } from '../default/Link';
 
 const NavFooter = () => {
   const { t } = useTranslation();

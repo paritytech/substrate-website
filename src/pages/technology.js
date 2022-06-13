@@ -1,9 +1,9 @@
 import { graphql } from 'gatsby';
+import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
 
 import Icon from '../components/default/Icon';
-import { Link } from '../components/default/Link';
 import Article from '../components/layout/Article';
 import Section from '../components/layout/Section';
 import Card from '../components/layout/technology/Card';

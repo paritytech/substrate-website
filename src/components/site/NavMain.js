@@ -1,12 +1,12 @@
 import cx from 'classnames';
 import { Link } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { buildSubMenu } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import useComponentVisible from '../../hooks/use-component-visible';
 import { useSiteMenus } from '../../hooks/use-site-menus';
 import Icon from '../default/Icon';
-import { buildSubMenu } from '../default/Link';
 
 const DropDownItem = ({ item }) => {
   const { t } = useTranslation();
@@ -37,10 +37,10 @@ const DropDownItem = ({ item }) => {
                 {links &&
                   links.map((link, index) => (
                     <li key={index} className="list-none m-0 leading-3">
-                      {link.text && link.href && (
+                      {link.id && link.href && (
                         <Link className="no-underline" to={link.href}>
                           <span className="text-sm leading-6 text-substrateBlackish dark:text-white font-bold capitalize block hover:text-substrateGreen hover:underline">
-                            {t(link.text)}
+                            {t(link.id)}
                           </span>
                         </Link>
                       )}
