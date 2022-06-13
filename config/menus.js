@@ -13,12 +13,12 @@ const main = [
     id: 'developers',
   },
   {
-    url: '/about',
-    id: 'about',
-  },
-  {
     url: '/ecosystem',
     id: 'ecosystem',
+  },
+  {
+    url: '/about',
+    id: 'about',
   },
 ];
 
