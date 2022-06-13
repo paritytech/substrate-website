@@ -1,6 +1,6 @@
 import cx from 'classnames';
-// import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { Link } from 'gatsby-plugin-substrate';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, LinkMenu } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import data from '../../../data/teams.json';
@@ -37,12 +37,42 @@ const filterMenuItem = (menu, parent) => {
   return Object.assign(...parentItem);
 };
 
+const getSubMenu = (parent, category) => {
+  const subMenu = parent.menu.find(menu => menu.heading.toLowerCase().includes(category));
+  if (!subMenu) return [];
+  return 'links' in subMenu ? subMenu.links : [];
+};
+
 const NavSidebarSubMenu = ({ parent, category }) => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const { menus } = useSiteMenus();
   const parentItem = filterMenuItem(menus.main, parent);
-  console.log({ parentItem, category, menus });
-  return null;
+  const subMenu = getSubMenu(menus[parent], category);
+
+  return (
+    <>
+      <span className="px-6 p-4 block bg-substrateGray dark:bg-gray-700 font-bold mb-2">
+        {t(`${parentItem.id}.${category}`)}
+      </span>
+      <ul className="p-0 m-0 list-none">
+        {subMenu &&
+          subMenu.map(subMenuItem => {
+            return (
+              <li className="font-medium p-0 m-0" key={subMenuItem.id}>
+                <LinkMenu
+                  className={cx('px-6 p-3 block hover:font-bold')}
+                  prefix={subMenuItem.url}
+                  slug="/"
+                  internal={subMenuItem.internal}
+                >
+                  {t(subMenuItem.id)}
+                </LinkMenu>
+              </li>
+            );
+          })}
+      </ul>
+    </>
+  );
 };
 
 export default function NavSidebar() {

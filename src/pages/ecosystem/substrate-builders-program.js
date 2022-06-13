@@ -358,7 +358,7 @@ export default function BuildersProgram() {
 
         <Section>
           <h2>Got Questions?</h2>
-          <LineArrowButton link="/ecosystem/connect/contact">Send us an email here</LineArrowButton>
+          <LineArrowButton link="/about/connect/contact">Send us an email here</LineArrowButton>
         </Section>
       </Article>
     </Layout>

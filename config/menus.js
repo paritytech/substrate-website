@@ -145,7 +145,7 @@ const about = {
     {
       heading: 'Connect',
       links: [
-        { id: 'about.contact', url: '/ecosystem/connect/contact/', subText: '' },
+        { id: 'about.contact', url: '/about/connect/contact/', subText: '' },
         {
           id: 'about.careers',
           url: CAREERS_URL,
@@ -154,7 +154,7 @@ const about = {
         { id: 'about.events', url: 'https://www.parity.io/events/', subText: '' },
         {
           id: 'about.newsletter',
-          url: `/ecosystem/connect/newsletter/`,
+          url: `/about/connect/newsletter/`,
           subText: '',
         },
         { id: 'about.blog', url: 'https://www.parity.io/blog/tag/parity-substrate', subText: '' },

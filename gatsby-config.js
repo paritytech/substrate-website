@@ -215,7 +215,7 @@ module.exports = {
             crumbLabel: 'Resources',
           },
           {
-            pathname: '/ecosystem/connect',
+            pathname: '/about/connect',
             crumbLabel: 'Connect',
           },
           {

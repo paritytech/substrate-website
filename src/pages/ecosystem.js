@@ -227,7 +227,7 @@ export default function Home() {
                 title="Contact"
                 icon="contact"
                 description="Haven't found what you're looking for?"
-                link="/ecosystem/connect/contact/"
+                link="/about/connect/contact/"
                 linkText="Get in touch"
                 color="#ccc8ff"
               />
@@ -244,7 +244,7 @@ export default function Home() {
                 title="Newsletter"
                 icon="paperplane"
                 description="Get the latest technical updates and helpful developer resources right in your inbox."
-                link="/ecosystem/connect/newsletter/"
+                link="/about/connect/newsletter/"
                 linkText="Sign up"
                 color="#ccc8ff"
                 delay="400"

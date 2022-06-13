@@ -478,7 +478,7 @@ export default function Home() {
             <p className="text-lg leading-relaxed mb-6 xl:w-1/2">
               Keep up to date with tech updates and helpful resources.
             </p>
-            <SecondaryButton link="/ecosystem/connect/newsletter/">
+            <SecondaryButton link="/about/connect/newsletter/">
               <p className="mb-0 p-1">Sign up</p>
             </SecondaryButton>
           </div>
