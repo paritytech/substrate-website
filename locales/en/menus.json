@@ -21,7 +21,7 @@
   "developers.smart-contracts": "Smart Contracts",
   "developers.blockchain-basics": "Blockchain Basics",
   "developers.substrate-architecture": "Substrate Architecture",
-  "developers.build-a-local-blockchain": "Build a local blockchain",
+  "developers.build-a-blockchain": "Build a blockchain",
   "developers.rust-api": "Rust API",
   "developers.polkadotjs-api": "PolkadotJS API",
   "developers.pallet-marketplace": "Pallet marketplace",
@@ -29,7 +29,7 @@
   "developers.light-client": "Light Client",
   "developers.square-one": "Square One",
 
-  "about.connect": "Connect",
+  "about.contact": "Contact",
   "about.careers": "Careers",
   "about.events": "Events",
   "about.newsletter": "Newsletter",

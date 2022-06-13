@@ -37,8 +37,8 @@ const DropDownItem = ({ item }) => {
                 {links &&
                   links.map((link, index) => (
                     <li key={index} className="list-none m-0 leading-3">
-                      {link.id && link.href && (
-                        <Link className="no-underline" to={link.href}>
+                      {link.id && link.url && (
+                        <Link className="no-underline" to={link.url}>
                           <span className="text-sm leading-6 text-substrateBlackish dark:text-white font-bold capitalize block hover:text-substrateGreen hover:underline">
                             {t(link.id)}
                           </span>

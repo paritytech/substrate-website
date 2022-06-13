@@ -25,7 +25,7 @@ export const useSiteMenus = () => {
                 heading
                 links {
                   id
-                  href
+                  url
                   subText
                 }
               }
@@ -37,7 +37,7 @@ export const useSiteMenus = () => {
                 heading
                 links {
                   id
-                  href
+                  url
                   subText
                 }
               }
@@ -49,14 +49,10 @@ export const useSiteMenus = () => {
                 heading
                 links {
                   id
-                  href
+                  url
                   subText
                 }
               }
-            }
-            vision {
-              id
-              url
             }
             ecosystem {
               title
@@ -66,28 +62,12 @@ export const useSiteMenus = () => {
                 heading
                 links {
                   id
-                  href
+                  url
                   subText
                 }
               }
             }
-            opportunities {
-              id
-              url
-            }
-            resources {
-              id
-              url
-            }
-            connect {
-              id
-              url
-            }
             legal {
-              id
-              url
-            }
-            extra {
               id
               url
             }

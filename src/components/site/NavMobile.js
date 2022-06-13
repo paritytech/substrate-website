@@ -47,7 +47,7 @@ const NavMobileSubMenuItem = ({ subMenuItem }) => {
                 className={cx('block font-medium hover:font-bold pl-12 mb-0 py-3 capitalize', {
                   'pl-0': !subMenuItem.heading,
                 })}
-                slug={childMenuItem.href}
+                slug={childMenuItem.url}
               >
                 {!subMenuItem.heading && <NavSubItemHeading heading={childMenuItem.id} hasChildren={false} />}
                 {subMenuItem.heading && t(childMenuItem.id)}
