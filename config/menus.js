@@ -64,7 +64,7 @@ const developers = [
     id: 'developers.tutorials',
   },
   {
-    url: DOCS_URL + '/rustdocs/',
+    url: 'https://paritytech.github.io/substrate/master/',
     id: 'developers.rustdocs',
   },
   {
