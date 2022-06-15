@@ -85,7 +85,7 @@ const developers = {
         { id: 'developers.blockchain-basics', url: DOCS_URL, subText: '' },
         {
           id: 'developers.substrate-architecture',
-          url: `${DOCS_URL}v3/getting-started/architecture/`,
+          url: `${DOCS_URL}/v3/getting-started/architecture/`,
           subText: '',
         },
       ],
@@ -95,7 +95,7 @@ const developers = {
       links: [
         {
           id: 'developers.build-a-blockchain',
-          url: `${DOCS_URL}tutorials/v3/create-your-first-substrate-chain/`,
+          url: `${DOCS_URL}/tutorials/v3/create-your-first-substrate-chain/`,
           subText: '',
         },
         { id: 'developers.smart-contracts', url: '/smart-contracts/', subText: '' },
@@ -111,17 +111,17 @@ const developers = {
     {
       heading: 'Documentation',
       links: [
-        { id: 'developers.docs', url: `${DOCS_URL}v3/getting-started/overview/`, subText: '' },
-        { id: 'developers.how-to-guides', url: `${DOCS_URL}how-to-guides/v3/`, subText: '' },
-        { id: 'developers.tutorials', url: `${DOCS_URL}tutorials/v3/`, subText: '' },
-        { id: 'developers.rustdocs', url: `${DOCS_URL}rustdocs/`, subText: '' },
+        { id: 'developers.docs', url: `${DOCS_URL}/v3/getting-started/overview/`, subText: '' },
+        { id: 'developers.how-to-guides', url: `${DOCS_URL}/how-to-guides/v3/`, subText: '' },
+        { id: 'developers.tutorials', url: `${DOCS_URL}/tutorials/v3/`, subText: '' },
+        { id: 'developers.rustdocs', url: `${DOCS_URL}/rustdocs/`, subText: '' },
       ],
     },
     {
       heading: 'Resources',
       links: [
         { id: 'developers.pallet-marketplace', url: 'https://marketplace.substrate.io', subText: '' },
-        { id: 'developers.code-playground', url: `${DOCS_URL}playground`, subText: '' },
+        { id: 'developers.code-playground', url: `${DOCS_URL}/playground`, subText: '' },
         { id: 'developers.light-client', url: '/substrate-connect', subText: '' },
       ],
     },
