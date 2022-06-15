@@ -43,8 +43,8 @@ const footerMain = [
 
 /* sub menus, matching the main menu items' "id" */
 const technology = {
-  title: 'Build beyond',
-  subtitle: 'All Substrate chains are seamlessly compatible with Polkadot.',
+  title: 'Build beyond limitations',
+  subtitle: 'Discover why Substrate is the ultimate blockchain development kit.',
   menu: [
     {
       heading: '',
@@ -140,7 +140,7 @@ const developers = {
 
 const about = {
   title: 'About Us',
-  subtitle: 'The Road to Substrate.',
+  subtitle: 'Learn more, get in touch, discover careers, and more.',
   menu: [
     {
       heading: 'Connect',
@@ -169,7 +169,7 @@ const about = {
 
 const ecosystem = {
   title: 'helpful ecosystem',
-  subtitle: 'Connect with the right people, opportunties and resources.',
+  subtitle: 'Explore Substrate projects, opportunities, and resources.',
   gridArea: `'grid-item-0 grid-item-1 grid-item-2'
              'grid-item-3 grid-item-1 grid-item-2'`,
   menu: [
@@ -205,7 +205,7 @@ const ecosystem = {
         {
           id: 'ecosystem.initiatives.substrate-builders-program',
           url: '/ecosystem/substrate-builders-program/',
-          subText: 'Support and mentorship to take your substrate project to the next level.',
+          subText: 'Support and mentorship to take your Substrate project to the next level.',
         },
         {
           id: 'ecosystem.initiatives.square-one',

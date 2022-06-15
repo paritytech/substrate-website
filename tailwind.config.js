@@ -47,6 +47,8 @@ module.exports = {
         polkaPink: '#E6007A',
         transparentWhite: 'rgba(255, 255, 255, 0.1)',
         transparentDarkest: 'rgba(24, 26, 34, 0.1)',
+        superDarkGray: '#4C5868',
+        silveredGray: '#626872',
       },
       fontSize: {
         '2.5xl': ['1.75rem', { lineHeight: '1.2' }],

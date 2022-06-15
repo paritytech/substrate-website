@@ -32,7 +32,7 @@ const DropDownItem = ({ item }) => {
         {item.menu.map(({ heading, links }, index) => {
           return (
             <div key={index} {...(item.gridArea && { style: { gridArea: `grid-item-${index}` } })}>
-              {heading && <p className="text-base m-0 mb-1 uppercase">{heading}</p>}
+              {heading && <p className="text-base m-0 mb-1 uppercase text-superDarkGray">{heading}</p>}
               <ul className="m-0">
                 {links &&
                   links.map((link, index) => (
@@ -45,7 +45,7 @@ const DropDownItem = ({ item }) => {
                         </Link>
                       )}
                       {link.subText && (
-                        <span className="text-sm text-substrateBlackish dark:text-white italic leading-4">
+                        <span className="block text-sm text-silveredGray dark:text-white italic leading-4 mb-1">
                           {t(link.subText)}
                         </span>
                       )}
