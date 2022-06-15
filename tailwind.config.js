@@ -49,6 +49,7 @@ module.exports = {
         transparentDarkest: 'rgba(24, 26, 34, 0.1)',
         superDarkGray: '#4C5868',
         silveredGray: '#626872',
+        silveredGrayDarker: '#7B7D8A',
       },
       fontSize: {
         '2.5xl': ['1.75rem', { lineHeight: '1.2' }],

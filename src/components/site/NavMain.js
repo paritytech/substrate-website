@@ -21,9 +21,7 @@ const DropDownItem = ({ item }) => {
         <Link className="no-underline" to="/">
           <h3 className="text-lg m-0 text-substrateGreen uppercase">{t(item.title)}</h3>
         </Link>
-        <p className="m-0 text-sm italic" style={{ color: '#626872' }}>
-          {t(item.subtitle)}
-        </p>
+        <p className="m-0 text-sm italic text-silveredGray dark:text-silveredGrayDarker">{t(item.subtitle)}</p>
       </div>
       <div
         className={cx(`grid grid-cols-${Math.min(item.menu.length, 3)} gap-y-5 gap-x-10`)}
@@ -32,7 +30,11 @@ const DropDownItem = ({ item }) => {
         {item.menu.map(({ heading, links }, index) => {
           return (
             <div key={index} {...(item.gridArea && { style: { gridArea: `grid-item-${index}` } })}>
-              {heading && <p className="text-base m-0 mb-1 uppercase text-superDarkGray">{heading}</p>}
+              {heading && (
+                <p className="text-base m-0 mb-1 uppercase text-superDarkGray dark:text-silveredGrayDarker">
+                  {heading}
+                </p>
+              )}
               <ul className="m-0">
                 {links &&
                   links.map((link, index) => (
@@ -45,7 +47,7 @@ const DropDownItem = ({ item }) => {
                         </Link>
                       )}
                       {link.subText && (
-                        <span className="block text-sm text-silveredGray dark:text-white italic leading-4 mb-1">
+                        <span className="block text-sm text-silveredGray dark:text-silveredGrayDarker italic leading-4 mb-1">
                           {t(link.subText)}
                         </span>
                       )}
