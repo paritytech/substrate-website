@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
@@ -8,7 +7,7 @@ import Layout from '../../components/site/Layout';
 import PlaygroundCard from '../../components/site/PlaygroundCard';
 import SEO from '../../components/site/SEO';
 
-export default function playground() {
+export default function Playground() {
   const [selected, setSelected] = useState('');
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
