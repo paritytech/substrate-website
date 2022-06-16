@@ -13,11 +13,13 @@ import explore from '../../images/svg/ecosystem/explore.svg';
 import opportunities from '../../images/svg/ecosystem/opportunities.svg';
 import resources from '../../images/svg/ecosystem/resources.svg';
 import event from '../../images/svg/event.svg';
+import feTemplate from '../../images/svg/fe-template.svg';
 import flag from '../../images/svg/flag.svg';
 import forklessUpgrades from '../../images/svg/forkless-upgrades.svg';
 import fountainPen from '../../images/svg/fountain-pen.svg';
 import globeSolid from '../../images/svg/globe-solid.svg';
 import graduation from '../../images/svg/graduation.svg';
+import grantsDollar from '../../images/svg/grants-dollar.svg';
 import graph from '../../images/svg/graph.svg';
 import hackathons from '../../images/svg/hackathons.svg';
 import developers from '../../images/svg/home/developers.svg';
@@ -38,6 +40,7 @@ import logoWhite from '../../images/svg/logo-white.svg';
 import mail from '../../images/svg/mail.svg';
 import map from '../../images/svg/map.svg';
 import noResults from '../../images/svg/no-results.svg';
+import nodeTemplate from '../../images/svg/node-template.svg';
 import paperplane from '../../images/svg/paperplane.svg';
 import pen from '../../images/svg/pen.svg';
 import placeholder from '../../images/svg/placeholder.svg';
@@ -60,6 +63,7 @@ import so2 from '../../images/svg/social/so2.svg';
 import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
+import stackExchange from '../../images/svg/stack-exchange-white.svg';
 import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
 import substrate from '../../images/svg/substrate.svg';
 import team from '../../images/svg/team.svg';
@@ -227,6 +231,11 @@ const iconsMap = {
   composable: composable,
   'future-proof-base': futureProofBase,
   upgradable: upgradable,
+  /* Developers */
+  feTemplate: feTemplate,
+  nodeTemplate: nodeTemplate,
+  grantsDollar: grantsDollar,
+  stackExchange: stackExchange,
   /* Smart Contracts */
   'smart-contracts': smartContracts,
 };
