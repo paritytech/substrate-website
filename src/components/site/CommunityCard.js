@@ -1,11 +1,9 @@
 import React from 'react';
 
-//import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 
 export default function CommunityCard() {
-  //const { siteMetadata } = useSiteMetadata();
   const data = [
     {
       title: 'Contact',

@@ -37,10 +37,6 @@
   color: rgba(0,148,255,var(--tw-text-opacity));
 }
 
-// .mdx-anchor a:hover {
-//   color: #4e73f2;
-// }
-
 .mdx-anchor a::before {
   content: '';
   position: absolute;

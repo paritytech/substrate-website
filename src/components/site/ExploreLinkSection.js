@@ -1,13 +1,10 @@
 import React from 'react';
 
-//import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
 import Section from '../layout/Section';
 
 const ExploreLinkSection = ({ links }) => {
-  //const { siteMetadata } = useSiteMetadata();
-  const currentLinks = [];
   const exploreLinks = new Map();
   exploreLinks.set('technology', {
     title: 'Technology',
@@ -48,8 +45,8 @@ const ExploreLinkSection = ({ links }) => {
     linkText: 'Meet The Teams',
     icon: 'diamondyellow',
   });
-  links.forEach(link => {
-    currentLinks.push(exploreLinks.get(link));
+  const currentLinks = links.map(link => {
+    return exploreLinks.get(link);
   });
 
   return (
