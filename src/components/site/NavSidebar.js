@@ -32,7 +32,7 @@ const NavSidebarCaseStudySubMenu = () => {
 
 const filterMenuItem = (menu, parent) => {
   const parentItem = menu.filter(function (menuItem) {
-    return menuItem.url.includes(parent);
+    return menuItem.id.includes(parent);
   });
   return Object.assign(...parentItem);
 };

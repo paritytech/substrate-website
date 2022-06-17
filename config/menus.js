@@ -82,10 +82,14 @@ const developers = {
     {
       heading: 'Get Started',
       links: [
-        { id: 'developers.blockchain-basics', url: DOCS_URL, subText: '' },
+        {
+          id: 'developers.blockchain-basics',
+          url: `${DOCS_URL}/main-docs/fundamentals/blockchain-basics/`,
+          subText: '',
+        },
         {
           id: 'developers.substrate-architecture',
-          url: `${DOCS_URL}/main-docs/fundamentals/blockchain-basics/`,
+          url: `${DOCS_URL}/v3/getting-started/architecture/`,
           subText: '',
         },
       ],
