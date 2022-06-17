@@ -18,7 +18,7 @@ const DropDownItem = ({ item }) => {
       })}
     >
       <div className="pb-5">
-        <Link className="no-underline" to="/">
+        <Link className="no-underline" to={item.url}>
           <h3 className="text-lg m-0 text-substrateGreen uppercase">{t(item.title)}</h3>
         </Link>
         <p className="m-0 text-sm italic text-silveredGray dark:text-silveredGrayDarker">{t(item.subtitle)}</p>
@@ -65,7 +65,7 @@ const DropDownItem = ({ item }) => {
 const DropDown = ({ menuItem, header, isScrolled }) => {
   const { t } = useTranslation();
   const { menus } = useSiteMenus();
-  const subMenu = buildSubMenu(menus, menuItem);
+  const subMenu = { ...menuItem, ...buildSubMenu(menus, menuItem) };
   const {
     ref,
     isComponentVisible: isDropdownVisible,

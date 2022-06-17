@@ -9,7 +9,7 @@ const main = [
     id: 'technology',
   },
   {
-    url: '/developers',
+    url: DOCS_URL,
     id: 'developers',
   },
   {
@@ -17,7 +17,7 @@ const main = [
     id: 'ecosystem',
   },
   {
-    url: '/about',
+    url: '/vision/substrate-and-polkadot',
     id: 'about',
   },
 ];
@@ -85,7 +85,7 @@ const developers = {
         { id: 'developers.blockchain-basics', url: DOCS_URL, subText: '' },
         {
           id: 'developers.substrate-architecture',
-          url: `${DOCS_URL}/v3/getting-started/architecture/`,
+          url: `${DOCS_URL}/main-docs/fundamentals/blockchain-basics/`,
           subText: '',
         },
       ],
@@ -104,7 +104,11 @@ const developers = {
     {
       heading: 'Get Technical',
       links: [
-        { id: 'developers.rust-api', url: '/', subText: '' },
+        {
+          id: 'developers.rust-api',
+          url: 'https://paritytech.github.io/substrate/master/sc_service/index.html',
+          subText: '',
+        },
         { id: 'developers.polkadotjs-api', url: 'https://polkadot.js.org/docs/api/', subText: '' },
       ],
     },
@@ -168,7 +172,7 @@ const about = {
 };
 
 const ecosystem = {
-  title: 'helpful ecosystem',
+  title: 'Thriving ecosystem',
   subtitle: 'Explore Substrate projects, opportunities, and resources.',
   gridArea: `'grid-item-0 grid-item-1 grid-item-2'
              'grid-item-3 grid-item-1 grid-item-2'`,
