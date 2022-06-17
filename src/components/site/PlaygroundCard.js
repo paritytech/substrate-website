@@ -2,6 +2,7 @@ import cx from 'classnames';
 import React from 'react';
 
 import Icon from '../default/Icon';
+import { Link } from '../default/Link';
 
 export default function PlaygroundCard({ preSelected, icon, title, description, listTitle, link, components }) {
   return (
@@ -21,22 +22,12 @@ export default function PlaygroundCard({ preSelected, icon, title, description, 
           )}
         >
           <div className="flex items-center mb-10">
-            {icon === 'node' && (
-              <Icon
-                name="nodeTemplate"
-                className={cx('fill-current text-substrateDark dark:text-substrateWhite', {
-                  'text-substrateGreen': preSelected,
-                })}
-              />
-            )}
-            {icon === 'front' && (
-              <Icon
-                name="feTemplate"
-                className={cx('fill-current text-substrateDark dark:text-substrateWhite', {
-                  'text-substrateGreen': preSelected,
-                })}
-              />
-            )}
+            <Icon
+              name={icon === 'node' ? 'nodeTemplate' : 'feTemplate'}
+              className={cx('fill-current text-substrateDark dark:text-substrateWhite', {
+                'text-substrateGreen': preSelected,
+              })}
+            />
             <div className="text-2xl md:text-3xl ml-5 font-extrabold">{title}</div>
           </div>
           <div className="font-bold text-lg mb-6 lg:h-[140px] xl:h-full">{description}</div>
@@ -49,7 +40,7 @@ export default function PlaygroundCard({ preSelected, icon, title, description, 
             </ul>
           </div>
           <div>
-            <a href={link} target="_blank" rel="noopener noreferrer">
+            <Link href={link} target="_blank" rel="noopener noreferrer">
               <button
                 className={cx(
                   'w-full sm:w-56 py-3 rounded bg-substrateDark bg-opacity-50 group-hover:bg-opacity-100 dark:bg-substrateWhite transform transition-all duration-300 ease-in-out hover:bg-opacity-80 dark:hover:bg-opacity-80 text-white dark:text-substrateDark text-lg font-bold focus:outline-none',
@@ -58,7 +49,7 @@ export default function PlaygroundCard({ preSelected, icon, title, description, 
               >
                 Launch Playground
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

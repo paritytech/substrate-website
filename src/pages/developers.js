@@ -6,19 +6,19 @@ import Lottie from 'react-lottie';
 import Icon from '../components/default/Icon';
 import { Link } from '../components/default/Link';
 import Section from '../components/layout/Section';
+import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
 import Banner from '../components/site/Banner';
 import CommunityCard from '../components/site/CommunityCard';
-import ExploreLinkSection from '../components/site/ExploreLinkSection';
 import Layout from '../components/site/Layout';
 import SEO from '../components/site/SEO';
 import DocCard from '../components/ui/DocCard';
 import PrimaryFixedButton from '../components/ui/PrimaryFixedButton';
 import SecondaryButton from '../components/ui/SecondaryButton';
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 import * as animationData from '../images/animation/dev-hero.json';
 
-const DOCS_URL = process.env.GATSBY_DOCS_URL;
-
 export default function Home() {
+  const { siteMetadata } = useSiteMetadata();
   return (
     <Layout mode="full">
       <Banner />
@@ -34,7 +34,7 @@ export default function Home() {
               Substrate is powered by best-in-class cryptographic research and comes with peer-to-peer networking,
               consensus mechanisms, and much more.
             </p>
-            <PrimaryFixedButton hero link={DOCS_URL + '/quick-start/'}>
+            <PrimaryFixedButton hero link={siteMetadata.docsUrl}>
               Get Started
             </PrimaryFixedButton>
           </div>
@@ -84,14 +84,14 @@ export default function Home() {
             <DocCard
               title={`Documentation`}
               text={`Discover the principles and design decisions that Substrate is built on. Read about its key features and capabilties as well as the specific skills needed to be an effective Substrate blockchain developer.`}
-              link={DOCS_URL + `/quick-start/`}
+              link={siteMetadata.docsUrl + `/quick-start/`}
               cta={`Get started`}
               iconName={`docsIcon`}
             />
             <DocCard
               title={`Reference`}
               text={`The Substrate reference section has everything you need to produce robust Substrate based blockchains. From beginner to expert, you can use this information with flexibly to suit your current needs.`}
-              link={DOCS_URL + `/reference/`}
+              link={siteMetadata.docsUrl + `/reference/`}
               cta={`Learn and contribute`}
               iconName={`htgIcon`}
               animationDelay={200}
@@ -99,7 +99,7 @@ export default function Home() {
             <DocCard
               title={`Tutorials`}
               text={`Create your first Substrate chain, perform a forkless upgrade, and more. This selection of tutorials will lead you through the process in sessions of up to two hours.`}
-              link={DOCS_URL + `/tutorials/`}
+              link={siteMetadata.docsUrl + `/tutorials/`}
               cta={`Dive in`}
               iconName={`tutsIcon`}
               animationDelay={400}
