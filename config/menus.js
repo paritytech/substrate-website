@@ -53,7 +53,7 @@ const developers = [
     id: 'developers.home',
   },
   {
-    url: DOCS_URL + '/quick-start/',
+    url: DOCS_URL,
     id: 'developers.docs',
   },
   {
