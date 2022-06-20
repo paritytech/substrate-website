@@ -61,11 +61,11 @@ const developers = [
     id: 'developers.rustdocs',
   },
   {
-    url: WEBSITE_URL + '/developers/playground/',
+    url: '/playground',
     id: 'developers.playground',
   },
   {
-    url: WEBSITE_URL + '/developers/smart-contracts/',
+    url: '/smart-contracts',
     id: 'developers.smart-contracts',
   },
 ];
