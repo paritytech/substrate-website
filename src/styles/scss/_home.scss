@@ -90,3 +90,26 @@
 .shadow {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
+
+/* Code blocks */
+
+.gatsby-highlight {
+  border-radius: 10px;
+  margin: 0.5em 0;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+  padding-right: 1.5em;
+  padding-left: 0.5em;
+  overflow: hidden;
+  font-size: 1em;
+  @apply relative mb-6 w-full;
+}
+
+.gatsby-highlight pre[class*='language-']::before {
+  right: unset;
+  left: 16px;
+}
+
+.markdown-body .gatsby-highlight pre {
+  margin-right: 6rem !important;
+}
