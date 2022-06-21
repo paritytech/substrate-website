@@ -2,6 +2,7 @@
 title: Reserve para ID
 ---
 
-```js
-<placeholder code>
+```
+# Extrinsic to be called on chain
+Registrar.reserve()
 ```
