@@ -232,7 +232,3 @@ div[aria-label='animation'] {
 .rococo ul {
   @apply ml-4;
 }
-
-.gatsby-remark-prismjs-copy-button {
-  @apply absolute right-6 -top-4 bg-substrateGreen-dark;
-}

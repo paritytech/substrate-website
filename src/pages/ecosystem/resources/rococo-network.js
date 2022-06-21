@@ -3,6 +3,7 @@ import React from 'react';
 
 import Icon from '../../../components/default/Icon';
 import { Link } from '../../../components/default/Link';
+import Markdown from '../../../components/default/Markdown';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -95,7 +96,7 @@ export default function Rococo({ data }) {
           </a>{' '}
           channel on Matrix. To receive ROC tokens, use the command:
         </p>
-        <div dangerouslySetInnerHTML={{ __html: obtainingRoc.html }} className="mb-12"></div>
+        <Markdown htmlAst={obtainingRoc.htmlAst} />
 
         <p className="mb-6">
           Now that you have generated and registered your parachain on Rococo, you can{' '}
@@ -110,31 +111,31 @@ export default function Rococo({ data }) {
         </p>
         <p className="mb-10">
           If you have a parachain already on Kusama and/or Polkadot, you will be entitled for a long term lease. If this
-          is the case, you need to directly
+          is the case, you need to directly{' '}
           <a
             href="https://github.com/paritytech/subport/issues/new?assignees=&labels=Rococo&template=rococo.yaml"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
             Open a Request
-          </a>
+          </a>{' '}
           with the following information: paraID of your Kusama parachain, WASM and Genesis of your parachain following
           the same paraID that you have on Kusama.
         </p>
 
         <h2 className="text-2xl font-bold mb-6">Off-chain steps</h2>
 
-        <h3 className="text-base font-bold mb-10">{reserveParaId.frontmatter.title}</h3>
-        <div className="mb-8" dangerouslySetInnerHTML={{ __html: reserveParaId.html }}></div>
+        <h3 className="text-base font-bold mb-4">{reserveParaId.frontmatter.title}</h3>
+        <Markdown htmlAst={reserveParaId.htmlAst} />
 
-        <h3 className="text-base font-bold mb-10">{buildParachain.frontmatter.title}</h3>
-        <div className="mb-8" dangerouslySetInnerHTML={{ __html: buildParachain.html }}></div>
+        <h3 className="text-base font-bold mb-4">{buildParachain.frontmatter.title}</h3>
+        <Markdown htmlAst={buildParachain.htmlAst} />
 
-        <h3 className="text-base font-bold mb-10">{runSyncCollator.frontmatter.title}</h3>
-        <div className="mb-8" dangerouslySetInnerHTML={{ __html: runSyncCollator.html }}></div>
+        <h3 className="text-base font-bold mb-4">{runSyncCollator.frontmatter.title}</h3>
+        <Markdown htmlAst={runSyncCollator.htmlAst} />
 
-        <h3 className="text-base font-bold mb-10">{registerWasm.frontmatter.title}</h3>
-        <div className="mb-8" dangerouslySetInnerHTML={{ __html: registerWasm.html }}></div>
+        <h3 className="text-base font-bold mb-4">{registerWasm.frontmatter.title}</h3>
+        <Markdown htmlAst={registerWasm.htmlAst} />
 
         <h2 className="text-2xl font-bold mb-6">Learn more</h2>
         <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
@@ -184,31 +185,31 @@ export const query = graphql`
       frontmatter {
         title
       }
-      html
+      htmlAst
     }
     reserveParaId: markdownRemark(frontmatter: { title: { eq: "Reserve para ID" } }) {
       frontmatter {
         title
       }
-      html
+      htmlAst
     }
     buildParachain: markdownRemark(frontmatter: { title: { eq: "Build parachain using para ID" } }) {
       frontmatter {
         title
       }
-      html
+      htmlAst
     }
     runSyncCollator: markdownRemark(frontmatter: { title: { eq: "Run and sync collator" } }) {
       frontmatter {
         title
       }
-      html
+      htmlAst
     }
     registerWasm: markdownRemark(frontmatter: { title: { eq: "Register Wasm and chain spec" } }) {
       frontmatter {
         title
       }
-      html
+      htmlAst
     }
   }
 `;
