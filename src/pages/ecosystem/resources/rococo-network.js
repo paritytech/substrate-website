@@ -82,29 +82,59 @@ export default function Rococo({ data }) {
         </div>
       </Section>
 
-      <Section>
+      <Section className="underline-animate underline-animate-thin">
         <h2 className="text-2xl font-bold mb-6">{obtainingRoc.frontmatter.title}</h2>
+        <p className="mb-10">
+          ROC are available in the{' '}
+          <a
+            href="https://app.element.io/#/room/#rococo-faucet:matrix.org"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            Rococo Faucet
+          </a>{' '}
+          channel on Matrix. To receive ROC tokens, use the command:
+        </p>
         <div dangerouslySetInnerHTML={{ __html: obtainingRoc.html }} className="mb-12"></div>
+
+        <p className="mb-6">
+          Now that you have generated and registered your parachain on Rococo, you can{' '}
+          <a
+            href="https://github.com/paritytech/subport/issues/new?assignees=&labels=Rococo&template=rococo.yaml"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            Open a Request
+          </a>{' '}
+          for it to be upgraded!
+        </p>
+        <p className="mb-10">
+          If you have a parachain already on Kusama and/or Polkadot, you will be entitled for a long term lease. If this
+          is the case, you need to directly
+          <a
+            href="https://github.com/paritytech/subport/issues/new?assignees=&labels=Rococo&template=rococo.yaml"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            Open a Request
+          </a>
+          with the following information: paraID of your Kusama parachain, WASM and Genesis of your parachain following
+          the same paraID that you have on Kusama.
+        </p>
 
         <h2 className="text-2xl font-bold mb-6">Off-chain steps</h2>
 
-        <h3 className="text-base mb-4">{reserveParaId.frontmatter.title}</h3>
+        <h3 className="text-base font-bold mb-10">{reserveParaId.frontmatter.title}</h3>
         <div className="mb-8" dangerouslySetInnerHTML={{ __html: reserveParaId.html }}></div>
 
-        <h3 className="text-base mb-4">{buildParachain.frontmatter.title}</h3>
+        <h3 className="text-base font-bold mb-10">{buildParachain.frontmatter.title}</h3>
         <div className="mb-8" dangerouslySetInnerHTML={{ __html: buildParachain.html }}></div>
 
-        <h3 className="text-base mb-4">{runSyncCollator.frontmatter.title}</h3>
+        <h3 className="text-base font-bold mb-10">{runSyncCollator.frontmatter.title}</h3>
         <div className="mb-8" dangerouslySetInnerHTML={{ __html: runSyncCollator.html }}></div>
 
-        <h3 className="text-base mb-4">{registerWasm.frontmatter.title}</h3>
+        <h3 className="text-base font-bold mb-10">{registerWasm.frontmatter.title}</h3>
         <div className="mb-8" dangerouslySetInnerHTML={{ __html: registerWasm.html }}></div>
-
-        <h3 className="text-base mb-4">Add an end point</h3>
-        <p className="mb-6">Placeholder paragraph</p>
-
-        <h3 className="text-base mb-4">Add your network logo</h3>
-        <p className="mb-12">Placeholder paragraph</p>
 
         <h2 className="text-2xl font-bold mb-6">Learn more</h2>
         <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
@@ -120,6 +150,9 @@ export default function Rococo({ data }) {
           <li>
             <Link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-rpc.polkadot.io#/explorer">Rococo UI</Link> —
             Access the Rococo UI at Rococo Polkadot-JS Apps.
+          </li>
+          <li>
+            <Link to="https://github.com/paritytech/subport/issues/new/choose">Rococo onboarding request issue</Link>
           </li>
         </ul>
 
