@@ -6,7 +6,7 @@ import { Link } from '../default/Link';
 
 export default function DocsButton() {
   const { siteMetadata } = useSiteMetadata();
-  const docsLink = siteMetadata.docsUrl + '/v' + siteMetadata.docsVersion;
+  const docsLink = siteMetadata.docsUrl;
 
   return (
     // TODO: add docs link

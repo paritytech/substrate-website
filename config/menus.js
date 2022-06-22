@@ -49,31 +49,23 @@ const technology = [
 
 const developers = [
   {
-    url: DOCS_URL,
+    url: '/',
     id: 'developers.home',
   },
   {
-    url: DOCS_URL + '/v3/getting-started/overview/',
+    url: DOCS_URL,
     id: 'developers.docs',
   },
   {
-    url: DOCS_URL + '/how-to-guides/v3/',
-    id: 'developers.how-to-guides',
-  },
-  {
-    url: DOCS_URL + '/tutorials/v3/',
-    id: 'developers.tutorials',
-  },
-  {
-    url: DOCS_URL + '/rustdocs/',
+    url: 'https://paritytech.github.io/substrate/master/sc_service/',
     id: 'developers.rustdocs',
   },
   {
-    url: DOCS_URL + '/playground/',
+    url: '/playground',
     id: 'developers.playground',
   },
   {
-    url: WEBSITE_URL + '/smart-contracts/',
+    url: '/smart-contracts',
     id: 'developers.smart-contracts',
   },
 ];

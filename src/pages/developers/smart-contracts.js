@@ -1,16 +1,16 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import Icon from '../components/default/Icon';
-import { Link } from '../components/default/Link';
-import Card from '../components/layout/Card';
-import ExploreCommunityProjects from '../components/layout/contracts/ExploreCommunityProjects';
-import Highlight from '../components/layout/contracts/Highlight';
-import TutorialCard from '../components/layout/contracts/TutorialCard';
-import Section from '../components/layout/Section';
-import Layout from '../components/site/Layout';
-import SEO from '../components/site/SEO';
-import LineArrowButton from '../components/ui/LineArrowButton';
+import Icon from '../../components/default/Icon';
+import { Link } from '../../components/default/Link';
+import Card from '../../components/layout/Card';
+import ExploreCommunityProjects from '../../components/layout/contracts/ExploreCommunityProjects';
+import Highlight from '../../components/layout/contracts/Highlight';
+import TutorialCard from '../../components/layout/contracts/TutorialCard';
+import Section from '../../components/layout/Section';
+import Layout from '../../components/site/Layout';
+import SEO from '../../components/site/SEO';
+import LineArrowButton from '../../components/ui/LineArrowButton';
 
 const tutorials = [
   {
