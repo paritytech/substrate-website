@@ -13,9 +13,8 @@
 
   "developers.home": "Home",
   "developers.docs": "Docs",
-  "developers.how-to-guides": "How-to Guides",
-  "developers.tutorials": "Tutorials",
   "developers.rustdocs": "Rust Docs",
+  "developers.marketplace": "Marketplace",
   "developers.playground": "Playground",
   "developers.smart-contracts": "Smart Contracts",
 
