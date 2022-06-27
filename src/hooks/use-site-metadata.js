@@ -14,7 +14,6 @@ export const useSiteMetadata = () => {
             image_og
             siteUrl
             docsUrl
-            docsVersion
             author
             pressEmail
             email

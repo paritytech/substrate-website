@@ -1,15 +1,18 @@
 const menus = require('./menus.js');
+const { WEBSITE_URL, DOCS_URL, MARKETPLACE_URL, CAREERS_URL } = require('./webConsts.js');
 
 module.exports = {
   menus,
-  title: `Substrate_`,
+  title: `Substrate Marketplace`,
   title_meta: `Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use case.`,
   description: `Substrate enables developers to quickly and easily build future-proof blockchains optimized for any use case.`,
-  image_og: `${process.env.GATSBY_WEBSITE_URL}/img/substrate_og.png`,
-  siteUrl: process.env.GATSBY_WEBSITE_URL,
-  docsUrl: process.env.GATSBY_DOCS_URL,
-  docsVersion: 3,
-  author: 'Parity/W3F Web Team',
+  image_og: `${WEBSITE_URL}/img/substrate_og.png`,
+  siteUrl: WEBSITE_URL,
+  websiteUrl: WEBSITE_URL,
+  docsUrl: DOCS_URL,
+  marketplaceUrl: MARKETPLACE_URL,
+  careersUrl: CAREERS_URL,
+  author: 'Parity WebDev/W3F WebOps',
   pressEmail: 'press@parity.io',
   email: 'info@parity.io',
   twitter: 'https://twitter.com/substrate_io',
