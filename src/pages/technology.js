@@ -21,7 +21,7 @@ export default function Technology() {
       icon: 'tools',
       description:
         'No need to reinvent the wheel, Substrate has robust tooling for development, deployment, and debugging.',
-      link: `${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/tools/`,
+      link: `${siteMetadata.docsUrl}/reference/command-line-tools/`,
     },
     {
       title: 'Light-Client-First Design',
@@ -34,7 +34,7 @@ export default function Technology() {
       title: 'Forkless Upgrades',
       icon: 'forkless-upgrades',
       description: 'Upgrading blockchains has never been easier. With Substrate, everyone stays on the same path.',
-      link: `${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/upgrades/`,
+      link: `${siteMetadata.docsUrl}/main-docs/build/upgrade/`,
     },
   ];
 

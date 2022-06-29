@@ -40,7 +40,7 @@ const Open = () => {
           linkText={
             <p className="underline-animate">
               Explore the components of a{' '}
-              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/getting-started/architecture/`}>
+              <Link to={`${siteMetadata.docsUrl}/main-docs/fundamentals/architecture/`}>
                 Substrate-based blockchain node »
               </Link>
             </p>
