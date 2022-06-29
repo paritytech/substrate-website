@@ -86,9 +86,7 @@ export default function Flexible() {
           linkText={
             <p className="underline-animate">
               Perform your first forkless upgrade using{' '}
-              <Link to={`${siteMetadata.docsUrl}/tutorials/v${siteMetadata.docsVersion}/forkless-upgrades/`}>
-                this tutorial »
-              </Link>
+              <Link to={`${siteMetadata.docsUrl}/tutorials/get-started/forkless-upgrade/`}>this tutorial »</Link>
             </p>
           }
         >

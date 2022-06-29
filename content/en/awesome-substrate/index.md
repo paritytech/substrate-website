@@ -72,7 +72,7 @@
 
 - [Bridges](https://github.com/paritytech/parity-bridges-common) - A collection of tools for cross-chain communication.
 - [Cumulus](https://github.com/paritytech/cumulus) - A set of tools for writing Substrate-based Polkadot parachains.
-- [FRAME](https://docs.substrate.io/v3/runtime/frame/) - A system for building Substrate runtimes.
+- [FRAME](https://docs.substrate.io/reference/frame-pallets/) - A system for building Substrate runtimes.
 - [Frontier](https://github.com/paritytech/frontier) - End-to-end Ethereum emulation for Substrate chains.
 - [ink!](https://github.com/paritytech/ink) - Rust smart contract language for Substrate chains.
 - [IntegriTEE](https://book.integritee.network/) - Trusted off-chain execution framework that uses [Intel SGX](https://en.wikipedia.org/wiki/Software_Guard_Extensions) trusted execution environments.

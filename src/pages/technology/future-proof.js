@@ -43,10 +43,7 @@ const FutureProof = () => {
           title="Upgradeable"
           linkText={
             <p className="underline-animate">
-              Learn how{' '}
-              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/upgrades/`}>
-                Substrate upgrades work »
-              </Link>
+              Learn how <Link to={`${siteMetadata.docsUrl}/main-docs/build/upgrade/`}>Substrate upgrades work »</Link>
             </p>
           }
         >
@@ -86,8 +83,8 @@ const FutureProof = () => {
           title="Composable"
           linkText={
             <p className="underline-animate">
-              Explore how <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/runtime/frame/`}>FRAME</Link>{' '}
-              enables composability »
+              Explore how <Link to={`${siteMetadata.docsUrl}/reference/frame-pallets/`}>FRAME</Link> enables
+              composability »
             </p>
           }
         >
@@ -127,9 +124,7 @@ const FutureProof = () => {
           linkText={
             <p className="underline-animate">
               Adapt your runtime by adding a pallet using{' '}
-              <Link to={`${siteMetadata.docsUrl}/tutorials/v${siteMetadata.docsVersion}/add-a-pallet/`}>
-                this tutorial »
-              </Link>
+              <Link to={`${siteMetadata.docsUrl}/tutorials/work-with-pallets/add-a-pallet/`}>this tutorial »</Link>
             </p>
           }
         >
