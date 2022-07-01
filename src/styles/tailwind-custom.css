@@ -270,3 +270,9 @@ div[aria-label='animation'] {
     box-shadow: inset 0px 0px 0px 30px #24cc85;
   }
 }
+
+/* Rococo code blocks */
+
+.gatsby-highlight pre {
+  margin-right: 6rem !important;
+}
