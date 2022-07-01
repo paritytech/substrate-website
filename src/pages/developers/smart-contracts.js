@@ -14,7 +14,7 @@ import LineArrowButton from '../../components/ui/LineArrowButton';
 
 const tutorials = [
   {
-    link: 'https://docs.substrate.io/tutorials/v3/ink-workshop/pt1/',
+    link: 'https://docs.substrate.io/tutorials/smart-contracts/',
     title: 'Write Smart Contracts',
     description: 'Learn to build and deploy an ERC20 token smart contract with ink!',
     image: '/img/contracts-tutorials-1.jpeg',
@@ -87,7 +87,7 @@ export default function SmartContracts() {
           <p className="text-base mb-0 max-w-md font-bold">
             Find out more about the different ways to implement smart contracts{' '}
             <span className="underline-animate underline-animate-thin">
-              <Link to="https://docs.substrate.io/v3/runtime/smart-contracts/">in the docs »</Link>
+              <Link to="https://docs.substrate.io/tutorials/smart-contracts/">in the docs »</Link>
             </span>
           </p>
         </div>
