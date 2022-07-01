@@ -138,7 +138,7 @@ export default function Home() {
             </SecondaryButton>
           </div>
           <div data-aos="fade-left" className="hidden lg:flex justify-center lg:w-1/2">
-            <Link to="/playground/">
+            <Link to="/developers/playground/">
               <StaticImage
                 backgroundColor="transparent"
                 src="../images/png/developers/playground-hero.png"
