@@ -207,6 +207,10 @@ module.exports = {
             crumbLabel: 'Ecosystem',
           },
           {
+            pathname: '/ecosystem/projects',
+            crumbLabel: 'Projects',
+          },
+          {
             pathname: '/ecosystem/opportunities',
             crumbLabel: 'Opportunities',
           },
