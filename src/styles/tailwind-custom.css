@@ -276,3 +276,7 @@ div[aria-label='animation'] {
 .gatsby-highlight pre {
   margin-right: 6rem !important;
 }
+
+.gatsby-highlight {
+  @apply max-w-full;
+}
