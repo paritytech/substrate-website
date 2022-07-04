@@ -71,7 +71,7 @@ export default function Rococo({ data }) {
 
       <Section>
         <h2 className="text-2xl font-bold mb-6">Parachain lifecycle</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2">
+        <div className="grid grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-2 w-full">
           {illustrations.map(({ name, description }, idx) => (
             <div key={idx}>
               <div>
