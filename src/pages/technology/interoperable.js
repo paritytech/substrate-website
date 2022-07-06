@@ -134,10 +134,8 @@ const Interoperable = () => {
           linkText={
             <p className="underline-animate">
               Read more about{' '}
-              <Link to={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/concepts/off-chain-features/`}>
-                off-chain features
-              </Link>{' '}
-              in the documentation »
+              <Link to={`${siteMetadata.docsUrl}/main-docs/fundamentals/offchain-operations/`}>off-chain features</Link>{' '}
+              in the in the in the documentation »
             </p>
           }
         >

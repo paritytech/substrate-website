@@ -33,9 +33,8 @@
   color: #4e73f2;
   text-decoration: none;
 }
-
-.mdx-anchor a:hover {
-  color: #4e73f2;
+.dark .mdx-anchor a {
+  color: rgba(0,148,255,var(--tw-text-opacity));
 }
 
 .mdx-anchor a::before {
@@ -50,6 +49,10 @@
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;
+}
+
+.dark .mdx-anchor a::before {
+  background-color: rgba(0,148,255,1);
 }
 
 .mdx-anchor a.md-button:hover::before {

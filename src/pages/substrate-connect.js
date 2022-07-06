@@ -131,10 +131,7 @@ export default function Connect() {
               on all major browsers and does not require a TLS certificate for connecting to nodes.
             </p>
             <ExtensionLinks />
-            <LineArrowButton
-              link={`${siteMetadata.docsUrl}/v${siteMetadata.docsVersion}/integration/substrate-connect/`}
-              className="block mt-8"
-            >
+            <LineArrowButton link={`${siteMetadata.docsUrl}`} className="block mt-8">
               Developer Docs
             </LineArrowButton>
           </div>

@@ -1,6 +1,4 @@
-const DOCS_URL = process.env.GATSBY_DOCS_URL;
-const CAREERS_URL = process.env.GATSBY_CAREERS_URL;
-const WEBSITE_URL = process.env.GATSBY_WEBSITE_URL;
+const { MARKETPLACE_URL, DOCS_URL, CAREERS_URL, WEBSITE_URL } = require('./webConsts.js');
 
 /* the main menu, ids of items must match
    the submenu's key of this js object */
@@ -49,28 +47,28 @@ const technology = [
 
 const developers = [
   {
-    url: DOCS_URL,
+    url: '/',
     id: 'developers.home',
   },
   {
-    url: DOCS_URL + '/v3/getting-started/overview/',
+    url: DOCS_URL,
     id: 'developers.docs',
   },
   {
-    url: DOCS_URL + '/how-to-guides/v3/',
-    id: 'developers.how-to-guides',
-  },
-  {
-    url: DOCS_URL + '/tutorials/v3/',
-    id: 'developers.tutorials',
-  },
-  {
-    url: DOCS_URL + '/rustdocs/',
+    url: 'https://paritytech.github.io/substrate/master/sc_service/',
     id: 'developers.rustdocs',
   },
   {
-    url: DOCS_URL + '/playground/',
+    url: MARKETPLACE_URL,
+    id: 'developers.marketplace',
+  },
+  {
+    url: '/playground',
     id: 'developers.playground',
+  },
+  {
+    url: '/smart-contracts',
+    id: 'developers.smart-contracts',
   },
   {
     url: WEBSITE_URL + '/smart-contracts/',

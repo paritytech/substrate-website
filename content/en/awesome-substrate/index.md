@@ -72,7 +72,7 @@
 
 - [Bridges](https://github.com/paritytech/parity-bridges-common) - A collection of tools for cross-chain communication.
 - [Cumulus](https://github.com/paritytech/cumulus) - A set of tools for writing Substrate-based Polkadot parachains.
-- [FRAME](https://docs.substrate.io/v3/runtime/frame/) - A system for building Substrate runtimes.
+- [FRAME](https://docs.substrate.io/reference/frame-pallets/) - A system for building Substrate runtimes.
 - [Frontier](https://github.com/paritytech/frontier) - End-to-end Ethereum emulation for Substrate chains.
 - [ink!](https://github.com/paritytech/ink) - Rust smart contract language for Substrate chains.
 - [IntegriTEE](https://book.integritee.network/) - Trusted off-chain execution framework that uses [Intel SGX](https://en.wikipedia.org/wiki/Software_Guard_Extensions) trusted execution environments.
@@ -170,7 +170,7 @@
 - [AssemblyScript](https://github.com/LimeChain/as-scale-codec) - Maintained by LimeChain.
 - [C](https://github.com/MatthewDarnell/cScale) - Maintained by Matthew Darnell.
 - [C++](https://github.com/soramitsu/kagome/tree/master/core/scale) - Maintained by Soramitsu.
-- [Codec Definition](https://docs.substrate.io/v3/advanced/scale-codec/) - Official codec documentation.
+- [Codec Definition](https://docs.substrate.io/reference/scale-codec/) - Official codec documentation.
 - [Go](https://github.com/itering/scale.go) - Maintained by [Itering](https://www.itering.com/).
 - [Haskell](https://github.com/airalab/hs-web3/tree/master/src/Codec) - Maintained by [Robonomics Network](https://robonomics.network/).
 - [Java](https://github.com/emeraldpay/polkaj/tree/master/polkaj-scale) - Maintained by [Emerald](https://emerald.cash/).
