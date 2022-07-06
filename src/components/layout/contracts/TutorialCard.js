@@ -1,8 +1,8 @@
 import cx from 'classnames';
+import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import Icon from '../../default/Icon';
-import { Link } from '../../default/Link';
 import SecondaryButton from '../../ui/SecondaryButton';
 
 const TutorialCard = ({ tutorial }) => {

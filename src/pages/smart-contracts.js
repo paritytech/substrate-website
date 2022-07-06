@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby';
+import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import Icon from '../components/default/Icon';
-import { Link } from '../components/default/Link';
 import Card from '../components/layout/Card';
 import ExploreCommunityProjects from '../components/layout/contracts/ExploreCommunityProjects';
 import Highlight from '../components/layout/contracts/Highlight';
