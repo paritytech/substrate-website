@@ -16,7 +16,10 @@ import * as animationData from '../../images/animation/substrate-polkadot.json';
 const Vision = () => {
   return (
     <Layout mode="full">
-      <SEO title="Substrate And Polkadot" />
+      <SEO
+        title="Substrate And Polkadot"
+        description="Substrate And Polkadot. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. Find out more!"
+      />
       <Article>
         <header className="container -mt-10 mb-8">
           <figure className="w-full lg:w-3/4 lg:mx-auto aspect-w-5 lg:aspect-w-6 aspect-h-2">

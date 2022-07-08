@@ -40,7 +40,10 @@ export default function Technology() {
 
   return (
     <Layout mode="full">
-      <SEO title="Substrate Technology" />
+      <SEO
+        title="Substrate Blockchain Technology"
+        description="Substrate Blockchain Technology. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. Find out more!"
+      />
       <Article>
         <Section>
           <div className="grid lg:grid-cols-2 lg:gap-8">

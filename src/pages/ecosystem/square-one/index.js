@@ -25,7 +25,10 @@ export default function SquareOne({ data }) {
 
   return (
     <Layout mode="full">
-      <SEO title="Square One" />
+      <SEO
+        title="Square One"
+        description="Square One. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case."
+      />
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-11 gap-8 lg:gap-16">
           <div className="hidden lg:block lg:col-span-6 lg:col-start-6">

@@ -12,9 +12,12 @@ import LineArrowButton from '../../../components/ui/LineArrowButton';
 export default function PastSeminars() {
   return (
     <Layout layout="sidebar">
-      <SEO title="Past Seminars" />
+      <SEO
+        title="Blockchain Past Webinars &amp; Seminars"
+        description="Blockchain Past Webinars &amp; Seminars. Access to all our content. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. "
+      />
       <Section>
-        <h1 className="text-4xl font-bold font-body mb-6">Past Seminars</h1>
+        <h1 className="text-4xl font-bold font-body mb-6">Blockchain Past Webinars &amp; Seminars</h1>
       </Section>
 
       <Section>

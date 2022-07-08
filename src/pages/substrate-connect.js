@@ -60,7 +60,10 @@ export default function Connect() {
 
   return (
     <Layout mode="full">
-      <SEO title="Substrate Connect" />
+      <SEO
+        title="Substrate Connect"
+        description="Substrate Connect. The easiest way to connect to Polkadot, Kusama, and Substrate-based chains. Avalaibe for Chrome &amp; Firefox. "
+      />
       <Section>
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="lg:max-w-md self-center mb-8 md:mb-20">

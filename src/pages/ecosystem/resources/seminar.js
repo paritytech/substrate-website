@@ -13,7 +13,10 @@ import SecondaryButton from '../../../components/ui/SecondaryButton';
 export default function Seminar() {
   return (
     <Layout layout="sidebar">
-      <SEO title="Seminar" />
+      <SEO
+        title="Blockchain Webinars &amp; Seminars Watch now!"
+        description="Blockchain Webinars &amp; Seminars. Watch now!. Biweekly collaborative learning space, where we hear from developers and projects building on Substrate."
+      />
 
       <Section>
         <h1 className="text-4xl font-bold mb-10">Substrate Seminar</h1>

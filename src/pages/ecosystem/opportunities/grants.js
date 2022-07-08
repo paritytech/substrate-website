@@ -10,7 +10,11 @@ import SecondaryButton from '../../../components/ui/SecondaryButton';
 export default function Grants() {
   return (
     <Layout layout="sidebar">
-      <SEO title="Grants" />
+      <SEO
+        title="Blockchain Grants &amp; Funding Apply now!"
+        description="Blockchain Grants &amp; Funding Apply now! Find out about our grants program funds software development and research in the field of decentralized software protocols. Find out more!"
+        keyword="Blockchain Grants"
+      />
       <Section>
         <div className="grid md:grid-cols-2 gap-6">
           <div>

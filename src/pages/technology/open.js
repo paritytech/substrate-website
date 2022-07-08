@@ -19,7 +19,10 @@ const Open = () => {
   const { siteMetadata } = useSiteMetadata();
   return (
     <Layout>
-      <SEO title="Open" />
+      <SEO
+        title="Open Source Blockchain"
+        description="Open Source Blockchain. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. Find out more!"
+      />
       <Hero page="Open" animationData={animation}>
         <p>
           Substrate primitives are Apache 2.0 licensed, but developers know that open-source licensing isn&apos;t enough

@@ -76,7 +76,10 @@ const cards = [
 export default function SmartContracts() {
   return (
     <Layout>
-      <SEO title="Smart Contracts" />
+      <SEO
+        title="Smart Contracts"
+        description="Blockchain for Smart Contracts. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case."
+      />
       <Section className="grid md:grid-cols-2 items-center">
         <div>
           <h1 className="mb-8 font-title font-extrabold text-5xl md:text-6xl">Smart Contracts</h1>
