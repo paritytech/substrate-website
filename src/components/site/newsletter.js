@@ -14,13 +14,6 @@ export default function Newsletter({ layout = 'default' }) {
 
   const widget = layout === 'widget';
 
-  useEffect(() => {
-    window.addEventListener('message', handler);
-    return () => {
-      window.removeEventListener('message', handler);
-    };
-  }, [handler]);
-
   const handler = useCallback(event => {
     if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmitted') {
       if (event.data.id === FORM_ID) {
@@ -28,6 +21,13 @@ export default function Newsletter({ layout = 'default' }) {
       }
     }
   }, []);
+
+  useEffect(() => {
+    window.addEventListener('message', handler);
+    return () => {
+      window.removeEventListener('message', handler);
+    };
+  }, [handler]);
 
   return (
     <div
