@@ -59,13 +59,13 @@ export default function Newsletter({ layout = 'default' }) {
               formId={FORM_ID}
               onReady={() => setIsFormReady(true)}
               loading={
-                <div className="h-full">
+                <div className={cn('h-full', { 'py-10 px-10 px-mb-10': widget })}>
                   <LoadingAnimation />
                   <p className="mt-2 text-xs text-center text-gray-400 font-sans">
                     If the content does not appear correctly, <br />
                     follow this{' '}
                     <a
-                      href="https://paritytechnologies.activehosted.com/f/11"
+                      href="https://share.hsforms.com/11I85QAyGRJOXizHFxwR7jg4iqge"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline"
