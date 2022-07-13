@@ -109,6 +109,10 @@
     }
   }
 
+  .hs-richtext {
+    @apply hidden;
+  }
+
   form {
     @apply flex flex-col sm:flex-row gap-6 w-full lg:justify-end;
 
