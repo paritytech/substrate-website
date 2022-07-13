@@ -96,7 +96,17 @@
   }
 
   .hs_error_rollup {
-    display: none;
+    @apply hidden;
+  }
+
+  .hs-error-msgs {
+    @apply h-0 m-0;
+  }
+
+  .hs_email {
+    > label {
+      display: none;
+    }
   }
 
   form {
@@ -123,10 +133,6 @@
       @apply w-full bg-substrateGreen hover:bg-white text-white hover:text-substrateGreen items-center px-9 text-xl font-bold transition duration-200 focus:outline-none focus:ring-2 rounded-lg border-substrateGreen h-12 max-w-sm;
 
       border-width: 3px;
-    }
-
-    label {
-      display: none;
     }
   }
 }
