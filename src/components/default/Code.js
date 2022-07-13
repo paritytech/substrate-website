@@ -28,12 +28,12 @@ function Code({ html, className }) {
           setIsCopied(true);
           setTimeout(() => setIsCopied(false), 1300);
         }}
-        className="sm:w-20 sm:block absolute top-0 bottom-0 right-0 dark:text-white text-small dark:hover:text-substrateGreen hover:text-substrateGreen-dark transition-colors"
+        className="absolute top-0 bottom-0 right-0 dark:text-white text-small dark:hover:text-substrateGreen hover:text-substrateGreen-dark transition-colors"
       >
         {isCopied ? (
-          <span className="text-substrateGreen-dark dark:text-substrateGreen w-100 mr-7">Copied</span>
+          <span className="text-substrateGreen-dark dark:text-substrateGreen w-100 mr-5">Copied</span>
         ) : (
-          <Icon name="copy" className="block fill-current mr-8 sm:mr-0 ml-4" />
+          <Icon name="copy" className="fill-current mr-8 ml-4" />
         )}
       </button>
     </div>
