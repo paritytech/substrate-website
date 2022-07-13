@@ -270,24 +270,3 @@ div[aria-label='animation'] {
     box-shadow: inset 0px 0px 0px 30px #24cc85;
   }
 }
-
-/* Rococo code blocks */
-
-.gatsby-highlight {
-  border-radius: 10px;
-  margin: 0.5em 0;
-  padding-top: 1em !important;
-  padding-bottom: 1em !important;
-  padding-right: 1.5em;
-  padding-left: 0.5em;
-  font-size: 1em;
-  @apply relative mb-6 w-full;
-}
-
-.gatsby-highlight pre {
-  margin-right: 6rem !important;
-}
-
-.gatsby-highlight {
-  @apply max-w-full;
-}
