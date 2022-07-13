@@ -9,6 +9,7 @@ import LoadingAnimation from '../ui/LoadingAnimation';
 
 export default function Newsletter({ layout = 'default' }) {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isFormReady, setIsFormReady] = useState(false);
   const FORM_ID = 'd48f3940-0c86-4493-978b-31c5c7047b8e';
   const { siteMetadata } = useSiteMetadata();
 
@@ -56,14 +57,15 @@ export default function Newsletter({ layout = 'default' }) {
             <HubspotForm
               portalId="7592558"
               formId={FORM_ID}
+              onReady={() => setIsFormReady(true)}
               loading={
-                <div className="py-10 px-10 px-mb-10 h-full">
+                <div className="h-full">
                   <LoadingAnimation />
-                  <p className="text-xs text-center text-gray-400 font-sans">
+                  <p className="mt-2 text-xs text-center text-gray-400 font-sans">
                     If the content does not appear correctly, <br />
                     follow this{' '}
                     <a
-                      href="https://share.hsforms.com/1MRizzWpqTziJgjN0KE_8tQ4iqge"
+                      href="https://paritytechnologies.activehosted.com/f/11"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline"
@@ -75,16 +77,18 @@ export default function Newsletter({ layout = 'default' }) {
                 </div>
               }
             />
-            <p
-              className={cn('mb-6 text-sm mt-4 lg:ml-auto', {
-                'mb-0 max-w-sm lg:text-center': !widget,
-              })}
-            >
-              To see how we use your information please see our{' '}
-              <span className="underline-animate underline-animate-thin">
-                <Link to="https://www.parity.io/privacy/">privacy policy</Link>
-              </span>
-            </p>
+            {isFormReady && (
+              <p
+                className={cn('mb-6 text-sm mt-4 lg:ml-auto', {
+                  'mb-0 max-w-sm lg:text-center': !widget,
+                })}
+              >
+                To see how we use your information please see our{' '}
+                <span className="underline-animate underline-animate-thin">
+                  <Link to="https://www.parity.io/privacy/">privacy policy</Link>
+                </span>
+              </p>
+            )}
           </div>
         </div>
       )}
