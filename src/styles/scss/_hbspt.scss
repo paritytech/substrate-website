@@ -95,10 +95,6 @@
     margin: 0 !important;
   }
 
-  .hs_error_rollup {
-    @apply hidden;
-  }
-
   .hs-error-msgs {
     @apply h-0 m-0;
   }
@@ -109,16 +105,16 @@
     }
   }
 
-  .hs-richtext {
-    @apply hidden;
-  }
-
   form {
     @apply flex flex-col sm:flex-row gap-6 w-full lg:justify-end;
 
     .hs_email,
     .hs_submit {
       @apply max-w-sm w-full;
+    }
+
+    > :not(.hs_email):not(.hs_submit):not(.hs-error-msgs) {
+      display: none;
     }
 
     .hs-input[type='email'] {
