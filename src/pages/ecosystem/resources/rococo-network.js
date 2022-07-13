@@ -1,9 +1,9 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
+import { Code } from '../../../components/default/Code';
 import Icon from '../../../components/default/Icon';
 import { Link } from '../../../components/default/Link';
-import Markdown from '../../../components/default/Markdown';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
@@ -85,7 +85,7 @@ export default function Rococo({ data }) {
 
       <Section className="underline-animate underline-animate-thin grid grid-cols-1">
         <h2 className="text-2xl font-bold mb-6">{obtainingRoc.frontmatter.title}</h2>
-        <p className="mb-10">
+        <p className="mb-6">
           ROC are available in the{' '}
           <a
             href="https://app.element.io/#/room/#rococo-faucet:matrix.org"
@@ -96,7 +96,7 @@ export default function Rococo({ data }) {
           </a>{' '}
           channel on Matrix. To receive ROC tokens, use the command:
         </p>
-        <Markdown htmlAst={obtainingRoc.htmlAst} />
+        <Code html={obtainingRoc.html} />
 
         <p className="mb-6">
           Now that you have generated and registered your parachain on Rococo, you can{' '}
@@ -126,16 +126,16 @@ export default function Rococo({ data }) {
         <h2 className="text-2xl font-bold mb-6">Off-chain steps</h2>
 
         <h3 className="text-base font-bold mb-4">{reserveParaId.frontmatter.title}</h3>
-        <Markdown htmlAst={reserveParaId.htmlAst} />
+        <Code html={reserveParaId.html} />
 
         <h3 className="text-base font-bold mb-4">{buildParachain.frontmatter.title}</h3>
-        <Markdown htmlAst={buildParachain.htmlAst} />
+        <Code html={buildParachain.html} />
 
         <h3 className="text-base font-bold mb-4">{runSyncCollator.frontmatter.title}</h3>
-        <Markdown htmlAst={runSyncCollator.htmlAst} />
+        <Code html={runSyncCollator.html} />
 
         <h3 className="text-base font-bold mb-4">{registerWasm.frontmatter.title}</h3>
-        <Markdown htmlAst={registerWasm.htmlAst} />
+        <Code html={registerWasm.html} />
 
         <h2 className="text-2xl font-bold mb-6">Learn more</h2>
         <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
@@ -185,31 +185,31 @@ export const query = graphql`
       frontmatter {
         title
       }
-      htmlAst
+      html
     }
     reserveParaId: markdownRemark(frontmatter: { title: { eq: "Reserve para ID" } }) {
       frontmatter {
         title
       }
-      htmlAst
+      html
     }
     buildParachain: markdownRemark(frontmatter: { title: { eq: "Build parachain using para ID" } }) {
       frontmatter {
         title
       }
-      htmlAst
+      html
     }
     runSyncCollator: markdownRemark(frontmatter: { title: { eq: "Run and sync collator" } }) {
       frontmatter {
         title
       }
-      htmlAst
+      html
     }
     registerWasm: markdownRemark(frontmatter: { title: { eq: "Register Wasm and chain spec" } }) {
       frontmatter {
         title
       }
-      htmlAst
+      html
     }
   }
 `;

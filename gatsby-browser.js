@@ -6,8 +6,6 @@ import React from 'react';
 import { DataProvider } from './src/contexts/DataContext';
 import { ThemeProvider } from './src/contexts/ThemeContext';
 
-require('prismjs/themes/prism-okaidia.css');
-
 export const wrapRootElement = ({ element }) => <ThemeProvider>{element}</ThemeProvider>;
 
 export const wrapPageElement = ({ element, props }) => <DataProvider props={props}>{element}</DataProvider>;

@@ -1,0 +1,18 @@
+.rococo-code-block {
+  background-color: #fcfcfc;
+  padding: 16px 24px 16px 8px;
+  border: 1px solid #e7e5e5;
+  border-radius: 10px;
+
+  pre {
+    overflow: scroll;
+    margin: 8px 64px 8px 0px;
+    padding: 16px;
+  }
+}
+
+.dark .rococo-code-block {
+  background-color: #272935;
+  border: 1px solid #272935;
+  color: #aab1bf;
+}

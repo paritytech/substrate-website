@@ -1,7 +1,8 @@
+import parse from 'html-react-parser';
 import React, { useState } from 'react';
 import Children from 'react-children-utilities';
 
-import Icon from '../Icon';
+import Icon from './Icon';
 
 const copyToClipboard = str => {
   const el = document.createElement('textarea');
@@ -15,14 +16,15 @@ const copyToClipboard = str => {
   document.body.removeChild(el);
 };
 
-function Code({ children, className }) {
+function Code({ html, className }) {
   const [isCopied, setIsCopied] = useState(false);
+
   return (
-    <div>
-      <pre className={className}>{children}</pre>
+    <div className={`${className} relative mt-2 mb-8`}>
+      <div className="rococo-code-block" dangerouslySetInnerHTML={{ __html: html }}></div>
       <button
         onClick={() => {
-          copyToClipboard(Children.onlyText(children));
+          copyToClipboard(Children.onlyText(parse(html)));
           setIsCopied(true);
           setTimeout(() => setIsCopied(false), 1300);
         }}
