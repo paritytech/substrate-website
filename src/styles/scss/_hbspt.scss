@@ -108,7 +108,7 @@
     }
 
     .hs-input[type='email'] {
-      @apply my-0 mx-0 rounded-lg border-black text-xl p-4 hover:ring-2 focus:ring-2 text-center;
+      @apply my-0 mx-0 rounded-lg border-black text-xl p-4 hover:ring-2 focus:ring-2 text-center w-full;
 
       border-width: 3px;
 
