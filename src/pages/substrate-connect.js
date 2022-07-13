@@ -136,7 +136,7 @@ export default function Connect() {
             </LineArrowButton>
           </div>
           <div className="p-0 sm:p-10 lg:p-0 xl:p-10">
-            <Icon name="subconnect-browser-tab" className="w-full h-auto" />
+            <Icon name="subconnect-browser-tab" className="w-full h-auto rounded shadow" />
           </div>
         </div>
       </Section>
