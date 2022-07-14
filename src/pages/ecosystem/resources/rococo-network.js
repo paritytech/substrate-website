@@ -11,27 +11,27 @@ import SEO from '../../../components/site/SEO';
 const illustrations = [
   {
     name: 'become-parathread',
-    description: '1. Become parathread',
+    description: 'Become parathread',
   },
   {
     name: 'onboarding',
-    description: '2. Onboarding',
+    description: 'Onboarding',
   },
   {
     name: 'upgrading',
-    description: '3. Upgrading',
+    description: 'Upgrading',
   },
   {
     name: 'parachain',
-    description: '4. Parachain',
+    description: 'Parachain',
   },
   {
     name: 'downgrading',
-    description: '5. Downgrading',
+    description: 'Downgrading',
   },
   {
     name: 'parathread',
-    description: '6. Parathread',
+    description: 'Parathread',
   },
 ];
 
@@ -49,7 +49,7 @@ export default function Rococo({ data }) {
         <h2 className="order-3 md:order-none md:col-start-1 md:col-span-2 text-2xl font-bold mb-6">
           Rococo, the place for parachain testing!
         </h2>
-        <div className="order-4 md:order-none md:col-start-1 md:col-span-2 mr-4">
+        <div className="order-4 md:order-none md:col-start-1 md:col-span-2 md:mr-8">
           <p>
             Rococo is a testnet built for parachains. Rococo utilizes{' '}
             <Link to="https://github.com/paritytech/cumulus">Cumulus</Link> and XCMP (Cross-Chain Message Passing) to
@@ -64,19 +64,20 @@ export default function Rococo({ data }) {
             <Link to="https://github.com/paritytech/grandpa-bridge-gadget">Beefy</Link> implementation.
           </p>
         </div>
-        <div className="order-2 md:order-none md:col-start-3 mb-8 w-full">
+        <div className="order-2 md:order-none md:row-start-2 md:row-span-2 md:col-start-3 mb-8 w-full">
           <Icon name="rococo-logo" />
         </div>
       </Section>
 
       <Section>
         <h2 className="text-2xl font-bold mb-6">Parachain lifecycle</h2>
-        <div className="grid grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-2 w-full">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-x-8 gap-y-2 w-full">
           {illustrations.map(({ name, description }, idx) => (
             <div key={idx}>
               <div>
                 <Icon className="mb-4 fill-current dark:text-white border border-[#828282] w-full h-full" name={name} />
               </div>
+              <p className="mb-0">{idx + 1}.</p>
               <p>{description}</p>
             </div>
           ))}
@@ -122,7 +123,9 @@ export default function Rococo({ data }) {
           with the following information: paraID of your Kusama parachain, WASM and Genesis of your parachain following
           the same paraID that you have on Kusama.
         </p>
+      </Section>
 
+      <Section>
         <h2 className="text-2xl font-bold mb-6">Off-chain steps</h2>
 
         <h3 className="text-base font-bold mb-4">{reserveParaId.frontmatter.title}</h3>
@@ -136,7 +139,9 @@ export default function Rococo({ data }) {
 
         <h3 className="text-base font-bold mb-4">{registerWasm.frontmatter.title}</h3>
         <Code html={registerWasm.html} />
+      </Section>
 
+      <Section>
         <h2 className="text-2xl font-bold mb-6">Learn more</h2>
         <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
         <ul className="underline-animate underline-animate-thin ml-6 mb-12">
