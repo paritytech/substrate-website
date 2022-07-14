@@ -18,6 +18,7 @@
   "developers.playground": "Playground",
   "developers.smart-contracts": "Smart Contracts",
   "developers.substrate-connect": "Substrate Connect",
+  "developers.rococo-network": "Rococo Network",
 
   "vision.substrate-and-polkadot": "Substrate & Polkadot",
 
@@ -36,7 +37,6 @@
   "ecosystem.resources.seminar": "Substrate Seminar",
   "ecosystem.resources.past-seminars": "Past Seminars",
   "ecosystem.resources.awesome-substrate": "Awesome Substrate",
-  "ecosystem.resources.rococo-network": "Rococo Network",
   "ecosystem.resources.community-resources": "Community Resources",
 
   "ecosystem.resources.contact": "Contact",

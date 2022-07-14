@@ -74,6 +74,10 @@ const developers = [
     url: '/substrate-connect',
     id: 'developers.substrate-connect',
   },
+  {
+    url: '/rococo-network',
+    id: 'developers.rococo-network',
+  },
 ];
 
 const vision = [
@@ -144,10 +148,6 @@ const resources = [
   {
     url: 'https://github.com/substrate-developer-hub/awesome-substrate/blob/master/README.md',
     id: 'ecosystem.resources.awesome-substrate',
-  },
-  {
-    url: '/rococo-network',
-    id: 'ecosystem.resources.rococo-network',
   },
 ];
 
