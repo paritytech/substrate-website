@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import HubspotForm from 'react-hubspot-form';
 
 import { useSiteMetadata } from '../../hooks/use-site-metadata';
@@ -12,6 +12,7 @@ export default function Newsletter({ layout = 'default' }) {
   const [isFormReady, setIsFormReady] = useState(false);
   const FORM_ID = 'd48f3940-0c86-4493-978b-31c5c7047b8e';
   const { siteMetadata } = useSiteMetadata();
+  const hubspotForm = useRef(null);
 
   const widget = layout === 'widget';
 
@@ -22,6 +23,11 @@ export default function Newsletter({ layout = 'default' }) {
       }
     }
   }, []);
+
+  useEffect(() => {
+    if (!isFormReady) return;
+    hubspotForm.current.el.children[0].removeAttribute('novalidate');
+  }, [isFormReady]);
 
   useEffect(() => {
     window.addEventListener('message', handler);
@@ -55,6 +61,7 @@ export default function Newsletter({ layout = 'default' }) {
           </p>
           <div id="hs-newsletter-form" className={widget ? 'widget' : ''}>
             <HubspotForm
+              ref={hubspotForm}
               portalId="7592558"
               formId={FORM_ID}
               onReady={() => setIsFormReady(true)}

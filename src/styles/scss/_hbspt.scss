@@ -96,7 +96,7 @@
   }
 
   .hs-error-msgs {
-    @apply h-0 m-0;
+    display: none !important;
   }
 
   .hs_email {
@@ -113,7 +113,7 @@
       @apply max-w-sm w-full;
     }
 
-    > :not(.hs_email):not(.hs_submit):not(.hs-error-msgs) {
+    > :not(.hs_email):not(.hs_submit) {
       display: none;
     }
 
