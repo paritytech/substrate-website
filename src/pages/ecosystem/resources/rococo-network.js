@@ -64,14 +64,14 @@ export default function Rococo({ data }) {
             <Link to="https://github.com/paritytech/grandpa-bridge-gadget">Beefy</Link> implementation.
           </p>
         </div>
-        <div className="order-2 md:order-none md:row-start-2 md:row-span-2 md:col-start-3 mb-8 w-full">
+        <div className="max-w-sm order-2 md:order-none md:row-start-2 md:row-span-3 md:col-start-3 mb-8 w-full">
           <Icon name="rococo-logo" />
         </div>
       </Section>
 
       <Section>
-        <h2 className="text-2xl font-bold mb-6">Parachain lifecycle</h2>
-        <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 w-full ml-0">
+        <h2 className="text-2xl font-bold text-center sm:text-left mb-12 sm:mb-10">Parachain lifecycle</h2>
+        <ul className="grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-x-8 gap-y-8 w-full ml-0">
           {illustrations.map(({ name, description }, idx) => (
             <li key={idx} className="list-none max-w-sm">
               <div>
