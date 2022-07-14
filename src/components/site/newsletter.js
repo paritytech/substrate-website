@@ -79,8 +79,9 @@ export default function Newsletter({ layout = 'default' }) {
             />
             {isFormReady && (
               <p
-                className={cn('mb-6 text-sm mt-5 lg:ml-auto', {
+                className={cn('text-sm mt-4 lg:ml-auto', {
                   'mb-0 max-w-sm lg:text-center': !widget,
+                  'mb-6': widget,
                 })}
               >
                 To see how we use your information please see our{' '}
