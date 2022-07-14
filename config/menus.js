@@ -70,6 +70,10 @@ const developers = [
     url: DOCS_URL + '/playground/',
     id: 'developers.playground',
   },
+  {
+    url: '/rococo-network',
+    id: 'developers.rococo-network',
+  },
 ];
 
 const vision = [
@@ -132,10 +136,6 @@ const resources = [
   {
     url: '/awesome-substrate',
     id: 'ecosystem.resources.awesome-substrate',
-  },
-  {
-    url: '/rococo-network',
-    id: 'ecosystem.resources.rococo-network',
   },
 ];
 

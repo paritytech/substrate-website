@@ -1,12 +1,12 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import { Code } from '../../../components/default/Code';
-import Icon from '../../../components/default/Icon';
-import { Link } from '../../../components/default/Link';
-import Section from '../../../components/layout/Section';
-import Layout from '../../../components/site/Layout';
-import SEO from '../../../components/site/SEO';
+import { Code } from '../../components/default/Code';
+import Icon from '../../components/default/Icon';
+import { Link } from '../../components/default/Link';
+import Section from '../../components/layout/Section';
+import Layout from '../../components/site/Layout';
+import SEO from '../../components/site/SEO';
 
 const illustrations = [
   {
@@ -39,17 +39,17 @@ export default function Rococo({ data }) {
   const { obtainingRoc, reserveParaId, buildParachain, runSyncCollator, registerWasm } = data;
 
   return (
-    <Layout layout="sidebar">
+    <Layout>
       <SEO title="Rococo Network" />
 
-      <Section className="grid md:grid-cols-3 underline-animate underline-animate-thin">
-        <h1 className="order-1 md:order-none md:col-start-1 md:col-span-2 text-4xl font-bold font-body mb-12">
+      <Section className="mb-36 xl:my-36 grid md:grid-cols-2 underline-animate underline-animate-thin">
+        <h1 className="order-1 md:order-none md:col-start-1 font-extrabold text-5xl md:text-6xl mb-12">
           Rococo Network
         </h1>
-        <h2 className="order-3 md:order-none md:col-start-1 md:col-span-2 text-2xl font-bold mb-6">
+        <h2 className="order-3 md:order-none md:col-start-1 text-2xl font-bold mb-6">
           Rococo, the place for parachain testing!
         </h2>
-        <div className="order-4 md:order-none md:col-start-1 md:col-span-2 md:mr-8">
+        <div className="order-4 md:order-none md:col-start-1 md:mr-8">
           <p>
             Rococo is a testnet built for parachains. Rococo utilizes{' '}
             <Link to="https://github.com/paritytech/cumulus">Cumulus</Link> and XCMP (Cross-Chain Message Passing) to
@@ -64,8 +64,10 @@ export default function Rococo({ data }) {
             <Link to="https://github.com/paritytech/grandpa-bridge-gadget">Beefy</Link> implementation.
           </p>
         </div>
-        <div className="max-w-sm order-2 md:order-none md:row-start-2 md:row-span-3 md:col-start-3 mb-8 w-full">
-          <Icon name="rococo-logo" />
+        <div className="flex justify-center order-2 md:order-none md:row-start-2 md:row-span-3 md:col-start-2 mb-8 w-full">
+          <div className="max-w-sm xl:max-w-md w-full">
+            <Icon name="rococo-logo" />
+          </div>
         </div>
       </Section>
 
@@ -73,7 +75,7 @@ export default function Rococo({ data }) {
         <h2 className="text-2xl font-bold text-center sm:text-left mb-12 sm:mb-10">Parachain lifecycle</h2>
         <ul className="grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-x-8 gap-y-8 w-full ml-0">
           {illustrations.map(({ name, description }, idx) => (
-            <li key={idx} className="list-none max-w-sm">
+            <li key={idx} className="list-none max-w-sm" data-aos="fade-up" data-aos-delay={100 + idx * 200}>
               <div>
                 <Icon
                   className="mb-4 bg-substrateGray-light dark:bg-substrateBlackish fill-current dark:text-white rounded-md w-full h-full"
