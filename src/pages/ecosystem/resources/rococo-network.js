@@ -73,7 +73,7 @@ export default function Rococo({ data }) {
         <h2 className="text-2xl font-bold mb-6">Parachain lifecycle</h2>
         <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 w-full ml-0">
           {illustrations.map(({ name, description }, idx) => (
-            <li key={idx} className="list-none">
+            <li key={idx} className="list-none max-w-sm">
               <div>
                 <Icon
                   className="mb-4 bg-substrateGray-light dark:bg-substrateBlackish fill-current dark:text-white rounded-md w-full h-full"
