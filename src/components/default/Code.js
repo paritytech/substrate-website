@@ -20,7 +20,7 @@ function Code({ html, className }) {
   const [isCopied, setIsCopied] = useState(false);
 
   return (
-    <div className={`${className} relative mt-2 mb-8`}>
+    <div className={`${className} relative mt-2 mb-8 grid grid-cols-1`}>
       <div className="rococo-code-block" dangerouslySetInnerHTML={{ __html: html }}></div>
       <button
         onClick={() => {
