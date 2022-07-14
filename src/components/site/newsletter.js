@@ -86,7 +86,7 @@ export default function Newsletter({ layout = 'default' }) {
             />
             {isFormReady && (
               <p
-                className={cn('text-sm mt-6 lg:mt-4 lg:ml-auto', {
+                className={cn('text-sm mt-6 lg:mt-4 lg:mx-auto', {
                   'mb-0 max-w-sm lg:text-center': !widget,
                   'mb-6': widget,
                 })}
