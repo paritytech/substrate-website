@@ -151,7 +151,8 @@ export default function Rococo({ data }) {
         <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
         <ul className="underline-animate underline-animate-thin ml-6 mb-12">
           <li>
-            <Link to="https://docs.substrate.io/tutorials/connect-other-chains/">Connect other chains tutorials</Link>
+            <Link to="https://docs.substrate.io/tutorials/connect-other-chains/">Connect other chains tutorials</Link> —
+            Learn how to connect your chain to others
           </li>
           <li>
             <Link to="https://w3f.github.io/parachain-implementers-guide/">Implementer&apos;s Guide</Link> — The
@@ -162,7 +163,8 @@ export default function Rococo({ data }) {
             Access the Rococo UI at Rococo Polkadot-JS Apps.
           </li>
           <li>
-            <Link to="https://github.com/paritytech/subport/issues/new/choose">Rococo onboarding request issue</Link>
+            <Link to="https://github.com/paritytech/subport/issues/new/choose">Rococo onboarding request issue</Link> —
+            Submit your issue related to your slot request on Rococo
           </li>
         </ul>
 
