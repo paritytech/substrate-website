@@ -84,7 +84,7 @@ export default function Rococo({ data }) {
         </div>
       </Section>
 
-      <Section className="underline-animate underline-animate-thin grid grid-cols-1">
+      <Section className="underline-animate underline-animate-thin">
         <h2 className="text-2xl font-bold mb-6">{obtainingRoc.frontmatter.title}</h2>
         <p className="mb-6">
           ROC are available in the{' '}
