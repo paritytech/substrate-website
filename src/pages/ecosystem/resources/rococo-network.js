@@ -71,17 +71,22 @@ export default function Rococo({ data }) {
 
       <Section>
         <h2 className="text-2xl font-bold mb-6">Parachain lifecycle</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-x-8 gap-y-2 w-full">
+        <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 w-full ml-0">
           {illustrations.map(({ name, description }, idx) => (
-            <div key={idx}>
+            <li key={idx} className="list-none">
               <div>
-                <Icon className="mb-4 fill-current dark:text-white border border-[#828282] w-full h-full" name={name} />
+                <Icon
+                  className="mb-4 bg-substrateGray-light dark:bg-substrateBlackish fill-current dark:text-white rounded-md w-full h-full"
+                  name={name}
+                />
               </div>
-              <p className="mb-0">{idx + 1}.</p>
-              <p>{description}</p>
-            </div>
+              <div className="mb-2 mr-2 w-10 h-10 bg-black dark:bg-substrateBlackish inline-flex justify-center rounded-full">
+                <span className="mb-0 mt-1 text-2xl font-bold text-white">{idx + 1}</span>
+              </div>
+              <h4 className="inline text-lg font-bold mb-4">{description}</h4>
+            </li>
           ))}
-        </div>
+        </ul>
       </Section>
 
       <Section className="underline-animate underline-animate-thin">
