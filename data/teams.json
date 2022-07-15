@@ -165,7 +165,7 @@
       "category":[ "DeFi","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Bifrost is a cross-chain network which provides liquidity to bonding assets. It takes advantage from Staking to provide liquidity in the form of Staking derivatives."
+      "description": "Bifrost is a Web3 derivatives protocol that provides decentralized cross-chain liquidity for staked assets. Leveraging the cross-consensus message (XCM) can provide cross-chain liquid staking services for multiple chains."
     },
     {
       "name": "Bison Trails",
