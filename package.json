@@ -60,7 +60,6 @@
     "react-intersection-observer": "^8.32.1",
     "react-lottie": "^1.2.3",
     "react-modal-video": "1.2.8",
-    "rehype-react": "^7.1.1",
     "typeface-poppins": "^1.1.13"
   },
   "devDependencies": {
