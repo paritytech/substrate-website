@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import { graphql } from 'gatsby';
 import React from 'react';
 
@@ -82,7 +83,12 @@ export default function Rococo({ data }) {
                   name={name}
                 />
               </div>
-              <div className="mb-2 mr-2 w-10 h-10 bg-black dark:bg-substrateBlackish inline-flex justify-center rounded-full">
+              <div
+                className={cx('mb-2 mr-2 w-10 h-10 inline-flex justify-center rounded-full', {
+                  'bg-polkaPink': description === 'Parachain',
+                  'bg-black dark:bg-substrateBlackish': description !== 'Parachain',
+                })}
+              >
                 <span className="mb-0 mt-1 text-2xl font-bold text-white">{idx + 1}</span>
               </div>
               <h4 className="inline text-lg font-bold mb-4">{description}</h4>
