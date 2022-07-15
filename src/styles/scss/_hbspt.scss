@@ -66,3 +66,73 @@
     }
   }
 }
+
+#hs-newsletter-form.widget {
+  .hs_email,
+  .hs_submit {
+    @apply max-w-lg w-full;
+  }
+
+  form {
+    @apply flex flex-col gap-6 mb-6;
+
+    .hs-input[type='email'] {
+      @apply dark:bg-substrateDarkest dark:border-substrateGray-dark dark:placeholder-white text-black dark:text-white max-w-lg h-16 bg-white  border-black;
+
+      border-width: 3px;
+    }
+
+    input[type='submit'] {
+      @apply h-16 max-w-lg;
+    }
+  }
+}
+
+#hs-newsletter-form {
+  flex-basis: 100%;
+
+  .hs-form-field {
+    margin: 0 !important;
+  }
+
+  .hs-error-msgs {
+    display: none !important;
+  }
+
+  .hs_email {
+    > label {
+      display: none;
+    }
+  }
+
+  form {
+    @apply flex flex-col sm:flex-row gap-6 w-full lg:justify-end;
+
+    .hs_email,
+    .hs_submit {
+      @apply max-w-sm w-full;
+    }
+
+    > :not(.hs_email):not(.hs_submit) {
+      display: none;
+    }
+
+    .hs-input[type='email'] {
+      @apply my-0 mx-0 rounded-lg border-black text-xl p-4 hover:ring-2 focus:ring-2 text-center w-full;
+
+      border-width: 3px;
+
+      &:focus {
+        outline: none;
+      }
+
+      @apply bg-substrateBlackish border-white text-white max-w-sm h-12;
+    }
+
+    input[type='submit'] {
+      @apply w-full bg-substrateGreen hover:bg-white text-white hover:text-substrateGreen items-center px-9 text-xl font-bold transition duration-200 focus:outline-none focus:ring-2 rounded-lg border-substrateGreen h-12 max-w-sm;
+
+      border-width: 3px;
+    }
+  }
+}
