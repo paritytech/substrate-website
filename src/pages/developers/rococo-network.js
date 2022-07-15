@@ -71,11 +71,11 @@ export default function Rococo({ data }) {
         </div>
       </Section>
 
-      <Section>
-        <h2 className="text-2xl font-bold text-center sm:text-left mb-12 sm:mb-10">Parachain lifecycle</h2>
-        <ul className="grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-x-8 gap-y-8 w-full ml-0">
+      <Section className="pb-10">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 sm:mb-16">Parachain lifecycle</h2>
+        <ul className="grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-8 w-full ml-0">
           {illustrations.map(({ name, description }, idx) => (
-            <li key={idx} className="list-none max-w-sm" data-aos="fade-up" data-aos-delay={100 + idx * 200}>
+            <li key={idx} className="list-none max-w-sm" data-aos="fade-up" data-aos-delay={100 + idx * 150}>
               <div>
                 <Icon
                   className="mb-4 bg-substrateGray-light dark:bg-substrateBlackish fill-current dark:text-white rounded-md w-full h-full"
@@ -91,8 +91,8 @@ export default function Rococo({ data }) {
         </ul>
       </Section>
 
-      <Section className="underline-animate underline-animate-thin">
-        <h2 className="text-2xl font-bold mb-6">{obtainingRoc.frontmatter.title}</h2>
+      <Section className="pb-10 max-w-4xl underline-animate underline-animate-thin">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-12">{obtainingRoc.frontmatter.title}</h2>
         <p className="mb-6">
           ROC are available in the{' '}
           <a
@@ -132,8 +132,8 @@ export default function Rococo({ data }) {
         </p>
       </Section>
 
-      <Section>
-        <h2 className="text-2xl font-bold mb-6">Off-chain steps</h2>
+      <Section className="max-w-4xl">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-12">Off-chain steps</h2>
 
         <h3 className="text-base font-bold mb-4">{reserveParaId.frontmatter.title}</h3>
         <Code html={reserveParaId.html} />
@@ -148,10 +148,10 @@ export default function Rococo({ data }) {
         <Code html={registerWasm.html} />
       </Section>
 
-      <Section>
+      <Section className="max-w-4xl underline-animate underline-animate-thin">
         <h2 className="text-2xl font-bold mb-6">Learn more</h2>
         <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
-        <ul className="underline-animate underline-animate-thin ml-6 mb-12">
+        <ul className="ml-6 mb-12">
           <li>
             <Link to="https://docs.substrate.io/tutorials/connect-other-chains/">Connect other chains tutorials</Link> —
             Learn how to connect your chain to others
@@ -172,7 +172,7 @@ export default function Rococo({ data }) {
 
         <h2 className="text-2xl font-bold mb-6">Support</h2>
         <h3 className="text-base mb-4">Access technical support from across the community.</h3>
-        <p className="underline-animate underline-animate-thin mb-6">
+        <p className="mb-6">
           <Link to="https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation">
             Parachain Technical matrix chat channel
           </Link>{' '}
