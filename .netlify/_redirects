@@ -12,6 +12,7 @@ https://substrate-website.netlify.app/* https://substrate.io/:splat 301!
 /ecosystem/opportunities /ecosystem/opportunities/hackathons 301!
 /ecosystem/resources /ecosystem/resources/seminar 301!
 /ecosystem/connect /ecosystem/connect/contact 301!
+/substrate-connect /developers/substrate-connect 301!
 
 # Decommissioned pages
 /ecosystem/resources/community-resources https://github.com/substrate-developer-hub/awesome-substrate/blob/master/README.md 301!
