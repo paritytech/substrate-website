@@ -43,7 +43,7 @@ export default function Rococo({ data }) {
       <SEO title="Rococo Network" />
 
       <Section className="mb-36 xl:my-36 grid md:grid-cols-2 underline-animate underline-animate-thin">
-        <h1 className="order-1 md:order-none md:col-start-1 font-extrabold text-5xl md:text-6xl mb-12">
+        <h1 className="order-1 md:order-none md:col-start-1 font-title font-extrabold text-5xl md:text-6xl mb-12">
           Rococo Network
         </h1>
         <h2 className="order-3 md:order-none md:col-start-1 text-2xl font-bold mb-6">
