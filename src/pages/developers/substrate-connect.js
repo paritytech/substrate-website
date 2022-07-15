@@ -33,7 +33,7 @@ const networks = [
   {
     name: 'Rococo',
     description: 'Testnet designed for parachains and related technologies: Cumulus and HRMP.',
-    link: 'https://polkadot.network/tag/rococo/',
+    link: '/developers/rococo-network',
   },
 ];
 
