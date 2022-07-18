@@ -154,37 +154,39 @@ export default function Rococo({ data }) {
         <Code html={registerWasm.html} />
       </Section>
 
-      <Section className="max-w-4xl underline-animate underline-animate-thin">
-        <h2 className="text-2xl font-bold mb-6">Learn more</h2>
-        <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
-        <ul className="ml-6 mb-12">
-          <li>
-            <Link to="https://docs.substrate.io/tutorials/connect-other-chains/">Connect other chains tutorials</Link> —
-            Learn how to connect your chain to others
-          </li>
-          <li>
-            <Link to="https://w3f.github.io/parachain-implementers-guide/">Implementer&apos;s Guide</Link> — The
-            Polkadot Parachain Host Implementer&apos;s Guide.
-          </li>
-          <li>
-            <Link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-rpc.polkadot.io#/explorer">Rococo UI</Link> —
-            Access the Rococo UI at Rococo Polkadot-JS Apps.
-          </li>
-          <li>
-            <Link to="https://github.com/paritytech/subport/issues/new/choose">Rococo onboarding request issue</Link> —
-            Submit your issue related to your slot request on Rococo
-          </li>
-        </ul>
+      <div className="bg-substrateGray-light dark:bg-substrateGray-darkest pb-10 pt-20">
+        <Section className="max-w-4xl underline-animate underline-animate-thin">
+          <h2 className="text-2xl font-bold mb-6">Learn more</h2>
+          <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
+          <ul className="ml-6 mb-12">
+            <li>
+              <Link to="https://docs.substrate.io/tutorials/connect-other-chains/">Connect other chains tutorials</Link>{' '}
+              — Learn how to connect your chain to others
+            </li>
+            <li>
+              <Link to="https://w3f.github.io/parachain-implementers-guide/">Implementer&apos;s Guide</Link> — The
+              Polkadot Parachain Host Implementer&apos;s Guide.
+            </li>
+            <li>
+              <Link to="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frococo-rpc.polkadot.io#/explorer">Rococo UI</Link>{' '}
+              — Access the Rococo UI at Rococo Polkadot-JS Apps.
+            </li>
+            <li>
+              <Link to="https://github.com/paritytech/subport/issues/new/choose">Rococo onboarding request issue</Link>{' '}
+              — Submit your issue related to your slot request on Rococo
+            </li>
+          </ul>
 
-        <h2 className="text-2xl font-bold mb-6">Support</h2>
-        <h3 className="text-base mb-4">Access technical support from across the community.</h3>
-        <p className="mb-6">
-          <Link to="https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation">
-            Parachain Technical matrix chat channel
-          </Link>{' '}
-          — Reach out!
-        </p>
-      </Section>
+          <h2 className="text-2xl font-bold mb-6">Support</h2>
+          <h3 className="text-base mb-4">Access technical support from across the community.</h3>
+          <p className="mb-6">
+            <Link to="https://matrix.to/#/!WuksvCDImqYSxvNmua:matrix.parity.io?via=matrix.parity.io&via=matrix.org&via=web3.foundation">
+              Parachain Technical matrix chat channel
+            </Link>{' '}
+            — Reach out!
+          </p>
+        </Section>
+      </div>
     </Layout>
   );
 }
