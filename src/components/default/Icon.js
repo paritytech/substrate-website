@@ -51,7 +51,6 @@ import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
 import smartContracts from '../../images/svg/smart-contracts.svg';
 import smile from '../../images/svg/smile.svg';
-import discord from '../../images/svg/social/discord.svg';
 import element from '../../images/svg/social/element.svg';
 import element2 from '../../images/svg/social/element2.svg';
 import github from '../../images/svg/social/github.svg';
@@ -190,7 +189,6 @@ const iconsMap = {
   youtube: youtube,
   reddit: reddit,
   github: github,
-  discord: discord,
   /* square one */
   team: team,
   question: question,

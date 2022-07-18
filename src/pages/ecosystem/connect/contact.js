@@ -53,9 +53,6 @@ export default function Contact() {
           <Link to="https://twitter.com/substrate_io">
             <Icon name="twitter2" className="hover:opacity-50 transition-all" />
           </Link>
-          <Link to="https://discord.gg/DgArePMg">
-            <Icon name="discord" className="hover:opacity-50 transition-all" />
-          </Link>
           <Link to="https://www.youtube.com/channel/UCSs5vZi0U7qHLkUjF3QnaWg">
             <Icon name="youtube" className="hover:opacity-50 transition-all" />
           </Link>
