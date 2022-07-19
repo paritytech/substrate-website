@@ -97,7 +97,7 @@ export default function Rococo({ data }) {
         </ul>
       </Section>
 
-      <Section className="pb-10 max-w-4xl underline-animate underline-animate-thin">
+      <Section className="pb-10 lg:max-w-4xl underline-animate underline-animate-thin">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-12">{obtainingRoc.frontmatter.title}</h2>
         <p className="mb-6">
           ROC are available in the{' '}
@@ -138,7 +138,7 @@ export default function Rococo({ data }) {
         </p>
       </Section>
 
-      <Section className="max-w-4xl">
+      <Section className="lg:max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-12">Off-chain steps</h2>
 
         <h3 className="text-base font-bold mb-4">{reserveParaId.frontmatter.title}</h3>
@@ -155,7 +155,7 @@ export default function Rococo({ data }) {
       </Section>
 
       <div className="bg-substrateGray-light dark:bg-substrateGray-darkest pb-10 pt-20">
-        <Section className="max-w-4xl underline-animate underline-animate-thin">
+        <Section className="lg:max-w-4xl underline-animate underline-animate-thin">
           <h2 className="text-2xl font-bold mb-6">Learn more</h2>
           <h3 className="text-base mb-4">Explore additional ecosystem resources.</h3>
           <ul className="ml-6 mb-12">
