@@ -2,14 +2,14 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import Lottie from 'react-lottie';
 
-import Icon from '../components/default/Icon';
-import Section from '../components/layout/Section';
-import Layout from '../components/site/Layout';
-import SEO from '../components/site/SEO';
-import LineArrowButton from '../components/ui/LineArrowButton';
-import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
-import { useSiteMetadata } from '../hooks/use-site-metadata';
-import * as animationData from '../images/animation/substrate-connect.json';
+import Icon from '../../components/default/Icon';
+import Section from '../../components/layout/Section';
+import Layout from '../../components/site/Layout';
+import SEO from '../../components/site/SEO';
+import LineArrowButton from '../../components/ui/LineArrowButton';
+import PrimaryButtonLink from '../../components/ui/PrimaryButtonLink';
+import { useSiteMetadata } from '../../hooks/use-site-metadata';
+import * as animationData from '../../images/animation/substrate-connect.json';
 
 const networks = [
   {
@@ -78,6 +78,7 @@ export default function Connect() {
           </div>
         </div>
       </Section>
+
       <div className="bg-substrateGray-light dark:bg-substrateBlackish pt-24 pb-5 mb-20">
         <Section>
           <h2 className="text-4xl font-bold mb-6">What is Substrate Connect?</h2>
@@ -120,6 +121,7 @@ export default function Connect() {
           </LineArrowButton>
         </Section>
       </div>
+
       <Section>
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="lg:max-w-md self-center mb-10 lg:mb-20">
@@ -140,6 +142,7 @@ export default function Connect() {
           </div>
         </div>
       </Section>
+
       <Section>
         <h2 className="text-4xl font-bold mb-6">Supported Networks</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-40">

@@ -63,7 +63,7 @@ import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
 import stackExchange from '../../images/svg/stack-exchange-white.svg';
-import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
+import subconnectBrowserTab from '../../images/svg/subconnect-browser-tab.svg';
 import substrate from '../../images/svg/substrate.svg';
 import team from '../../images/svg/team.svg';
 import adaptable from '../../images/svg/technology/adaptable.svg';
