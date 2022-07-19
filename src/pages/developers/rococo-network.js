@@ -1,5 +1,6 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 
 import { Code } from '../../components/default/Code';
@@ -66,9 +67,11 @@ export default function Rococo({ data }) {
           </p>
         </div>
         <div className="flex md:justify-center md:self-center order-2 md:order-none md:row-start-1 md:row-span-4 md:col-start-2 mb-8 w-full">
-          <div className="max-w-sm xl:max-w-md w-full">
-            <Icon name="rococo-logo" />
-          </div>
+          <StaticImage
+            src="../../images/png/developers/rococo-logo.png"
+            className="max-w-sm xl:max-w-md w-full"
+            placeholder="none"
+          />
         </div>
       </Section>
 

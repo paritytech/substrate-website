@@ -52,7 +52,6 @@ import downgrading from '../../images/svg/rococo/downgrading.svg';
 import onboarding from '../../images/svg/rococo/onboarding.svg';
 import parachain from '../../images/svg/rococo/parachain.svg';
 import parathread from '../../images/svg/rococo/parathread.svg';
-import rococoLogo from '../../images/svg/rococo/rococo-logo.svg';
 import upgrading from '../../images/svg/rococo/upgrading.svg';
 import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
@@ -252,7 +251,6 @@ const iconsMap = {
   parachain: parachain,
   downgrading: downgrading,
   parathread: parathread,
-  'rococo-logo': rococoLogo,
 };
 
 export default function Icon({ name, className, ...others }) {
