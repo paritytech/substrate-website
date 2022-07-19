@@ -44,7 +44,7 @@ export default function Rococo({ data }) {
     <Layout>
       <SEO title="Rococo Network" />
 
-      <Section className="mb-36 xl:my-36 grid md:grid-cols-2 underline-animate underline-animate-thin">
+      <Section className="md:mb-36 xl:my-36 grid md:grid-cols-2 underline-animate underline-animate-thin">
         <h1 className="order-1 md:order-none md:col-start-1 font-title font-extrabold text-5xl md:text-6xl mb-12">
           Rococo Network
         </h1>
@@ -75,7 +75,7 @@ export default function Rococo({ data }) {
         </div>
       </Section>
 
-      <Section className="pb-10">
+      <Section className="md:pb-10">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 sm:mb-16">Parachain lifecycle</h2>
         <ul className="grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-8 w-full ml-0">
           {illustrations.map(({ name, description }, idx) => (
@@ -100,7 +100,7 @@ export default function Rococo({ data }) {
         </ul>
       </Section>
 
-      <Section className="pb-10 lg:max-w-4xl underline-animate underline-animate-thin">
+      <Section className="md:pb-10 lg:max-w-4xl underline-animate underline-animate-thin">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-12">{obtainingRoc.frontmatter.title}</h2>
         <p className="mb-6">
           ROC are available in the{' '}
