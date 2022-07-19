@@ -66,7 +66,7 @@ export default function Rococo({ data }) {
             <Link to="https://github.com/paritytech/grandpa-bridge-gadget">Beefy</Link> implementation.
           </p>
         </div>
-        <div className="flex md:justify-center md:self-center order-2 md:order-none md:row-start-1 md:row-span-4 md:col-start-2 mb-8 w-full">
+        <div className="flex md:justify-center md:self-center order-2 md:order-none md:row-start-1 md:row-span-4 md:col-start-2 mb-8 md:mb-0 w-full">
           <StaticImage
             src="../../images/png/developers/rococo-logo.png"
             className="max-w-sm xl:max-w-md w-full"
