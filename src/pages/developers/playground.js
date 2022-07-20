@@ -23,8 +23,8 @@ export default function Playground() {
       <SEO title="Playground" />
       <Section styles="mt-12 md:mb-36">
         <div className="flex flex-col md:flex-row md:items-center doc-hero">
-          <div className="md:w-1/2 mb-10 lg:m-0">
-            <div className="font-title text-5xl lg:text-6xl font-extrabold mb-8">Playground</div>
+          <div className="md:w-1/2 mb-10 lg:m-0 md:pr-4 xl:pr-0">
+            <h1 className="font-title text-5xl lg:text-6xl font-extrabold mb-8">Playground</h1>
             <h4 className="text-xl xl:text-3xl font-semibold">Set up a cloud sandbox</h4>
             <p className="max-w-lg">
               Building with Substrate requires different pieces of technology. We recommend picking a sandbox if
@@ -33,12 +33,11 @@ export default function Playground() {
               set-up to get to the parts most important to you.
             </p>
           </div>
-          <div className="flex justify-center md:w-1/2">
+          <div className="flex justify-center md:w-1/2 rounded-tl-xl overflow-hidden">
             <StaticImage
-              backgroundColor="transparent"
               src="../../images/png/developers/playground-hero.png"
               alt="Substrate Playground"
-              layout="constrained"
+              placeholder="none"
             />
           </div>
         </div>
