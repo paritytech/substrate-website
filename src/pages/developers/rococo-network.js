@@ -116,17 +116,6 @@ export default function Rococo({ data }) {
         <Code html={obtainingRoc.html} />
 
         <p className="mb-6">
-          Now that you have generated and registered your parachain on Rococo, you can{' '}
-          <a
-            href="https://github.com/paritytech/subport/issues/new?assignees=&labels=Rococo&template=rococo.yaml"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            Open a Request
-          </a>{' '}
-          for it to be upgraded!
-        </p>
-        <p className="mb-10">
           If you have a parachain already on Kusama and/or Polkadot, you will be entitled for a long term lease. If this
           is the case, you need to directly{' '}
           <a
@@ -155,6 +144,18 @@ export default function Rococo({ data }) {
 
         <h3 className="text-base font-bold mb-4">{registerWasm.frontmatter.title}</h3>
         <Code html={registerWasm.html} />
+
+        <p className="mb-6 underline-animate underline-animate-thin">
+          Now that you have generated and registered your parachain on Rococo, you can{' '}
+          <a
+            href="https://github.com/paritytech/subport/issues/new?assignees=&labels=Rococo&template=rococo.yaml"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            Open a Request
+          </a>{' '}
+          for it to be upgraded!
+        </p>
       </Section>
 
       <div className="bg-substrateGray-light dark:bg-substrateGray-darkest pb-10 pt-20">
