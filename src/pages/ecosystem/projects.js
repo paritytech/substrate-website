@@ -46,14 +46,14 @@ export default function Projects({ data }) {
         />
       )}
       <SEO
-        title="Blockchain Projects"
-        description="Blockchain Projects. More than 150 projects are building on Substrate, meet the teams. Find out more!"
+        title="Substrate Projects"
+        description="Substrate Projects. More than 150 projects are building on Substrate, meet the teams. Find out more!"
       />
 
       <Section>
         <div className="grid lg:grid-cols-2">
           <div className="self-center lg:pr-12">
-            <h1 className="text-4xl md:text-5xl font-extrabold xl:text-6xl mb-6">Blockchain Projects</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold xl:text-6xl mb-6">Projects</h1>
             <p className="font-semibold text-xl md:text-2xl lg:text-3xl">
               More than 150 projects are building on Substrate
             </p>
