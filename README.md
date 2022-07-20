@@ -17,7 +17,7 @@
 ## Website Architecture
 
 <div align="center">
-<img width="720" alt="image" src="https://user-images.githubusercontent.com/26929021/179946850-f4dd1a01-9326-4db0-ae96-f23a107b58da.png">
+<img width="1099" alt="image" src="https://user-images.githubusercontent.com/26929021/180010460-fdcb7973-2fd9-4ac5-9089-1302123a70ca.png">
 </div>
 
 ## Development
