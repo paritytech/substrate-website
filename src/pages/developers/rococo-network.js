@@ -101,7 +101,7 @@ export default function Rococo({ data }) {
       </Section>
 
       <Section className="md:pb-10 lg:max-w-4xl underline-animate underline-animate-thin">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-12">{obtainingRoc.frontmatter.title}</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 sm:mb-12">Obtaining ROC</h2>
         <p className="mb-6">
           ROC are available in the{' '}
           <a
@@ -131,7 +131,7 @@ export default function Rococo({ data }) {
       </Section>
 
       <Section className="lg:max-w-4xl">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-12">Off-chain steps</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 sm:mb-12">Off-chain steps</h2>
 
         <h3 className="text-base font-bold mb-4">{reserveParaId.frontmatter.title}</h3>
         <Code html={reserveParaId.html} />
