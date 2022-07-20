@@ -1,52 +1,19 @@
 import cn from 'classnames';
-import React, { useState } from 'react';
+import React from 'react';
+import HubspotForm from 'react-hubspot-form';
 
+import { useHubspot } from '../../hooks/use-hubspot';
 import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import Icon from '../default/Icon';
 import { Link } from '../default/Link';
-
-const ActiveCampaign = () => (
-  <>
-    <input type="hidden" name="u" value="11" />
-    <input type="hidden" name="f" value="11" />
-    <input type="hidden" name="s" />
-    <input type="hidden" name="c" value="0" />
-    <input type="hidden" name="m" value="0" />
-    <input type="hidden" name="act" value="sub" />
-    <input type="hidden" name="v" value="2" />
-  </>
-);
+import LoadingAnimation from '../ui/LoadingAnimation';
 
 export default function Newsletter({ layout = 'default' }) {
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const [failedSubmission, setFailedSubmission] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const FORM_ID = 'd48f3940-0c86-4493-978b-31c5c7047b8e';
   const { siteMetadata } = useSiteMetadata();
+  const { formSubmitted, isFormReady, hubspotFormRef, onFormReady } = useHubspot(FORM_ID);
 
   const widget = layout === 'widget';
-
-  const handleSubmit = event => {
-    event.preventDefault();
-    setLoading(true);
-    const data = new FormData(event.target);
-    fetch('https://paritytechnologies.activehosted.com/proc.php', {
-      method: 'POST',
-      body: data,
-      mode: 'no-cors',
-    })
-      .then(() => {
-        setLoading(false);
-        setFormSubmitted(!formSubmitted);
-        setTimeout(() => {
-          setFormSubmitted(false);
-        }, 15000);
-      })
-      .catch(error => {
-        setLoading(false);
-        setFailedSubmission(true);
-        console.log('Request failed', error);
-      });
-  };
 
   return (
     <div
@@ -67,69 +34,49 @@ export default function Newsletter({ layout = 'default' }) {
         </h2>
       </div>
       {!formSubmitted && (
-        <div className={!widget && 'lg:grid lg:grid-cols-3 gap-6'}>
-          <p className="mb-6 font-semibold text-lg max-w-lg lg:max-w-7xl">
+        <div className={!widget && 'flex flex-col lg:flex-row gap-6 max-w-[1345px]'}>
+          <p className="mb-6 font-semibold text-lg max-w-lg">
             Subscribe for the latest news, technical updates and helpful developer resources.
           </p>
-          <form className="col-span-2" onSubmit={event => handleSubmit(event)}>
-            <ActiveCampaign />
-            <div className={cn('', { 'lg:flex gap-6': !widget })}>
-              <input
-                className={cn(
-                  'w-full flex-1 mb-6 border-3 rounded-lg border-black text-bodyBg text-xl p-4 focus:outline-none hover:ring-2 focus:ring-2 text-center',
-                  {
-                    'bg-substrateBlackish border-white text-white max-w-sm h-12': !widget,
-                    'dark:bg-substrateDarkest dark:border-substrateGray-dark dark:placeholder-white text-black dark:text-white max-w-lg h-16':
-                      widget,
-                  }
-                )}
-                type="email"
-                name="email"
-                placeholder={!widget ? 'Type your Email Address' : 'Email Address'}
-                required
-              />
-              <div
-                className={cn('lg:w-lg flex-1', {
-                  'max-w-sm': !widget,
-                  'max-w-lg': widget,
+          <div id="hs-newsletter-form" className={widget ? 'widget' : ''}>
+            <HubspotForm
+              ref={hubspotFormRef}
+              portalId="7592558"
+              formId={FORM_ID}
+              onReady={onFormReady}
+              loading={
+                <div className={cn('h-full', { 'py-10 px-10 px-mb-10': widget })}>
+                  <LoadingAnimation />
+                  <p className="mt-2 text-xs text-center text-gray-400 font-sans">
+                    If the content does not appear correctly, <br />
+                    follow this{' '}
+                    <a
+                      href="https://share.hsforms.com/11I85QAyGRJOXizHFxwR7jg4iqge"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline"
+                    >
+                      link
+                    </a>
+                    .
+                  </p>
+                </div>
+              }
+            />
+            {isFormReady && (
+              <p
+                className={cn('text-sm mt-6 lg:mt-4 lg:mx-auto xl:ml-auto xl:mr-0', {
+                  'mb-0 max-w-sm lg:text-center': !widget,
+                  'mb-6': widget,
                 })}
               >
-                <button
-                  className={cn(
-                    'w-full bg-substrateGreen hover:bg-white text-white hover:text-substrateGreen align-items px-9 text-xl font-bold transition duration-200 focus:outline-none focus:ring-2 rounded-lg border-3 border-substrateGreen',
-                    {
-                      'h-16 mb-6': widget,
-                      'h-12 mb-4': !widget,
-                    }
-                  )}
-                  type="submit"
-                  value="Submit"
-                  onSubmit={event => handleSubmit(event)}
-                >
-                  {loading ? 'Sending...' : 'Subscribe'}
-                </button>
-                {failedSubmission && (
-                  <p
-                    className={cn('mb-6 text-sm', {
-                      'mb-2 lg:text-center text-substrateYellow': !widget,
-                      'text-substrateRed': widget,
-                    })}
-                  >
-                    Submission Failed. Please disable ad-blocker or{' '}
-                    <span className="underline-animate underline-animate-thin">
-                      <Link to="https://paritytechnologies.activehosted.com/f/11">sign up here</Link>
-                    </span>
-                  </p>
-                )}
-                <p className={cn('mb-6 text-sm', { 'mb-0 lg:text-center': !widget })}>
-                  To see how we use your information please see our{' '}
-                  <span className="underline-animate underline-animate-thin">
-                    <Link to="https://www.parity.io/privacy/">privacy policy</Link>
-                  </span>
-                </p>
-              </div>
-            </div>
-          </form>
+                To see how we use your information please see our{' '}
+                <span className="underline-animate underline-animate-thin">
+                  <Link to="https://www.parity.io/privacy/">privacy policy</Link>
+                </span>
+              </p>
+            )}
+          </div>
         </div>
       )}
       {formSubmitted && (

@@ -129,7 +129,7 @@ export default function Flexible() {
           linkText={
             <p className="underline-animate">
               Experience running a client directly in your browser with{' '}
-              <Link to="/substrate-connect/">Substrate Connect » </Link>
+              <Link to="/developers/substrate-connect/">Substrate Connect » </Link>
             </p>
           }
         >

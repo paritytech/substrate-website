@@ -51,7 +51,6 @@ import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
 import smartContracts from '../../images/svg/smart-contracts.svg';
 import smile from '../../images/svg/smile.svg';
-import discord from '../../images/svg/social/discord.svg';
 import element from '../../images/svg/social/element.svg';
 import element2 from '../../images/svg/social/element2.svg';
 import github from '../../images/svg/social/github.svg';
@@ -64,7 +63,7 @@ import twitter from '../../images/svg/social/twitter.svg';
 import twitter2 from '../../images/svg/social/twitter2.svg';
 import youtube from '../../images/svg/social/youtube.svg';
 import stackExchange from '../../images/svg/stack-exchange-white.svg';
-import subconnectBrowserTab from '../../images/svg/subconnectBrowserTab.svg';
+import subconnectBrowserTab from '../../images/svg/subconnect-browser-tab.svg';
 import substrate from '../../images/svg/substrate.svg';
 import team from '../../images/svg/team.svg';
 import adaptable from '../../images/svg/technology/adaptable.svg';
@@ -190,7 +189,6 @@ const iconsMap = {
   youtube: youtube,
   reddit: reddit,
   github: github,
-  discord: discord,
   /* square one */
   team: team,
   question: question,

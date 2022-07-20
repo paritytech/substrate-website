@@ -70,6 +70,10 @@ const developers = [
     url: '/smart-contracts',
     id: 'developers.smart-contracts',
   },
+  {
+    url: '/substrate-connect',
+    id: 'developers.substrate-connect',
+  },
 ];
 
 const vision = [
@@ -173,13 +177,6 @@ const legal = [
   },
 ];
 
-const extra = [
-  {
-    url: '/substrate-connect',
-    id: 'extra.substrate-connect',
-  },
-];
-
 module.exports = {
   main,
   technology,
@@ -189,6 +186,5 @@ module.exports = {
   opportunities,
   resources,
   connect,
-  extra,
   legal,
 };
