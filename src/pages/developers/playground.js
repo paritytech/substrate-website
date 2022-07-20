@@ -33,7 +33,7 @@ export default function Playground() {
               set-up to get to the parts most important to you.
             </p>
           </div>
-          <div className="flex justify-center md:w-1/2 rounded-tl-md overflow-hidden">
+          <div className="flex justify-center md:w-1/2 rounded-tl-xl overflow-hidden">
             <StaticImage
               src="../../images/png/developers/playground-hero.png"
               alt="Substrate Playground"
