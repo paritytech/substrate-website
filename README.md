@@ -11,14 +11,14 @@
 ## Content contribution, PRs and merging flow
 
 - PR providing content (`json`, `md`...): open PR against `main` branch (production)
-- PR providing new features: open PR against `develop` branch
-- PR providing `hotfixes` open only against `main` (fixes will be merged into `develop` with next features)
+- PR providing new features: open PR against `main` branch (PR builds in netlify staging env)
+- PR providing `hotfixes` open only against `main` (PR builds in netlify staging env)
 
-**Deploying new features**
+## Website Architecture
 
-- `develop` <- `main`: update content and fixes
-- `develop` <- `feature/branch`: merging feature PRs
-- `main` <- `develop`: deploying new release to production
+<div align="center">
+<img width="720" alt="image" src="https://user-images.githubusercontent.com/26929021/179946850-f4dd1a01-9326-4db0-ae96-f23a107b58da.png">
+</div>
 
 ## Development
 
@@ -54,7 +54,7 @@ yarn develop
 
 ## Setup, configuration & plugins
 
-### i18n (currently not in use)
+### i18n (bypassed)
 
 Docs:
 
@@ -75,7 +75,7 @@ The default language (and fallback language) is `en` for english.
 
 To extract the strings that needs to be translated, it is possible to run `yarn extract-locales`, which will generate the `/locales-tmp` folder.
 
-### netlify-cms (currently not in use)
+### netlify-cms (bypassed)
 
 `netlify-cms-app` & `gatsby-plugin-netlify-cms` are used to setup `[netlify-cms](https://www.netlifycms.org)` for this project.
 
