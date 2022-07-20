@@ -219,6 +219,10 @@ div[aria-label='animation'] {
   @apply text-substrateDarkThemeBlue dark:text-substrateBlue;
 }
 
+.banner a::after {
+  @apply bg-substrateDarkThemeBlue dark:bg-substrateBlue;
+}
+
 /* Hubspot Confirmation Checkmark Animation */
 
 .checkmark__circle {
