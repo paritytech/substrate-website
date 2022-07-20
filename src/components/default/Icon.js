@@ -47,6 +47,12 @@ import placeholder from '../../images/svg/placeholder.svg';
 import polkadotLogo from '../../images/svg/polkadot-logo.svg';
 import question from '../../images/svg/question.svg';
 import rocket from '../../images/svg/rocket.svg';
+import becomeParathread from '../../images/svg/rococo/become-parathread.svg';
+import downgrading from '../../images/svg/rococo/downgrading.svg';
+import onboarding from '../../images/svg/rococo/onboarding.svg';
+import parachain from '../../images/svg/rococo/parachain.svg';
+import parathread from '../../images/svg/rococo/parathread.svg';
+import upgrading from '../../images/svg/rococo/upgrading.svg';
 import seminar from '../../images/svg/seminar.svg';
 import shieldCheckSolid from '../../images/svg/shield-check-solid.svg';
 import smartContracts from '../../images/svg/smart-contracts.svg';
@@ -93,6 +99,7 @@ import arrowNext from '../../images/svg/ui/arrow-next.svg';
 import calendar from '../../images/svg/ui/calendar.svg';
 import chrome from '../../images/svg/ui/chrome.svg';
 import close from '../../images/svg/ui/close-x.svg';
+import copy from '../../images/svg/ui/copy.svg';
 import date from '../../images/svg/ui/date.svg';
 import diamondGreen from '../../images/svg/ui/diamond-green.svg';
 import diamondPink from '../../images/svg/ui/diamond-pink.svg';
@@ -172,6 +179,7 @@ const iconsMap = {
   'diamond-green': diamondGreen,
   play: play,
   tools: tools,
+  copy: copy,
   chrome: chrome,
   firefox: firefox,
   time: time,
@@ -236,6 +244,13 @@ const iconsMap = {
   stackExchange: stackExchange,
   /* Smart Contracts */
   'smart-contracts': smartContracts,
+  /* Rococo assets */
+  'become-parathread': becomeParathread,
+  onboarding: onboarding,
+  upgrading: upgrading,
+  parachain: parachain,
+  downgrading: downgrading,
+  parathread: parathread,
 };
 
 export default function Icon({ name, className, ...others }) {

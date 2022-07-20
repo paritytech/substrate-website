@@ -74,6 +74,10 @@ const developers = [
     url: '/substrate-connect',
     id: 'developers.substrate-connect',
   },
+  {
+    url: '/rococo-network',
+    id: 'developers.rococo-network',
+  },
 ];
 
 const vision = [
