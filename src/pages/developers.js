@@ -23,7 +23,7 @@ export default function Home() {
     <Layout mode="full">
       <Banner />
       <SEO
-        title="Developers | Substrate Developer Hub"
+        title="Developers Home"
         description="Substrate is powered by best-in-class cryptographic research and comes with peer-to-peer networking,
               consensus mechanisms, and much more."
       />
