@@ -10,7 +10,7 @@ import SEO from '../../../components/site/SEO';
 export default function Contact() {
   return (
     <Layout layout="sidebar">
-      <SEO title="Contact" />
+      <SEO title="Contact" description="Get in touch!" />
       <Section>
         <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
         <p className="font-medium">Still got questions? Get in touch!</p>
