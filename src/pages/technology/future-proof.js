@@ -20,7 +20,10 @@ const FutureProof = () => {
   const { siteMetadata } = useSiteMetadata();
   return (
     <Layout>
-      <SEO title="Future-Proof" />
+      <SEO
+        title="Future-Proof Blockchain"
+        description="Future-Proof Blockchain. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. Find out more!"
+      />
       <Hero page="Future-Proof" animationData={animation}>
         <p>
           Blockchain technology is evolving at a rapid pace and has spurred innovation in other areas such as zero

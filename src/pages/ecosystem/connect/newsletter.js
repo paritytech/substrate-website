@@ -9,7 +9,10 @@ import SEO from '../../../components/site/SEO';
 export default function NewsletterPage() {
   return (
     <Layout layout="sidebar">
-      <SEO title="Newsletter" />
+      <SEO
+        title="Newsletter"
+        description="Subscribe for the latest news, technical updates and helpful developer resources."
+      />
       <div className="relative -mt-12 md:mt-0">
         <StaticImage
           src="../../../images/photos/ecosystem/newsletter/newsletter.jpg"

@@ -45,12 +45,15 @@ export default function Projects({ data }) {
           onClose={() => modalSetOpen(false)}
         />
       )}
-      <SEO title="Projects" />
+      <SEO
+        title="Substrate Projects"
+        description="Substrate Projects. More than 150 projects are building on Substrate, meet the teams. Find out more!"
+      />
 
       <Section>
         <div className="grid lg:grid-cols-2">
           <div className="self-center lg:pr-12">
-            <h1 className="text-4xl md:text-5xl font-extrabold xl:text-6xl mb-6">Meet The Teams</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold xl:text-6xl mb-6">Substrate Projects</h1>
             <p className="font-semibold text-xl md:text-2xl lg:text-3xl">
               More than 150 projects are building on Substrate
             </p>

@@ -12,7 +12,10 @@ export default function DeliveryPartners({ data }) {
 
   return (
     <Layout mode="full">
-      <SEO title="Substrate Delivery Partners Program" />
+      <SEO
+        title="Substrate Delivery Partners Program"
+        description="Substrate teams have access to a rich ecosystem of motivated third-parties interested in taking services from the community."
+      />
       <Section>
         <div className="hidden md:block mb-12 underline-animate underline-animate-thin capitalize">
           <NavBreadcrumb linkMiddleParent />

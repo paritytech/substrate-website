@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import { useSiteMetadata } from '../../hooks/use-site-metadata';
 
-export default function SEO({ children = null, description = '', lang = 'en', meta = [], title }) {
+export default function SEO({ children = null, description = '', lang = 'en', meta = [], title, keyword }) {
   const { siteMetadata } = useSiteMetadata();
 
   const metaDescription = description || siteMetadata.description || '';
@@ -11,13 +11,14 @@ export default function SEO({ children = null, description = '', lang = 'en', me
   const titleMeta = siteMetadata.title_meta;
   const image = siteMetadata.image_og;
   const siteUrl = siteMetadata.siteUrl;
-
+  const pageMeta = title ? title : titleMeta;
+  /* `keyword` is used as the page title in the <title> if it exists - this allows it to be different from the metaTitle for which `title` is used */
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={keyword ? keyword : title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : `%s`}
       meta={[
         {
@@ -30,7 +31,7 @@ export default function SEO({ children = null, description = '', lang = 'en', me
         },
         {
           property: `og:title`,
-          content: titleMeta,
+          content: pageMeta,
         },
         {
           property: `og:description`,
@@ -58,7 +59,7 @@ export default function SEO({ children = null, description = '', lang = 'en', me
         },
         {
           name: `twitter:title`,
-          content: titleMeta,
+          content: pageMeta,
         },
         {
           name: `twitter:description`,

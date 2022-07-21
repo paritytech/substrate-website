@@ -41,7 +41,11 @@ const tracks = [
 export default function BuildersProgram() {
   return (
     <Layout mode="full">
-      <SEO title="Substrate Builders Program" />
+      <SEO
+        title="Substrate Builders Program"
+        keyword="Substrate Builders Program | Blockchain Dev Program"
+        description="Substrate Builders Program. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. Find out more!"
+      />
       <Article>
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">

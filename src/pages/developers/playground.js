@@ -20,7 +20,7 @@ export default function Playground() {
   }, []);
   return (
     <Layout>
-      <SEO title="Playground" />
+      <SEO title="Substrate Playground" description="Set up a cloud sandbox" />
       <Section styles="mt-12 md:mb-36">
         <div className="flex flex-col md:flex-row md:items-center doc-hero">
           <div className="md:w-1/2 mb-10 lg:m-0 md:pr-4 xl:pr-0">

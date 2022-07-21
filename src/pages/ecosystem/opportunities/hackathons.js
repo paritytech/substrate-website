@@ -18,11 +18,14 @@ export default function Hackathons() {
 
   return (
     <Layout layout="sidebar">
-      <SEO title="Hackathons" />
+      <SEO
+        title="Blockchain Hackathons &amp; Prizes Apply now!"
+        description="Blockchain Hackathons &amp; Prizes. Apply now! Challenge yourself, up your game, and connect with the community. There are great prizes up for grabs too. Find out more!"
+      />
       <Section>
-        <h1 className="text-4xl font-bold mb-4">Hackathons</h1>
+        <h1 className="text-4xl font-bold mb-4">Blockchain Hackathons &amp; Prizes</h1>
         <p>
-          Challenge yourself, up your game, and connect with the community. There are great prizes up for grabs, too.
+          Challenge yourself, up your game, and connect with the community. There are great prizes up for grabs too.
         </p>
         {hackathons.map((hackathon, idx) => {
           return (

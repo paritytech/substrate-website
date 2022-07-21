@@ -21,7 +21,10 @@ const Interoperable = () => {
   const { siteMetadata } = useSiteMetadata();
   return (
     <Layout>
-      <SEO title="Interoperable" />
+      <SEO
+        title="Interoperable Blockchain"
+        description="Interoperable Blockchain. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. Find out more!"
+      />
       <Hero page="Interoperable" animationData={animation}>
         <p>
           Developers are often forced to make tradeoffs between compatibility, security, and efficiency to interact with

@@ -13,7 +13,10 @@ export default function AcceleratorsAndIncubators({ data }) {
 
   return (
     <Layout mode="full">
-      <SEO title="Substrate Delivery Partners Program" />
+      <SEO
+        title="Substrate Delivery Partners Program"
+        description="Developing relationships with incubators and accelerators is a common way for Substrate teams to develop or expand their projects at different stages."
+      />
       <Section>
         <div className="hidden md:block mb-12 underline-animate underline-animate-thin capitalize">
           <NavBreadcrumb linkMiddleParent />

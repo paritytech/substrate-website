@@ -53,7 +53,12 @@ export default function Home() {
           onClose={() => modalSetOpen(false)}
         />
       )}
-      <SEO title="Substrate Ecosystem" />
+      <SEO
+        title="Substrate Ecosystem"
+        description="Some of the most exciting projects in decentralized tech are building on Substrate, including
+                parachains, independent layer-1 blockchains, and infrastructure and tooling solutions for a wide range
+                of use cases."
+      />
       <Article>
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-11 gap-8 lg:gap-16">

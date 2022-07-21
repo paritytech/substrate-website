@@ -21,7 +21,10 @@ export default function Flexible() {
 
   return (
     <Layout>
-      <SEO title="Flexible" />
+      <SEO
+        title="Flexible Blockchain"
+        description="Flexible Blockchain. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. Find out more!"
+      />
       <Hero page="Flexible" animationData={animation}>
         <p>
           Blockchain developers have had to make difficult tradeoffs when deciding what distributed ledger technology to
