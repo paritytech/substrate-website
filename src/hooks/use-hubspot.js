@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const useHubspot = formId => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isFormReady, setIsFormReady] = useState(false);
-  const hubspotFormRef = useRef(null);
 
   const handler = useCallback(
     event => {
@@ -17,12 +16,6 @@ const useHubspot = formId => {
   );
 
   useEffect(() => {
-    if (!isFormReady) return;
-    // remove novalidate attribute from form so we get default browser error popup
-    hubspotFormRef.current.el.firstChild.removeAttribute('novalidate');
-  }, [isFormReady]);
-
-  useEffect(() => {
     window.addEventListener('message', handler);
     return () => {
       window.removeEventListener('message', handler);
@@ -33,7 +26,7 @@ const useHubspot = formId => {
     setIsFormReady(true);
   }, []);
 
-  return { formSubmitted, isFormReady, hubspotFormRef, onFormReady };
+  return { formSubmitted, isFormReady, onFormReady };
 };
 
 export { useHubspot };

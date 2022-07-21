@@ -11,7 +11,7 @@ import LoadingAnimation from '../ui/LoadingAnimation';
 export default function Newsletter({ layout = 'default' }) {
   const FORM_ID = 'd48f3940-0c86-4493-978b-31c5c7047b8e';
   const { siteMetadata } = useSiteMetadata();
-  const { formSubmitted, isFormReady, hubspotFormRef, onFormReady } = useHubspot(FORM_ID);
+  const { formSubmitted, isFormReady, onFormReady } = useHubspot(FORM_ID);
 
   const widget = layout === 'widget';
 
@@ -40,7 +40,6 @@ export default function Newsletter({ layout = 'default' }) {
           </p>
           <div id="hs-newsletter-form" className={widget ? 'widget' : ''}>
             <HubspotForm
-              ref={hubspotFormRef}
               portalId="7592558"
               formId={FORM_ID}
               onReady={onFormReady}
