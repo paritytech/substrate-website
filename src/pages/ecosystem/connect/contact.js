@@ -6,8 +6,11 @@ import { Link } from '../../../components/default/Link';
 import Section from '../../../components/layout/Section';
 import Layout from '../../../components/site/Layout';
 import SEO from '../../../components/site/SEO';
+import { useSiteMetadata } from '../../../hooks/use-site-metadata';
 
 export default function Contact() {
+  const { siteMetadata } = useSiteMetadata();
+
   return (
     <Layout layout="sidebar">
       <SEO title="Contact" description="Get in touch!" />
@@ -20,13 +23,13 @@ export default function Contact() {
           <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">Technical Support</h5>
             <p className="max-w-sm">
-              Head to Element chat and Stack Overflow for anwers to blockchain development questions.
+              Head to Element chat and Stack Exchange for anwers to blockchain development questions.
             </p>
             <div className="grid grid-cols-2 justify-items-start">
-              <Link to="https://stackoverflow.com/questions/tagged/substrate">
-                <Icon name="stack-overflow-2" className="inline hover:opacity-50 transition-all" />
+              <Link to={siteMetadata.element}>
+                <Icon name="element2" className="h-9 w-9 inline hover:opacity-50 transition-all" />
               </Link>
-              <Link to="https://substrate.stackexchange.com">
+              <Link to={siteMetadata.stackexchange}>
                 <Icon name="stack-exchange-2" className="inline hover:opacity-50 transition-all" />
               </Link>
             </div>
@@ -50,7 +53,7 @@ export default function Contact() {
       <Section>
         <h5 className="text-xl font-extrabold mb-8">More Ways To Connect</h5>
         <div className="flex gap-10 md:gap-20">
-          <Link to="https://twitter.com/substrate_io">
+          <Link to={siteMetadata.twitter}>
             <Icon name="twitter2" className="hover:opacity-50 transition-all" />
           </Link>
           <Link to="https://www.youtube.com/channel/UCSs5vZi0U7qHLkUjF3QnaWg">
@@ -59,7 +62,7 @@ export default function Contact() {
           <Link to="https://www.reddit.com/r/substrate/">
             <Icon name="reddit" className="hover:opacity-50 transition-all" />
           </Link>
-          <Link to="https://github.com/paritytech/substrate">
+          <Link to={siteMetadata.github}>
             <span className="text-black dark:text-white fill-current">
               <Icon name="github" className="hover:opacity-50 transition-all" />
             </span>
