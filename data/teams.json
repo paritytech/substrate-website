@@ -1,6 +1,6 @@
 {
 	"types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
-  "categories": ["All", "DeFi", "Wallet", "Identity", "Social", "Smart Contracts", "File Storage", "IoT", "Gaming", "Bridge", "Infrastructure", "Relay Chain", "NFTs"],
+  "categories": ["All", "DeFi", "Wallet", "Identity", "Social", "Smart Contracts", "File Storage", "IoT", "Gaming", "Bridge", "Infrastructure", "Relay Chain", "NFTs", "Health Care"],
   "teams": [
     {
       "name": "Acala Network",
@@ -1161,7 +1161,7 @@
       "name": "Ajuna Network",
       "link": "https://ajuna.io/",
       "category":[ "Gaming","All"],
-      "types": ["All Teams", "Building for Polkadot"],
+      "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
       "tag": "Decentralized Application",
       "description": "Ajuna Network is an infrastructure for Blockhain Games, featureing a full featured UnitySDK and UnrealSDK built on Substrate."
     },
@@ -1308,6 +1308,30 @@
       "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
       "tag": "Chain",
       "description": "A substrate chain that is bridging the gap between data privacy and data integrity."
+    },
+    {  
+      "name": "Project Aria",
+      "link": "https://myaria.health/",
+      "category":["Health Care", "All"],
+      "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
+      "tag": "Chain",
+      "description": "Aria is a decentralized network of Health Data owned and manage buy the Data Owners (individuals)."
+    },
+    {  
+      "name": "Chocolate",
+      "link": "https://github.com/chocolatenetwork/",
+      "category":["Social", "All"],
+      "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
+      "tag": "Chain",
+      "description": "Chocolate is a community feedback mechanism network and a platform for anonymous, trusted, knowledge exchange"
+    },
+    {  
+      "name": "Wunderbar Network",
+      "link": "https://github.com/WunderbarNetwork",
+      "category":["File Storage", "All"],
+      "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
+      "tag": "Chain",
+      "description": "Wunderbar Network is a decentralized data exchange protocol."
     }
     ]
 }
