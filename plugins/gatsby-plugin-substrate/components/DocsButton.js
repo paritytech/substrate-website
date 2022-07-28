@@ -6,7 +6,7 @@ import { Link } from './Link';
 
 const DocsButton = () => {
   const { siteMetadata } = useSiteMetadata();
-  const docsLink = siteMetadata.docsUrl + '/v' + '1';
+  const docsLink = siteMetadata.docsUrl;
 
   return (
     // TODO: add docs link
