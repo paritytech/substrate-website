@@ -1,14 +1,14 @@
 [
-  {
-    "q": "Can I ask my own questions?",
-    "a": "Yes! The second half of every Seminar is for open Q & A like office hours. You can ask questions or even bring your code that doesn't compile. Participants will be invited on-screen to share their work and their questions. You may also join us between Seminars on Element."
-  },
-  {
-    "q": "I am not a [Substrate] developer, can I still participate?",
-    "a": "Yes! The second half of every Seminar is for open Q & A like office hours. You can ask questions or even bring your code that doesn't compile. Participants will be invited on-screen to share their work and their questions. You may also join us between Seminars on Element."
-  },
-  {
-    "q": "Where are the recordings?",
-    "a": "<p>Seminar has changed formats a few times so the recordings are in a few places:</p><ul><li><b>23 June 2020</b> and later are on Crowdcast.</li><li><b>19 November 2019 - 23 June 2020</b> are on the Substrate Seminar YouTube playlist.</li><li><b>03 June 2019 - 02 November 2019</b> are on the Substrate Collaborative Learning YouTube playlist.</li></ul>"
-  }
+    {
+        "q": "Can I ask my own questions?",
+        "a": "Yes! The second half of every Seminar is for open Q & A like office hours. You can ask questions or even bring your code that doesn't compile. Participants will be invited on-screen to share their work and their questions. You may also join us between Seminars on Element."
+    },
+    {
+        "q": "I am not a [Substrate] developer, can I still participate?",
+        "a": "Yes! The second half of every Seminar is for open Q & A like office hours. You can ask questions or even bring your code that doesn't compile. Participants will be invited on-screen to share their work and their questions. You may also join us between Seminars on Element."
+    },
+    {
+        "q": "Where are the recordings?",
+        "a": "<p>Seminar has changed formats a few times so the recordings are in a few places:</p><ul><li><b>23 June 2020</b> and later are on Crowdcast.</li><li><b>19 November 2019 - 23 June 2020</b> are on the Substrate Seminar YouTube playlist.</li><li><b>03 June 2019 - 02 November 2019</b> are on the Substrate Collaborative Learning YouTube playlist.</li></ul>"
+    }
 ]
