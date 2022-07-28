@@ -1,6 +1,5 @@
+import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import { Link } from '../../../default/Link';
 
 export default function BreadcrumbNav(props) {
   return (

@@ -1,9 +1,7 @@
 import cx from 'classnames';
+import { Link, Section } from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
-
-import { Link } from '../../default/Link';
-import Section from '../../layout/Section';
 
 const pages = [
   {

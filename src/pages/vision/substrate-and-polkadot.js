@@ -1,16 +1,12 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Article, ArticleNav, Blockquote, Layout, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
 
 import Gif from '../../components/default/Gif';
-import Article from '../../components/layout/Article';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
 import BannerLink from '../../components/layout/vision/BannerLink';
-import ArticleNav from '../../components/site/ArticleNav';
-import Layout from '../../components/site/Layout';
-import SEO from '../../components/site/SEO';
-import BlockQuote from '../../components/ui/Blockquote';
 import * as animationData from '../../images/animation/substrate-polkadot.json';
 
 const Vision = () => {
@@ -141,13 +137,13 @@ const Vision = () => {
                   business logic dynamically metered, and being limited to Ethereum&apos;s transaction pool and lack of
                   core upgradability.
                 </p>
-                <BlockQuote>
+                <Blockquote>
                   <p className="mb-0">
                     By forcing these design decisions on yourself, you already place hard constraints on what you can
                     practically engineer and how much you can really innovate. You also dramatically limit the
                     performance of your application logic.
                   </p>
-                </BlockQuote>
+                </Blockquote>
 
                 <BannerLink link="/technology/" text="Explore how Substrate’s technology removes limitations" />
 
@@ -192,14 +188,14 @@ const Vision = () => {
                   it is the de facto SDK for Polkadot, allowing parachain teams to build and deploy their chains on
                   Polkadot.
                 </p>
-                <BlockQuote>
+                <Blockquote>
                   Having a flexibile blockchain development platform like Substrate is especially important for
                   Polkadot, &quot;the blockchain of blockchains&quot; and a foundational component of the Web3
                   technology stack. Without Substrate, there would be no easy way to build the blockchains that
                   constitute the Polkadot ecosystem, and many builders would be forced into using a constrictive and
                   uniform smart contract environment, limiting innovation and leaving Polkadot’s remarkable
                   heterogeneous sharding system unutilized.
-                </BlockQuote>
+                </Blockquote>
 
                 <BannerLink
                   link="/technology/interoperable/"

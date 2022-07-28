@@ -1,7 +1,6 @@
 import cx from 'classnames';
+import { Icon } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import Icon from '../default/Icon';
 
 export default function PrimaryButton({ children, onClick, fullWidth = false, hero = false }) {
   return (

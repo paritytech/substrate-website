@@ -1,16 +1,10 @@
 import { graphql } from 'gatsby';
+import { Article, Icon, Layout, Link, Section, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
 
-import Icon from '../components/default/Icon';
-import { Link } from '../components/default/Link';
-import Article from '../components/layout/Article';
-import Section from '../components/layout/Section';
 import Card from '../components/layout/technology/Card';
 import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
-import Layout from '../components/site/Layout';
-import SEO from '../components/site/SEO';
-import { useSiteMetadata } from '../hooks/use-site-metadata';
 import * as animationData from '../images/animation/technology/overview.json';
 
 export default function Technology() {

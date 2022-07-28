@@ -1,6 +1,5 @@
+import { LineArrowButton } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import LineArrowButton from '../ui/LineArrowButton';
 
 export default function InfoCard({ delay, title, description, setCurrentReq }) {
   return (

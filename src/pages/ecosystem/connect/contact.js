@@ -1,12 +1,6 @@
 import { graphql } from 'gatsby';
+import { Icon, Layout, Link, Section, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import Icon from '../../../components/default/Icon';
-import { Link } from '../../../components/default/Link';
-import Section from '../../../components/layout/Section';
-import Layout from '../../../components/site/Layout';
-import SEO from '../../../components/site/SEO';
-import { useSiteMetadata } from '../../../hooks/use-site-metadata';
 
 export default function Contact() {
   const { siteMetadata } = useSiteMetadata();

@@ -1,6 +1,6 @@
+import { Icon } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
 
-import Icon from '../../../default/Icon';
 import DevStageFilter from './DevStageFilter';
 import InitiativeCard from './InitiativeCard';
 import ReqFilter from './ReqFilter';

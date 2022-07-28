@@ -1,20 +1,23 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import {
+  Banner,
+  CommunityCard,
+  DocCard,
+  Icon,
+  Layout,
+  Link,
+  PrimaryFixedButton,
+  Section,
+  SEO,
+  useSiteMetadata,
+} from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
 
-import Icon from '../components/default/Icon';
-import { Link } from '../components/default/Link';
-import Section from '../components/layout/Section';
+import { communityCardData } from '../../config/communityCardData';
 import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
-import Banner from '../components/site/Banner';
-import CommunityCard from '../components/site/CommunityCard';
-import Layout from '../components/site/Layout';
-import SEO from '../components/site/SEO';
-import DocCard from '../components/ui/DocCard';
-import PrimaryFixedButton from '../components/ui/PrimaryFixedButton';
 import SecondaryButton from '../components/ui/SecondaryButton';
-import { useSiteMetadata } from '../hooks/use-site-metadata';
 import * as animationData from '../images/animation/dev-hero.json';
 
 export default function Home() {
@@ -176,7 +179,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <CommunityCard />
+          <CommunityCard data={communityCardData} />
         </div>
       </Section>
       <ExploreLinkSection links={['technology', 'vision', 'ecosystem']} />

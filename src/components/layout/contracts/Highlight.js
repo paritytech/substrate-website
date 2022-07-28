@@ -1,7 +1,5 @@
+import { Icon, LineArrowButton } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import Icon from '../../default/Icon';
-import LineArrowButton from '../../ui/LineArrowButton';
 
 const Highlight = ({ highlight }) => {
   const { icon, title, description, link, linkText } = highlight;

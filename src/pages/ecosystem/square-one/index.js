@@ -1,15 +1,12 @@
 import { graphql } from 'gatsby';
+import { Icon, Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React, { useRef, useState } from 'react';
 import Lottie from 'react-lottie';
 
-import Icon from '../../../components/default/Icon';
 import ContactForm from '../../../components/layout/ecosystem/square-one/ContactForm';
 import GeneralInfo from '../../../components/layout/ecosystem/square-one/GeneralInfo';
 import InitiativeSection from '../../../components/layout/ecosystem/square-one/InitiativeSection';
 import RequirementsInfo from '../../../components/layout/ecosystem/square-one/RequirementsInfo';
-import Section from '../../../components/layout/Section';
-import Layout from '../../../components/site/Layout';
-import SEO from '../../../components/site/SEO';
 import PrimaryButton from '../../../components/ui/PrimaryButton';
 import * as animationData from '../../../images/animation/ecosystem/square-one.json';
 
