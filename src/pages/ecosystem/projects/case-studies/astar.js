@@ -56,7 +56,7 @@ export default function AstarCaseStudy({ data }) {
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={astarData.name} />
           <h1 className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{astarData.name}</h1>
         </div>
-        <div className="mb-3 font-bold text-lg md:text-xl"></div>
+        <div className="mb-3 font-bold text-lg md:text-xl">The Innovation Hub on Polkadot</div>
         <div className="my-10">
           <div className="mb-3">
             <div className="mr-8 flex">
