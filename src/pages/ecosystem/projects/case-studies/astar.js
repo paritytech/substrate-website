@@ -56,7 +56,7 @@ export default function AstarCaseStudy({ data }) {
           <GatsbyImage className="w-20 h-20 mr-4" image={logo} alt={astarData.name} />
           <h1 className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{astarData.name}</h1>
         </div>
-        <div className="mb-3 font-bold text-lg md:text-xl">A multi virtual machine dapp hub</div>
+        <div className="mb-3 font-bold text-lg md:text-xl">The Innovation Hub on Polkadot</div>
         <div className="my-10">
           <div className="mb-3">
             <div className="mr-8 flex">
@@ -75,13 +75,21 @@ export default function AstarCaseStudy({ data }) {
           </div>
         </div>
         <Blockqoute
-          text="“​Astar Network is a multi-chain decentralized application layer on Polkadot. Astar incorporates Ethereum Virtual Machine, WebAssembly, and Layer2 solutions. The platform supports various decentralized applications like DeFi, NFTs and DAOs.”"
-          name="Hoon Kim, Product Manager, Astar Network."
+          text="“​Astar Network is a multi-chain decentralized application layer on Polkadot. Astar incorporates Ethereum Virtual Machine, WebAssembly. The platform supports various decentralized applications like DeFi, NFTs and DAOs.”"
+          name="Hoon Kim, CTO, Astar Network."
           image={data.avatar}
         />
         <p>
-          Astar Network (previously known as Plasm Network) is a dapp hub in the Polkadot ecosystem, supporting EVM,
-          WebAssembly, and Layer2 solutions like Rollups.
+          Astar Network supports the building of dApps with EVM and WASM smart contracts and offers developers true
+          interoperability, with cross-consensus messaging (XCM). We are made by developers and for developers. Astar’s
+          unique Build2Earn model empowers developers to get paid through a dApp staking mechanism for the code they
+          write and dApps they build.
+        </p>
+        <p>
+          Astar’s vibrant ecosystem has become Polkadot’s leading Parachain globally, supported by all major exchanges
+          and Tier 1 VCs. Astar offers the flexibility of all Ethereum and WASM toolings for developers to start
+          building their dApps. To accelerate growth on Polkadot and Kusama Networks, Astar Space Labs offers an
+          Incubation Hub for top TVL dApps.
         </p>
         <div className="flex items-center mt-10 mb-6">
           <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
@@ -108,8 +116,8 @@ export default function AstarCaseStudy({ data }) {
           machines (VMs), allowing them to co-exist and be interoperable with one another.
         </p>
         <p>
-          Additionally, Substrate is upgradable without hard forks. This allows Astar to add their layer 2 (L2) and
-          basic income pallet accordingly.
+          The Build2Earn model of the network empowers the builders to earn by staking mechanism for the code they write
+          and build on decentralized applications.
         </p>
         <div className="flex items-center mt-10 mb-6">
           <Icon name="flag" className="fill-current text-substrateGreen mr-4" />
