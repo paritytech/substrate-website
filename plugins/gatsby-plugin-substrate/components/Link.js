@@ -1,27 +1,30 @@
 import { Link as LinkI18n } from 'gatsby-plugin-react-i18next';
 import React, { useContext } from 'react';
 
+import { CAREERS_URL, DOCS_URL, MARKETPLACE_URL, WEBSITE_URL } from '../config/webConsts';
 import { ThemeContext } from '../contexts/ThemeContext';
 
 const addTrailingSlash = uri => {
   const addSlash = uri => {
+    if (!uri) return '';
+
     uri += uri.endsWith('/') ? '' : '/';
     return uri;
   };
 
   const removeSlash = uri => {
-    return uri.replace(/\/$/, '');
+    return uri && uri.replace(/\/$/, '');
   };
 
   const getHash = uri => {
-    if (uri.indexOf('#') > 0) {
+    if (uri && uri.indexOf('#') > 0) {
       return uri.substring(uri.indexOf('#'), uri.length);
     }
     return '';
   };
 
   const getSearch = uri => {
-    if (uri.indexOf('?') > 0) {
+    if (uri && uri.indexOf('?') > 0) {
       return uri.substring(uri.indexOf('?'), uri.length);
     }
     return '';
@@ -44,13 +47,20 @@ const addTrailingSlash = uri => {
   return uri + search + hash;
 };
 
+const addLeadingSlash = uri => {
+  return (uri = uri.startsWith('/') ? uri : '/'.concat(uri));
+};
+
+const addSlashes = uri => {
+  return uri && !uri.startsWith('#') ? addLeadingSlash(addTrailingSlash(uri)) : uri;
+};
+
 const InfraLink = ({ to, title, children, ...other }) => {
-  const ctx = useContext(ThemeContext);
+  const { colorMode } = useContext(ThemeContext);
 
   const handleClick = (e, to) => {
     e.preventDefault();
-    const colorMode = ctx.colorMode || 'light';
-    window.location.href = addTrailingSlash(to) + `?mode=${colorMode}`;
+    window.location.href = addTrailingSlash(to) + `?mode=${colorMode || 'light'}`;
   };
 
   return (
@@ -71,7 +81,6 @@ const Link = ({ to, title, children, ...other }) => {
       </a>
     );
   }
-
   if (infraLink) {
     return (
       <InfraLink to={to} title={title} {...other}>
@@ -81,7 +90,7 @@ const Link = ({ to, title, children, ...other }) => {
   }
 
   return (
-    <LinkI18n to={addTrailingSlash(to)} title={title} {...other}>
+    <LinkI18n to={addSlashes(to)} title={title} {...other}>
       {children}
     </LinkI18n>
   );
@@ -90,7 +99,6 @@ const Link = ({ to, title, children, ...other }) => {
 const LinkMenu = ({ prefix, slug, title, children, ...other }) => {
   const external = testExternalLink(slug);
   const infraLink = testInfraLink(slug);
-
   if (external) {
     return (
       <a href={slug} {...other} target="_blank" rel="noreferrer noopener">
@@ -98,7 +106,6 @@ const LinkMenu = ({ prefix, slug, title, children, ...other }) => {
       </a>
     );
   }
-
   if (infraLink) {
     return (
       <InfraLink to={slug} title={title} {...other}>
@@ -108,7 +115,7 @@ const LinkMenu = ({ prefix, slug, title, children, ...other }) => {
   }
 
   return (
-    <LinkI18n to={addTrailingSlash(prefix + slug)} {...other}>
+    <LinkI18n to={addSlashes(prefix + slug)} {...other}>
       {children}
     </LinkI18n>
   );
@@ -120,10 +127,10 @@ const buildSubMenu = (menus, item) => {
 
 const testInfraLink = href => {
   const regexList = [
-    new RegExp(process.env.GATSBY_WEBSITE_URL, 'i'),
-    new RegExp(process.env.GATSBY_DOCS_URL, 'i'),
-    new RegExp(process.env.GATSBY_MARKETPLACE_URL, 'i'),
-    new RegExp(process.env.GATSBY_CAREERS_URL, 'i'),
+    new RegExp(WEBSITE_URL, 'i'),
+    new RegExp(DOCS_URL, 'i'),
+    new RegExp(MARKETPLACE_URL, 'i'),
+    new RegExp(CAREERS_URL, 'i'),
   ];
   const match = regexList.some(rx => rx.test(href));
   return match;

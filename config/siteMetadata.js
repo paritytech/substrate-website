@@ -1,5 +1,5 @@
-const menus = require('./menus.js');
-const { WEBSITE_URL, DOCS_URL, MARKETPLACE_URL, CAREERS_URL } = require('./webConsts.js');
+const menus = require('./menus');
+const { WEBSITE_URL, DOCS_URL, MARKETPLACE_URL, CAREERS_URL } = require('gatsby-plugin-substrate/config/webConsts');
 
 module.exports = {
   menus,

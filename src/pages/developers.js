@@ -15,7 +15,7 @@ import {
 import React from 'react';
 import Lottie from 'react-lottie';
 
-import { communityCardData } from '../../config/communityCardData';
+import { communityCardData } from '../../data/community-resources';
 import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
 import SecondaryButton from '../components/ui/SecondaryButton';
 import * as animationData from '../images/animation/dev-hero.json';

@@ -1,4 +1,4 @@
-const { MARKETPLACE_URL, DOCS_URL, CAREERS_URL } = require('./webConsts.js');
+const { MARKETPLACE_URL, DOCS_URL, CAREERS_URL } = require('gatsby-plugin-substrate/config/webConsts');
 
 /* the main menu, ids of items must match
    the submenu's key of this js object */
