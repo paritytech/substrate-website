@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { useSiteMenus } from '../hooks/use-site-menus';
 import { Icon } from './Icon';
 import { buildSubMenu, Link, LinkMenu } from './Link';
+import { MainLogo } from './MainLogo';
 import { ThemeToggle } from './ThemeToggle';
 
 const NavMobileSubMenuItem = ({ data }) => {
@@ -107,7 +108,7 @@ const NavMobileItem = ({ menuItem, handleSubMenu }) => {
   );
 };
 
-const NavMobile = ({ toggleMenu, Logo }) => {
+const NavMobile = ({ toggleMenu }) => {
   const { menus } = useSiteMenus();
   const [isMenuItemOpen, setIsMenuItemOpen] = useState(false);
 
@@ -120,7 +121,7 @@ const NavMobile = ({ toggleMenu, Logo }) => {
       <div className="h-16 px-6 flex items-center justify-between">
         <div className="w-32">
           <Link to="/">
-            <Logo />
+            <MainLogo />
           </Link>
         </div>
       </div>

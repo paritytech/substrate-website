@@ -2,6 +2,7 @@ import cx from 'classnames';
 import { Link } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 
+import { WEBSITE_URL } from '../config/webConsts';
 import { useScrollListener } from '../hooks/use-scroll-listener';
 import { DocsButton } from './DocsButton';
 import { Icon } from './Icon';
@@ -46,14 +47,14 @@ const Header = ({ mode, header }) => {
           })}
         >
           <div className="w-40 relative transform transition-all duration-300 ease-in-out hover:opacity-50">
-            <Link to="/">
+            <Link to={WEBSITE_URL} aria-label="Substrate home">
               <MainLogo />
             </Link>
           </div>
           <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
             <Icon name="hamburger-toggle" className="fill-current text-black dark:text-white" />
           </div>
-          {isMobileNavOpen && <NavMobile toggleMenu={toggleMenu} Logo={MainLogo} />}
+          {isMobileNavOpen && <NavMobile toggleMenu={toggleMenu} />}
           <div className="hidden lg:flex lg:justify-between lg:items-center w-full">
             <div className="w-2/3 max-w-3xl">
               <NavMain header={header} isScrolled={isScrolled} />
