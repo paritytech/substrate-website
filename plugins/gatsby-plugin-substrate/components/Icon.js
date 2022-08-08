@@ -73,6 +73,7 @@ import {
   KusamaLogo,
   Layers,
   LightClient,
+  Link,
   LogoAcala,
   LogoAstar,
   LogoMoonbeam,
@@ -97,6 +98,7 @@ import {
   QuickStart,
   Reddit,
   Reference,
+  Repo,
   Resources,
   Rocket,
   Se,
@@ -112,6 +114,7 @@ import {
   So,
   So2,
   Star,
+  StarFilled,
   SubconnectBrowserTab,
   Substrate,
   Sun,
@@ -274,6 +277,9 @@ const iconsMap = {
   quick_start: QuickStart,
   tutorials: Tutorials,
   docsNavIcon: DocsNavIcon,
+  'star-filled': StarFilled,
+  link: Link,
+  repo: Repo,
 };
 
 const Icon = ({ name, className, ...others }) => {
