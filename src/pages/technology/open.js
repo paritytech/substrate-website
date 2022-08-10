@@ -119,7 +119,7 @@ const Open = () => {
         col={2}
         children2={
           <FeatureImage>
-            <FlipIcon icons={['open-base', 'community']} />
+            <FlipIcon icons={['open-base', 'community-box']} />
           </FeatureImage>
         }
       >
