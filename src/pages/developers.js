@@ -93,7 +93,7 @@ export default function Home() {
               text={`Discover the principles and design decisions that Substrate is built on. Read about its key features and capabilties as well as the specific skills needed to be an effective Substrate blockchain developer.`}
               link={siteMetadata.docsUrl + `/quick-start/`}
               cta={`Get started`}
-              iconName={`docsIcon`}
+              iconName={`docs-icon`}
             />
             <DocCard
               title={`Reference`}
