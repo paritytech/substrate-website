@@ -3,7 +3,7 @@ export const communityCardData = [
     title: 'Contact',
     description: 'Have any questions? Get in touch!',
     headingOne: 'Join the Community',
-    iconOne: 'stackExchange',
+    iconOne: 'stack-exchange',
     linkTextOne: 'Stack Exchange',
     linkOne: 'https://substrate.stackexchange.com',
     headingTwo: 'Contribute to the Devhub',
