@@ -524,9 +524,9 @@
       "name": "Interlay",
       "link": "https://www.interlay.io/",
       "category":[ "Bridge","All"],
-      "types": ["All Teams", "Building for Polkadot"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Interlay makes decentralized finance interoperable and enables use of any digital asset and cryptocurrency with any blockchain platform."
+      "description": "Interlay is a decentralized network dedicated to connecting crypto-currencies like Bitcoin with DeFi platforms like Polkadot and Ethereum. The Interlay network is hosted as a Polkadot parachain and will be connected to Cosmos, Ethereum and other major DeFi networks."
     },
     {
       "name": "Joystream",
@@ -797,7 +797,7 @@
       "name": "Astar Network",
       "link": "https://astar.network/",
       "category":[ "Smart Contracts","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
+      "types": ["All Teams", "Substrate Builders Program", "EVM", "WASM"],
       "tag": "Chain",
       "caseStudy": "case-studies/astar/",
       "description": "Astar Network is a scaling dapps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot."
