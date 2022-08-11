@@ -1,8 +1,8 @@
 import { format } from 'date-fns';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Icon } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Icon from '../../default/Icon';
 import SecondaryButton from '../../ui/SecondaryButton';
 
 const hackathonCard = ({ hackathon }) => {

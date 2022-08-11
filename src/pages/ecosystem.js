@@ -1,16 +1,10 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Article, Icon, isBrowser, Layout, PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
-import Icon from '../components/default/Icon';
-import Article from '../components/layout/Article';
 import IconCard from '../components/layout/ecosystem/IconCard';
-import Section from '../components/layout/Section';
-import Layout from '../components/site/Layout';
-import SEO from '../components/site/SEO';
-import PrimaryButtonLink from '../components/ui/PrimaryButtonLink';
-import { isBrowser } from '../utils/browser';
 
 const logos = [
   {

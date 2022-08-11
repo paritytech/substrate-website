@@ -1,7 +1,6 @@
 import cx from 'classnames';
+import { Icon } from 'gatsby-plugin-substrate';
 import React, { useState } from 'react';
-
-import Icon from '../default/Icon';
 
 export default function Accordion({ title, text }) {
   const [isOpen, setIsOpen] = useState(false);

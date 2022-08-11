@@ -1,10 +1,7 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Layout, Newsletter, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import Layout from '../../../components/site/Layout';
-import Newsletter from '../../../components/site/newsletter';
-import SEO from '../../../components/site/SEO';
 
 export default function NewsletterPage() {
   return (

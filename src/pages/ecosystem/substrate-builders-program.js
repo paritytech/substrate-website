@@ -1,17 +1,11 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Article, Icon, Layout, LineArrowButton, PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
 
-import Icon from '../../components/default/Icon';
-import Article from '../../components/layout/Article';
 import BorderCard from '../../components/layout/ecosystem/BorderCard';
 import ColorCard from '../../components/layout/ecosystem/ColorCard';
-import Section from '../../components/layout/Section';
-import Layout from '../../components/site/Layout';
-import SEO from '../../components/site/SEO';
-import LineArrowButton from '../../components/ui/LineArrowButton';
-import PrimaryButtonLink from '../../components/ui/PrimaryButtonLink';
 import SecondaryButton from '../../components/ui/SecondaryButton';
 import * as animationData from '../../images/animation/ecosystem/builders-program.json';
 

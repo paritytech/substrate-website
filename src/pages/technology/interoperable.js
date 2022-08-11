@@ -1,9 +1,8 @@
 import { graphql } from 'gatsby';
+import { Blockquote, Layout, Link, Section, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import FlipIcon from '../../components/default/FlipIcon';
-import { Link } from '../../components/default/Link';
-import Section from '../../components/layout/Section';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import CaseStudyBanner from '../../components/layout/technology/CaseStudyBanner';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
@@ -11,10 +10,6 @@ import { Feature, FeatureImage } from '../../components/layout/technology/Featur
 import Hero from '../../components/layout/technology/Hero';
 import HighlightBanner from '../../components/layout/technology/HighlightBanner';
 import InfoCard from '../../components/layout/technology/InfoCard';
-import Layout from '../../components/site/Layout';
-import SEO from '../../components/site/SEO';
-import Blockquote from '../../components/ui/Blockquote';
-import { useSiteMetadata } from '../../hooks/use-site-metadata';
 import * as animation from '../../images/animation/technology/interoperable.json';
 
 const Interoperable = () => {

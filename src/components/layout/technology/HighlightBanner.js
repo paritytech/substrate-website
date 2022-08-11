@@ -1,6 +1,5 @@
+import { Icon } from 'gatsby-plugin-substrate';
 import React from 'react';
-
-import Icon from '../../default/Icon';
 
 const HighlightBanner = ({ icon, children }) => {
   return (

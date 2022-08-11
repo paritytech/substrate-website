@@ -1,9 +1,7 @@
 import cx from 'classnames';
+import { Icon, Link, Tag } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Icon from '../../../default/Icon';
-import { Link } from '../../../default/Link';
-import Tag from '../../../ui/Tag';
 import CaseStudyButton from './CaseStudyButton';
 
 export default function TeamModal(props) {

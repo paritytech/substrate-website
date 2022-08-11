@@ -1,11 +1,8 @@
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Layout, NavBreadcrumb, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Section from '../../../components/layout/Section';
-import Layout from '../../../components/site/Layout';
-import NavBreadcrumb from '../../../components/site/NavBreadcrumb';
-import SEO from '../../../components/site/SEO';
 import BlueTag from '../../../components/ui/BlueTag';
 
 export default function AcceleratorsAndIncubators({ data }) {

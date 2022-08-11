@@ -1,10 +1,7 @@
 import { graphql } from 'gatsby';
+import { Icon, Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Icon from '../../../components/default/Icon';
-import Section from '../../../components/layout/Section';
-import Layout from '../../../components/site/Layout';
-import SEO from '../../../components/site/SEO';
 import SecondaryButton from '../../../components/ui/SecondaryButton';
 
 export default function Grants() {

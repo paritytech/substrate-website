@@ -1,8 +1,7 @@
+import { Icon } from 'gatsby-plugin-substrate';
 import parse from 'html-react-parser';
 import React, { useState } from 'react';
 import Children from 'react-children-utilities';
-
-import Icon from './Icon';
 
 const copyToClipboard = str => {
   const el = document.createElement('textarea');

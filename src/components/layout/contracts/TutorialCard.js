@@ -1,8 +1,7 @@
 import cx from 'classnames';
+import { Icon, Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Icon from '../../default/Icon';
-import { Link } from '../../default/Link';
 import SecondaryButton from '../../ui/SecondaryButton';
 
 const TutorialCard = ({ tutorial }) => {
@@ -46,7 +45,7 @@ const TutorialCard = ({ tutorial }) => {
           </div>
           <div className="flex items-center">
             <Icon name="time" />
-            <span>{time}</span>
+            <span className="ml-1">{time}</span>
           </div>
         </div>
         <hr />

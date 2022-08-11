@@ -1,20 +1,15 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Icon, isBrowser, Layout, Section, SEO, useComponentVisible } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
 import teamsData from '../../../data/teams.json';
-import Icon from '../../components/default/Icon';
 import AllTeams from '../../components/layout/ecosystem/teams/AllTeams';
 import CaseStudyFilter from '../../components/layout/ecosystem/teams/CaseStudyFilter';
 import CatFilter from '../../components/layout/ecosystem/teams/CatFilter';
 import TeamModal from '../../components/layout/ecosystem/teams/TeamModal';
 import TypeFilter from '../../components/layout/ecosystem/teams/TypeFilter';
-import Section from '../../components/layout/Section';
-import Layout from '../../components/site/Layout';
-import SEO from '../../components/site/SEO';
-import useComponentVisible from '../../hooks/use-component-visible';
-import { isBrowser } from '../../utils/browser';
 
 export default function Projects({ data }) {
   const { types, categories, teams } = teamsData;

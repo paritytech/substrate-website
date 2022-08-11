@@ -1,8 +1,7 @@
 import cx from 'classnames';
+import { LoadingAnimation } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
 import HubspotForm from 'react-hubspot-form';
-
-import LoadingAnimation from '../../../ui/LoadingAnimation';
 
 export default function ContactForm({ connect }) {
   const FORM_ID = '3118b3cd-6a6a-4f38-8982-3374284ffcb5';

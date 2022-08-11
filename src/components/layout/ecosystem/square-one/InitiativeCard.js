@@ -1,8 +1,7 @@
+import { LineArrowButton, Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import { Link } from '../../../default/Link';
 import BlueTag from '../../../ui/BlueTag';
-import LineArrowButton from '../../../ui/LineArrowButton';
 
 export default function InitiativeCard({ title, description, org, link, requirements }) {
   return (

@@ -1,11 +1,7 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Layout, PlaygroundCard, Section, SEO } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
-
-import Section from '../../components/layout/Section';
-import Layout from '../../components/site/Layout';
-import PlaygroundCard from '../../components/site/PlaygroundCard';
-import SEO from '../../components/site/SEO';
 
 export default function Playground() {
   const [selected, setSelected] = useState('');
