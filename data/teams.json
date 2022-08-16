@@ -109,7 +109,7 @@
       "category":[ "Infrastructure","All"],
       "types": ["All Teams",  "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
-      "description": "AnKR helps consumers and enterpresies to connect and develop in the Web3 through a serious of tools, from Node Staking to API's."
+      "description": "AnKR helps consumers and enterprises to connect and develop in the Web3 through a serious of tools, from Node Staking to APIs."
     },
     {
       "name": "Apron Labs",
@@ -141,7 +141,7 @@
       "category":[ "Infrastructure","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
-      "description": "Avado is an infrastructure solution to run your own blockchain staking node.It is hardware equipped with an operating system giving you access to any blockchain network."
+      "description": "Avado is an infrastructure solution to run your own blockchain staking node. It is hardware equipped with an operating system giving you access to any blockchain network."
     },
     {
       "name": "Aventus",
@@ -406,7 +406,7 @@
       "category":[ "Gaming","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Since 2014 is pinoneer in the integration and use of blockchain tools in the domain of gaming and digital collectibles."
+      "description": "Since 2014, a pioneer in the integration and use of blockchain tools in the domain of gaming and digital collectibles."
     },
     {
       "name": "Everstake",
@@ -596,7 +596,7 @@
       "category":[ "Identity","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Lientry is a network supporting cross-chain aggregated identities. They are building whole ecosystem tools for future identities and data.",
+      "description": "Litentry is a network supporting cross-chain aggregated identities. They are building whole ecosystem tools for future identities and data.",
       "runtimes": [
         {
           "title":"parachain-runtime",
@@ -753,7 +753,7 @@
       "category":[ "Identity","All"],
       "types": ["All Teams", "Building for Polkadot", "Enterprise-ready"],
       "tag": "Chain",
-      "description": "The Ontology project is an open source blockchain that specializes in digital identity and decentraliez data management."
+      "description": "The Ontology project is an open source blockchain that specializes in digital identity and decentralized data management."
     },
     {
       "name": "Origin Trail",
@@ -833,7 +833,7 @@
       "category":[ "Infrastructure","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Infrastructure & Tooling",
-      "description": "Polkastasts showcases Polkadot live statistics. It details block production, validation process, staking information and others."
+      "description": "Polkastats showcases Polkadot live statistics. It details block production, validation process, staking information and others."
     },
     {
       "name": "Polkaswap",
@@ -897,7 +897,7 @@
       "category":[ "File Storage","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Equillibrium is building a Rust-based implementation of the InterPlanetary File System (IPFS) Protocol."
+      "description": "Equilibrium is building a Rust-based implementation of the InterPlanetary File System (IPFS) Protocol."
     },
     {
       "name": "Safe Pal",
@@ -933,11 +933,11 @@
     },
     {
       "name": "Snowfork",
-      "link": "http://www.snowfork.com/",
+      "link": "https://www.snowfork.com/",
       "category":[ "Bridge","All"],
       "types": ["All Teams", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Snowfork is building the decentralized, permisionless Polkadot-Ethereum bridge to connect the Ethereum Blockchain with the Polkadot Ecosystem."
+      "description": "Snowfork is building the decentralized, permissionless Polkadot-Ethereum bridge to connect the Ethereum Blockchain with the Polkadot Ecosystem."
     },
     {
       "name": "Solang Compiler",
@@ -1033,7 +1033,7 @@
       "category":[ "DeFi","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "Valibre allows users to send and receive Valiu Dollars (vUSD) in a permisionless manner. vUSD is Valibre's substrate-based Stablecoin."
+      "description": "Valibre allows users to send and receive Valiu Dollars (vUSD) in a permissionless manner. vUSD is Valibre's substrate-based Stablecoin."
     },
     {
       "name": "ZeroPool",
@@ -1114,7 +1114,7 @@
       "description": "DIA (Decentralised Information Asset) is an open-source oracle platform that enables market actors to source, supply, and share trustable data."
     },
     {
-      "name": "SubSocial",
+      "name": "Subsocial",
       "link": "https://subsocial.network/",
       "category":[ "Social","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
@@ -1163,7 +1163,7 @@
       "category":[ "Gaming","All"],
       "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
       "tag": "Decentralized Application",
-      "description": "Ajuna Network is an infrastructure for Blockhain Games, featureing a full featured UnitySDK and UnrealSDK built on Substrate."
+      "description": "Ajuna Network is an infrastructure for Blockchain Games, featuring a full featured UnitySDK and UnrealSDK built on Substrate."
     },
     {
       "name": "Patract Labs",
