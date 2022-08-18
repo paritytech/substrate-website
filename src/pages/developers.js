@@ -41,7 +41,7 @@ export default function Home() {
               Substrate is powered by best-in-class cryptographic research and comes with peer-to-peer networking,
               consensus mechanisms, and much more.
             </p>
-            <PrimaryButtonLink link="/ecosystem/projects/">View Projects</PrimaryButtonLink>
+            <PrimaryButtonLink link={siteMetadata.docsUrl}>Get Started</PrimaryButtonLink>
           </div>
           <div className="flex justify-center md:w-1/2">
             <div className="lg:h-[430px] lg:w-[430px] lg:mt-8">
