@@ -1,9 +1,8 @@
 import cx from 'classnames';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Icon, Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Icon from '../../../default/Icon';
-import { Link } from '../../../default/Link';
 import CaseStudyButton from '../teams/CaseStudyButton';
 
 const createExcerpt = (string, length) => {
@@ -19,7 +18,7 @@ export default function ProjectCard({ model }) {
       fields: { slug },
     },
   } = model;
-  const { title, description, featured_image, category, link } = frontmatter;
+  const { title, description, featured_image, category, link, show_case_study } = frontmatter;
   const image = getImage(featured_image);
   return (
     <div
@@ -50,12 +49,12 @@ export default function ProjectCard({ model }) {
         </div>
       </div>
       <GatsbyImage
-        className="h-[110px] w-[110px] p-0.5 object-contain mb-6 dark:bg-gray-300 rounded-full"
+        className="h-[110px] w-[110px] object-contain mb-6 dark:bg-gray-300 rounded-full"
         image={image}
         alt={`${title} Project Logo`}
       />
       <p className="mb-10 h-[78px]">{createExcerpt(description, 260)}</p>
-      {html && <CaseStudyButton link={`${slug}/#case-study`} />}
+      {show_case_study && html && <CaseStudyButton link={`${slug}/#case-study`} />}
     </div>
   );
 }

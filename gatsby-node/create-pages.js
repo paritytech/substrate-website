@@ -23,6 +23,7 @@ const createProjectPages = async ({ graphql, actions }) => {
                   gatsbyImageData(width: 1200, placeholder: NONE, formats: [AUTO, WEBP, AVIF])
                 }
               }
+              show_case_study
             }
             fields {
               slug

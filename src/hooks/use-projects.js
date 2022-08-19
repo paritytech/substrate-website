@@ -23,6 +23,7 @@ export const useProjects = () => {
                     gatsbyImageData(width: 1200, placeholder: NONE, formats: [AUTO, WEBP, AVIF])
                   }
                 }
+                show_case_study
               }
               fields {
                 langKey

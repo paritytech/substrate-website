@@ -13,7 +13,7 @@ export default function Projects() {
     const type = urlParams.get('type');
     const category = urlParams.get('category');
 
-    console.log(type, category);
+    console.log('searchParam: ' + type, category);
   }, []);
 
   return (

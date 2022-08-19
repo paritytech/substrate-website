@@ -4,4 +4,5 @@ description: ChainLink is a decentralized oracle network that provides real-worl
 category: ["defi"]
 link: https://chain.link
 featured_image: /media/images/hackathons/Build_Polkadot.png
+show_case_study: false
 ---

@@ -4,6 +4,7 @@ description: Acala is a decentralized stablecoin platform that powers cross-bloc
 category: ["DeFi", Infrastructure]
 link: https://acala.network
 featured_image: /media/images/projects/acala-network.png
+show_case_study: true
 ---
 
 ## Challenge
