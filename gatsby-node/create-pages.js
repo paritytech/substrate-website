@@ -16,6 +16,7 @@ const createProjectPages = async ({ graphql, actions }) => {
             frontmatter {
               title
               description
+              type
               category
               link
               featured_image {

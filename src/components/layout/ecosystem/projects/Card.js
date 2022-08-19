@@ -18,8 +18,9 @@ export default function ProjectCard({ model }) {
       fields: { slug },
     },
   } = model;
-  const { title, description, featured_image, category, link, show_case_study } = frontmatter;
+  const { title, description, featured_image, category, type, link, show_case_study } = frontmatter;
   const image = getImage(featured_image);
+  console.log(type);
   return (
     <div
       className={cx(
@@ -29,15 +30,17 @@ export default function ProjectCard({ model }) {
       )}
     >
       <div className="mb-6">
-        <Link className="inline-block" to={link}>
-          <div className="flex items-center">
+        <div className="flex items-center">
+          <Link className="inline-block" to={`/ecosystem/projects/${slug}`}>
             <div className="text-2xl font-bold">{title}</div>
+          </Link>
+          <Link className="inline-block" to={link}>
             <Icon
               name="external-link"
               className="lg:hidden group-hover:block h-4 w-4 ml-4 mt-0.5 fill-current text-substrateGreen animate-fade-in duration-75"
             />
-          </div>
-        </Link>
+          </Link>
+        </div>
         <div className="text-sm">
           {category.map((name, index) => {
             return (
@@ -49,7 +52,7 @@ export default function ProjectCard({ model }) {
         </div>
       </div>
       <GatsbyImage
-        className="h-[110px] w-[110px] object-contain mb-6 dark:bg-gray-300 rounded-full"
+        className="h-[110px] w-[110px] object-contain mb-6 rounded-full"
         image={image}
         alt={`${title} Project Logo`}
       />

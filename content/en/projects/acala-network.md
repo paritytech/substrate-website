@@ -1,13 +1,14 @@
 ---
 title: Acala Network
 description: Acala is a decentralized stablecoin platform that powers cross-blockchain open finance applications.
-category: ["DeFi", Infrastructure]
+type: ["Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"]
+category: ["DeFi", "Infrastructure"]
 link: https://acala.network
 featured_image: /media/images/projects/acala-network.png
 show_case_study: true
 ---
 
-## Challenge
+### Challenge
 
 Oracles are a very important component in many DeFi protocols. Oracle operators fetch external data and feed
 them back to the blockchain. However, there are few major issues with existing oracle solutions on current

@@ -16,6 +16,7 @@ export const useProjects = () => {
               frontmatter {
                 title
                 description
+                type
                 category
                 link
                 featured_image {
