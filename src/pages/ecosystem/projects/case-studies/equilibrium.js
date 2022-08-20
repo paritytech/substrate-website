@@ -4,7 +4,7 @@ import { Icon, Layout, Link, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import teamsData from '../../../../../data/teams.json';
-import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
+import Blockquote from '../../../../components/layout/ecosystem/case-studies/Blockquote';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 
 const Types = ({ types }) => (
@@ -70,7 +70,7 @@ export default function Equilibrium({ data }) {
             <p className="mb-0 ">{equilibriumData.tag}</p>
           </div>
         </div>
-        <Blockqoute
+        <Blockquote
           text="“​We were dissatisfied with how DeFi 1.0 worked; the lack of blockchain interconnection, difficulty in moving liquidity, and more. We wanted a unified DeFi multi-tool, that's why we built Equilibrium using Substrate.”"
           name="Alex Melikhov, Co-Founder, Equilibrium"
           image={data.avatar}

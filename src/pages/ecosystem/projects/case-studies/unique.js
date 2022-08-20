@@ -4,7 +4,7 @@ import { Icon, Layout, Link, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import teamsData from '../../../../../data/teams.json';
-import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
+import Blockquote from '../../../../components/layout/ecosystem/case-studies/Blockquote';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 
 const Types = ({ types }) => (
@@ -70,7 +70,7 @@ export default function UniqueCaseStudy({ data }) {
             <p className="mb-0 ">{uniqueData.tag}</p>
           </div>
         </div>
-        <Blockqoute
+        <Blockquote
           text="“Flexibility is the strongest side of Substrate - it allows unmatched customization that is needed to handle non-fungible asset classes on-chain. We used it to create the next generation NFT chain, capable of supporting innovative use cases and liberating NFTs from the collectables.”"
           name="Greg Zaytsev and Alexander Mitrovich, Founders, Unique Network"
           image={false}

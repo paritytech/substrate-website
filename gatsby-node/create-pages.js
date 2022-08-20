@@ -25,9 +25,9 @@ const createProjectPages = async ({ graphql, actions }) => {
                 }
               }
               show_case_study
-              blockqoute
-              blockqoute_author
-              blockqoute_author_image {
+              blockquote
+              blockquote_author
+              blockquote_author_image {
                 childImageSharp {
                   gatsbyImageData(width: 600, placeholder: NONE, formats: [AUTO, WEBP, AVIF])
                 }

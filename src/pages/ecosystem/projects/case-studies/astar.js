@@ -4,7 +4,7 @@ import { Icon, Layout, Link, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import teamsData from '../../../../../data/teams.json';
-import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
+import Blockquote from '../../../../components/layout/ecosystem/case-studies/Blockquote';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 
 const Types = ({ types }) => (
@@ -70,7 +70,7 @@ export default function AstarCaseStudy({ data }) {
             <p className="mb-0 ">{astarData.tag}</p>
           </div>
         </div>
-        <Blockqoute
+        <Blockquote
           text="“​Astar Network is a multi-chain decentralized application layer on Polkadot. Astar incorporates Ethereum Virtual Machine, WebAssembly. The platform supports various decentralized applications like DeFi, NFTs and DAOs.”"
           name="Hoon Kim, CTO, Astar Network."
           image={data.avatar}

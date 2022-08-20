@@ -4,7 +4,7 @@ import { Icon, Layout, Link, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import teamsData from '../../../../../data/teams.json';
-import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
+import Blockquote from '../../../../components/layout/ecosystem/case-studies/Blockquote';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 
 const Types = ({ types }) => (
@@ -72,7 +72,7 @@ export default function PolkadexCaseStudy({ data }) {
             <p className="mb-0 ">{polkadexData.tag}</p>
           </div>
         </div>
-        <Blockqoute
+        <Blockquote
           text="“The core principles that I enforced for Polkadex Orderbook include bringing a world-class UX without compromising user fund security. This is possible due to the flexibility and modular nature of the Substrate Framework.”"
           name="Gautham J, CEO, Polkadex"
           image={false}

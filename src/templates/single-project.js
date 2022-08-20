@@ -3,7 +3,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import Blockqoute from '../components/layout/ecosystem/case-studies/Blockqoute';
+import Blockquote from '../components/layout/ecosystem/case-studies/Blockquote';
 import CaseStudyBreadcrumb from '../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 
 export default function ProjectPageTemplate({ pageContext }) {
@@ -17,13 +17,13 @@ export default function ProjectPageTemplate({ pageContext }) {
     featured_image,
     link,
     show_case_study,
-    blockqoute,
-    blockqoute_author,
-    blockqoute_author_image,
+    blockquote,
+    blockquote_author,
+    blockquote_author_image,
   } = frontmatter;
   const image = getImage(featured_image);
   const hasCaseStudy = show_case_study && html && true;
-  const hasBlockqoute = blockqoute && blockqoute_author && true;
+  const hasBlockquote = blockquote && blockquote_author && true;
   // console.log(images);
 
   return (
@@ -73,8 +73,8 @@ export default function ProjectPageTemplate({ pageContext }) {
           {hasCaseStudy && (
             <div id="case-study">
               <h2 className="tracking-wider uppercase mb-4">Case Study</h2>
-              {hasBlockqoute && (
-                <Blockqoute text={blockqoute} name={blockqoute_author} image={blockqoute_author_image} />
+              {hasBlockquote && (
+                <Blockquote text={blockquote} name={blockquote_author} image={blockquote_author_image} />
               )}
               <main>
                 <div dangerouslySetInnerHTML={{ __html: html }} />

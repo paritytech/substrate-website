@@ -4,7 +4,7 @@ import { Icon, Layout, Link, Section, SEO, Tag } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import teamsData from '../../../../../data/teams.json';
-import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
+import Blockquote from '../../../../components/layout/ecosystem/case-studies/Blockquote';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 
 const Types = ({ types }) => (
@@ -71,7 +71,7 @@ export default function AcalaCaseStudy({ data }) {
             <p className="mb-0 ">{acalaData.tag}</p>
           </div>
         </div>
-        <Blockqoute
+        <Blockquote
           text="“Acala is a DeFi and liquidity hub for Polkadot that leverages Substrate to provide a parachain and Ethereum-compatible dapp platform customized for DeFi developers and users. Substrate allows us to build DeFi primitives and optimizations to improve developer and user experience, while Substrate and Polkadot’s upgradability enables us to future-proof our chain.”"
           name="Bryan Chen, Co-founder of Acala"
           image={data.avatar}

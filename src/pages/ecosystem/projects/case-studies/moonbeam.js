@@ -4,7 +4,7 @@ import { Icon, Layout, Link, Section, SEO, Tag } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import teamsData from '../../../../../data/teams.json';
-import Blockqoute from '../../../../components/layout/ecosystem/case-studies/Blockqoute';
+import Blockquote from '../../../../components/layout/ecosystem/case-studies/Blockquote';
 import CaseStudyBreadcrumb from '../../../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 
 const Types = ({ types }) => (
@@ -70,7 +70,7 @@ export default function MoonbeamCaseStudy({ data }) {
             <p className="mb-0 ">{moonbeamData.tag}</p>
           </div>
         </div>
-        <Blockqoute
+        <Blockquote
           text="“​Moonbeam is an Ethereum-compatible smart contract platform that simplifies the path to multi-chain deployments. Substrate provides the team at Moonbeam the ability to deploy, scale and iterate better than any other platform in the industry.”"
           name="Derek Yoo, Founder, Moonbeam Network"
           image={data.avatar}

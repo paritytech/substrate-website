@@ -6,9 +6,9 @@ category: ["DeFi", "Infrastructure"]
 link: https://acala.network
 featured_image: /media/images/projects/acala-network.png
 show_case_study: true
-blockqoute: Acala is a DeFi and liquidity hub for Polkadot that leverages Substrate to provide a parachain and Ethereum-compatible dapp platform customized for DeFi developers and users. Substrate allows us to build DeFi primitives and optimizations to improve developer and user experience, while Substrate and Polkadot’s upgradability enables us to future-proof our chain.
-blockqoute_author: Bryan Chen, Co-founder of Acala
-blockqoute_author_image: /media/images/avatars/bryan-chen-acala.jpg
+blockquote: Acala is a DeFi and liquidity hub for Polkadot that leverages Substrate to provide a parachain and Ethereum-compatible dapp platform customized for DeFi developers and users. Substrate allows us to build DeFi primitives and optimizations to improve developer and user experience, while Substrate and Polkadot’s upgradability enables us to future-proof our chain.
+blockquote_author: Bryan Chen, Co-founder of Acala
+blockquote_author_image: /media/images/avatars/bryan-chen-acala.jpg
 ---
 
 ### Challenge

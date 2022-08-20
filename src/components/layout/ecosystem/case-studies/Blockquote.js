@@ -1,7 +1,7 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
 
-export default function Blockqoute({ text, name, image }) {
+export default function Blockquote({ text, name, image }) {
   return (
     <div className="bg-substrateGray-light dark:bg-substrateDark p-6 mb-6 rounded">
       <div className="mb-4 text-lg font-bold italic">{text}</div>
