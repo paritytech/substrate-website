@@ -3,6 +3,8 @@ import { Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React, { useEffect } from 'react';
 
 import Card from '../../components/layout/ecosystem/projects/Card';
+import ListCategories from '../../components/layout/ecosystem/projects/ListCategories';
+import ListTypes from '../../components/layout/ecosystem/projects/ListTypes';
 import { useProjects } from '../../hooks/use-projects';
 
 export default function Projects() {
@@ -26,6 +28,12 @@ export default function Projects() {
         <h2 id="projects" className="mb-8 scroll-margin-top-100">
           Projects
         </h2>
+      </Section>
+      <Section>
+        TYPES filter:
+        <ListTypes />
+        INDUSTRY filter:
+        <ListCategories />
       </Section>
       <Section>
         <div className="flex flex-wrap pl-px -mr-px">

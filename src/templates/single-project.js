@@ -19,7 +19,7 @@ export default function ProjectPageTemplate({ pageContext }) {
     show_case_study,
     blockquote,
     blockquote_author,
-    blockquote_author_image,
+    blockquote_author_avatar,
   } = frontmatter;
   const image = getImage(featured_image);
   const hasCaseStudy = show_case_study && html && true;
@@ -74,7 +74,7 @@ export default function ProjectPageTemplate({ pageContext }) {
             <div id="case-study">
               <h2 className="tracking-wider uppercase mb-4">Case Study</h2>
               {hasBlockquote && (
-                <Blockquote text={blockquote} name={blockquote_author} image={blockquote_author_image} />
+                <Blockquote text={blockquote} name={blockquote_author} image={blockquote_author_avatar} />
               )}
               <main>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
