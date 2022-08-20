@@ -3,15 +3,28 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
+import Blockqoute from '../components/layout/ecosystem/case-studies/Blockqoute';
 import CaseStudyBreadcrumb from '../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 
 export default function ProjectPageTemplate({ pageContext }) {
   const { node } = pageContext;
   const { html, frontmatter } = node;
-  const { title, featured_image, show_case_study, category, type, description, link } = frontmatter;
+  const {
+    title,
+    type,
+    description,
+    category,
+    featured_image,
+    link,
+    show_case_study,
+    blockqoute,
+    blockqoute_author,
+    blockqoute_author_image,
+  } = frontmatter;
   const image = getImage(featured_image);
   const hasCaseStudy = show_case_study && html && true;
-  console.log(type);
+  const hasBlockqoute = blockqoute && blockqoute_author && true;
+  // console.log(images);
 
   return (
     <Layout layout="sidebar" hasBreadcrumbs={false}>
@@ -60,6 +73,9 @@ export default function ProjectPageTemplate({ pageContext }) {
           {hasCaseStudy && (
             <div id="case-study">
               <h2 className="tracking-wider uppercase mb-4">Case Study</h2>
+              {hasBlockqoute && (
+                <Blockqoute text={blockqoute} name={blockqoute_author} image={blockqoute_author_image} />
+              )}
               <main>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
               </main>
