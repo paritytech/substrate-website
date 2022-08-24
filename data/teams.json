@@ -782,9 +782,9 @@
     {
       "name": "Phala Network",
       "link": "https://phala.network/",
-      "category":[ "Infrastructure","All"],
-      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "WASM"],
-      "tag": "Cloud and Off-Chain Computation",
+      "category":[ "Smart Contracts","All"],
+      "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
+      "tag": "Chain",
       "description": "Phala Network is a decentralized computation cloud for Web3 off-chain infrastructure to deploy ink! based Phat Contracts.",
       "runtimes": [
         {
