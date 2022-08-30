@@ -1,6 +1,6 @@
 {
 	"types": ["All Teams", "Substrate Builders Program", "Building for Polkadot", "Enterprise-ready"],
-  "categories": ["All", "DeFi", "Wallet", "Identity", "Social", "Smart Contracts", "File Storage", "IoT", "Gaming", "Bridge", "Infrastructure", "Relay Chain", "NFTs", "Health Care"],
+  "categories": ["All", "DeFi", "Wallet", "Identity", "Social", "Smart Contracts", "File Storage", "IoT", "Gaming", "Bridge", "Infrastructure", "Relay Chain", "NFTs", "Health Care", "DAO"],
   "teams": [
     {
       "name": "Acala Network",
@@ -451,7 +451,7 @@
     {
       "name": "GameDAO",
       "link": "https://gamedao.co/",
-      "category":[ "Gaming","All"],
+      "category":[ "Gaming","DAO", "All"],
       "types": ["All Teams",  "Building for Polkadot"],
       "tag": "Chain",
       "description": "GameDAO is democratic and transparent crowdfunding for video game creators, publishers, investors and gamers."
@@ -1332,6 +1332,38 @@
       "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
       "tag": "Chain",
       "description": "Wunderbar Network is a decentralized data exchange protocol."
+    },
+    {  
+      "name": "Imbue Network",
+      "link": "https://imbue.network",
+      "category":["DeFi", "DAO", "All"],
+      "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
+      "tag": "Chain",
+      "description": "Imbue Network is a decentralised crowdfunding DAO built on top of the Polkadot blockchain platform. It is an idea incubator open to the entire world that allows anyone, from any walk of life and for any kind of endeavour, to submit and vote on ideas worth funding."
+    },
+    {  
+      "name": "Pendulum",
+      "link": "https://pendulumchain.org/",
+      "category":["DeFi", "Bridge", "All"],
+      "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
+      "tag": "Chain",
+      "description": "Pendulum is an open-source blockchain that aims to establish the missing link between the fiat and the DeFi ecosystems through a fiat-optimized smart contract blockchain."
+    },
+    {  
+      "name": "CESS",
+      "link": "https://cess.cloud/",
+      "category":["File Storage","All"],
+      "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
+      "tag": "Chain",
+      "description": "CESS (Cumulus Encrypted Storage System) is a high-speed, secure, and scalable decentralized cloud storage network developed with Substrate. It aims to become the first decentralized storage project that offers full data services for large scale commercial applications."
+    },
+    {  
+      "name": "SubWallet",
+      "link": "https://subwallet.app/",
+      "category":["Wallet","All"],
+      "types": ["All Teams", "Building for Polkadot", "Substrate Builders Program"],
+      "tag": "Infrastructure",
+      "description": "SubWallet aspires to become the pioneering user-friendly Web3 Multiverse Gateway for the Substrate ecosystem. We envision a non-custodial wallet in which Substrate users can enjoy full services with utmost ease and absolute security."
     }
     ]
 }
