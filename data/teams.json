@@ -346,7 +346,7 @@
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Decentralized Application",
       "description": "Firefly is the first derivatives exchange protocol on Polkadot."
-    }, 
+    },
     {
       "name": "Edgeware",
       "link": "https://edgewa.re/",
@@ -603,7 +603,7 @@
           "link": "#"
         }
       ]
-    },    
+    },
     {
       "name": "Mangata",
       "link": "https://mangata.finance/",
@@ -780,12 +780,12 @@
       "description": "Polkassembly is a Governance Dashboard for Substrate-based chains. It is used by Polkadot and Kusama governance amongst others."
     },
     {
-      "name": "Phala network",
+      "name": "Phala Network",
       "link": "https://phala.network/",
       "category":[ "Smart Contracts","All"],
       "types": ["All Teams", "Substrate Builders Program", "Building for Polkadot"],
       "tag": "Chain",
-      "description": "The Phala Network is a privacy preserving protocol for data-protection and blockchain smart contract.",
+      "description": "Phala Network is a decentralized computation cloud for Web3 off-chain infrastructure to deploy ink! based Phat Contracts.",
       "runtimes": [
         {
           "title":"phala-node-runtime",
@@ -1197,7 +1197,7 @@
       "tag": "Chain",
       "description": "Sensorium Galaxy  leverages state-of-the-art blockchain technologies to make the future of content distribution safe for both the public and artists."
     },
-    {  
+    {
       "name": "TEA Project",
       "link": "https://teaproject.org/#/",
       "category":["Privacy", "All"],
@@ -1205,7 +1205,7 @@
       "tag": "Chain",
       "description": "Elk Insight is developing TEA,a layer2 trusted computing solution on top of a Substrate-based blockchain."
     },
-    {  
+    {
       "name": "Totem Accounting",
       "link": "https://totemaccounting.com/",
       "category":["DeFi", "All"],
@@ -1213,7 +1213,7 @@
       "tag": "Chain",
       "description": "Totem Live Accounting is built on the idea that accounting ledgers should be able to communicate directly with each other, anywhere in the world, in real-time."
     },
-     {  
+     {
       "name": "Chronicled",
       "link": "https://www.chronicled.com/",
       "category":["Smart  Contracts", "All"],
@@ -1221,7 +1221,7 @@
       "tag": "Chain",
       "description": "Chronicled is the custodian of the MediLedger Network, an industry-led, blockchain-powered network within the life sciences industry."
     },
-    {  
+    {
       "name": "Enjin",
       "link": "https://enjin.io/",
       "category":["Smart  Contracts", "All"],
@@ -1229,7 +1229,7 @@
       "tag": "Chain",
       "description": "Enjin is a scalable, decentralized, cross-chain network designed to bring non-fungible tokens to everyone."
     },
-    {  
+    {
       "name": "zCloak Network",
       "link": "https://zcloak.network/",
       "category":["Infrastructure", "All"],
@@ -1237,7 +1237,7 @@
       "tag": "Chain",
       "description": "zCloak Network provides Zero-Knowledge Proof as a Service for public blockchains."
     },
-    {  
+    {
       "name": "Energy Web Foundation",
       "link": "https://www.energyweb.org/",
       "category":["Infrastructure", "All"],
@@ -1245,7 +1245,7 @@
       "tag": "Chain",
       "description": "Energy Web is accelerating a low-carbon, customer-centric electricity system by enabling any energy asset owned by any customer to participate in any energy market."
     },
-      {  
+      {
       "name": "Konomi",
       "link": "https://www.konomi.network/",
       "category":["DeFi", "All"],
@@ -1253,7 +1253,7 @@
       "tag": "Chain",
       "description": "Konomi is a decentralized money market protocol on Polkadot."
     },
-    {  
+    {
       "name": "Sub.ID",
       "link": "https://sub.id/#/",
       "category":["Infrastructure", "All"],
@@ -1261,7 +1261,7 @@
       "tag": "Infrastructure & Tooling",
       "description": "Sub.ID allows you to track all your wallet balances across different Substrate Chain in an easy way."
     },
-    {  
+    {
       "name": "Talisman",
       "link": "https://talisman.xyz/",
       "category":["Wallet", "All"],
@@ -1269,7 +1269,7 @@
       "tag": "Infrastructure & Tooling",
       "description": "Talisman is a multichain Wallet for the Kusama and Polkadot Ecosystems."
     },
-    {  
+    {
       "name": "InvArch",
       "link": "https://invarch.io/",
       "category":["Social", "All"],
@@ -1277,7 +1277,7 @@
       "tag": "Chain",
       "description": "A Multi-Chain IP Management and Development Protocol for the Polkadot ecosystem."
     },
-    {  
+    {
       "name": "BitGreen",
       "link": "https://bitgreen.org/",
       "category":["DeFi", "All"],
@@ -1285,7 +1285,7 @@
       "tag": "Chain",
       "description": "BitGreen is a blockchain that's purpose-built for impact, financial inclusion, energy, and human potential."
     },
-    {  
+    {
       "name": "SkyeKiwi",
       "link": "https://skye.kiwi/",
       "category":["Infrastructure", "All"],
@@ -1293,7 +1293,7 @@
       "tag": "Chain",
       "description": "SkyeKiwi is a decentralized secret sharing protocol."
     },
-    {  
+    {
       "name": "Nova Wallet",
       "link": "https://novawallet.io/",
       "category":["Wallet", "All"],
@@ -1301,7 +1301,7 @@
       "tag": "Infrastructure",
       "description": "Nova Wallet is a  mobile wallet that allows for managing Polkadot ecosystem tokens, staking and  contributions to crowdloans."
     },
-    {  
+    {
       "name": "Fractal",
       "link": "https://protocol.fractal.id/",
       "category":["Identity", "All"],
@@ -1309,7 +1309,7 @@
       "tag": "Chain",
       "description": "A substrate chain that is bridging the gap between data privacy and data integrity."
     },
-    {  
+    {
       "name": "Project Aria",
       "link": "https://myaria.health/",
       "category":["Health Care", "All"],
@@ -1317,7 +1317,7 @@
       "tag": "Chain",
       "description": "Aria is a decentralized network of Health Data owned and manage buy the Data Owners (individuals)."
     },
-    {  
+    {
       "name": "Chocolate",
       "link": "https://github.com/chocolatenetwork/",
       "category":["Social", "All"],
@@ -1325,7 +1325,7 @@
       "tag": "Chain",
       "description": "Chocolate is a community feedback mechanism network and a platform for anonymous, trusted, knowledge exchange"
     },
-    {  
+    {
       "name": "Wunderbar Network",
       "link": "https://github.com/WunderbarNetwork",
       "category":["File Storage", "All"],
