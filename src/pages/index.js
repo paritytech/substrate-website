@@ -294,7 +294,7 @@ export default function Home() {
               <div className="inline-block bg-substrateDark dark:bg-white mx-auto mb-4 md:mb-6 rounded-full">
                 <Icon name="interoperability" className="fill-current text-white dark:text-substrateBlackish" />
               </div>
-              <h3 className="text-xl mb-4 md:mb-6 mx-auto">True Interoperablility</h3>
+              <h3 className="text-xl mb-4 md:mb-6 mx-auto">True Interoperability</h3>
               <p className="leading-relaxed">
                 By utilizing the Polkadot Relay Chain, all Substrate-based chains can interoperate with others in the
                 ecosystem without the need for bridges.
