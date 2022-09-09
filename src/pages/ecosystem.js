@@ -141,8 +141,8 @@ export default function Home() {
               <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">Square One</h2>
               <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Your ecosystem guide</h3>
               <p className="md:text-lg font-medium">
-                Square One is your custom-tailored guide to the wealth of resources available to builders. Explore the
-                resources and initiatives below or get in touch for hands-on support.
+                Square One is your custom-tailored guide to the opportunities and initiatives available in the
+                ecosystem. Explore the resources and initiatives below or get in touch for hands-on support.
               </p>
               <PrimaryButtonLink link="/ecosystem/square-one/">Go to Square One</PrimaryButtonLink>
             </div>
