@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
 import IconCard from '../components/layout/ecosystem/IconCard';
-import squareOne from '../images/animation/ecosystem/square-one.json';
 
 const logos = [
   {
@@ -147,7 +146,7 @@ export default function Home() {
             </div>
             <div className="lg:col-start-1">
               <div className="aspect-w-10 aspect-h-10 xl:aspect-h-7 xl:w-full mb-8">
-                <StaticImage src={squareOne} alt="Substrate Builders Program" className="rounded-md" />
+                <StaticImage src="../images/svg/squareone_static.svg" alt="Square One" className="rounded-md" />
               </div>
             </div>
           </div>
