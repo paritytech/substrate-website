@@ -135,7 +135,12 @@ export default function Home() {
 
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
-            <div className="row-start-1 lg:col-start-2">
+            <div className="">
+              <div className="w-full mb-8">
+                <StaticImage src="../images/svg/squareone_static.svg" alt="Square One" className="rounded-md" />
+              </div>
+            </div>
+            <div className="">
               <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">Square One</h2>
               <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Your ecosystem guide</h3>
               <p className="md:text-lg font-medium">
@@ -143,11 +148,6 @@ export default function Home() {
                 ecosystem. Explore the resources and initiatives below or get in touch for hands-on support.
               </p>
               <PrimaryButtonLink link="/ecosystem/square-one/">Go to Square One</PrimaryButtonLink>
-            </div>
-            <div className="lg:col-start-1">
-              <div className="aspect-w-10 aspect-h-10 xl:aspect-h-7 xl:w-full mb-8">
-                <StaticImage src="../images/svg/squareone_static.svg" alt="Square One" className="rounded-md" />
-              </div>
             </div>
           </div>
         </Section>
