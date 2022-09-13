@@ -140,7 +140,12 @@ export default function Home() {
                 <StaticImage
                   src="../images/png/square-one/squareone_graphic.png"
                   alt="Square One"
-                  className="rounded-md"
+                  className="rounded-md dark:hidden"
+                />
+                <StaticImage
+                  src="../images/png/square-one/squareone_graphic_dark.png"
+                  alt="Square One"
+                  className="rounded-md hidden dark:inline-block"
                 />
               </div>
             </div>
