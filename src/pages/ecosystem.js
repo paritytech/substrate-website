@@ -136,17 +136,8 @@ export default function Home() {
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
             <div className="">
-              <div className="w-full mb-8">
-                <StaticImage
-                  src="../images/png/square-one/squareone_graphic.png"
-                  alt="Square One"
-                  className="rounded-md dark:hidden inline-block"
-                />
-                <StaticImage
-                  src="../images/png/square-one/squareone_graphic_dark.png"
-                  alt="Square One"
-                  className="rounded-md hidden dark:inline-block"
-                />
+              <div className="w-full mb-8 bg-substrateGray-light dark:bg-substrateGray-darkest">
+                <StaticImage src="../images/png/square-one/square-one.png" alt="Square One" className="rounded-md" />
               </div>
             </div>
             <div className="">
