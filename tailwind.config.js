@@ -2,7 +2,6 @@
 
 module.exports = {
   presets: [require('./tailwind-preset.js')],
-  darkMode: 'class',
   theme: {
     fontFamily: {
       sans: ['Karla', 'sans-serif'],
