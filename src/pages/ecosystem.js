@@ -137,7 +137,11 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
             <div className="">
               <div className="w-full mb-8">
-                <StaticImage src="../images/svg/squareone_static.svg" alt="Square One" className="rounded-md" />
+                <StaticImage
+                  src="../images/png/square-one/squareone_graphic.png"
+                  alt="Square One"
+                  className="rounded-md"
+                />
               </div>
             </div>
             <div className="">
