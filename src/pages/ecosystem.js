@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
 import IconCard from '../components/layout/ecosystem/IconCard';
+import SquareOneGraphic from '../images/svg/squareone_graphic.svg';
+//import SquareOneStatic from '../images/svg/placeholder.svg';
 
 const logos = [
   {
@@ -83,7 +85,6 @@ export default function Home() {
             </div>
           </div>
         </Section>
-
         <Section>
           <div
             onClick={() => modalSetOpen(true)}
@@ -108,7 +109,6 @@ export default function Home() {
             </div>
           </div>
         </Section>
-
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
             <div className="row-start-1 lg:col-start-2">
@@ -137,15 +137,15 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
             <div className="">
               <div className="w-full mb-8 bg-substrateGray-light dark:bg-substrateGray-darkest">
-                <StaticImage src="../images/png/square-one/square-one.png" alt="Square One" className="rounded-md" />
+                <SquareOneGraphic alt="Square One" className="rounded-md" />
               </div>
             </div>
             <div className="">
               <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">Square One</h2>
               <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Your ecosystem guide</h3>
               <p className="md:text-lg font-medium">
-                Square One is your custom-tailored guide to the opportunities and initiatives available in the
-                ecosystem. Explore the resources and initiatives below or get in touch for hands-on support.
+                Square One is your custom-tailored guide to the opportunities and initiatives available in the Substrate
+                ecosystem.
               </p>
               <PrimaryButtonLink link="/ecosystem/square-one/">Go to Square One</PrimaryButtonLink>
             </div>
