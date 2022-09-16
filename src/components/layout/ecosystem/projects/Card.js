@@ -6,8 +6,9 @@ import React from 'react';
 import CaseStudyButton from '../teams/CaseStudyButton';
 
 const createExcerpt = (string, length) => {
-  if (string.length < length) return string;
-  else return string.substring(0, length) + '...';
+  if (string && length) {
+    string.length < length ? string : string.substring(0, length) + '...';
+  }
 };
 
 export default function ProjectCard({ model }) {

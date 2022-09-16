@@ -32,6 +32,8 @@ export default function Projects() {
       <Section>
         TYPES filter:
         <ListTypes />
+      </Section>
+      <Section>
         INDUSTRY filter:
         <ListCategories />
       </Section>

@@ -6,6 +6,6 @@ type:
 category:
   - defi
 link: https://chain.link
-featured_image: /media/images/hackathons/Build_Polkadot.png
+featured_image: /media/images/projects/chainlink.png
 show_case_study: false
 ---
