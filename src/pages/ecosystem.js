@@ -136,8 +136,8 @@ export default function Home() {
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
             <div className="">
-              <div className="w-full mb-8 bg-substrateGray-light dark:bg-substrateGray-darkest">
-                <SquareOneGraphic alt="Square One" className="rounded-md" />
+              <div className="w-full mb-8 bg-substrateGray-light dark:bg-substrateGray-darkest rounded-md">
+                <SquareOneGraphic alt="Square One" className="rounded-md w-full h-full" />
               </div>
             </div>
             <div className="">
