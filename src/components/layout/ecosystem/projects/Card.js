@@ -5,11 +5,11 @@ import React from 'react';
 
 import CaseStudyButton from '../teams/CaseStudyButton';
 
-const createExcerpt = (string, length) => {
-  if (string && length) {
-    string.length < length ? string : string.substring(0, length) + '...';
-  }
-};
+// const createExcerpt = (string, length) => {
+//   if (string && length) {
+//     string.length < length ? string : string.substring(0, length) + '...';
+//   }
+// };
 
 export default function ProjectCard({ model }) {
   const {
@@ -25,7 +25,7 @@ export default function ProjectCard({ model }) {
   return (
     <div
       className={cx(
-        'group mb-6 lg:mb-0 px-10 py-6 bg-white dark:bg-darkBackground animate-fade-in w-full',
+        'group lg:mb-0 p-6 bg-white dark:bg-darkBackground animate-fade-in h-full w-full',
         `border border-substrateDark dark:border-substrateGray-light border-opacity-10 dark:border-opacity-10`,
         'duration-75 ease-in-out hover:scale-105 hover:border hover:shadow-xl'
       )}
@@ -52,12 +52,15 @@ export default function ProjectCard({ model }) {
           })}
         </div>
       </div>
-      <GatsbyImage
-        className="h-[110px] w-[110px] object-contain mb-6 rounded-full"
-        image={image}
-        alt={`${title} Project Logo`}
-      />
-      <p className="mb-10 h-[78px]">{createExcerpt(description, 260)}</p>
+      <div className="rounded-full mb-6 h-[75px] w-[75px] bg-gray-300 p-0.5">
+        <GatsbyImage
+          className="object-contain w-full h-full rounded-full"
+          image={image}
+          alt={`${title} Project Logo`}
+        />
+      </div>
+      {console.log(description)}
+      <p className="mb-10 text-white">{description}</p>
       {show_case_study && html && <CaseStudyButton link={`${slug}/#case-study`} />}
     </div>
   );

@@ -7,7 +7,7 @@ const ListTypes = () => {
 
   return projectTypes.map((item, index) => {
     return (
-      <div key={index} className={item.node.frontmatter.slug}>
+      <div key={index} value={item.node.frontmatter.slug} className={item.node.frontmatter.slug}>
         {item.node.frontmatter.title}
       </div>
     );

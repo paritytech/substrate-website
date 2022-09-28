@@ -33,19 +33,26 @@ export default function Projects() {
         TYPES filter:
         <ListTypes />
       </Section>
-      <Section>
-        INDUSTRY filter:
-        <ListCategories />
-      </Section>
-      <Section>
-        <div className="flex flex-wrap pl-px -mr-px">
-          {projects.map((project, index) => {
-            return (
-              <div key={index} className="w-1/1 md:w-1/2 xl:w-1/3 -mt-px -ml-px">
-                <Card model={project} />
-              </div>
-            );
-          })}
+      <Section className="container mb-20 lg:px-10">
+        <div className="lg:flex">
+          <div className="hidden lg:block lg:flex-none w-52">
+            INDUSTRY filter:
+            <ListCategories />
+          </div>
+          <div className="lg:flex-grow min-h-screen">
+            <div className="w-1/1 grid md:grid-cols-2 2xl:grid-cols-3">
+              {projects.map((project, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="relative bg-substrateGray-light dark:bg-substrateDark rounded-md shadow-xl duration-75 ease-in-out hover:scale-105 hover:z-10"
+                  >
+                    <Card model={project} />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </Section>
     </Layout>
