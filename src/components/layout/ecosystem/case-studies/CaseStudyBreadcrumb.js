@@ -8,11 +8,17 @@ export default function BreadcrumbNav(props) {
         <span>Ecosystem</span>
       </Link>
       <span className="mx-2">»</span>
-      <Link to="/ecosystem/projects">
+      {props.title ? (
+        <>
+          <Link to="/ecosystem/projects">
+            <span>Projects</span>
+          </Link>
+          <span className="mx-2">»</span>
+          <span>{props.title}</span>
+        </>
+      ) : (
         <span>Projects</span>
-      </Link>
-      <span className="mx-2">»</span>
-      <span>{props.title}</span>
+      )}
     </nav>
   );
 }

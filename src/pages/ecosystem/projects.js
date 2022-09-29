@@ -1,15 +1,17 @@
 import { graphql } from 'gatsby';
 import { Layout, Section, SEO } from 'gatsby-plugin-substrate';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
+// import ListTypes from '../../components/layout/ecosystem/projects/ListTypes';
+import CaseStudyBreadcrumb from '../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 import Card from '../../components/layout/ecosystem/projects/Card';
 import ListCategories from '../../components/layout/ecosystem/projects/ListCategories';
-import ListTypes from '../../components/layout/ecosystem/projects/ListTypes';
+import LocalSearch from '../../components/layout/ecosystem/projects/LocalSearch';
 import { useProjects } from '../../hooks/use-projects';
 
 export default function Projects() {
   const { projects } = useProjects();
-
+  const [searchQuery, setSearchQuery] = useState('');
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const type = urlParams.get('type');
@@ -25,31 +27,30 @@ export default function Projects() {
         description="Substrate Projects. More than 150 projects are building on Substrate, meet the teams. Find out more!"
       />
       <Section>
-        <h2 id="projects" className="mb-8 scroll-margin-top-100">
+        <CaseStudyBreadcrumb />
+        <h2 id="projects" className="scroll-margin-top-100 mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">
           Projects
         </h2>
+        <hr />
       </Section>
       <Section>
+        <div className="flex items-center border-b mb-9 lg:ml-52">
+          <LocalSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+        </div>
+      </Section>
+      {/* <Section>
         TYPES filter:
         <ListTypes />
-      </Section>
+      </Section> */}
       <Section className="container mb-20 lg:px-10">
         <div className="lg:flex">
           <div className="hidden lg:block lg:flex-none w-52">
-            INDUSTRY filter:
             <ListCategories />
           </div>
           <div className="lg:flex-grow min-h-screen">
             <div className="w-1/1 grid md:grid-cols-2 2xl:grid-cols-3">
               {projects.map((project, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="relative bg-substrateGray-light dark:bg-substrateDark rounded-md shadow-xl duration-75 ease-in-out hover:scale-105 hover:z-10"
-                  >
-                    <Card model={project} />
-                  </div>
-                );
+                return <Card key={index} model={project} />;
               })}
             </div>
           </div>
