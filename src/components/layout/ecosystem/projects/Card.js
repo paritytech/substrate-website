@@ -19,9 +19,8 @@ export default function ProjectCard({ model }) {
       fields: { slug },
     },
   } = model;
-  const { title, description, featured_image, category, type, link, show_case_study } = frontmatter;
+  const { title, description, featured_image, category, link, show_case_study } = frontmatter;
   const image = getImage(featured_image);
-  console.log(type);
   return (
     <div className="relative bg-substrateGray-light dark:bg-substrateDark shadow-xl duration-75 ease-in-out hover:z-10 border border-substrateDark dark:border-substrateGray-light border-opacity-10 dark:border-opacity-10  -mt-px -ml-px hover:scale-105 hover:shadow-xl">
       <div className={cx('group lg:mb-0 p-6 bg-white dark:bg-darkBackground animate-fade-in h-full w-full', '')}>
@@ -48,14 +47,15 @@ export default function ProjectCard({ model }) {
           </div>
         </div>
         <div className="rounded-full mb-6 h-[60px] w-[60px] bg-gray-300 p-0.5">
-          <GatsbyImage
-            className="object-contain w-full h-full rounded-full"
-            image={image}
-            alt={`${title} Project Logo`}
-          />
+          {image && (
+            <GatsbyImage
+              className="object-contain w-full h-full rounded-full"
+              image={image}
+              alt={`${title} Project Logo`}
+            />
+          )}
         </div>
-        {console.log(description)}
-        <p className="mb-10 text-white">{description}</p>
+        <p className="mb-10 text-white">{description.substring(0, 120) + '...'}</p>
         {show_case_study && html && <CaseStudyButton link={`${slug}/#case-study`} />}
       </div>
     </div>

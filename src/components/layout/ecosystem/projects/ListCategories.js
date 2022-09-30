@@ -29,8 +29,10 @@ const ListCategories = ({ setSelectedCategory, selectedCategory }) => {
             className={cx(listStyles, {
               'font-bold text-substrateGreen': item === selectedCategory,
             })}
+            data-name={item.node.frontmatter.slug}
           >
             {item.node.frontmatter.title}
+            {console.log(selectedCategory)}
           </li>
         );
       })}

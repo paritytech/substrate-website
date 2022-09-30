@@ -9,16 +9,36 @@ import ListCategories from '../../components/layout/ecosystem/projects/ListCateg
 import LocalSearch from '../../components/layout/ecosystem/projects/LocalSearch';
 import { useProjects } from '../../hooks/use-projects';
 
-export default function Projects() {
+const Projects = ({ location }) => {
+  //console.log('location: ' + location.pathname);
   const { projects } = useProjects();
-  const [searchQuery, setSearchQuery] = useState('');
-  useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const type = urlParams.get('type');
-    const category = urlParams.get('category');
+  // const [searchQuery, setSearchQuery] = useState('');
+  // useEffect(() => {
+  //   const urlParams = new URLSearchParams(window.location.search);
+  //   const type = urlParams.get('type');
+  //   const category = urlParams.get('category');
 
-    console.log('searchParam: ' + type, category);
-  }, []);
+  //   console.log('searchParam: ' + type, category);
+  // }, []);
+  const currentUrl = location.href || 'https://substrate.io';
+  const searchParams = new URL(currentUrl).searchParams;
+  const activeCategory = searchParams.get('category');
+
+  //const [selectedVersion, setSelectedVersion] = useState('VERSION_3_0');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
+
+  useEffect(() => {
+    setSelectedCategory(activeCategory || 'all');
+  }, [activeCategory]);
+
+  useEffect(() => {
+    const url = currentUrl.split('?');
+    if (selectedCategory) {
+      if (selectedCategory === 'all') history.replaceState(null, null, url[0]);
+      else history.replaceState(null, null, '?category=' + selectedCategory.toString());
+    }
+  }, [currentUrl, selectedCategory]);
 
   return (
     <Layout>
@@ -27,13 +47,17 @@ export default function Projects() {
         description="Substrate Projects. More than 150 projects are building on Substrate, meet the teams. Find out more!"
       />
       <Section>
-        <CaseStudyBreadcrumb />
-        <h2 id="projects" className="scroll-margin-top-100 mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">
-          Projects
-        </h2>
-        <hr />
-      </Section>
-      <Section>
+        <div className="mb-12 underline-animate underline-animate-thin">
+          <CaseStudyBreadcrumb />
+        </div>
+        <div className="mb-12">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:mb-8">
+            <h2 id="projects" className="font-bold mb-0 lg:text-5xl capitalize">
+              Projects
+            </h2>
+          </div>
+          <hr className="hidden lg:block" />
+        </div>
         <div className="flex items-center border-b mb-9 lg:ml-52">
           <LocalSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>
@@ -45,7 +69,7 @@ export default function Projects() {
       <Section className="container mb-20 lg:px-10">
         <div className="lg:flex">
           <div className="hidden lg:block lg:flex-none w-52">
-            <ListCategories />
+            <ListCategories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
           </div>
           <div className="lg:flex-grow min-h-screen">
             <div className="w-1/1 grid md:grid-cols-2 2xl:grid-cols-3">
@@ -58,7 +82,7 @@ export default function Projects() {
       </Section>
     </Layout>
   );
-}
+};
 
 export const query = graphql`
   query {
@@ -73,3 +97,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default Projects;
