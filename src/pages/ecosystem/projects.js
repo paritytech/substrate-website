@@ -43,7 +43,7 @@ const Projects = ({ location }) => {
   return (
     <Layout>
       <SEO
-        title="Substrate Projects"
+        title="Projects"
         description="Substrate Projects. More than 150 projects are building on Substrate, meet the teams. Find out more!"
       />
       <Section>

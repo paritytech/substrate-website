@@ -22,7 +22,13 @@ export default function ProjectCard({ model }) {
   const { title, description, featured_image, category, link, show_case_study } = frontmatter;
   const image = getImage(featured_image);
   return (
-    <div className="relative bg-substrateGray-light dark:bg-substrateDark shadow-xl duration-75 ease-in-out hover:z-10 border border-substrateDark dark:border-substrateGray-light border-opacity-10 dark:border-opacity-10  -mt-px -ml-px hover:scale-105 hover:shadow-xl">
+    <div
+      className={cx(
+        'relative -mt-px -ml-px bg-white dark:bg-darkBackground ease-in-out',
+        'border border-substrateDark dark:border-substrateGray-light border-opacity-10 dark:border-opacity-10',
+        'hover:border hover:shadow-xl hover:z-20 hover:scale-105 hover:duration-75'
+      )}
+    >
       <div className={cx('group lg:mb-0 p-6 bg-white dark:bg-darkBackground animate-fade-in h-full w-full', '')}>
         <div className="mb-6">
           <div className="flex items-center">
@@ -55,7 +61,9 @@ export default function ProjectCard({ model }) {
             />
           )}
         </div>
-        <p className="mb-10 text-white">{description.substring(0, 120) + '...'}</p>
+        <p className="text-sm mb-0 h-20 line-clamp-4 text-black dark:text-white">
+          {description.substring(0, 140) + '...'}
+        </p>
         {show_case_study && html && <CaseStudyButton link={`${slug}/#case-study`} />}
       </div>
     </div>
