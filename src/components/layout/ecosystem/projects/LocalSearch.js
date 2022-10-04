@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function LocalSearch({ setSearchQuery, searchQuery }) {
   const handleChange = event => {
-    const search = event.target.value.toLowerCase();
+    const search = event.target.value;
     setSearchQuery(search);
   };
   return (

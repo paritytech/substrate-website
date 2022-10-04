@@ -1,32 +1,26 @@
 import { graphql } from 'gatsby';
-import { Layout, Section, SEO } from 'gatsby-plugin-substrate';
+import { Icon, Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
 
 // import ListTypes from '../../components/layout/ecosystem/projects/ListTypes';
 import CaseStudyBreadcrumb from '../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 import Card from '../../components/layout/ecosystem/projects/Card';
+//import CardsContainer from '../../components/layout/ecosystem/projects/CardsContainer';
 import ListCategories from '../../components/layout/ecosystem/projects/ListCategories';
 import LocalSearch from '../../components/layout/ecosystem/projects/LocalSearch';
 import { useProjects } from '../../hooks/use-projects';
 
 const Projects = ({ location }) => {
-  //console.log('location: ' + location.pathname);
   const { projects } = useProjects();
-  // const [searchQuery, setSearchQuery] = useState('');
-  // useEffect(() => {
-  //   const urlParams = new URLSearchParams(window.location.search);
-  //   const type = urlParams.get('type');
-  //   const category = urlParams.get('category');
-
-  //   console.log('searchParam: ' + type, category);
-  // }, []);
   const currentUrl = location.href || 'https://substrate.io';
   const searchParams = new URL(currentUrl).searchParams;
   const activeCategory = searchParams.get('category');
 
-  //const [selectedVersion, setSelectedVersion] = useState('VERSION_3_0');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [displayedData, setDisplayedData] = useState([]);
+  const [dataAvailable, setDataAvailable] = useState(false);
+  const [noResults, setNoResults] = useState(false);
 
   useEffect(() => {
     setSelectedCategory(activeCategory || 'all');
@@ -39,6 +33,37 @@ const Projects = ({ location }) => {
       else history.replaceState(null, null, '?category=' + selectedCategory.toString());
     }
   }, [currentUrl, selectedCategory]);
+
+  //console.log(projects);
+
+  useEffect(() => {
+    const filteredData = projects
+      .filter(each => {
+        if (selectedCategory === 'all') {
+          return each;
+        } else if (each.node.frontmatter.category && each.node.frontmatter.category.includes(selectedCategory)) {
+          return each;
+        }
+      })
+      .filter(each => {
+        if (searchQuery.length === 0) {
+          return each;
+        } else if (each.node.frontmatter.title.toLowerCase().includes(searchQuery)) {
+          return each;
+        }
+      });
+    setDisplayedData(filteredData);
+  }, [selectedCategory, searchQuery]);
+
+  useEffect(() => {
+    displayedData.length > 0 ? setDataAvailable(true) : setDataAvailable(false);
+    setTimeout(() => {
+      displayedData.length === 0 ? setNoResults(true) : setNoResults(false);
+    }, 100);
+  }, [displayedData]);
+
+  console.log('current url = ' + currentUrl);
+  console.log('selected cat = ' + selectedCategory);
 
   return (
     <Layout>
@@ -73,9 +98,20 @@ const Projects = ({ location }) => {
           </div>
           <div className="lg:flex-grow min-h-screen">
             <div className="w-1/1 grid md:grid-cols-2 2xl:grid-cols-3">
-              {projects.map((project, index) => {
-                return <Card key={index} model={project} />;
-              })}
+              {dataAvailable ? (
+                displayedData.map((project, index) => {
+                  return <Card key={index} model={project} />;
+                })
+              ) : (
+                <>
+                  {noResults && (
+                    <div className="border dark:border-substrateGray-dark rounded-md flex flex-col items-center py-8">
+                      <Icon name="noResults" className="fill-current mb-8" />
+                      <p className="text-center px-4">No results found. Try a different version or search query.</p>
+                    </div>
+                  )}
+                </>
+              )}
             </div>
           </div>
         </div>

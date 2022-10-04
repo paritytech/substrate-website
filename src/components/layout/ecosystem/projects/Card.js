@@ -33,7 +33,7 @@ export default function ProjectCard({ model }) {
         <div className="mb-6">
           <div className="flex items-center">
             <Link className="inline-block" to={`/ecosystem/projects/${slug}`}>
-              <div className="text-2xl font-bold">{title}</div>
+              <div className="mb-2 text-2xl font-bold">{title}</div>
             </Link>
             <Link className="inline-block" to={link}>
               <Icon

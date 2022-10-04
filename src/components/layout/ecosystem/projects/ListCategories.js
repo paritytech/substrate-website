@@ -9,6 +9,7 @@ const ListCategories = ({ setSelectedCategory, selectedCategory }) => {
   const handleCLick = event => {
     const dataName = event.target.getAttribute('data-name');
     setSelectedCategory(dataName);
+    //console.log(selectedCategory);
   };
 
   return (
@@ -26,13 +27,13 @@ const ListCategories = ({ setSelectedCategory, selectedCategory }) => {
         return (
           <li
             key={index}
+            onClick={e => handleCLick(e)}
             className={cx(listStyles, {
-              'font-bold text-substrateGreen': item === selectedCategory,
+              'font-bold text-substrateGreen': item.node.frontmatter.slug === selectedCategory,
             })}
             data-name={item.node.frontmatter.slug}
           >
             {item.node.frontmatter.title}
-            {console.log(selectedCategory)}
           </li>
         );
       })}

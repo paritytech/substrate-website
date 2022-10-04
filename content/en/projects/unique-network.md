@@ -4,7 +4,7 @@ description: Unique Network is an infrastructure for the next generation NFTs, o
   - building-for-polkadot
   - substrate-builders-program
 category:
-  - gaming
+  - nfts
 link: https://unique.network/
 featured_image: /media/images/projects/unique-network.png
 show_case_study: false
