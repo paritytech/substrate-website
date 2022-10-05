@@ -53,7 +53,7 @@ const Projects = ({ location }) => {
         }
       });
     setDisplayedData(filteredData);
-  }, [selectedCategory, searchQuery]);
+  }, [selectedCategory, searchQuery, projects]);
 
   useEffect(() => {
     displayedData.length > 0 ? setDataAvailable(true) : setDataAvailable(false);

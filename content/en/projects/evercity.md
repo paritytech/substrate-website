@@ -6,6 +6,6 @@ type:
 category:
   - defi
 link: https://evercity.io/
-featured_image: /media/images/projects/etcdev.png
+featured_image: /media/images/projects/evercity.png
 show_case_study: false
 ---

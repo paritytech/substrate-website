@@ -1,6 +1,6 @@
 ---
 title: Apron Labs
-description: AnKR helps consumers and enterpresies to connect and develop in the Web3 through a serious of tools, from Node Staking to API's.
+description: A decentralized platform that provides infrastructure services for dapp developers, dapp users, and operators.
 type:
   - building-for-polkadot
   - substrate-builders-program

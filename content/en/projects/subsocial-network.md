@@ -7,6 +7,6 @@ type:
 category:
   - defi
 link: https://subsocial.network/
-featured_image: /media/images/projects/subsocial-network.png
+featured_image: /media/images/projects/subsocial.png
 show_case_study: false
 ---

@@ -5,11 +5,16 @@ import React from 'react';
 
 import CaseStudyButton from '../teams/CaseStudyButton';
 
-// const createExcerpt = (string, length) => {
-//   if (string && length) {
-//     string.length < length ? string : string.substring(0, length) + '...';
-//   }
-// };
+function toTitleCase(str) {
+  return str
+    .toLowerCase()
+    .replace(/-/g, ' ')
+    .split(' ')
+    .map(function (word) {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(' ');
+}
 
 export default function ProjectCard({ model }) {
   const {
@@ -46,7 +51,7 @@ export default function ProjectCard({ model }) {
             {category.map((name, index) => {
               return (
                 <span key={index}>
-                  {index > 0 && ', '} {name}
+                  {index > 0 && ', '} {toTitleCase(name)}
                 </span>
               );
             })}

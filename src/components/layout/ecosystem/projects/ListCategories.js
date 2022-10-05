@@ -9,7 +9,6 @@ const ListCategories = ({ setSelectedCategory, selectedCategory }) => {
   const handleCLick = event => {
     const dataName = event.target.getAttribute('data-name');
     setSelectedCategory(dataName);
-    //console.log(selectedCategory);
   };
 
   return (
