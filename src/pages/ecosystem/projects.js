@@ -2,11 +2,10 @@ import { graphql } from 'gatsby';
 import { Icon, Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
 
-// import ListTypes from '../../components/layout/ecosystem/projects/ListTypes';
 import CaseStudyBreadcrumb from '../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 import Card from '../../components/layout/ecosystem/projects/Card';
-//import CardsContainer from '../../components/layout/ecosystem/projects/CardsContainer';
 import ListCategories from '../../components/layout/ecosystem/projects/ListCategories';
+import ListTypes from '../../components/layout/ecosystem/projects/ListTypes';
 import LocalSearch from '../../components/layout/ecosystem/projects/LocalSearch';
 import { useProjects } from '../../hooks/use-projects';
 
@@ -15,9 +14,11 @@ const Projects = ({ location }) => {
   const currentUrl = location.href || 'https://substrate.io';
   const searchParams = new URL(currentUrl).searchParams;
   const activeCategory = searchParams.get('category');
+  const activeType = searchParams.get('type');
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedType, setSelectedType] = useState('');
   const [displayedData, setDisplayedData] = useState([]);
   const [dataAvailable, setDataAvailable] = useState(false);
   const [noResults, setNoResults] = useState(false);
@@ -25,6 +26,9 @@ const Projects = ({ location }) => {
   useEffect(() => {
     setSelectedCategory(activeCategory || 'all');
   }, [activeCategory]);
+  useEffect(() => {
+    setSelectedType(activeType || 'all');
+  }, [activeType]);
 
   useEffect(() => {
     const url = currentUrl.split('?');
@@ -33,8 +37,6 @@ const Projects = ({ location }) => {
       else history.replaceState(null, null, '?category=' + selectedCategory.toString());
     }
   }, [currentUrl, selectedCategory]);
-
-  //console.log(projects);
 
   useEffect(() => {
     const filteredData = projects
@@ -46,6 +48,13 @@ const Projects = ({ location }) => {
         }
       })
       .filter(each => {
+        if (selectedType === 'all') {
+          return each;
+        } else if (each.node.frontmatter.type && each.node.frontmatter.type.includes(selectedType)) {
+          return each;
+        }
+      })
+      .filter(each => {
         if (searchQuery.length === 0) {
           return each;
         } else if (each.node.frontmatter.title.toLowerCase().includes(searchQuery)) {
@@ -53,7 +62,7 @@ const Projects = ({ location }) => {
         }
       });
     setDisplayedData(filteredData);
-  }, [selectedCategory, searchQuery, projects]);
+  }, [selectedCategory, selectedType, searchQuery, projects]);
 
   useEffect(() => {
     displayedData.length > 0 ? setDataAvailable(true) : setDataAvailable(false);
@@ -87,13 +96,10 @@ const Projects = ({ location }) => {
           <LocalSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>
       </Section>
-      {/* <Section>
-        TYPES filter:
-        <ListTypes />
-      </Section> */}
       <Section className="container mb-20 lg:px-10">
         <div className="lg:flex">
           <div className="hidden lg:block lg:flex-none w-52">
+            <ListTypes selectedType={selectedType} setSelectedType={setSelectedType} />
             <ListCategories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
           </div>
           <div className="lg:flex-grow min-h-screen">

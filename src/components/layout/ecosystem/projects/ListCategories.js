@@ -12,11 +12,12 @@ const ListCategories = ({ setSelectedCategory, selectedCategory }) => {
   };
 
   return (
-    <ul className="list-none">
+    <ul className="list-none my-5">
+      <li>Filter by category:</li>
       <li
         data-name="all"
         onClick={e => handleCLick(e)}
-        className={cx(listStyles, {
+        className={cx(listStyles, 'mt-8', {
           'font-bold text-substrateGreen': selectedCategory === 'all',
         })}
       >

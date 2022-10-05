@@ -27,7 +27,7 @@ export default function ProjectPageTemplate({ pageContext }) {
   // console.log(images);
 
   return (
-    <Layout layout="sidebar" hasBreadcrumbs={false}>
+    <Layout hasBreadcrumbs={false}>
       <SEO title={title} />
       <Section>
         <CaseStudyBreadcrumb title={title} />
