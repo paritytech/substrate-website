@@ -6,10 +6,6 @@ import { useProjectTypes } from '../../../../hooks/use-project-types';
 const ListTypes = ({ selectedType, setSelectedType }) => {
   const { projectTypes } = useProjectTypes();
   const listStyles = 'mb-8 capitalize cursor-pointer hover:text-substrateGreen';
-  // const handleCLick = event => {
-  //   const dataName = event.target.getAttribute('data-name');
-  //   setSelectedType(dataName);
-  // };
 
   return (
     <select
@@ -39,6 +35,7 @@ const ListTypes = ({ selectedType, setSelectedType }) => {
               { 'bg-substrateDark text-white': selectedType === item.node.frontmatter.slug }
             )}
             data-name={item.node.frontmatter.slug}
+            selected={selectedType === item.node.frontmatter.slug}
           >
             {item.node.frontmatter.title}
           </option>

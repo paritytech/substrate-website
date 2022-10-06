@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { Icon, Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
@@ -44,10 +45,12 @@ const Projects = ({ location }) => {
         history.replaceState(
           null,
           null,
-          '?category=' + selectedCategory.toString() + '?type=' + selectedType.toString()
+          '?category=' + selectedCategory.toString() + '&type=' + selectedType.toString()
         );
     }
   }, [currentUrl, selectedCategory, selectedType]);
+
+  console.log(activeCategory + '  ' + activeType);
 
   useEffect(() => {
     const filteredData = projects
@@ -124,7 +127,11 @@ const Projects = ({ location }) => {
             <ListCategories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
           </div>
           <div className="lg:flex-grow min-h-screen">
-            <div className="w-1/1 grid md:grid-cols-2 2xl:grid-cols-3">
+            <div
+              className={cx('w-1/1 grid md:grid-cols-2 2xl:grid-cols-3', {
+                '!grid-cols-1': noResults,
+              })}
+            >
               {dataAvailable ? (
                 displayedData.map((project, index) => {
                   return <Card key={index} model={project} />;

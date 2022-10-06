@@ -94,6 +94,9 @@
   .dark {
     border-color: #6b7280;
   }
+  input, label {
+    margin-top: 0.1rem!important;
+  }
  }
  .types-filter {
   &:focus {
