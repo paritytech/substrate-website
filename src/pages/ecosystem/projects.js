@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 import CaseStudyBreadcrumb from '../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
 import Card from '../../components/layout/ecosystem/projects/Card';
+import CaseStudyFilter from '../../components/layout/ecosystem/projects/CaseStudyFilter';
 import ListCategories from '../../components/layout/ecosystem/projects/ListCategories';
 import ListTypes from '../../components/layout/ecosystem/projects/ListTypes';
 import LocalSearch from '../../components/layout/ecosystem/projects/LocalSearch';
@@ -19,6 +20,7 @@ const Projects = ({ location }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedType, setSelectedType] = useState('');
+  const [showCaseStudies, setShowCaseStudies] = useState(false);
   const [displayedData, setDisplayedData] = useState([]);
   const [dataAvailable, setDataAvailable] = useState(false);
   const [noResults, setNoResults] = useState(false);
@@ -34,9 +36,6 @@ const Projects = ({ location }) => {
     const url = currentUrl.split('?');
     if (selectedCategory && selectedType) {
       if (selectedCategory === 'all' && selectedType === 'all') history.replaceState(null, null, url[0]);
-      // if (selectedType !== 'all') history.replaceState(null, null, '?type=' + selectedType.toString());
-      // if (selectedCategory !== 'all' && selectedType === 'all')
-      //   history.replaceState(null, null, '?category=' + selectedType.toString());
       if (selectedCategory !== 'all' && selectedType === 'all')
         history.replaceState(null, null, '?category=' + selectedCategory.toString());
       if (selectedCategory === 'all' && selectedType !== 'all')
@@ -52,6 +51,13 @@ const Projects = ({ location }) => {
 
   useEffect(() => {
     const filteredData = projects
+      .filter(each => {
+        if (!showCaseStudies) {
+          return each;
+        } else if (showCaseStudies && each.node.frontmatter.show_case_study) {
+          return each;
+        }
+      })
       .filter(each => {
         if (selectedCategory === 'all') {
           return each;
@@ -74,7 +80,7 @@ const Projects = ({ location }) => {
         }
       });
     setDisplayedData(filteredData);
-  }, [selectedCategory, selectedType, searchQuery, projects]);
+  }, [selectedCategory, selectedType, searchQuery, projects, showCaseStudies]);
 
   useEffect(() => {
     displayedData.length > 0 ? setDataAvailable(true) : setDataAvailable(false);
@@ -89,7 +95,7 @@ const Projects = ({ location }) => {
         title="Projects"
         description="Substrate Projects. More than 150 projects are building on Substrate, meet the teams. Find out more!"
       />
-      <Section>
+      <Section className="!mb-10">
         <div className="mb-12 underline-animate underline-animate-thin">
           <CaseStudyBreadcrumb />
         </div>
@@ -107,8 +113,10 @@ const Projects = ({ location }) => {
       </Section>
       <Section className="container mb-20 lg:px-10">
         <div className="lg:flex hidden">
-          <div className="lg:ml-52">
+          <div className="lg:ml-52 flex w-full mb-5">
             <ListTypes selectedType={selectedType} setSelectedType={setSelectedType} />
+            <CaseStudyFilter showCaseStudies={showCaseStudies} setShowCaseStudies={setShowCaseStudies} />
+            <div className="justify-self-end self-center ml-auto">{displayedData.length} projects</div>
           </div>
         </div>
         <div className="lg:flex">

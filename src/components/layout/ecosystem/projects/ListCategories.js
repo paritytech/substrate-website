@@ -12,8 +12,10 @@ const ListCategories = ({ setSelectedCategory, selectedCategory }) => {
   };
 
   return (
-    <ul className="list-none my-5">
-      <li>Filter by category:</li>
+    <ul className="list-none mb-5">
+      <li>
+        <b className="border-b pb-2">Filter by category</b>
+      </li>
       <li
         data-name="all"
         onClick={e => handleCLick(e)}

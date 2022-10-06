@@ -14,7 +14,7 @@ const ListTypes = ({ selectedType, setSelectedType }) => {
   return (
     <select
       onChange={event => setSelectedType(event.target.value)}
-      className="focus:outline-none text-sm dark:bg-darkBackground mb-5"
+      className="types-filter text-sm dark:bg-darkBackground mr-2 hover:cursor-pointer"
     >
       <li>Filter by type:</li>
       <option
