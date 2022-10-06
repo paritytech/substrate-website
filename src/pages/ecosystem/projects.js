@@ -32,11 +32,23 @@ const Projects = ({ location }) => {
 
   useEffect(() => {
     const url = currentUrl.split('?');
-    if (selectedCategory) {
-      if (selectedCategory === 'all') history.replaceState(null, null, url[0]);
-      else history.replaceState(null, null, '?category=' + selectedCategory.toString());
+    if (selectedCategory && selectedType) {
+      if (selectedCategory === 'all' && selectedType === 'all') history.replaceState(null, null, url[0]);
+      // if (selectedType !== 'all') history.replaceState(null, null, '?type=' + selectedType.toString());
+      // if (selectedCategory !== 'all' && selectedType === 'all')
+      //   history.replaceState(null, null, '?category=' + selectedType.toString());
+      if (selectedCategory !== 'all' && selectedType === 'all')
+        history.replaceState(null, null, '?category=' + selectedCategory.toString());
+      if (selectedCategory === 'all' && selectedType !== 'all')
+        history.replaceState(null, null, '?type=' + selectedType.toString());
+      if (selectedCategory !== 'all' && selectedType !== 'all')
+        history.replaceState(
+          null,
+          null,
+          '?category=' + selectedCategory.toString() + '?type=' + selectedType.toString()
+        );
     }
-  }, [currentUrl, selectedCategory]);
+  }, [currentUrl, selectedCategory, selectedType]);
 
   useEffect(() => {
     const filteredData = projects
@@ -71,9 +83,6 @@ const Projects = ({ location }) => {
     }, 100);
   }, [displayedData]);
 
-  console.log('current url = ' + currentUrl);
-  console.log('selected cat = ' + selectedCategory);
-
   return (
     <Layout>
       <SEO
@@ -97,9 +106,13 @@ const Projects = ({ location }) => {
         </div>
       </Section>
       <Section className="container mb-20 lg:px-10">
+        <div className="lg:flex hidden">
+          <div className="lg:ml-52">
+            <ListTypes selectedType={selectedType} setSelectedType={setSelectedType} />
+          </div>
+        </div>
         <div className="lg:flex">
           <div className="hidden lg:block lg:flex-none w-52">
-            <ListTypes selectedType={selectedType} setSelectedType={setSelectedType} />
             <ListCategories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
           </div>
           <div className="lg:flex-grow min-h-screen">

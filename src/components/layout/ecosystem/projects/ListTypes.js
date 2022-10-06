@@ -6,38 +6,45 @@ import { useProjectTypes } from '../../../../hooks/use-project-types';
 const ListTypes = ({ selectedType, setSelectedType }) => {
   const { projectTypes } = useProjectTypes();
   const listStyles = 'mb-8 capitalize cursor-pointer hover:text-substrateGreen';
-  const handleCLick = event => {
-    const dataName = event.target.getAttribute('data-name');
-    setSelectedType(dataName);
-  };
+  // const handleCLick = event => {
+  //   const dataName = event.target.getAttribute('data-name');
+  //   setSelectedType(dataName);
+  // };
 
   return (
-    <ul className="list-none mb-5">
+    <select
+      onChange={event => setSelectedType(event.target.value)}
+      className="focus:outline-none text-sm dark:bg-darkBackground mb-5"
+    >
       <li>Filter by type:</li>
-      <li
-        data-name="all"
-        onClick={e => handleCLick(e)}
-        className={cx(listStyles, 'mt-8', {
+      <option
+        value="all"
+        onClick={event => setSelectedType(event.target.value)}
+        className={cx(listStyles, '', {
           'font-bold text-substrateGreen': selectedType === 'all',
         })}
       >
         All
-      </li>
+      </option>
       {projectTypes.map((item, index) => {
         return (
-          <li
+          <option
             key={index}
-            onClick={e => handleCLick(e)}
-            className={cx(listStyles, {
-              'font-bold text-substrateGreen': item.node.frontmatter.slug === selectedType,
-            })}
+            onClick={event => setSelectedType(event.target.value)}
+            value={item.node.frontmatter.slug}
+            className={cx(
+              'w-1/4 h-11 relative font-bold text-sm flex justify-center items-center hover:bg-substrateDark hover:text-white cursor-pointer transform transition-colors duration-150 ease-in-out ',
+              { 'rounded-tl rounded-bl': index === 0 },
+              { 'rounded-br rounded-tr': index === 3 },
+              { 'bg-substrateDark text-white': selectedType === item.node.frontmatter.slug }
+            )}
             data-name={item.node.frontmatter.slug}
           >
             {item.node.frontmatter.title}
-          </li>
+          </option>
         );
       })}
-    </ul>
+    </select>
   );
 };
 
