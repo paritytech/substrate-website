@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { Layout, Section, SEO } from 'gatsby-plugin-substrate';
+import { Icon, Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import Blockquote from '../components/layout/ecosystem/case-studies/Blockquote';
@@ -42,27 +42,41 @@ export default function ProjectPageTemplate({ pageContext }) {
               <h1 className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{title}</h1>
             </div>
             <p className="text-xl lead">{description}</p>
-            <p className="text-xl lead">{link}</p>
+            <div className="flex items-center mb-10">
+              <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mr-3"></div>
+              <a
+                href={link}
+                className="text-substrateGreen underline-animate underline-animate-thin text-xl lead group flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link}
+                <Icon
+                  name="external-link"
+                  className="lg:hidden group-hover:block h-3 w-3 ml-2 fill-current text-substrateGreen animate-fade-in duration-75"
+                />
+              </a>
+            </div>
             <div>
-              <div className="text-sm">
-                TYPE:
+              <div className="mb-2">
+                <b>TYPE:</b>
                 {type &&
                   type.map((name, index) => {
                     return (
-                      <span key={index}>
-                        {index > 0 && ', '} {name}
+                      <span key={index} className="capitalize">
+                        {index > 0 && ', '} {name.replaceAll('-', ' ')}
                       </span>
                     );
                   })}
               </div>
             </div>
             <div>
-              <div className="text-sm">
-                INDUSTRY:
+              <div className="mb-2">
+                <b>CATEGORY:</b>
                 {category &&
                   category.map((name, index) => {
                     return (
-                      <span key={index}>
+                      <span key={index} className="capitalize">
                         {index > 0 && ', '} {name}
                       </span>
                     );
@@ -70,6 +84,7 @@ export default function ProjectPageTemplate({ pageContext }) {
               </div>
             </div>
           </header>
+          <hr className="my-5" />
           {hasCaseStudy && (
             <div id="case-study">
               <h2 className="tracking-wider uppercase mb-4">Case Study</h2>

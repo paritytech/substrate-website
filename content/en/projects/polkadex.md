@@ -23,7 +23,7 @@ Challenge
 Polkadex solves two main challenges:
 
 1.  There is a high chance of front-running attacks in the automated market maker (AMM) domain, as it is completely decentralized and transparent to everyone. Many projects have tried to solve this by making compromises, especially in the token utility or user experience.{' '}
-2.  There are no usable orderbook-based decentralized exchanges that give the users control over their funds, let alone one that supports high-frequency trading and trading bot support.{' '}
+2.  There are no usable orderbook-based decentralized exchanges that give the users control over their funds, let alone one that supports high-frequency trading and trading bot support.
 
 Solution
 --------
