@@ -9,6 +9,7 @@ import CaseStudyFilter from '../../components/layout/ecosystem/projects/CaseStud
 import ListCategories from '../../components/layout/ecosystem/projects/ListCategories';
 import ListTypes from '../../components/layout/ecosystem/projects/ListTypes';
 import LocalSearch from '../../components/layout/ecosystem/projects/LocalSearch';
+import MobileListCategories from '../../components/layout/ecosystem/projects/MobileListCategories';
 import { useProjects } from '../../hooks/use-projects';
 
 const Projects = ({ location }) => {
@@ -115,11 +116,21 @@ const Projects = ({ location }) => {
         </div>
       </Section>
       <Section className="container mb-20 lg:px-10">
-        <div className="lg:flex hidden">
-          <div className="lg:ml-52 flex w-full mb-5">
-            <ListTypes selectedType={selectedType} setSelectedType={setSelectedType} />
-            <CaseStudyFilter showCaseStudies={showCaseStudies} setShowCaseStudies={setShowCaseStudies} />
-            <div className="justify-self-end self-center ml-auto">{displayedData.length} projects</div>
+        <div className="lg:flex">
+          <div className="lg:ml-52 lg:flex w-full mb-5 md:inline-block">
+            <p className="lg:hidden md:block mb-1">Filter by category:</p>
+            <MobileListCategories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+            <p className="lg:hidden md:block mb-1">Filter by type:</p>
+            <ListTypes selectedType={selectedType} setSelectedType={setSelectedType} className="md:block md:w-full" />
+            <p className="lg:hidden md:block mb-1">Filter by case study:</p>
+            <CaseStudyFilter
+              showCaseStudies={showCaseStudies}
+              setShowCaseStudies={setShowCaseStudies}
+              className="md:block md:w-full"
+            />
+            <div className="lg:justify-self-end justify-self-center lg:ml-auto text-center">
+              {displayedData.length} projects
+            </div>
           </div>
         </div>
         <div className="lg:flex">
@@ -127,11 +138,7 @@ const Projects = ({ location }) => {
             <ListCategories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
           </div>
           <div className="lg:flex-grow min-h-screen">
-            <div
-              className={cx('w-1/1 grid md:grid-cols-2 2xl:grid-cols-3', {
-                '!grid-cols-1': noResults,
-              })}
-            >
+            <div className={cx('w-1/1 grid md:grid-cols-2 2xl:grid-cols-3')}>
               {dataAvailable ? (
                 displayedData.map((project, index) => {
                   return <Card key={index} model={project} />;
@@ -139,7 +146,7 @@ const Projects = ({ location }) => {
               ) : (
                 <>
                   {noResults && (
-                    <div className="border dark:border-substrateGray-dark rounded-md flex flex-col items-center py-8">
+                    <div className="border col-span-3 dark:border-substrateGray-dark rounded-md flex flex-col items-center py-8">
                       <Icon name="noResults" className="fill-current mb-8" />
                       <p className="text-center px-4">No results found. Try a different version or search query.</p>
                     </div>

@@ -14,7 +14,7 @@ const ListCategories = ({ setSelectedCategory, selectedCategory }) => {
   return (
     <ul className="list-none mb-5">
       <li>
-        <b className="border-b pb-2">Filter by category</b>
+        <span className="border-b pb-2 text-gray-400">Filter by category</span>
       </li>
       <li
         data-name="all"
