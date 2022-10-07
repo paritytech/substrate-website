@@ -42,10 +42,8 @@ const createProjectPages = async ({ graphql, actions }) => {
     }
   `);
   if (!result || !result.data) return;
-  console.log(result);
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    console.log(node.fields.slug);
     createPage({
       path: `ecosystem/projects/${node.fields.slug}/`,
       component: path.resolve(`./src/templates/single-project.js`),
