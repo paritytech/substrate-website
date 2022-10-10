@@ -1,6 +1,7 @@
 ---
 title: Dock
 description: Dock is an open source network providing infrastructure and tools for issuing verifiable credentials using blockchain technology.
+chain: true
 type:
   - building-for-polkadot
 category:

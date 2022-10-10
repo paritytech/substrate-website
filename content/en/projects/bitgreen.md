@@ -1,6 +1,7 @@
 ---
 title: BitGreen
 description: BitGreen is a blockchain that's purpose-built for impact, financial inclusion, energy, and human potential.
+chain: true
 type:
   - building-for-polkadot
 category:

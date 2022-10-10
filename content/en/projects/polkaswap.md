@@ -1,6 +1,7 @@
 ---
 title: Polkaswap
 description: Polkaswap is a non custodial AMM DEX designed uniquely for the Polkadot ecosystem and hosted on the SORA Network.
+chain: true
 type:
   - building-for-polkadot
 category:

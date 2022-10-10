@@ -1,6 +1,7 @@
 ---
 title: ChainLink
 description: ChainLink is a decentralized oracle network that provides real-world data to smart contracts on the blockchain.
+chain: true
 type:
   - substrate-builders-program
 category:

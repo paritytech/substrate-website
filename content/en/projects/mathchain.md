@@ -1,6 +1,7 @@
 ---
 title: MathChain
 description: MathChain is a Polkadot Smart Wallet Parachain based on Substrate. It contains built in solutions like DEX, NFT Store and more.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

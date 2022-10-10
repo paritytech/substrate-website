@@ -1,6 +1,7 @@
 ---
 title: ChainX
 description: Cross-chain hub for Crypto Asset on Polkadot. Any chain can have asset interoperability with all other chains as long as it establishes a connection with ChainX.
+chain: true
 type:
   - building-for-polkadot
 category:

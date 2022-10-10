@@ -1,6 +1,7 @@
 ---
 title: Crust Network
 description: Crust Network implements a decentralized cloud blockchain based on Polkadot. It is designed to build a decentralized cloud ecosystem that values data privacy and ownership.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

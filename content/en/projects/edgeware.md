@@ -1,6 +1,7 @@
 ---
 title: Edgeware
 description: Edgeware is a high-performance, self-upgrading WASM smart contract platform, in the Polkadot ecosystem.
+chain: true
 type:
   - substrate-builders-program
 category:

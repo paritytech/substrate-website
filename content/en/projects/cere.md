@@ -1,6 +1,7 @@
 ---
 title: Cere
 description: Delivers fast-tracked consumer enterprise adoption through decentralized data clouds, data interoperability and SaaS DeFi.
+chain: true
 type:
   - building-for-polkadot
 category:

@@ -1,6 +1,7 @@
 ---
 title: Data Highway
 description: DataHighway is a DAO that incentivizes the community to run a sophisticated IoT parachain based on Polkadot using the DHX token.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

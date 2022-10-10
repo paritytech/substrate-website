@@ -1,6 +1,7 @@
 ---
 title: HashKey Me
 description: HashKey Me is an identity wallet based on TSS (Threshold Signature Scheme). It is built upon the MeID Protocol.
+chain: true
 type:
   - building-for-polkadot
 category:

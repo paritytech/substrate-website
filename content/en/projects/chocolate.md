@@ -1,6 +1,7 @@
 ---
 title: Chocolate
 description: Chocolate is a community feedback mechanism network and a platform for anonymous, trusted, knowledge exchange.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

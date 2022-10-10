@@ -1,6 +1,7 @@
 ---
 title: Pontem Network
 description: Polkawallet is a mobile Wallet for any Substrate-based chain amongst which is Polkadot. It provides staking and governance mechanisms.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

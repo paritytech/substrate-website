@@ -1,6 +1,7 @@
 ---
 title: TPFS (Transparent Systems)
-description: Transparent Systems advance financial infrastructure through on-demand, cryptographic settlement solutions
+description: Transparent Systems advance financial infrastructure through on-demand, cryptographic settlement solutions.
+chain: true
 type:
   - building-for-polkadot
   - enterprise-ready

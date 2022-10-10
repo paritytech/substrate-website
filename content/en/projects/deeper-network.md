@@ -1,6 +1,7 @@
 ---
 title: Deeper Network
 description: "Deeper Network is building a decentralized VPN (DVPN) network based on Substrate. They are building their own OS: AtomOS."
+chain: true
 type:
   - substrate-builders-program
 category:

@@ -1,6 +1,7 @@
 ---
 title: Unique Network
 description: Unique Network is an infrastructure for the next generation NFTs, offering developers independence from network-wide transaction fees and upgrades.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

@@ -1,6 +1,7 @@
 ---
 title: SHIFT Project
 description: Shift aims to bring decentralized cloud hosting to the masses. It combines the transparency, immutability and decentralization of blockchain with distributed hosting.
+chain: true
 type:
   - building-for-polkadot
 category:

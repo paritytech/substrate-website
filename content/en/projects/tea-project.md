@@ -1,6 +1,7 @@
 ---
 title: TEA Project
 description: Elk Insight is developing TEA, a layer2 trusted computing solution on top of a Substrate-based blockchain.
+chain: true
 type:
   - building-for-polkadot
 category:

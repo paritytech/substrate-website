@@ -1,6 +1,7 @@
 ---
 title: GameDAO
 description: GameDAO is democratic and transparent crowdfunding for video game creators, publishers, investors and gamers.
+chain: true
 type:
   - building-for-polkadot
 category:

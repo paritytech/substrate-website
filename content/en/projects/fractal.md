@@ -1,6 +1,7 @@
 ---
 title: Fractal
 description: A substrate chain that is bridging the gap between data privacy and data integrity.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

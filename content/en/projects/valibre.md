@@ -1,6 +1,8 @@
 ---
 title: Valibre
 description: Valibre allows users to send and receive Valiu Dollars (vUSD) in a permisionless manner. vUSD is Valibre's substrate-based Stablecoin.
+chain: true
+type:
   - building-for-polkadot
   - substrate-builders-program
 category:

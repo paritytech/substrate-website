@@ -1,6 +1,7 @@
 ---
 title: Mangata
 description: Decentralized exchange parachain, that solves frontrunning, miner-extractable value and guarantees low fixed fees for trading.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

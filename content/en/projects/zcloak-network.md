@@ -1,6 +1,7 @@
 ---
 title: zCloak Network
 description: zCloak Network provides Zero-Knowledge Proof as a Service for public blockchains.
+chain: true
 type:
   - building-for-polkadot
   - enterprise-ready

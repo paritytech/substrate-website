@@ -1,6 +1,7 @@
 ---
 title: Laminar
-description: Laminar is an open finance platform, powering synthetic assets and margin trading built on Substrate
+description: Laminar is an open finance platform, powering synthetic assets and margin trading built on Substrate.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

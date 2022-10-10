@@ -1,6 +1,7 @@
 ---
 title: ProChain
 description: ProChain is building a transparent digital advertising data ecosystem maximizing the interests of all parties involved in digital advertising through de-intermediary.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

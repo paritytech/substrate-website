@@ -1,6 +1,7 @@
 ---
 title: Aleph Zero
 description: Aleph Zero is a peer-reviewed DAG-based platform that's scalable, private, and developer-friendly.
+chain: true
 type:
 category:
   - smart-contracts

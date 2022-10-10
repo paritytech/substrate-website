@@ -1,6 +1,7 @@
 ---
 title: Stafi Protocol
 description: Stafi protocol is a decentralized protocol unlocking liquidity of Staked assets. Stafi is built with Substrate.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

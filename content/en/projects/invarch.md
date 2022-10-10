@@ -1,6 +1,7 @@
 ---
 title: InvArch
 description: A Multi-Chain IP Management and Development Protocol for the Polkadot ecosystem.
+chain: true
 type:
   - building-for-polkadot
 category:

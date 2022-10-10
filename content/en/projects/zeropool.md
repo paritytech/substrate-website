@@ -1,6 +1,7 @@
 ---
 title: ZeroPool
 description: ZeroPool is building private transactions on Polkadot. Balances and transaction graph are hidden and compatibility with network identity hiding technologies, like Tor.
+chain: true
 type:
   - building-for-polkadot
 category:

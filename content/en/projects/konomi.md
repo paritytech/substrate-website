@@ -1,6 +1,7 @@
 ---
 title: Konomi
 description: Konomi is a decentralized money market protocol on Polkadot.
+chain: true
 type:
   - building-for-polkadot
 category:

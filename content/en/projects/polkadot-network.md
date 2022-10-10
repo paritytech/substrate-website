@@ -1,6 +1,7 @@
 ---
 title: Polkadot Network
 description: Polkadot will enable a completely decentralized web where users are in control. It is built to connect chains, networks, oracles, and future technologies that are yet to be created.
+chain: true
 type:
   - substrate-builders-program
   - building-for-polkadot

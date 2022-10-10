@@ -1,6 +1,7 @@
 ---
 title: t3rn
 description: t3rn is a protocol for composing execution between multiple blockchains.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

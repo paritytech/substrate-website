@@ -1,6 +1,7 @@
 ---
 title: Borlaug Web Services
 description: The platform provides services to build transparency and traceability in value chains like decentralized identity, asset registry, provenance, capacity building and others.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

@@ -1,6 +1,7 @@
 ---
 title: OAX
 description: The OAX Parachain offers equivalent ERC20 functionality, atomic swaps, fee delegation and batched multiple transfers.
+chain: true
 type:
   - building-for-polkadot
 category:

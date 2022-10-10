@@ -1,6 +1,7 @@
 ---
 title: Project Aria
 description: Aria is a decentralized network of Health Data owned and manage buy the Data Owners (individuals).
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

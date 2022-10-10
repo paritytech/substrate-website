@@ -1,6 +1,7 @@
 ---
 title: Origin Trail
 description: OriginTrail is an ecosystem dedicated to making global supply chains work together by enabling a universal, collaborative and trusted data exchange.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

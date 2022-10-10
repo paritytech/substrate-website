@@ -1,6 +1,7 @@
 ---
 title: Chainflip Labs
 description: Chainflip is a decentralised, trustless protocol that enables cross chain swaps between different blockchains.
+chain: true
 type:
   - substrate-builders-program
 category:

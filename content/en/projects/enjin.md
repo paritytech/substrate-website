@@ -1,6 +1,7 @@
 ---
 title: Enjin
 description: Enjin is a scalable, decentralized, cross-chain network designed to bring non-fungible tokens to everyone.
+chain: true
 type:
   - building-for-polkadot
   - enterprise-ready

@@ -1,6 +1,7 @@
 ---
 title: Phala Network
 description: The Phala Network is a privacy preserving protocol for data-protection and blockchain smart contract.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

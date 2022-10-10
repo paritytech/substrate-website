@@ -1,6 +1,7 @@
 ---
 title: Wunderbar Network
 description: Wunderbar Network is a decentralized data exchange protocol.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

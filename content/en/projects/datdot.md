@@ -1,6 +1,7 @@
 ---
 title: DatDot
 description: DatDot is a Distributed (peer-to-peer ) File Hosting Network, leveraging on the Dat Protocol and Substrate.
+chain: true
 type:
   - building-for-polkadot
 category:

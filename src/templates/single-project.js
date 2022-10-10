@@ -12,6 +12,7 @@ export default function ProjectPageTemplate({ pageContext }) {
   const {
     title,
     type,
+    chain,
     description,
     category,
     featured_image,
@@ -42,7 +43,7 @@ export default function ProjectPageTemplate({ pageContext }) {
               <h1 className="mb-0 text-4xl sm:text-5xl md:text-6xl font-bold">{title}</h1>
             </div>
             <p className="text-xl lead">{description}</p>
-            <div className="flex items-center mb-10">
+            <div className="flex items-center mb-2">
               <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mr-3"></div>
               <a
                 href={link}
@@ -57,18 +58,24 @@ export default function ProjectPageTemplate({ pageContext }) {
                 />
               </a>
             </div>
-            <div>
-              <div className="mb-2">
-                <b>TYPE:</b>
-                {type &&
-                  type.map((name, index) => {
-                    return (
-                      <span key={index} className="capitalize">
-                        {index > 0 && ', '} {name.replaceAll('-', ' ')}
-                      </span>
-                    );
-                  })}
+            {chain ? (
+              <div className="flex items-center mb-10">
+                <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mr-3"></div>
+                Chain
               </div>
+            ) : (
+              ''
+            )}
+            <div className="mb-2">
+              <b>TYPE:</b>
+              {type &&
+                type.map((name, index) => {
+                  return (
+                    <span key={index} className="capitalize">
+                      {index > 0 && ', '} {name.replaceAll('-', ' ')}
+                    </span>
+                  );
+                })}
             </div>
             <div>
               <div className="mb-2">

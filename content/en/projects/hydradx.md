@@ -1,6 +1,7 @@
 ---
 title: HydraDX
 description: HydraDX is a cross-chain Automatic Market Maker (AMM) that  uses its own algorithm named CFMM. The HydraDX team has won Hackusama.
+chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program

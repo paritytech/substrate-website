@@ -1,6 +1,7 @@
 ---
 title: Moonbeam
 description: Decentralized and permissionless, Moonbeam provides an Ethereum-compatible smart contract platform that makes it easy to build natively interoperable applications.
+chain: true
 type:
   - building-for-polkadot
   - substrate-developers-program

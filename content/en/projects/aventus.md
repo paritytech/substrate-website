@@ -1,6 +1,7 @@
 ---
 title: Aventus
 description: Aventus is a digital assets-focused blockchain-based protocol that transforms oversight, standardisation, trust and innovation across enterprises’ supply chains.
+chain: true
 type:
   - substrate-builders-program
 category:
