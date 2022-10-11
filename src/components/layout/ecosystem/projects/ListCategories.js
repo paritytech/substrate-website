@@ -13,13 +13,10 @@ const ListCategories = ({ setSelectedCategory, selectedCategory }) => {
 
   return (
     <ul className="list-none mb-5">
-      <li>
-        <span className="border-b pb-2 text-gray-400">Filter by category</span>
-      </li>
       <li
         data-name="all"
         onClick={e => handleCLick(e)}
-        className={cx(listStyles, 'mt-8', {
+        className={cx(listStyles, {
           'font-bold text-substrateGreen': selectedCategory === 'all',
         })}
       >
