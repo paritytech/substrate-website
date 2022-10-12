@@ -3,7 +3,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import CaseStudyButton from '../teams/CaseStudyButton';
+import CaseStudyButton from '../case-studies/CaseStudyButton';
 
 function toTitleCase(str) {
   return str
