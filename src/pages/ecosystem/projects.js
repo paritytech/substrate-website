@@ -148,7 +148,9 @@ const Projects = ({ location }) => {
                   {noResults && (
                     <div className="border col-span-3 dark:border-substrateGray-dark rounded-md flex flex-col items-center py-8">
                       <Icon name="noResults" className="fill-current mb-8" />
-                      <p className="text-center px-4">No results found. Try a different version or search query.</p>
+                      <p className="text-center px-4 my-4">
+                        No results found. Try a different version or search query.
+                      </p>
                     </div>
                   )}
                 </>
