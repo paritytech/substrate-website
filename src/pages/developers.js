@@ -7,7 +7,7 @@ import {
   Icon,
   Layout,
   Link,
-  PrimaryFixedButton,
+  PrimaryButtonLink,
   Section,
   SEO,
   useSiteMetadata,
@@ -37,13 +37,11 @@ export default function Home() {
               Substrate <br /> Developer Hub
             </div>
             <h4 className="text-xl xl:text-3xl font-semibold">The center of knowledge</h4>
-            <p className=" max-w-lg text-xl">
+            <p className="mb-8 md:text-lg font-medium leading-relaxed">
               Substrate is powered by best-in-class cryptographic research and comes with peer-to-peer networking,
               consensus mechanisms, and much more.
             </p>
-            <PrimaryFixedButton hero link={siteMetadata.docsUrl}>
-              Get Started
-            </PrimaryFixedButton>
+            <PrimaryButtonLink link={siteMetadata.docsUrl}>Get Started</PrimaryButtonLink>
           </div>
           <div className="flex justify-center md:w-1/2">
             <div className="lg:h-[430px] lg:w-[430px] lg:mt-8">
