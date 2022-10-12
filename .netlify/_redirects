@@ -19,5 +19,12 @@ https://substrate-website.netlify.app/* https://substrate.io/:splat 301!
 /ecosystem/opportunities/jobs/ https://careers.substrate.io 301!
 /ecosystem/resources/awesome-substrate https://github.com/substrate-developer-hub/awesome-substrate/blob/master/README.md 301!
 
+/ecosystem/projects/case-studies/acala/ /ecosystem/projects/acala-network/ 301!
+/ecosystem/projects/case-studies/equilibrium/ /ecosystem/projects/equilibrium/ 301!
+/ecosystem/projects/case-studies/moonbeam/ /ecosystem/projects/moonbeam/ 301!
+/ecosystem/projects/case-studies/astar/ /ecosystem/projects/astar-network/ 301!
+/ecosystem/projects/case-studies/polkadex/ /ecosystem/projects/polkadex/ 301!
+https://substrate.io/ecosystem/projects/case-studies/unique/ /ecosystem/projects/unique-network/ 301!
+
 # Catch all
 /* / 301

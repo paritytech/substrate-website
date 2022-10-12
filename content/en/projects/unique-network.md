@@ -64,4 +64,4 @@ Website: https://unique.network/
 
 Github: https://github.com/UniqueNetwork
 
-Sponsoring pallet repo:{' '}  https://github.com/UniqueNetwork/pallet-sponsoring
+Sponsoring pallet repo:  https://github.com/UniqueNetwork/pallet-sponsoring

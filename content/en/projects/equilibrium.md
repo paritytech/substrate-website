@@ -59,13 +59,13 @@ Flexibility
 Equilibrium uses the following flexible advantages of Substrate:
 
 *   Blockchain upgrades are automatic and avoid the problems associated with forking.
-*   The blockchain produced is fully customizable: block lengths, transaction limits, transaction fees, storage structure, costs of certain user actions, and more can be altered to meet different business needs.{' '}
+*   The blockchain produced is fully customizable: block lengths, transaction limits, transaction fees, storage structure, costs of certain user actions, and more can be altered to meet different business needs.
 *   Pallets (Substrate building blocks) provide broader possibilities compared to smart contracts in covering particular business cases.
 *   Progressive decentralization and governance tools are provided out of the box.
 
 Tooling
 
-One of the main tools Equilibrium uses extensively is the off-chain worker functionality of the Substrate node. Off-chain workers help speed up the chain by offloading some of the business logic and computations related to oracles, interest fee write-offs, reward redistributions, and margin calls.{' '}
+One of the main tools Equilibrium uses extensively is the off-chain worker functionality of the Substrate node. Off-chain workers help speed up the chain by offloading some of the business logic and computations related to oracles, interest fee write-offs, reward redistributions, and margin calls.
 
 Off-chain workers allow for building a faster, more efficient decentralized exchange.
 

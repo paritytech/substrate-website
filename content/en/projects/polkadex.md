@@ -23,7 +23,7 @@ Challenge
 
 Polkadex solves two main challenges:
 
-1.  There is a high chance of front-running attacks in the automated market maker (AMM) domain, as it is completely decentralized and transparent to everyone. Many projects have tried to solve this by making compromises, especially in the token utility or user experience.{' '}
+1.  There is a high chance of front-running attacks in the automated market maker (AMM) domain, as it is completely decentralized and transparent to everyone. Many projects have tried to solve this by making compromises, especially in the token utility or user experience.
 2.  There are no usable orderbook-based decentralized exchanges that give the users control over their funds, let alone one that supports high-frequency trading and trading bot support.
 
 Solution
@@ -42,7 +42,7 @@ Result
 
 #### What was the concrete solution or implementation that couldn’t be done without Substrate and is heavily reliant on one or more of the key features of Substrate?
 
-1.  Eliminating frontrunning - Using Substrate’s BABE pallet, Polkadex easily eliminated frontrunning by providing randomness to modify transaction priority.{' '}
+1.  Eliminating frontrunning - Using Substrate’s BABE pallet, Polkadex easily eliminated frontrunning by providing randomness to modify transaction priority.
 2.  Efficiency - Substrate’s off-chain worker capabilities allows Polkadex to achieve massive transaction performance while maintaining security by packaging the off-chain worker logic inside the node binary.
 3.  Cost effectiveness - Substrate’s ability to turn on/off fee collection based on certain conditions more cost effective and leads to a better user experience.
 4.  Excellent tooling - Polkadot JS, chain spec generation, running nodes, etc. Substrate has robust tooling for development, deployment, and debugging.

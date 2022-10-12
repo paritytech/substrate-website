@@ -12,7 +12,6 @@ export default function ProjectPageTemplate({ pageContext }) {
   const {
     title,
     type,
-    chain,
     description,
     category,
     featured_image,
@@ -58,14 +57,6 @@ export default function ProjectPageTemplate({ pageContext }) {
                 />
               </a>
             </div>
-            {chain ? (
-              <div className="flex items-center mb-10">
-                <div className="bg-substrateGreen rounded-full h-2 w-2 flex-none mr-3"></div>
-                Chain
-              </div>
-            ) : (
-              ''
-            )}
             <div className="mb-2">
               <b>TYPE:</b>
               {type &&
@@ -93,13 +84,16 @@ export default function ProjectPageTemplate({ pageContext }) {
           </header>
           <hr className="my-5" />
           {hasCaseStudy && (
-            <div id="case-study">
-              <h2 className="tracking-wider uppercase mb-4">Case Study</h2>
+            <div
+              id="case-study"
+              className="lg:bg-substrateGray-light lg:dark:bg-substrateBlackish dark:border-substrateDarkThemeGrey p-6"
+            >
+              <h2 className="uppercase mb-4">Case Study</h2>
               {hasBlockquote && (
                 <Blockquote text={blockquote} name={blockquote_author} image={blockquote_author_avatar} />
               )}
               <main>
-                <div dangerouslySetInnerHTML={{ __html: html }} />
+                <div className="text-lg" dangerouslySetInnerHTML={{ __html: html }} />
               </main>
             </div>
           )}
