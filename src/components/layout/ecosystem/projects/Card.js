@@ -50,15 +50,13 @@ export default function ProjectCard({ model }) {
               })}
             </div>
           </div>
-          <div className="rounded-full mb-6 h-[50px] w-[50px] bg-gray-300 p-1 md:h-[60px] md:w-[60px]">
-            {image && (
-              <GatsbyImage
-                className="object-contain w-full h-full rounded-full"
-                image={image}
-                alt={`${title} Project Logo`}
-              />
-            )}
-          </div>
+          {image && (
+            <GatsbyImage
+              className="h-[90px] w-[90px] object-contain mb-6 dark:bg-gray-300 rounded-full"
+              image={image}
+              alt={`${title} Project Logo`}
+            />
+          )}
           <p className="text-sm mb-0 h-20 line-clamp-4 text-black dark:text-white">
             {description.substring(0, 130) + '...'}
           </p>
