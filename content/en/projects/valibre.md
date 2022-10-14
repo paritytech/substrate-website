@@ -1,13 +1,13 @@
 ---
-title: Valibre
-description: Valibre allows users to send and receive Valiu Dollars (vUSD) in a permisionless manner. vUSD is Valibre's substrate-based Stablecoin.
+title: Virto
+description: Virto is an impactful marketplace infrastructure for Polkadot.
 chain: true
 type:
   - building-for-polkadot
   - substrate-builders-program
 category:
   - defi
-link: https://valibre.org/
-featured_image: /media/images/projects/valibre.png
+link: https://virto.network/
+featured_image: /media/images/projects/virto.png
 show_case_study: false
 ---

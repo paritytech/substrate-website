@@ -6,7 +6,7 @@ type:
   - building-for-polkadot
 category:
   - defi
-link: https://riochain.io/
+link: https://riodefi.com/
 featured_image: /media/images/projects/rio-chain.png
 show_case_study: false
 ---

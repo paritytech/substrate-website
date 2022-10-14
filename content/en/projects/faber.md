@@ -5,7 +5,7 @@ type:
   - building-for-polkadot
 category:
   - wallet
-link: https://everstake.one/
+link: https://github.com/yxf/subwallet
 featured_image: /media/images/projects/faber.png
 show_case_study: false
 ---

@@ -5,7 +5,7 @@ type:
   - building-for-polkadot
 category:
   - wallet
-link: https://equilibrium.co/
+link: https://www.safepal.com/
 featured_image: /media/images/projects/safe-pal.png
 show_case_study: false
 ---

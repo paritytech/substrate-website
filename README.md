@@ -99,7 +99,7 @@ npx netlify-cms-proxy-server
 
 and in an other shell and the same folder, run the development server as usual.
 
-## Adding/Updating Projects
+## Adding, updating and removing content from Ecosystem Projects
 
 Substrate projects can be added, updated, or removed by updating the markdown files located at `content/en/projects`.
 

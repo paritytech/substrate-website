@@ -24,10 +24,10 @@ export default function ProjectPageTemplate({ pageContext }) {
   const image = getImage(featured_image);
   const hasCaseStudy = show_case_study && html && true;
   const hasBlockquote = blockquote && blockquote_author && true;
-  // console.log(images);
+  console.log(pageContext);
 
   return (
-    <Layout layout="sidebar" hasBreadcrumbs={false}>
+    <Layout layout="sidebar" hasBreadcrumbs={false} hasArticleNav={false} navSidebarData={['one', 'teo', 'there']}>
       <SEO title={title} />
       <Section>
         <CaseStudyBreadcrumb title={title} />

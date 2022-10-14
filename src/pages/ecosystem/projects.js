@@ -49,9 +49,7 @@ const Projects = ({ location }) => {
           '?category=' + selectedCategory.toString() + '&type=' + selectedType.toString()
         );
     }
-  }, [currentUrl, selectedCategory, selectedType]);
-
-  console.log(activeCategory + '  ' + activeType);
+  }, [currentUrl, selectedCategory, selectedType, showCaseStudies]);
 
   useEffect(() => {
     const filteredData = projects

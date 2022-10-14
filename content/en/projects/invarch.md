@@ -6,7 +6,7 @@ type:
   - building-for-polkadot
 category:
   - social
-link: https://invarch.io/
+link: https://invarch.network/
 featured_image: /media/images/projects/invarch.png
 show_case_study: false
 ---

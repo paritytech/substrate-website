@@ -20,7 +20,7 @@ const ListCategories = ({ setSelectedCategory, selectedCategory }) => {
           'font-bold text-substrateGreen': selectedCategory === 'all',
         })}
       >
-        All
+        All categories
       </li>
       {projectCategories.map((item, index) => {
         return (

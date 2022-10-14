@@ -11,7 +11,7 @@ const ListTypes = ({ selectedType, setSelectedType }) => {
       className="types-filter text-sm dark:bg-darkBackground mr-2 hover:cursor-pointer lg:w-auto md:w-full sm:w-full xs:w-full lg:mb-0 md:mb-4 sm:mb-4 xs:mb-4"
     >
       <option value="all" onClick={event => setSelectedType(event.target.value)}>
-        All
+        All types
       </option>
       {projectTypes.map((item, index) => {
         return (

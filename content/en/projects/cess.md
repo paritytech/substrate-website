@@ -7,7 +7,7 @@ type:
   - substrate-builders-program
 category:
   - file-storage
-link: hhttps://cess.cloud/
+link: https://cess.cloud/
 featured_image: /media/images/projects/cess.png
 show_case_study: false
 ---

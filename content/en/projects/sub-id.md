@@ -5,7 +5,7 @@ type:
   - building-for-polkadot
 category:
   - infrastructure
-link: ttps://sub.id/#/
+link: https://sub.id/#/
 featured_image: /media/images/projects/sub-id.png
 show_case_study: false
 ---
