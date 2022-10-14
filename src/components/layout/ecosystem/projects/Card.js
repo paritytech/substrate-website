@@ -35,7 +35,12 @@ export default function ProjectCard({ model }) {
       )}
     >
       <Link className="inline-block" to={`/ecosystem/projects/${slug}`}>
-        <div className={cx('group lg:mb-0 p-6 bg-white dark:bg-darkBackground animate-fade-in h-full w-full', '')}>
+        <div
+          className={cx(
+            'group lg:mb-0 p-6 bg-white dark:bg-darkBackground animate-fade-in h-full w-full overflow-hidden',
+            ''
+          )}
+        >
           <div className="mb-6">
             <div className="flex items-center">
               <div className="mb-2 text-2xl font-bold">{title}</div>
@@ -51,11 +56,13 @@ export default function ProjectCard({ model }) {
             </div>
           </div>
           {image && (
-            <GatsbyImage
-              className="h-[90px] w-[90px] object-contain mb-6 dark:bg-gray-300 rounded-full"
-              image={image}
-              alt={`${title} Project Logo`}
-            />
+            <div className="project-rounded mb-6">
+              <GatsbyImage
+                className="propject-rounded-img w-20 h-20 object-cover rounded-full dark:bg-gray-300"
+                image={image}
+                alt={`${title} Project Logo`}
+              />
+            </div>
           )}
           <p className="text-sm mb-0 h-20 line-clamp-4 text-black dark:text-white">
             {description.substring(0, 130) + '...'}
