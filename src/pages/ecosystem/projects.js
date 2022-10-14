@@ -120,7 +120,6 @@ const Projects = ({ location }) => {
             <MobileListCategories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
             <p className="lg:hidden md:block mb-1">Filter by type:</p>
             <ListTypes selectedType={selectedType} setSelectedType={setSelectedType} className="md:block md:w-full" />
-            <p className="lg:hidden md:block mb-1">Filter by case study:</p>
             <CaseStudyFilter
               showCaseStudies={showCaseStudies}
               setShowCaseStudies={setShowCaseStudies}

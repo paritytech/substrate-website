@@ -7,6 +7,6 @@ type:
 category:
   - file-storage
 link: https://datdot.org/
-featured_image: /media/images/projects/prochain.png
+featured_image: /media/images/projects/datdot.png
 show_case_study: false
 ---

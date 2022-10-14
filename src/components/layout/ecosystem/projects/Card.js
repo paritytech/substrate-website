@@ -50,7 +50,7 @@ export default function ProjectCard({ model }) {
               })}
             </div>
           </div>
-          <div className="rounded-full mb-6 h-[60px] w-[60px] bg-gray-300 p-0.5">
+          <div className="rounded-full mb-6 h-[50px] w-[50px] bg-gray-300 p-1 md:h-[60px] md:w-[60px]">
             {image && (
               <GatsbyImage
                 className="object-contain w-full h-full rounded-full"

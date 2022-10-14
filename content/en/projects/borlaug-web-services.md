@@ -8,6 +8,6 @@ type:
 category:
   - identity
 link: https://www.borlaug.ws
-featured_image: /media/images/projects/prochain.png
+featured_image: /media/images/projects/borlaug-web-services.png
 show_case_study: false
 ---
