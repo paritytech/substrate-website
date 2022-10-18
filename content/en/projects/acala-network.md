@@ -50,6 +50,6 @@ Acala developed and implemented a set of Substrate pallets with different capabi
 
 **Links and Resources:**
 
-Website: https://acala.network/
+[Website](https://acala.network/)
 
-Github: https://github.com/AcalaNetwork/Acala
+[Github](https://github.com/AcalaNetwork/Acala)

@@ -9,9 +9,9 @@ export default function LocalSearch({ setSearchQuery, searchQuery }) {
   return (
     <>
       <input
-        className="w-full p-2 text-sm font-medium placeholder-gray-400 outline-none dark:bg-substrateDarkest lowercase"
+        className="w-full p-2 text-sm font-medium placeholder-gray-400 outline-none dark:bg-substrateDarkest"
         placeholder={`Search projects`}
-        value={searchQuery.toLowerCase()}
+        value={searchQuery}
         onChange={event => handleChange(event)}
       />
       <Icon name="search" className="fill-current text-substrateGray-dark dark:text-substrateWhite w-4 h-4" />

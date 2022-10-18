@@ -42,6 +42,6 @@ Moonbeam added Substrate's democracy pallet to its runtime to allow for a govern
 
 **Links and Resources:**
 
-Website: https://moonbeam.network/
+[Website](https://moonbeam.network/)
 
-Dcoumentation: https://docs.moonbeam.network/
+[Dcoumentation](https://docs.moonbeam.network/)

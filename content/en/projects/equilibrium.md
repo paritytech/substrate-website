@@ -88,6 +88,6 @@ Equilibrium has several validators that are doing this intensive computation wor
 
 **Links and Resources:**
 
-Website: https://equilibrium.io/en
+[Website](https://equilibrium.io/en)
 
-Github: https://github.com/equilibrium-eosdt
+[Github](https://github.com/equilibrium-eosdt)

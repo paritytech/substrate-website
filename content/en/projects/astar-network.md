@@ -44,14 +44,14 @@ Astar has developed a very innovative concept called “Dapps Staking”, which 
 
 **Links and Resources:**
 
-Website: https://astar.network
+[Website](https://astar.network)
 
-Github: https://github.com/PlasmNetwork/Astar
+[Github](https://github.com/PlasmNetwork/Astar)
 
-Twitter: https://twitter.com/AstarNetwork
+[Twitter](https://twitter.com/AstarNetwork)
 
-Blog: https://medium.com/astar-network
+[Blog](https://medium.com/astar-network)
 
-Youtube:  https://www.youtube.com/channel/UC36JgEF6gqatVSK9xlzzrvQ
+[Youtube](https://www.youtube.com/channel/UC36JgEF6gqatVSK9xlzzrvQ)
 
-Tech Community: https://discord.gg/nywSgQR3NC
+[Tech Community](https://discord.gg/nywSgQR3NC)
