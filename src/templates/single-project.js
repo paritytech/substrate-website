@@ -63,7 +63,7 @@ export default function ProjectPageTemplate({ pageContext }) {
                 type.map((name, index) => {
                   return (
                     <span key={index} className="capitalize">
-                      {index > 0 && ', '} {name.replaceAll('-', ' ')}
+                      {index > 0 && ', '} {name}
                     </span>
                   );
                 })}
