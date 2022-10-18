@@ -24,7 +24,6 @@ export default function ProjectPageTemplate({ pageContext }) {
   const image = getImage(featured_image);
   const hasCaseStudy = show_case_study && html && true;
   const hasBlockquote = blockquote && blockquote_author && true;
-  console.log(pageContext);
 
   return (
     <Layout layout="sidebar" hasBreadcrumbs={false} hasArticleNav={false} navSidebarData={['one', 'teo', 'there']}>
@@ -61,9 +60,10 @@ export default function ProjectPageTemplate({ pageContext }) {
               <b>TYPE:</b>
               {type &&
                 type.map((name, index) => {
+                  const nameWithSpaces = name.replace(/-/g, ' ');
                   return (
                     <span key={index} className="capitalize">
-                      {index > 0 && ', '} {name}
+                      {index > 0 && ', '} {nameWithSpaces}
                     </span>
                   );
                 })}
@@ -73,9 +73,10 @@ export default function ProjectPageTemplate({ pageContext }) {
                 <b>CATEGORY:</b>
                 {category &&
                   category.map((name, index) => {
+                    const nameWithSpaces = name.replace(/-/g, ' ');
                     return (
                       <span key={index} className="capitalize">
-                        {index > 0 && ', '} {name}
+                        {index > 0 && ', '} {nameWithSpaces}
                       </span>
                     );
                   })}
