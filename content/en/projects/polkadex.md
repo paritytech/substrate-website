@@ -50,8 +50,8 @@ Result
 
 **Links and Resources:**
 
-Website: https://www.polkadex.trade/
+[Website](https://www.polkadex.trade/)
 
-Github:  https://github.com/Polkadex-Substrate/Polkadex
+[Github](https://github.com/Polkadex-Substrate/Polkadex)
 
-Polkapool \[In Progress\]:  https://github.com/Polkadex-Substrate/Polkadex/tree/develop/pallets/polkapool
+[Polkapool \[In Progress\]:](https://github.com/Polkadex-Substrate/Polkadex/tree/develop/pallets/polkapool)

@@ -60,8 +60,8 @@ Pallets (3-6 as top priority):
 
 **Links and Resources:**
 
-Website: https://unique.network/
+[Website](https://unique.network/)
 
-Github: https://github.com/UniqueNetwork
+[Github](https://github.com/UniqueNetwork)
 
-Sponsoring pallet repo:  https://github.com/UniqueNetwork/pallet-sponsoring
+[Sponsoring pallet repo](https://github.com/UniqueNetwork/pallet-sponsoring)

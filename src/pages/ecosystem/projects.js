@@ -77,7 +77,7 @@ const Projects = ({ location }) => {
       .filter(each => {
         if (searchQuery.length === 0) {
           return each;
-        } else if (each.node.frontmatter.title.toLowerCase().includes(searchQuery)) {
+        } else if (each.node.frontmatter.title.toLowerCase().includes(searchQuery.toLowerCase())) {
           return each;
         }
       });
