@@ -397,10 +397,6 @@ export default function Home() {
               addressed prominent challenges such as transaction costs, network security, and more.
             </p>
             <PrimaryButtonLink link="/ecosystem/projects/">See all projects</PrimaryButtonLink>
-            <br />
-            <LineArrowButton className="inline-block mt-6" link="/ecosystem/projects/case-studies/acala/">
-              Read the case studies
-            </LineArrowButton>
           </div>
         </div>
 

@@ -5,34 +5,36 @@ const path = require('path');
    - all graphql function call returns a Promise
  */
 
-const createBlogPages = async ({ graphql, actions }) => {
+const createProjectPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
-    query ($language: String) {
-      locales: allLocale {
-        edges {
-          node {
-            ns
-            data
-            language
-          }
-        }
-      }
-      allMarkdownRemark(filter: { fields: { langKey: { eq: $language } }, fileAbsolutePath: { regex: "//(posts)/" } }) {
+    {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(projects)/" } }) {
         edges {
           node {
             html
             frontmatter {
               title
-              tags
+              description
+              chain
+              type
+              category
+              link
               featured_image {
                 childImageSharp {
-                  gatsbyImageData(width: 200, placeholder: NONE, formats: [AUTO, WEBP, AVIF])
+                  gatsbyImageData(width: 1200, placeholder: NONE, formats: [AUTO, WEBP, AVIF])
+                }
+              }
+              show_case_study
+              blockquote
+              blockquote_author
+              blockquote_author_avatar {
+                childImageSharp {
+                  gatsbyImageData(width: 600, placeholder: NONE, formats: [AUTO, WEBP, AVIF])
                 }
               }
             }
             fields {
-              langKey
               slug
             }
           }
@@ -44,61 +46,15 @@ const createBlogPages = async ({ graphql, actions }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: `blog/${node.fields.slug}`,
-      component: path.resolve(`./src/templates/blog-post.js`),
+      path: `ecosystem/projects/${node.fields.slug}/`,
+      component: path.resolve(`./src/templates/single-project.js`),
       context: {
-        slug: node.fields.slug,
+        node,
       },
     });
   });
-};
-
-const createBlogTagsPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
-  const result = await graphql(`
-    query ($language: String) {
-      locales: allLocale {
-        edges {
-          node {
-            ns
-            data
-            language
-          }
-        }
-      }
-      allMarkdownRemark(filter: { fields: { langKey: { eq: $language } }, fileAbsolutePath: { regex: "//(tags)/" } }) {
-        edges {
-          node {
-            frontmatter {
-              title
-              slug
-            }
-            fields {
-              langKey
-              slug
-            }
-          }
-        }
-      }
-    }
-  `);
-  if (!result || !result.data) return;
-
-  /* create a page for each tag, with all articles with this tag */
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: `tags/${node.fields.slug}`,
-      component: path.resolve(`./src/templates/blog-tag.js`),
-      context: {
-        slug: node.fields.slug,
-      },
-    });
-  });
-
-  /* The /tags page (for all tags) is a gatsby page */
 };
 
 module.exports = {
-  createBlogPages,
-  createBlogTagsPages,
+  createProjectPages,
 };

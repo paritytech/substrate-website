@@ -111,7 +111,7 @@ module.exports = {
             resolve: `gatsby-remark-relative-images`,
             options: {
               staticFolderName: `${__dirname}`, // `/media/` already in img.src
-              include: ['incubators', 'accelerators', 'featured_image', 'markdownremark'],
+              include: ['featured_image', 'blockquote_author_avatar', 'incubators', 'accelerators', 'markdownremark'],
             },
           },
           // gatsby-remark-relative-images must go before gatsby-remark-images
@@ -205,6 +205,10 @@ module.exports = {
           {
             pathname: '/ecosystem',
             crumbLabel: 'Ecosystem',
+          },
+          {
+            pathname: '/ecosystem/projects',
+            crumbLabel: 'Projects',
           },
           {
             pathname: '/ecosystem/opportunities',
