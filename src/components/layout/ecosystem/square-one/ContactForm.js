@@ -42,7 +42,7 @@ export default function ContactForm({ connect }) {
                   If the content does not appear correctly, <br />
                   follow this{' '}
                   <a
-                    href="https://share.hsforms.com/1MRizzWpqTziJgjN0KE_8tQ4iqge"
+                    href="https://share.hsforms.com/1TlBTylfuTQKWr9kELf5nWg4iqge"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline"
