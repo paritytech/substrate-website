@@ -28,7 +28,7 @@ export default function ExploreCommunityProjects() {
       items: [
         {
           name: 'cargo-contract',
-          link: 'https://crates.io/crates/cargo-contract/0.8.0',
+          link: 'https://crates.io/crates/cargo-contract/',
           description: 'CLI tool to setup and deploy ink! smart contracts.',
         },
         {
