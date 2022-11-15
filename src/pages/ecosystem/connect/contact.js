@@ -16,13 +16,8 @@ export default function Contact() {
         <div className="md:grid md:grid-cols-3 gap-6">
           <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">Technical Support</h5>
-            <p className="max-w-sm">
-              Head to Element chat and Stack Exchange for anwers to blockchain development questions.
-            </p>
+            <p className="max-w-sm">Head to Stack Exchange for answers to blockchain development questions.</p>
             <div className="grid grid-cols-2 justify-items-start">
-              <Link to={siteMetadata.element}>
-                <Icon name="element2" className="h-9 w-9 inline hover:opacity-50 transition-all" />
-              </Link>
               <Link to={siteMetadata.stackexchange}>
                 <Icon name="stack-exchange-2" className="inline hover:opacity-50 transition-all" />
               </Link>
