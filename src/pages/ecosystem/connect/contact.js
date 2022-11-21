@@ -17,11 +17,9 @@ export default function Contact() {
           <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">Technical Support</h5>
             <p className="max-w-sm">Head to Stack Exchange for answers to blockchain development questions.</p>
-            <div className="grid grid-cols-2 justify-items-start">
-              <Link to={siteMetadata.stackexchange}>
-                <Icon name="stack-exchange-2" className="inline hover:opacity-50 transition-all" />
-              </Link>
-            </div>
+            <p className="text-substrateBlue font-bold underline-animate">
+              <Link to={siteMetadata.stackexchange}>Stack Exchange</Link>
+            </p>
           </div>
           <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">Business Inquiries</h5>
@@ -32,7 +30,7 @@ export default function Contact() {
           </div>
           <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">General Inquiries</h5>
-            <p className="max-w-sm">Got a more general question? Send us an email.</p>
+            <p className="max-w-sm">Got a more general question? Please send us an email.</p>
             <p className="text-substrateBlue font-bold underline-animate">
               <a href="mailto:info@parity.io">info@parity.io</a>
             </p>
