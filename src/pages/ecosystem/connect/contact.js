@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="md:grid md:grid-cols-3 gap-6">
           <div className="bg-substrateGray-light dark:bg-substrateBlackish shadow-md rounded-md overflow-hidden p-8 md:mb-0 mb-8">
             <h5 className="text-xl font-extrabold mb-4">Technical Support</h5>
-            <p className="max-w-sm">Head to Stack Exchange for answers to blockchain development questions.</p>
+            <p className="max-w-sm">Search for solutions and ask questions on Stack Exchange.</p>
             <p className="text-substrateBlue font-bold underline-animate">
               <Link to={siteMetadata.stackexchange}>Stack Exchange</Link>
             </p>
