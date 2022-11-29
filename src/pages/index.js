@@ -430,13 +430,6 @@ export default function Home() {
             Connect With Us
           </p>
           <div>
-            <Link
-              to="https://matrix.to/#/#substrate-technical:matrix.org"
-              className="group inline-block text-xl leading-relaxed mr-20 my-4"
-            >
-              <Icon name="element2" className="inline-block mr-5 w-9 h-9 transition-all group-hover:opacity-50" />
-              Substrate Tech Support
-            </Link>
             <a href="mailto:general@parity.io" className="group inline-block text-xl leading-relaxed my-4">
               <Icon
                 name="mail"
