@@ -66,12 +66,13 @@ export default function Seminar() {
       <Section className="underline-animate underline-animate-thin">
         <h2 className="mb-8 font-medium text-2xl">Learn and Share</h2>
         <p className="mb-6">
-          Seminars are livestreamed <Link to="https://www.twitch.tv/polkadotdev">on Twitch</Link>, where
-          attendees are encouraged to ask questions in the chat and interact directly with the presenters. They typically take the
-          format of learning from other developers showcasing what they&apos;re working on in the Polkadot ecosystem, including parachain developers, 
-          smart contract developers and core Substrate engineers. Each seminar has an associated lesson plan which can be found in{' '}
-          <Link to="https://github.com/substrate-developer-hub/substrate-seminar/">the Seminars GitHub repository</Link>. Use this repository 
-          to suggest new topics or propose topics you&apos;d like to see in future seminars.
+          Seminars are livestreamed <Link to="https://www.twitch.tv/polkadotdev">on Twitch</Link>, where attendees are
+          encouraged to ask questions in the chat and interact directly with the presenters. They typically take the
+          format of learning from other developers showcasing what they&apos;re working on in the Polkadot ecosystem,
+          including parachain developers, smart contract developers and core Substrate engineers. Each seminar has an
+          associated lesson plan which can be found in{' '}
+          <Link to="https://github.com/substrate-developer-hub/substrate-seminar/">the Seminars GitHub repository</Link>
+          . Use this repository to suggest new topics or propose topics you&apos;d like to see in future seminars.
         </p>
         <p className="mb-0">
           Seminars are generally developer-oriented, but less technical participants and questions are also welcome. If
