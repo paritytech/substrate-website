@@ -1,8 +1,13 @@
 import { graphql } from 'gatsby';
-import { Icon, Layout, LineArrowButton, Link, Section, SEO } from 'gatsby-plugin-substrate';
+import { Layout, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
-import seminars from '../../../../data/seminars.json';
+const oldPlaylists = [
+  'PLp0_ueXY_enU7jbm_A-3BrXiMbHPR0he0',
+  'PLp0_ueXY_enWgF4FEhMUOZgK7DQJIswDM',
+  'PLp0_ueXY_enXRfoaW7sTudeQH10yDvFOS',
+  'PLp0_ueXY_enVAh4AfpAJtdBNCxL_eCs9K',
+];
 
 export default function PastSeminars() {
   return (
@@ -14,25 +19,33 @@ export default function PastSeminars() {
       <Section>
         <h1 className="text-4xl font-bold font-body mb-6">Blockchain Past Webinars &amp; Seminars</h1>
       </Section>
-
       <Section>
-        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 auto-rows-fr">
-          {seminars.map(({ id, title, date }, idx) => (
-            <Link to={`https://www.youtube.com/watch?v=${id}`} key={idx}>
-              <div className="h-full shadow-xl p-8 rounded-md bg-white dark:bg-substrateBlackish flex flex-col justify-between hover:scale-105 transition-transform">
-                <h3 className="text-xl font-bold mb-4">{title}</h3>
-                <div>
-                  <div className="flex mb-4">
-                    <Icon className="mr-2 mt-0.5 fill-current text-black dark:text-white" name="date" />
-                    <p className="mb-0">{date}</p>
-                  </div>
-                  <LineArrowButton link={`https://www.youtube.com/watch?v=${id}`} primary>
-                    Watch
-                  </LineArrowButton>
-                </div>
-              </div>
-            </Link>
-          ))}
+        <h2 className="text-2xl font-normal font-body ">Substrate Seminar Live Streams (2023)</h2>
+        <iframe
+          className="w-full lg:w-1/2 seminar-video"
+          src="https://www.youtube-nocookie.com/embed/videoseries?list=PLOyWqupZ-WGsfgxkwTdMOwnbRW4nx_T-i"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </Section>
+      <Section>
+        <h2 className="text-2xl font-normal font-body mb-6">Substrate Seminar Live Streams (2021-2022)</h2>
+        <div className="">
+          {oldPlaylists.map((playlist, idx) => {
+            return (
+              <iframe
+                key={idx}
+                className="w-full lg:w-1/2 seminar-video mb-16"
+                src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlist}`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            );
+          })}
         </div>
       </Section>
     </Layout>
