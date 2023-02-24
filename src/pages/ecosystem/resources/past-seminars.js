@@ -17,7 +17,7 @@ export default function PastSeminars() {
         description="Blockchain Past Webinars &amp; Seminars. Access to all our content. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. "
       />
       <Section>
-        <h1 className="text-4xl font-bold font-body mb-6">Blockchain Past Webinars &amp; Seminars</h1>
+        <h1 className="text-4xl font-bold font-body mb-6">Past Seminars</h1>
       </Section>
       <Section>
         <h2 className="text-2xl font-normal font-body ">Substrate Seminar Live Streams (2023)</h2>
