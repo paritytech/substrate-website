@@ -23,7 +23,7 @@ export default function PastSeminars() {
         <h2 className="text-2xl font-normal font-body mb-6 ">Substrate Seminar Live Streams (2023)</h2>
         <div className="flex flex-wrap gap-8">
           <iframe
-            className="w-full lg:w-5/12 seminar-video rounded"
+            className="w-full lg:w-5/12 seminar-video rounded shadow-xl hover:scale-105 transition-transform"
             src="https://www.youtube-nocookie.com/embed/videoseries?list=PLOyWqupZ-WGsfgxkwTdMOwnbRW4nx_T-i"
             title="YouTube video player"
             frameBorder="0"
@@ -39,7 +39,7 @@ export default function PastSeminars() {
             return (
               <iframe
                 key={idx}
-                className="seminar-video w-full lg:w-5/12 rounded"
+                className="w-full lg:w-5/12 seminar-video rounded shadow-xl hover:scale-105 transition-transform"
                 src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlist}`}
                 title="YouTube video player"
                 frameBorder="0"
