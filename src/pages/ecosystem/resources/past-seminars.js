@@ -20,9 +20,9 @@ export default function PastSeminars() {
         <h1 className="text-4xl font-bold font-body mb-6">Past Seminars</h1>
       </Section>
       <Section>
-        <h2 className="text-2xl font-normal font-body ">Substrate Seminar Live Streams (2023)</h2>
+        <h2 className="text-2xl font-normal font-body mb-6 ">Substrate Seminar Live Streams (2023)</h2>
         <iframe
-          className="w-full lg:w-1/2 seminar-video"
+          className="w-full lg:w-5/12 seminar-video rounded"
           src="https://www.youtube-nocookie.com/embed/videoseries?list=PLOyWqupZ-WGsfgxkwTdMOwnbRW4nx_T-i"
           title="YouTube video player"
           frameBorder="0"
@@ -32,12 +32,12 @@ export default function PastSeminars() {
       </Section>
       <Section>
         <h2 className="text-2xl font-normal font-body mb-6">Substrate Seminar Live Streams (2021-2022)</h2>
-        <div className="">
+        <div className="flex flex-wrap gap-8">
           {oldPlaylists.map((playlist, idx) => {
             return (
               <iframe
                 key={idx}
-                className="w-full lg:w-1/2 seminar-video mb-16"
+                className="seminar-video w-full lg:w-5/12 rounded"
                 src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlist}`}
                 title="YouTube video player"
                 frameBorder="0"
