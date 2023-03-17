@@ -35,10 +35,10 @@ export default function PastSeminars() {
       <Section>
         <h2 className="text-2xl font-normal font-body mb-6">Substrate Seminar Live Streams (2021-2022)</h2>
         <div className="flex flex-wrap gap-8">
-          {oldPlaylists.map((playlist, idx) => {
+          {oldPlaylists.map(playlist => {
             return (
               <iframe
-                key={idx}
+                key={playlist}
                 className="w-full lg:w-5/12 seminar-video rounded shadow-xl hover:scale-105 transition-transform"
                 src={`https://www.youtube-nocookie.com/embed/videoseries?list=${playlist}`}
                 title="YouTube video player"
