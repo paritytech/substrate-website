@@ -1,12 +1,13 @@
 ---
 title: Polimec
-description: The Polkadot Liquidity Mechanism (Polimec), is an open-source blockchain system designed to help getting liquidity into Polkadot based projects.
+description: Polimec is a decentralized community-driven funding protocol developed on Polkadot to accelerate the Web3 ecosystem.
 chain: true
 type:
   - building-for-polkadot
+  - substrate-builders-program
 category:
   - defi
-link: https://www.kilt.io/polimec/
+link: https://www.polimec.org/
 featured_image: /media/images/projects/polimec.png
 show_case_study: false
 ---
