@@ -8,6 +8,6 @@ type:
 category:
   - defi
 link: https://www.polimec.org/
-featured_image: /media/images/projects/polimec.svg
+featured_image: /media/images/projects/polimec.png
 show_case_study: false
 ---
