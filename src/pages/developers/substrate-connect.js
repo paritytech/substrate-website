@@ -142,17 +142,18 @@ export default function Connect() {
               </a>{' '}
               node modules and upon browser initiation updates and synchronizes in the well known substrate chain specs
               (<b>Polkadot, Kusama, Rococo, Westend</b>), keeping them to the latest state inside the extension, for
-              faster chain sync. When a dApp that integrates{' '}
-              <a href="https://github.com/paritytech/substrate-connect" target="_blank" rel="noreferrer">
-                Substrate Connect
-              </a>{' '}
-              e.g.{' '}
+              faster chain sync. When a dApp (e.g.{' '}
               <a
                 href="https://polkadot.js.org/apps/?rpc=light%3A%2F%2Fsubstrate-connect%2Fpolkadot#/explorer"
                 target="_blank"
                 rel="noreferrer"
               >
                 PolkadotJS/apps
+              </a>
+              {') '}
+              that integrates{' '}
+              <a href="https://github.com/paritytech/substrate-connect" target="_blank" rel="noreferrer">
+                Substrate Connect
               </a>{' '}
               starts in a browser&apos;s tab, it then receives the latest specs from the Extension instead of
               wrap-synching from the last imported inside the dApp; At the same time, the dApp will appear inside the
