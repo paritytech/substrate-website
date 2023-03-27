@@ -131,11 +131,42 @@ export default function Connect() {
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="lg:max-w-md self-center mb-10 lg:mb-20">
             <h2 className="text-4xl font-bold mb-6">The Browser Extension</h2>
-            <p className="mb-8">
-              Substrate Connect can run in the browser with each tab running a single light client, but running it as a
-              browser extension will provide a smoother, faster experience. When run as a browser extension, multiple
-              light clients can run simultaneously and can continuously sync as long as the browser stays open. It works
-              on all major browsers and does not require a TLS certificate for connecting to nodes.
+            <p className="mb-8 underline-animate">
+              The Substrate Connect Browser Extension is using{' '}
+              <a href="https://github.com/paritytech/substrate-connect" target="_blank" rel="noreferrer">
+                Substrate Connect
+              </a>{' '}
+              and{' '}
+              <a href="https://github.com/smol-dot/smoldot" target="_blank" rel="noreferrer">
+                Smoldot light client
+              </a>{' '}
+              node modules and upon browser initiation updates and synchronizes in the well known substrate chain specs
+              (<b>Polkadot, Kusama, Rococo, Westend</b>), keeping them to the latest state inside the extension, for
+              faster chain sync. When a dApp (e.g.{' '}
+              <a
+                href="https://polkadot.js.org/apps/?rpc=light%3A%2F%2Fsubstrate-connect%2Fpolkadot#/explorer"
+                target="_blank"
+                rel="noreferrer"
+              >
+                PolkadotJS/apps
+              </a>
+              {') '}
+              that integrates{' '}
+              <a href="https://github.com/paritytech/substrate-connect" target="_blank" rel="noreferrer">
+                Substrate Connect
+              </a>{' '}
+              starts in a browser&apos;s tab, it then receives the latest specs from the Extension instead of
+              wrap-synching from the last imported inside the dApp; At the same time, the dApp will appear inside the
+              Extension as &quot;connected&quot; - meaning that it is using the Extension&apos;s bootnodes and specs;
+              You can download and Firefox extensions below or find more information on the{' '}
+              <a
+                href="https://github.com/paritytech/substrate-connect/tree/main/projects/extension"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github repo
+              </a>
+              .
             </p>
             <ExtensionLinks />
             <LineArrowButton link={`${siteMetadata.docsUrl}`} className="block mt-8">
