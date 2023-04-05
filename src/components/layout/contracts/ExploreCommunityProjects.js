@@ -8,7 +8,7 @@ export default function ExploreCommunityProjects() {
       items: [
         {
           name: 'Contracts Testnet',
-          link: 'https://ink.substrate.io/testnet/',
+          link: 'https://use.ink/testnet/',
           description: 'A smart contract testnet on Rococo.',
         },
         {
@@ -48,7 +48,7 @@ export default function ExploreCommunityProjects() {
       items: [
         {
           name: 'ink! Documentation',
-          link: 'https://ink.substrate.io/',
+          link: 'https://use.ink/',
           description: 'Dive deep into the ink! smart contract language.',
         },
         {
