@@ -1,6 +1,6 @@
 ---
 title: Diora
-description: Diora is substrate blockchain with its own native cryptocurrency. Based on its own unique PoSM consensus
+description: Diora is a substrate blockchain with its own native cryptocurrency based on its own unique PoSM consensus.
 chain: true
 type:
   - defi
