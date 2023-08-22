@@ -23,13 +23,6 @@ const tracks = [
       '(Including bridges, UIs, tooling, smart contract support, validator infrastructure, and potentially more)',
     icon: 'layers',
   },
-  {
-    title: 'Application Track',
-    description: 'Those that are building applications on top of Substrate-based chains.',
-    details:
-      '(Including areas like DeFi, governance, identity, and anything that hasn’t been possible before without the benefits of the interoperable ecosystem.)',
-    icon: 'computer',
-  },
 ];
 
 export default function BuildersProgram() {
@@ -68,8 +61,8 @@ export default function BuildersProgram() {
               <h2 className="font-bold mb-4 text-3xl md:text-4xl">Who The Program Is For</h2>
               <p>
                 The Substrate Builders Program identifies, supports, and mentors current and potential Substrate-related
-                projects. If you&apos;re a visionary builder who is considering or already developing a project in the
-                Substrate ecosystem, we want to talk to you.
+                projects. If you&apos;re a visionary builder already developing a project in the Substrate ecosystem, we
+                want to talk to you.
               </p>
               <SecondaryButton link="/ecosystem/projects">See Builder Teams</SecondaryButton>
             </div>
@@ -83,7 +76,7 @@ export default function BuildersProgram() {
 
         <Section>
           <div className="max-w-3xl mx-auto mt-36 mb-44">
-            <h2 className="font-bold mb-4 text-3xl md:text-4xl">The program is divided into three tracks</h2>
+            <h2 className="font-bold mb-4 text-3xl md:text-4xl">The program is divided into two tracks</h2>
             {tracks.map(({ title, description, details, icon }, idx) => (
               <div key={idx} className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
                 <h3 className="mb-4 text-xl md:text-2.5xl font-bold">
@@ -234,12 +227,14 @@ export default function BuildersProgram() {
                   <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
                     <li>
-                      <span className="font-bold">Category-specific chat support with other program members</span> of
-                      the same category and category-expert engineers to collaborate and ask questions
+                      <span className="font-bold">Chat support with other program members</span> and engineers to
+                      collaborate and ask questions
                     </li>
                     <li>
-                      <span className="font-bold">Regular office hours with the program&apos;s tech support lead</span>{' '}
-                      to give and get feedback and answer questions
+                      <span className="font-bold">
+                        Regular office hours with the program&apos;s team and other ecosystem participants
+                      </span>{' '}
+                      to share knowledge, get feedback and ask questions
                     </li>
                     <li>
                       <span className="font-bold">Launch support with materials, calls and more</span> to ensure your
@@ -288,12 +283,12 @@ export default function BuildersProgram() {
                       (clients, users, partners, etc.)
                     </li>
                     <li>
-                      <span className="font-bold">A joint announcements/non-technical chat room</span> between all
-                      members of both tracks
+                      <span className="font-bold">A joint announcements/non-technical chat room</span> with all members
+                      of the program
                     </li>
                     <li>
                       Regular office hours{' '}
-                      <span className="font-bold">to give and get BD-related feedback and answer questions</span>
+                      <span className="font-bold">to get BD-related feedback and ask questions</span>
                     </li>
                   </ul>
                 </div>

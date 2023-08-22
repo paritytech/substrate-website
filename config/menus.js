@@ -93,12 +93,16 @@ const ecosystem = [
     id: 'ecosystem.home',
   },
   {
-    url: '/projects',
-    id: 'ecosystem.projects',
+    url: '/square-one',
+    id: 'ecosystem.square-one',
   },
   {
     url: '/substrate-builders-program',
     id: 'ecosystem.substrate-builders-program',
+  },
+  {
+    url: '/projects',
+    id: 'ecosystem.projects',
   },
   {
     url: '/opportunities',
@@ -115,10 +119,7 @@ const ecosystem = [
     id: 'ecosystem.connect',
     child: 'connect',
   },
-  {
-    url: '/square-one',
-    id: 'ecosystem.square-one',
-  },
+
 ];
 
 const opportunities = [
