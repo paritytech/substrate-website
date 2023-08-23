@@ -172,14 +172,6 @@ export default function Home() {
             <p className="md:text-lg font-medium">Jump-start your project or your career in the blockchain space</p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
               <IconCard
-                title="Hackathons"
-                icon="hackathons"
-                description="Ready for the challenge? Build, create, and hack."
-                link="/ecosystem/opportunities/hackathons/"
-                linkText="Join a hackathon"
-                color="#ffbeed"
-              />
-              <IconCard
                 title="Grants"
                 icon="dollar"
                 description="Got an idea that's ready to go? Web3 Foundation supports open source development work."

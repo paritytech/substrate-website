@@ -124,10 +124,6 @@ const ecosystem = [
 
 const opportunities = [
   {
-    url: '/hackathons',
-    id: 'ecosystem.opportunities.hackathons',
-  },
-  {
     url: '/grants',
     id: 'ecosystem.opportunities.grants',
   },
