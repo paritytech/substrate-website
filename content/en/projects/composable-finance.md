@@ -8,6 +8,6 @@ category:
   - defi
   - bridge
 link: https://www.composable.finance/
-featured_image: /media/images/projects/composable.png
+featured_image: /media/images/projects/composable-finance.png
 show_case_study: false
 ---
