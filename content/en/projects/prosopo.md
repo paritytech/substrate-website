@@ -3,7 +3,7 @@ title: Prosopo
 description: Prosopo is a decentralised human verification marketplace that secures smart contracts against bot attacks.
 chain: true
 type:
-  - building-for-polkadot
+  - building-with-polkadot-sdk
 category:
   - smart-contracts
 link: https://www.prosopo.io/

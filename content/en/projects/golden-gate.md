@@ -3,7 +3,7 @@ title: Golden Gate
 description: Golden Gate uses a novel Incentivized Message Delivery Protocol (IMDP) for efficient cross-chain communication.
 chain: true
 type:
-  - building-for-polkadot
+  - building-with-polkadot-sdk
 category:
   - infrastructure
   - bridge

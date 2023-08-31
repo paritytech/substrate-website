@@ -3,7 +3,7 @@ title: Karma Coin
 description: Karma Coin is a new cryptocurrency designed for appreciation, tipping and communities.
 chain: true
 type:
-  - building-for-polkadot
+  - building-with-polkadot-sdk
 category:
   - defi
 link: https://karmaco.in/

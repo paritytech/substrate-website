@@ -3,7 +3,7 @@ title: Acuity Social
 description: Smart contract platform for decentralized content.
 chain: true
 type:
-  - building-for-polkadot
+  - building-with-polkadot-sdk
 category:
   - social
 link: https://acuity.social/

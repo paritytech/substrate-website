@@ -3,7 +3,7 @@ title: SwapDEX
 description: The SwapDEX Network is Powering Web3, NFT, and Decentralised Finance Applications While Connecting Major Blockchains With Fast, Secure and Near-Zero Fees.
 chain: true
 type:
-  - building-for-polkadot
+  - building-with-polkadot-sdk
 category:
   - defi
 link: https://swapdex.network/

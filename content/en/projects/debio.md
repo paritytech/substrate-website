@@ -3,7 +3,7 @@ title: Debio
 description: Debio Network is an Anonymous-First Appchain for Medical and Bioinformatics Services & Data
 chain: true
 type:
-  - building-for-polkadot
+  - building-with-polkadot-sdk
 category:
   - privacy
   - file-storage

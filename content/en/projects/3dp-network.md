@@ -3,7 +3,7 @@ title: 3DP Network
 description: Layer 1 blockchain platform for the tokenization of objects.
 chain: true
 type:
-  - building-for-polkadot
+  - building-with-polkadot-sdk
 category:
   - infrastructure
 link: https://3dpass.org/
