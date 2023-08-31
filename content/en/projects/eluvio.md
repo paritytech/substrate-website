@@ -5,7 +5,7 @@ chain: true
 type:
   - building-for-polkadot
 category:
-  - File Storage
+  - file-storage
 link: https://eluv.io/
 featured_image: /media/images/projects/eluvio.png
 show_case_study: false

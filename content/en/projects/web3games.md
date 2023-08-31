@@ -5,7 +5,7 @@ chain: true
 type:
   - building-for-polkadot
 category:
-  - Gaming
+  - gaming
 link: https://web3games.com/
 featured_image: /media/images/projects/web3games.png
 show_case_study: false

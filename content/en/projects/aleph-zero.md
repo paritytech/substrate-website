@@ -7,6 +7,6 @@ type:
 category:
   - smart-contracts
 link: https://alephzero.org/
-featured_image: /media/images/projects/aleph-zero.jpg
+featured_image: /media/images/projects/aleph-zero.png
 show_case_study: false
 ---

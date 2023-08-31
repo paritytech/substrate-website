@@ -6,7 +6,7 @@ type:
   - building-for-polkadot
 category:
   - privacy
-  - file storage
+  - file-storage
   - smart-contracts
 link: https://www.debio.network/
 featured_image: /media/images/projects/debio.png
