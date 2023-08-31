@@ -21,7 +21,7 @@ export const useProjects = () => {
                 link
                 featured_image {
                   childImageSharp {
-                    gatsbyImageData(width: 1200, placeholder: NONE, formats: [AUTO, WEBP, AVIF])
+                    gatsbyImageData(width: 1200, placeholder: NONE, formats: [AUTO])
                   }
                 }
                 show_case_study

@@ -3,6 +3,7 @@ title: Cord
 description: CORD is a decentralised infrastructure advancing the quality and utility of identification systems.
 chain: true
 type:
+  - building-for-polkadot
 category:
   - infrastructure
   - identity

@@ -3,6 +3,7 @@ title: Reef
 description: Reef Chain is an EVM compatible chain for DeFi with NPoS/PoC consensus.
 chain: true
 type:
+  - building-for-polkadot
 category:
   - defi
 link: https://reef.io/

@@ -3,6 +3,7 @@ title: Creditcoin
 description: Creditcoin is a permissionless blockchain designed to facilitate a borderless credit investment network.
 chain: true
 type:
+  - building-for-polkadot
 category:
   - defi
 link: https://creditcoin.org/

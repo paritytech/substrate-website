@@ -3,6 +3,7 @@ title: Web3Games
 description: Web3Games is an integrated blockchain gaming ecosystem that aim to help traditional game developers integrate their gaming products with blockchain
 chain: true
 type:
+  - building-for-polkadot
 category:
   - Gaming
 link: https://web3games.com/

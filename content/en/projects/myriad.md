@@ -3,6 +3,7 @@ title: Myriad
 description: Myriad enables users to host their own social network without centralized control.
 chain: true
 type:
+  - building-for-polkadot
 category:
   - social
 link: https://www.myriad.social/

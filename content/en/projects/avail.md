@@ -3,6 +3,7 @@ title: Avail
 description: Avail is a modular blockchain with a data availability layer designed to scale blockchain networks.
 chain: true
 type:
+  - building-for-polkadot
 category:
   - infrastructure
 link: https://www.availproject.org/

@@ -3,6 +3,7 @@ title: DENTNet
 description: DENTNet is an infrastructure to power mobile connectivity.
 chain: true
 type:
+  - building-for-polkadot
 category:
   - infrastructure
   - telecom

@@ -3,6 +3,7 @@ title: Polymesh
 description: Polymesh is an institutional-grade permissioned blockchain built specifically for regulated assets.
 chain: true
 type:
+  - building-for-polkadot
 category:
   - defi
 link: https://polymesh.network/
