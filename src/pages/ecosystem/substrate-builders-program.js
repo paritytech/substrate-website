@@ -1,10 +1,11 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Article, Icon, Layout, LineArrowButton, PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
-import React from 'react';
+import React, { useRef } from 'react';
 import Lottie from 'react-lottie';
 
 import BorderCard from '../../components/layout/ecosystem/BorderCard';
+import ContactForm from '../../components/layout/ecosystem/builders-program/ContactForm';
 import ColorCard from '../../components/layout/ecosystem/ColorCard';
 import SecondaryButton from '../../components/ui/SecondaryButton';
 import * as animationData from '../../images/animation/ecosystem/builders-program.json';
@@ -26,6 +27,7 @@ const tracks = [
 ];
 
 export default function BuildersProgram() {
+  const connect = useRef(null);
   return (
     <Layout mode="full">
       <SEO
@@ -346,6 +348,13 @@ export default function BuildersProgram() {
                 className="rounded-md overflow-hidden"
               />
             </div>
+          </div>
+        </Section>
+        <div id="connect" ref={connect}></div>
+        <Section className="relative pt-4 sm:pt-24 sm:pb-20">
+          <Icon name="diamond-green" className="hidden md:block absolute top-56 -left-80 opacity-20 w-1/3 -z-10" />
+          <div className="mx-auto sm:p-8 max-w-[36.5rem] sm:shadow-xl bg-white dark:bg-darkBackground sm:dark:bg-substrateDark">
+            <ContactForm connect={connect} />
           </div>
         </Section>
 
