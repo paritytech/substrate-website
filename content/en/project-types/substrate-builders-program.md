@@ -1,5 +1,5 @@
 ---
-title: Substrate Builders Program
-slug: substrate-builders-program
+title: Polkadot Builders Program
+slug: polkadot-builders-program
 index: 10
 ---

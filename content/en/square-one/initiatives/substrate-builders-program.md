@@ -1,8 +1,8 @@
 ---
-title: Substrate Builders Program
+title: Polkadot Builders Program
 org: Parity Technologies
-description: The Substrate Builders Program identifies, supports, and mentors current and potential Substrate-related projects once they have reached a PoC stage.
-link: /ecosystem/substrate-builders-program/
+description: The Polkadot Builders Program identifies, supports, and mentors current and potential Substrate-related projects once they have reached a PoC stage.
+link: /ecosystem/polkadot-builders-program/
 requirements:
   - Tech Mentoring
   - Product Building

@@ -17,7 +17,7 @@
 
 ## Support
 
-- [Builders Program](https://substrate.io/ecosystem/substrate-builders-program/) - White-glove solutions and dedicated support team for visionary teams using Substrate.
+- [Builders Program](https://substrate.io/ecosystem/polkadot-builders-program/) - White-glove solutions and dedicated support team for visionary teams using Substrate.
 - [Stack Exchange](https://substrate.stackexchange.com/) - The best place for all technical questions.
 - [Web3 Foundation Grants](https://web3.foundation/grants) - Funding for ecosystem development.
 

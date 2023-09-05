@@ -134,21 +134,21 @@ export default function Home() {
             <div className="row-start-1 lg:col-start-2">
               <StaticImage
                 src="../images/photos/ecosystem/builders-program/builders-program.jpg"
-                alt="Substrate Builders Program"
+                alt="Polkadot Builders Program"
                 className="rounded-md"
               />
             </div>
             <div className="lg:col-start-1">
               <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">
-                Substrate
+                Polkadot
                 <br /> Builders Program
               </h2>
               <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Accelerate your project</h3>
               <p className="md:text-lg font-medium">
-                The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
-                resources, taking your Substrate project to the next level.
+                The Polkadot Builders Program directly supports you by connecting you with Parity’s extensive your
+                Substrate project to the next level.
               </p>
-              <PrimaryButtonLink link="/ecosystem/substrate-builders-program/">Learn More</PrimaryButtonLink>
+              <PrimaryButtonLink link="/ecosystem/polkadot-builders-program/">Learn More</PrimaryButtonLink>
             </div>
           </div>
         </Section>

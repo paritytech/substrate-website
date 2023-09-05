@@ -97,8 +97,8 @@ const ecosystem = [
     id: 'ecosystem.square-one',
   },
   {
-    url: '/substrate-builders-program',
-    id: 'ecosystem.substrate-builders-program',
+    url: '/polkadot-builders-program',
+    id: 'ecosystem.polkadot-builders-program',
   },
   {
     url: '/projects',
