@@ -49,7 +49,7 @@ export default function BuildersProgram() {
                 The Polkadot Builders Program directly supports you by connecting you with Parity’s extensive resources,
                 taking your Substrate project to the next level.
               </p>
-              <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">Apply</PrimaryButtonLink>
+              <PrimaryButtonLink link="#connect">Apply</PrimaryButtonLink>
             </div>
           </div>
         </Section>
