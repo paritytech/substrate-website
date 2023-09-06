@@ -4,7 +4,7 @@ description: Robonomics Network is a set of open-source packages for Robotics, S
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - iot
 link: https://robonomics.network/

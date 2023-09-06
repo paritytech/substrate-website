@@ -3,7 +3,7 @@ title: Patract Labs
 description: Patract Hub develops local open source toolkits and one-stop cloud smart IDE.
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - infrastructure
 link: https://patract.io/

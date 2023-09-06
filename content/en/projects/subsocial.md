@@ -4,7 +4,7 @@ description: Subsocial is an open protocol for decentralized social networks and
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - defi
 link: https://subsocial.network/

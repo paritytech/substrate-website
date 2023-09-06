@@ -4,7 +4,7 @@ description: DataHighway is a DAO that incentivizes the community to run a sophi
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - iot
 link: https://www.mxc.org/

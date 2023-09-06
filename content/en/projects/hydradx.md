@@ -4,7 +4,7 @@ description: HydraDX is a cross-chain Automatic Market Maker (AMM) that  uses it
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - defi
 link: https://hydradx.io/

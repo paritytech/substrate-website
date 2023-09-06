@@ -3,7 +3,7 @@ title: On Finality
 description: OnFinality provides all the tools needed to access the Polkadot network, deploy infrastructure, or host a Consortium experience.
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
   - enterprise-ready
 category:
   - infrastructure

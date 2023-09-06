@@ -4,7 +4,7 @@ description: SubWallet is the pioneering user-friendly Web3 Multiverse Gateway f
 chain: false
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - infrastructure
   - wallet

@@ -4,7 +4,7 @@ description: OriginTrail is an ecosystem dedicated to making global supply chain
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
   - enterprise-ready
 category:
   - iot

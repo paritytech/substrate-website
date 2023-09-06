@@ -4,7 +4,7 @@ description: Polimec is a decentralized community-driven funding protocol develo
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - defi
 link: https://www.polimec.org/

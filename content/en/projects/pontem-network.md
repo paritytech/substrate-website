@@ -4,7 +4,7 @@ description: Polkawallet is a mobile Wallet for any Substrate-based chain amongs
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - smart-contracts
 link: https://pontem.network/

@@ -3,7 +3,7 @@ title: Encointer
 description: Encointer proposes a new blockchain based cryptocurrency with an ecological consensus mechanism using trusted execution environments and an egalitarian money supply policy.
 chain: true
 type:
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - identity
 link: https://encointer.org/

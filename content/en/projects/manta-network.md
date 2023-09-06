@@ -4,7 +4,7 @@ description: Interoperable and private protocol for the DeFi stack, with a priva
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - defi
 link: https://manta.network/

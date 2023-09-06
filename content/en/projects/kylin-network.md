@@ -4,7 +4,7 @@ description: Kylin Network is building a Data Infrastructure for DeFi and Web 3.
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - defi
 link: https://kylin.network/

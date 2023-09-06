@@ -4,7 +4,7 @@ description: Imbue Network is a decentralised crowdfunding DAO built on top of t
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - defi
   - dao

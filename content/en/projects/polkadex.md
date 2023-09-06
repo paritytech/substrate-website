@@ -3,7 +3,7 @@ title: Polkadex
 description: Polkadex is a Open Source, Decentralized Exchange Platform that features feeless trades, Market Order, AMM and full focus on UI.
 chain: true
 type:
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - defi
   - infrastructure

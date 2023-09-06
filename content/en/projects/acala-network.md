@@ -3,7 +3,7 @@ title: Acala Network
 description: Acala is a decentralized stablecoin platform that powers cross-blockchain open finance applications.
 chain: true
 type:
-  - substrate-builders-program
+  - polkadot-builders-program
   - building-for-polkadot
   - enterprise-ready
 category:

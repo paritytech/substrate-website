@@ -4,7 +4,7 @@ description: Equilibrium introduces a cross-chain money market that combines poo
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - defi
 link: https://equilibrium.io/

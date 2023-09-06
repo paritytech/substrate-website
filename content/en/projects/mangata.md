@@ -4,7 +4,7 @@ description: Decentralized exchange parachain, that solves frontrunning, miner-e
 chain: true
 type:
   - building-for-polkadot
-  - substrate-builders-program
+  - polkadot-builders-program
 category:
   - defi
 link: https://mangata.finance/
