@@ -6,6 +6,7 @@ type:
   - building-for-polkadot
   - polkadot-builders-program
 category:
+  - social
   - defi
 link: https://subsocial.network/
 featured_image: /media/images/projects/subsocial.png

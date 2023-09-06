@@ -1,5 +1,5 @@
 ---
-title: acurast
+title: Acurast
 description: Acurast is a platform and protocol designed to enable Web3 projects and enterprises to realize the full potential of Web3 by interconnecting worlds like Web2, Web3, AI, IOT through Acurast's Universal Interoperability.
 chain: true
 type:

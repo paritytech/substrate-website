@@ -5,7 +5,7 @@ type:
   - building-for-polkadot
 category:
   - infrastructure
-link: https://crab.subscan.io/
+link: https://www.subscan.io/
 featured_image: /media/images/projects/subscan.png
 show_case_study: false
 ---

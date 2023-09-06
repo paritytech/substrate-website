@@ -46,13 +46,14 @@ export default function ProjectCard({ model }) {
               <div className="mb-2 text-2xl font-bold">{title}</div>
             </div>
             <div className="text-sm">
-              {category.map((name, index) => {
-                return (
-                  <span key={index}>
-                    {index > 0 && ', '} {toTitleCase(name)}
-                  </span>
-                );
-              })}
+              {category &&
+                category.map((name, index) => {
+                  return (
+                    <span key={index}>
+                      {index > 0 && ', '} {toTitleCase(name)}
+                    </span>
+                  );
+                })}
             </div>
           </div>
           {image && (
