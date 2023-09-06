@@ -135,7 +135,7 @@ export default function BuildersProgram() {
                   />
                 </div>
                 <div className="flex-1 relative row-start-3 lg:row-start-1 col-span-full lg:col-span-1">
-                  <ColorCard>SBP Commitee</ColorCard>
+                  <ColorCard>PBP Commitee</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
