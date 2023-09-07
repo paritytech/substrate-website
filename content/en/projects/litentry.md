@@ -4,7 +4,7 @@ description: Litentry is a network supporting cross-chain aggregated identities.
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - identity
 link: https://www.litentry.com/

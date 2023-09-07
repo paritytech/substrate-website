@@ -4,7 +4,7 @@ description: Bifrost is a Web3 derivatives protocol that provides decentralized 
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - defi
 link: https://bifrost.finance/

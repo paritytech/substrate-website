@@ -31,9 +31,9 @@ export default function BuildersProgram() {
   return (
     <Layout mode="full">
       <SEO
-        title="Polkadot Builders Program"
-        keyword="Polkadot Builders Program | Blockchain Dev Program"
-        description="Polkadot Builders Program. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. Find out more!"
+        title="Substrate Builders Program"
+        keyword="Substrate Builders Program | Blockchain Dev Program"
+        description="Substrate Builders Program. Substrate blockchain enables developers to quickly and easily build future-proof blockchains optimized for any use case. Find out more!"
       />
       <Article>
         <Section>
@@ -44,10 +44,10 @@ export default function BuildersProgram() {
               </div>
             </div>
             <div className="lg:col-start-1 lg:row-start-1">
-              <h1 className="mb-6 font-extrabold text-4xl md:text-5xl lg:text-6xl">Polkadot Builders Program</h1>
+              <h1 className="mb-6 font-extrabold text-4xl md:text-5xl lg:text-6xl">Substrate Builders Program</h1>
               <p className="mb-8 text-lg font-medium leading-relaxed">
-                The Polkadot Builders Program directly supports you by connecting you with Parity’s extensive resources,
-                taking your Substrate project to the next level.
+                The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
+                resources, taking your Substrate project to the next level.
               </p>
               <PrimaryButtonLink link="#connect">Apply</PrimaryButtonLink>
             </div>
@@ -59,7 +59,7 @@ export default function BuildersProgram() {
             <div className="lg:col-start-1 flex justify-center flex-col">
               <h2 className="font-bold mb-4 text-3xl md:text-4xl">Who The Program Is For</h2>
               <p>
-                The Polkadot Builders Program identifies, supports, and mentors current and potential Substrate-related
+                The Substrate Builders Program identifies, supports, and mentors current and potential Substrate-related
                 projects. If you&apos;re a visionary builder already developing a project in the Substrate ecosystem, we
                 want to talk to you.
               </p>
@@ -135,7 +135,7 @@ export default function BuildersProgram() {
                   />
                 </div>
                 <div className="flex-1 relative row-start-3 lg:row-start-1 col-span-full lg:col-span-1">
-                  <ColorCard>PBP Commitee</ColorCard>
+                  <ColorCard>SBP Commitee</ColorCard>
                   <Icon
                     name="arrow-more"
                     className="mx-4 text-substrateGreen absolute -bottom-7 left-2/4 transform -translate-x-5 rotate-90 lg:transform-none lg:bottom-auto lg:left-auto lg:top-2/4 lg:-right-11"
@@ -305,7 +305,7 @@ export default function BuildersProgram() {
               </div>
             </div>
           </div>
-          <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">Apply</PrimaryButtonLink>
+          <PrimaryButtonLink link="#connect">Apply</PrimaryButtonLink>
         </Section>
 
         <Section>
@@ -317,26 +317,26 @@ export default function BuildersProgram() {
               </h4>
               <p className="mb-10">
                 While nearly everything in the program is in principle available to any team building in the Substrate
-                ecosystem, the Polkadot Builders Program guides teams through the available support in a structured
+                ecosystem, the Substrate Builders Program guides teams through the available support in a structured
                 manner.
               </p>
               <h4 className="mb-5 font-bold text-lg md:text-2xl">
-                How is the Polkadot Builders Program different from the Web3 Foundation Grants Program?
+                How is the Substrate Builders Program different from the Web3 Foundation Grants Program?
               </h4>
               <p className="mb-10">
                 The grants program provides non-dilutive financial support to projects, whereas this program is focused
                 on more comprehensive support throughout a project’s lifecycle. W3F grant recipients are also welcome to
-                apply to the Polkadot Builders Program!
+                apply to the Substrate Builders Program!
               </p>
               <h4 className="mb-5 font-bold text-lg md:text-2xl">
-                Is the Polkadot Builders Program an acceleration or incubation program?
+                Is the Substrate Builders Program an acceleration or incubation program?
               </h4>
               <p className="mb-14">
-                No, the Polkadot Builders Program is complementary to any external accelerator or incubator program
+                No, the Substrate Builders Program is complementary to any external accelerator or incubator program
                 developers can enroll in. Much of what this program offers, such as technical support and invitations to
                 invitations to Polkadot branded events, cannot be offered by an external program.
               </p>
-              <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">Apply</PrimaryButtonLink>
+              <PrimaryButtonLink link="#connect">Apply</PrimaryButtonLink>
             </div>
             <div className="hidden lg:block lg:col-span-6 lg:col-start-7">
               <StaticImage
@@ -355,7 +355,7 @@ export default function BuildersProgram() {
           </div>
         </Section>
 
-        <Section>
+        <Section className="mx-auto d-block text-center">
           <h2>Got Questions?</h2>
           <LineArrowButton link="/ecosystem/connect/contact">Send us an email here</LineArrowButton>
         </Section>

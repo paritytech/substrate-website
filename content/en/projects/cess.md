@@ -4,7 +4,7 @@ description: CESS (Cumulus Encrypted Storage System) is a high-speed, secure, an
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - file-storage
 link: https://cess.cloud/

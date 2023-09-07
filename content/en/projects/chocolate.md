@@ -4,7 +4,7 @@ description: Chocolate is a community feedback mechanism network and a platform 
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - social
 link: https://github.com/chocolatenetwork/

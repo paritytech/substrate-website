@@ -4,7 +4,7 @@ description: Pendulum is an open-source blockchain that aims to establish the mi
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - defi
   - bridge

@@ -4,7 +4,7 @@ description: Nodle is the world’s largest ecosystem of connected devices, prov
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
   - enterprise-ready
 category:
   - iot

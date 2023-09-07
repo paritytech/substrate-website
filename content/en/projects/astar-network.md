@@ -3,7 +3,7 @@ title: Astar Network
 description: Astar Network is a scaling dapps platform on Substrate compatible with Ethereum Virtual Machine (EVM) and connected to Polkadot.
 chain: true
 type:
-  - polkadot-builders-program
+  - substrate-builders-program
   - evm
   - wasm
 category:

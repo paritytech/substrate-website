@@ -4,7 +4,7 @@ description: Virto is an impactful marketplace infrastructure for Polkadot.
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - defi
 link: https://virto.network/

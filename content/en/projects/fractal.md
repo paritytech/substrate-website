@@ -4,7 +4,7 @@ description: A substrate chain that is bridging the gap between data privacy and
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - identity
 link: https://protocol.fractal.id/

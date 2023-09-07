@@ -4,7 +4,7 @@ description: t3rn is a protocol for composing execution between multiple blockch
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - smart-contracts
 link: https://www.t3rn.io/

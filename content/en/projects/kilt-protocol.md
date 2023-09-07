@@ -3,7 +3,7 @@ title: Kilt Protocol
 description: KILT is a blockchain protocol for issuing self-sovereign verifiable, revocable, anonymous Credentials.
 chain: true
 type:
-  - polkadot-builders-program
+  - substrate-builders-program
   - building-for-polkadot
   - enterprise-ready
 category:

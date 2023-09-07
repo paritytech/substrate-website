@@ -3,7 +3,7 @@ title: Firefly
 description: Firefly is the first derivatives exchange protocol on Polkadot.
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - defi
 link: https://firefly.exchange/

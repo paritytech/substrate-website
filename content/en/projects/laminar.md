@@ -4,7 +4,7 @@ description: Laminar is an open finance platform, powering synthetic assets and 
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - defi
 link: https://www.laminar.one/

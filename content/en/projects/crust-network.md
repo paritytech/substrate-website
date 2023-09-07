@@ -4,7 +4,7 @@ description: Crust Network implements a decentralized cloud blockchain based on 
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - file-storage
 link: https://crust.network/

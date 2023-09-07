@@ -4,7 +4,7 @@ description: Aria is a decentralized network of Health Data owned and manage buy
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - healthcare
 link: https://myaria.health/

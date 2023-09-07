@@ -4,7 +4,7 @@ description: An open cross-chain bridge protocol based on Substrate, Darwinia fo
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - bridge
 link: https://darwinia.network/

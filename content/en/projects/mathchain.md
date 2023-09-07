@@ -4,7 +4,7 @@ description: MathChain is a Polkadot Smart Wallet Parachain based on Substrate. 
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - wallet
 link: https://www.mathwallet.org/mathchain/en/

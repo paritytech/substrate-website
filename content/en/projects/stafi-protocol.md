@@ -4,7 +4,7 @@ description: Stafi protocol is a decentralized protocol unlocking liquidity of S
 chain: true
 type:
   - building-for-polkadot
-  - polkadot-builders-program
+  - substrate-builders-program
 category:
   - defi
 link: https://www.stafi.io/
