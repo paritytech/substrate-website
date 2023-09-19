@@ -23,16 +23,4 @@ export const communityCardData = [
     linkTextTwo: 'Events',
     linkTwo: 'https://www.parity.io/events',
   },
-  {
-    title: 'Hackathons & Grants',
-    description: 'Jump-start your project or your career in the blockchain space.',
-    headingOne: 'Rise to the challenge',
-    iconOne: 'hackathons',
-    linkTextOne: 'Hackathon',
-    linkOne: `/ecosystem/opportunities/hackathons`,
-    headingTwo: 'Get funding',
-    iconTwo: 'grantsDollar',
-    linkTextTwo: 'Grants',
-    linkTwo: `/ecosystem/opportunities/grants`,
-  },
 ];

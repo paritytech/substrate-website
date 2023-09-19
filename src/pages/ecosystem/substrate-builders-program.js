@@ -1,10 +1,11 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Article, Icon, Layout, LineArrowButton, PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
-import React from 'react';
+import React, { useRef } from 'react';
 import Lottie from 'react-lottie';
 
 import BorderCard from '../../components/layout/ecosystem/BorderCard';
+import ContactForm from '../../components/layout/ecosystem/builders-program/ContactForm';
 import ColorCard from '../../components/layout/ecosystem/ColorCard';
 import SecondaryButton from '../../components/ui/SecondaryButton';
 import * as animationData from '../../images/animation/ecosystem/builders-program.json';
@@ -23,16 +24,10 @@ const tracks = [
       '(Including bridges, UIs, tooling, smart contract support, validator infrastructure, and potentially more)',
     icon: 'layers',
   },
-  {
-    title: 'Application Track',
-    description: 'Those that are building applications on top of Substrate-based chains.',
-    details:
-      '(Including areas like DeFi, governance, identity, and anything that hasn’t been possible before without the benefits of the interoperable ecosystem.)',
-    icon: 'computer',
-  },
 ];
 
 export default function BuildersProgram() {
+  const connect = useRef(null);
   return (
     <Layout mode="full">
       <SEO
@@ -49,15 +44,12 @@ export default function BuildersProgram() {
               </div>
             </div>
             <div className="lg:col-start-1 lg:row-start-1">
-              <h1 className="mb-6 font-extrabold text-4xl md:text-5xl lg:text-6xl">
-                substrate
-                <span className="text-substrateGreen">_</span> <br /> builders program
-              </h1>
+              <h1 className="mb-6 font-extrabold text-4xl md:text-5xl lg:text-6xl">Substrate Builders Program</h1>
               <p className="mb-8 text-lg font-medium leading-relaxed">
                 The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
                 resources, taking your Substrate project to the next level.
               </p>
-              <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">Apply</PrimaryButtonLink>
+              <PrimaryButtonLink link="#connect">Apply</PrimaryButtonLink>
             </div>
           </div>
         </Section>
@@ -68,8 +60,8 @@ export default function BuildersProgram() {
               <h2 className="font-bold mb-4 text-3xl md:text-4xl">Who The Program Is For</h2>
               <p>
                 The Substrate Builders Program identifies, supports, and mentors current and potential Substrate-related
-                projects. If you&apos;re a visionary builder who is considering or already developing a project in the
-                Substrate ecosystem, we want to talk to you.
+                projects. If you&apos;re a visionary builder already developing a project in the Substrate ecosystem, we
+                want to talk to you.
               </p>
               <SecondaryButton link="/ecosystem/projects">See Builder Teams</SecondaryButton>
             </div>
@@ -83,7 +75,7 @@ export default function BuildersProgram() {
 
         <Section>
           <div className="max-w-3xl mx-auto mt-36 mb-44">
-            <h2 className="font-bold mb-4 text-3xl md:text-4xl">The program is divided into three tracks</h2>
+            <h2 className="font-bold mb-4 text-3xl md:text-4xl">The program is divided into two tracks</h2>
             {tracks.map(({ title, description, details, icon }, idx) => (
               <div key={idx} className="p-6 my-6 rounded-md bg-substrateGray-light dark:bg-substrateBlackish">
                 <h3 className="mb-4 text-xl md:text-2.5xl font-bold">
@@ -234,12 +226,14 @@ export default function BuildersProgram() {
                   <div className="absolute top-0 bottom-0 left-2 w-1 bg-substrateGreen rounded"></div>
                   <ul className="benefits-list">
                     <li>
-                      <span className="font-bold">Category-specific chat support with other program members</span> of
-                      the same category and category-expert engineers to collaborate and ask questions
+                      <span className="font-bold">Chat support with other program members</span> and engineers to
+                      collaborate and ask questions
                     </li>
                     <li>
-                      <span className="font-bold">Regular office hours with the program&apos;s tech support lead</span>{' '}
-                      to give and get feedback and answer questions
+                      <span className="font-bold">
+                        Regular office hours with the program&apos;s team and other ecosystem participants
+                      </span>{' '}
+                      to share knowledge, get feedback and ask questions
                     </li>
                     <li>
                       <span className="font-bold">Launch support with materials, calls and more</span> to ensure your
@@ -288,12 +282,12 @@ export default function BuildersProgram() {
                       (clients, users, partners, etc.)
                     </li>
                     <li>
-                      <span className="font-bold">A joint announcements/non-technical chat room</span> between all
-                      members of both tracks
+                      <span className="font-bold">A joint announcements/non-technical chat room</span> with all members
+                      of the program
                     </li>
                     <li>
                       Regular office hours{' '}
-                      <span className="font-bold">to give and get BD-related feedback and answer questions</span>
+                      <span className="font-bold">to get BD-related feedback and ask questions</span>
                     </li>
                   </ul>
                 </div>
@@ -311,7 +305,7 @@ export default function BuildersProgram() {
               </div>
             </div>
           </div>
-          <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">Apply</PrimaryButtonLink>
+          <PrimaryButtonLink link="#connect">Apply</PrimaryButtonLink>
         </Section>
 
         <Section>
@@ -339,10 +333,10 @@ export default function BuildersProgram() {
               </h4>
               <p className="mb-14">
                 No, the Substrate Builders Program is complementary to any external accelerator or incubator program
-                that developers can enroll in. Much of what this program offers, such as technical support and
+                developers can enroll in. Much of what this program offers, such as technical support and invitations to
                 invitations to Polkadot branded events, cannot be offered by an external program.
               </p>
-              <PrimaryButtonLink link="https://share.hsforms.com/1mcuE-iW8TpynU-hGG7CAyQ4iqge">Apply</PrimaryButtonLink>
+              <PrimaryButtonLink link="#connect">Apply</PrimaryButtonLink>
             </div>
             <div className="hidden lg:block lg:col-span-6 lg:col-start-7">
               <StaticImage
@@ -353,8 +347,15 @@ export default function BuildersProgram() {
             </div>
           </div>
         </Section>
+        <div id="connect" ref={connect}></div>
+        <Section className="relative pt-4 sm:pt-24 sm:pb-20">
+          <Icon name="diamond-green" className="hidden md:block absolute top-56 -left-80 opacity-20 w-1/3 -z-10" />
+          <div className="mx-auto sm:p-8 max-w-[36.5rem] sm:shadow-xl bg-white dark:bg-darkBackground sm:dark:bg-substrateDark">
+            <ContactForm connect={connect} />
+          </div>
+        </Section>
 
-        <Section>
+        <Section className="mx-auto d-block text-center">
           <h2>Got Questions?</h2>
           <LineArrowButton link="/ecosystem/connect/contact">Send us an email here</LineArrowButton>
         </Section>
