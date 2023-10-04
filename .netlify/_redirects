@@ -6,7 +6,7 @@ https://substrate-website.netlify.app/* https://substrate.io/:splat 301!
 /substrate-users /ecosystem/projects 301!
 /newsletter /ecosystem/connect/newsletter 301!
 /playground /developers 301!
-/developers/playground /developers 30!
+/developers/playground /developers 301!
 # Category pages
 /vision /vision/substrate-and-polkadot 301!
 /ecosystem/opportunities /ecosystem/opportunities/hackathons 301!
