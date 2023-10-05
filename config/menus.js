@@ -63,10 +63,6 @@ const developers = [
     id: 'developers.marketplace',
   },
   {
-    url: '/playground',
-    id: 'developers.playground',
-  },
-  {
     url: '/smart-contracts',
     id: 'developers.smart-contracts',
   },
@@ -119,7 +115,6 @@ const ecosystem = [
     id: 'ecosystem.connect',
     child: 'connect',
   },
-
 ];
 
 const opportunities = [

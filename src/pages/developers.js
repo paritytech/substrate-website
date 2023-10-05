@@ -4,9 +4,7 @@ import {
   Banner,
   CommunityCard,
   DocCard,
-  Icon,
   Layout,
-  Link,
   PrimaryButtonLink,
   Section,
   SEO,
@@ -17,7 +15,6 @@ import Lottie from 'react-lottie';
 
 import { communityCardData } from '../../data/community-resources';
 import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
-import SecondaryButton from '../components/ui/SecondaryButton';
 import * as animationData from '../images/animation/dev-hero.json';
 
 export default function Home() {
@@ -109,48 +106,6 @@ export default function Home() {
               iconName={`tutsIcon`}
               animationDelay={400}
             />
-          </div>
-        </div>
-      </Section>
-      {/* Playground Section */}
-      <Section>
-        <div className="flex flex-col lg:flex-row lg:items-center">
-          <div className="mb-16 lg:m-0 lg:w-1/2">
-            <div className="font-title text-5xl lg:text-6xl font-extrabold mb-8">Playground</div>
-            <h4 className="text-xl xl:text-3xl font-semibold">Set up a cloud sandbox</h4>
-            <p className="max-w-lg leading-7 lg:pr-6">
-              Building with Substrate requires different pieces of technology. We recommend picking a sandbox if
-              you&apos;re just getting started and want to try things out. Or if you&apos;re hosting Substrate developer
-              workshops or following tutorials, using a sandbox environment allows you to skip the preliminary set-up to
-              the parts most important to you.
-            </p>
-            <div className="my-8">
-              <button className="duration-150 ease-in hover:opacity-50">
-                <Link className="flex items-center" to="/developers/playground/?deploy=node-template#config">
-                  <Icon name="nodeTemplate" className="w-8 fill-current text-substrateDark dark:text-substrateWhite" />
-                  <div className="text-xl ml-4 font-extrabold">Node Playground</div>
-                </Link>
-              </button>
-              <button className="block mt-8 mb-16 duration-150 ease-in hover:opacity-50">
-                <Link className="flex items-center" to="/developers/playground/?deploy=front-end-template#config">
-                  <Icon name="feTemplate" className="fill-current text-substrateDark dark:text-substrateWhite" />
-                  <div className="text-xl ml-4 font-extrabold text-left">Front-End Template Playground</div>
-                </Link>
-              </button>
-            </div>
-            <SecondaryButton cta link="/developers/playground/">
-              Explore Playground
-            </SecondaryButton>
-          </div>
-          <div data-aos="fade-left" className="hidden lg:flex justify-center lg:w-1/2">
-            <Link to="/developers/playground/">
-              <StaticImage
-                backgroundColor="transparent"
-                src="../images/png/developers/playground-hero.png"
-                alt="Substrate Playground"
-                layout="constrained"
-              />
-            </Link>
           </div>
         </div>
       </Section>
