@@ -5,8 +5,6 @@ import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
 import IconCard from '../components/layout/ecosystem/IconCard';
-import SquareOneGraphic from '../images/svg/squareone_graphic.svg';
-//import SquareOneStatic from '../images/svg/placeholder.svg';
 
 const logos = [
   {
@@ -106,49 +104,6 @@ export default function Home() {
                 name="play"
                 className="w-12 h-12 md:w-24 md:h-24 absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 hover:scale-105 transition-transform"
               />
-            </div>
-          </div>
-        </Section>
-
-        <Section>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
-            <div className="">
-              <div className="w-full mb-8 bg-substrateGray-light dark:bg-substrateGray-darkest rounded-md">
-                <SquareOneGraphic alt="Square One" className="rounded-md w-full h-full" />
-              </div>
-            </div>
-            <div className="">
-              <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">Square One</h2>
-              <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Your ecosystem guide</h3>
-              <p className="md:text-lg font-medium">
-                Square One is your custom-tailored guide to the opportunities and initiatives available in the Substrate
-                ecosystem.
-              </p>
-              <PrimaryButtonLink link="/ecosystem/square-one/">Go to Square One</PrimaryButtonLink>
-            </div>
-          </div>
-        </Section>
-
-        <Section>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
-            <div className="row-start-1 lg:col-start-2">
-              <StaticImage
-                src="../images/photos/ecosystem/builders-program/builders-program.jpg"
-                alt="Substrate Builders Program"
-                className="rounded-md"
-              />
-            </div>
-            <div className="lg:col-start-1">
-              <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">
-                Polkadot
-                <br /> Builders Program
-              </h2>
-              <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Accelerate your project</h3>
-              <p className="md:text-lg font-medium">
-                The Substrate Builders Program directly supports you by connecting you with Parity’s extensive your
-                Substrate project to the next level.
-              </p>
-              <PrimaryButtonLink link="/ecosystem/substrate-builders-program/">Learn More</PrimaryButtonLink>
             </div>
           </div>
         </Section>
