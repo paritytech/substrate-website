@@ -8,6 +8,6 @@ type:
 category:
   - infrastructure
 link: https://bit.country/
-featured_image: /media/images/projects/ajuna-network.png
+featured_image: /media/images/projects/bit-country.png
 show_case_study: false
 ---

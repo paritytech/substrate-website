@@ -7,7 +7,7 @@ type:
   - enterprise-ready
 category:
   - gaming
-link: https://bit.country/
+link: https://sensoriumxr.com/
 featured_image: /media/images/projects/sensorium-corporation.png
 show_case_study: false
 ---

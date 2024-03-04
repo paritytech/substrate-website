@@ -30,7 +30,7 @@ const logos = [
     alt: <StaticImage src="../images/png/ecosystem/logo-11.png" alt="logo" />,
   },
   {
-    logo: <StaticImage src="../images/png/ecosystem/logo-6.png" alt="logo" />,
+    logo: <StaticImage src="../images/png/ecosystem/phala-logo.png" alt="logo" />,
     alt: <StaticImage src="../images/png/ecosystem/logo-12.png" alt="logo" />,
   },
 ];
@@ -109,29 +109,6 @@ export default function Home() {
             </div>
           </div>
         </Section>
-        <Section>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
-            <div className="row-start-1 lg:col-start-2">
-              <StaticImage
-                src="../images/photos/ecosystem/builders-program/builders-program.jpg"
-                alt="Substrate Builders Program"
-                className="rounded-md"
-              />
-            </div>
-            <div className="lg:col-start-1">
-              <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">
-                Substrate
-                <br /> Builders Program
-              </h2>
-              <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Accelerate your project</h3>
-              <p className="md:text-lg font-medium">
-                The Substrate Builders Program directly supports you by connecting you with Parity’s extensive
-                resources, taking your Substrate project to the next level.
-              </p>
-              <PrimaryButtonLink link="/ecosystem/substrate-builders-program/">Learn More</PrimaryButtonLink>
-            </div>
-          </div>
-        </Section>
 
         <Section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
@@ -148,6 +125,30 @@ export default function Home() {
                 ecosystem.
               </p>
               <PrimaryButtonLink link="/ecosystem/square-one/">Go to Square One</PrimaryButtonLink>
+            </div>
+          </div>
+        </Section>
+
+        <Section>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 mb-44">
+            <div className="row-start-1 lg:col-start-2">
+              <StaticImage
+                src="../images/photos/ecosystem/builders-program/builders-program.jpg"
+                alt="Substrate Builders Program"
+                className="rounded-md"
+              />
+            </div>
+            <div className="lg:col-start-1">
+              <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                Polkadot
+                <br /> Builders Program
+              </h2>
+              <h3 className="mb-6 text-2xl md:text-3xl font-medium lg:pr-4">Accelerate your project</h3>
+              <p className="md:text-lg font-medium">
+                The Substrate Builders Program directly supports you by connecting you with Parity’s extensive your
+                Substrate project to the next level.
+              </p>
+              <PrimaryButtonLink link="/ecosystem/substrate-builders-program/">Learn More</PrimaryButtonLink>
             </div>
           </div>
         </Section>
@@ -170,14 +171,6 @@ export default function Home() {
             </h2>
             <p className="md:text-lg font-medium">Jump-start your project or your career in the blockchain space</p>
             <div className="mt-12 mb-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <IconCard
-                title="Hackathons"
-                icon="hackathons"
-                description="Ready for the challenge? Build, create, and hack."
-                link="/ecosystem/opportunities/hackathons/"
-                linkText="Join a hackathon"
-                color="#ffbeed"
-              />
               <IconCard
                 title="Grants"
                 icon="dollar"

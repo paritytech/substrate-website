@@ -4,6 +4,7 @@ description: Polkadex is a Open Source, Decentralized Exchange Platform that fea
 chain: true
 type:
   - substrate-builders-program
+  - building-for-polkadot
 category:
   - defi
   - infrastructure
