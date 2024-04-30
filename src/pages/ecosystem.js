@@ -207,15 +207,6 @@ export default function Home() {
                 delay="200"
               />
               <IconCard
-                title="Newsletter"
-                icon="paperplane"
-                description="Get the latest technical updates and helpful developer resources right in your inbox."
-                link="/ecosystem/connect/newsletter/"
-                linkText="Sign up"
-                color="#ccc8ff"
-                delay="400"
-              />
-              <IconCard
                 title="Blog"
                 icon="pen"
                 description="Tech, news, hackathons, events, milestones, and more. Follow our blog for detailed info on the latest updates."

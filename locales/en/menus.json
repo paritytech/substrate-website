@@ -14,7 +14,6 @@
   "developers.home": "Home",
   "developers.docs": "Docs",
   "developers.rustdocs": "Rust Docs",
-  "developers.marketplace": "Marketplace",
   "developers.playground": "Playground",
   "developers.smart-contracts": "Smart Contracts",
   "developers.substrate-connect": "Substrate Connect",
@@ -39,7 +38,6 @@
 
   "ecosystem.resources.contact": "Contact",
   "ecosystem.resources.events": "Events",
-  "ecosystem.resources.newsletter": "Newsletter",
   "ecosystem.resources.blog": "Blog",
 
   "legal.privacy": "Privacy Policy",
