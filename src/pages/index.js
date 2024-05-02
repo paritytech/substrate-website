@@ -424,7 +424,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="shadow-xl mb-40 dark:bg-substrateGray-darkest">
+      <div className="shadow-xl dark:bg-substrateGray-darkest">
         <div className="container md:flex lg:px-10 py-6">
           <p className="inline-block md:w-1/2 lg:w-auto text-2xl font-bold leading-relaxed md:mb-0 mr-20 my-4">
             Connect With Us
@@ -437,33 +437,6 @@ export default function Home() {
               />
               General inquiries
             </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="container lg:px-10 mb-40">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14">
-          <div className="aspect-w-3 aspect-h-2">
-            <div>
-              <StaticImage
-                src="../images/photos/home/newsletter.jpg"
-                alt="Woman at computer"
-                className="w-full h-full m-0 relative shadow-xl rounded-md"
-              />
-            </div>
-          </div>
-          <div className="flex justify-center flex-col">
-            <h2 className="mb-6 font-extrabold">
-              Substrate
-              <br />
-              Developer Newsletter
-            </h2>
-            <p className="text-lg leading-relaxed mb-6 xl:w-1/2">
-              Keep up to date with tech updates and helpful resources.
-            </p>
-            <SecondaryButton link="/ecosystem/connect/newsletter/">
-              <p className="mb-0 p-1">Sign up</p>
-            </SecondaryButton>
           </div>
         </div>
       </div>
