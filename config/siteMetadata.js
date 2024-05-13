@@ -1,5 +1,5 @@
 const menus = require('./menus');
-const { WEBSITE_URL, DOCS_URL, CAREERS_URL } = require('gatsby-plugin-substrate/config/webConsts');
+const { WEBSITE_URL, DOCS_URL } = require('gatsby-plugin-substrate/config/webConsts');
 
 module.exports = {
   menus,
@@ -10,7 +10,6 @@ module.exports = {
   siteUrl: WEBSITE_URL,
   websiteUrl: WEBSITE_URL,
   docsUrl: DOCS_URL,
-  careersUrl: CAREERS_URL,
   author: 'Parity WebDev/W3F WebOps',
   pressEmail: 'press@parity.io',
   email: 'info@parity.io',
