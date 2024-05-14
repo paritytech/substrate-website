@@ -135,15 +135,6 @@ export default function Home() {
                 color="#ffbeed"
                 delay="200"
               />
-              <IconCard
-                title="Careers"
-                icon="desktop"
-                description="Substrate projects are always on the lookout for talented developers who are passionate about building a better future."
-                link="https://careers.substrate.io"
-                linkText="Find your role"
-                color="#ffbeed"
-                delay="400"
-              />
             </div>
           </div>
         </Section>

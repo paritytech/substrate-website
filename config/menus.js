@@ -1,4 +1,4 @@
-const { DOCS_URL, CAREERS_URL } = require('gatsby-plugin-substrate/config/webConsts');
+const { DOCS_URL } = require('gatsby-plugin-substrate/config/webConsts');
 
 /* the main menu, ids of items must match
    the submenu's key of this js object */
@@ -109,10 +109,6 @@ const opportunities = [
   {
     url: '/grants',
     id: 'ecosystem.opportunities.grants',
-  },
-  {
-    url: CAREERS_URL,
-    id: 'ecosystem.opportunities.careers',
   },
 ];
 
