@@ -1,6 +1,6 @@
 ---
 title: ChainSafe
-description: Chainflip is a decentralised, trustless protocol that enables cross chain swaps between different blockchains.
+description: ChainSafe Systems is a blockchain R&D firm on a mission to realize the potential of Web3 infrastructure through sustainable, open-source development.
 chain: true
 type:
   - building-for-polkadot
