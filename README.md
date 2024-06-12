@@ -16,6 +16,8 @@
 
 ## Website Architecture (IA /developers)
 
+`NOTE:` Marketplace website has been shut down and it is no longer part of the Substrate website IA.
+
 <div align="center">
 <img width="1099" alt="image" src="https://user-images.githubusercontent.com/26929021/180010460-fdcb7973-2fd9-4ac5-9089-1302123a70ca.png">
 </div>
