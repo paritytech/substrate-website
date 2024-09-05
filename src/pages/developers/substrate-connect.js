@@ -1,16 +1,9 @@
 import { graphql } from 'gatsby';
-import {
-  Icon,
-  Layout,
-  LineArrowButton,
-  PrimaryButtonLink,
-  Section,
-  SEO,
-  useSiteMetadata,
-} from 'gatsby-plugin-substrate';
+import { Icon, LineArrowButton, PrimaryButtonLink, Section, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
 
+import Layout from '../../components/layout/Layout';
 import * as animationData from '../../images/animation/substrate-connect.json';
 
 const networks = [

@@ -4,7 +4,6 @@ import {
   Banner,
   CommunityCard,
   DocCard,
-  Layout,
   PrimaryButtonLink,
   Section,
   SEO,
@@ -14,6 +13,7 @@ import React from 'react';
 import Lottie from 'react-lottie';
 
 import { communityCardData } from '../../data/community-resources';
+import Layout from '../components/layout/Layout';
 import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
 import * as animationData from '../images/animation/dev-hero.json';
 

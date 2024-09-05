@@ -1,6 +1,8 @@
 import { graphql } from 'gatsby';
-import { Icon, Layout, LineArrowButton, Link, Section, SEO } from 'gatsby-plugin-substrate';
+import { Icon, LineArrowButton, Link, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
+
+import Layout from '../../../components/layout/Layout';
 
 const Playlists = [
   { id: 'PLOyWqupZ-WGsfgxkwTdMOwnbRW4nx_T-i', title: 'Substrate Seminars', date: 'Jul 2023' },

@@ -1,10 +1,11 @@
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { Icon, Layout, Section, SEO } from 'gatsby-plugin-substrate';
+import { Icon, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import Blockquote from '../components/layout/ecosystem/case-studies/Blockquote';
 import CaseStudyBreadcrumb from '../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
+import Layout from '../components/layout/Layout';
 
 export default function ProjectPageTemplate({ pageContext }) {
   const { node } = pageContext;

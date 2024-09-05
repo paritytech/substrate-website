@@ -1,6 +1,8 @@
 import { graphql } from 'gatsby';
-import { Layout, Link, Section, SEO } from 'gatsby-plugin-substrate';
+import { Link, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
+
+import Layout from '../../../components/layout/Layout';
 
 export default function AwesomeSubstrate({ data }) {
   const html = data.markdownRemark.html;

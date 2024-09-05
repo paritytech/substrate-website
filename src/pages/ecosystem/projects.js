@@ -1,6 +1,6 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
-import { Icon, Layout, Section, SEO } from 'gatsby-plugin-substrate';
+import { Icon, Section, SEO } from 'gatsby-plugin-substrate';
 import React, { useEffect, useState } from 'react';
 
 import CaseStudyBreadcrumb from '../../components/layout/ecosystem/case-studies/CaseStudyBreadcrumb';
@@ -10,6 +10,7 @@ import ListCategories from '../../components/layout/ecosystem/projects/ListCateg
 import ListTypes from '../../components/layout/ecosystem/projects/ListTypes';
 import LocalSearch from '../../components/layout/ecosystem/projects/LocalSearch';
 import MobileListCategories from '../../components/layout/ecosystem/projects/MobileListCategories';
+import Layout from '../../components/layout/Layout';
 import { useProjects } from '../../hooks/use-projects';
 
 const Projects = ({ location }) => {

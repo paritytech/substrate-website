@@ -1,10 +1,11 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Article, Icon, isBrowser, Layout, PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
+import { Article, Icon, isBrowser, PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 
 import IconCard from '../components/layout/ecosystem/IconCard';
+import Layout from '../components/layout/Layout';
 
 const logos = [
   {
