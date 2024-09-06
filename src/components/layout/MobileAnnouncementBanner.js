@@ -10,7 +10,7 @@ import React from 'react';
 export default function MobileAnnouncementBanner({ children }) {
   return (
     <>
-      <div className="md:hidden sticky top-0 relative isolate flex sticky items-center justify-center gap-x-6 overflow-hidden bg-gray-50 dark:bg-gray-600 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+      <div className="md:hidden sticky top-0 relative isolate flex sticky items-center justify-center gap-x-6 overflow-hidden bg-gray-50 dark:bg-gray-600 px-3 py-2.5 sm:px-3.5 sm:before:flex-1">
         {children}
       </div>
     </>
