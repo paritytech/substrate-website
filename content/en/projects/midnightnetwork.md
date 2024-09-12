@@ -1,6 +1,6 @@
 ---
 title: The Midnight Network
-description: The Midnight network (“Midnight”) exists to remove the barriers preventing organizations and service providers from leveraging blockchain technology while offering programmable data protection with selective disclosure.
+description: The Midnight network exists to remove the barriers preventing organizations and service providers from leveraging blockchain technology while offering programmable data protection with selective disclosure.
 chain: true
 type:
   - enterprise-ready
