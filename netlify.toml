@@ -3,7 +3,7 @@
   publish = "public/"
 
 [context.deploy-preview]
-  command = "yarn build && cp .netlify/_headers_develop public/_headers && cp .netlify/_redirects public/_redirects"
+  command = "rm -rf node_modules && git submodule update --remote && yarn && yarn build && cp .netlify/_headers_develop public/_headers && cp .netlify/_redirects public/_redirects"
   publish = "public/"
 
 [context.develop]
