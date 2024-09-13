@@ -1,8 +1,9 @@
 import { graphql } from 'gatsby';
-import { Blockquote, Layout, Link, Section, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
+import { Blockquote, Link, Section, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import FlipIcon from '../../components/default/FlipIcon';
+import Layout from '../../components/layout/Layout';
 import CardsNav from '../../components/layout/technology/CardsNav';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
 import { Feature, FeatureImage } from '../../components/layout/technology/Feature';

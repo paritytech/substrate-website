@@ -1,10 +1,11 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Icon, Layout, Link, Section, SEO } from 'gatsby-plugin-substrate';
+import { Icon, Link, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import { Code } from '../../components/default/Code';
+import Layout from '../../components/layout/Layout';
 
 const illustrations = [
   {

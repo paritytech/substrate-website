@@ -1,8 +1,9 @@
 import { graphql } from 'gatsby';
-import { Article, Icon, Layout, Link, Section, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
+import { Article, Icon, Link, Section, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
 
+import Layout from '../components/layout/Layout';
 import Card from '../components/layout/technology/Card';
 import ExploreLinkSection from '../components/layout/technology/ExploreLinkSection';
 import * as animationData from '../images/animation/technology/overview.json';

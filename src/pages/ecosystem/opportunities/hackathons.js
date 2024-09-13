@@ -1,8 +1,9 @@
 import { graphql } from 'gatsby';
-import { Layout, Section, SEO } from 'gatsby-plugin-substrate';
+import { Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import HackathonCard from '../../../components/layout/ecosystem/HackathonCard';
+import Layout from '../../../components/layout/Layout';
 import { useHackathons } from '../../../hooks/use-hackathons';
 
 export default function Hackathons() {

@@ -1,7 +1,9 @@
 import { graphql } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import { Layout, PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
+import { PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
+
+import Layout from '../components/layout/Layout';
 
 export default function NotFoundPage() {
   const { t } = useTranslation();

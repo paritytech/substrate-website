@@ -1,11 +1,12 @@
 import { graphql } from 'gatsby';
-import { Icon, Layout, LineArrowButton, Link, Section, SEO } from 'gatsby-plugin-substrate';
+import { Icon, LineArrowButton, Link, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
 import Card from '../../components/layout/Card';
 import ExploreCommunityProjects from '../../components/layout/contracts/ExploreCommunityProjects';
 import Highlight from '../../components/layout/contracts/Highlight';
 import TutorialCard from '../../components/layout/contracts/TutorialCard';
+import Layout from '../../components/layout/Layout';
 
 const tutorials = [
   {

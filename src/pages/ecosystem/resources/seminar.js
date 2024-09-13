@@ -1,8 +1,9 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Icon, Layout, Link, PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
+import { Icon, Link, PrimaryButtonLink, Section, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 
+import Layout from '../../../components/layout/Layout';
 import SecondaryButton from '../../../components/ui/SecondaryButton';
 
 export default function Seminar() {

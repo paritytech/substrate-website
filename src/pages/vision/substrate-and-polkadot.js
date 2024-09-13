@@ -1,10 +1,11 @@
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Article, ArticleNav, Blockquote, Layout, SEO } from 'gatsby-plugin-substrate';
+import { Article, ArticleNav, Blockquote, SEO } from 'gatsby-plugin-substrate';
 import React from 'react';
 import Lottie from 'react-lottie';
 
 import Gif from '../../components/default/Gif';
+import Layout from '../../components/layout/Layout';
 import ExploreLinkSection from '../../components/layout/technology/ExploreLinkSection';
 import BannerLink from '../../components/layout/vision/BannerLink';
 import * as animationData from '../../images/animation/substrate-polkadot.json';

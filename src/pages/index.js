@@ -1,11 +1,12 @@
 import cx from 'classnames';
 import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Icon, Layout, LineArrowButton, Link, PrimaryButtonLink, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
+import { Icon, LineArrowButton, Link, PrimaryButtonLink, SEO, useSiteMetadata } from 'gatsby-plugin-substrate';
 import React, { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
 
+import Layout from '../components/layout/Layout';
 import SecondaryButton from '../components/ui/SecondaryButton';
 import * as heroAnimationData from '../images/animation/home/hero.json';
 import * as polkadotAnimationData from '../images/animation/home/substrate-polkadot-simple.json';
