@@ -5,7 +5,7 @@
 # be processed first. This, efectivelly, ignores repeating rules. This is why
 # the new redirects will take presedence over the old ones.
 
-# substrate.io -> polkadot.io migration
+# substrate.io -> polkadot.com migration
 /build/application-development/                                             https://docs.polkadot.com/develop/development-pathways/#client-side-development                                             301!
 /build/build-a-deterministic-runtime/                                       https://docs.polkadot.com/develop/parachains/deployment/build-deterministic-runtime/                                        301!
 /build/build-process/                                                       https://docs.polkadot.com/develop/parachains/deployment/build-deterministic-runtime/                                        301!
