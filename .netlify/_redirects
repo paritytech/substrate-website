@@ -1,5 +1,5 @@
 # Redirect to https://polkadot.com/platform/sdk
-/       https://polkadot.com/platform/sdk 301!
+/*      https://polkadot.com/platform/sdk 301!
 
 # Netlify app domain
 https://substrate-website.netlify.app/* https://substrate.io/:splat 301!
